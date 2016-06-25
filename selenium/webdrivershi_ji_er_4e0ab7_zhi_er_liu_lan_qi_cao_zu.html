@@ -1,0 +1,699 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>WebDriver·二 浏览器操作 · WebDriver·TestNg学习日志</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="webdrivershi_ji_er_4e0ab7_zhi_san_ding_wei_ye_mian.html" />
+    
+    
+    <link rel="prev" href="webdrivershi_ji_er_4e0ab7_zhi_yi_huan_jing_bu_shu.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    WebDriver·TestNg学习日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="webdrivershi_ji_er_4e0ab7_zhi_ling_webdriver_li_lu.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_ling_webdriver_li_lu.html">
+            
+                    
+                    WebDriver·零 理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="webdrivershi_ji_er_4e0ab7_zhi_yi_huan_jing_bu_shu.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_yi_huan_jing_bu_shu.html">
+            
+                    
+                    WebDriver·一 环境部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.3" data-path="webdrivershi_ji_er_4e0ab7_zhi_er_liu_lan_qi_cao_zu.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_er_liu_lan_qi_cao_zu.html">
+            
+                    
+                    WebDriver·二 浏览器操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="webdrivershi_ji_er_4e0ab7_zhi_san_ding_wei_ye_mian.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_san_ding_wei_ye_mian.html">
+            
+                    
+                    WebDriver·三 定位页面元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="webdrivershi_ji_er_4e0ab7_zhi_si_cao_zuo_ye_mian_y.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_si_cao_zuo_ye_mian_y.html">
+            
+                    
+                    WebDriver·四 操作页面元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="webdrivershi_ji_er_4e0ab7_zhi_wu_iframe_de_chu_li.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_wu_iframe_de_chu_li.html">
+            
+                    
+                    WebDriver·五 iframe的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="webdrivershi_ji_er_4e0ab7_zhi_liu_huo_de_dan_chu_c.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_liu_huo_de_dan_chu_c.html">
+            
+                    
+                    WebDriver·六 获得弹出窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="webdrivershi_ji_er_4e0ab7_zhi_qi_chu_li_dui_hua_ku.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_qi_chu_li_dui_hua_ku.html">
+            
+                    
+                    WebDriver·七 处理对话框alert\confirm\prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="webdrivershi_ji_er_4e0ab7_zhi_ba_cao_zuo_cookies.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_ba_cao_zuo_cookies.html">
+            
+                    
+                    WebDriver·八 操作cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="webdrivershi_ji_er_4e0ab7_zhi_jiu_deng_dai_ye_mian.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_jiu_deng_dai_ye_mian.html">
+            
+                    
+                    WebDriver·九 等待页面加载元素完成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_feng_zhuang_yu_z.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_feng_zhuang_yu_z.html">
+            
+                    
+                    WebDriver·十 封装与重用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_yi_zai_selenium2.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_yi_zai_selenium2.html">
+            
+                    
+                    WebDriver·十1 在selenium2.0中使用selenium1.0的API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_er_jie_tu_seleni.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_er_jie_tu_seleni.html">
+            
+                    
+                    WebDriver·十二 截图selenium-webdriver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="webdrivershi_ji_er_4e0ab7_zhishi_san_diao_yong_jav.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhishi_san_diao_yong_jav.html">
+            
+                    
+                    WebDriver·十三 调用Java Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_si_remotewebdriv.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_si_remotewebdriv.html">
+            
+                    
+                    WebDriver·十四 RemoteWebDriver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_wu_tuo_ye_dong_z.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_wu_tuo_ye_dong_z.html">
+            
+                    
+                    WebDriver·十五 拖曳动作模拟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_liu_table_kong_j.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_liu_table_kong_j.html">
+            
+                    
+                    WebDriver·十六 Table控件的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_qi_duan_yan.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_qi_duan_yan.html">
+            
+                    
+                    WebDriver·十七 断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_ba_she_zhi_yuan_.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_ba_she_zhi_yuan_.html">
+            
+                    
+                    WebDriver·十八 设置元素焦点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_jiu_chang_yong_f.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_jiu_chang_yong_f.html">
+            
+                    
+                    WebDriver·十九 常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="testngyi_ji_chu_gai_nian.html">
+            
+                <a href="testngyi_ji_chu_gai_nian.html">
+            
+                    
+                    TestNG·一 基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="testnger_ce_shi_zu.html">
+            
+                <a href="testnger_ce_shi_zu.html">
+            
+                    
+                    TestNG·二 测试组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="testngsan_ce_shi_fang_fa.html">
+            
+                <a href="testngsan_ce_shi_fang_fa.html">
+            
+                    
+                    TestNG·三 测试方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="testngsi_ce_shi_fang_fa_zhi_gong_chang.html">
+            
+                <a href="testngsi_ce_shi_fang_fa_zhi_gong_chang.html">
+            
+                    
+                    TestNG·四 测试方法之工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="testngwu_yun_xingtestng.html">
+            
+                <a href="testngwu_yun_xingtestng.html">
+            
+                    
+                    TestNG·五 运行TestNG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="testngliu_ce_shi_jie_guo.html">
+            
+                <a href="testngliu_ce_shi_jie_guo.html">
+            
+                    
+                    TestNG·六 测试结果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="testngqi_annotation.html">
+            
+                <a href="testngqi_annotation.html">
+            
+                    
+                    TestNG·七 annotation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="testngba_bing_fa_ce_shi.html">
+            
+                <a href="testngba_bing_fa_ce_shi.html">
+            
+                    
+                    TestNG·八 并发测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="testngjiu_shi_yong_testng_-_xslt_gai_xie_testng_de.html">
+            
+                <a href="testngjiu_shi_yong_testng_-_xslt_gai_xie_testng_de.html">
+            
+                    
+                    TestNG·九 使用testng-xslt改写testng的测试报告
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="webdriver_&_testngcan_shu_hua_ji_yong_li_pai_xu.html">
+            
+                <a href="webdriver_&_testngcan_shu_hua_ji_yong_li_pai_xu.html">
+            
+                    
+                    WebDriver & TestNG·参数化及用例排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="webdriver_&_testngjia_gou.html">
+            
+                <a href="webdriver_&_testngjia_gou.html">
+            
+                    
+                    WebDriver & TestNG·架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >WebDriver·二 浏览器操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="webdriver&#x62FE;&#x7EA7;&#x800C;&#x4E0A;&#xB7;&#x4E4B;&#x4E8C;-&#x6D4F;&#x89C8;&#x5668;&#x64CD;&#x4F5C;">WebDriver&#x62FE;&#x7EA7;&#x800C;&#x4E0A;&#xB7;&#x4E4B;&#x4E8C; &#x6D4F;&#x89C8;&#x5668;&#x64CD;&#x4F5C;</h1>
+<hr>
+<ol>
+<li><p>&#x542F;&#x52A8;&#x6D4F;&#x89C8;&#x5668;</p>
+<p>A.firefox</p>
+<pre><code>//&#x6253;&#x5F00;&#x9ED8;&#x8BA4;&#x8DEF;&#x5F84;&#x7684;firefox&#xFF08;&#x8DEF;&#x5F84;&#x6307;&#x7684;&#x662F; firefox &#x7684;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#xFF09;
+     WebDriver diver = new FirefoxDriver();
+//&#x6253;&#x5F00;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x7684;firefox,&#x65B9;&#x6CD5;1
+     System.setProperty(&quot;webdriver.firefox.bin&quot;,&quot;D:\\ProgramFiles\\Mozilla Firefox\\firefox.exe&quot;);
+     WebDriver dr = new FirefoxDriver();
+//&#x6253;&#x5F00;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x7684;firefox,&#x65B9;&#x6CD5;2
+     File pathToFirefoxBinary = new File(&quot;D:\\Program Files\\Mozilla Firefox\\firefox.exe&quot;);  
+     FirefoxBinary firefoxbin = new FirefoxBinary(pathToFirefoxBinary);  
+     WebDriver driver1 = new FirefoxDriver(firefoxbin,null);
+</code></pre><p>B.ie</p>
+<pre><code>//&#x6253;&#x5F00;ie
+     WebDriver ie_driver = new InternetExplorerDriver();
+</code></pre><p>C.chrome </p>
+<p> &#x56E0;&#x4E3A;Chrome Driver&#x662F;Chromium &#x9879;&#x76EE;&#x81EA;&#x5DF1;&#x652F;&#x6301;&#x548C;&#x7EF4;&#x62A4;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x5FC5;&#x9700;&#x53E6;&#x5916;&#x4E0B;&#x8F7D;chromedriver.exe&#xFF0C;&#x653E;&#x5728;&#x76EE;&#x5F55;&#x4E0B;C:\WINDOWS\system32
+ &#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A; 
+ <a href="http://code.google.com/p/chromedriver/downloads/list" target="_blank">http://code.google.com/p/chromedriver/downloads/list</a>
+ <a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank">http://chromedriver.storage.googleapis.com/index.html</a></p>
+<pre><code> //&#x6253;&#x5F00;chrome
+         WebDriver driver = new ChromeDriver();
+</code></pre><p> &#x53E6;&#x4E00;&#x79CD;&#x542F;&#x52A8;chrome &#x7684;&#x65B9;&#x6CD5;</p>
+<p> wiki&#x4ECB;&#x7ECD;&#xFF1A;<a href="http://code.google.com/p/selenium/wiki/ChromeDriver" target="_blank">http://code.google.com/p/selenium/wiki/ChromeDriver</a></p>
+<pre><code>  //&#x6253;&#x5F00;chrome 
+         System.setProperty(&quot;webdriver.chrome.driver&quot;, &quot;D:\\chromedriver.exe&quot;); 
+         System.setProperty(&quot;webdriver.chrome.bin&quot;, 
+                             C:\\Documents and Settings\\fy\\Local Settings&quot; 
+                             +&quot;\\Application Data\\Google\\Chrome\\Application\\chrome.exe&quot;);
+</code></pre><p> Chromium&#x4ECB;&#x7ECD;&#xFF1A;<a href="http://code.google.com/p/chromium/" target="_blank">http://code.google.com/p/chromium/</a></p>
+</li>
+<li><p>&#x9875;&#x9762;&#x8DF3;&#x8F6C;url</p>
+<pre><code>String url = &quot;http://www.baidu.com&quot;;
+WebDriver driver = new FirefoxDriver();
+</code></pre><p>A //&#x7528;get&#x65B9;&#x6CD5;</p>
+<pre><code>driver.get(url);
+</code></pre><p>B //&#x7528;navigate&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8C03;&#x7528;to&#x65B9;&#x6CD5;,chrome&#x4E0D;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;</p>
+<pre><code> driver.navigate().to(url);
+</code></pre></li>
+<li>&#x5982;&#x679C;&#x9875;&#x9762;&#x6587;&#x4EF6;&#x5728;&#x672C;&#x5730;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x5199;<pre><code>WebDriver dr = new ChromeDriver();
+//&#x9875;&#x9762;&#x6587;&#x4EF6;&#x5728;&#x9879;&#x76EE;src&#x4E0B;&#x7684;&#x8DEF;&#x5F84; src/filename.html 
+File file = new File(&quot;src/filename.html&quot;);
+String filePath = &quot;file:///&quot; + file.getAbsolutePath();
+System.out.printf(&quot;now accesss %s \n&quot;, filePath);
+dr.get(filePath);
+</code></pre></li>
+<li>&#x5173;&#x95ED;&#x6D4F;&#x89C8;&#x5668;<pre><code>//quit &#x5173;&#x95ED;&#x6240;&#x6709;&#x9875;&#x9762;  close &#x5173;&#x95ED;&#x672C;&#x6B21;&#x6267;&#x884C;&#x6253;&#x5F00;&#x7684;&#x9875;&#x9762; 
+A.//&#x7528;quit&#x65B9;&#x6CD5;
+     driver.quit();
+B.//&#x7528;close&#x65B9;&#x6CD5;   
+     driver.close();
+</code></pre></li>
+<li>&#x6D4F;&#x89C8;&#x5668;&#x6700;&#x5927;&#x5316;<pre><code>driver.manage().window().maximize();
+</code></pre></li>
+<li><p>&#x83B7;&#x53D6;&#x9875;&#x9762;&#x4FE1;&#x606F;</p>
+<pre><code>//&#x5F97;&#x5230;title
+String title = driver.getTitle();
+//&#x5F97;&#x5230;&#x5F53;&#x524D;&#x9875;&#x9762;url
+String currentUrl = driver.getCurrentUrl();
+
+getWindowHandle()    &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x7A97;&#x53E3;&#x53E5;&#x67C4;
+getWindowHandles()  &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6240;&#x6709;&#x7A97;&#x53E3;&#x53E5;&#x67C4;
+getPageSource()         &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x9875;&#x9762;&#x7684;&#x6E90;&#x7801;
+//String s=driver.getPageSource();s=s.substring(s.indexOf(&quot;{&quot;), s.indexOf(&quot;}&quot;));
+//System.out.println(&quot;&#x5F53;&#x524D;&#x9875;&#x9762;&#x7684;&#x6E90;&#x7801;:&quot;+s);
+</code></pre></li>
+<li><p>&#x603B;&#x7ED3;</p>
+<p>&#x64CD;&#x4F5C;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x4E3B;&#x8981;&#x65B9;&#x6CD5;&#x90FD;&#x6765;&#x81EA;org.openqa.selenium.WebDriver&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x4E2D;&#x3002;
+&#x6E90;&#x4EE3;&#x7801;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x90FD;&#x662F;&#x5728; org.openqa.selenium.remote.RemoteWebDriver&#x8FD9;&#x4E2A;&#x7C7B;&#x4E2D;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x7136;&#x540E;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x7684;driver&#x7C7B;&#x7EE7;&#x627F; RemoteWebDriver&#x3002;</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_yi_huan_jing_bu_shu.html" class="navigation navigation-prev " aria-label="Previous page: WebDriver·一 环境部署">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_san_ding_wei_ye_mian.html" class="navigation navigation-next " aria-label="Next page: WebDriver·三 定位页面元素">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"WebDriver·二 浏览器操作","level":"1.1.3","depth":2,"next":{"title":"WebDriver·三 定位页面元素","level":"1.1.4","depth":2,"path":"webdrivershi_ji_er_4e0ab7_zhi_san_ding_wei_ye_mian.md","ref":"webdrivershi_ji_er_4e0ab7_zhi_san_ding_wei_ye_mian.md","articles":[]},"previous":{"title":"WebDriver·一 环境部署","level":"1.1.2","depth":2,"path":"webdrivershi_ji_er_4e0ab7_zhi_yi_huan_jing_bu_shu.md","ref":"webdrivershi_ji_er_4e0ab7_zhi_yi_huan_jing_bu_shu.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WebDriver·TestNg学习日志","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"WebDriver·TestNg·selenium2 学习入门教程"},"file":{"path":"webdrivershi_ji_er_4e0ab7_zhi_er_liu_lan_qi_cao_zu.md","mtime":"2016-06-17T06:44:36.274Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-17T07:00:14.598Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

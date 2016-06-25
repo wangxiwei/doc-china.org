@@ -1,0 +1,2959 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>说明Django中的安全问题 · django-chinese-docs-1.8</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="8_3_Clickjacking protection.html" />
+    
+    
+    <link rel="prev" href="8_1_Security overview_.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1_First steps.html">
+            
+                <a href="1_First steps.html">
+            
+                    
+                    新手入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_1.html">
+            
+                <a href="1_1.html">
+            
+                    
+                    从零开始
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1_1_1_Django at a glance.html">
+            
+                <a href="1_1_1_Django at a glance.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="1_1_2_Quick install guide.html">
+            
+                <a href="1_1_2_Quick install guide.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1_2.html">
+            
+                <a href="1_2.html">
+            
+                    
+                    教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="1_2_1_Part 1 Models.html">
+            
+                <a href="1_2_1_Part 1 Models.html">
+            
+                    
+                    第1部分：模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="1_2_2_Part 2 The admin site.html">
+            
+                <a href="1_2_2_Part 2 The admin site.html">
+            
+                    
+                    第2部分：管理站点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="1_2_3_Part 3 Views and templates.html">
+            
+                <a href="1_2_3_Part 3 Views and templates.html">
+            
+                    
+                    第3部分：视图和模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="1_2_4_Part 4 Forms and generic views.html">
+            
+                <a href="1_2_4_Part 4 Forms and generic views.html">
+            
+                    
+                    第4部分：表单和通用视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="1_2_5_Part 5 Testing.html">
+            
+                <a href="1_2_5_Part 5 Testing.html">
+            
+                    
+                    第5部分：测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="1_2_6_Part 6 Static files.html">
+            
+                <a href="1_2_6_Part 6 Static files.html">
+            
+                    
+                    第6部分：静态文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1_3.html">
+            
+                <a href="1_3.html">
+            
+                    
+                    高级教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="1_3_1_How to write reusable apps.html">
+            
+                <a href="1_3_1_How to write reusable apps.html">
+            
+                    
+                    如何编写可重用的应用 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="1_3_2_Writing your first patch for Django_.html">
+            
+                <a href="1_3_2_Writing your first patch for Django_.html">
+            
+                    
+                    为Django编写首个补丁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2_The model layer.html">
+            
+                <a href="2_The model layer.html">
+            
+                    
+                    模型层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2_1.html">
+            
+                <a href="2_1.html">
+            
+                    
+                    模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="2_1_1_Model syntax.html">
+            
+                <a href="2_1_1_Model syntax.html">
+            
+                    
+                    模型语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" >
+            
+                <span>
+            
+                    
+                    字段类型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="2_1_3_Meta options.html">
+            
+                <a href="2_1_3_Meta options.html">
+            
+                    
+                    元选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="2_1_4_Model class.html">
+            
+                <a href="2_1_4_Model class.html">
+            
+                    
+                    模型类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2_2.html">
+            
+                <a href="2_2.html">
+            
+                    
+                    查询集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="2_2_1_Making queries.html">
+            
+                <a href="2_2_1_Making queries.html">
+            
+                    
+                    执行查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" >
+            
+                <span>
+            
+                    
+                    查询集方法参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="2_2_3_Lookup expressions.html">
+            
+                <a href="2_2_3_Lookup expressions.html">
+            
+                    
+                    查找表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2_3.html">
+            
+                <a href="2_3.html">
+            
+                    
+                    模型的实例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="2_3_1_Instance methods.html">
+            
+                <a href="2_3_1_Instance methods.html">
+            
+                    
+                    实例方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="2_3_2_Accessing related objects.html">
+            
+                <a href="2_3_2_Accessing related objects.html">
+            
+                    
+                    访问关联对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="2_4.html">
+            
+                <a href="2_4.html">
+            
+                    
+                    迁移
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" >
+            
+                <span>
+            
+                    
+                    迁移简介
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" >
+            
+                <span>
+            
+                    
+                    操作参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="2_4_3_SchemaEditor.html">
+            
+                <a href="2_4_3_SchemaEditor.html">
+            
+                    
+                    模式编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="2_4_4_Writing migrations.html">
+            
+                <a href="2_4_4_Writing migrations.html">
+            
+                    
+                    编写迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="2_5.html">
+            
+                <a href="2_5.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="2_5_1_Manager.html">
+            
+                <a href="2_5_1_Manager.html">
+            
+                    
+                    管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="2_5_2_Performing raw SQL queries.html">
+            
+                <a href="2_5_2_Performing raw SQL queries.html">
+            
+                    
+                    原始的SQL查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" >
+            
+                <span>
+            
+                    
+                    事务
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="2_5_4_Aggregation.html">
+            
+                <a href="2_5_4_Aggregation.html">
+            
+                    
+                    聚合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" >
+            
+                <span>
+            
+                    
+                    自定义字段
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="2_5_6_Multiple databases.html">
+            
+                <a href="2_5_6_Multiple databases.html">
+            
+                    
+                    多数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="2_5_7_Custom lookups.html">
+            
+                <a href="2_5_7_Custom lookups.html">
+            
+                    
+                    自定义查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" >
+            
+                <span>
+            
+                    
+                    查询表达式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="2_5_9_Conditional Expressions.html">
+            
+                <a href="2_5_9_Conditional Expressions.html">
+            
+                    
+                    条件表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.10" data-path="2_5_10_Database Functions.html">
+            
+                <a href="2_5_10_Database Functions.html">
+            
+                    
+                    数据库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="2_6.html">
+            
+                <a href="2_6.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" >
+            
+                <span>
+            
+                    
+                    支持的数据库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="2_6_2_Legacy databases.html">
+            
+                <a href="2_6_2_Legacy databases.html">
+            
+                    
+                    遗留的数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="2_6_3_Providing initial data.html">
+            
+                <a href="2_6_3_Providing initial data.html">
+            
+                    
+                    提供初始数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="2_6_4_Optimize database access.html">
+            
+                <a href="2_6_4_Optimize database access.html">
+            
+                    
+                    优化数据库访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" >
+            
+                <span>
+            
+                    
+                    PostgreSQL特色功能
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3_The view layer.html">
+            
+                <a href="3_The view layer.html">
+            
+                    
+                    视图层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3_1.html">
+            
+                <a href="3_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="3_1_1_URLconfs.html">
+            
+                <a href="3_1_1_URLconfs.html">
+            
+                    
+                    URL配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="3_1_2_View functions.html">
+            
+                <a href="3_1_2_View functions.html">
+            
+                    
+                    视图函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="3_1_3_Shortcuts.html">
+            
+                <a href="3_1_3_Shortcuts.html">
+            
+                    
+                    快捷函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="3_1_4_Decorators.html">
+            
+                <a href="3_1_4_Decorators.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3_2.html">
+            
+                <a href="3_2.html">
+            
+                    
+                    参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="3_2_1_Built-in Views.html">
+            
+                <a href="3_2_1_Built-in Views.html">
+            
+                    
+                    内建的视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" >
+            
+                <span>
+            
+                    
+                    请求/响应 对象
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="3_2_3_TemplateResponse objects.html">
+            
+                <a href="3_2_3_TemplateResponse objects.html">
+            
+                    
+                    TemplateResponse 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3_3.html">
+            
+                <a href="3_3.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="3_3_1_Overview.html">
+            
+                <a href="3_3_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="3_3_2_File objects.html">
+            
+                <a href="3_3_2_File objects.html">
+            
+                    
+                    File 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="3_3_3_Storage API.html">
+            
+                <a href="3_3_3_Storage API.html">
+            
+                    
+                    储存API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="3_3_4_Managing files.html">
+            
+                <a href="3_3_4_Managing files.html">
+            
+                    
+                    管理文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="3_3_5_Custom storage.html">
+            
+                <a href="3_3_5_Custom storage.html">
+            
+                    
+                    自定义存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3_4.html">
+            
+                <a href="3_4.html">
+            
+                    
+                    基于类的视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="3_4_1_Overview.html">
+            
+                <a href="3_4_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="3_4_2_Built-in display views.html">
+            
+                <a href="3_4_2_Built-in display views.html">
+            
+                    
+                    内建显示视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="3_4_3_Built-in editing views.html">
+            
+                <a href="3_4_3_Built-in editing views.html">
+            
+                    
+                    内建编辑视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" >
+            
+                <span>
+            
+                    
+                    使用Mixin
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="3_4_5_API reference.html">
+            
+                <a href="3_4_5_API reference.html">
+            
+                    
+                    API参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.6" data-path="3_4_6_Flattened index.html">
+            
+                <a href="3_4_6_Flattened index.html">
+            
+                    
+                    分类索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3_5.html">
+            
+                <a href="3_5.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="3_5_1_Generating CSV.html">
+            
+                <a href="3_5_1_Generating CSV.html">
+            
+                    
+                    生成 CSV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="3_5_2_Generating PDF.html">
+            
+                <a href="3_5_2_Generating PDF.html">
+            
+                    
+                    生成 PDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3_6.html">
+            
+                <a href="3_6.html">
+            
+                    
+                    中间件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="3_6_1_Overview.html">
+            
+                <a href="3_6_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="3_6_2_Built-in middleware classes.html">
+            
+                <a href="3_6_2_Built-in middleware classes.html">
+            
+                    
+                    内建的中间件类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4_The template layer.html">
+            
+                <a href="4_The template layer.html">
+            
+                    
+                    模板层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4_1.html">
+            
+                <a href="4_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4_2.html">
+            
+                <a href="4_2.html">
+            
+                    
+                    面向设计师
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="4_2_1_Language overview.html">
+            
+                <a href="4_2_1_Language overview.html">
+            
+                    
+                    语言概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" >
+            
+                <span>
+            
+                    
+                    内建标签和过滤器
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" >
+            
+                <span>
+            
+                    
+                    网页设计助手(已废弃)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="4_2_4_Humanization.html">
+            
+                <a href="4_2_4_Humanization.html">
+            
+                    
+                    人性化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4_3.html">
+            
+                <a href="4_3.html">
+            
+                    
+                    面向程序员
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" >
+            
+                <span>
+            
+                    
+                    模板API
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" >
+            
+                <span>
+            
+                    
+                    自定义标签和过滤器
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5_Forms.html">
+            
+                <a href="5_Forms.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5_1.html">
+            
+                <a href="5_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="5_1_1_Overview.html">
+            
+                <a href="5_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="5_1_2_Form API.html">
+            
+                <a href="5_1_2_Form API.html">
+            
+                    
+                    表单API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" >
+            
+                <span>
+            
+                    
+                    内建的字段
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="5_1_4_Built-in widgets.html">
+            
+                <a href="5_1_4_Built-in widgets.html">
+            
+                    
+                    内建的Widget
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5_2.html">
+            
+                <a href="5_2.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" >
+            
+                <span>
+            
+                    
+                    模型表单
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="5_2_2_Integrating media.html">
+            
+                <a href="5_2_2_Integrating media.html">
+            
+                    
+                    整合媒体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" >
+            
+                <span>
+            
+                    
+                    表单集
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" >
+            
+                <span>
+            
+                    
+                    自定义验证
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6_The development process.html">
+            
+                <a href="6_The development process.html">
+            
+                    
+                    开发过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6_1.html">
+            
+                <a href="6_1.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="6_1_1_Overview.html">
+            
+                <a href="6_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" >
+            
+                <span>
+            
+                    
+                    完整列表设置
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6_2.html">
+            
+                <a href="6_2.html">
+            
+                    
+                    应用程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6_3.html">
+            
+                <a href="6_3.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="6_3_Overview.html">
+            
+                <a href="6_3_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="6_4.html">
+            
+                <a href="6_4.html">
+            
+                    
+                    django-admin 和 manage.py
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="6_4_2_Adding custom commands.html">
+            
+                <a href="6_4_2_Adding custom commands.html">
+            
+                    
+                    添加自定义的命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="6_5.html">
+            
+                <a href="6_5.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="6_5_1_Introduction.html">
+            
+                <a href="6_5_1_Introduction.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" >
+            
+                <span>
+            
+                    
+                    编写并运行测试
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" >
+            
+                <span>
+            
+                    
+                    包含的测试工具
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.4" >
+            
+                <span>
+            
+                    
+                    高级主题
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="6_6.html">
+            
+                <a href="6_6.html">
+            
+                    
+                    部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.6.1" data-path="6_6_1_Overview.html">
+            
+                <a href="6_6_1_Overview.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2" data-path="6_6_2_WSGI servers.html">
+            
+                <a href="6_6_2_WSGI servers.html">
+            
+                    
+                    WSGI服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3" >
+            
+                <span>
+            
+                    
+                    FastCGI/SCGI/AJP (已废弃)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.4" data-path="6_6_4_Deploying static files.html">
+            
+                <a href="6_6_4_Deploying static files.html">
+            
+                    
+                    部署静态文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.5" data-path="6_6_5_Tracking code errors by email.html">
+            
+                <a href="6_6_5_Tracking code errors by email.html">
+            
+                    
+                    通过email追踪代码错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7_Admin.html">
+            
+                <a href="7_Admin.html">
+            
+                    
+                    Admin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" >
+            
+                <span>
+            
+                    
+                    管理站点
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7_2_Admin actions.html">
+            
+                <a href="7_2_Admin actions.html">
+            
+                    
+                    管理操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7_3_Admin documentation generator.html">
+            
+                <a href="7_3_Admin documentation generator.html">
+            
+                    
+                    管理文档生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8_Security.html">
+            
+                <a href="8_Security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8_1_Security overview_.html">
+            
+                <a href="8_1_Security overview_.html">
+            
+                    
+                    安全概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.2" data-path="8_2_Disclosed security issues in Django.html">
+            
+                <a href="8_2_Disclosed security issues in Django.html">
+            
+                    
+                    说明Django中的安全问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="8_3_Clickjacking protection.html">
+            
+                <a href="8_3_Clickjacking protection.html">
+            
+                    
+                    点击劫持保护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" >
+            
+                <span>
+            
+                    
+                    伪造跨站请求保护
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="8_5_Cryptographic signing.html">
+            
+                <a href="8_5_Cryptographic signing.html">
+            
+                    
+                    加密签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9_Internationalization and localization.html">
+            
+                <a href="9_Internationalization and localization.html">
+            
+                    
+                    国际化和本地化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9_1_1_Overview.html">
+            
+                <a href="9_1_1_Overview.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" >
+            
+                <span>
+            
+                    
+                    国际化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" >
+            
+                <span>
+            
+                    
+                    本地化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="9_1_4_Localized Web UI formatting and form input.html">
+            
+                <a href="9_1_4_Localized Web UI formatting and form input.html">
+            
+                    
+                    本地化WEB UI格式化输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="9_2_“Local flavor”.html">
+            
+                <a href="9_2_“Local flavor”.html">
+            
+                    
+                    “本地特色”
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" >
+            
+                <span>
+            
+                    
+                    时区
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="13_Common Web application tools.html">
+            
+                <a href="13_Common Web application tools.html">
+            
+                    
+                    常见的网站应用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="13_1.html">
+            
+                <a href="13_1.html">
+            
+                    
+                    认证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="13_1_1_Overview.html">
+            
+                <a href="13_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.2" data-path="13_1_2_Using the authentication system.html">
+            
+                <a href="13_1_2_Using the authentication system.html">
+            
+                    
+                    使用认证系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.3" data-path="13_1_3_Password management.html">
+            
+                <a href="13_1_3_Password management.html">
+            
+                    
+                    密码管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.4" >
+            
+                <span>
+            
+                    
+                    自定义认证
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.5" >
+            
+                <span>
+            
+                    
+                    API参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" >
+            
+                <span>
+            
+                    
+                    缓存
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="13_3_Logging.html">
+            
+                <a href="13_3_Logging.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" >
+            
+                <span>
+            
+                    
+                    发送邮件
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" >
+            
+                <span>
+            
+                    
+                    组织 feeds (RSS/Atom)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="13_6_Pagination.html">
+            
+                <a href="13_6_Pagination.html">
+            
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" >
+            
+                <span>
+            
+                    
+                    消息框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" >
+            
+                <span>
+            
+                    
+                    序列化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="13_9_1_Sessions.html">
+            
+                <a href="13_9_1_Sessions.html">
+            
+                    
+                    会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" >
+            
+                <span>
+            
+                    
+                    网站地图
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" >
+            
+                <span>
+            
+                    
+                    静态文件处理
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.12" data-path="13_12_Data validation.html">
+            
+                <a href="13_12_Data validation.html">
+            
+                    
+                    数据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="14_Other core functionalities.html">
+            
+                <a href="14_Other core functionalities.html">
+            
+                    
+                    其它核心功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="14_1_Conditional content processing.html">
+            
+                <a href="14_1_Conditional content processing.html">
+            
+                    
+                    按需内容处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" >
+            
+                <span>
+            
+                    
+                    内容类型和泛型关系
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" >
+            
+                <span>
+            
+                    
+                    数据浏览
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="14_4_1_Redirects.html">
+            
+                <a href="14_4_1_Redirects.html">
+            
+                    
+                    重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="14_5_Signals.html">
+            
+                <a href="14_5_Signals.html">
+            
+                    
+                    信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="14_6_System check framework.html">
+            
+                <a href="14_6_System check framework.html">
+            
+                    
+                    系统检查框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" >
+            
+                <span>
+            
+                    
+                    网站框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" >
+            
+                <span>
+            
+                    
+                    Django中的Unicode编码
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >说明Django中的安全问题</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5B89;&#x5168;&#x95EE;&#x9898;&#x5F52;&#x6863;">&#x5B89;&#x5168;&#x95EE;&#x9898;&#x5F52;&#x6863;</h1>
+<p>Django&#x7684;&#x5F00;&#x53D1;&#x5C0F;&#x7EC4;&#x575A;&#x5B9A;&#x5730;&#x627F;&#x8BFA;&#xFF0C;&#x4E3A;&#x62A5;&#x544A;&#x548C;&#x516C;&#x5F00;&#x5B89;&#x5168;&#x76F8;&#x5173;&#x95EE;&#x9898;&#x8D1F;&#x8D23;&#xFF0C;&#x8FD9;&#x5728;<a href="../internals/security.html"><em>Django&#x7684;&#x5B89;&#x5168;&#x95EE;&#x9898;</em></a>&#x4E2D;&#x5217;&#x51FA;&#x3002;</p>
+<p>&#x4F5C;&#x4E3A;&#x627F;&#x8BFA;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x4FDD;&#x7559;&#x4E86;&#x4E0B;&#x9762;&#x7684;&#x95EE;&#x9898;&#x7684;&#x5386;&#x53F2;&#x5217;&#x8868;&#xFF0C;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x5DF2;&#x7ECF;&#x88AB;&#x89E3;&#x51B3;&#x548C;&#x516C;&#x5F00;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x5217;&#x8868;&#x5305;&#x542B;&#x65E5;&#x671F;&#x3001;&#x7B80;&#x77ED;&#x7684;&#x63CF;&#x8FF0;&#x3001;<a href="http://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures" target="_blank">CVE &#x6807;&#x8BC6;&#x7B26;</a>&#x3001;&#x53D7;&#x5F71;&#x54CD;&#x7684;&#x7248;&#x672C;&#x5217;&#x8868;&#x3001;&#x5B8C;&#x6574;&#x7684;&#x9875;&#x9762;&#x94FE;&#x63A5;&#x4EE5;&#x53CA;&#x76F8;&#x5E94;&#x8865;&#x4E01;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x6709;&#x4E00;&#x4E9B;&#x91CD;&#x8981;&#x7684;&#x9644;&#x52A0;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>&#x5217;&#x51FA;&#x7684;&#x53D7;&#x5F71;&#x54CD;&#x7248;&#x672C;&#x53EA;&#x5305;&#x542B;&#x4E86;&#x5728;&#x6F0F;&#x6D1E;&#x516C;&#x5F00;&#x65F6;&#x671F;&#x7684;Django&#x7A33;&#x5B9A;&#x7684;&#x5B89;&#x5168;&#x652F;&#x6301;&#x53D1;&#x884C;&#x7248;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x8001;&#x7684;&#x7248;&#x672C;&#xFF08;&#x5B89;&#x5168;&#x652F;&#x6301;&#x5DF2;&#x7ECF;&#x8FC7;&#x671F;&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;&#x9884;&#x53D1;&#x884C;&#x7248;&#x672C;&#xFF08;alpha/beta/RC&#xFF09;&#x5728;&#x6F0F;&#x6D1E;&#x516C;&#x5F00;&#x7684;&#x65F6;&#x671F;&#x4E5F;&#x53EF;&#x80FD;&#x4F1A;&#x53D7;&#x5F71;&#x54CD;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x5217;&#x51FA;&#x3002;</li>
+<li>Django&#x9879;&#x76EE;&#x5076;&#x5C14;&#x4F1A;&#x53D1;&#x5E03;&#x5B89;&#x5168;&#x516C;&#x544A;&#xFF0C;&#x6307;&#x51FA;&#x6F5C;&#x5728;&#x7684;&#x5B89;&#x5168;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x7531;&#x4E0D;&#x5408;&#x7406;&#x7684;&#x914D;&#x7F6E;&#x6216;&#x5176;&#x4ED6;Django&#x672C;&#x8EAB;&#x4EE5;&#x5916;&#x7684;&#x95EE;&#x9898;&#x4EA7;&#x751F;&#x3002;&#x8FD9;&#x4E9B;&#x516C;&#x544A;&#x4E2D;&#x6709;&#x4E00;&#x4E9B;&#x6536;&#x5230;&#x4E86;CVE&#xFF1B;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B83;&#x4EEC;&#x4F1A;&#x5728;&#x8FD9;&#x91CC;&#x5217;&#x51FA;&#x6765;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x9644;&#x52A0;&#x7684;&#x8865;&#x4E01;&#x6216;&#x8005;&#x53D1;&#x884C;&#x7248;&#xFF0C;&#x53EA;&#x6709;&#x63CF;&#x8FF0;&#x3001;&#x516C;&#x5F00;&#x4FE1;&#x606F;&#x548C;CVE&#x3002;</li>
+</ul>
+<h2 id="issues-prior-to-djangos-security-process">Issues prior to Django&#x2019;s security process</h2>
+<p>&#x4E00;&#x4E9B;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x5728;Django&#x5177;&#x6709;&#x89C4;&#x8303;&#x5316;&#x7684;&#x5B89;&#x5168;&#x5904;&#x7406;&#x6D41;&#x7A0B;&#x4E4B;&#x524D;&#x88AB;&#x4FEE;&#x590D;&#x3002;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x53D1;&#x5E03;&#x65B0;&#x7684;&#x53D1;&#x884C;&#x7248;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x5206;&#x914D;CVE&#x3002;</p>
+<h3 id="august-16-2006---cve-2007-0404">August 16, 2006 - CVE-2007-0404</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-0404&amp;cid=3" target="_blank">CVE-2007-0404</a>: &#x7FFB;&#x8BD1;&#x6846;&#x67B6;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x9A8C;&#x8BC1;&#x95EE;&#x9898;&#x3002;<a href="https://www.djangoproject.com/weblog/2006/aug/16/compilemessages/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 0.90 <a href="https://github.com/django/django/commit/518d406e53" target="_blank">(patch)</a></li>
+<li>Django 0.91 <a href="https://github.com/django/django/commit/518d406e53" target="_blank">(patch)</a></li>
+<li>Django 0.95 <a href="https://github.com/django/django/commit/a132d411c6" target="_blank">(patch)</a> (released January 21 2007)</li>
+</ul>
+<h3 id="january-21-2007---cve-2007-0405">January 21, 2007 - CVE-2007-0405</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-0405&amp;cid=3" target="_blank">CVE-2007-0405</a>: &#x5DF2;&#x8BA4;&#x8BC1;&#x7528;&#x6237;&#x7684;&#x53EF;&#x89C1;&#x201C;&#x7F13;&#x5B58;&#x201D;&#x3002;<a href="https://www.djangoproject.com/weblog/2007/jan/21/0951/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 0.95 <a href="https://github.com/django/django/commit/e89f0a6558" target="_blank">(patch)</a></li>
+</ul>
+<h2 id="issues-under-djangos-security-process">Issues under Django&#x2019;s security process</h2>
+<p>&#x6240;&#x6709;&#x5176;&#x5B83;&#x7684;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x90FD;&#x5DF2;&#x7ECF;&#x5728;Django&#x5B89;&#x5168;&#x5904;&#x7406;&#x6D41;&#x7A0B;&#x4E0B;&#x7684;&#x7248;&#x672C;&#x4E2D;&#x89E3;&#x51B3;&#x3002;&#x4E0B;&#x9762;&#x4F1A;&#x5217;&#x51FA;&#x6765;&#xFF1A;</p>
+<h3 id="october-26-2007---cve-2007-5712">October 26, 2007 - CVE-2007-5712</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-5712&amp;cid=3" target="_blank">CVE-2007-5712</a>: &#x901A;&#x8FC7;&#x4EFB;&#x610F;&#x5927;&#x5C3A;&#x5BF8;<code>Accept-Language</code>&#x534F;&#x8BAE;&#x5934;&#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2007/oct/26/security-fix/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 0.91 <a href="https://github.com/django/django/commit/8bc36e726c9e8c75c681d3ad232df8e882aaac81" target="_blank">(patch)</a></li>
+<li>Django 0.95 <a href="https://github.com/django/django/commit/412ed22502e11c50dbfee854627594f0e7e2c234" target="_blank">(patch)</a></li>
+<li>Django 0.96 <a href="https://github.com/django/django/commit/7dd2dd08a79e388732ce00e2b5514f15bd6d0f6f" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="may-14-2008---cve-2008-2302">May 14, 2008 - CVE-2008-2302</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2302&amp;cid=3" target="_blank">CVE-2008-2302</a>: &#x901A;&#x8FC7;admin&#x767B;&#x5F55;&#x91CD;&#x5B9A;&#x5411;&#x7684;XSS&#x3002;<a href="https://www.djangoproject.com/weblog/2008/may/14/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 0.91 <a href="https://github.com/django/django/commit/50ce7fb57d" target="_blank">(patch)</a></li>
+<li>Django 0.95 <a href="https://github.com/django/django/commit/50ce7fb57d" target="_blank">(patch)</a></li>
+<li>Django 0.96 <a href="https://github.com/django/django/commit/7791e5c050" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="september-2-2008---cve-2008-3909">September 2, 2008 - CVE-2008-3909</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-3909&amp;cid=3" target="_blank">CVE-2008-3909</a>: &#x901A;&#x8FC7;&#x5728;admin&#x767B;&#x5F55;&#x72B6;&#x6001;&#x4E0B;&#x4FDD;&#x5B58;POST&#x6570;&#x636E;&#x7684;CSRF&#x3002;<a href="https://www.djangoproject.com/weblog/2008/sep/02/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 0.91 <a href="https://github.com/django/django/commit/44debfeaa4473bd28872c735dd3d9afde6886752" target="_blank">(patch)</a></li>
+<li>Django 0.95 <a href="https://github.com/django/django/commit/aee48854a164382c655acb9f18b3c06c3d238e81" target="_blank">(patch)</a></li>
+<li>Django 0.96 <a href="https://github.com/django/django/commit/7e0972bded362bc4b851c109df2c8a6548481a8e" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="july-28-2009---cve-2009-2659">July 28, 2009 - CVE-2009-2659</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2659&amp;cid=3" target="_blank">CVE-2009-2659</a>: &#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5A92;&#x4F53;&#x5904;&#x7406;&#x5668;&#x4E0A;&#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2009/jul/28/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 0.96 <a href="https://github.com/django/django/commit/da85d76fd6" target="_blank">(patch)</a></li>
+<li>Django 1.0 <a href="https://github.com/django/django/commit/df7f917b7f" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="october-9-2009---cve-2009-3965">October 9, 2009 - CVE-2009-3965</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3695&amp;cid=3" target="_blank">CVE-2009-3965</a>: &#x901A;&#x8FC7;&#x6267;&#x884C;&#x5F02;&#x5E38;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2009/oct/09/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.0 <a href="https://github.com/django/django/commit/594a28a904" target="_blank">(patch)</a></li>
+<li>Django 1.1 <a href="https://github.com/django/django/commit/e3e992e18b" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="september-8-2010---cve-2010-3082">September 8, 2010 - CVE-2010-3082</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3082&amp;cid=3" target="_blank">CVE-2010-3082</a>: &#x901A;&#x8FC7;&#x4E0D;&#x5B89;&#x5168;cookie&#x503C;&#x7684;XSS&#x3002;<a href="https://www.djangoproject.com/weblog/2010/sep/08/security-release/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.2 <a href="https://github.com/django/django/commit/7f84657b6b" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="december-22-2010---cve-2010-4534">December 22, 2010 - CVE-2010-4534</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4534&amp;cid=3" target="_blank">CVE-2010-4534</a>: &#x7BA1;&#x7406;&#x754C;&#x9762;&#x4E0A;&#x7684;&#x4FE1;&#x606F;&#x6CC4;&#x9732;&#x3002;<a href="https://www.djangoproject.com/weblog/2010/dec/22/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.1 <a href="https://github.com/django/django/commit/17084839fd" target="_blank">(patch)</a></li>
+<li>Django 1.2 <a href="https://github.com/django/django/commit/85207a245b" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="december-22-2010---cve-2010-4535">December 22, 2010 - CVE-2010-4535</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4535&amp;cid=2" target="_blank">CVE-2010-4535</a>: &#x5BC6;&#x7801;&#x91CD;&#x7F6E;&#x673A;&#x5236;&#x4E0A;&#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2010/dec/22/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.1 <a href="https://github.com/django/django/commit/7f8dd9cbac" target="_blank">(patch)</a></li>
+<li>Django 1.2 <a href="https://github.com/django/django/commit/d5d8942a16" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="february-8-2011---cve-2011-0696">February 8, 2011 - CVE-2011-0696</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0696&amp;cid=2" target="_blank">CVE-2011-0696</a>: &#x901A;&#x8FC7;&#x4F2A;&#x9020;HTTP&#x534F;&#x8BAE;&#x5934;&#x7684;XSS&#x3002;<a href="https://www.djangoproject.com/weblog/2011/feb/08/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.1 <a href="https://github.com/django/django/commit/408c5c873c" target="_blank">(patch)</a></li>
+<li>Django 1.2 <a href="https://github.com/django/django/commit/818e70344e" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="february-8-2011---cve-2011-0697">February 8, 2011 - CVE-2011-0697</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0697&amp;cid=2" target="_blank">CVE-2011-0697</a>: &#x901A;&#x8FC7;&#x672A;&#x68C0;&#x67E5;&#x7684;&#x540D;&#x79F0;&#x6216;&#x8005;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x7684;XSS&#x3002;<a href="https://www.djangoproject.com/weblog/2011/feb/08/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.1 <a href="https://github.com/django/django/commit/1966786d2d" target="_blank">(patch)</a></li>
+<li>Django 1.2 <a href="https://github.com/django/django/commit/1f814a9547" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="february-8-2011---cve-2011-0698">February 8, 2011 - CVE-2011-0698</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0698&amp;cid=2" target="_blank">CVE-2011-0698</a>: Windows&#x4E0A;&#x901A;&#x8FC7;&#x4E0D;&#x6B63;&#x786E;&#x7684;&#x76EE;&#x5F55;&#x5206;&#x9694;&#x7B26;&#x5904;&#x7406;&#x7684;&#x76EE;&#x5F55;&#x904D;&#x5386;&#x3002;<a href="https://www.djangoproject.com/weblog/2011/feb/08/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.1 <a href="https://github.com/django/django/commit/570a32a047" target="_blank">(patch)</a></li>
+<li>Django 1.2 <a href="https://github.com/django/django/commit/194566480b" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="september-9-2011---cve-2011-4136">September 9, 2011 - CVE-2011-4136</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4136&amp;cid=2" target="_blank">CVE-2011-4136</a>:&#x4F7F;&#x7528;memory-cache-backed&#x4F1A;&#x8BDD;&#x65F6;&#x7684;&#x4F1A;&#x8BDD;&#x64CD;&#x7EB5;&#x3002;<a href="https://www.djangoproject.com/weblog/2011/sep/09/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.2 <a href="https://github.com/django/django/commit/ac7c3a110f" target="_blank">(patch)</a></li>
+<li>Django 1.3 <a href="https://github.com/django/django/commit/fbe2eead2f" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="september-9-2011---cve-2011-4137">September 9, 2011 - CVE-2011-4137</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4137&amp;cid=2" target="_blank">CVE-2011-4137</a>: &#x901A;&#x8FC7;<code>URLField.verify_exists</code>&#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2011/sep/09/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.2 <a href="https://github.com/django/django/commit/7268f8af86" target="_blank">(patch)</a></li>
+<li>Django 1.3 <a href="https://github.com/django/django/commit/1a76dbefdf" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="september-9-2011---cve-2011-4138">September 9, 2011 - CVE-2011-4138</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4138&amp;cid=2" target="_blank">CVE-2011-4138</a>: &#x901A;&#x8FC7;<code>URLField.verify_exists</code>&#x7684;&#x4FE1;&#x606F;&#x6CC4;&#x9732;/&#x4EFB;&#x4F55;&#x8BF7;&#x6C42;&#x53D1;&#x5E03;&#x3002;<a href="https://www.djangoproject.com/weblog/2011/sep/09/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.2: <a href="https://github.com/django/django/commit/7268f8af86" target="_blank">(patch)</a></li>
+<li>Django 1.3: <a href="https://github.com/django/django/commit/1a76dbefdf" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="september-9-2011---cve-2011-4139">September 9, 2011 - CVE-2011-4139</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4139&amp;cid=2" target="_blank">CVE-2011-4139</a>: <code>Host</code>&#x534F;&#x8BAE;&#x5934;&#x7F13;&#x5B58;&#x6C61;&#x67D3;&#x3002; <a href="https://www.djangoproject.com/weblog/2011/sep/09/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.2 <a href="https://github.com/django/django/commit/c613af4d64" target="_blank">(patch)</a></li>
+<li>Django 1.3 <a href="https://github.com/django/django/commit/2f7fadc38e" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="september-9-2011---cve-2011-4140">September 9, 2011 - CVE-2011-4140</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4140&amp;cid=2" target="_blank">CVE-2011-4140</a>:&#x901A;&#x8FC7;<code>Host</code>&#x534F;&#x8BAE;&#x5934;&#x7684;&#x6F5C;&#x5728;CSRF&#x5A01;&#x80C1;&#x3002;<a href="https://www.djangoproject.com/weblog/2011/sep/09/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<p>&#x8FD9;&#x4E2A;&#x901A;&#x77E5;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x516C;&#x544A;&#xFF0C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8865;&#x4E01;&#x53D1;&#x5E03;&#x3002;</p>
+<ul>
+<li>Django 1.2</li>
+<li>Django 1.3</li>
+</ul>
+<h3 id="july-30-2012---cve-2012-3442">July 30, 2012 - CVE-2012-3442</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3442&amp;cid=2" target="_blank">CVE-2012-3442</a>: &#x901A;&#x8FC7;&#x9A8C;&#x8BC1;&#x91CD;&#x5B9A;&#x5411;&#x6A21;&#x5F0F;&#x5931;&#x8D25;&#x7684;XSS&#x3002;<a href="https://www.djangoproject.com/weblog/2012/jul/30/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.3: <a href="https://github.com/django/django/commit/4dea4883e6c50d75f215a6b9bcbd95273f57c72d" target="_blank">(patch)</a></li>
+<li>Django 1.4: <a href="https://github.com/django/django/commit/e34685034b60be1112160e76091e5aee60149fa1" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="july-30-2012---cve-2012-3443">July 30, 2012 - CVE-2012-3443</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3443&amp;cid=2" target="_blank">CVE-2012-3443</a>: &#x901A;&#x8FC7;&#x538B;&#x7F29;&#x7684;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;u&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2012/jul/30/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.3: <a href="https://github.com/django/django/commit/b2eb4787a0fff9c9993b78be5c698e85108f3446" target="_blank">(patch)</a></li>
+<li>Django 1.4: <a href="https://github.com/django/django/commit/c14f325c4eef628bc7bfd8873c3a72aeb0219141" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="july-30-2012---cve-2012-3444">July 30, 2012 - CVE-2012-3444</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3444&amp;cid=2" target="_blank">CVE-2012-3444</a>:&#x901A;&#x8FC7;&#x5927;&#x5C3A;&#x5BF8;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2012/jul/30/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.3 <a href="https://github.com/django/django/commit/9ca0ff6268eeff92d0d0ac2c315d4b6a8e229155" target="_blank">(patch)</a></li>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/da33d67181b53fe6cc737ac1220153814a1509f6" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="october-17-2012---cve-2012-4520">October 17, 2012 - CVE-2012-4520</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4520&amp;cid=2" target="_blank">CVE-2012-4520</a>: <code>Host</code>&#x534F;&#x8BAE;&#x5934;&#x6C61;&#x67D3;&#x3002;<a href="https://www.djangoproject.com/weblog/2012/oct/17/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.3 <a href="https://github.com/django/django/commit/b45c377f8f488955e0c7069cad3f3dd21910b071" target="_blank">(patch)</a></li>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/92d3430f12171f16f566c9050c40feefb830a4a3" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="december-10-2012---no-cve-1">December 10, 2012 - No CVE 1</h3>
+<p>&#x5BF9;<code>Host</code>&#x534F;&#x8BAE;&#x5934;&#x5904;&#x7406;&#x7684;&#x989D;&#x5916;&#x52A0;&#x56FA;&#x3002;<a href="https://www.djangoproject.com/weblog/2012/dec/10/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.3 <a href="https://github.com/django/django/commit/2da4ace0bc1bc1d79bf43b368cb857f6f0cd6b1b" target="_blank">(patch)</a></li>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/319627c184e71ae267d6b7f000e293168c7b6e09" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="december-10-2012---no-cve-2">December 10, 2012 - No CVE 2</h3>
+<p>&#x5BF9;&#x91CD;&#x5B9A;&#x5411;&#x9A8C;&#x8BC1;&#x7684;&#x989D;&#x5916;&#x52A0;&#x56FA;&#x3002;<a href="https://www.djangoproject.com/weblog/2012/dec/10/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.3: <a href="https://github.com/django/django/commit/1515eb46daa0897ba5ad5f0a2db8969255f1b343" target="_blank">(patch)</a></li>
+<li>Django 1.4: <a href="https://github.com/django/django/commit/b2ae0a63aeec741f1e51bac9a95a27fd635f9652" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="february-19-2013---no-cve">February 19, 2013 - No CVE</h3>
+<p>&#x5BF9;<code>Host</code>&#x534F;&#x8BAE;&#x5934;&#x5904;&#x7406;&#x7684;&#x989D;&#x5916;&#x52A0;&#x56FA;&#x3002;<a href="https://www.djangoproject.com/weblog/2013/feb/19/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.3 <a href="https://github.com/django/django/commit/27cd872e6e36a81d0bb6f5b8765a1705fecfc253" target="_blank">(patch)</a></li>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/9936fdb11d0bbf0bd242f259bfb97bbf849d16f8" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="february-19-2013---cve-2013-16641665">February 19, 2013 - CVE-2013-1664/1665</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1664&amp;cid=2" target="_blank">CVE-2013-1664</a> and <a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1665&amp;cid=2" target="_blank">CVE-2013-1665</a>: &#x5BF9;Python XML&#x5E93;&#x7684;&#x57FA;&#x4E8E;&#x5B9E;&#x4F53;&#x7684;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2013/feb/19/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.3 <a href="https://github.com/django/django/commit/d19a27066b2247102e65412aa66917aff0091112" target="_blank">(patch)</a></li>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/1c60d07ba23e0350351c278ad28d0bd5aa410b40" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="february-19-2013---cve-2013-0305">February 19, 2013 - CVE-2013-0305</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0305&amp;cid=2" target="_blank">CVE-2013-0305</a>: &#x901A;&#x8FC7;admin&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x7684;&#x4FE1;&#x606F;&#x6CC4;&#x9732;&#x3002;<a href="https://www.djangoproject.com/weblog/2013/feb/19/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.3 <a href="https://github.com/django/django/commit/d3a45e10c8ac8268899999129daa27652ec0da35" target="_blank">(patch)</a></li>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/0e7861aec73702f7933ce2a93056f7983939f0d6" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="february-19-2013---cve-2013-0306">February 19, 2013 - CVE-2013-0306</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0306&amp;cid=2" target="_blank">CVE-2013-0306</a>: &#x901A;&#x8FC7;&#x8868;&#x5355;&#x96C6;<code>max_num</code> &#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2013/feb/19/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.3 <a href="https://github.com/django/django/commit/d7094bbce8cb838f3b40f504f198c098ff1cf727" target="_blank">(patch)</a></li>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/0cc350a896f70ace18280410eb616a9197d862b0" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="august-13-2013---awaiting-cve-1">August 13, 2013 - Awaiting CVE 1</h3>
+<p>(CVE not yet issued): &#x901A;&#x8FC7;admin&#x53D7;&#x4FE1;&#x4EFB;&#x7684;<code>URLField</code>&#x503C;&#x7684;XSS&#x3002;<a href="https://www.djangoproject.com/weblog/2013/aug/13/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/90363e388c61874add3f3557ee654a996ec75d78" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="august-13-2013---awaiting-cve-2">August 13, 2013 - Awaiting CVE 2</h3>
+<p>(CVE not yet issued):&#x53EF;&#x80FD;&#x7684;XSS&#x6F0F;&#x6D1E;&#xFF0C;&#x901A;&#x8FC7;&#x672A;&#x9A8C;&#x8BC1;&#x7684;URL&#x91CD;&#x5B9A;&#x5411;&#x6A21;&#x5F0F;&#x3002;<a href="https://www.djangoproject.com/weblog/2013/aug/13/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/ec67af0bd609c412b76eaa4cc89968a2a8e5ad6a" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/1a274ccd6bc1afbdac80344c9b6e5810c1162b5f" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="september-10-2013---cve-2013-4315">September 10, 2013 - CVE-2013-4315</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4315&amp;cid=2" target="_blank">CVE-2013-4315</a> &#x901A;&#x8FC7;<code>ssi</code>&#x6A21;&#x677F;&#x6807;&#x7B7E;&#x7684;&#x76EE;&#x5F55;&#x904D;&#x5386;&#x3002;<a href="https://www.djangoproject.com/weblog/2013/sep/10/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/87d2750b39f6f2d54b7047225521a44dcd37e896" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/988b61c550d798f9a66d17ee0511fb7a9a7f33ca" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="september-14-2013---cve-2013-1443">September 14, 2013 - CVE-2013-1443</h3>
+<p>CVE-2013-1443: &#x901A;&#x8FC7;&#x957F;&#x5BC6;&#x7801;&#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2013/sep/15/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/3f3d887a6844ec2db743fee64c9e53e04d39a368" target="_blank">(patch</a> and <a href="https://github.com/django/django/commit/6903d1690a92aa040adfb0c8eb37cf62e4206714" target="_blank">Python compatibility fix)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/22b74fa09d7ccbc8c52270d648a0da7f3f0fa2bc" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="april-21-2014---cve-2014-0472">April 21, 2014 - CVE-2014-0472</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0472&amp;cid=2" target="_blank">CVE-2014-0472</a>: &#x4F7F;&#x7528;<code>reverse()</code>&#x7684;&#x975E;&#x9884;&#x671F;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x3002;<a href="https://www.djangoproject.com/weblog/2014/apr/21/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/c1a8c420fe4b27fb2caf5e46d23b5712fc0ac535" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/2a5bcb69f42b84464b24b5c835dca6467b6aa7f1" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/4352a50871e239ebcdf64eee6f0b88e714015c1b" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/546740544d7f69254a67b06a3fc7fa0c43512958" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="april-21-2014---cve-2014-0473">April 21, 2014 - CVE-2014-0473</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0473&amp;cid=2" target="_blank">CVE-2014-0473</a>: &#x533F;&#x540D;&#x9875;&#x9762;&#x7684;&#x7F13;&#x5B58;&#x53EF;&#x80FD;&#x4F1A;&#x6CC4;&#x9732;CSRF&#x6807;&#x8BC6;&#x3002;<a href="https://www.djangoproject.com/weblog/2014/apr/21/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/1170f285ddd6a94a65f911a27788ba49ca08c0b0" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/6872f42757d7ef6a97e0b6ec5db4d2615d8a2bd8" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/d63e20942f3024f24cb8cd85a49461ba8a9b6736" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/380545bf85cbf17fc698d136815b7691f8d023ca" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="april-21-2014---cve-2014-0474">April 21, 2014 - CVE-2014-0474</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0474&amp;cid=2" target="_blank">CVE-2014-0474</a>: MySQL&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4EA7;&#x751F;&#x975E;&#x9884;&#x671F;&#x7684;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x3002;<a href="https://www.djangoproject.com/weblog/2014/apr/21/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/aa80f498de6d687e613860933ac58433ab71ea4b" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/985434fb1d6bf2335bf96c6ebf91c3674f1f399f" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/5f0829a27e85d89ad8c433f5c6a7a7d17c9e9292" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/34526c2f56b863c2103655a0893ac801667e86ea" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="may-18-2014---cve-2014-1418">May 18, 2014 - CVE-2014-1418</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1418&amp;cid=2" target="_blank">CVE-2014-1418</a>: &#x7F13;&#x5B58;&#x53EF;&#x80FD;&#x5141;&#x8BB8;&#x5B58;&#x50A8;&#x548C;&#x5904;&#x7406;&#x79C1;&#x4EBA;&#x6570;&#x636E;&#x3002;<a href="https://www.djangoproject.com/weblog/2014/may/14/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/28e23306aa53bbbb8fb87db85f99d970b051026c" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/4001ec8698f577b973c5a540801d8a0bbea1205b" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/1abcf3a808b35abae5d425ed4d44cb6e886dc769" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/7fef18ba9e5a8b47bc24b5bb259c8bf3d3879f2a" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="may-18-2014---cve-2014-3730">May 18, 2014 - CVE-2014-3730</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3730&amp;cid=2" target="_blank">CVE-2014-3730</a>: &#x6765;&#x6E90;&#x4E8E;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x9519;&#x8BEF;&#x683C;&#x5F0F;URL&#x7684;&#x4E0D;&#x6B63;&#x786E;&#x9A8C;&#x8BC1;&#x3002;<a href="https://www.djangoproject.com/weblog/2014/may/14/security-releases-issued/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/7feb54bbae3f637ab3c4dd4831d4385964f574df" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/ad32c218850ad40972dcef57beb460f8c979dd6d" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/601107524523bca02376a0ddc1a06c6fdb8f22f3" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/e7b0cace455c2da24492660636bfd48c45a19cdf" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="august-20-2014---cve-2014-0480">August 20, 2014 - CVE-2014-0480</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0480&amp;cid=2" target="_blank">CVE-2014-0480</a>: reverse() &#x53EF;&#x80FD;&#x4F1A;&#x751F;&#x6210;&#x6307;&#x5411;&#x5176;&#x5B83;&#x57DF;&#x540D;&#x7684;URL&#x3002;<a href="https://www.djangoproject.com/weblog/2014/aug/20/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/c2fe73133b62a1d9e8f7a6b43966570b14618d7e" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/45ac9d4fb087d21902469fc22643f5201d41a0cd" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/da051da8df5e69944745072611351d4cfc6435d5" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/bf650a2ee78c6d1f4544a875dcc777cf27fe93e9" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="august-20-2014---cve-2014-0481">August 20, 2014 - CVE-2014-0481</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0481&amp;cid=2" target="_blank">CVE-2014-0481</a>: &#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2014/aug/20/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/30042d475bf084c6723c6217a21598d9247a9c41" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/26cd48e166ac4d84317c8ee6d63ac52a87e8da99" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/dd0c3f4ee1a30c1a1e6055061c6ba6e58c6b54d1" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/3123f8452cf49071be9110e277eea60ba0032216" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="august-20-2014---cve-2014-0482">August 20, 2014 - CVE-2014-0482</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0482&amp;cid=2" target="_blank">CVE-2014-0482</a>: RemoteUserMiddleware&#x4F1A;&#x8BDD;&#x52AB;&#x6301;&#x3002;<a href="https://www.djangoproject.com/weblog/2014/aug/20/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/c9e3b9949cd55f090591fbdc4a114fcb8368b6d9" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/dd68f319b365f6cb38c5a6c106faf4f6142d7d88" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/0268b855f9eab3377f2821164ef3e66037789e09" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/1a45d059c70385fcd6f4a3955f3b4e4cc96d0150" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="august-20-2014---cve-2014-0483">August 20, 2014 - CVE-2014-0483</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0483&amp;cid=2" target="_blank">CVE-2014-0483</a>:&#xA0;admin&#x4E2D;&#x67E5;&#x8BE2;&#x96C6;&#x64CD;&#x4F5C;&#x4EA7;&#x751F;&#x7684;&#x6570;&#x636E;&#x6CC4;&#x9732;&#x3002;<a href="https://www.djangoproject.com/weblog/2014/aug/20/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/027bd348642007617518379f8b02546abacaa6e0" target="_blank">(patch)</a></li>
+<li>Django 1.5 <a href="https://github.com/django/django/commit/2a446c896e7c814661fb9c4f212b071b2a7fa446" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/f7c494f2506250b8cb5923714360a3642ed63e0f" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/2b31342cdf14fc20e07c43d258f1e7334ad664a6" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="january-13-2015---cve-2015-0219">January 13, 2015 - CVE-2015-0219</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0219&amp;cid=2" target="_blank">CVE-2015-0219</a>: &#x901A;&#x8FC7;&#x4E0B;&#x5212;&#x7EBF;&#x6216;&#x8005;&#x7834;&#x6298;&#x53F7;&#x5408;&#x5E76;&#x4EA7;&#x751F;&#x7684;WSGI&#x534F;&#x8BAE;&#x5934;&#x6B3A;&#x9A97;&#x3002;<a href="https://www.djangoproject.com/weblog/2015/jan/13/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/4f6fffc1dc429f1ad428ecf8e6620739e8837450" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/d7597b31d5c03106eeba4be14a33b32a5e25f4ee" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/41b4bc73ee0da7b2e09f4af47fc1fd21144c710f" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="january-13-2015---cve-2015-0220">January 13, 2015 - CVE-2015-0220</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0220&amp;cid=2" target="_blank">CVE-2015-0220</a>:&#xA0;
+&#x901A;&#x8FC7;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x91CD;&#x5B9A;&#x5411;URL&#x7684;&#x53EF;&#x80FD;&#x7684;XSS&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2015/jan/13/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/4c241f1b710da6419d9dca160e80b23b82db7758" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/72e0b033662faa11bb7f516f18a132728aa0ae28" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/de67dedc771ad2edec15c1d00c083a1a084e1e89" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="january-13-2015---cve-2015-0221">January 13, 2015 - CVE-2015-0221</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0221&amp;cid=2" target="_blank">CVE-2015-0221</a>: <code>django.views.static.serve()</code>&#x4E0A;&#x7684;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2015/jan/13/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.4 <a href="https://github.com/django/django/commit/d020da6646c5142bc092247d218a3d1ce3e993f7" target="_blank">(patch)</a></li>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/553779c4055e8742cc832ed525b9ee34b174934f" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/818e59a3f0fbadf6c447754d202d88df025f8f2a" target="_blank">(patch)</a></li>
+</ul>
+<h3 id="january-13-2015---cve-2015-0222">January 13, 2015 - CVE-2015-0222</h3>
+<p><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0222&amp;cid=2" target="_blank">CVE-2015-0222</a>: &#x4F7F;&#x7528;<code>ModelMultipleChoiceField</code>&#x7684;&#x6570;&#x636E;&#x5E93;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x653B;&#x51FB;&#x3002;<a href="https://www.djangoproject.com/weblog/2015/jan/13/security/" target="_blank">Full description</a></p>
+<h4 id="versions-affected">Versions affected</h4>
+<ul>
+<li>Django 1.6 <a href="https://github.com/django/django/commit/d7a06ee7e571b6dad07c0f5b519b1db02e2a476c" target="_blank">(patch)</a></li>
+<li>Django 1.7 <a href="https://github.com/django/django/commit/bcfb47780ce7caecb409a9e9c1c314266e41d392" target="_blank">(patch)</a></li>
+</ul>
+<blockquote>
+<p>&#x8BD1;&#x8005;&#xFF1A;<a href="http://python.usyiyi.cn/django/index.html" target="_blank">Django &#x6587;&#x6863;&#x534F;&#x4F5C;&#x7FFB;&#x8BD1;&#x5C0F;&#x7EC4;</a>&#xFF0C;&#x539F;&#x6587;&#xFF1A;<a href="https://docs.djangoproject.com/en/1.8/releases/security/" target="_blank">Disclosed security issues in Django</a>&#x3002;</p>
+<p>&#x672C;&#x6587;&#x4EE5; <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank">CC BY-NC-SA 3.0</a> &#x534F;&#x8BAE;&#x53D1;&#x5E03;&#xFF0C;&#x8F6C;&#x8F7D;&#x8BF7;&#x4FDD;&#x7559;&#x4F5C;&#x8005;&#x7F72;&#x540D;&#x548C;&#x6587;&#x7AE0;&#x51FA;&#x5904;&#x3002;</p>
+<p><a href="http://python.usyiyi.cn/django/index.html" target="_blank">Django &#x6587;&#x6863;&#x534F;&#x4F5C;&#x7FFB;&#x8BD1;&#x5C0F;&#x7EC4;</a>&#x4EBA;&#x624B;&#x7D27;&#x7F3A;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x670B;&#x53CB;&#x53EF;&#x4EE5;&#x52A0;&#x5165;&#x6211;&#x4EEC;&#xFF0C;&#x5B8C;&#x5168;&#x516C;&#x76CA;&#x6027;&#x8D28;&#x3002;&#x4EA4;&#x6D41;&#x7FA4;&#xFF1A;467338606&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="8_1_Security overview_.html" class="navigation navigation-prev " aria-label="Previous page: 安全概述">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="8_3_Clickjacking protection.html" class="navigation navigation-next " aria-label="Next page: 点击劫持保护">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"说明Django中的安全问题","level":"1.9.2","depth":2,"next":{"title":"点击劫持保护","level":"1.9.3","depth":2,"path":"8_3_Clickjacking protection.md","ref":"8_3_Clickjacking protection.md","articles":[]},"previous":{"title":"安全概述","level":"1.9.1","depth":2,"path":"8_1_Security overview_.md","ref":"8_1_Security overview_.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"django-chinese-docs-1.8","links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"django 学习入门教程"},"file":{"path":"8_2_Disclosed security issues in Django.md","mtime":"2016-06-20T01:36:35.525Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:31:29.550Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,718 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>WebDriver·九 等待页面加载元素完成 · WebDriver·TestNg学习日志</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="webdrivershi_ji_er_4e0ab7_zhi_shi_feng_zhuang_yu_z.html" />
+    
+    
+    <link rel="prev" href="webdrivershi_ji_er_4e0ab7_zhi_ba_cao_zuo_cookies.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    WebDriver·TestNg学习日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="webdrivershi_ji_er_4e0ab7_zhi_ling_webdriver_li_lu.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_ling_webdriver_li_lu.html">
+            
+                    
+                    WebDriver·零 理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="webdrivershi_ji_er_4e0ab7_zhi_yi_huan_jing_bu_shu.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_yi_huan_jing_bu_shu.html">
+            
+                    
+                    WebDriver·一 环境部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="webdrivershi_ji_er_4e0ab7_zhi_er_liu_lan_qi_cao_zu.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_er_liu_lan_qi_cao_zu.html">
+            
+                    
+                    WebDriver·二 浏览器操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="webdrivershi_ji_er_4e0ab7_zhi_san_ding_wei_ye_mian.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_san_ding_wei_ye_mian.html">
+            
+                    
+                    WebDriver·三 定位页面元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="webdrivershi_ji_er_4e0ab7_zhi_si_cao_zuo_ye_mian_y.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_si_cao_zuo_ye_mian_y.html">
+            
+                    
+                    WebDriver·四 操作页面元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="webdrivershi_ji_er_4e0ab7_zhi_wu_iframe_de_chu_li.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_wu_iframe_de_chu_li.html">
+            
+                    
+                    WebDriver·五 iframe的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="webdrivershi_ji_er_4e0ab7_zhi_liu_huo_de_dan_chu_c.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_liu_huo_de_dan_chu_c.html">
+            
+                    
+                    WebDriver·六 获得弹出窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="webdrivershi_ji_er_4e0ab7_zhi_qi_chu_li_dui_hua_ku.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_qi_chu_li_dui_hua_ku.html">
+            
+                    
+                    WebDriver·七 处理对话框alert\confirm\prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="webdrivershi_ji_er_4e0ab7_zhi_ba_cao_zuo_cookies.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_ba_cao_zuo_cookies.html">
+            
+                    
+                    WebDriver·八 操作cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.10" data-path="webdrivershi_ji_er_4e0ab7_zhi_jiu_deng_dai_ye_mian.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_jiu_deng_dai_ye_mian.html">
+            
+                    
+                    WebDriver·九 等待页面加载元素完成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_feng_zhuang_yu_z.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_feng_zhuang_yu_z.html">
+            
+                    
+                    WebDriver·十 封装与重用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_yi_zai_selenium2.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_yi_zai_selenium2.html">
+            
+                    
+                    WebDriver·十1 在selenium2.0中使用selenium1.0的API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_er_jie_tu_seleni.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_er_jie_tu_seleni.html">
+            
+                    
+                    WebDriver·十二 截图selenium-webdriver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="webdrivershi_ji_er_4e0ab7_zhishi_san_diao_yong_jav.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhishi_san_diao_yong_jav.html">
+            
+                    
+                    WebDriver·十三 调用Java Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_si_remotewebdriv.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_si_remotewebdriv.html">
+            
+                    
+                    WebDriver·十四 RemoteWebDriver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_wu_tuo_ye_dong_z.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_wu_tuo_ye_dong_z.html">
+            
+                    
+                    WebDriver·十五 拖曳动作模拟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_liu_table_kong_j.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_liu_table_kong_j.html">
+            
+                    
+                    WebDriver·十六 Table控件的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_qi_duan_yan.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_qi_duan_yan.html">
+            
+                    
+                    WebDriver·十七 断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_ba_she_zhi_yuan_.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_ba_she_zhi_yuan_.html">
+            
+                    
+                    WebDriver·十八 设置元素焦点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_jiu_chang_yong_f.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_jiu_chang_yong_f.html">
+            
+                    
+                    WebDriver·十九 常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="testngyi_ji_chu_gai_nian.html">
+            
+                <a href="testngyi_ji_chu_gai_nian.html">
+            
+                    
+                    TestNG·一 基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="testnger_ce_shi_zu.html">
+            
+                <a href="testnger_ce_shi_zu.html">
+            
+                    
+                    TestNG·二 测试组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="testngsan_ce_shi_fang_fa.html">
+            
+                <a href="testngsan_ce_shi_fang_fa.html">
+            
+                    
+                    TestNG·三 测试方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="testngsi_ce_shi_fang_fa_zhi_gong_chang.html">
+            
+                <a href="testngsi_ce_shi_fang_fa_zhi_gong_chang.html">
+            
+                    
+                    TestNG·四 测试方法之工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="testngwu_yun_xingtestng.html">
+            
+                <a href="testngwu_yun_xingtestng.html">
+            
+                    
+                    TestNG·五 运行TestNG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="testngliu_ce_shi_jie_guo.html">
+            
+                <a href="testngliu_ce_shi_jie_guo.html">
+            
+                    
+                    TestNG·六 测试结果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="testngqi_annotation.html">
+            
+                <a href="testngqi_annotation.html">
+            
+                    
+                    TestNG·七 annotation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="testngba_bing_fa_ce_shi.html">
+            
+                <a href="testngba_bing_fa_ce_shi.html">
+            
+                    
+                    TestNG·八 并发测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="testngjiu_shi_yong_testng_-_xslt_gai_xie_testng_de.html">
+            
+                <a href="testngjiu_shi_yong_testng_-_xslt_gai_xie_testng_de.html">
+            
+                    
+                    TestNG·九 使用testng-xslt改写testng的测试报告
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="webdriver_&_testngcan_shu_hua_ji_yong_li_pai_xu.html">
+            
+                <a href="webdriver_&_testngcan_shu_hua_ji_yong_li_pai_xu.html">
+            
+                    
+                    WebDriver & TestNG·参数化及用例排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="webdriver_&_testngjia_gou.html">
+            
+                <a href="webdriver_&_testngjia_gou.html">
+            
+                    
+                    WebDriver & TestNG·架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >WebDriver·九 等待页面加载元素完成</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="webdriver&#x62FE;&#x7EA7;&#x800C;&#x4E0A;&#xB7;&#x4E4B;&#x4E5D;-&#x7B49;&#x5F85;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x5143;&#x7D20;&#x5B8C;&#x6210;">WebDriver&#x62FE;&#x7EA7;&#x800C;&#x4E0A;&#xB7;&#x4E4B;&#x4E5D; &#x7B49;&#x5F85;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x5143;&#x7D20;&#x5B8C;&#x6210;</h1>
+<hr>
+<p>web&#x7684;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x4F1A;&#x9047;&#x5230;&#x8FD9;&#x6837;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;&#x5F53;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x65F6;&#x9700;&#x8981;&#x9875;&#x9762;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x800C;&#x6B64;&#x65F6;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x8FD8;&#x672A;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;&#x8FD9;&#x65F6;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#x7B49;&#x5F85;&#x3002;&#x7B49;&#x5F85;&#x5143;&#x7D20;&#x51FA;&#x73B0;&#x540E;&#x518D;&#x8FDB;&#x884C;&#x5BF9;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5728;selenium-webdriver&#x4E2D;&#x6211;&#x4EEC;&#x7528;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x7B49;&#x5F85;&#xFF1A;&#x660E;&#x786E;&#x7684;&#x7B49;&#x5F85;&#x548C;&#x9690;&#x6027;&#x7684;&#x7B49;&#x5F85;&#x3002;</p>
+<p>&#x4E00;&#x3001;&#x660E;&#x786E;&#x7684;&#x7B49;&#x5F85;</p>
+<p>&#x660E;&#x786E;&#x7684;&#x7B49;&#x5F85;&#x662F;&#x6307;&#x5728;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x64CD;&#x4F5C;&#x4E4B;&#x524D;&#x7B49;&#x5F85;&#x67D0;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x7684;&#x53D1;&#x751F;&#x3002;&#x6700;&#x4E0D;&#x597D;&#x7684;&#x60C5;&#x51B5;&#x662F;&#x4F7F;&#x7528;Thread.sleep()&#x53BB;&#x8BBE;&#x7F6E;&#x4E00;&#x6BB5;&#x786E;&#x8BA4;&#x7684;&#x65F6;&#x95F4;&#x53BB;&#x7B49;&#x5F85;&#x3002;&#x4F46;&#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;&#x6700;&#x4E0D;&#x597D;&#x5462;&#xFF1F;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x52A0;&#x8F7D;&#x65F6;&#x95F4;&#x6709;&#x957F;&#x6709;&#x77ED;&#xFF0C;&#x4F60;&#x5728;&#x8BBE;&#x7F6E;sleep&#x7684;&#x65F6;&#x95F4;&#x4E4B;&#x524D;&#x8981;&#x81EA;&#x5DF1;&#x628A;&#x63E1;&#x957F;&#x77ED;&#xFF0C;&#x592A;&#x77ED;&#x5BB9;&#x6613;&#x8D85;&#x65F6;&#xFF0C;&#x592A;&#x957F;&#x6D6A;&#x8D39;&#x65F6;&#x95F4;&#x3002;</p>
+<p>selenium webdriver&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x7B49;&#x5F85;&#x6B63;&#x597D;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x5229;&#x7528;WebDriverWait&#x7C7B;&#x548C;ExpectedCondition&#x63A5;&#x53E3;&#x5C31;&#x80FD;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#x3002;</p>
+<p> &#x4E0B;&#x9762;&#x7684;html&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x4E86;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x79CD;&#x6548;&#x679C;&#xFF1A;&#x70B9;&#x51FB;click&#x6309;&#x94AE;5&#x79D2;&#x949F;&#x540E;&#xFF0C;&#x9875;&#x9762;&#x4E0A;&#x4F1A;&#x51FA;&#x73B0;&#x4E00;&#x4E2A;&#x7EA2;&#x8272;&#x7684;div&#x5757;&#x3002;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5199;&#x4E00;&#x6BB5;&#x81EA;&#x52A8;&#x5316;&#x811A;&#x672C;&#x53BB;&#x6355;&#x83B7;&#x8FD9;&#x4E2A;&#x51FA;&#x73B0;&#x7684;div&#xFF0C;&#x7136;&#x540E;&#x9AD8;&#x4EAE;&#x4E4B;&#x3002;</p>
+<p>Html&#x4EE3;&#x7801; 
+wait.html &#x653E;&#x5728;&#x684C;&#x9762;</p>
+<p> <img src="image/&#x7B49;&#x5F85;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x5143;&#x7D20;&#x5B8C;&#x6210;.jpg" alt=""></p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x4E86;&#x9AD8;&#x4EAE;&#x52A8;&#x6001;&#x751F;&#x6210;&#x7684;div&#x5757;&#x7684;&#x529F;&#x80FD;&#xFF1A;</p>
+<p>Java&#x4EE3;&#x7801;</p>
+<pre><code>package com.test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+public class Test_waitfor {
+public static void main(String[] args) {
+
+String url = &quot;file:///C:/Documents and Settings/bestfei/&#x684C;&#x9762;/wait.html&quot;;
+   //&#x6253;&#x5F00;chrome
+   WebDriver dr = new ChromeDriver();
+        dr.get(url);
+
+        WebElement button_b = dr.findElement(By.id(&quot;b&quot;));
+        button_b.click();
+
+        WebDriverWait wait = new WebDriverWait(dr,10);
+        wait.until(new ExpectedCondition(){
+        @Override
+            public WebElement apply(WebDriver d) {
+                return d.findElement(By.className(&quot;red_box&quot;));
+    }
+        });
+
+        WebElement element = dr.findElement(By.cssSelector(&quot;.red_box&quot;));
+        System.out.println(&quot;&#x83B7;&#x53D6;.red_box&#x7684;&#x80CC;&#x666F;&#x989C;&#x8272;&#x5C5E;&#x6027;&#x503C;:&quot;+element.getCssValue(&quot;background-color&quot;));
+        //&#x5728;&#x7EA2;&#x8272;&#x533A;&#x57DF;&#x5916;&#x9762;&#x52A0;&#x9EC4;&#x6846;
+        ((JavascriptExecutor)dr).executeScript(&quot;arguments[0].style.border = \&quot;5px solid yellow\&quot;&quot;,element);  
+
+        dr.quit();
+}
+}
+</code></pre><p>&#x9875;&#x9762;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>Started ChromeDriver
+port=36071
+version=19.0.1068.0
+&#x83B7;&#x53D6;.red_box&#x7684;&#x80CC;&#x666F;&#x989C;&#x8272;&#x5C5E;&#x6027;&#x503C;:rgb(255, 0, 0)
+</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;WebDriverWait&#x7C7B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E86;&#x4E00;&#x4E2A;WebDriver&#x5BF9;&#x8C61;&#x548C;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x6700;&#x957F;&#x65F6;&#x95F4;&#xFF08;10&#x79D2;&#xFF09;&#x3002;&#x7136;&#x540E;&#x8C03;&#x7528;until&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x4E2D;&#x91CD;&#x5199;&#x4E86; ExpectedCondition&#x63A5;&#x53E3;&#x4E2D;&#x7684;apply&#x65B9;&#x6CD5;&#xFF0C;&#x8BA9;&#x5176;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;WebElement,&#x5373;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;WebDriverWait&#x6BCF;500&#x6BEB;&#x79D2;&#x8C03;&#x7528;&#x4E00;&#x6B21;ExpectedCondition&#xFF0C;&#x76F4;&#x5230;&#x6709;&#x6210;&#x529F;&#x7684;&#x8FD4;&#x56DE;&#xFF0C;&#x5F53;&#x7136;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x8BBE;&#x5B9A;&#x7684;&#x503C;&#x8FD8;&#x6CA1;&#x6709;&#x6210;&#x529F;&#x7684;&#x8FD4;&#x56DE;&#xFF0C;&#x5C06;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</p>
+<p> &#x4E8C;&#x3001;&#x9690;&#x6027;&#x7B49;&#x5F85;</p>
+<p>&#x9690;&#x6027;&#x7B49;&#x5F85;&#x662F;&#x6307;&#x5F53;&#x8981;&#x67E5;&#x627E;&#x5143;&#x7D20;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x6CA1;&#x6709;&#x9A6C;&#x4E0A;&#x51FA;&#x73B0;&#x65F6;&#xFF0C;&#x544A;&#x8BC9;WebDriver&#x67E5;&#x8BE2;Dom&#x4E00;&#x5B9A;&#x65F6;&#x95F4;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F;0,&#x4F46;&#x662F;&#x8BBE;&#x7F6E;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x5C06;&#x5728;WebDriver&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x6574;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x90FD;&#x8D77;&#x4F5C;&#x7528;&#x3002;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#x8FD9;&#x6837;&#xFF1A;</p>
+<p>Java&#x4EE3;&#x7801;</p>
+<pre><code>package com.test;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class Test_waitfor2 {
+public static void main(String[] args) {
+String url = &quot;file:///C:/Documents and Settings/fei yong/&#x684C;&#x9762;/wait.html&quot;;
+   //&#x6253;&#x5F00;chrome
+   WebDriver dr = new ChromeDriver();
+        dr.get(url);
+
+   //&#x8BBE;&#x7F6E;10&#x79D2;
+        dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        dr.findElement(By.id(&quot;b&quot;)).click();
+
+        WebElement element = dr.findElement(By.cssSelector(&quot;.red_box&quot;));
+        System.out.println(&quot;&#x83B7;&#x53D6;.red_box&#x7684;&#x80CC;&#x666F;&#x989C;&#x8272;&#x5C5E;&#x6027;&#x503C;:&quot;+element.getCssValue(&quot;background-color&quot;));
+        //&#x5728;&#x7EA2;&#x8272;&#x533A;&#x57DF;&#x5916;&#x9762;&#x52A0;&#x9EC4;&#x6846;
+        ((JavascriptExecutor)dr).executeScript(&quot;arguments[0].style.border = \&quot;5px solid yellow\&quot;&quot;,element);  
+
+        //dr.quit();
+}
+}
+</code></pre><p>&#x9875;&#x9762;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>Started ChromeDriver
+port=37023
+version=19.0.1068.0
+log=E:\android\selenium\test_wdng_java\chromedriver.log
+&#x83B7;&#x53D6;.red_box&#x7684;&#x80CC;&#x666F;&#x989C;&#x8272;&#x5C5E;&#x6027;&#x503C;:rgb(255, 0, 0)
+</code></pre>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_ba_cao_zuo_cookies.html" class="navigation navigation-prev " aria-label="Previous page: WebDriver·八 操作cookies">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_feng_zhuang_yu_z.html" class="navigation navigation-next " aria-label="Next page: WebDriver·十 封装与重用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"WebDriver·九 等待页面加载元素完成","level":"1.1.10","depth":2,"next":{"title":"WebDriver·十 封装与重用","level":"1.1.11","depth":2,"path":"webdrivershi_ji_er_4e0ab7_zhi_shi_feng_zhuang_yu_z.md","ref":"webdrivershi_ji_er_4e0ab7_zhi_shi_feng_zhuang_yu_z.md","articles":[]},"previous":{"title":"WebDriver·八 操作cookies","level":"1.1.9","depth":2,"path":"webdrivershi_ji_er_4e0ab7_zhi_ba_cao_zuo_cookies.md","ref":"webdrivershi_ji_er_4e0ab7_zhi_ba_cao_zuo_cookies.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WebDriver·TestNg学习日志","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"WebDriver·TestNg·selenium2 学习入门教程"},"file":{"path":"webdrivershi_ji_er_4e0ab7_zhi_jiu_deng_dai_ye_mian.md","mtime":"2016-06-17T06:44:36.278Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-17T07:00:14.598Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

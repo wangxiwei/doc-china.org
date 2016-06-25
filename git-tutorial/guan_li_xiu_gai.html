@@ -1,0 +1,736 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>管理修改 · git 教程</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="che_xiao_xiu_gai.html" />
+    
+    
+    <link rel="prev" href="gong_zuo_qu_he_zan_cun_qu.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Git教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="gitjian_jie.html">
+            
+                <a href="gitjian_jie.html">
+            
+                    
+                    Git简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1" data-path="gitde_dan_sheng.html">
+            
+                <a href="gitde_dan_sheng.html">
+            
+                    
+                    Git的诞生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2" data-path="ji_zhong_shi_vs_fen_bu_shi.html">
+            
+                <a href="ji_zhong_shi_vs_fen_bu_shi.html">
+            
+                    
+                    集中式vs分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="an_zhuang_git.html">
+            
+                <a href="an_zhuang_git.html">
+            
+                    
+                    安装Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chuang_jian_ban_ben_ku.html">
+            
+                <a href="chuang_jian_ban_ben_ku.html">
+            
+                    
+                    创建版本库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="shi_guang_ji_chuan_suo.html">
+            
+                <a href="shi_guang_ji_chuan_suo.html">
+            
+                    
+                    时光机穿梭
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.1" data-path="ban_ben_hui_tui.html">
+            
+                <a href="ban_ben_hui_tui.html">
+            
+                    
+                    版本回退
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.2" data-path="gong_zuo_qu_he_zan_cun_qu.html">
+            
+                <a href="gong_zuo_qu_he_zan_cun_qu.html">
+            
+                    
+                    工作区和暂存区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.4.3" data-path="guan_li_xiu_gai.html">
+            
+                <a href="guan_li_xiu_gai.html">
+            
+                    
+                    管理修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4" data-path="che_xiao_xiu_gai.html">
+            
+                <a href="che_xiao_xiu_gai.html">
+            
+                    
+                    撤销修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.5" data-path="shan_chu_wen_jian.html">
+            
+                <a href="shan_chu_wen_jian.html">
+            
+                    
+                    删除文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="yuan_cheng_cang_ku.html">
+            
+                <a href="yuan_cheng_cang_ku.html">
+            
+                    
+                    远程仓库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.5.1" data-path="tian_jia_yuan_cheng_ku.html">
+            
+                <a href="tian_jia_yuan_cheng_ku.html">
+            
+                    
+                    添加远程库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5.2" data-path="cong_yuan_cheng_ku_ke_long.html">
+            
+                <a href="cong_yuan_cheng_ku_ke_long.html">
+            
+                    
+                    从远程库克隆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="fen_zhi_guan_li.html">
+            
+                <a href="fen_zhi_guan_li.html">
+            
+                    
+                    分支管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.6.1" data-path="chuang_jian_yu_he_bing_fen_zhi.html">
+            
+                <a href="chuang_jian_yu_he_bing_fen_zhi.html">
+            
+                    
+                    创建与合并分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.2" data-path="jie_jue_chong_tu.html">
+            
+                <a href="jie_jue_chong_tu.html">
+            
+                    
+                    解决冲突
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.3" data-path="fen_zhi_guan_li_ce_lve.html">
+            
+                <a href="fen_zhi_guan_li_ce_lve.html">
+            
+                    
+                    分支管理策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.4" data-path="bugfen_zhi.html">
+            
+                <a href="bugfen_zhi.html">
+            
+                    
+                    Bug分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.5" data-path="featurefen_zhi.html">
+            
+                <a href="featurefen_zhi.html">
+            
+                    
+                    Feature分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.6" data-path="duo_ren_xie_zuo.html">
+            
+                <a href="duo_ren_xie_zuo.html">
+            
+                    
+                    多人协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="biao_qian_guan_li.html">
+            
+                <a href="biao_qian_guan_li.html">
+            
+                    
+                    标签管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.7.1" data-path="chuang_jian_biao_qian.html">
+            
+                <a href="chuang_jian_biao_qian.html">
+            
+                    
+                    创建标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7.2" data-path="cao_zuo_biao_qian.html">
+            
+                <a href="cao_zuo_biao_qian.html">
+            
+                    
+                    操作标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="shi_yong_github.html">
+            
+                <a href="shi_yong_github.html">
+            
+                    
+                    使用GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="zi_ding_yi_git.html">
+            
+                <a href="zi_ding_yi_git.html">
+            
+                    
+                    自定义Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.9.1" data-path="hu_lve_te_shu_wen_jian.html">
+            
+                <a href="hu_lve_te_shu_wen_jian.html">
+            
+                    
+                    忽略特殊文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9.2" data-path="pei_zhi_bie_ming.html">
+            
+                <a href="pei_zhi_bie_ming.html">
+            
+                    
+                    配置别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9.3" data-path="da_jian_git_fu_wu_qi.html">
+            
+                <a href="da_jian_git_fu_wu_qi.html">
+            
+                    
+                    搭建Git服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="qi_mo_zong_jie.html">
+            
+                <a href="qi_mo_zong_jie.html">
+            
+                    
+                    期末总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >管理修改</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x7BA1;&#x7406;&#x4FEE;&#x6539;">&#x7BA1;&#x7406;&#x4FEE;&#x6539;</h3>
+<hr>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x5047;&#x5B9A;&#x4F60;&#x5DF2;&#x7ECF;&#x5B8C;&#x5168;&#x638C;&#x63E1;&#x4E86;&#x6682;&#x5B58;&#x533A;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x4E0B;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x8BA8;&#x8BBA;&#x7684;&#x5C31;&#x662F;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;Git&#x6BD4;&#x5176;&#x4ED6;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x5F97;&#x4F18;&#x79C0;&#xFF0C;&#x56E0;&#x4E3A;Git&#x8DDF;&#x8E2A;&#x5E76;&#x7BA1;&#x7406;&#x7684;&#x662F;&#x4FEE;&#x6539;&#xFF0C;&#x800C;&#x975E;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x4F60;&#x4F1A;&#x95EE;&#xFF0C;&#x4EC0;&#x4E48;&#x662F;&#x4FEE;&#x6539;&#xFF1F;&#x6BD4;&#x5982;&#x4F60;&#x65B0;&#x589E;&#x4E86;&#x4E00;&#x884C;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4FEE;&#x6539;&#xFF0C;&#x5220;&#x9664;&#x4E86;&#x4E00;&#x884C;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x4FEE;&#x6539;&#xFF0C;&#x66F4;&#x6539;&#x4E86;&#x67D0;&#x4E9B;&#x5B57;&#x7B26;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x4FEE;&#x6539;&#xFF0C;&#x5220;&#x4E86;&#x4E00;&#x4E9B;&#x53C8;&#x52A0;&#x4E86;&#x4E00;&#x4E9B;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x4FEE;&#x6539;&#xFF0C;&#x751A;&#x81F3;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x7B97;&#x4E00;&#x4E2A;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;Git&#x7BA1;&#x7406;&#x7684;&#x662F;&#x4FEE;&#x6539;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6587;&#x4EF6;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x505A;&#x5B9E;&#x9A8C;&#x3002;&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x5BF9;readme.txt&#x505A;&#x4E00;&#x4E2A;&#x4FEE;&#x6539;&#xFF0C;&#x6BD4;&#x5982;&#x52A0;&#x4E00;&#x884C;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code>$ cat readme.txt
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes.
+</code></pre><p>&#x7136;&#x540E;&#xFF0C;&#x6DFB;&#x52A0;&#xFF1A;</p>
+<pre><code>$ git add readme.txt
+$ git status
+# On branch master
+# Changes to be committed:
+#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+#
+#       modified:   readme.txt
+#
+</code></pre><p>&#x7136;&#x540E;&#xFF0C;&#x518D;&#x4FEE;&#x6539;readme.txt&#xFF1A;</p>
+<pre><code>$ cat readme.txt 
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes of files.
+</code></pre><p>&#x63D0;&#x4EA4;&#xFF1A;</p>
+<pre><code>$ git commit -m &quot;git tracks changes&quot;
+[master d4f25b6] git tracks changes
+ 1 file changed, 1 insertion(+)
+</code></pre><p>&#x63D0;&#x4EA4;&#x540E;&#xFF0C;&#x518D;&#x770B;&#x770B;&#x72B6;&#x6001;&#xFF1A;</p>
+<pre><code>$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+#
+#       modified:   readme.txt
+#
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+</code></pre><p>&#x54A6;&#xFF0C;&#x600E;&#x4E48;&#x7B2C;&#x4E8C;&#x6B21;&#x7684;&#x4FEE;&#x6539;&#x6CA1;&#x6709;&#x88AB;&#x63D0;&#x4EA4;&#xFF1F;</p>
+<p>&#x522B;&#x6FC0;&#x52A8;&#xFF0C;&#x6211;&#x4EEC;&#x56DE;&#x987E;&#x4E00;&#x4E0B;&#x64CD;&#x4F5C;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<p>&#x7B2C;&#x4E00;&#x6B21;&#x4FEE;&#x6539; -&gt;<code>git add</code>-&gt; &#x7B2C;&#x4E8C;&#x6B21;&#x4FEE;&#x6539; -&gt;<code>git commit</code></p>
+<p>&#x4F60;&#x770B;&#xFF0C;&#x6211;&#x4EEC;&#x524D;&#x9762;&#x8BB2;&#x4E86;&#xFF0C;Git&#x7BA1;&#x7406;&#x7684;&#x662F;&#x4FEE;&#x6539;&#xFF0C;&#x5F53;&#x4F60;&#x7528;<code>git add</code>&#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x5728;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x4FEE;&#x6539;&#x88AB;&#x653E;&#x5165;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x51C6;&#x5907;&#x63D0;&#x4EA4;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x5728;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x7B2C;&#x4E8C;&#x6B21;&#x4FEE;&#x6539;&#x5E76;&#x6CA1;&#x6709;&#x653E;&#x5165;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;<code>git commit</code>&#x53EA;&#x8D1F;&#x8D23;&#x628A;&#x6682;&#x5B58;&#x533A;&#x7684;&#x4FEE;&#x6539;&#x63D0;&#x4EA4;&#x4E86;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x7684;&#x4FEE;&#x6539;&#x88AB;&#x63D0;&#x4EA4;&#x4E86;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x7684;&#x4FEE;&#x6539;&#x4E0D;&#x4F1A;&#x88AB;&#x63D0;&#x4EA4;&#x3002;</p>
+<p>&#x63D0;&#x4EA4;&#x540E;&#xFF0C;&#x7528;<code>git diff HEAD -- readme.txt</code>&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x7248;&#x672C;&#x5E93;&#x91CC;&#x9762;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x533A;&#x522B;&#xFF1A;</p>
+<pre><code>$ git diff HEAD -- readme.txt 
+diff --git a/readme.txt b/readme.txt
+index 76d770f..a9c5755 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,4 +1,4 @@
+ Git is a distributed version control system.
+ Git is free software distributed under the GPL.
+ Git has a mutable index called stage.
+-Git tracks changes.
++Git tracks changes of files.
+</code></pre><p>&#x53EF;&#x89C1;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x4FEE;&#x6539;&#x786E;&#x5B9E;&#x6CA1;&#x6709;&#x88AB;&#x63D0;&#x4EA4;&#x3002;</p>
+<p> &#x90A3;&#x600E;&#x4E48;&#x63D0;&#x4EA4;&#x7B2C;&#x4E8C;&#x6B21;&#x4FEE;&#x6539;&#x5462;&#xFF1F;&#x4F60;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;git add&#x518D;git commit&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x522B;&#x7740;&#x6025;&#x63D0;&#x4EA4;&#x7B2C;&#x4E00;&#x6B21;&#x4FEE;&#x6539;&#xFF0C;&#x5148;<code>git add</code>&#x7B2C;&#x4E8C;&#x6B21;&#x4FEE;&#x6539;&#xFF0C;&#x518D;<code>git commit</code>&#xFF0C;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x628A;&#x4E24;&#x6B21;&#x4FEE;&#x6539;&#x5408;&#x5E76;&#x540E;&#x4E00;&#x5757;&#x63D0;&#x4EA4;&#x4E86;&#xFF1A;</p>
+<p>&#x7B2C;&#x4E00;&#x6B21;&#x4FEE;&#x6539; -&gt;<code>git add</code>-&gt; &#x7B2C;&#x4E8C;&#x6B21;&#x4FEE;&#x6539; -&gt;<code>git add</code>-&gt; <code>git commit</code></p>
+<p>&#x597D;&#xFF0C;&#x73B0;&#x5728;&#xFF0C;&#x628A;&#x7B2C;&#x4E8C;&#x6B21;&#x4FEE;&#x6539;&#x63D0;&#x4EA4;&#x4E86;&#xFF0C;&#x7136;&#x540E;&#x5F00;&#x59CB;&#x5C0F;&#x7ED3;&#x3002;</p>
+<p>&#x5C0F;&#x7ED3;</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x4F60;&#x53C8;&#x7406;&#x89E3;&#x4E86;Git&#x662F;&#x5982;&#x4F55;&#x8DDF;&#x8E2A;&#x4FEE;&#x6539;&#x7684;&#xFF0C;&#x6BCF;&#x6B21;&#x4FEE;&#x6539;&#xFF0C;&#x5982;&#x679C;&#x4E0D;<code>add</code>&#x5230;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x90A3;&#x5C31;&#x4E0D;&#x4F1A;&#x52A0;&#x5165;&#x5230;<code>commit</code>&#x4E2D;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="gong_zuo_qu_he_zan_cun_qu.html" class="navigation navigation-prev " aria-label="Previous page: 工作区和暂存区">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="che_xiao_xiu_gai.html" class="navigation navigation-next " aria-label="Next page: 撤销修改">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"管理修改","level":"1.1.4.3","depth":3,"next":{"title":"撤销修改","level":"1.1.4.4","depth":3,"path":"che_xiao_xiu_gai.md","ref":"che_xiao_xiu_gai.md","articles":[]},"previous":{"title":"工作区和暂存区","level":"1.1.4.2","depth":3,"path":"gong_zuo_qu_he_zan_cun_qu.md","ref":"gong_zuo_qu_he_zan_cun_qu.md","articles":[]},"dir":"ltr"},"config":{"plugins":["baidu","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://tester360.cn/"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"git 教程","language":"zh-cn","gitbook":"*","description":"Git是目前世界上最先进的分布式版本控制系统（没有之一），本书内容转自 廖雪峰的网站，仅作学习研究用。"},"file":{"path":"guan_li_xiu_gai.md","mtime":"2016-06-14T07:46:35.373Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-14T07:47:42.968Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

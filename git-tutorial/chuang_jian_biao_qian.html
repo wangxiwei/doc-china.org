@@ -1,0 +1,768 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>创建标签 · git 教程</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cao_zuo_biao_qian.html" />
+    
+    
+    <link rel="prev" href="biao_qian_guan_li.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Git教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="gitjian_jie.html">
+            
+                <a href="gitjian_jie.html">
+            
+                    
+                    Git简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1" data-path="gitde_dan_sheng.html">
+            
+                <a href="gitde_dan_sheng.html">
+            
+                    
+                    Git的诞生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2" data-path="ji_zhong_shi_vs_fen_bu_shi.html">
+            
+                <a href="ji_zhong_shi_vs_fen_bu_shi.html">
+            
+                    
+                    集中式vs分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="an_zhuang_git.html">
+            
+                <a href="an_zhuang_git.html">
+            
+                    
+                    安装Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chuang_jian_ban_ben_ku.html">
+            
+                <a href="chuang_jian_ban_ben_ku.html">
+            
+                    
+                    创建版本库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="shi_guang_ji_chuan_suo.html">
+            
+                <a href="shi_guang_ji_chuan_suo.html">
+            
+                    
+                    时光机穿梭
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.1" data-path="ban_ben_hui_tui.html">
+            
+                <a href="ban_ben_hui_tui.html">
+            
+                    
+                    版本回退
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.2" data-path="gong_zuo_qu_he_zan_cun_qu.html">
+            
+                <a href="gong_zuo_qu_he_zan_cun_qu.html">
+            
+                    
+                    工作区和暂存区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.3" data-path="guan_li_xiu_gai.html">
+            
+                <a href="guan_li_xiu_gai.html">
+            
+                    
+                    管理修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4" data-path="che_xiao_xiu_gai.html">
+            
+                <a href="che_xiao_xiu_gai.html">
+            
+                    
+                    撤销修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.5" data-path="shan_chu_wen_jian.html">
+            
+                <a href="shan_chu_wen_jian.html">
+            
+                    
+                    删除文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="yuan_cheng_cang_ku.html">
+            
+                <a href="yuan_cheng_cang_ku.html">
+            
+                    
+                    远程仓库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.5.1" data-path="tian_jia_yuan_cheng_ku.html">
+            
+                <a href="tian_jia_yuan_cheng_ku.html">
+            
+                    
+                    添加远程库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5.2" data-path="cong_yuan_cheng_ku_ke_long.html">
+            
+                <a href="cong_yuan_cheng_ku_ke_long.html">
+            
+                    
+                    从远程库克隆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="fen_zhi_guan_li.html">
+            
+                <a href="fen_zhi_guan_li.html">
+            
+                    
+                    分支管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.6.1" data-path="chuang_jian_yu_he_bing_fen_zhi.html">
+            
+                <a href="chuang_jian_yu_he_bing_fen_zhi.html">
+            
+                    
+                    创建与合并分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.2" data-path="jie_jue_chong_tu.html">
+            
+                <a href="jie_jue_chong_tu.html">
+            
+                    
+                    解决冲突
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.3" data-path="fen_zhi_guan_li_ce_lve.html">
+            
+                <a href="fen_zhi_guan_li_ce_lve.html">
+            
+                    
+                    分支管理策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.4" data-path="bugfen_zhi.html">
+            
+                <a href="bugfen_zhi.html">
+            
+                    
+                    Bug分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.5" data-path="featurefen_zhi.html">
+            
+                <a href="featurefen_zhi.html">
+            
+                    
+                    Feature分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.6" data-path="duo_ren_xie_zuo.html">
+            
+                <a href="duo_ren_xie_zuo.html">
+            
+                    
+                    多人协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="biao_qian_guan_li.html">
+            
+                <a href="biao_qian_guan_li.html">
+            
+                    
+                    标签管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1.7.1" data-path="chuang_jian_biao_qian.html">
+            
+                <a href="chuang_jian_biao_qian.html">
+            
+                    
+                    创建标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7.2" data-path="cao_zuo_biao_qian.html">
+            
+                <a href="cao_zuo_biao_qian.html">
+            
+                    
+                    操作标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="shi_yong_github.html">
+            
+                <a href="shi_yong_github.html">
+            
+                    
+                    使用GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="zi_ding_yi_git.html">
+            
+                <a href="zi_ding_yi_git.html">
+            
+                    
+                    自定义Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.9.1" data-path="hu_lve_te_shu_wen_jian.html">
+            
+                <a href="hu_lve_te_shu_wen_jian.html">
+            
+                    
+                    忽略特殊文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9.2" data-path="pei_zhi_bie_ming.html">
+            
+                <a href="pei_zhi_bie_ming.html">
+            
+                    
+                    配置别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9.3" data-path="da_jian_git_fu_wu_qi.html">
+            
+                <a href="da_jian_git_fu_wu_qi.html">
+            
+                    
+                    搭建Git服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="qi_mo_zong_jie.html">
+            
+                <a href="qi_mo_zong_jie.html">
+            
+                    
+                    期末总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >创建标签</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="&#x521B;&#x5EFA;&#x6807;&#x7B7E;">&#x521B;&#x5EFA;&#x6807;&#x7B7E;</h4>
+<hr>
+<p>&#x5728;Git&#x4E2D;&#x6253;&#x6807;&#x7B7E;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x9996;&#x5148;&#xFF0C;&#x5207;&#x6362;&#x5230;&#x9700;&#x8981;&#x6253;&#x6807;&#x7B7E;&#x7684;&#x5206;&#x652F;&#x4E0A;&#xFF1A;</p>
+<pre><code>$ git branch
+* dev
+  master
+$ git checkout master
+Switched to branch &apos;master&apos;
+</code></pre><p>&#x7136;&#x540E;&#xFF0C;&#x6572;&#x547D;&#x4EE4;<code>git tag &lt;name&gt;</code>&#x5C31;&#x53EF;&#x4EE5;&#x6253;&#x4E00;&#x4E2A;&#x65B0;&#x6807;&#x7B7E;&#xFF1A;</p>
+<pre><code>$ git tag v1.0
+</code></pre><p>&#x53EF;&#x4EE5;&#x7528;&#x547D;&#x4EE4;<code>git tag</code>&#x67E5;&#x770B;&#x6240;&#x6709;&#x6807;&#x7B7E;&#xFF1A;</p>
+<pre><code>$ git tag
+v1.0
+</code></pre><p>&#x9ED8;&#x8BA4;&#x6807;&#x7B7E;&#x662F;&#x6253;&#x5728;&#x6700;&#x65B0;&#x63D0;&#x4EA4;&#x7684;commit&#x4E0A;&#x7684;&#x3002;&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x5FD8;&#x4E86;&#x6253;&#x6807;&#x7B7E;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x662F;&#x5468;&#x4E94;&#x4E86;&#xFF0C;&#x4F46;&#x5E94;&#x8BE5;&#x5728;&#x5468;&#x4E00;&#x6253;&#x7684;&#x6807;&#x7B7E;&#x6CA1;&#x6709;&#x6253;&#xFF0C;&#x600E;&#x4E48;&#x529E;&#xFF1F;</p>
+<p>&#x65B9;&#x6CD5;&#x662F;&#x627E;&#x5230;&#x5386;&#x53F2;&#x63D0;&#x4EA4;&#x7684;commit id&#xFF0C;&#x7136;&#x540E;&#x6253;&#x4E0A;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF1A;</p>
+<pre><code>$ git log --pretty=oneline --abbrev-commit
+6a5819e merged bug fix 101
+cc17032 fix bug 101
+7825a50 merge with no-ff
+6224937 add merge
+59bc1cb conflict fixed
+400b400 &amp; simple
+75a857c AND simple
+fec145a branch test
+d17efd8 remove test.txt
+...
+</code></pre><p>&#x6BD4;&#x65B9;&#x8BF4;&#x8981;&#x5BF9;<code>add merge</code>&#x8FD9;&#x6B21;&#x63D0;&#x4EA4;&#x6253;&#x6807;&#x7B7E;&#xFF0C;&#x5B83;&#x5BF9;&#x5E94;&#x7684;commit id&#x662F;<code>6224937</code>&#xFF0C;&#x6572;&#x5165;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>$ git tag v0.9 6224937
+</code></pre><p>&#x518D;&#x7528;&#x547D;&#x4EE4;<code>git tag</code>&#x67E5;&#x770B;&#x6807;&#x7B7E;&#xFF1A;</p>
+<pre><code>$ git tag
+v0.9
+v1.0
+</code></pre><p>&#x6CE8;&#x610F;&#xFF0C;&#x6807;&#x7B7E;&#x4E0D;&#x662F;&#x6309;&#x65F6;&#x95F4;&#x987A;&#x5E8F;&#x5217;&#x51FA;&#xFF0C;&#x800C;&#x662F;&#x6309;&#x5B57;&#x6BCD;&#x6392;&#x5E8F;&#x7684;&#x3002;&#x53EF;&#x4EE5;&#x7528;<code>git show &lt;tagname&gt;</code>&#x67E5;&#x770B;&#x6807;&#x7B7E;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code>$ git show v0.9
+commit 622493706ab447b6bb37e4e2a2f276a20fed2ab4
+Author: Michael Liao &lt;askxuefeng@gmail.com&gt;
+Date:   Thu Aug 22 11:22:08 2013 +0800
+
+    add merge
+...
+</code></pre><p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;<code>v0.9</code>&#x786E;&#x5B9E;&#x6253;&#x5728;<code>add merge</code>&#x8FD9;&#x6B21;&#x63D0;&#x4EA4;&#x4E0A;&#x3002;</p>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x5E26;&#x6709;&#x8BF4;&#x660E;&#x7684;&#x6807;&#x7B7E;&#xFF0C;&#x7528;<code>-a</code>&#x6307;&#x5B9A;&#x6807;&#x7B7E;&#x540D;&#xFF0C;<code>-m</code>&#x6307;&#x5B9A;&#x8BF4;&#x660E;&#x6587;&#x5B57;&#xFF1A;</p>
+<pre><code>$ git tag -a v0.1 -m &quot;version 0.1 released&quot; 3628164
+</code></pre><p>&#x7528;&#x547D;&#x4EE4;<code>git show &lt;tagname&gt;</code>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BF4;&#x660E;&#x6587;&#x5B57;&#xFF1A;</p>
+<pre><code>$ git show v0.1
+tag v0.1
+Tagger: Michael Liao &lt;askxuefeng@gmail.com&gt;
+Date:   Mon Aug 26 07:28:11 2013 +0800
+
+version 0.1 released
+
+commit 3628164fb26d48395383f8f31179f24e0882e1e0
+Author: Michael Liao &lt;askxuefeng@gmail.com&gt;
+Date:   Tue Aug 20 15:11:49 2013 +0800
+
+    append GPL
+</code></pre><p>&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>-s</code>&#x7528;&#x79C1;&#x94A5;&#x7B7E;&#x540D;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#xFF1A;</p>
+<pre><code>$ git tag -s v0.2 -m &quot;signed version 0.2 released&quot; fec145a
+</code></pre><p>&#x7B7E;&#x540D;&#x91C7;&#x7528;PGP&#x7B7E;&#x540D;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5FC5;&#x987B;&#x9996;&#x5148;&#x5B89;&#x88C5;gpg&#xFF08;GnuPG&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;gpg&#xFF0C;&#x6216;&#x8005;&#x6CA1;&#x6709;gpg&#x5BC6;&#x94A5;&#x5BF9;&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#xFF1A;</p>
+<pre><code>gpg: signing failed: secret key not available
+error: gpg failed to sign the data
+error: unable to sign the tag
+</code></pre><p>&#x5982;&#x679C;&#x62A5;&#x9519;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;GnuPG&#x5E2E;&#x52A9;&#x6587;&#x6863;&#x914D;&#x7F6E;Key&#x3002;</p>
+<p>&#x7528;&#x547D;&#x4EE4;<code>git show &lt;tagname&gt;</code>&#x53EF;&#x4EE5;&#x770B;&#x5230;PGP&#x7B7E;&#x540D;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code>$ git show v0.2
+tag v0.2
+Tagger: Michael Liao &lt;askxuefeng@gmail.com&gt;
+Date:   Mon Aug 26 07:28:33 2013 +0800
+
+signed version 0.2 released
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (Darwin)
+
+iQEcBAABAgAGBQJSGpMhAAoJEPUxHyDAhBpT4QQIAKeHfR3bo...
+-----END PGP SIGNATURE-----
+
+commit fec145accd63cdc9ed95a2f557ea0658a2a6537f
+Author: Michael Liao &lt;askxuefeng@gmail.com&gt;
+Date:   Thu Aug 22 10:37:30 2013 +0800
+
+    branch test
+</code></pre><p>&#x7528;PGP&#x7B7E;&#x540D;&#x7684;&#x6807;&#x7B7E;&#x662F;&#x4E0D;&#x53EF;&#x4F2A;&#x9020;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x53EF;&#x4EE5;&#x9A8C;&#x8BC1;PGP&#x7B7E;&#x540D;&#x3002;&#x9A8C;&#x8BC1;&#x7B7E;&#x540D;&#x7684;&#x65B9;&#x6CD5;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x4ECB;&#x7ECD;&#x4E86;&#x3002;</p>
+<p>&#x5C0F;&#x7ED3;</p>
+<ul>
+<li><p>&#x547D;&#x4EE4;<code>git tag &lt;name&gt;</code>&#x7528;&#x4E8E;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>HEAD</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;commit id&#xFF1B;</p>
+</li>
+<li><p><code>git tag -a &lt;tagname&gt; -m &quot;blablabla...&quot;</code>&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x6807;&#x7B7E;&#x4FE1;&#x606F;&#xFF1B;</p>
+</li>
+<li><p><code>git tag -s &lt;tagname&gt; -m &quot;blablabla...&quot;</code>&#x53EF;&#x4EE5;&#x7528;PGP&#x7B7E;&#x540D;&#x6807;&#x7B7E;&#xFF1B;</p>
+</li>
+<li><p>&#x547D;&#x4EE4;<code>git tag</code>&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6240;&#x6709;&#x6807;&#x7B7E;&#x3002;</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="biao_qian_guan_li.html" class="navigation navigation-prev " aria-label="Previous page: 标签管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cao_zuo_biao_qian.html" class="navigation navigation-next " aria-label="Next page: 操作标签">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"创建标签","level":"1.1.7.1","depth":3,"next":{"title":"操作标签","level":"1.1.7.2","depth":3,"path":"cao_zuo_biao_qian.md","ref":"cao_zuo_biao_qian.md","articles":[]},"previous":{"title":"标签管理","level":"1.1.7","depth":2,"path":"biao_qian_guan_li.md","ref":"biao_qian_guan_li.md","articles":[{"title":"创建标签","level":"1.1.7.1","depth":3,"path":"chuang_jian_biao_qian.md","ref":"chuang_jian_biao_qian.md","articles":[]},{"title":"操作标签","level":"1.1.7.2","depth":3,"path":"cao_zuo_biao_qian.md","ref":"cao_zuo_biao_qian.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["baidu","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://tester360.cn/"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"git 教程","language":"zh-cn","gitbook":"*","description":"Git是目前世界上最先进的分布式版本控制系统（没有之一），本书内容转自 廖雪峰的网站，仅作学习研究用。"},"file":{"path":"chuang_jian_biao_qian.md","mtime":"2016-06-14T07:46:35.344Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-14T07:47:42.968Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

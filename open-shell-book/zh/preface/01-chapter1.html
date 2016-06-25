@@ -1,0 +1,414 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>简介 · Shell 编程范例</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapters/01-chapter1.html" />
+    
+    
+    <link rel="prev" href="01-chapter0.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-chapter0.html">
+            
+                <a href="01-chapter0.html">
+            
+                    
+                    版本修订历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="01-chapter1.html">
+            
+                <a href="01-chapter1.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapters/01-chapter1.html">
+            
+                <a href="../chapters/01-chapter1.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapters/01-chapter2.html">
+            
+                <a href="../chapters/01-chapter2.html">
+            
+                    
+                    数值运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapters/01-chapter3.html">
+            
+                <a href="../chapters/01-chapter3.html">
+            
+                    
+                    布尔运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapters/01-chapter4.html">
+            
+                <a href="../chapters/01-chapter4.html">
+            
+                    
+                    字符串操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapters/01-chapter5.html">
+            
+                <a href="../chapters/01-chapter5.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapters/01-chapter6.html">
+            
+                <a href="../chapters/01-chapter6.html">
+            
+                    
+                    文件系统操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapters/01-chapter7.html">
+            
+                <a href="../chapters/01-chapter7.html">
+            
+                    
+                    进程操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapters/01-chapter8.html">
+            
+                <a href="../chapters/01-chapter8.html">
+            
+                    
+                    网络操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapters/01-chapter9.html">
+            
+                <a href="../chapters/01-chapter9.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../appendix/02-chapter1.html">
+            
+                <a href="../appendix/02-chapter1.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >简介</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h1>
+<ul>
+<li><a href="#toc_18682_17841_1">&#x80CC;&#x666F;</a></li>
+<li><a href="#toc_18682_17841_2">&#x73B0;&#x72B6;</a></li>
+<li><a href="#toc_18682_17841_3">&#x8BA1;&#x5212;</a></li>
+</ul>
+<p><span id="toc_18682_17841_1"></span></p>
+<h2 id="&#x80CC;&#x666F;">&#x80CC;&#x666F;</h2>
+<p>&#x65E9;&#x5728; 2007 &#x5E74; 11 &#x6708;&#xFF0C;&#x4E3A;&#x4E86;&#x7CFB;&#x7EDF;&#x5730;&#x5B66;&#x4E60;&#x548C;&#x603B;&#x7ED3; Shell &#x7F16;&#x7A0B;&#xFF0C;&#x4F5C;&#x8005;&#x4E13;&#x95E8;&#x5236;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A; Shell &#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x7684;&#x603B;&#x7ED3;&#x8BA1;&#x5212;&#xFF0C;&#x5F53;&#x65F6;&#x7684;&#x8BA1;&#x5212;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p>&#x8FD9;&#x4E2A;&#x7CFB;&#x5217;&#x5C06;&#x4EE5;&#x9762;&#x5411;&#x201C;&#x5BF9;&#x8C61;&#x201D;&#xFF08;&#x5373;&#x6211;&#x4EEC;&#x64CD;&#x4F5C;&#x7684;&#x5BF9;&#x8C61;&#xFF09;&#x6765;&#x5C55;&#x5F00;&#xFF0C;&#x5E76;&#x5F15;&#x5165;&#x5927;&#x91CF;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x8FD9;&#x6837;&#x6709;&#x52A9;&#x4E8E;&#x8BA9;&#x6211;&#x4EEC;&#x771F;&#x6B63;&#x53BB;&#x5B66;&#x4EE5;&#x81F4;&#x7528;&#xFF0C;&#x5E76;&#x5728;&#x7528;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x63D0;&#x9AD8;&#x5174;&#x8DA3;&#x3002;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x7CFB;&#x5217;&#x5C06;&#x4E0D;&#x4F1A;&#x4E13;&#x95E8;&#x4ECB;&#x7ECD; Shell &#x7684;&#x8BED;&#x6CD5;&#xFF0C; &#x800C;&#x662F;&#x5047;&#x8BBE;&#x8BFB;&#x8005;&#x5BF9; Shell &#x7F16;&#x7A0B;&#x6709;&#x4E86;&#x4E00;&#x5B9A;&#x7684;&#x57FA;&#x7840;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x8BE5;&#x7CFB;&#x5217;&#x5230;&#x6700;&#x540E;&#x53EF;&#x80FD;&#x4F1A;&#x6DB5;&#x76D6;&#xFF1A;&#x6570;&#x503C;&#x3001;&#x903B;&#x8F91;&#x503C;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6587;&#x4EF6;&#x3001;&#x8FDB;&#x7A0B;&#x3001;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7B49;&#x6240;&#x6709;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x64CD;&#x4F5C;&#x7684;&#x201C;&#x5BF9;&#x8C61;&#x201D;&#xFF0C;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x4E5F;&#x5C06;&#x4ECE;&#x4F4E;&#x7EA7;&#x5230;&#x9AD8;&#x7EA7;&#xFF0C;&#x8FDB;&#x800C;&#x4E0A;&#x5347;&#x5230;&#x7F51;&#x7EDC;&#x5C42;&#x9762;&#xFF0C;&#x6574;&#x4E2A;&#x901A;&#x8FC7;&#x5404;&#x79CD;&#x65B9;&#x5F0F;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x96C6;&#x5408;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x8FD9;&#x4E5F;&#x672A;&#x5C1D;&#x4E0D;&#x662F;&#x5728;&#x6478;&#x7D22; UNIX &#x7684;&#x54F2;&#x5B66;&#xFF0C;&#x90A3;&quot;K.I.S.S&quot;&#xFF08;Keep It Simple, Stupid&#xFF09;&#x8574;&#x85CF;&#x7684;&#x5DE8;&#x5927;&#x80FD;&#x91CF;&#x3002;</p>
+<p>&#x2014;&#x2014; &#x6458;&#x81EA;&#x300A;&#x5170;&#x5927;&#x5F00;&#x6E90;&#x793E;&#x533A; &gt;&gt; &#x811A;&#x672C;&#x7F16;&#x7A0B; &gt;&gt; Shell &#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x300B;</p>
+</blockquote>
+<p>2008 &#x5E74; 4 &#x6708;&#x5E95;&#xFF0C;&#x6574;&#x4E2A;&#x7CFB;&#x5217;&#x5927;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x548C;&#x6846;&#x67B6;&#x57FA;&#x672C;&#x5B8C;&#x6210;&#xFF0C;&#x540E;&#x6765;&#x7531;&#x4E8E;&#x5B9E;&#x4E60;&#x548C;&#x5DE5;&#x4F5C;&#x539F;&#x56E0;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x6301;&#x7EED;&#x5B8C;&#x5584;&#x3002;&#x4E0D;&#x8FC7;&#x76F8;&#x5173;&#x7AE0;&#x8282;&#x5374;&#x83B7;&#x5F97;&#x4E86;&#x8F83;&#x597D;&#x7684;&#x53CD;&#x54CD;&#xFF0C;&#x5F88;&#x591A;&#x70ED;&#x5FC3;&#x7F51;&#x53CB;&#x6709;&#x5927;&#x91CF;&#x8BC4;&#x8BBA;&#x548C;&#x8F6C;&#x8F7D;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x767E;&#x5EA6;&#x6587;&#x5E93;&#x8F6C;&#x8F7D;&#x7684;&#x4E00;&#x4EFD;&#x300A;Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#x300B;&#x7684;&#x8BBF;&#x95EE;&#x91CF;&#x5DF2;&#x63A5;&#x8FD1; 3000&#x3002;&#x8BF4;&#x660E;&#x6574;&#x4E2A;&#x7CFB;&#x5217;&#x8FD8;&#x662F;&#x6709;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x9605;&#x8BFB;&#x7FA4;&#x4F53;&#x3002;</p>
+<p><span id="toc_18682_17841_2"></span></p>
+<h2 id="&#x73B0;&#x72B6;">&#x73B0;&#x72B6;</h2>
+<p>&#x8003;&#x8651;&#x5230;&#x6574;&#x4E2A; Linux &#x4E16;&#x754C;&#x7684;&#x84EC;&#x52C3;&#x53D1;&#x5C55;&#xFF0C;Shell &#x7684;&#x4F7F;&#x7528;&#x73AF;&#x5883;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#xFF0C;&#x76F8;&#x5173;&#x4F7F;&#x7528;&#x7FA4;&#x4F53;&#x4F1A;&#x4E0D;&#x65AD;&#x589E;&#x52A0;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x8FD1;&#x5DF2;&#x7ECF;&#x5C06;&#x8BE5;&#x7CFB;&#x5217;&#x91CD;&#x65B0;&#x6574;&#x7406;&#xFF0C;&#x5E76;&#x4EE5;&#x81EA;&#x7531;&#x4E66;&#x7C4D;&#x7684;&#x65B9;&#x5F0F;&#x53D1;&#x5E03;&#xFF0C;&#x4EE5;&#x4FBF;&#x60E0;&#x53CA;&#x66F4;&#x591A;&#x7684;&#x8BFB;&#x8005;&#x3002;</p>
+<p>&#x6574;&#x4E2A;&#x7CFB;&#x5217;&#x5DF2;&#x7ECF;&#x7528; <a href="http://www.tinylab.org/start-posting-with-markdown/" target="_blank">Markdown</a> &#x91CD;&#x65B0;&#x7EC4;&#x7EC7;&#xFF0C;&#x5E76;&#x53D1;&#x5E03;&#x5230;&#x4E86; <a href="http://tinylab.org" target="_blank">&#x6CF0;&#x6653;&#x79D1;&#x6280;|TinyLab.org</a>&#x3002;</p>
+<p>&#x6574;&#x7406;&#x5230;<a href="http://tinylab.org" target="_blank">TinyLab.org</a>&#x7684;&#x7D22;&#x5F15;&#x7BC7;&#x662F;&#xFF1A;<a href="http://www.tinylab.org/shell-programming-paradigm-series-index-review/" target="_blank">&#x300A;Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x7D22;&#x5F15;&#x7BC7;&#x300B;</a>&#xFF0C;&#x5176;&#x5185;&#x5BB9;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><a href="http://www.tinylab.org/shell-programming-paradigm-begins-with/" target="_blank">Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x5F00;&#x7BC7;</a> (&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;2007-07-21)</li>
+<li><a href="http://www.tinylab.org/shell-numeric-calculation/" target="_blank">Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x6570;&#x503C;&#x8FD0;&#x7B97;</a> (&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;2007-11-9)</li>
+<li><a href="http://www.tinylab.org/shell-programming-paradigm-of-boolean-operations/" target="_blank">Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x5E03;&#x5C14;&#x8FD0;&#x7B97;</a> (&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;2007-10-30)</li>
+<li><a href="http://www.tinylab.org/shell-programming-paradigm-of-string-manipulation/" target="_blank">Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;</a> (&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;2007-11-21)</li>
+<li><a href="http://www.tinylab.org/shell-programming-paradigms-of-file-operations/" target="_blank">Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;</a> (&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;2007-12-5)</li>
+<li><a href="http://www.tinylab.org/shell-programming-paradigm-in-file-system-operations/" target="_blank">Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x64CD;&#x4F5C;</a> (&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;2007-12-29)</li>
+<li><a href="http://www.tinylab.org/shell-programming-paradigm-of-process-operations/" target="_blank">Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x8FDB;&#x7A0B;&#x64CD;&#x4F5C;</a> (&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;2008-02-22)</li>
+<li><a href="http://www.tinylab.org/shell-programming-paradigm-of-network-operations/" target="_blank">Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x7F51;&#x7EDC;&#x64CD;&#x4F5C;</a> (&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;2008-04-19)</li>
+<li><a href="http://www.tinylab.org/summary-of-shell-programming-paradigm-article/" target="_blank">Shell&#x7F16;&#x7A0B;&#x8303;&#x4F8B;&#x4E4B;&#x603B;&#x7ED3;&#x7BC7;</a> (&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;2008-07-21)<br></li>
+</ul>
+<p>&#x6700;&#x8FD1;&#xFF0C;&#x57FA;&#x4E8E;&#x4E00;&#x4E2A; Markdown &#x7684;<a href="http://tinylab.org/docker-quick-start-docker-gitbook-writing-a-book/" target="_blank">&#x5F00;&#x6E90;&#x4E66;&#x7C4D;&#x6A21;&#x7248;</a>&#xFF1A;Gitbook&#xFF0C;&#x5DF2;&#x7ECF;&#x628A;&#x8BE5;&#x7CFB;&#x5217;&#x6574;&#x7406;&#x6210;&#x4E86;&#x81EA;&#x7531;&#x4E66;&#x7C4D;&#xFF0C;&#x5E76;&#x7EF4;&#x62A4;&#x5728; TinyLab &#x7684;<a href="https://github.com/tinyclub/open-shell-book" target="_blank">&#x9879;&#x76EE;&#x4ED3;&#x5E93;</a>&#x4E2D;&#x3002;&#x9879;&#x76EE;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x9879;&#x76EE;&#x9996;&#x9875;&#xFF1A;<a href="http://www.tinylab.org/open-shell-book/" target="_blank">http://www.tinylab.org/open-shell-book/</a></li>
+<li>&#x4EE3;&#x7801;&#x4ED3;&#x5E93;&#xFF1A;<a href="https://github.com/tinyclub/open-shell-book" target="_blank">https://github.com/tinyclub/open-shell-book.git</a></li>
+</ul>
+<p><span id="toc_18682_17841_3"></span></p>
+<h2 id="&#x8BA1;&#x5212;">&#x8BA1;&#x5212;</h2>
+<p>&#x540E;&#x7EED;&#x9664;&#x4E86;&#x7EE7;&#x7EED;&#x5728; <a href="http://tinylab.org" target="_blank">&#x6CF0;&#x6653;&#x79D1;&#x6280;|TinyLab.org</a> &#x4EE5; Blog &#x5F62;&#x5F0F;&#x6301;&#x7EED;&#x66F4;&#x65B0;&#x5916;&#xFF0C;&#x8FD8;&#x6253;&#x7B97;&#x91CD;&#x65B0;&#x89C4;&#x5212;&#x3001;&#x589E;&#x8865;&#x6574;&#x4E2A;&#x7CFB;&#x5217;&#xFF0C;&#x5E76;&#x4EE5;&#x81EA;&#x7531;&#x4E66;&#x7C4D;&#x7684;&#x65B9;&#x5F0F;&#x6301;&#x7EED;&#x7EF4;&#x62A4;&#xFF0C;&#x5E76;&#x901A;&#x8FC7; <a href="http://tinylab.org" target="_blank">TinLab.org</a> &#x5E73;&#x53F0;&#x63A5;&#x53D7;&#x8BFB;&#x8005;&#x7684;&#x53CD;&#x9988;&#xFF0C;&#x76F4;&#x5230;&#x6B63;&#x5F0F;&#x53D1;&#x884C;&#x51FA;&#x7248;&#x3002;</p>
+<p>&#x6B22;&#x8FCE;&#x5927;&#x5BB6;&#x6307;&#x51FA;&#x672C;&#x4E66;&#x521D;&#x7A3F;&#x4E2D;&#x7684;&#x4E0D;&#x8DB3;&#xFF0C;&#x751A;&#x81F3;&#x53C2;&#x4E0E;&#x5230;&#x76F8;&#x5173;&#x7AE0;&#x8282;&#x7684;&#x5199;&#x4F5C;&#x3001;&#x6821;&#x8BA2;&#x548C;&#x5B8C;&#x5584;&#x4E2D;&#x6765;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6709;&#x65F6;&#x95F4;&#x548C;&#x5174;&#x8DA3;&#xFF0C;&#x6B22;&#x8FCE;&#x53C2;&#x4E0E;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <a href="http://www.tinylab.org/about/" target="_blank">&#x6CF0;&#x6653;&#x79D1;&#x6280;</a> &#x8054;&#x7CFB;&#x6211;&#x4EEC;&#xFF0C;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x5173;&#x6CE8;&#x5FAE;&#x535A;<a href="http://weibo.com/tinylaborg" target="_blank">@&#x6CF0;&#x6653;&#x79D1;&#x6280;</a>&#x5E76;&#x79C1;&#x4FE1;&#x6211;&#x4EEC;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01-chapter0.html" class="navigation navigation-prev " aria-label="Previous page: 版本修订历史">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapters/01-chapter1.html" class="navigation navigation-next " aria-label="Next page: 准备工作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"简介","level":"1.3","depth":1,"next":{"title":"准备工作","level":"1.4","depth":1,"path":"zh/chapters/01-chapter1.markdown","ref":"zh/chapters/01-chapter1.markdown","articles":[]},"previous":{"title":"版本修订历史","level":"1.2","depth":1,"path":"zh/preface/01-chapter0.markdown","ref":"zh/preface/01-chapter0.markdown","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Shell 编程范例","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"Shell编程学习入门教程"},"file":{"path":"zh/preface/01-chapter1.markdown","mtime":"2016-06-20T01:40:33.645Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:43:04.141Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

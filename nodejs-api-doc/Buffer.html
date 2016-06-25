@@ -1,0 +1,1280 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Buffer · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Child_process.html" />
+    
+    
+    <link rel="prev" href="Assertion-Testing.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Buffer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="buffer">Buffer</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x7EAF;&#x7CB9;&#x7684;<code>JavaScript</code>&#x662F;Unicode&#x53CB;&#x597D;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x5F88;&#x597D;&#x5730;&#x5904;&#x7406;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3002;&#x5F53;&#x5904;&#x7406;TCP&#x6D41;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x6D41;&#x65F6;&#xFF0C;&#x64CD;&#x4F5C;&#x516B;&#x8FDB;&#x5236;&#x6D41;&#x662F;&#x5FC5;&#x8981;&#x7684;&#x3002;<code>node.js</code>&#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x79CD;&#x7B56;&#x7565;&#x6765;&#x64CD;&#x4F5C;&#xFF0C;&#x521B;&#x5EFA;&#x548C;&#x4F7F;&#x7528;&#x516B;&#x8FDB;&#x5236;&#x6D41;&#x3002;</p>
+<p>&#x539F;&#x59CB;&#x7684;&#x6570;&#x636E;&#x88AB;&#x5B58;&#x50A8;&#x5728;<code>Buffer</code>&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;<code>Buffer</code>&#x7C7B;&#x4F3C;&#x4E8E;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x6570;&#x7EC4;&#x4F46;&#x662F;&#x4F7F;&#x7528;&#x4E86;V8&#x5806;&#x4E4B;&#x5916;&#x7684;&#x5185;&#x5B58;&#x5206;&#x914D;&#x3002;&#x4E00;&#x4E2A;<code>Buffer</code>&#x4E0D;&#x80FD;&#x88AB;&#x6539;&#x53D8;&#x5927;&#x5C0F;&#x3002;</p>
+<p><code>Buffer</code>&#x7C7B;&#x662F;&#x5168;&#x5C40;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x662F;&#x5C11;&#x6570;&#x7684;&#x4E0D;&#x7528;<code>require(&apos;buffer&apos;)</code>&#x5C31;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x4E4B;&#x4E00;&#x3002;</p>
+<p><code>Buffer</code>&#x548C;<code>JavaScript</code>&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x660E;&#x786E;&#x5730;&#x7F16;&#x7801;&#x65B9;&#x6CD5;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x4E9B;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7F16;&#x7801;&#x3002;</p>
+<p>&apos;ascii&apos; - &#x4EC5;&#x4F9B;7&#x4F4D;&#x7684;ASCII&#x6570;&#x636E;&#x4F7F;&#x7528;&#xFF0C;&#x8FD9;&#x4E2A;&#x7F16;&#x7801;&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x7684;&#x5FEB;&#x901F;&#xFF0C;&#x800C;&#x4E14;&#x4F1A;&#x5265;&#x79BB;&#x8FC7;&#x9AD8;&#x7684;&#x4F4D;&#xFF08;&#x5982;&#x679C;&#x6709;&#x8BBE;&#x7F6E;&#xFF09;&#x3002;</p>
+<p>&apos;utf8&apos; - &#x591A;&#x5B57;&#x8282;&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x3002;&#x8BB8;&#x591A;web&#x9875;&#x9762;&#x548C;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x6587;&#x6863;&#x90FD;&#x4F7F;&#x7528;UTF-8&#x7F16;&#x7801;&#x3002;</p>
+<p>&apos;utf16le&apos; - 2&#x6216;4&#x4E2A;&#x5B57;&#x8282;&#xFF0C;<code>little endian</code>&#x7F16;&#x7801;&#x5B57;&#x7B26;&#x3002;&#x652F;&#x6301;(U+10000 &#x5230; U+10FFFF)&#x7684;&#x4EE3;&#x7406;&#x5BF9;&#x3002;</p>
+<p>&apos;ucs2&apos; - &apos;utf16le&apos;&#x7684;&#x522B;&#x540D;&#x3002;</p>
+<p>&apos;base64&apos; - Base64 &#x5B57;&#x7B26;&#x4E32;&#x7F16;&#x7801;&#x3002;</p>
+<p>&apos;binary&apos; - &#x4E00;&#x79CD;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x524D;&#x516B;&#x4F4D;&#x6765;&#x5C06;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x89E3;&#x7801;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x8FD9;&#x4E2A;&#x7F16;&#x7801;&#x65B9;&#x6CD5;&#x5DF2;&#x7ECF;&#x4E0D;&#x88AB;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;&#x5728;&#x5904;&#x7406;<code>Buffer</code>&#x5BF9;&#x8C61;&#x65F6;&#x5E94;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x8FD9;&#x4E2A;&#x7F16;&#x7801;&#x5C06;&#x4F1A;&#x5728;<code>node.js</code>&#x7684;&#x672A;&#x6765;&#x7248;&#x672C;&#x4E2D;&#x79FB;&#x9664;&#x3002;</p>
+<p>&apos;hex&apos; - &#x628A;&#x6BCF;&#x4E2A;&#x5B57;&#x8282;&#x7F16;&#x7801;&#x6210;2&#x4E2A;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x4ECE;&#x4E00;&#x4E2A;<code>Buffer</code>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x6570;&#x7EC4;(typed array)&#x9075;&#x5FAA;&#x4EE5;&#x4E0B;&#x7684;&#x8BF4;&#x660E;&#xFF1A;</p>
+<p>1&#xFF0C;<code>Buffer</code>&#x7684;&#x5185;&#x5B58;&#x662F;&#x88AB;&#x590D;&#x5236;&#x7684;&#xFF0C;&#x4E0D;&#x662F;&#x5171;&#x4EAB;&#x7684;&#x3002;</p>
+<p>2&#xFF0C;<code>Buffer</code>&#x7684;&#x5185;&#x5B58;&#x88AB;&#x89E3;&#x91CA;&#x5F53;&#x505A;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x6570;&#x7EC4;(byte array)&#x3002;&#x6362;&#x8A00;&#x4E4B;&#xFF0C;<code>new Uint32Array(new Buffer([1,2,3,4]))</code>&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;4&#x4E2A;&#x5143;&#x7D20;&#xFF08;[1,2,3,4]&#xFF09;&#x7684;<code>Uint32Array</code>,&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF08;[0x1020304] &#x6216; [0x4030201]&#xFF09;&#x7684;<code>Uint32Array</code>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A; Node.js v0.8 &#x53EA;&#x662F;&#x7B80;&#x5355;&#x5F97;&#x5728;<code>array.buffer</code>&#x4E2D;&#x4FDD;&#x7559;&#x4E86;<code>buffer</code>&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x590D;&#x5236;&#x4E00;&#x4EFD;&#x3002;</p>
+<h4 id="class-buffer">Class: Buffer</h4>
+<p>Buffer&#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x7C7B;&#x7528;&#x4E8E;&#x76F4;&#x63A5;&#x5904;&#x7406;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3002;&#x5B83;&#x7684;&#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x88AB;&#x591A;&#x79CD;&#x9014;&#x5F84;&#x6784;&#x5EFA;&#x3002;</p>
+<h4 id="new-buffersize">new Buffer(size)</h4>
+<ul>
+<li>size Number</li>
+</ul>
+<p>&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x5927;&#x5C0F;&#x4E3A;&#x6307;&#x5B9A;<code>size</code>&#x7684;&#x516B;&#x4F4D;&#x5B57;&#x8282;&#x7684;&#x65B0;<code>buffer</code>&#x3002;&#x6CE8;&#x610F;&#xFF0C;<code>size</code>&#x4E0D;&#x80FD;&#x8D85;&#x8FC7;kMaxLength&#xFF0C;&#x5426;&#x5219;&#x4E00;&#x4E2A;<code>RangeError</code>&#x5C06;&#x4F1A;&#x88AB;&#x629B;&#x51FA;&#x3002;</p>
+<h4 id="new-bufferarray">new Buffer(array)</h4>
+<ul>
+<li>array Array</li>
+</ul>
+<p>&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x516B;&#x8FDB;&#x5236;&#x6570;&#x7EC4;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>buffer</code>&#x3002;</p>
+<h4 id="new-bufferbuffer">new Buffer(buffer)</h4>
+<ul>
+<li>buffer Buffer</li>
+</ul>
+<p>&#x5C06;&#x4F20;&#x9012;&#x7684;<code>buffer</code>&#x590D;&#x5236;&#x8FDB;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Buffer&#x5B9E;&#x4F8B;&#x3002;</p>
+<h4 id="new-bufferstr-encoding">new Buffer(str[, encoding])</h4>
+<ul>
+<li>str String - &#x4F20;&#x5165;buffer&#x7684;&#x5B57;&#x7B26;&#x4E32;</li>
+<li>encoding String - &#x53EF;&#x9009;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x7F16;&#x7801;</li>
+</ul>
+<p>&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;<code>str</code>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>buffer</code>&#xFF0C;&#x7F16;&#x7801;&#x9ED8;&#x8BA4;&#x662F;UTF-8&#x3002;</p>
+<h4 id="class-method-bufferisencodingencoding">Class Method: Buffer.isEncoding(encoding)</h4>
+<ul>
+<li>encoding String &#x5C06;&#x8981;&#x88AB;&#x6D4B;&#x8BD5;&#x7684;&#x7F16;&#x7801;&#xFF0C;&#x8FD4;&#x56DE;<code>true</code>&#x82E5;&#x6B64;&#x7F16;&#x7801;&#x662F;&#x5408;&#x6CD5;&#x7684;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</li>
+</ul>
+<h4 id="class-method-bufferisbufferobj">Class Method: Buffer.isBuffer(obj)</h4>
+<ul>
+<li>obj Object</li>
+<li>Return: Boolean</li>
+</ul>
+<p>&#x6D4B;&#x8BD5;<code>obj</code>&#x662F;&#x5426;&#x4E3A;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="class-method-bufferbytelengthstring-encoding">Class Method: Buffer.byteLength(string[, encoding])</h4>
+<ul>
+<li>string String</li>
+<li>encoding String, &#x53EF;&#x9009;&#xFF0C; &#x9ED8;&#x8BA4;&#xFF1A; &apos;utf8&apos;</li>
+<li>Return: Number</li>
+</ul>
+<p>&#x7ED9;&#x51FA;<code>string</code>&#x7684;&#x5B9E;&#x9645;&#x5B57;&#x8282;&#x957F;&#x5EA6;&#x3002;&#x7F16;&#x7801;&#x9ED8;&#x8BA4;&#x4E3A;UTF-8&#x3002;&#x8FD9;&#x4E0E;<code>String.prototype.length</code>&#x4E0D;&#x540C;&#xFF0C;&#x56E0;&#x4E3A;<code>String.prototype.length</code>&#x53EA;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x5B57;&#x7B26;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-js">str = <span class="hljs-string">&apos;\u00bd + \u00bc = \u00be&apos;</span>;
+
+<span class="hljs-built_in">console</span>.log(str + <span class="hljs-string">&quot;: &quot;</span> + str.length + <span class="hljs-string">&quot; characters, &quot;</span> +
+  Buffer.byteLength(str, <span class="hljs-string">&apos;utf8&apos;</span>) + <span class="hljs-string">&quot; bytes&quot;</span>);
+
+<span class="hljs-comment">// &#xBD; + &#xBC; = &#xBE;: 9 characters, 12 bytes</span>
+</code></pre>
+<h4 id="class-method-bufferconcatlist-totallength">Class Method: Buffer.concat(list[, totalLength])</h4>
+<ul>
+<li>list Array &#x9700;&#x8981;&#x88AB;&#x8FDE;&#x63A5;&#x7684;Buffer&#x5BF9;&#x8C61;</li>
+<li>totalLength Number &#x5C06;&#x8981;&#x88AB;&#x8FDE;&#x63A5;&#x7684;buffers&#x7684;</li>
+<li>Returns &#x8FDE;&#x63A5;&#x5B8C;&#x6BD5;&#x7684;buffer</li>
+</ul>
+<p>&#x82E5;<code>list</code>&#x4E3A;&#x7A7A;&#xFF0C;&#x6216;<code>totalLength</code>&#x4E3A;0&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A;0&#x7684;buffer&#x3002;
+&#x82E5;<code>list</code>&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x5C06;&#x88AB;&#x8FD4;&#x56DE;&#x3002;
+&#x82E5;<code>list</code>&#x6709;&#x8D85;&#x8FC7;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Buffer&#x5B9E;&#x4F8B;&#x3002;
+&#x5982;&#x679C;<code>totalLength</code>&#x6CA1;&#x6709;&#x88AB;&#x63D0;&#x4F9B;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4F1A;&#x4ECE;<code>list</code>&#x4E2D;&#x8BA1;&#x7B97;&#x8BFB;&#x53D6;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x589E;&#x52A0;&#x4E86;&#x51FD;&#x6570;&#x7684;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x5FAA;&#x73AF;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x76F4;&#x63A5;&#x957F;&#x5EA6;&#x90A3;&#x4E48;&#x6027;&#x80FD;&#x4F1A;&#x66F4;&#x597D;&#x3002;</p>
+<h4 id="class-method-buffercomparebuf1-buf2">Class Method: Buffer.compare(buf1, buf2)</h4>
+<ul>
+<li>buf1 Buffer</li>
+<li>buf2 Buffer
+&#x4E0E;buf1.compare(buf2)&#x76F8;&#x540C;. &#x5BF9;&#x4E8E;&#x6392;&#x5E8F;&#x4E00;&#x4E2A;Buffers&#x7684;&#x6570;&#x7EC4;&#x975E;&#x5E38;&#x6709;&#x7528;:<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [Buffer(<span class="hljs-string">&apos;1234&apos;</span>), Buffer(<span class="hljs-string">&apos;0123&apos;</span>)];
+arr.sort(Buffer.compare);
+</code></pre>
+</li>
+</ul>
+<h4 id="buflength">buf.length</h4>
+<ul>
+<li>Return Number &#x8FD9;&#x4E2A;buffer&#x7684;&#x5B57;&#x8282;&#x957F;&#x5EA6;&#x3002;&#x6CE8;&#x610F;&#x8FD9;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x8FD9;&#x4E2A;buffer&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x957F;&#x5EA6;&#x3002;&#x5B83;&#x662F;&#x8FD9;&#x4E2A;buffer&#x5BF9;&#x8C61;&#x6240;&#x5206;&#x914D;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x968F;&#x7740;buffer&#x7684;&#x5185;&#x5BB9;&#x7684;&#x6539;&#x53D8;&#x800C;&#x6539;&#x53D8;</li>
+</ul>
+<pre><code class="lang-js">buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">1234</span>);
+
+<span class="hljs-built_in">console</span>.log(buf.length);
+buf.write(<span class="hljs-string">&quot;some string&quot;</span>, <span class="hljs-number">0</span>, <span class="hljs-string">&quot;ascii&quot;</span>);
+<span class="hljs-built_in">console</span>.log(buf.length);
+
+<span class="hljs-comment">// 1234</span>
+<span class="hljs-comment">// 1234</span>
+</code></pre>
+<p>&#x867D;&#x7136;<code>buffer</code>&#x7684;<code>length</code>&#x5C5E;&#x6027;&#x5E76;&#x4E0D;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x6539;&#x53D8;<code>length</code>&#x5C5E;&#x6027;&#x7684;&#x503C;&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x4E4B;&#x53D8;&#x6210;<code>undefined</code>&#x6216;&#x5F15;&#x8D77;&#x4E00;&#x4E9B;&#x4E0D;&#x4E00;&#x81F4;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x5E0C;&#x671B;&#x53BB;&#x6539;&#x53D8;<code>buffer</code>&#x7684;<code>length</code>&#x7684;&#x5E94;&#x7528;&#x5E94;&#x5F53;&#x628A;&#x5B83;&#x89C6;&#x4F5C;&#x4E00;&#x4E2A;&#x53EA;&#x8BFB;&#x7684;&#x503C;&#xFF0C;&#x5E76;&#x4E14;&#x4F7F;&#x7528;<code>buf.slice</code>&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>buffer</code>&#x3002;</p>
+<pre><code class="lang-js">buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">10</span>);
+buf.write(<span class="hljs-string">&quot;abcdefghj&quot;</span>, <span class="hljs-number">0</span>, <span class="hljs-string">&quot;ascii&quot;</span>);
+<span class="hljs-built_in">console</span>.log(buf.length); <span class="hljs-comment">// 10</span>
+buf = buf.slice(<span class="hljs-number">0</span>,<span class="hljs-number">5</span>);
+<span class="hljs-built_in">console</span>.log(buf.length); <span class="hljs-comment">// 5</span>
+</code></pre>
+<h4 id="bufwritestring-offset-length-encoding">buf.write(string[, offset][, length][, encoding])</h4>
+<ul>
+<li>string String &#x51C6;&#x5907;&#x88AB;&#x5199;&#x5165;buffer&#x7684;&#x6570;&#x636E;</li>
+<li>offset Number &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0</li>
+<li>length Number &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>buffer.length - offset</code></li>
+<li>encoding String &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; &apos;utf8&apos;</li>
+</ul>
+<p>&#x4ECE;&#x6307;&#x5B9A;&#x7684;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;(offset)&#x4F7F;&#x7528;&#x7ED9;&#x5B9A;&#x7684;&#x7F16;&#x7801;&#x5411;buffer&#x4E2D;&#x5199;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;&#x9ED8;&#x8BA4;&#x4E3A;0&#xFF0C;&#x7F16;&#x7801;&#x9ED8;&#x8BA4;&#x4E3A;UTF8&#x3002;&#x957F;&#x5EA6;&#x4E3A;&#x5C06;&#x8981;&#x5199;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5B57;&#x8282;&#x5927;&#x5C0F;&#x3002;&#x8FD4;&#x56DE;&#x88AB;&#x5199;&#x5165;&#x7684;&#x516B;&#x8FDB;&#x5236;&#x6D41;&#x7684;&#x5927;&#x5C0F;&#x3002;&#x5982;&#x679C;buffer&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x7A7A;&#x95F4;&#x5199;&#x5165;&#x6574;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x53EA;&#x4F1A;&#x5199;&#x5165;&#x4E00;&#x90E8;&#x5206;&#x3002;<code>length</code>&#x53C2;&#x6570;&#x9ED8;&#x8BA4;&#x4E3A;<code>buffer.length - offset</code>&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5C06;&#x4E0D;&#x4F1A;&#x53EA;&#x5199;&#x5165;&#x5B57;&#x7B26;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<pre><code class="lang-js">buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">256</span>);
+len = buf.write(<span class="hljs-string">&apos;\u00bd + \u00bc = \u00be&apos;</span>, <span class="hljs-number">0</span>);
+<span class="hljs-built_in">console</span>.log(len + <span class="hljs-string">&quot; bytes: &quot;</span> + buf.toString(<span class="hljs-string">&apos;utf8&apos;</span>, <span class="hljs-number">0</span>, len));
+</code></pre>
+<h4 id="bufwriteuintlevalue-offset-bytelength-noassert">buf.writeUIntLE(value, offset, byteLength[, noAssert])</h4>
+<h4 id="bufwriteuintbevalue-offset-bytelength-noassert">buf.writeUIntBE(value, offset, byteLength[, noAssert])</h4>
+<h4 id="bufwriteintlevalue-offset-bytelength-noassert">buf.writeIntLE(value, offset, byteLength[, noAssert])</h4>
+<h4 id="bufwriteintbevalue-offset-bytelength-noassert">buf.writeIntBE(value, offset, byteLength[, noAssert])</h4>
+<ul>
+<li>value {Number} &#x5C06;&#x8981;&#x88AB;&#x5199;&#x5165;buffer&#x7684;&#x5B57;&#x8282;</li>
+<li>offset {Number} <code>0 &lt;= offset &lt;= buf.length</code></li>
+<li>byteLength {Number} <code>0 &lt; byteLength &lt;= 6</code></li>
+<li>noAssert {Boolean} &#x9ED8;&#x8BA4;&#x4E3A;<code>false</code></li>
+<li>Return: {Number}</li>
+</ul>
+<p>&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;(offset)&#x548C;<code>byteLength</code>&#x5C06;<code>value</code>&#x5199;&#x5165;buffer&#x3002;&#x6700;&#x9AD8;&#x652F;&#x6301;48&#x4F4D;&#x7684;&#x7CBE;&#x786E;&#x5EA6;&#x3002;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> b = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">6</span>);
+b.writeUIntBE(<span class="hljs-number">0x1234567890ab</span>, <span class="hljs-number">0</span>, <span class="hljs-number">6</span>);
+<span class="hljs-comment">// &lt;Buffer 12 34 56 78 90 ab&gt;</span>
+</code></pre>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;true&#x5C06;&#x4F1A;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x68C0;&#x9A8C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<h4 id="bufreaduintleoffset-bytelength-noassert">buf.readUIntLE(offset, byteLength[, noAssert])</h4>
+<h4 id="bufreaduintbeoffset-bytelength-noassert">buf.readUIntBE(offset, byteLength[, noAssert])</h4>
+<h4 id="bufreadintleoffset-bytelength-noassert">buf.readIntLE(offset, byteLength[, noAssert])</h4>
+<h4 id="bufreadintbeoffset-bytelength-noassert">buf.readIntBE(offset, byteLength[, noAssert])</h4>
+<ul>
+<li>offset {Number} <code>0 &lt;= offset &lt;= buf.length</code></li>
+<li>byteLength {Number} <code>0 &lt; byteLength &lt;= 6</code></li>
+<li>noAssert {Boolean} &#x9ED8;&#x8BA4;&#x4E3A;<code>false</code></li>
+<li>Return: {Number}</li>
+</ul>
+<p>&#x4E00;&#x4E2A;&#x666E;&#x904D;&#x7684;&#x7528;&#x6765;&#x4F5C;&#x6570;&#x503C;&#x8BFB;&#x53D6;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6700;&#x9AD8;&#x652F;&#x6301;48&#x4F4D;&#x7684;&#x7CBE;&#x786E;&#x5EA6;&#x3002;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> b = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">6</span>);
+b.writeUint16LE(<span class="hljs-number">0x90ab</span>, <span class="hljs-number">0</span>);
+b.writeUInt32LE(<span class="hljs-number">0x12345678</span>, <span class="hljs-number">2</span>);
+b.readUIntLE(<span class="hljs-number">0</span>, <span class="hljs-number">6</span>).toString(<span class="hljs-number">16</span>);  <span class="hljs-comment">// Specify 6 bytes (48 bits)</span>
+<span class="hljs-comment">// output: &apos;1234567890ab&apos;</span>
+</code></pre>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;true&#x5C06;&#x4F1A;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x68C0;&#x9A8C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>offset</code>&#x5C06;&#x53EF;&#x80FD;&#x8D85;&#x8FC7;buffer&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<h4 id="buftostringencoding-start-end">buf.toString([encoding][, start][, end])</h4>
+<ul>
+<li>encoding String, &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; &apos;utf8&apos;</li>
+<li>start Number, &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0</li>
+<li>end Number, &#x53EF;&#x9009;&#x9ED8;&#x8BA4;&#x4E3A; <code>buffer.length</code></li>
+</ul>
+<p>&#x4ECE;&#x7F16;&#x7801;&#x7684;buffer&#x6570;&#x636E;&#x4E2D;&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5E76;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C;<code>encoding</code>&#x4E3A;<code>undefined</code>&#x6216;<code>null</code>&#xFF0C;&#x90A3;&#x4E48;<code>encoding</code>&#x5C06;&#x9ED8;&#x8BA4;&#x4E3A;UTF8&#x3002;<code>start</code>&#x548C;<code>end</code>&#x53C2;&#x6570;&#x9ED8;&#x8BA4;&#x4E3A;<code>0</code>&#x548C;<code>buffer.length</code>&#x3002;</p>
+<pre><code class="lang-js">buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">26</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> ; i &lt; <span class="hljs-number">26</span> ; i++) {
+  buf[i] = i + <span class="hljs-number">97</span>; <span class="hljs-comment">// 97 is ASCII a</span>
+}
+buf.toString(<span class="hljs-string">&apos;ascii&apos;</span>); <span class="hljs-comment">// outputs: abcdefghijklmnopqrstuvwxyz</span>
+buf.toString(<span class="hljs-string">&apos;ascii&apos;</span>,<span class="hljs-number">0</span>,<span class="hljs-number">5</span>); <span class="hljs-comment">// outputs: abcde</span>
+buf.toString(<span class="hljs-string">&apos;utf8&apos;</span>,<span class="hljs-number">0</span>,<span class="hljs-number">5</span>); <span class="hljs-comment">// outputs: abcde</span>
+buf.toString(<span class="hljs-literal">undefined</span>,<span class="hljs-number">0</span>,<span class="hljs-number">5</span>); <span class="hljs-comment">// encoding defaults to &apos;utf8&apos;, outputs abcde</span>
+</code></pre>
+<h4 id="buftojson">buf.toJSON()</h4>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Buffer&#x5B9E;&#x4F8B;&#x7684;JSON&#x5F62;&#x5F0F;&#x3002;<code>JSON.stringify</code>&#x88AB;&#x9690;&#x5F0F;&#x5F97;&#x8C03;&#x7528;&#x5F53;&#x8F6C;&#x6362;Buffer&#x5B9E;&#x4F8B;&#x65F6;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-string">&apos;test&apos;</span>);
+<span class="hljs-keyword">var</span> json = <span class="hljs-built_in">JSON</span>.stringify(buf);
+
+<span class="hljs-built_in">console</span>.log(json);
+<span class="hljs-comment">// &apos;{&quot;type&quot;:&quot;Buffer&quot;,&quot;data&quot;:[116,101,115,116]}&apos;</span>
+
+<span class="hljs-keyword">var</span> copy = <span class="hljs-built_in">JSON</span>.parse(json, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">key, value</span>) </span>{
+    <span class="hljs-keyword">return</span> value &amp;&amp; value.type === <span class="hljs-string">&apos;Buffer&apos;</span>
+      ? <span class="hljs-keyword">new</span> Buffer(value.data)
+      : value;
+  });
+
+<span class="hljs-built_in">console</span>.log(copy);
+<span class="hljs-comment">// &lt;Buffer 74 65 73 74&gt;</span>
+</code></pre>
+<h4 id="bufindex">buf[index]</h4>
+<p>&#x83B7;&#x53D6;&#x6216;&#x8BBE;&#x7F6E;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x516B;&#x4F4D;&#x5B57;&#x8282;&#x3002;&#x8FD9;&#x4E2A;&#x503C;&#x662F;&#x6307;&#x5355;&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x6240;&#x6709;&#x5408;&#x6CD5;&#x8303;&#x56F4;&#x5728;<code>0x00</code>&#x5230;<code>0xFF</code> &#x6216; <code>0</code> &#x5230; <code>255</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;&#x590D;&#x5236;&#x4E00;&#x4E2A;ASCII&#x5B57;&#x7B26;&#x4E32;&#x5230;&#x4E00;&#x4E2A;buffer&#xFF0C;&#x4E00;&#x6B21;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#xFF1A;</p>
+<pre><code class="lang-js">str = <span class="hljs-string">&quot;node.js&quot;</span>;
+buf = <span class="hljs-keyword">new</span> Buffer(str.length);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; str.length ; i++) {
+  buf[i] = str.charCodeAt(i);
+}
+
+<span class="hljs-built_in">console</span>.log(buf);
+
+<span class="hljs-comment">// node.js</span>
+</code></pre>
+<h4 id="bufequalsotherbuffer">buf.equals(otherBuffer)</h4>
+<ul>
+<li>otherBuffer Buffer</li>
+</ul>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#x8868;&#x793A;&#x662F;&#x5426;<code>buf</code>&#x4E0E;<code>otherBuffer</code>&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x8282;&#x3002;</p>
+<h4 id="bufcompareotherbuffer">buf.compare(otherBuffer)</h4>
+<ul>
+<li>otherBuffer Buffer</li>
+</ul>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x8868;&#x793A;&#x5728;&#x6392;&#x5E8F;&#x4E0A;<code>buf</code>&#x5728;<code>otherBuffer</code>&#x4E4B;&#x524D;&#xFF0C;&#x4E4B;&#x540E;&#x6216;&#x76F8;&#x540C;&#x3002;</p>
+<h4 id="bufcopytargetbuffer-targetstart-sourcestart-sourceend">buf.copy(targetBuffer[, targetStart][, sourceStart][, sourceEnd])</h4>
+<ul>
+<li>targetBuffer Buffer &#x5C06;&#x8981;&#x8FDB;&#x884C;&#x590D;&#x5236;&#x7684;Buffer</li>
+<li>targetStart Number &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0</li>
+<li>sourceStart Number &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0</li>
+<li>sourceEnd Number &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>buffer.length</code></li>
+</ul>
+<p>&#x4ECE;<code>buf</code>&#x4E2D;&#x7684;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x590D;&#x5236;&#x6570;&#x636E;&#x5230;<code>targetBuffer</code>&#x4E2D;&#x7684;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x53EF;&#x4EE5;&#x91CD;&#x53E0;&#x7684;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;&#x521B;&#x5EFA;&#x4E24;&#x4E2A;Buffer&#xFF0C;&#x7136;&#x540E;&#x590D;&#x5236;buf1&#x7684;&#x7B2C;16&#x5B57;&#x8282;&#x5230;19&#x5B57;&#x8282;&#x5230;buf2&#xFF0C;buf2&#x7684;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;&#x4ECE;&#x7B2C;8&#x5B57;&#x8282;&#x5F00;&#x59CB;&#xFF1A;</p>
+<pre><code class="lang-js">buf1 = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">26</span>);
+buf2 = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">26</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> ; i &lt; <span class="hljs-number">26</span> ; i++) {
+  buf1[i] = i + <span class="hljs-number">97</span>; <span class="hljs-comment">// 97 is ASCII a</span>
+  buf2[i] = <span class="hljs-number">33</span>; <span class="hljs-comment">// ASCII !</span>
+}
+
+buf1.copy(buf2, <span class="hljs-number">8</span>, <span class="hljs-number">16</span>, <span class="hljs-number">20</span>);
+<span class="hljs-built_in">console</span>.log(buf2.toString(<span class="hljs-string">&apos;ascii&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">25</span>));
+
+<span class="hljs-comment">// !!!!!!!!qrst!!!!!!!!!!!!!</span>
+</code></pre>
+<p>&#x4F8B;&#x5B50;&#xFF1A; &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;Buffer&#xFF0C;&#x7136;&#x540E;&#x590D;&#x5236;&#x6570;&#x636E;&#x5230;&#x81EA;&#x8EAB;&#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x53E0;&#x7684;&#x8303;&#x56F4;&#x3002;</p>
+<pre><code class="lang-js">buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">26</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> ; i &lt; <span class="hljs-number">26</span> ; i++) {
+  buf[i] = i + <span class="hljs-number">97</span>; <span class="hljs-comment">// 97 is ASCII a</span>
+}
+
+buf.copy(buf, <span class="hljs-number">0</span>, <span class="hljs-number">4</span>, <span class="hljs-number">10</span>);
+<span class="hljs-built_in">console</span>.log(buf.toString());
+
+<span class="hljs-comment">// efghijghijklmnopqrstuvwxyz</span>
+</code></pre>
+<h4 id="bufslicestart-end">buf.slice([start][, end])</h4>
+<ul>
+<li>start Number &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0</li>
+<li>end Number &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>buffer.length</code></li>
+<li>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x548C;&#x65E7;&#x7684;buffer&#x5F15;&#x7528;&#x4E86;&#x76F8;&#x540C;&#x5185;&#x5B58;&#x7684;&#x65B0;&#x7684;buffer&#xFF0C;&#x4F46;&#x662F;&#x88AB;<code>start</code>&#x548C;<code>end</code>&#x53C2;&#x6570;&#x6240;&#x504F;&#x79FB;&#x548C;&#x88C1;&#x526A;&#x3002;</li>
+</ul>
+<p>&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x65B0;&#x7684;buffer&#x7684;&#x5207;&#x7247;&#xFF0C;&#x4E5F;&#x4F1A;&#x6539;&#x53D8;&#x5185;&#x5B58;&#x4E2D;&#x539F;&#x6765;&#x7684;buffer&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; &#x521B;&#x5EFA;&#x4E00;&#x4E2A;ASCII&#x5B57;&#x6BCD;&#x7684;Buffer&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x5176;&#x8FDB;&#x884C;<code>slice</code>&#xFF0C;&#x7136;&#x540E;&#x4FEE;&#x6539;&#x6E90;Buffer&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf1 = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">26</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> ; i &lt; <span class="hljs-number">26</span> ; i++) {
+  buf1[i] = i + <span class="hljs-number">97</span>; <span class="hljs-comment">// 97 is ASCII a</span>
+}
+
+<span class="hljs-keyword">var</span> buf2 = buf1.slice(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>);
+<span class="hljs-built_in">console</span>.log(buf2.toString(<span class="hljs-string">&apos;ascii&apos;</span>, <span class="hljs-number">0</span>, buf2.length));
+buf1[<span class="hljs-number">0</span>] = <span class="hljs-number">33</span>;
+<span class="hljs-built_in">console</span>.log(buf2.toString(<span class="hljs-string">&apos;ascii&apos;</span>, <span class="hljs-number">0</span>, buf2.length));
+
+<span class="hljs-comment">// abc</span>
+<span class="hljs-comment">// !bc</span>
+</code></pre>
+<h4 id="bufindexofvalue-byteoffset">buf.indexOf(value[, byteOffset])</h4>
+<ul>
+<li>value String Buffer&#x6216;Number</li>
+<li>byteOffset Number &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0</li>
+<li>Return: Number</li>
+</ul>
+<p>&#x884C;&#x4E3A;&#x548C;Array.indexOf()&#x76F8;&#x4F3C;&#x3002;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;Buffer&#x6216;&#x6570;&#x5B57;&#x3002;&#x5B57;&#x7B26;&#x4E32;&#x88AB;&#x89E3;&#x91CA;&#x4E3A;UTF8&#x7F16;&#x7801;&#xFF0C;Buffer&#x5C06;&#x4F7F;&#x7528;&#x6574;&#x4E2A;buffer&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x8981;&#x6BD4;&#x8F83;&#x90E8;&#x5206;&#x7684;Buffer&#x8BF7;&#x4F7F;&#x7528;<code>Buffer.slice()</code>&#xFF0C;&#x6570;&#x5B57;&#x7684;&#x8303;&#x56F4;&#x9700;&#x5728;0&#x5230;255&#x4E4B;&#x95F4;&#x3002;</p>
+<h4 id="bufreaduint8offset-noassert">buf.readUInt8(offset[, noAssert])</h4>
+<ul>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+<li>Return: Number</li>
+</ul>
+<p>&#x6839;&#x636E;&#x5236;&#x5B9A;&#x504F;&#x79FB;&#x91CF;&#x4ECE;buffer&#x4E2D;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x65E0;&#x7B26;&#x53F7;8&#x4F4D;&#x6574;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;true&#x5C06;&#x4F1A;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x68C0;&#x9A8C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>offset</code>&#x5C06;&#x53EF;&#x80FD;&#x8D85;&#x8FC7;buffer&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">4</span>);
+
+buf[<span class="hljs-number">0</span>] = <span class="hljs-number">0x3</span>;
+buf[<span class="hljs-number">1</span>] = <span class="hljs-number">0x4</span>;
+buf[<span class="hljs-number">2</span>] = <span class="hljs-number">0x23</span>;
+buf[<span class="hljs-number">3</span>] = <span class="hljs-number">0x42</span>;
+
+<span class="hljs-keyword">for</span> (ii = <span class="hljs-number">0</span>; ii &lt; buf.length; ii++) {
+  <span class="hljs-built_in">console</span>.log(buf.readUInt8(ii));
+}
+
+<span class="hljs-comment">// 0x3</span>
+<span class="hljs-comment">// 0x4</span>
+<span class="hljs-comment">// 0x23</span>
+<span class="hljs-comment">// 0x42</span>
+</code></pre>
+<h4 id="bufreaduint16leoffset-noassert">buf.readUInt16LE(offset[, noAssert])</h4>
+<h4 id="bufreaduint16beoffset-noassert">buf.readUInt16BE(offset[, noAssert])</h4>
+<ul>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+<li>Return: Number</li>
+</ul>
+<p>&#x6839;&#x636E;&#x5236;&#x5B9A;&#x504F;&#x79FB;&#x91CF;&#x4ECE;buffer&#x4E2D;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x65E0;&#x7B26;&#x53F7;16&#x4F4D;&#x6574;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;true&#x5C06;&#x4F1A;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x68C0;&#x9A8C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>offset</code>&#x5C06;&#x53EF;&#x80FD;&#x8D85;&#x8FC7;buffer&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">4</span>);
+
+buf[<span class="hljs-number">0</span>] = <span class="hljs-number">0x3</span>;
+buf[<span class="hljs-number">1</span>] = <span class="hljs-number">0x4</span>;
+buf[<span class="hljs-number">2</span>] = <span class="hljs-number">0x23</span>;
+buf[<span class="hljs-number">3</span>] = <span class="hljs-number">0x42</span>;
+
+<span class="hljs-built_in">console</span>.log(buf.readUInt16BE(<span class="hljs-number">0</span>));
+<span class="hljs-built_in">console</span>.log(buf.readUInt16LE(<span class="hljs-number">0</span>));
+<span class="hljs-built_in">console</span>.log(buf.readUInt16BE(<span class="hljs-number">1</span>));
+<span class="hljs-built_in">console</span>.log(buf.readUInt16LE(<span class="hljs-number">1</span>));
+<span class="hljs-built_in">console</span>.log(buf.readUInt16BE(<span class="hljs-number">2</span>));
+<span class="hljs-built_in">console</span>.log(buf.readUInt16LE(<span class="hljs-number">2</span>));
+
+<span class="hljs-comment">// 0x0304</span>
+<span class="hljs-comment">// 0x0403</span>
+<span class="hljs-comment">// 0x0423</span>
+<span class="hljs-comment">// 0x2304</span>
+<span class="hljs-comment">// 0x2342</span>
+<span class="hljs-comment">// 0x4223</span>
+</code></pre>
+<h4 id="bufreaduint32leoffset-noassert">buf.readUInt32LE(offset[, noAssert])</h4>
+<h4 id="bufreaduint32beoffset-noassert">buf.readUInt32BE(offset[, noAssert])</h4>
+<ul>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+<li>Return: Number</li>
+</ul>
+<p>&#x6839;&#x636E;&#x5236;&#x5B9A;&#x504F;&#x79FB;&#x91CF;&#x4ECE;buffer&#x4E2D;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x65E0;&#x7B26;&#x53F7;32&#x4F4D;&#x6574;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;true&#x5C06;&#x4F1A;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x68C0;&#x9A8C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>offset</code>&#x5C06;&#x53EF;&#x80FD;&#x8D85;&#x8FC7;buffer&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">4</span>);
+
+buf[<span class="hljs-number">0</span>] = <span class="hljs-number">0x3</span>;
+buf[<span class="hljs-number">1</span>] = <span class="hljs-number">0x4</span>;
+buf[<span class="hljs-number">2</span>] = <span class="hljs-number">0x23</span>;
+buf[<span class="hljs-number">3</span>] = <span class="hljs-number">0x42</span>;
+
+<span class="hljs-built_in">console</span>.log(buf.readUInt32BE(<span class="hljs-number">0</span>));
+<span class="hljs-built_in">console</span>.log(buf.readUInt32LE(<span class="hljs-number">0</span>));
+
+<span class="hljs-comment">// 0x03042342</span>
+<span class="hljs-comment">// 0x42230403</span>
+</code></pre>
+<h4 id="bufreadint8offset-noassert">buf.readInt8(offset[, noAssert])</h4>
+<ul>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+<li>Return: Number</li>
+</ul>
+<p>&#x6839;&#x636E;&#x5236;&#x5B9A;&#x504F;&#x79FB;&#x91CF;&#x4ECE;buffer&#x4E2D;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6709;&#x7B26;&#x53F7;8&#x4F4D;&#x6574;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;true&#x5C06;&#x4F1A;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x68C0;&#x9A8C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>offset</code>&#x5C06;&#x53EF;&#x80FD;&#x8D85;&#x8FC7;buffer&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x8FD0;&#x4F5C;&#x548C;<code>buffer.readUInt8</code>&#x76F8;&#x540C;&#xFF0C;&#x9664;&#x975E;buffer&#x5185;&#x5BB9;&#x4E2D;&#x6709;&#x5305;&#x542B;&#x4E86;&#x4F5C;&#x4E3A;2&#x7684;&#x8865;&#x7801;&#x7684;&#x6709;&#x7B26;&#x53F7;&#x503C;&#x3002;</p>
+<h4 id="bufreadint16leoffset-noassert">buf.readInt16LE(offset[, noAssert])</h4>
+<h4 id="bufreadint16beoffset-noassert">buf.readInt16BE(offset[, noAssert])</h4>
+<ul>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+<li>Return: Number</li>
+</ul>
+<p>&#x6839;&#x636E;&#x5236;&#x5B9A;&#x504F;&#x79FB;&#x91CF;&#x4ECE;buffer&#x4E2D;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6709;&#x7B26;&#x53F7;16&#x4F4D;&#x6574;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;true&#x5C06;&#x4F1A;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x68C0;&#x9A8C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>offset</code>&#x5C06;&#x53EF;&#x80FD;&#x8D85;&#x8FC7;buffer&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x8FD0;&#x4F5C;&#x548C;<code>buffer.readUInt16</code>&#x76F8;&#x540C;&#xFF0C;&#x9664;&#x975E;buffer&#x5185;&#x5BB9;&#x4E2D;&#x6709;&#x5305;&#x542B;&#x4E86;&#x4F5C;&#x4E3A;2&#x7684;&#x8865;&#x7801;&#x7684;&#x6709;&#x7B26;&#x53F7;&#x503C;&#x3002;</p>
+<h4 id="bufreadint32leoffset-noassert">buf.readInt32LE(offset[, noAssert])</h4>
+<h4 id="bufreadint32beoffset-noassert">buf.readInt32BE(offset[, noAssert])</h4>
+<ul>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+<li>Return: Number</li>
+</ul>
+<p>&#x6839;&#x636E;&#x5236;&#x5B9A;&#x504F;&#x79FB;&#x91CF;&#x4ECE;buffer&#x4E2D;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6709;&#x7B26;&#x53F7;32&#x4F4D;&#x6574;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;true&#x5C06;&#x4F1A;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x68C0;&#x9A8C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>offset</code>&#x5C06;&#x53EF;&#x80FD;&#x8D85;&#x8FC7;buffer&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x8FD0;&#x4F5C;&#x548C;<code>buffer.readUInt32</code>&#x76F8;&#x540C;&#xFF0C;&#x9664;&#x975E;buffer&#x5185;&#x5BB9;&#x4E2D;&#x6709;&#x5305;&#x542B;&#x4E86;&#x4F5C;&#x4E3A;2&#x7684;&#x8865;&#x7801;&#x7684;&#x6709;&#x7B26;&#x53F7;&#x503C;&#x3002;</p>
+<h4 id="bufreadfloatleoffset-noassert">buf.readFloatLE(offset[, noAssert])</h4>
+<h4 id="bufreadfloatbeoffset-noassert">buf.readFloatBE(offset[, noAssert])</h4>
+<ul>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+<li>Return: Number</li>
+</ul>
+<p>&#x6839;&#x636E;&#x5236;&#x5B9A;&#x504F;&#x79FB;&#x91CF;&#x4ECE;buffer&#x4E2D;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;32&#x4F4D;&#x6D6E;&#x70B9;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;true&#x5C06;&#x4F1A;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x68C0;&#x9A8C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>offset</code>&#x5C06;&#x53EF;&#x80FD;&#x8D85;&#x8FC7;buffer&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">4</span>);
+
+buf[<span class="hljs-number">0</span>] = <span class="hljs-number">0x00</span>;
+buf[<span class="hljs-number">1</span>] = <span class="hljs-number">0x00</span>;
+buf[<span class="hljs-number">2</span>] = <span class="hljs-number">0x80</span>;
+buf[<span class="hljs-number">3</span>] = <span class="hljs-number">0x3f</span>;
+
+<span class="hljs-built_in">console</span>.log(buf.readFloatLE(<span class="hljs-number">0</span>));
+
+<span class="hljs-comment">// 0x01</span>
+</code></pre>
+<h4 id="bufreaddoubleleoffset-noassert">buf.readDoubleLE(offset[, noAssert])</h4>
+<h4 id="bufreaddoublebeoffset-noassert">buf.readDoubleBE(offset[, noAssert])</h4>
+<ul>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+<li>Return: Number</li>
+</ul>
+<p>&#x6839;&#x636E;&#x5236;&#x5B9A;&#x504F;&#x79FB;&#x91CF;&#x4ECE;buffer&#x4E2D;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;64&#x4F4D;&#x53CC;&#x7CBE;&#x5EA6;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;true&#x5C06;&#x4F1A;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x68C0;&#x9A8C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>offset</code>&#x5C06;&#x53EF;&#x80FD;&#x8D85;&#x8FC7;buffer&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">8</span>);
+
+buf[<span class="hljs-number">0</span>] = <span class="hljs-number">0x55</span>;
+buf[<span class="hljs-number">1</span>] = <span class="hljs-number">0x55</span>;
+buf[<span class="hljs-number">2</span>] = <span class="hljs-number">0x55</span>;
+buf[<span class="hljs-number">3</span>] = <span class="hljs-number">0x55</span>;
+buf[<span class="hljs-number">4</span>] = <span class="hljs-number">0x55</span>;
+buf[<span class="hljs-number">5</span>] = <span class="hljs-number">0x55</span>;
+buf[<span class="hljs-number">6</span>] = <span class="hljs-number">0xd5</span>;
+buf[<span class="hljs-number">7</span>] = <span class="hljs-number">0x3f</span>;
+
+<span class="hljs-built_in">console</span>.log(buf.readDoubleLE(<span class="hljs-number">0</span>));
+
+<span class="hljs-comment">// 0.3333333333333333</span>
+</code></pre>
+<h4 id="bufwriteuint8value-offset-noassert">buf.writeUInt8(value, offset[, noAssert])</h4>
+<ul>
+<li>value Number</li>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+</ul>
+<p>&#x5411;<code>buffer</code>&#x7684;&#x6307;&#x5B9A;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;&#x5199;&#x5165;<code>value</code>&#x3002;
+&#x6CE8;&#x610F;&#xFF0C;<code>value</code>&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x65E0;&#x7B26;&#x53F7;8&#x4F4D;&#x6574;&#x5F62;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x5C06;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x9A8C;&#x8BC1;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>value</code>&#x53EF;&#x80FD;&#x4F1A;&#x8FC7;&#x5927;&#xFF0C;&#x6216;&#x8005;<code>offset</code>&#x8D85;&#x8FC7;<code>buffer</code>&#x7684;&#x672B;&#x5C3E;&#x5BFC;&#x81F4;<code>value</code>&#x88AB;&#x4E22;&#x5F03;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x9664;&#x975E;&#x4F60;&#x5341;&#x5206;&#x6709;&#x628A;&#x63E1;&#x5426;&#x5219;&#x4F60;&#x4E0D;&#x5E94;&#x53BB;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">4</span>);
+buf.writeUInt8(<span class="hljs-number">0x3</span>, <span class="hljs-number">0</span>);
+buf.writeUInt8(<span class="hljs-number">0x4</span>, <span class="hljs-number">1</span>);
+buf.writeUInt8(<span class="hljs-number">0x23</span>, <span class="hljs-number">2</span>);
+buf.writeUInt8(<span class="hljs-number">0x42</span>, <span class="hljs-number">3</span>);
+
+<span class="hljs-built_in">console</span>.log(buf);
+
+<span class="hljs-comment">// &lt;Buffer 03 04 23 42&gt;</span>
+</code></pre>
+<h4 id="bufwriteuint16levalue-offset-noassert">buf.writeUInt16LE(value, offset[, noAssert])</h4>
+<h4 id="bufwriteuint16bevalue-offset-noassert">buf.writeUInt16BE(value, offset[, noAssert])</h4>
+<ul>
+<li>value Number</li>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+</ul>
+<p>&#x5411;<code>buffer</code>&#x7684;&#x6307;&#x5B9A;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x5199;&#x5165;<code>value</code>&#x3002;
+&#x6CE8;&#x610F;&#xFF0C;<code>value</code>&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x65E0;&#x7B26;&#x53F7;16&#x4F4D;&#x6574;&#x5F62;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x5C06;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x9A8C;&#x8BC1;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>value</code>&#x53EF;&#x80FD;&#x4F1A;&#x8FC7;&#x5927;&#xFF0C;&#x6216;&#x8005;<code>offset</code>&#x8D85;&#x8FC7;<code>buffer</code>&#x7684;&#x672B;&#x5C3E;&#x5BFC;&#x81F4;<code>value</code>&#x88AB;&#x4E22;&#x5F03;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x9664;&#x975E;&#x4F60;&#x5341;&#x5206;&#x6709;&#x628A;&#x63E1;&#x5426;&#x5219;&#x4F60;&#x4E0D;&#x5E94;&#x53BB;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">4</span>);
+buf.writeUInt16BE(<span class="hljs-number">0xdead</span>, <span class="hljs-number">0</span>);
+buf.writeUInt16BE(<span class="hljs-number">0xbeef</span>, <span class="hljs-number">2</span>);
+
+<span class="hljs-built_in">console</span>.log(buf);
+
+buf.writeUInt16LE(<span class="hljs-number">0xdead</span>, <span class="hljs-number">0</span>);
+buf.writeUInt16LE(<span class="hljs-number">0xbeef</span>, <span class="hljs-number">2</span>);
+
+<span class="hljs-built_in">console</span>.log(buf);
+
+<span class="hljs-comment">// &lt;Buffer de ad be ef&gt;</span>
+<span class="hljs-comment">// &lt;Buffer ad de ef be&gt;</span>
+</code></pre>
+<h4 id="bufwriteuint32levalue-offset-noassert">buf.writeUInt32LE(value, offset[, noAssert])</h4>
+<h4 id="bufwriteuint32bevalue-offset-noassert">buf.writeUInt32BE(value, offset[, noAssert])</h4>
+<ul>
+<li>value Number</li>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+</ul>
+<p>&#x5411;<code>buffer</code>&#x7684;&#x6307;&#x5B9A;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x5199;&#x5165;<code>value</code>&#x3002;
+&#x6CE8;&#x610F;&#xFF0C;<code>value</code>&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x65E0;&#x7B26;&#x53F7;32&#x4F4D;&#x6574;&#x5F62;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x5C06;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x9A8C;&#x8BC1;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>value</code>&#x53EF;&#x80FD;&#x4F1A;&#x8FC7;&#x5927;&#xFF0C;&#x6216;&#x8005;<code>offset</code>&#x8D85;&#x8FC7;<code>buffer</code>&#x7684;&#x672B;&#x5C3E;&#x5BFC;&#x81F4;<code>value</code>&#x88AB;&#x4E22;&#x5F03;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x9664;&#x975E;&#x4F60;&#x5341;&#x5206;&#x6709;&#x628A;&#x63E1;&#x5426;&#x5219;&#x4F60;&#x4E0D;&#x5E94;&#x53BB;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">4</span>);
+buf.writeUInt32BE(<span class="hljs-number">0xfeedface</span>, <span class="hljs-number">0</span>);
+
+<span class="hljs-built_in">console</span>.log(buf);
+
+buf.writeUInt32LE(<span class="hljs-number">0xfeedface</span>, <span class="hljs-number">0</span>);
+
+<span class="hljs-built_in">console</span>.log(buf);
+
+<span class="hljs-comment">// &lt;Buffer fe ed fa ce&gt;</span>
+<span class="hljs-comment">// &lt;Buffer ce fa ed fe&gt;</span>
+</code></pre>
+<h4 id="bufwriteint8value-offset-noassert">buf.writeInt8(value, offset[, noAssert])</h4>
+<ul>
+<li>value Number</li>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+</ul>
+<p>&#x5411;<code>buffer</code>&#x7684;&#x6307;&#x5B9A;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;&#x4E2D;&#x5199;&#x5165;<code>value</code>&#x3002;
+&#x6CE8;&#x610F;&#xFF0C;<code>value</code>&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x65E0;&#x7B26;&#x53F7;32&#x4F4D;&#x6574;&#x5F62;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x5C06;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x9A8C;&#x8BC1;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>value</code>&#x53EF;&#x80FD;&#x4F1A;&#x8FC7;&#x5927;&#xFF0C;&#x6216;&#x8005;<code>offset</code>&#x8D85;&#x8FC7;<code>buffer</code>&#x7684;&#x672B;&#x5C3E;&#x5BFC;&#x81F4;<code>value</code>&#x88AB;&#x4E22;&#x5F03;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x9664;&#x975E;&#x4F60;&#x5341;&#x5206;&#x6709;&#x628A;&#x63E1;&#x5426;&#x5219;&#x4F60;&#x4E0D;&#x5E94;&#x53BB;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x8FD0;&#x4F5C;&#x548C;<code>buffer.writeUInt8</code>&#x76F8;&#x540C;&#xFF0C;&#x9664;&#x975E;buffer&#x5185;&#x5BB9;&#x4E2D;&#x6709;&#x5305;&#x542B;&#x4E86;&#x4F5C;&#x4E3A;2&#x7684;&#x8865;&#x7801;&#x7684;&#x6709;&#x7B26;&#x53F7;&#x503C;&#x3002;</p>
+<h4 id="bufwriteint16levalue-offset-noassert">buf.writeInt16LE(value, offset[, noAssert])</h4>
+<h4 id="bufwriteint16bevalue-offset-noassert">buf.writeInt16BE(value, offset[, noAssert])</h4>
+<ul>
+<li>value Number</li>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+</ul>
+<p>&#x5411;<code>buffer</code>&#x7684;&#x6307;&#x5B9A;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x5199;&#x5165;<code>value</code>&#x3002;
+&#x6CE8;&#x610F;&#xFF0C;<code>value</code>&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x6709;&#x7B26;&#x53F7;16&#x4F4D;&#x6574;&#x5F62;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x5C06;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x9A8C;&#x8BC1;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>value</code>&#x53EF;&#x80FD;&#x4F1A;&#x8FC7;&#x5927;&#xFF0C;&#x6216;&#x8005;<code>offset</code>&#x8D85;&#x8FC7;<code>buffer</code>&#x7684;&#x672B;&#x5C3E;&#x5BFC;&#x81F4;<code>value</code>&#x88AB;&#x4E22;&#x5F03;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x9664;&#x975E;&#x4F60;&#x5341;&#x5206;&#x6709;&#x628A;&#x63E1;&#x5426;&#x5219;&#x4F60;&#x4E0D;&#x5E94;&#x53BB;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x8FD0;&#x4F5C;&#x548C;<code>buffer.writeUInt16</code>&#x76F8;&#x540C;&#xFF0C;&#x9664;&#x975E;buffer&#x5185;&#x5BB9;&#x4E2D;&#x6709;&#x5305;&#x542B;&#x4E86;&#x4F5C;&#x4E3A;2&#x7684;&#x8865;&#x7801;&#x7684;&#x6709;&#x7B26;&#x53F7;&#x503C;&#x3002;</p>
+<h4 id="bufwriteint32levalue-offset-noassert">buf.writeInt32LE(value, offset[, noAssert])</h4>
+<h4 id="bufwriteint32bevalue-offset-noassert">buf.writeInt32BE(value, offset[, noAssert])</h4>
+<ul>
+<li>value Number</li>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+</ul>
+<p>&#x5411;<code>buffer</code>&#x7684;&#x6307;&#x5B9A;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x5199;&#x5165;<code>value</code>&#x3002;
+&#x6CE8;&#x610F;&#xFF0C;<code>value</code>&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x6709;&#x7B26;&#x53F7;32&#x4F4D;&#x6574;&#x5F62;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x5C06;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x9A8C;&#x8BC1;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>value</code>&#x53EF;&#x80FD;&#x4F1A;&#x8FC7;&#x5927;&#xFF0C;&#x6216;&#x8005;<code>offset</code>&#x8D85;&#x8FC7;<code>buffer</code>&#x7684;&#x672B;&#x5C3E;&#x5BFC;&#x81F4;<code>value</code>&#x88AB;&#x4E22;&#x5F03;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x9664;&#x975E;&#x4F60;&#x5341;&#x5206;&#x6709;&#x628A;&#x63E1;&#x5426;&#x5219;&#x4F60;&#x4E0D;&#x5E94;&#x53BB;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x8FD0;&#x4F5C;&#x548C;<code>buffer.writeUInt32</code>&#x76F8;&#x540C;&#xFF0C;&#x9664;&#x975E;buffer&#x5185;&#x5BB9;&#x4E2D;&#x6709;&#x5305;&#x542B;&#x4E86;&#x4F5C;&#x4E3A;2&#x7684;&#x8865;&#x7801;&#x7684;&#x6709;&#x7B26;&#x53F7;&#x503C;&#x3002;</p>
+<h4 id="bufwritefloatlevalue-offset-noassert">buf.writeFloatLE(value, offset[, noAssert])</h4>
+<h4 id="bufwritefloatbevalue-offset-noassert">buf.writeFloatBE(value, offset[, noAssert])</h4>
+<ul>
+<li>value Number</li>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+</ul>
+<p>&#x5411;<code>buffer</code>&#x7684;&#x6307;&#x5B9A;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x5199;&#x5165;<code>value</code>&#x3002;
+&#x6CE8;&#x610F;&#xFF0C;<code>value</code>&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;32&#x4F4D;&#x6D6E;&#x70B9;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x5C06;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x9A8C;&#x8BC1;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>value</code>&#x53EF;&#x80FD;&#x4F1A;&#x8FC7;&#x5927;&#xFF0C;&#x6216;&#x8005;<code>offset</code>&#x8D85;&#x8FC7;<code>buffer</code>&#x7684;&#x672B;&#x5C3E;&#x5BFC;&#x81F4;<code>value</code>&#x88AB;&#x4E22;&#x5F03;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x9664;&#x975E;&#x4F60;&#x5341;&#x5206;&#x6709;&#x628A;&#x63E1;&#x5426;&#x5219;&#x4F60;&#x4E0D;&#x5E94;&#x53BB;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">4</span>);
+buf.writeFloatBE(<span class="hljs-number">0xcafebabe</span>, <span class="hljs-number">0</span>);
+
+<span class="hljs-built_in">console</span>.log(buf);
+
+buf.writeFloatLE(<span class="hljs-number">0xcafebabe</span>, <span class="hljs-number">0</span>);
+
+<span class="hljs-built_in">console</span>.log(buf);
+
+<span class="hljs-comment">// &lt;Buffer 4f 4a fe bb&gt;</span>
+<span class="hljs-comment">// &lt;Buffer bb fe 4a 4f&gt;</span>
+</code></pre>
+<h4 id="bufwritedoublelevalue-offset-noassert">buf.writeDoubleLE(value, offset[, noAssert])</h4>
+<h4 id="bufwritedoublebevalue-offset-noassert">buf.writeDoubleBE(value, offset[, noAssert])</h4>
+<ul>
+<li>value Number</li>
+<li>offset Number</li>
+<li>noAssert Boolean &#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code></li>
+</ul>
+<p>&#x5411;<code>buffer</code>&#x7684;&#x6307;&#x5B9A;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;<code>endian</code>&#x5B57;&#x8282;&#x5E8F;&#x5199;&#x5165;<code>value</code>&#x3002;
+&#x6CE8;&#x610F;&#xFF0C;<code>value</code>&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;64&#x4F4D;&#x53CC;&#x7CBE;&#x5EA6;&#x6570;&#x3002;</p>
+<p>&#x5C06;<code>noAssert</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x5C06;&#x8DF3;&#x8FC7;<code>value</code>&#x548C;<code>offset</code>&#x7684;&#x9A8C;&#x8BC1;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>value</code>&#x53EF;&#x80FD;&#x4F1A;&#x8FC7;&#x5927;&#xFF0C;&#x6216;&#x8005;<code>offset</code>&#x8D85;&#x8FC7;<code>buffer</code>&#x7684;&#x672B;&#x5C3E;&#x5BFC;&#x81F4;<code>value</code>&#x88AB;&#x4E22;&#x5F03;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x9664;&#x975E;&#x4F60;&#x5341;&#x5206;&#x6709;&#x628A;&#x63E1;&#x5426;&#x5219;&#x4F60;&#x4E0D;&#x5E94;&#x53BB;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">8</span>);
+buf.writeDoubleBE(<span class="hljs-number">0xdeadbeefcafebabe</span>, <span class="hljs-number">0</span>);
+
+<span class="hljs-built_in">console</span>.log(buf);
+
+buf.writeDoubleLE(<span class="hljs-number">0xdeadbeefcafebabe</span>, <span class="hljs-number">0</span>);
+
+<span class="hljs-built_in">console</span>.log(buf);
+
+<span class="hljs-comment">// &lt;Buffer 43 eb d5 b7 dd f9 5f d7&gt;</span>
+<span class="hljs-comment">// &lt;Buffer d7 5f f9 dd b7 d5 eb 43&gt;</span>
+</code></pre>
+<h4 id="buffillvalue-offset-end">buf.fill(value[, offset][, end])</h4>
+<ul>
+<li>value</li>
+<li>offset Number &#x53EF;&#x9009;</li>
+<li>end Number &#x53EF;&#x9009;</li>
+</ul>
+<p>&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;<code>value</code>&#x586B;&#x5145;buffer&#x3002;&#x5982;&#x679C;<code>offset</code>&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;0&#xFF09;&#x548C;<code>end</code>&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;<code>buffer.length</code>&#xFF09;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#xFF0C;&#x5C06;&#x4F1A;&#x586B;&#x5145;&#x6574;&#x4E2A;buffer&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> b = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-number">50</span>);
+b.fill(<span class="hljs-string">&quot;h&quot;</span>);
+</code></pre>
+<h4 id="buffervalues">buffer.values()</h4>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;buffer&#x5185;&#x7684;&#x503C;&#xFF08;bytes&#xFF09;&#x7684;&#x8FED;&#x4EE3;&#x5668;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x5F53;buffer&#x88AB;&#x7528;&#x4E8E;<code>for..of</code>&#x8BED;&#x53E5;&#x4E2D;&#x65F6;&#x3002;</p>
+<h4 id="bufferkeys">buffer.keys()</h4>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;buffer&#x7684;&#x7D22;&#x5F15;&#x7684;&#x8FED;&#x4EE3;&#x5668;&#x3002;</p>
+<h4 id="bufferentries">buffer.entries()</h4>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;[index, byte]&#x6570;&#x7EC4;&#x8FED;&#x4EE3;&#x5668;&#x3002;</p>
+<h4 id="bufferinspectmaxbytes">buffer.INSPECT_MAX_BYTES</h4>
+<p>Number &#x9ED8;&#x8BA4;&#x503C;&#xFF1A; 50</p>
+<p>&#x8868;&#x793A;&#x6709;&#x591A;&#x5C11;&#x5B57;&#x8282;&#x4F1A;&#x88AB;&#x8FD4;&#x56DE;&#x5F53;&#x8C03;&#x7528;<code>buffer.inspect()</code>&#x65F6;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6237;&#x7684;&#x6A21;&#x5757;&#x6240;&#x8986;&#x76D6;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7531;<code>require(&apos;buffer&apos;)</code>&#x8FD4;&#x56DE;&#x7684;<code>buffer&#x6A21;&#x5757;</code>&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x5168;&#x5C40;<code>Buffer</code>&#x5BF9;&#x8C61;&#x6216;buffer&#x5B9E;&#x4F8B;&#x7684;&#x3002;</p>
+<h3 id="es6-&#x8FED;&#x4EE3;&#x5668;">ES6 &#x8FED;&#x4EE3;&#x5668;</h3>
+<p><code>Buffers</code>&#x53EF;&#x4EE5;&#x88AB;ES6&#x7684;<code>for..of</code>&#x8BED;&#x6CD5;&#x8FED;&#x4EE3;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> b <span class="hljs-keyword">of</span> buf)
+  <span class="hljs-built_in">console</span>.log(b)
+
+<span class="hljs-comment">// 1</span>
+<span class="hljs-comment">// 2</span>
+<span class="hljs-comment">// 3</span>
+</code></pre>
+<p>&#x53E6;&#x5916;&#x7684;&#xFF0C;<code>buffer.values()</code>&#xFF0C;<code>buffer.keys()</code>&#x548C;<code>buffer.entries()</code>&#x65B9;&#x6CD5;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x8FED;&#x4EE3;&#x5668;&#x3002;</p>
+<h4 id="class-slowbuffer">Class: SlowBuffer</h4>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E0D;&#x88AB;&#x6C60;&#x7BA1;&#x7406;&#x7684;<code>Buffer</code>&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x521B;&#x5EFA;&#x8BB8;&#x591A;&#x5355;&#x4E2A;&#x7684;&#x88AB;&#x5206;&#x914D;&#x5185;&#x5B58;&#x7684;&#x5C0F;Buffer&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x5F00;&#x9500;&#x3002;&#x9ED8;&#x8BA4;&#x5F97;&#xFF0C;&#x5206;&#x914D;&#x5C0F;&#x4E8E;4KB&#x7684;&#x7A7A;&#x95F4;&#x5C06;&#x4F1A;&#x88AB;&#x4ECE;&#x4E00;&#x4E2A;&#x66F4;&#x5927;&#x7684;&#x88AB;&#x5206;&#x914D;&#x597D;&#x5185;&#x5B58;&#x7684;&#x5BF9;&#x8C61;&#xFF08;allocated object&#xFF09;&#x4E2D;&#x5207;&#x7247;(sliced)&#x5F97;&#x5230;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x6539;&#x8FDB;&#x4E86;&#x6027;&#x80FD;&#x4EE5;&#x53CA;&#x5185;&#x5B58;&#x5360;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;V8&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x8FFD;&#x8E2A;&#x548C;&#x6E05;&#x7406;&#x8BB8;&#x591A;&#x7684;&#x5C0F;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5F53;&#x5F00;&#x53D1;&#x8005;&#x9700;&#x8981;&#x5C06;&#x6C60;&#x4E2D;&#x4E00;&#x5C0F;&#x5757;&#x6570;&#x636E;&#x4FDD;&#x7559;&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#xFF0C;&#x8F83;&#x4E3A;&#x59A5;&#x5F53;&#x7684;&#x529E;&#x6CD5;&#x662F;&#x7528; <code>SlowBuffer</code>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E0D;&#x88AB;&#x6C60;&#x7BA1;&#x7406;&#x7684;<code>Buffer</code>&#x5B9E;&#x4F8B;&#x5E76;&#x5C06;&#x76F8;&#x5E94;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x51FA;&#x6765;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// need to keep around a few small chunks of memory</span>
+<span class="hljs-keyword">var</span> store = [];
+
+socket.on(<span class="hljs-string">&apos;readable&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> data = socket.read();
+  <span class="hljs-comment">// allocate for retained data</span>
+  <span class="hljs-keyword">var</span> sb = <span class="hljs-keyword">new</span> SlowBuffer(<span class="hljs-number">10</span>);
+  <span class="hljs-comment">// copy the data into the new allocation</span>
+  data.copy(sb, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+  store.push(sb);
+});
+</code></pre>
+<p>&#x8BF7;&#x8C28;&#x614E;&#x4F7F;&#x7528;&#xFF0C;&#x4EC5;&#x4F5C;&#x4E3A;&#x5F00;&#x53D1;&#x8005;&#x5BDF;&#x89C9;&#x5230;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x6709;&#x8FC7;&#x5EA6;&#x7684;&#x5185;&#x5B58;&#x4FDD;&#x7559;&#x65F6;&#x7684;&#x6700;&#x540E;&#x624B;&#x6BB5;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Assertion-Testing.html" class="navigation navigation-prev " aria-label="Previous page: Assertion Testing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Child_process.html" class="navigation navigation-next " aria-label="Next page: Child Processes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Buffer","level":"1.3","depth":1,"next":{"title":"Child Processes","level":"1.4","depth":1,"path":"Child_process.md","ref":"Child_process.md","articles":[]},"previous":{"title":"Assertion Testing","level":"1.2","depth":1,"path":"Assertion-Testing.md","ref":"Assertion-Testing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"Buffer.md","mtime":"2016-06-20T01:36:08.915Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

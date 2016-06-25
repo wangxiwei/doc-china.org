@@ -1,0 +1,1147 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>软连接 VS 硬链接 · Linux基础概要</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="searching.html" />
+    
+    
+    <link rel="prev" href="file_timestamps.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../first_sense_for_linux/">
+            
+                <a href="../first_sense_for_linux/">
+            
+                    
+                    初识Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../first_sense_for_linux/linux_file_system.html">
+            
+                <a href="../first_sense_for_linux/linux_file_system.html">
+            
+                    
+                    文件系统层次结构标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../first_sense_for_linux/shell/">
+            
+                <a href="../first_sense_for_linux/shell/">
+            
+                    
+                    Shell
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../first_sense_for_linux/shell/bash.html">
+            
+                <a href="../first_sense_for_linux/shell/bash.html">
+            
+                    
+                    bash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../first_sense_for_linux/command_learning/">
+            
+                <a href="../first_sense_for_linux/command_learning/">
+            
+                    
+                    基本命令介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../first_sense_for_linux/command_learning/wildcard.html">
+            
+                <a href="../first_sense_for_linux/command_learning/wildcard.html">
+            
+                    
+                    通配符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../first_sense_for_linux/command_learning/show_help.html">
+            
+                <a href="../first_sense_for_linux/command_learning/show_help.html">
+            
+                    
+                    查看命令帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../first_sense_for_linux/show_history.html">
+            
+                <a href="../first_sense_for_linux/show_history.html">
+            
+                    
+                    查询命令历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../first_sense_for_linux/keyboard_shortcuts.html">
+            
+                <a href="../first_sense_for_linux/keyboard_shortcuts.html">
+            
+                    
+                    Bash组合键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../first_sense_for_linux/alias.html">
+            
+                <a href="../first_sense_for_linux/alias.html">
+            
+                    
+                    别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../first_sense_for_linux/bash_features.html">
+            
+                <a href="../first_sense_for_linux/bash_features.html">
+            
+                    
+                    Bash特性——补全与展开
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../first_sense_for_linux/summary.html">
+            
+                <a href="../first_sense_for_linux/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    文件和目录管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="files/">
+            
+                <a href="files/">
+            
+                    
+                    文件的管理与操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="files/file_type.html">
+            
+                <a href="files/file_type.html">
+            
+                    
+                    文件类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="files/dirs.html">
+            
+                <a href="files/dirs.html">
+            
+                    
+                    目录的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="files/file_management.html">
+            
+                <a href="files/file_management.html">
+            
+                    
+                    文件的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="files/text_files.html">
+            
+                <a href="files/text_files.html">
+            
+                    
+                    文本文件的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="files/du.html">
+            
+                <a href="files/du.html">
+            
+                    
+                    容量统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="permissions/">
+            
+                <a href="permissions/">
+            
+                    
+                    文件与目录的权限
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="permissions/regular_permissions.html">
+            
+                <a href="permissions/regular_permissions.html">
+            
+                    
+                    普通权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="permissions/special_permissions.html">
+            
+                <a href="permissions/special_permissions.html">
+            
+                    
+                    特殊权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="permissions/change_permissions.html">
+            
+                <a href="permissions/change_permissions.html">
+            
+                    
+                    修改权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="file_timestamps.html">
+            
+                <a href="file_timestamps.html">
+            
+                    
+                    文件的时间戳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="soft_vs_hard_link.html">
+            
+                <a href="soft_vs_hard_link.html">
+            
+                    
+                    软连接 VS 硬链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="searching.html">
+            
+                <a href="searching.html">
+            
+                    
+                    文件的搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="archiving.html">
+            
+                <a href="archiving.html">
+            
+                    
+                    文件的归档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="bash_configure.html">
+            
+                <a href="bash_configure.html">
+            
+                    
+                    bash的配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../redirection_and_pipe/">
+            
+                <a href="../redirection_and_pipe/">
+            
+                    
+                    重定向与管道
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../redirection_and_pipe/redirections/">
+            
+                <a href="../redirection_and_pipe/redirections/">
+            
+                    
+                    重定向
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../redirection_and_pipe/redirections/output.html">
+            
+                <a href="../redirection_and_pipe/redirections/output.html">
+            
+                    
+                    输出重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../redirection_and_pipe/redirections/input.html">
+            
+                <a href="../redirection_and_pipe/redirections/input.html">
+            
+                    
+                    输入重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../redirection_and_pipe/redirections/combine.html">
+            
+                <a href="../redirection_and_pipe/redirections/combine.html">
+            
+                    
+                    结合使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../redirection_and_pipe/pipe/">
+            
+                <a href="../redirection_and_pipe/pipe/">
+            
+                    
+                    管道
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../redirection_and_pipe/pipe/pipe.html">
+            
+                <a href="../redirection_and_pipe/pipe/pipe.html">
+            
+                    
+                    匿名管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../redirection_and_pipe/pipe/FIFO.html">
+            
+                <a href="../redirection_and_pipe/pipe/FIFO.html">
+            
+                    
+                    命名管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../redirection_and_pipe/summary.html">
+            
+                <a href="../redirection_and_pipe/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user_and_group_management/">
+            
+                <a href="../user_and_group_management/">
+            
+                    
+                    用户与用户组管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user_and_group_management/user_related_files/">
+            
+                <a href="../user_and_group_management/user_related_files/">
+            
+                    
+                    与用户相关的配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../user_and_group_management/user_related_files/etc_passwd.html">
+            
+                <a href="../user_and_group_management/user_related_files/etc_passwd.html">
+            
+                    
+                    /etc/passwd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../user_and_group_management/user_related_files/etc_shadow.html">
+            
+                <a href="../user_and_group_management/user_related_files/etc_shadow.html">
+            
+                    
+                    /etc/shadow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user_and_group_management/group_related_files/">
+            
+                <a href="../user_and_group_management/group_related_files/">
+            
+                    
+                    用户组相关配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../user_and_group_management/group_related_files/etc_group.html">
+            
+                <a href="../user_and_group_management/group_related_files/etc_group.html">
+            
+                    
+                    /etc/group
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../user_and_group_management/group_related_files/etc_gshadow.html">
+            
+                <a href="../user_and_group_management/group_related_files/etc_gshadow.html">
+            
+                    
+                    /etc/gshadow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user_and_group_management/user_and_group_create.html">
+            
+                <a href="../user_and_group_management/user_and_group_create.html">
+            
+                    
+                    用户与组的创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../user_and_group_management/user_and_group_delete.html">
+            
+                <a href="../user_and_group_management/user_and_group_delete.html">
+            
+                    
+                    用户与组的删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../user_and_group_management/user_and_group_modify.html">
+            
+                <a href="../user_and_group_management/user_and_group_modify.html">
+            
+                    
+                    用户与组的属性修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../user_and_group_management/user_group_info.html">
+            
+                <a href="../user_and_group_management/user_group_info.html">
+            
+                    
+                    查询用户和组信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../user_and_group_management/su_and_sudo.html">
+            
+                <a href="../user_and_group_management/su_and_sudo.html">
+            
+                    
+                    su与sudo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../user_and_group_management/chroot.html">
+            
+                <a href="../user_and_group_management/chroot.html">
+            
+                    
+                    chroot监狱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../user_and_group_management/summary.html">
+            
+                <a href="../user_and_group_management/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../process_and_job/">
+            
+                <a href="../process_and_job/">
+            
+                    
+                    进程与任务管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../process_and_job/process_list.html">
+            
+                <a href="../process_and_job/process_list.html">
+            
+                    
+                    进程的查看
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../process_and_job/signal.html">
+            
+                <a href="../process_and_job/signal.html">
+            
+                    
+                    信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../process_and_job/backgroud.html">
+            
+                <a href="../process_and_job/backgroud.html">
+            
+                    
+                    后台执行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../process_and_job/timed_task.html">
+            
+                <a href="../process_and_job/timed_task.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../process_and_job/summary.html">
+            
+                <a href="../process_and_job/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../regular_expression/">
+            
+                <a href="../regular_expression/">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../regular_expression/BRE.html">
+            
+                <a href="../regular_expression/BRE.html">
+            
+                    
+                    BRE正则引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../regular_expression/ERE.html">
+            
+                <a href="../regular_expression/ERE.html">
+            
+                    
+                    ERE正则引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../regular_expression/backreferences.html">
+            
+                <a href="../regular_expression/backreferences.html">
+            
+                    
+                    反向引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../regular_expression/zero-length_assertions.html">
+            
+                <a href="../regular_expression/zero-length_assertions.html">
+            
+                    
+                    零宽断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >软连接 VS 硬链接</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8F6F;&#x8FDE;&#x63A5;-vs-&#x786C;&#x94FE;&#x63A5;">&#x8F6F;&#x8FDE;&#x63A5; VS &#x786C;&#x94FE;&#x63A5;</h1>
+<h2 id="&#x8F6F;&#x8FDE;&#x63A5;">&#x8F6F;&#x8FDE;&#x63A5;</h2>
+<p><strong>&#x8F6F;&#x8FDE;&#x63A5;</strong>(&#x4E5F;&#x79F0;&#x4F5C;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x2014;&#x2014;<strong>symbolic link</strong>, <strong>symlink</strong> or <strong>soft link</strong>), &#x662F;&#x4E00;&#x7C7B;&#x7279;&#x6B8A;&#x7684;&#x6587;&#x4EF6;&#xFF0C; &#x5176;&#x5305;&#x542B;&#x6709;&#x4E00;&#x6761;&#x4EE5;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x6216;&#x8005;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x7684;&#x5F62;&#x5F0F;&#x6307;&#x5411;&#x5176;&#x5B83;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x76EE;&#x5F55;&#x7684;&#x5F15;&#x7528;&#x3002; &#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x6700;&#x65E9;&#x5728;4.2BSD&#x7248;&#x672C;&#x4E2D;&#x51FA;&#x73B0;&#xFF08;1983&#x5E74;&#xFF09;&#x3002;&#x4ECA;&#x5929;POSIX&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6807;&#x51C6;&#x3001;&#x5927;&#x591A;&#x6570;&#x7C7B;Unix&#x7CFB;&#x7EDF;&#x3001;Windows Vista&#x3001;Windows 7&#x90FD;&#x652F;&#x6301;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x3002;Windows 2000&#x4E0E;Windows XP&#x5728;&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;&#x4E5F;&#x652F;&#x6301;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x3002;</p>
+<p>&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x900F;&#x660E;&#x7684;&#xFF1A;&#x5BF9;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#x7684;&#x7A0B;&#x5E8F;&#x4F1A;&#x8868;&#x73B0;&#x5F97;&#x76F4;&#x63A5;&#x5BF9;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;&#x67D0;&#x4E9B;&#x9700;&#x8981;&#x7279;&#x522B;&#x5904;&#x7406;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x7684;&#x7A0B;&#x5E8F;&#xFF08;&#x5982;&#x5907;&#x4EFD;&#x7A0B;&#x5E8F;&#xFF09;&#x53EF;&#x80FD;&#x4F1A;&#x8BC6;&#x522B;&#x5E76;&#x76F4;&#x63A5;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x6587;&#x4EF6;&#x4EC5;&#x5305;&#x542B;&#x6709;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5176;&#x88AB;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x89E3;&#x91CA;&#x4E3A;&#x4E00;&#x6761;&#x6307;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x76EE;&#x5F55;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x5B58;&#x5728;&#x5E76;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#xFF0C;&#x5B83;&#x6307;&#x5411;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x4E0D;&#x53D7;&#x5F71;&#x54CD;&#x3002;&#x5982;&#x679C;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x88AB;&#x79FB;&#x52A8;&#x3001;&#x91CD;&#x547D;&#x540D;&#x6216;&#x8005;&#x5220;&#x9664;&#xFF0C;&#x4EFB;&#x4F55;&#x6307;&#x5411;&#x5B83;&#x7684;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x4ECD;&#x7136;&#x5B58;&#x5728;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x5C06;&#x4F1A;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x4E0D;&#x590D;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x88AB;&#x6709;&#x65F6;&#x88AB;&#x79F0;&#x4E3A;&#x88AB;&#x9057;&#x5F03;&#x3002;</p>
+<p>&#x5728;Linux&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x8F6F;&#x8FDE;&#x63A5;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x4F7F;&#x7528;<code>ln -s</code>:</p>
+<pre><code class="lang-bash">$ ln <span class="hljs-_">-s</span> /etc/bashrc /tmp/bashrc
+$ ln <span class="hljs-_">-s</span> /etc/bashrc .            <span class="hljs-comment"># &#x76EE;&#x6807;&#x53EF;&#x4EE5;&#x4E0D;&#x662F;&#x5B8C;&#x6574;&#x7684;&#x6587;&#x4EF6;&#x540D;</span>
+$ ln <span class="hljs-_">-s</span> /etc/ dir                <span class="hljs-comment"># &#x6E90;&#x548C;&#x76EE;&#x6807;&#x540D;&#x53EF;&#x4EE5;&#x4E0D;&#x4E00;&#x6837;, &#x76EE;&#x6807;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;</span>
+</code></pre>
+<p>&#x67E5;&#x770B;&#x8F6F;&#x8FDE;&#x63A5;&#x7684;&#x6307;&#x5411;&#x53EF;&#x4EE5;&#x7528;<code>ls -l</code></p>
+<p>&#x5220;&#x9664;&#x8F6F;&#x8FDE;&#x63A5;&#x5C31;&#x5982;&#x540C;&#x5220;&#x9664;&#x666E;&#x901A;&#x6587;&#x4EF6;&#x4E00;&#x6837;&#xFF0C;&#x4F7F;&#x7528;<code>rm symlink</code>&#x5373;&#x53EF;&#x3002;</p>
+<h2 id="inode">inode</h2>
+<p><code>inode</code>&#x662F;&#x6307;&#x5728;&#x8BB8;&#x591A;&#x201C;&#x7C7B;Unix&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x201D;&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;&#x6BCF;&#x4E2A;inode&#x4FDD;&#x5B58;&#x4E86;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5BF9;&#x8C61;&#xFF08;&#x5305;&#x62EC;&#x6587;&#x4EF6;&#x3001;&#x76EE;&#x5F55;&#x3001;&#x8BBE;&#x5907;&#x6587;&#x4EF6;&#x3001;socket&#x3001;&#x7BA1;&#x9053;, &#x7B49;&#x7B49;&#xFF09;&#x7684;&#x5143;&#x4FE1;&#x606F;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x4E0D;&#x5305;&#x62EC;&#x6570;&#x636E;&#x5185;&#x5BB9;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x540D;&#x3002;</p>
+<p>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x6BCF;&#x4E2A;&#x201C;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5BF9;&#x8C61;&#x201D;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x201C;inode&#x201D;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x7528;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x503C;&#x6765;&#x8FA8;&#x8BC6;&#x3002;&#x8FD9;&#x4E2A;&#x6574;&#x6570;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;inode&#x53F7;&#x7801;&#xFF08;&#x201C;i-number&#x201D;&#x6216;&#x201C;inode number&#x201D;&#xFF09;&#x3002;&#x7531;&#x4E8E;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;inode&#x8868;&#x7684;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#x3001;&#x603B;&#x6761;&#x76EE;&#x6570;&#x91CF;&#x90FD;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x7528;inode&#x53F7;&#x7801;&#x53BB;&#x7D22;&#x5F15;&#x67E5;&#x627E;inode&#x8868;&#x3002;</p>
+<p>&#x7B80;&#x800C;&#x8A00;&#x4E4B;:</p>
+<ul>
+<li><code>inode</code>&#x5B58;&#x50A8;&#x7684;&#x662F;&#x6587;&#x4EF6;&#x7684;<code>&#x5143;&#x6570;&#x636E;</code></li>
+<li><code>inode</code>&#x662F;&#x6587;&#x4EF6;&#x5728;&#x78C1;&#x76D8;&#x4E0A;&#x7684;&#x7D22;&#x5F15;&#x7F16;&#x53F7;</li>
+<li><code>inode</code>&#x662F;&#x6587;&#x4EF6;&#x7684;&#x552F;&#x4E00;&#x6807;&#x793A;&#x7B26;(&#x4E3B;&#x952E;), &#x800C;&#x975E;&#x6587;&#x4EF6;&#x540D;</li>
+</ul>
+<p>Linux&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x663E;&#x793A;&#x6587;&#x4EF6;&#x7684;inode&#x4F7F;&#x7528;<code>ls -i</code>&#xFF0C;&#x4F7F;&#x7528;<code>df -i</code>&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x5F53;&#x524D;&#x6302;&#x8F7D;&#x5217;&#x8868;&#x4E2D;inode&#x4F7F;&#x7528;&#x60C5;&#x51B5;</p>
+<h2 id="&#x786C;&#x94FE;&#x63A5;">&#x786C;&#x94FE;&#x63A5;</h2>
+<p><strong>&#x786C;&#x8FDE;&#x63A5;</strong>, &#x6307;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x8282;&#x70B9;&#x6765;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#x3002;&#x5728;Linux&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;&#x78C1;&#x76D8;&#x5206;&#x533A;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x7BA1;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x90FD;&#x7ED9;&#x5B83;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x7F16;&#x53F7;&#xFF0C;&#x79F0;&#x4E3A;&#x7D22;&#x5F15;&#x8282;&#x70B9;&#x53F7;(Inode Index)&#x3002;&#x5728;Linux&#x4E2D;&#xFF0C;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x6307;&#x5411;&#x540C;&#x4E00;&#x7D22;&#x5F15;&#x8282;&#x70B9;&#x662F;&#x5B58;&#x5728;&#x7684;&#x3002;&#x4E00;&#x822C;&#x8FD9;&#x79CD;&#x8FDE;&#x63A5;&#x5C31;&#x662F;&#x786C;&#x8FDE;&#x63A5;&#x3002;&#x786C;&#x8FDE;&#x63A5;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x5141;&#x8BB8;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x62E5;&#x6709;&#x591A;&#x4E2A;&#x6709;&#x6548;&#x8DEF;&#x5F84;&#x540D;&#xFF0C;&#x8FD9;&#x6837;&#x7528;&#x6237;&#x5C31;&#x53EF;&#x4EE5;&#x5EFA;&#x7ACB;&#x786C;&#x8FDE;&#x63A5;&#x5230;&#x91CD;&#x8981;&#x6587;&#x4EF6;&#xFF0C;&#x4EE5;&#x9632;&#x6B62;&#x201C;&#x8BEF;&#x5220;&#x201D;&#x7684;&#x529F;&#x80FD;&#x3002;&#x5176;&#x539F;&#x56E0;&#x5982;&#x4E0A;&#x6240;&#x8FF0;&#xFF0C;&#x56E0;&#x4E3A;&#x5BF9;&#x5E94;&#x8BE5;&#x76EE;&#x5F55;&#x7684;&#x7D22;&#x5F15;&#x8282;&#x70B9;&#x6709;&#x4E00;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x8FDE;&#x63A5;&#x3002;&#x53EA;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x5E76;&#x4E0D;&#x5F71;&#x54CD;&#x7D22;&#x5F15;&#x8282;&#x70B9;&#x672C;&#x8EAB;&#x548C;&#x5176;&#x5B83;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x88AB;&#x5220;&#x9664;&#x540E;&#xFF0C;&#x6587;&#x4EF6;&#x7684;&#x6570;&#x636E;&#x5757;&#x53CA;&#x76EE;&#x5F55;&#x7684;&#x8FDE;&#x63A5;&#x624D;&#x4F1A;&#x88AB;&#x91CA;&#x653E;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6587;&#x4EF6;&#x771F;&#x6B63;&#x5220;&#x9664;&#x7684;&#x6761;&#x4EF6;&#x662F;&#x4E0E;&#x4E4B;&#x76F8;&#x5173;&#x7684;&#x6240;&#x6709;&#x786C;&#x8FDE;&#x63A5;&#x6587;&#x4EF6;&#x5747;&#x88AB;&#x5220;&#x9664;&#x3002;</p>
+<p>&#x5728;Linux&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x786C;&#x94FE;&#x63A5;&#x7684;&#x65B9;&#x6CD5;&#x662F;<code>ln</code>:</p>
+<pre><code class="lang-bash">$ ln file1 file2
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x786C;&#x94FE;&#x63A5;&#x4E4B;&#x540E;&#xFF0C;&#x6E90;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x5C06;&#x62E5;&#x6709;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;<code>inode</code>&#x7F16;&#x53F7;&#xFF0C;&#x6743;&#x9650;&#xFF0C;&#x5185;&#x5BB9;&#x7B49;&#x3002;</p>
+<p>&#x786C;&#x94FE;&#x63A5;&#x7684;&#x51E0;&#x4E2A;&#x9650;&#x5236;:</p>
+<ul>
+<li>&#x786C;&#x94FE;&#x63A5;&#x521B;&#x5EFA;&#x65F6;&#x8981;&#x6C42;&#x6E90;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x5B58;&#x5728;</li>
+<li>&#x4E0D;&#x5141;&#x8BB8;&#x7ED9;&#x76EE;&#x5F55;&#x521B;&#x5EFA;&#x786C;&#x94FE;&#x63A5;(&#x6CE8;&#x610F;&#x662F;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;<code>ln</code>&#x7684;&#x65B9;&#x5F0F;)</li>
+<li>&#x53EA;&#x6709;&#x5728;&#x540C;&#x4E00;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x624D;&#x80FD;&#x521B;&#x5EFA;&#x786C;&#x94FE;&#x63A5;</li>
+</ul>
+<blockquote>
+<p>&#x5173;&#x4E8E;&#x8F6F;&#x8FDE;&#x63A5;&#x548C;&#x786C;&#x94FE;&#x63A5;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#xFF0C;&#x53C2;&#x8003;IBM&#x7684;&#x6587;&#x7AE0;: <a href="https://www.ibm.com/developerworks/cn/linux/l-cn-hardandsymb-links/" target="_blank">&#x7406;&#x89E3; Linux &#x7684;&#x786C;&#x94FE;&#x63A5;&#x4E0E;&#x8F6F;&#x94FE;&#x63A5;</a></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="file_timestamps.html" class="navigation navigation-prev " aria-label="Previous page: 文件的时间戳">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="searching.html" class="navigation navigation-next " aria-label="Next page: 文件的搜索">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"软连接 VS 硬链接","level":"1.3.4","depth":2,"next":{"title":"文件的搜索","level":"1.3.5","depth":2,"path":"files_directorys/searching.md","ref":"files_directorys/searching.md","articles":[]},"previous":{"title":"文件的时间戳","level":"1.3.3","depth":2,"path":"files_directorys/file_timestamps.md","ref":"files_directorys/file_timestamps.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Linux基础概要","links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"Linux 学习入门教程"},"file":{"path":"files_directorys/soft_vs_hard_link.md","mtime":"2016-06-20T01:36:46.973Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:38:55.991Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

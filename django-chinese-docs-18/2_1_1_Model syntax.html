@@ -1,0 +1,3226 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>模型语法 · django-chinese-docs-1.8</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="2_1.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1_First steps.html">
+            
+                <a href="1_First steps.html">
+            
+                    
+                    新手入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_1.html">
+            
+                <a href="1_1.html">
+            
+                    
+                    从零开始
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1_1_1_Django at a glance.html">
+            
+                <a href="1_1_1_Django at a glance.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="1_1_2_Quick install guide.html">
+            
+                <a href="1_1_2_Quick install guide.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1_2.html">
+            
+                <a href="1_2.html">
+            
+                    
+                    教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="1_2_1_Part 1 Models.html">
+            
+                <a href="1_2_1_Part 1 Models.html">
+            
+                    
+                    第1部分：模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="1_2_2_Part 2 The admin site.html">
+            
+                <a href="1_2_2_Part 2 The admin site.html">
+            
+                    
+                    第2部分：管理站点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="1_2_3_Part 3 Views and templates.html">
+            
+                <a href="1_2_3_Part 3 Views and templates.html">
+            
+                    
+                    第3部分：视图和模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="1_2_4_Part 4 Forms and generic views.html">
+            
+                <a href="1_2_4_Part 4 Forms and generic views.html">
+            
+                    
+                    第4部分：表单和通用视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="1_2_5_Part 5 Testing.html">
+            
+                <a href="1_2_5_Part 5 Testing.html">
+            
+                    
+                    第5部分：测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="1_2_6_Part 6 Static files.html">
+            
+                <a href="1_2_6_Part 6 Static files.html">
+            
+                    
+                    第6部分：静态文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1_3.html">
+            
+                <a href="1_3.html">
+            
+                    
+                    高级教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="1_3_1_How to write reusable apps.html">
+            
+                <a href="1_3_1_How to write reusable apps.html">
+            
+                    
+                    如何编写可重用的应用 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="1_3_2_Writing your first patch for Django_.html">
+            
+                <a href="1_3_2_Writing your first patch for Django_.html">
+            
+                    
+                    为Django编写首个补丁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2_The model layer.html">
+            
+                <a href="2_The model layer.html">
+            
+                    
+                    模型层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2_1.html">
+            
+                <a href="2_1.html">
+            
+                    
+                    模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1.1" data-path="2_1_1_Model syntax.html">
+            
+                <a href="2_1_1_Model syntax.html">
+            
+                    
+                    模型语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" >
+            
+                <span>
+            
+                    
+                    字段类型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="2_1_3_Meta options.html">
+            
+                <a href="2_1_3_Meta options.html">
+            
+                    
+                    元选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="2_1_4_Model class.html">
+            
+                <a href="2_1_4_Model class.html">
+            
+                    
+                    模型类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2_2.html">
+            
+                <a href="2_2.html">
+            
+                    
+                    查询集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="2_2_1_Making queries.html">
+            
+                <a href="2_2_1_Making queries.html">
+            
+                    
+                    执行查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" >
+            
+                <span>
+            
+                    
+                    查询集方法参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="2_2_3_Lookup expressions.html">
+            
+                <a href="2_2_3_Lookup expressions.html">
+            
+                    
+                    查找表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2_3.html">
+            
+                <a href="2_3.html">
+            
+                    
+                    模型的实例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="2_3_1_Instance methods.html">
+            
+                <a href="2_3_1_Instance methods.html">
+            
+                    
+                    实例方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="2_3_2_Accessing related objects.html">
+            
+                <a href="2_3_2_Accessing related objects.html">
+            
+                    
+                    访问关联对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="2_4.html">
+            
+                <a href="2_4.html">
+            
+                    
+                    迁移
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" >
+            
+                <span>
+            
+                    
+                    迁移简介
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" >
+            
+                <span>
+            
+                    
+                    操作参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="2_4_3_SchemaEditor.html">
+            
+                <a href="2_4_3_SchemaEditor.html">
+            
+                    
+                    模式编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="2_4_4_Writing migrations.html">
+            
+                <a href="2_4_4_Writing migrations.html">
+            
+                    
+                    编写迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="2_5.html">
+            
+                <a href="2_5.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="2_5_1_Manager.html">
+            
+                <a href="2_5_1_Manager.html">
+            
+                    
+                    管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="2_5_2_Performing raw SQL queries.html">
+            
+                <a href="2_5_2_Performing raw SQL queries.html">
+            
+                    
+                    原始的SQL查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" >
+            
+                <span>
+            
+                    
+                    事务
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="2_5_4_Aggregation.html">
+            
+                <a href="2_5_4_Aggregation.html">
+            
+                    
+                    聚合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" >
+            
+                <span>
+            
+                    
+                    自定义字段
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="2_5_6_Multiple databases.html">
+            
+                <a href="2_5_6_Multiple databases.html">
+            
+                    
+                    多数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="2_5_7_Custom lookups.html">
+            
+                <a href="2_5_7_Custom lookups.html">
+            
+                    
+                    自定义查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" >
+            
+                <span>
+            
+                    
+                    查询表达式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="2_5_9_Conditional Expressions.html">
+            
+                <a href="2_5_9_Conditional Expressions.html">
+            
+                    
+                    条件表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.10" data-path="2_5_10_Database Functions.html">
+            
+                <a href="2_5_10_Database Functions.html">
+            
+                    
+                    数据库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="2_6.html">
+            
+                <a href="2_6.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" >
+            
+                <span>
+            
+                    
+                    支持的数据库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="2_6_2_Legacy databases.html">
+            
+                <a href="2_6_2_Legacy databases.html">
+            
+                    
+                    遗留的数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="2_6_3_Providing initial data.html">
+            
+                <a href="2_6_3_Providing initial data.html">
+            
+                    
+                    提供初始数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="2_6_4_Optimize database access.html">
+            
+                <a href="2_6_4_Optimize database access.html">
+            
+                    
+                    优化数据库访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" >
+            
+                <span>
+            
+                    
+                    PostgreSQL特色功能
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3_The view layer.html">
+            
+                <a href="3_The view layer.html">
+            
+                    
+                    视图层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3_1.html">
+            
+                <a href="3_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="3_1_1_URLconfs.html">
+            
+                <a href="3_1_1_URLconfs.html">
+            
+                    
+                    URL配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="3_1_2_View functions.html">
+            
+                <a href="3_1_2_View functions.html">
+            
+                    
+                    视图函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="3_1_3_Shortcuts.html">
+            
+                <a href="3_1_3_Shortcuts.html">
+            
+                    
+                    快捷函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="3_1_4_Decorators.html">
+            
+                <a href="3_1_4_Decorators.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3_2.html">
+            
+                <a href="3_2.html">
+            
+                    
+                    参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="3_2_1_Built-in Views.html">
+            
+                <a href="3_2_1_Built-in Views.html">
+            
+                    
+                    内建的视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" >
+            
+                <span>
+            
+                    
+                    请求/响应 对象
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="3_2_3_TemplateResponse objects.html">
+            
+                <a href="3_2_3_TemplateResponse objects.html">
+            
+                    
+                    TemplateResponse 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3_3.html">
+            
+                <a href="3_3.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="3_3_1_Overview.html">
+            
+                <a href="3_3_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="3_3_2_File objects.html">
+            
+                <a href="3_3_2_File objects.html">
+            
+                    
+                    File 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="3_3_3_Storage API.html">
+            
+                <a href="3_3_3_Storage API.html">
+            
+                    
+                    储存API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="3_3_4_Managing files.html">
+            
+                <a href="3_3_4_Managing files.html">
+            
+                    
+                    管理文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="3_3_5_Custom storage.html">
+            
+                <a href="3_3_5_Custom storage.html">
+            
+                    
+                    自定义存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3_4.html">
+            
+                <a href="3_4.html">
+            
+                    
+                    基于类的视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="3_4_1_Overview.html">
+            
+                <a href="3_4_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="3_4_2_Built-in display views.html">
+            
+                <a href="3_4_2_Built-in display views.html">
+            
+                    
+                    内建显示视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="3_4_3_Built-in editing views.html">
+            
+                <a href="3_4_3_Built-in editing views.html">
+            
+                    
+                    内建编辑视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" >
+            
+                <span>
+            
+                    
+                    使用Mixin
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="3_4_5_API reference.html">
+            
+                <a href="3_4_5_API reference.html">
+            
+                    
+                    API参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.6" data-path="3_4_6_Flattened index.html">
+            
+                <a href="3_4_6_Flattened index.html">
+            
+                    
+                    分类索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3_5.html">
+            
+                <a href="3_5.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="3_5_1_Generating CSV.html">
+            
+                <a href="3_5_1_Generating CSV.html">
+            
+                    
+                    生成 CSV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="3_5_2_Generating PDF.html">
+            
+                <a href="3_5_2_Generating PDF.html">
+            
+                    
+                    生成 PDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3_6.html">
+            
+                <a href="3_6.html">
+            
+                    
+                    中间件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="3_6_1_Overview.html">
+            
+                <a href="3_6_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="3_6_2_Built-in middleware classes.html">
+            
+                <a href="3_6_2_Built-in middleware classes.html">
+            
+                    
+                    内建的中间件类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4_The template layer.html">
+            
+                <a href="4_The template layer.html">
+            
+                    
+                    模板层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4_1.html">
+            
+                <a href="4_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4_2.html">
+            
+                <a href="4_2.html">
+            
+                    
+                    面向设计师
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="4_2_1_Language overview.html">
+            
+                <a href="4_2_1_Language overview.html">
+            
+                    
+                    语言概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" >
+            
+                <span>
+            
+                    
+                    内建标签和过滤器
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" >
+            
+                <span>
+            
+                    
+                    网页设计助手(已废弃)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="4_2_4_Humanization.html">
+            
+                <a href="4_2_4_Humanization.html">
+            
+                    
+                    人性化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4_3.html">
+            
+                <a href="4_3.html">
+            
+                    
+                    面向程序员
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" >
+            
+                <span>
+            
+                    
+                    模板API
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" >
+            
+                <span>
+            
+                    
+                    自定义标签和过滤器
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5_Forms.html">
+            
+                <a href="5_Forms.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5_1.html">
+            
+                <a href="5_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="5_1_1_Overview.html">
+            
+                <a href="5_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="5_1_2_Form API.html">
+            
+                <a href="5_1_2_Form API.html">
+            
+                    
+                    表单API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" >
+            
+                <span>
+            
+                    
+                    内建的字段
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="5_1_4_Built-in widgets.html">
+            
+                <a href="5_1_4_Built-in widgets.html">
+            
+                    
+                    内建的Widget
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5_2.html">
+            
+                <a href="5_2.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" >
+            
+                <span>
+            
+                    
+                    模型表单
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="5_2_2_Integrating media.html">
+            
+                <a href="5_2_2_Integrating media.html">
+            
+                    
+                    整合媒体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" >
+            
+                <span>
+            
+                    
+                    表单集
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" >
+            
+                <span>
+            
+                    
+                    自定义验证
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6_The development process.html">
+            
+                <a href="6_The development process.html">
+            
+                    
+                    开发过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6_1.html">
+            
+                <a href="6_1.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="6_1_1_Overview.html">
+            
+                <a href="6_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" >
+            
+                <span>
+            
+                    
+                    完整列表设置
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6_2.html">
+            
+                <a href="6_2.html">
+            
+                    
+                    应用程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6_3.html">
+            
+                <a href="6_3.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="6_3_Overview.html">
+            
+                <a href="6_3_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="6_4.html">
+            
+                <a href="6_4.html">
+            
+                    
+                    django-admin 和 manage.py
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="6_4_2_Adding custom commands.html">
+            
+                <a href="6_4_2_Adding custom commands.html">
+            
+                    
+                    添加自定义的命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="6_5.html">
+            
+                <a href="6_5.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="6_5_1_Introduction.html">
+            
+                <a href="6_5_1_Introduction.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" >
+            
+                <span>
+            
+                    
+                    编写并运行测试
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" >
+            
+                <span>
+            
+                    
+                    包含的测试工具
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.4" >
+            
+                <span>
+            
+                    
+                    高级主题
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="6_6.html">
+            
+                <a href="6_6.html">
+            
+                    
+                    部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.6.1" data-path="6_6_1_Overview.html">
+            
+                <a href="6_6_1_Overview.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2" data-path="6_6_2_WSGI servers.html">
+            
+                <a href="6_6_2_WSGI servers.html">
+            
+                    
+                    WSGI服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3" >
+            
+                <span>
+            
+                    
+                    FastCGI/SCGI/AJP (已废弃)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.4" data-path="6_6_4_Deploying static files.html">
+            
+                <a href="6_6_4_Deploying static files.html">
+            
+                    
+                    部署静态文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.5" data-path="6_6_5_Tracking code errors by email.html">
+            
+                <a href="6_6_5_Tracking code errors by email.html">
+            
+                    
+                    通过email追踪代码错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7_Admin.html">
+            
+                <a href="7_Admin.html">
+            
+                    
+                    Admin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" >
+            
+                <span>
+            
+                    
+                    管理站点
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7_2_Admin actions.html">
+            
+                <a href="7_2_Admin actions.html">
+            
+                    
+                    管理操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7_3_Admin documentation generator.html">
+            
+                <a href="7_3_Admin documentation generator.html">
+            
+                    
+                    管理文档生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8_Security.html">
+            
+                <a href="8_Security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8_1_Security overview_.html">
+            
+                <a href="8_1_Security overview_.html">
+            
+                    
+                    安全概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8_2_Disclosed security issues in Django.html">
+            
+                <a href="8_2_Disclosed security issues in Django.html">
+            
+                    
+                    说明Django中的安全问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="8_3_Clickjacking protection.html">
+            
+                <a href="8_3_Clickjacking protection.html">
+            
+                    
+                    点击劫持保护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" >
+            
+                <span>
+            
+                    
+                    伪造跨站请求保护
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="8_5_Cryptographic signing.html">
+            
+                <a href="8_5_Cryptographic signing.html">
+            
+                    
+                    加密签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9_Internationalization and localization.html">
+            
+                <a href="9_Internationalization and localization.html">
+            
+                    
+                    国际化和本地化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9_1_1_Overview.html">
+            
+                <a href="9_1_1_Overview.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" >
+            
+                <span>
+            
+                    
+                    国际化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" >
+            
+                <span>
+            
+                    
+                    本地化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="9_1_4_Localized Web UI formatting and form input.html">
+            
+                <a href="9_1_4_Localized Web UI formatting and form input.html">
+            
+                    
+                    本地化WEB UI格式化输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="9_2_“Local flavor”.html">
+            
+                <a href="9_2_“Local flavor”.html">
+            
+                    
+                    “本地特色”
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" >
+            
+                <span>
+            
+                    
+                    时区
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="13_Common Web application tools.html">
+            
+                <a href="13_Common Web application tools.html">
+            
+                    
+                    常见的网站应用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="13_1.html">
+            
+                <a href="13_1.html">
+            
+                    
+                    认证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="13_1_1_Overview.html">
+            
+                <a href="13_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.2" data-path="13_1_2_Using the authentication system.html">
+            
+                <a href="13_1_2_Using the authentication system.html">
+            
+                    
+                    使用认证系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.3" data-path="13_1_3_Password management.html">
+            
+                <a href="13_1_3_Password management.html">
+            
+                    
+                    密码管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.4" >
+            
+                <span>
+            
+                    
+                    自定义认证
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.5" >
+            
+                <span>
+            
+                    
+                    API参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" >
+            
+                <span>
+            
+                    
+                    缓存
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="13_3_Logging.html">
+            
+                <a href="13_3_Logging.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" >
+            
+                <span>
+            
+                    
+                    发送邮件
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" >
+            
+                <span>
+            
+                    
+                    组织 feeds (RSS/Atom)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="13_6_Pagination.html">
+            
+                <a href="13_6_Pagination.html">
+            
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" >
+            
+                <span>
+            
+                    
+                    消息框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" >
+            
+                <span>
+            
+                    
+                    序列化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="13_9_1_Sessions.html">
+            
+                <a href="13_9_1_Sessions.html">
+            
+                    
+                    会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" >
+            
+                <span>
+            
+                    
+                    网站地图
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" >
+            
+                <span>
+            
+                    
+                    静态文件处理
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.12" data-path="13_12_Data validation.html">
+            
+                <a href="13_12_Data validation.html">
+            
+                    
+                    数据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="14_Other core functionalities.html">
+            
+                <a href="14_Other core functionalities.html">
+            
+                    
+                    其它核心功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="14_1_Conditional content processing.html">
+            
+                <a href="14_1_Conditional content processing.html">
+            
+                    
+                    按需内容处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" >
+            
+                <span>
+            
+                    
+                    内容类型和泛型关系
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" >
+            
+                <span>
+            
+                    
+                    数据浏览
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="14_4_1_Redirects.html">
+            
+                <a href="14_4_1_Redirects.html">
+            
+                    
+                    重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="14_5_Signals.html">
+            
+                <a href="14_5_Signals.html">
+            
+                    
+                    信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="14_6_System check framework.html">
+            
+                <a href="14_6_System check framework.html">
+            
+                    
+                    系统检查框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" >
+            
+                <span>
+            
+                    
+                    网站框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" >
+            
+                <span>
+            
+                    
+                    Django中的Unicode编码
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >模型语法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6A21;&#x578B;">&#x6A21;&#x578B;</h1>
+<p>&#x6A21;&#x578B;&#x662F;&#x4F60;&#x7684;&#x6570;&#x636E;&#x7684;&#x552F;&#x4E00;&#x7684;&#x3001;&#x6743;&#x5A01;&#x7684;&#x4FE1;&#x606F;&#x6E90;&#x3002;&#x5B83;&#x5305;&#x542B;&#x4F60;&#x6240;&#x50A8;&#x5B58;&#x6570;&#x636E;&#x7684;&#x5FC5;&#x8981;&#x5B57;&#x6BB5;&#x548C;&#x884C;&#x4E3A;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x5BF9;&#x5E94;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x552F;&#x4E00;&#x7684;&#x4E00;&#x5F20;&#x8868;&#x3002;</p>
+<p>&#x57FA;&#x7840;&#xFF1A;</p>
+<ul>
+<li>&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x90FD;&#x662F;<a href="../../ref/models/instances.html#django.db.models.Model" title="django.db.models.Model"><code>django.db.models.Model</code></a> &#x7684;&#x4E00;&#x4E2A;Python &#x5B50;&#x7C7B;&#x3002;</li>
+<li>&#x6A21;&#x578B;&#x7684;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x90FD;&#x8868;&#x793A;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x3002;</li>
+<li>Django &#x63D0;&#x4F9B;&#x4E00;&#x5957;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x8BBF;&#x95EE;&#x7684;API&#xFF1B;&#x8BE6;&#x89C1;<a href="queries.html"><em>&#x6267;&#x884C;&#x67E5;&#x8BE2;</em></a>&#x3002;</li>
+</ul>
+<h2 id="&#x7B80;&#x77ED;&#x7684;&#x4F8B;&#x5B50;">&#x7B80;&#x77ED;&#x7684;&#x4F8B;&#x5B50;</h2>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;<code>Person</code>&#x6A21;&#x578B;&#xFF0C;&#x5B83;&#x6709;<code>first_name</code> &#x548C;<code>last_name</code> &#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+</code></pre><p><code>first_name</code>&#x548C;<code>last_name</code>&#x662F;&#x6A21;&#x578B;&#x7684;&#x4E24;&#x4E2A;<a href="#fields">&#x5B57;&#x6BB5;</a>&#x3002;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x90FD;&#x88AB;&#x6307;&#x5B9A;&#x6210;&#x4E00;&#x4E2A;&#x7C7B;&#x5C5E;&#x6027;&#xFF0C;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x6620;&#x5C04;&#x5230;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5217;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x7684;<code>Person</code> &#x6A21;&#x578B;&#x4F1A;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x8FD9;&#x6837;&#x4E00;&#x5F20;&#x8868;&#xFF1A;</p>
+<pre><code>CREATE TABLE myapp_person (
+    &quot;id&quot; serial NOT NULL PRIMARY KEY,
+    &quot;first_name&quot; varchar(30) NOT NULL,
+    &quot;last_name&quot; varchar(30) NOT NULL
+);
+</code></pre><p>&#x4E00;&#x4E9B;&#x6280;&#x672F;&#x4E0A;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;</p>
+<ul>
+<li>&#x8FD9;&#x4E2A;&#x8868;&#x7684;&#x540D;&#x79F0;<code>myapp_person</code>&#xFF0C;&#x662F;&#x6839;&#x636E; &#x6A21;&#x578B;&#x4E2D;&#x7684;&#x5143;&#x6570;&#x636E;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8986;&#x5199;&#x4E3A;&#x522B;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x8BE6;&#x89C1;<a href="../../ref/models/options.html#table-names"><em>Table names</em></a>&#x3002;</li>
+<li><code>id</code>&#xA0;&#x5B57;&#x6BB5;&#x662F;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x7684;&#xFF0C;&#x4F46;&#x8FD9;&#x4E2A;&#x884C;&#x4E3A;&#x53EF;&#x4EE5;&#x88AB;&#x91CD;&#x5199;&#x3002;&#x8BE6;&#x89C1;<a href="#automatic-primary-key-fields"><em>&#x81EA;&#x589E;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;</em></a>&#x3002;</li>
+<li>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x7684;<code>CREATE TABLE</code> SQL &#x8BED;&#x53E5;&#x4F7F;&#x7528;PostgreSQL &#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF0C;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;Django &#x4F1A;&#x6839;&#x636E;<a href="../settings.html"><em>&#x8BBE;&#x7F6E;&#x6587;&#x4EF6;</em></a> &#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x5E93;&#x7C7B;&#x578B;&#x6765;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x7684;SQL &#x8BED;&#x53E5;&#x3002;</li>
+</ul>
+<h2 id="&#x4F7F;&#x7528;&#x6A21;&#x578B;">&#x4F7F;&#x7528;&#x6A21;&#x578B;</h2>
+<p>&#x5B9A;&#x4E49;&#x597D;&#x6A21;&#x578B;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x544A;&#x8BC9;Django <em>&#x4F7F;&#x7528;</em>&#x8FD9;&#x4E9B;&#x6A21;&#x578B;&#x3002;&#x4F60;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;<a href="../../ref/settings.html#std:setting-INSTALLED_APPS"><code>INSTALLED_APPS</code></a>&#xA0;&#x8BBE;&#x7F6E;&#xFF0C;&#x5728;&#x5176;&#x4E2D;&#x6DFB;&#x52A0;<code>models.py</code>&#x6240;&#x5728;&#x5E94;&#x7528;&#x7684;&#x540D;&#x79F0;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x7684;&#x6A21;&#x578B;&#x4F4D;&#x4E8E;<code>myapp.models</code>&#x6A21;&#x5757;&#xFF08;<a href="../../ref/django-admin.html#django-admin-startapp"><code>manage.py startapp</code></a> &#x811A;&#x672C;&#x4E3A;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x521B;&#x5EFA;&#x7684;&#x5305;&#x7ED3;&#x6784;&#xFF09;&#xFF0C;<a href="../../ref/settings.html#std:setting-INSTALLED_APPS"><code>INSTALLED_APPS</code></a>&#x90E8;&#x5206;&#x770B;&#x4E0A;&#x53BB;&#x5E94;&#x8BE5;&#x662F;&#xFF1A;</p>
+<pre><code>INSTALLED_APPS = (
+    #...
+    &apos;myapp&apos;,
+    #...
+)
+</code></pre><p>&#x5F53;&#x4F60;&#x5728;<a href="../../ref/settings.html#std:setting-INSTALLED_APPS"><code>INSTALLED_APPS</code></a> &#x4E2D;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x5E94;&#x7528;&#x540D;&#x65F6;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x8FD0;&#x884C;&#x547D;&#x4EE4;<a href="../../ref/django-admin.html#django-admin-migrate"><code>manage.py migrate</code></a>&#xFF0C;&#x53EF;&#x4EE5;&#x9996;&#x5148;&#x4F7F;&#x7528;<a href="../../ref/django-admin.html#django-admin-makemigrations"><code>manage.py makemigrations</code></a> &#x6765;&#x4E3A;&#x5B83;&#x4EEC;&#x751F;&#x6210;&#x8FC1;&#x79FB;&#x811A;&#x672C;&#x3002;</p>
+<h2 id="&#x5B57;&#x6BB5;">&#x5B57;&#x6BB5;</h2>
+<p>&#x6A21;&#x578B;&#x4E2D;&#x4E0D;&#x53EF;&#x6216;&#x7F3A;&#x4E14;&#x6700;&#x4E3A;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x5C31;&#x662F;&#x5B57;&#x6BB5;&#x96C6;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x7EC4;&#x6570;&#x636E;&#x5E93;&#x5B57;&#x6BB5;&#x7684;&#x5217;&#x8868;&#x3002;&#x5B57;&#x6BB5;&#x88AB;&#x6307;&#x5B9A;&#x4E3A;&#x7C7B;&#x5C5E;&#x6027;&#x3002; &#x8981;&#x6CE8;&#x610F;&#x9009;&#x62E9;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x4E0D;&#x8981;&#x548C;<a href="../../ref/models/instances.html"><em>&#x6A21;&#x578B; API</em></a> &#x51B2;&#x7A81;&#xFF0C;&#x6BD4;&#x5982;<code>clean</code>&#x3001;<code>save</code> &#x6216;&#x8005;<code>delete</code>&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Musician(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    instrument = models.CharField(max_length=100)
+
+class Album(models.Model):
+    artist = models.ForeignKey(Musician)
+    name = models.CharField(max_length=100)
+    release_date = models.DateField()
+    num_stars = models.IntegerField()
+</code></pre><h3 id="&#x5B57;&#x6BB5;&#x7C7B;&#x578B;">&#x5B57;&#x6BB5;&#x7C7B;&#x578B;</h3>
+<p>&#x6A21;&#x578B;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x90FD;&#x662F; <a href="../../ref/models/fields.html#django.db.models.Field" title="django.db.models.Field"><code>Field</code></a> &#x5B50;&#x7C7B;&#x7684;&#x67D0;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;Django &#x6839;&#x636E;&#x5B57;&#x6BB5;&#x7C7B;&#x7684;&#x7C7B;&#x578B;&#x786E;&#x5B9A;&#x4EE5;&#x4E0B;&#x4FE1;&#x606F;&#xFF1A;</p>
+<ul>
+<li>&#x6570;&#x636E;&#x5E93;&#x5F53;&#x4E2D;&#x7684;&#x5217;&#x7C7B;&#x578B; (&#x6BD4;&#x5982;&#xFF0C;&#xA0;<code>INTEGER</code>, <code>VARCHAR</code>)&#x3002;</li>
+<li>&#x6E32;&#x67D3;&#x8868;&#x5355;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x9ED8;&#x8BA4;HTML <a href="../../ref/forms/widgets.html"><em>&#x90E8;&#x4EF6;</em></a>&#xFF08;&#x4F8B;&#x5982;&#xFF0C;<code>&lt;input type=&quot;text&quot;&gt;</code>, <code>&lt;select&gt;</code>&#xFF09;&#x3002;</li>
+<li>&#x6700;&#x4F4E;&#x9650;&#x5EA6;&#x7684;&#x9A8C;&#x8BC1;&#x9700;&#x6C42;&#xFF0C;&#x5B83;&#x88AB;&#x7528;&#x5728; Django &#x7BA1;&#x7406;&#x7AD9;&#x70B9;&#x548C;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x8868;&#x5355;&#x4E2D;&#x3002;</li>
+</ul>
+<p>Django &#x81EA;&#x5E26;&#x6570;&#x5341;&#x79CD;&#x5185;&#x7F6E;&#x7684;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#xFF1B;&#x5B8C;&#x6574;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x5217;&#x8868;&#x53EF;&#x4EE5;&#x5728;<a href="../../ref/models/fields.html#model-field-types"><em>&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x53C2;&#x8003;</em></a> &#x4E2D;&#x627E;&#x5230;&#x3002;&#x5982;&#x679C;&#x5185;&#x7F6E;&#x7C7B;&#x578B;&#x4ECD;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x4F60;&#x7684;&#x8981;&#x6C42;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x5730;&#x7F16;&#x5199;&#x7B26;&#x5408;&#x4F60;&#x8981;&#x6C42;&#x7684;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#xFF1B; &#x8BE6;&#x89C1;<a href="../../howto/custom-model-fields.html"><em>&#x7F16;&#x5199;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x5B57;&#x6BB5;</em></a>&#x3002;</p>
+<h3 id="&#x5B57;&#x6BB5;&#x9009;&#x9879;">&#x5B57;&#x6BB5;&#x9009;&#x9879;</h3>
+<p>&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x6709;&#x4E00;&#x4E9B;&#x7279;&#x6709;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x8BE6;&#x89C1;<a href="../../ref/models/fields.html#model-field-types"><em>&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x53C2;&#x8003;</em></a>&#x3002;&#x4F8B;&#x5982;&#xFF0C;<a href="../../ref/models/fields.html#django.db.models.CharField" title="django.db.models.CharField"><code>CharField</code></a>&#xFF08;&#x548C;&#x5B83;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#xFF09;&#x9700;&#x8981;<a href="../../ref/models/fields.html#django.db.models.CharField.max_length" title="django.db.models.CharField.max_length"><code>max_length</code></a> &#x53C2;&#x6570;&#x6765;&#x6307;&#x5B9A;<code>VARCHAR</code> &#x6570;&#x636E;&#x5E93;&#x5B57;&#x6BB5;&#x7684;&#x5927;&#x5C0F;&#x3002;</p>
+<p>&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x7684;&#x901A;&#x7528;&#x53C2;&#x6570;&#x3002;&#xA0;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x5728;<a href="../../ref/models/fields.html#common-model-field-options"><em>&#x53C2;&#x8003;</em></a>&#x4E2D;&#x6709;&#x8BE6;&#x7EC6;&#x5B9A;&#x4E49;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53EA;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x6700;&#x5E38;&#x7528;&#x7684;&#xFF1A;</p>
+<p><a href="../../ref/models/fields.html#django.db.models.Field.null" title="django.db.models.Field.null"><code>null</code></a></p>
+<p>&#x5982;&#x679C;&#x4E3A;<code>True</code>&#xFF0C;Django &#x5C06;&#x7528;<code>NULL</code> &#x6765;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x7A7A;&#x503C;&#x3002; &#x9ED8;&#x8BA4;&#x503C;&#x662F; <code>False</code>.</p>
+<p><a href="../../ref/models/fields.html#django.db.models.Field.blank" title="django.db.models.Field.blank"><code>blank</code></a></p>
+<p>&#x5982;&#x679C;&#x4E3A;<code>True</code>&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x5141;&#x8BB8;&#x4E0D;&#x586B;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>False</code>&#x3002;</p>
+<p>&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E0E; <a href="../../ref/models/fields.html#django.db.models.Field.null" title="django.db.models.Field.null"><code>null</code></a>&#xA0;&#x4E0D;&#x540C;&#x3002;<a href="../../ref/models/fields.html#django.db.models.Field.null" title="django.db.models.Field.null"><code>null</code></a>&#x7EAF;&#x7CB9;&#x662F;&#x6570;&#x636E;&#x5E93;&#x8303;&#x7574;&#x7684;&#xFF0C;&#x800C; <a href="../../ref/models/fields.html#django.db.models.Field.blank" title="django.db.models.Field.blank"><code>blank</code></a> &#x662F;&#x6570;&#x636E;&#x9A8C;&#x8BC1;&#x8303;&#x7574;&#x7684;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;<a href="../../ref/models/fields.html#django.db.models.Field.blank" title="django.db.models.Field.blank"><code>blank=True</code></a>&#xFF0C;&#x8868;&#x5355;&#x7684;&#x9A8C;&#x8BC1;&#x5C06;&#x5141;&#x8BB8;&#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x7A7A;&#x503C;&#x3002;&#x5982;&#x679C;&#x5B57;&#x6BB5;&#x7684;<a href="../../ref/models/fields.html#django.db.models.Field.blank" title="django.db.models.Field.blank"><code>blank=False</code></a>&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x5C31;&#x662F;&#x5FC5;&#x586B;&#x7684;&#x3002;</p>
+<p><a href="../../ref/models/fields.html#django.db.models.Field.choices" title="django.db.models.Field.choices"><code>choices</code></a></p>
+<p>&#x7531;&#x4E8C;&#x5143;&#x7EC4;&#x7EC4;&#x6210;&#x7684;&#x4E00;&#x4E2A;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x5217;&#x8868;&#x6216;&#x5143;&#x7EC4;&#xFF09;&#xFF0C;&#x7528;&#x6765;&#x7ED9;&#x5B57;&#x6BB5;&#x63D0;&#x4F9B;&#x9009;&#x62E9;&#x9879;&#x3002; &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;choices &#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x8868;&#x5355;&#x5C06;&#x662F;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x6846;&#x800C;&#x4E0D;&#x662F;&#x6807;&#x51C6;&#x7684;&#x6587;&#x672C;&#x6846;&#xFF0C;&#x800C;&#x4E14;&#x8FD9;&#x4E2A;&#x9009;&#x62E9;&#x6846;&#x7684;&#x9009;&#x9879;&#x5C31;&#x662F;choices &#x4E2D;&#x7684;&#x9009;&#x9879;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5173;&#x4E8E; choices &#x5217;&#x8868;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>YEAR_IN_SCHOOL_CHOICES = (
+    (&apos;FR&apos;, &apos;Freshman&apos;),
+    (&apos;SO&apos;, &apos;Sophomore&apos;),
+    (&apos;JR&apos;, &apos;Junior&apos;),
+    (&apos;SR&apos;, &apos;Senior&apos;),
+    (&apos;GR&apos;, &apos;Graduate&apos;),
+)
+</code></pre><p>&#x6BCF;&#x4E2A;&#x5143;&#x7EC4;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x662F;&#x5B58;&#x50A8;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x503C;&#xFF1B;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#x662F;&#x5728;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x6216; ModelChoiceField &#x4E2D;&#x7528;&#x4F5C;&#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9;&#x3002; &#x5728;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x7684; model &#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x4E2D;&#xFF0C;&#x60F3;&#x5F97;&#x5230;&#x67D0;&#x4E2A; choices &#x5B57;&#x6BB5;&#x7684;&#x663E;&#x793A;&#x503C;&#xFF0C;&#x5C31;&#x8C03;&#x7528; <code>get_FOO_display</code> &#x65B9;&#x6CD5;(&#x8FD9;&#x91CC;&#x7684; FOO &#x5C31;&#x662F; choices &#x5B57;&#x6BB5;&#x7684;&#x540D;&#x79F0; )&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Person(models.Model):
+    SHIRT_SIZES = (
+        (&apos;S&apos;, &apos;Small&apos;),
+        (&apos;M&apos;, &apos;Medium&apos;),
+        (&apos;L&apos;, &apos;Large&apos;),
+    )
+    name = models.CharField(max_length=60)
+    shirt_size = models.CharField(max_length=1, choices=SHIRT_SIZES)
+</code></pre><pre><code>&gt;&gt;&gt; p = Person(name=&quot;Fred Flintstone&quot;, shirt_size=&quot;L&quot;)
+&gt;&gt;&gt; p.save()
+&gt;&gt;&gt; p.shirt_size
+&apos;L&apos;
+&gt;&gt;&gt; p.get_shirt_size_display()
+&apos;Large&apos;
+</code></pre><p><a href="../../ref/models/fields.html#django.db.models.Field.default" title="django.db.models.Field.default"><code>default</code></a></p>
+<p>&#x5B57;&#x6BB5;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x503C;&#x6216;&#x8005;&#x53EF;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;&#x53EF;&#x8C03;&#x7528; &#xFF0C;&#x6BCF;&#x6709;&#x65B0;&#x5BF9;&#x8C61;&#x88AB;&#x521B;&#x5EFA;&#x5B83;&#x90FD;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<p><a href="../../ref/models/fields.html#django.db.models.Field.help_text" title="django.db.models.Field.help_text"><code>help_text</code></a></p>
+<p>&#x8868;&#x5355;&#x90E8;&#x4EF6;&#x989D;&#x5916;&#x663E;&#x793A;&#x7684;&#x5E2E;&#x52A9;&#x5185;&#x5BB9;&#x3002;&#x5373;&#x4F7F;&#x5B57;&#x6BB5;&#x4E0D;&#x5728;&#x8868;&#x5355;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x5B83;&#x5BF9;&#x751F;&#x6210;&#x6587;&#x6863;&#x4E5F;&#x5F88;&#x6709;&#x7528;&#x3002;</p>
+<p><a href="../../ref/models/fields.html#django.db.models.Field.primary_key" title="django.db.models.Field.primary_key"><code>primary_key</code></a></p>
+<p>&#x5982;&#x679C;&#x4E3A;<code>True</code>&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x5C31;&#x662F;&#x6A21;&#x578B;&#x7684;&#x4E3B;&#x952E;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;<a href="../../ref/models/fields.html#django.db.models.Field.primary_key" title="django.db.models.Field.primary_key"><code>primary_key=True</code></a>&#xFF0C;Django &#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;<a href="../../ref/models/fields.html#django.db.models.IntegerField" title="django.db.models.IntegerField"><code>IntegerField</code></a> &#x5B57;&#x6BB5;&#x505A;&#x4E3A;&#x4E3B;&#x952E;&#xFF0C;&#x6240;&#x4EE5;&#x9664;&#x975E;&#x4F60;&#x60F3;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x7684;&#x4E3B;&#x952E;&#x884C;&#x4E3A;&#xFF0C;&#x5426;&#x5219;&#x6CA1;&#x5FC5;&#x8981;&#x8BBE;&#x7F6E;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;<a href="../../ref/models/fields.html#django.db.models.Field.primary_key" title="django.db.models.Field.primary_key"><code>primary_key=True</code></a>&#x3002;&#x8BE6;&#x89C1;<a href="#automatic-primary-key-fields"><em>&#x81EA;&#x589E;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;</em></a>&#x3002;</p>
+<p>&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#x662F;&#x53EA;&#x8BFB;&#x7684;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;&#x4E00;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x5BF9;&#x8C61;&#x4E0A;&#x9762;&#x66F4;&#x6539;&#x4E3B;&#x952E;&#x7684;&#x503C;&#x5E76;&#x4E14;&#x4FDD;&#x5B58;&#xFF0C;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#x5C06;&#x4F1A;&#x5728;&#x539F;&#x6709;&#x5BF9;&#x8C61;&#x4E4B;&#x5916;&#x521B;&#x5EFA;&#x51FA;&#x6765;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Fruit(models.Model):
+    name = models.CharField(max_length=100, primary_key=True)
+</code></pre><pre><code>&gt;&gt;&gt; fruit = Fruit.objects.create(name=&apos;Apple&apos;)
+&gt;&gt;&gt; fruit.name = &apos;Pear&apos;
+&gt;&gt;&gt; fruit.save()
+&gt;&gt;&gt; Fruit.objects.values_list(&apos;name&apos;, flat=True)
+[&apos;Apple&apos;, &apos;Pear&apos;]
+</code></pre><p><a href="../../ref/models/fields.html#django.db.models.Field.unique" title="django.db.models.Field.unique"><code>unique</code></a></p>
+<p>&#x5982;&#x679C;&#x8BE5;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; <code>True</code>, &#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x5728;&#x6574;&#x5F20;&#x8868;&#x4E2D;&#x5FC5;&#x987B;&#x662F;&#x552F;&#x4E00;&#x7684;</p>
+<p>&#x518D;&#x8BF4;&#x4E00;&#x6B21;&#xFF0C;&#x8FD9;&#x4E9B;&#x4EC5;&#x4EC5;&#x662F;&#x5E38;&#x7528;&#x5B57;&#x6BB5;&#x7684;&#x7B80;&#x77ED;&#x4ECB;&#x7ECD;&#xFF0C; &#x8981;&#x4E86;&#x89E3;&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;&#xFF0C;&#x8BF7;&#x67E5;&#x770B; &#x901A;&#x7528; model &#x5B57;&#x6BB5;&#x9009;&#x9879;&#x53C2;&#x8003;(<a href="../../ref/models/fields.html#common-model-field-options"><em>common model field option reference</em></a>).</p>
+<h3 id="&#x81EA;&#x589E;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;">&#x81EA;&#x589E;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Django &#x4F1A;&#x7ED9;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;</p>
+<pre><code>id = models.AutoField(primary_key=True)
+</code></pre><p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x81EA;&#x589E;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x4E0A;&#x6307;&#x5B9A; <a href="../../ref/models/fields.html#django.db.models.Field.primary_key" title="django.db.models.Field.primary_key"><code>primary_key=True</code></a> &#x5373;&#x53EF;&#x3002;&#x5982;&#x679C; Django &#x770B;&#x5230;&#x4F60;&#x663E;&#x5F0F;&#x5730;&#x8BBE;&#x7F6E;&#x4E86; <a href="../../ref/models/fields.html#django.db.models.Field.primary_key" title="django.db.models.Field.primary_key"><code>Field.primary_key</code></a>&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x6DFB;&#x52A0; <code>id</code> &#x5217;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x6307;&#x5B9A;<a href="../../ref/models/fields.html#django.db.models.Field.primary_key" title="django.db.models.Field.primary_key"><code>primary_key=True</code></a>&#xFF08;&#x65E0;&#x8BBA;&#x662F;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x8FD8;&#x662F;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#xFF09;&#x3002;</p>
+<h3 id="&#x5B57;&#x6BB5;&#x7684;&#x81EA;&#x8FF0;&#x540D;">&#x5B57;&#x6BB5;&#x7684;&#x81EA;&#x8FF0;&#x540D;</h3>
+<p>&#x9664;<a href="../../ref/models/fields.html#django.db.models.ForeignKey" title="django.db.models.ForeignKey"><code>ForeignKey</code></a>&#x3001;<a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x548C; <a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a> &#x4E4B;&#x5916;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x90FD;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570; &#x2014;&#x2014; &#x5B57;&#x6BB5;&#x7684;&#x81EA;&#x8FF0;&#x540D;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7ED9;&#x5B9A;&#x81EA;&#x8FF0;&#x540D;&#xFF0C;Django &#x5C06;&#x6839;&#x636E;&#x5B57;&#x6BB5;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x81EA;&#x8FF0;&#x540D; &#x2014;&#x2014; &#x5C06;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x7684;&#x4E0B;&#x5212;&#x7EBF;&#x66FF;&#x6362;&#x6210;&#x7A7A;&#x683C;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x81EA;&#x8FF0;&#x540D;&#x662F; <code>&quot;person&apos;s first name&quot;&#xFF1A;</code></p>
+<pre><code>first_name = models.CharField(&quot;person&apos;s first name&quot;, max_length=30)
+</code></pre><p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x81EA;&#x8FF0;&#x540D;&#x662F; &#xA0;<code>&quot;first name&quot;</code>&#xFF1A;</p>
+<pre><code>first_name = models.CharField(max_length=30)
+</code></pre><p><a href="../../ref/models/fields.html#django.db.models.ForeignKey" title="django.db.models.ForeignKey"><code>ForeignKey</code></a>&#x3001;<a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x548C; <a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a> &#x90FD;&#x8981;&#x6C42;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x7C7B;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x4F7F;&#x7528; <a href="../../ref/models/fields.html#django.db.models.Field.verbose_name" title="django.db.models.Field.verbose_name"><code>verbose_name</code></a> &#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x624D;&#x80FD;&#x6307;&#x5B9A;&#x81EA;&#x8FF0;&#x540D;&#xFF1A;</p>
+<pre><code>poll = models.ForeignKey(Poll, verbose_name=&quot;the related poll&quot;)
+sites = models.ManyToManyField(Site, verbose_name=&quot;list of sites&quot;)
+place = models.OneToOneField(Place, verbose_name=&quot;related place&quot;)
+</code></pre><p>&#x4E60;&#x60EF;&#x4E0A;&#xFF0C;<a href="../../ref/models/fields.html#django.db.models.Field.verbose_name" title="django.db.models.Field.verbose_name"><code>verbose_name</code></a> &#x7684;&#x9996;&#x5B57;&#x6BCD;&#x4E0D;&#x7528;&#x5927;&#x5199;&#x3002;Django &#x5728;&#x5FC5;&#x8981;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x81EA;&#x52A8;&#x5927;&#x5199;&#x9996;&#x5B57;&#x6BCD;&#x3002;</p>
+<h3 id="&#x5173;&#x7CFB;">&#x5173;&#x7CFB;</h3>
+<p>&#x663E;&#x7136;&#xFF0C;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5A01;&#x529B;&#x4F53;&#x73B0;&#x5728;&#x8868;&#x4E4B;&#x95F4;&#x7684;&#x76F8;&#x4E92;&#x5173;&#x8054;&#x3002; Django &#x63D0;&#x4F9B;&#x4E86;&#x4E09;&#x79CD;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5173;&#x7CFB;&#xFF1A;&#x591A;&#x5BF9;&#x4E00;(many-to-one)&#xFF0C;&#x591A;&#x5BF9;&#x591A;(many-to-many)&#xFF0C;&#x4E00;&#x5BF9;&#x4E00;(one-to-one)&#x3002;</p>
+<h4 id="&#x591A;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#xA0;">&#x591A;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#xA0;</h4>
+<p>Django &#x4F7F;&#x7528; <a href="../../ref/models/fields.html#django.db.models.ForeignKey" title="django.db.models.ForeignKey"><code>django.db.models.ForeignKey</code></a> &#x5B9A;&#x4E49;&#x591A;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#x3002;&#x548C;&#x4F7F;&#x7528;&#x5176;&#x5B83;<a href="../../ref/models/fields.html#django.db.models.Field" title="django.db.models.Field"><code>&#x5B57;&#x6BB5;</code></a>&#x7C7B;&#x578B;&#x4E00;&#x6837;&#xFF1A;&#x5728;&#x6A21;&#x578B;&#x5F53;&#x4E2D;&#x628A;&#x5B83;&#x505A;&#x4E3A;&#x4E00;&#x4E2A;&#x7C7B;&#x5C5E;&#x6027;&#x5305;&#x542B;&#x8FDB;&#x6765;&#x3002;</p>
+<p><a href="../../ref/models/fields.html#django.db.models.ForeignKey" title="django.db.models.ForeignKey"><code>ForeignKey</code></a> &#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF1A;&#x4E0E;&#x8BE5;&#x6A21;&#x578B;&#x5173;&#x8054;&#x7684;&#x7C7B;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x4E00;&#x8F86;<code>Car</code>&#x6709;&#x4E00;&#x4E2A;<code>Manufacturer</code> &#x2014;&#x2014; &#x4F46;&#x662F;&#x4E00;&#x4E2A;<code>Manufacturer</code> &#x751F;&#x4EA7;&#x5F88;&#x591A;Car&#xFF0C;&#x6BCF;&#x4E00;&#x8F86;<code>Car</code> &#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;<code>Manufacturer</code> &#x2014;&#x2014; &#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Manufacturer(models.Model):
+    # ...
+    pass
+
+class Car(models.Model):
+    manufacturer = models.ForeignKey(Manufacturer)
+    # ...
+</code></pre><p>&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;<a href="../../ref/models/fields.html#recursive-relationships"><em>&#x9012;&#x5F52;&#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;</em></a>&#xFF08;&#x5BF9;&#x8C61;&#x548C;&#x81EA;&#x5DF1;&#x8FDB;&#x884C;&#x591A;&#x5BF9;&#x4E00;&#x5173;&#x8054;&#xFF09;&#x548C; <a href="../../ref/models/fields.html#lazy-relationships"><em>&#x4E0E;&#x5C1A;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;</em></a>&#xFF1B;&#x8BE6;&#x89C1;<a href="../../ref/models/fields.html#ref-foreignkey"><em>&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x53C2;&#x8003;</em></a>&#x3002;</p>
+<p>&#x5EFA;&#x8BAE;&#x4F60;&#x7528;&#x88AB;&#x5173;&#x8054;&#x7684;&#x6A21;&#x578B;&#x7684;&#x5C0F;&#x5199;&#x540D;&#x79F0;&#x505A;&#x4E3A;<a href="../../ref/models/fields.html#django.db.models.ForeignKey" title="django.db.models.ForeignKey"><code>ForeignKey</code></a> &#x5B57;&#x6BB5;&#x7684;&#x540D;&#x5B57;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x4E0A;&#x9762;<code>manufacturer</code>&#xFF09;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x8D77;&#x522B;&#x7684;&#x540D;&#x5B57;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>class Car(models.Model):
+    company_that_makes_it = models.ForeignKey(Manufacturer)
+    # ...
+</code></pre><p>&#x53E6;&#x89C1;</p>
+<p><a href="../../ref/models/fields.html#django.db.models.ForeignKey" title="django.db.models.ForeignKey"><code>ForeignKey</code></a> &#x5B57;&#x6BB5;&#x8FD8;&#x63A5;&#x53D7;&#x8BB8;&#x591A;&#x522B;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5728;<a href="../../ref/models/fields.html#foreign-key-arguments"><em>&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x53C2;&#x8003;</em></a>&#x6709;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;&#x8FD9;&#x4E9B;&#x9009;&#x9879;&#x5E2E;&#x52A9;&#x5B9A;&#x4E49;&#x5173;&#x8054;&#x5173;&#x7CFB;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#xFF1B;&#x5B83;&#x4EEC;&#x90FD;&#x662F;&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x8BBF;&#x95EE;&#x53CD;&#x5411;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x7684;&#x7EC6;&#x8282;&#xFF0C;&#x8BF7;&#x89C1;<a href="queries.html#backwards-related-objects"><em>Following relationships backward example</em></a>&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF0C;&#x8BF7;&#x89C1;<a href="examples/many_to_one.html"><em>&#x591A;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x793A;&#x4F8B;</em></a>)&#x3002;</p>
+<h4 id="&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;">&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;</h4>
+<p><a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x7528;&#x6765;&#x5B9A;&#x4E49;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#xFF0C;&#x7528;&#x6CD5;&#x548C;&#x5176;&#x4ED6;<a href="../../ref/models/fields.html#django.db.models.Field" title="django.db.models.Field"><code>Field</code></a> &#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x4E00;&#x6837;&#xFF1A;&#x5728;&#x6A21;&#x578B;&#x4E2D;&#x505A;&#x4E3A;&#x4E00;&#x4E2A;&#x7C7B;&#x5C5E;&#x6027;&#x5305;&#x542B;&#x8FDB;&#x6765;&#x3002;</p>
+<p><a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF1A;&#x548C;&#x8BE5;&#x6A21;&#x578B;&#x5173;&#x8054;&#x7684;&#x7C7B;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;<code>Pizza</code>&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x79CD;<code>Topping</code> &#x2014;&#x2014; &#x4E00;&#x79CD;<code>Topping</code> &#x53EF;&#x4EE5;&#x4F4D;&#x4E8E;&#x591A;&#x4E2A;Pizza &#x4E0A;&#xFF0C;&#x800C;&#x4E14;&#x6BCF;&#x4E2A;<code>Pizza</code> &#x53EF;&#x4EE5;&#x6709;&#x591A;&#x79CD;Topping &#x2014;&#x2014; &#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Topping(models.Model):
+    # ...
+    pass
+
+class Pizza(models.Model):
+    # ...
+    toppings = models.ManyToManyField(Topping)
+</code></pre><p>&#x548C;&#x4F7F;&#x7528;<a href="../../ref/models/fields.html#django.db.models.ForeignKey" title="django.db.models.ForeignKey"><code>ForeignKey</code></a> &#x4E00;&#x6837;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;<a href="../../ref/models/fields.html#recursive-relationships"><em>&#x9012;&#x5F52;&#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;</em></a>&#xFF08;&#x5BF9;&#x8C61;&#x4E0E;&#x81EA;&#x5DF1;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x8054;&#xFF09;&#x548C;<a href="../../ref/models/fields.html#lazy-relationships"><em>&#x4E0E;&#x5C1A;&#x672A;&#x5B9A;&#x4E49;&#x5173;&#x7CFB;&#x7684;&#x6A21;&#x578B;&#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;</em></a>&#xFF1B;&#x8BE6;&#x89C1;<a href="../../ref/models/fields.html#ref-manytomany"><em>&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x53C2;&#x8003;</em></a>&#x3002;</p>
+<p>&#x5EFA;&#x8BAE;&#x4F60;&#x4EE5;&#x88AB;&#x5173;&#x8054;&#x6A21;&#x578B;&#x540D;&#x79F0;&#x7684;&#x590D;&#x6570;&#x5F62;&#x5F0F;&#x505A;&#x4E3A;<a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x7684;&#x540D;&#x5B57;&#xFF08;&#x4F8B;&#x5982;&#x4E0A;&#x4F8B;&#x4E2D;&#x7684;<code>toppings</code>&#xFF09;&#x3002;</p>
+<p>&#x5728;&#x54EA;&#x4E2A;&#x6A21;&#x578B;&#x4E2D;&#x8BBE;&#x7F6E; <a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x5E76;&#x4E0D;&#x91CD;&#x8981;&#xFF0C;&#x5728;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#x4E2D;&#x4EFB;&#x9009;&#x4E00;&#x4E2A;&#x5373;&#x53EF; &#x2014;&#x2014; &#x4E0D;&#x8981;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#x90FD;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#xFF0C;<a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x5B9E;&#x4F8B;&#x5E94;&#x8BE5;&#x4F4D;&#x4E8E;&#x53EF;&#x4EE5;&#x7F16;&#x8F91;&#x7684;&#x8868;&#x5355;&#x4E2D;&#x3002;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>toppings</code> &#x4F4D;&#x4E8E;<code>Pizza</code> &#x4E2D;&#xFF08;&#x800C;&#x4E0D;&#x662F;&#x5728; <code>Topping</code> &#x91CC;&#x9762;&#x8BBE;&#x7F6E;<code>pizzas</code> &#x7684; <a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x5B57;&#x6BB5;&#xFF09;&#xFF0C;&#x56E0;&#x4E3A;&#x8BBE;&#x60F3;&#x4E00;&#x4E2A;Pizza &#x6709;&#x591A;&#x79CD;Topping &#x6BD4;&#x4E00;&#x4E2A;Topping &#x4F4D;&#x4E8E;&#x591A;&#x4E2A;Pizza &#x4E0A;&#x8981;&#x66F4;&#x52A0;&#x81EA;&#x7136;&#x3002;&#x6309;&#x7167;&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;<code>Pizza</code> &#x7684;&#x8868;&#x5355;&#x4E2D;&#x5C06;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;Toppings&#x3002;</p>
+<p>&#x53E6;&#x89C1;</p>
+<p>&#x5B8C;&#x6574;&#x7684;&#x793A;&#x4F8B;&#x53C2;&#x89C1;<a href="examples/many_to_many.html"><em>&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x793A;&#x4F8B;</em></a>&#x3002;</p>
+<p><a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x5B57;&#x6BB5;&#x8FD8;&#x63A5;&#x53D7;&#x522B;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5728;<a href="../../ref/models/fields.html#manytomany-arguments"><em>&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x53C2;&#x8003;</em></a>&#x4E2D;&#x6709;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;&#x8FD9;&#x4E9B;&#x9009;&#x9879;&#x5E2E;&#x52A9;&#x5B9A;&#x4E49;&#x5173;&#x7CFB;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#xFF1B;&#x5B83;&#x4EEC;&#x90FD;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;</p>
+<h4 id="&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x5B57;&#x6BB5;">&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x5B57;&#x6BB5;</h4>
+<p>&#x5904;&#x7406;&#x7C7B;&#x4F3C;&#x642D;&#x914D; pizza &#x548C; topping &#x8FD9;&#x6837;&#x7B80;&#x5355;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x7684;<a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a>&#xA0; &#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x6709;&#x65F6;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5173;&#x8054;&#x6570;&#x636E;&#x5230;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x4E0A;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x6709;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#xFF0C;&#x5B83;&#x8BB0;&#x5F55;&#x97F3;&#x4E50;&#x5BB6;&#x6240;&#x5C5E;&#x7684;&#x97F3;&#x4E50;&#x5C0F;&#x7EC4;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;<a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x8868;&#x793A;&#x5C0F;&#x7EC4;&#x548C;&#x6210;&#x5458;&#x4E4B;&#x95F4;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x6709;&#x65F6;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x77E5;&#x9053;&#x66F4;&#x591A;&#x6210;&#x5458;&#x5173;&#x7CFB;&#x7684;&#x7EC6;&#x8282;&#xFF0C;&#x6BD4;&#x5982;&#x6210;&#x5458;&#x662F;&#x4F55;&#x65F6;&#x52A0;&#x5165;&#x5C0F;&#x7EC4;&#x7684;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#xFF0C;Django &#x5141;&#x8BB8;&#x4F60;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x6765;&#x5B9A;&#x4E49;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x3002; &#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x4ED6;&#x5B57;&#x6BB5;&#x653E;&#x5728;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x91CC;&#x9762;&#x3002;&#x6E90;&#x6A21;&#x578B;&#x7684;<a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x5B57;&#x6BB5;&#x5C06;&#x4F7F;&#x7528;<a href="../../ref/models/fields.html#django.db.models.ManyToManyField.through" title="django.db.models.ManyToManyField.through"><code>through</code></a> &#x53C2;&#x6570;&#x6307;&#x5411;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x3002;&#x5BF9;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x97F3;&#x4E50;&#x5C0F;&#x7EC4;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Person(models.Model):
+    name = models.CharField(max_length=128)
+
+    def __str__(self):              # __unicode__ on Python 2
+        return self.name
+
+class Group(models.Model):
+    name = models.CharField(max_length=128)
+    members = models.ManyToManyField(Person, through=&apos;Membership&apos;)
+
+    def __str__(self):              # __unicode__ on Python 2
+        return self.name
+
+class Membership(models.Model):
+    person = models.ForeignKey(Person)
+    group = models.ForeignKey(Group)
+    date_joined = models.DateField()
+    invite_reason = models.CharField(max_length=64)
+</code></pre><p>&#x5728;&#x8BBE;&#x7F6E;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x65F6;&#xFF0C;&#x8981;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x5916;&#x952E;&#x5E76;&#x5173;&#x8054;&#x5230;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x6D89;&#x53CA;&#x7684;&#x6A21;&#x578B;&#x3002;&#x8FD9;&#x4E2A;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x5B9A;&#x4E49;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x662F;&#x5982;&#x4F55;&#x5173;&#x8054;&#x7684;&#x3002;</p>
+<p>&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x6709;&#x4E00;&#x4E9B;&#x9650;&#x5236;&#xFF1A;</p>
+<ul>
+<li>&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x5FC5;&#x987B;<em>&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4E2A;</em>&#x5916;&#x952E;&#x5230;&#x6E90;&#x6A21;&#x578B;&#xFF08;&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#x7684;<code>Group</code>&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x5FC5;&#x987B;&#x4F7F;&#x7528;<a href="../../ref/models/fields.html#django.db.models.ManyToManyField.through_fields" title="django.db.models.ManyToManyField.through_fields"><code>ManyToManyField.through_fields</code></a> &#x663E;&#x5F0F;&#x6307;&#x5B9A;Django &#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x7684;&#x5916;&#x952E;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684;&#x6A21;&#x578B;&#x4E2D;&#x5B58;&#x5728;&#x8D85;&#x4E2A;&#x4E00;&#x4E2A;&#x7684;&#x5916;&#x952E;&#xFF0C;&#x5E76;&#x4E14;<code>through_fields</code>&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#xFF0C;&#x5C06;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;&#x65E0;&#x6548;&#x7684;&#x9519;&#x8BEF;&#x3002; &#x5BF9;&#x76EE;&#x6807;&#x6A21;&#x578B;&#x7684;&#x5916;&#x952E;&#x6709;&#x76F8;&#x540C;&#x7684;&#x9650;&#x5236;&#xFF08;&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#x7684; <code>Person</code>&#xFF09;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x901A;&#x8FC7;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x4E0E;&#x81EA;&#x5DF1;&#x8FDB;&#x884C;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x8054;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x5141;&#x8BB8;&#x5B58;&#x5728;&#x5230;&#x540C;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x4E24;&#x4E2A;&#x5916;&#x952E;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x5C06;&#x88AB;&#x4F5C;&#x4E3A;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x8054;&#x5173;&#x7CFB;&#x7684;&#x4E24;&#x4E2A;&#xFF08;&#x4E0D;&#x540C;&#x7684;&#xFF09;&#x65B9;&#x9762;&#x3002;&#x5982;&#x679C;&#x6709;<em>&#x8D85;&#x8FC7;</em> &#x4E24;&#x4E2A;&#x5916;&#x952E;&#xFF0C;&#x540C;&#x6837;&#x4F60;&#x5FC5;&#x987B;&#x50CF;&#x4E0A;&#x9762;&#x4E00;&#x6837;&#x6307;&#x5B9A;<code>through_fields</code>&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x5F15;&#x53D1;&#x4E00;&#x4E2A;&#x9A8C;&#x8BC1;&#x9519;&#x8BEF;&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x4E0E;&#x81EA;&#x8EAB;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x65F6;&#xFF0C;&#x4F60;<em>&#x5FC5;&#x987B;</em>&#x8BBE;&#x7F6E; <a href="../../ref/models/fields.html#django.db.models.ManyToManyField.symmetrical" title="django.db.models.ManyToManyField.symmetrical"><code>symmetrical=False</code></a>&#xFF08;&#x8BE6;&#x89C1;<a href="../../ref/models/fields.html#manytomany-arguments"><em>&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x53C2;&#x8003;</em></a>&#xFF09;&#x3002;</li>
+</ul>
+<p>Changed in Django 1.7:</p>
+<p>&#x5728;Django 1.6 &#x53CA;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x7981;&#x6B62;&#x5305;&#x542B;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x7684;&#x5916;&#x952E;&#x3002;</p>
+<p>&#x65E2;&#x7136;&#x4F60;&#x5DF2;&#x7ECF;&#x8BBE;&#x7F6E;&#x597D;<a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a> &#x6765;&#x4F7F;&#x7528;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#xFF08;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x5C31;&#x662F;<code>Membership</code>&#xFF09;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x4F60;&#x8981;&#x5F00;&#x59CB;&#x521B;&#x5EFA;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x3002;&#x4F60;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x521B;&#x5EFA;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; ringo = Person.objects.create(name=&quot;Ringo Starr&quot;)
+&gt;&gt;&gt; paul = Person.objects.create(name=&quot;Paul McCartney&quot;)
+&gt;&gt;&gt; beatles = Group.objects.create(name=&quot;The Beatles&quot;)
+&gt;&gt;&gt; m1 = Membership(person=ringo, group=beatles,
+...     date_joined=date(1962, 8, 16),
+...     invite_reason=&quot;Needed a new drummer.&quot;)
+&gt;&gt;&gt; m1.save()
+&gt;&gt;&gt; beatles.members.all()
+[&lt;Person: Ringo Starr&gt;]
+&gt;&gt;&gt; ringo.group_set.all()
+[&lt;Group: The Beatles&gt;]
+&gt;&gt;&gt; m2 = Membership.objects.create(person=paul, group=beatles,
+...     date_joined=date(1960, 8, 1),
+...     invite_reason=&quot;Wanted to form a band.&quot;)
+&gt;&gt;&gt; beatles.members.all()
+[&lt;Person: Ringo Starr&gt;, &lt;Person: Paul McCartney&gt;]
+</code></pre><p>&#x4E0E;&#x666E;&#x901A;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5B57;&#x6BB5;&#x4E0D;&#x540C;&#xFF0C;&#x4F60;<em>&#x4E0D;&#x80FD;</em>&#x4F7F;&#x7528;<code>add</code>&#x3001; <code>create</code>&#x548C;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;<code>beatles.members = [...]</code>&#xFF09;&#x6765;&#x521B;&#x5EFA;&#x5173;&#x7CFB;&#xFF1A;</p>
+<pre><code># THIS WILL NOT WORK
+&gt;&gt;&gt; beatles.members.add(john)
+# NEITHER WILL THIS
+&gt;&gt;&gt; beatles.members.create(name=&quot;George Harrison&quot;)
+# AND NEITHER WILL THIS
+&gt;&gt;&gt; beatles.members = [john, paul, ringo, george]
+</code></pre><p>&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x80FD;&#x8FD9;&#x6837;&#x505A;&#xFF1F; &#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x4F60;&#x4E0D;&#x80FD;&#x53EA;&#x521B;&#x5EFA; <code>Person</code>&#x548C; <code>Group</code>&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;&#xFF0C;&#x4F60;&#x8FD8;&#x8981;&#x6307;&#x5B9A; <code>Membership</code>&#x6A21;&#x578B;&#x4E2D;&#x6240;&#x9700;&#x8981;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#xFF1B;&#x800C;&#x7B80;&#x5355;&#x7684;<code>add</code>&#x3001;<code>create</code> &#x548C;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x662F;&#x505A;&#x4E0D;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#x7684;&#x3002;&#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x4E0D;&#x80FD;&#x5728;&#x4F7F;&#x7528;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x4E2D;&#x4F7F;&#x7528;&#x3002;&#x6B64;&#x65F6;&#xFF0C;&#x552F;&#x4E00;&#x7684;&#x529E;&#x6CD5;&#x5C31;&#x662F;&#x521B;&#x5EFA;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p><a href="../../ref/models/relations.html#django.db.models.fields.related.RelatedManager.remove" title="django.db.models.fields.related.RelatedManager.remove"><code>remove()</code></a>&#x65B9;&#x6CD5;&#x88AB;&#x7981;&#x7528;&#x4E5F;&#x662F;&#x51FA;&#x4E8E;&#x540C;&#x6837;&#x7684;&#x539F;&#x56E0;&#x3002;&#x4F46;&#x662F;<a href="../../ref/models/relations.html#django.db.models.fields.related.RelatedManager.clear" title="django.db.models.fields.related.RelatedManager.clear"><code>clear()</code></a>&#xA0;&#x65B9;&#x6CD5;&#x5374;&#x662F;&#x53EF;&#x7528;&#x7684;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x6E05;&#x7A7A;&#x67D0;&#x4E2A;&#x5B9E;&#x4F8B;&#x6240;&#x6709;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; # Beatles have broken up
+&gt;&gt;&gt; beatles.members.clear()
+&gt;&gt;&gt; # Note that this deletes the intermediate model instances
+&gt;&gt;&gt; Membership.objects.all()
+[]
+</code></pre><p>&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x6765;&#x5EFA;&#x7ACB;&#x5BF9;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x540E;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x67E5;&#x8BE2;&#x4E86;&#x3002; &#x548C;&#x666E;&#x901A;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5B57;&#x6BB5;&#x4E00;&#x6837;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x88AB;&#x5173;&#x8054;&#x6A21;&#x578B;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#xFF1A;</p>
+<pre><code># Find all the groups with a member whose name starts with &apos;Paul&apos;
+&gt;&gt;&gt; Group.objects.filter(members__name__startswith=&apos;Paul&apos;)
+[&lt;Group: The Beatles&gt;]
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x4E86;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x4E2D;&#x4ECB;&#x6A21;&#x578B;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#xFF1A;</p>
+<pre><code># Find all the members of the Beatles that joined after 1 Jan 1961
+&gt;&gt;&gt; Person.objects.filter(
+...     group__name=&apos;The Beatles&apos;,
+...     membership__date_joined__gt=date(1961,1,1))
+[&lt;Person: Ringo Starr]
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x6210;&#x5458;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x83B7;&#x53D6;<code>Membership</code>&#x6A21;&#x578B;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; ringos_membership = Membership.objects.get(group=beatles, person=ringo)
+&gt;&gt;&gt; ringos_membership.date_joined
+datetime.date(1962, 8, 16)
+&gt;&gt;&gt; ringos_membership.invite_reason
+&apos;Needed a new drummer.&apos;
+</code></pre><p>&#x53E6;&#x4E00;&#x79CD;&#x83B7;&#x53D6;&#x76F8;&#x540C;&#x4FE1;&#x606F;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;&#x5728;<code>Person</code>&#x5BF9;&#x8C61;&#x4E0A;&#x67E5;&#x8BE2;<a href="queries.html#m2m-reverse-relationships"><em>&#x591A;&#x5BF9;&#x591A;&#x53CD;&#x8F6C;&#x5173;&#x7CFB;</em></a>&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; ringos_membership = ringo.membership_set.get(group=beatles)
+&gt;&gt;&gt; ringos_membership.date_joined
+datetime.date(1962, 8, 16)
+&gt;&gt;&gt; ringos_membership.invite_reason
+&apos;Needed a new drummer.&apos;
+</code></pre><h4 id="&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;">&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;</h4>
+<p><a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a>&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#x3002; &#x7528;&#x6CD5;&#x548C;&#x5176;&#x4ED6;<code>&#x5B57;&#x6BB5;</code>&#x7C7B;&#x578B;&#x4E00;&#x6837;&#xFF1A;&#x5728;&#x6A21;&#x578B;&#x91CC;&#x9762;&#x505A;&#x4E3A;&#x7C7B;&#x5C5E;&#x6027;&#x5305;&#x542B;&#x8FDB;&#x6765;&#x3002;</p>
+<p>&#x5F53;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x60F3;&#x6269;&#x5C55;&#x81EA;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x6700;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x5728;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x4E3B;&#x952E;&#x4E0A;&#x6DFB;&#x52A0;&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#x3002;</p>
+<p><a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a>&#x8981;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF1A;&#x4E0E;&#x6A21;&#x578B;&#x5173;&#x8054;&#x7684;&#x7C7B;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x60F3;&#x5EFA;&#x4E00;&#x4E2A;&#x201C;places&#x201D; &#x6570;&#x636E;&#x5E93;&#xFF0C;&#x91CC;&#x9762;&#x6709;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x6BD4;&#x5982;address&#x3001; phone number &#x7B49;&#x7B49;&#x3002; &#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5728;Place &#x6570;&#x636E;&#x5E93;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;Restaurant &#x6570;&#x636E;&#x5E93;&#xFF0C;&#x800C;&#x4E0D;&#x60F3;&#x5C06;&#x5DF2;&#x6709;&#x7684;&#x5B57;&#x6BB5;&#x590D;&#x5236;&#x5230;<code>Restaurant</code>&#x6A21;&#x578B;&#xFF0C;&#x90A3;&#x4F60;&#x53EF;&#x4EE5;&#x5728; <code>Restaurant</code> &#x6DFB;&#x52A0;&#x4E00;&#x4E2A;<a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a> &#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x6307;&#x5411;<code>Place</code>&#xFF08;&#x56E0;&#x4E3A;Restaurant &#x672C;&#x8EAB;&#x5C31;&#x662F;&#x4E00;&#x4E2A;Place&#xFF1B;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5728;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684; <a href="#model-inheritance"><em>&#x7EE7;&#x627F;</em></a>&#xFF0C;&#x5B83;&#x9690;&#x542B;&#x4E00;&#x4E2A;&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;)&#x3002;</p>
+<p>&#x548C;&#x4F7F;&#x7528; <a href="../../ref/models/fields.html#django.db.models.ForeignKey" title="django.db.models.ForeignKey"><code>ForeignKey</code></a>&#x4E00;&#x6837;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;<a href="../../ref/models/fields.html#recursive-relationships"><em> &#x9012;&#x5F52;&#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;</em></a>&#x548C;<a href="../../ref/models/fields.html#lazy-relationships"><em>&#x5F15;&#x7528;&#x5C1A;&#x672A;&#x5B9A;&#x4E49;&#x5173;&#x7CFB;&#x7684;&#x6A21;&#x578B;</em></a>&#x3002;&#x8BE6;&#x89C1;<a href="../../ref/models/fields.html#ref-onetoone"><em>&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x53C2;&#x8003;</em></a>&#x3002;</p>
+<p>&#x53E6;&#x89C1;</p>
+<p>&#x5728;<a href="examples/one_to_one.html"><em>&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#x7684;&#x6A21;&#x578B;&#x4F8B;&#x5B50;</em></a> &#x4E2D;&#x6709;&#x4E00;&#x5957;&#x5B8C;&#x6574;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<p><a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a>&#x5B57;&#x6BB5;&#x4E5F;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x53EF;&#x9009;&#x7684;<code>parent_link</code>&#x53C2;&#x6570;&#xFF0C;&#x5728;<a href="../../ref/models/fields.html#ref-onetoone"><em>&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x53C2;&#x8003;</em></a> &#x4E2D;&#x6709;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p>&#x5728;&#x4EE5;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;<a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a> &#x5B57;&#x6BB5;&#x4F1A;&#x81EA;&#x52A8;&#x53D8;&#x6210;&#x6A21;&#x578B; &#x7684;&#x4E3B;&#x952E;&#x3002;&#x4E0D;&#x8FC7;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x4E0D;&#x8FD9;&#x4E48;&#x505A;&#x4E86;(&#x4E0D;&#x8FC7;&#x8981;&#x662F;&#x4F60;&#x613F;&#x610F;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x4ECD;&#x53EF;&#x4EE5;&#x4F20;&#x9012; <a href="../../ref/models/fields.html#django.db.models.Field.primary_key" title="django.db.models.Field.primary_key"><code>primary_key</code></a>&#x53C2;&#x6570;&#x6765;&#x521B;&#x5EFA;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;)&#x3002;&#x6240;&#x4EE5;&#x4E00;&#x4E2A; &#x6A21;&#x578B; &#x4E2D;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;<a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a> &#x5B57;&#x6BB5;&#x3002;</p>
+<h3 id="&#x8DE8;&#x6587;&#x4EF6;&#x7684;&#x6A21;&#x578B;">&#x8DE8;&#x6587;&#x4EF6;&#x7684;&#x6A21;&#x578B;</h3>
+<p>&#x8BBF;&#x95EE;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x7684;&#x6A21;&#x578B;&#x662F;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x7684;&#x3002; &#x5728;&#x6587;&#x4EF6;&#x9876;&#x90E8;&#x4F60;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5BFC;&#x5165;&#x76F8;&#x5173;&#x7684;&#x6A21;&#x578B;&#x6765;&#x5B9E;&#x73B0;&#x5B83;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x65E0;&#x8BBA;&#x5728;&#x54EA;&#x91CC;&#x9700;&#x8981;&#x7684;&#x8BDD;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x5B83;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+from geography.models import ZipCode
+
+class Restaurant(models.Model):
+    # ...
+    zip_code = models.ForeignKey(ZipCode)
+</code></pre><h3 id="&#x5B57;&#x6BB5;&#x547D;&#x540D;&#x7684;&#x9650;&#x5236;">&#x5B57;&#x6BB5;&#x547D;&#x540D;&#x7684;&#x9650;&#x5236;</h3>
+<p>Django &#x5BF9;&#x5B57;&#x6BB5;&#x7684;&#x547D;&#x540D;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x9650;&#x5236;&#xFF1A;</p>
+<ol>
+<li><p>&#x5B57;&#x6BB5;&#x7684;&#x540D;&#x79F0;&#x4E0D;&#x80FD;&#x662F;Python &#x4FDD;&#x7559;&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x5C06;&#x5BFC;&#x81F4;&#x4E00;&#x4E2A;Python &#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>class Example(models.Model):
+    pass = models.IntegerField() # &apos;pass&apos; is a reserved word!
+</code></pre></li>
+<li><p>&#x7531;&#x4E8E;Django &#x67E5;&#x8BE2;&#x8BED;&#x6CD5;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#xFF0C;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x4E2D;&#x8FDE;&#x7EED;&#x7684;&#x4E0B;&#x5212;&#x7EBF;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7;&#x4E00;&#x4E2A;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>class Example(models.Model):
+    foo__bar = models.IntegerField() # &apos;foo__bar&apos; has two underscores!
+</code></pre></li>
+</ol>
+<p>&#x8FD9;&#x4E9B;&#x9650;&#x5236;&#x6709;&#x53D8;&#x901A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x8981;&#x6C42;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5217;&#x540D;&#x5339;&#x914D;&#x3002;&#x53C2; <a href="../../ref/models/fields.html#django.db.models.Field.db_column" title="django.db.models.Field.db_column"><code>db_column</code></a> &#x9009;&#x9879;&#x3002;</p>
+<p>SQL &#x7684;&#x4FDD;&#x7559;&#x5B57;&#x4F8B;&#x5982;<code>join</code>&#x3001;<code>where</code> &#x548C;<code>select</code>&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4F5C;&#x6A21;&#x578B;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF0C;&#x56E0;&#x4E3A;Django &#x4F1A;&#x5BF9;&#x5E95;&#x5C42;&#x7684;SQL &#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8868;&#x540D;&#x548C;&#x5217;&#x540D;&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#x3002; &#x5B83;&#x6839;&#x636E;&#x4F60;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5F15;&#x64CE;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5F15;&#x7528;&#x8BED;&#x6CD5;&#x3002;</p>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;">&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;</h3>
+<p>&#x5982;&#x679C;&#x5DF2;&#x6709;&#x7684;&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x90FD;&#x4E0D;&#x5408;&#x9002;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x60F3;&#x7528;&#x5230;&#x4E00;&#x4E9B;&#x5F88;&#x5C11;&#x89C1;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5217;&#x7C7B;&#x578B;&#x7684;&#x4F18;&#x70B9;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x3002;&#x521B;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x6BB5;&#x5728;<a href="../../howto/custom-model-fields.html"><em>&#x7F16;&#x5199;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x5B57;&#x6BB5;</em></a>&#x4E2D;&#x6709;&#x5B8C;&#x6574;&#x8BB2;&#x8FF0;&#x3002;</p>
+<h2 id="&#x5143;&#x9009;&#x9879;">&#x5143;&#x9009;&#x9879;</h2>
+<p>&#x4F7F;&#x7528;&#x5185;&#x90E8;&#x7684;<code>class Meta</code> &#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x7684;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Ox(models.Model):
+    horn_length = models.IntegerField()
+
+    class Meta:
+        ordering = [&quot;horn_length&quot;]
+        verbose_name_plural = &quot;oxen&quot;
+</code></pre><p>&#x6A21;&#x578B;&#x5143;&#x6570;&#x636E;&#x662F;&#x201C;&#x4EFB;&#x4F55;&#x4E0D;&#x662F;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;&#x201D;&#xFF0C;&#x6BD4;&#x5982;&#x6392;&#x5E8F;&#x9009;&#x9879;&#xFF08;<a href="../../ref/models/options.html#django.db.models.Options.ordering" title="django.db.models.Options.ordering"><code>ordering</code></a>&#xFF09;&#xFF0C;&#x6570;&#x636E;&#x8868;&#x540D;&#xFF08;<a href="../../ref/models/options.html#django.db.models.Options.db_table" title="django.db.models.Options.db_table"><code>db_table</code></a>&#xFF09;&#x6216;&#x8005;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#x7684;&#x5355;&#x590D;&#x6570;&#x540D;&#x79F0;&#xFF08;<a href="../../ref/models/options.html#django.db.models.Options.verbose_name" title="django.db.models.Options.verbose_name"><code>verbose_name</code></a> &#x548C;<a href="../../ref/models/options.html#django.db.models.Options.verbose_name_plural" title="django.db.models.Options.verbose_name_plural"><code>verbose_name_plural</code></a>&#xFF09;&#x3002;&#x5728;&#x6A21;&#x578B;&#x4E2D;&#x6DFB;&#x52A0;<code>class Meta</code>&#x662F;&#x5B8C;&#x5168;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x6240;&#x6709;&#x9009;&#x9879;&#x90FD;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x3002;</p>
+<p>&#x6240;&#x6709;<code>&#x5143;</code>&#x9009;&#x9879;&#x7684;&#x5B8C;&#x6574;&#x5217;&#x8868;&#x53EF;&#x4EE5;&#x5728;<a href="../../ref/models/options.html"><em>&#x6A21;&#x578B;&#x9009;&#x9879;&#x53C2;&#x8003;</em></a>&#x627E;&#x5230;&#x3002;</p>
+<h2 id="&#x6A21;&#x578B;&#x7684;&#x5C5E;&#x6027;">&#x6A21;&#x578B;&#x7684;&#x5C5E;&#x6027;</h2>
+<p><code>objects</code></p>
+<p>The most important attribute of a model is the
+<a href="managers.html#django.db.models.Manager" title="django.db.models.Manager"><code>Manager</code></a>. It&#x2019;s the interface through which
+database query operations are provided to Django models and is used to
+<a href="queries.html#retrieving-objects"><em>retrieve the instances</em></a> from the database. If no
+custom <code>Manager</code> is defined, the default name is
+<a href="../../ref/models/class.html#django.db.models.Model.objects" title="django.db.models.Model.objects"><code>objects</code></a>. Managers are only accessible via
+model classes, not the model instances.</p>
+<h2 id="&#x6A21;&#x578B;&#x7684;&#x65B9;&#x6CD5;">&#x6A21;&#x578B;&#x7684;&#x65B9;&#x6CD5;</h2>
+<p>&#x53EF;&#x4EE5;&#x5728;&#x6A21;&#x578B;&#x4E0A;&#x5B9A;&#x4E49;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x7ED9;&#x4F60;&#x7684;&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x201C;&#x5E95;&#x5C42;&#x201D;&#x529F;&#x80FD;&#x3002;<a href="managers.html#django.db.models.Manager" title="django.db.models.Manager"><code>Manager</code></a> &#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x201C;&#x8868;&#x8303;&#x56F4;&#x201D;&#x7684;&#x4E8B;&#x52A1;&#xFF0C;&#x6A21;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#x5E94;&#x8BE5;&#x7740;&#x773C;&#x4E8E;&#x7279;&#x5B9A;&#x7684;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x6709;&#x4EF7;&#x503C;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x8BA9;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4F4D;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x5730;&#x65B9; &#x2014;&#x2014; &#x6A21;&#x578B;&#x4E2D;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x6A21;&#x578B;&#x5177;&#x6709;&#x4E00;&#x4E9B;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    birth_date = models.DateField()
+
+    def baby_boomer_status(self):
+        &quot;Returns the person&apos;s baby-boomer status.&quot;
+        import datetime
+        if self.birth_date &lt; datetime.date(1945, 8, 1):
+            return &quot;Pre-boomer&quot;
+        elif self.birth_date &lt; datetime.date(1965, 1, 1):
+            return &quot;Baby boomer&quot;
+        else:
+            return &quot;Post-boomer&quot;
+
+    def _get_full_name(self):
+        &quot;Returns the person&apos;s full name.&quot;
+        return &apos;%s %s&apos; % (self.first_name, self.last_name)
+    full_name = property(_get_full_name)
+</code></pre><p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x4E2A;<a href="../../glossary.html#term-property"><em>property</em></a>&#x3002;</p>
+<p><a href="../../ref/models/instances.html"><em>&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x53C2;&#x8003;</em></a> &#x5177;&#x6709;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;<a href="../../ref/models/instances.html#model-instance-methods"><em>&#x4E3A;&#x6A21;&#x578B;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x65B9;&#x6CD5;</em></a> &#x5217;&#x8868;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x5B83;&#x4EEC; &#x2014;&#x2014; &#x53C2;&#x89C1;&#x4E0B;&#x6587;<a href="#overriding-predefined-model-methods">&#x8986;&#x76D6;&#x6A21;&#x578B;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;</a> &#x2014;&#x2014; &#x4F46;&#x662F;&#x6709;&#x4E9B;&#x65B9;&#x6CD5;&#x4F60;&#x4F1A;&#x59CB;&#x7EC8;&#x60F3;&#x8981;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<p><a href="../../ref/models/instances.html#django.db.models.Model.__str__" title="django.db.models.Model.__str__"><code>__str__()</code></a> (Python 3)</p>
+<p>Python 3 equivalent of <code>__unicode__()</code>.</p>
+<p><a href="../../ref/models/instances.html#django.db.models.Model.__unicode__" title="django.db.models.Model.__unicode__"><code>__unicode__()</code></a> (Python 2)</p>
+<p>&#x4E00;&#x4E2A;Python &#x201C;&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;&#x201D;&#xFF0C;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x7684;Unicode &#x201C;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x201D;&#x3002;&#x5F53;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x9700;&#x8981;&#x5F3A;&#x5236;&#x8F6C;&#x6362;&#x5E76;&#x663E;&#x793A;&#x4E3A;&#x666E;&#x901A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;Python &#x548C;Django &#x5C06;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;&#x6700;&#x660E;&#x663E;&#x662F;&#x5728;&#x4EA4;&#x4E92;&#x5F0F;&#x63A7;&#x5236;&#x53F0;&#x6216;&#x8005;&#x7BA1;&#x7406;&#x7AD9;&#x70B9;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#x3002;</p>
+<p>&#x5C06;&#x5C06;&#x6C38;&#x8FDC;&#x60F3;&#x8981;&#x5B9A;&#x4E49;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1B;&#x9ED8;&#x8BA4;&#x7684;&#x65B9;&#x6CD5;&#x51E0;&#x4E4E;&#x6CA1;&#x6709;&#x610F;&#x4E49;&#x3002;</p>
+<p><a href="../../ref/models/instances.html#django.db.models.Model.get_absolute_url" title="django.db.models.Model.get_absolute_url"><code>get_absolute_url()</code></a></p>
+<p>&#x5B83;&#x544A;&#x8BC9;Django &#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;URL&#x3002;Django &#x5728;&#x5B83;&#x7684;&#x7BA1;&#x7406;&#x7AD9;&#x70B9;&#x4E2D;&#x4F7F;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x5176;&#x5B83;&#x4EFB;&#x4F55;&#x9700;&#x8981;&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;URL &#x65F6;&#x4E5F;&#x5C06;&#x7528;&#x5230;&#x3002;</p>
+<p>&#x4EFB;&#x4F55;&#x5177;&#x6709;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x81EA;&#x5DF1;&#x7684;URL &#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x5E94;&#x8BE5;&#x5B9A;&#x4E49;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="&#x8986;&#x76D6;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x65B9;&#x6CD5;">&#x8986;&#x76D6;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x65B9;&#x6CD5;</h3>
+<p>&#x8FD8;&#x6709;&#x53E6;&#x5916;&#x4E00;&#x90E8;&#x5206;&#x5C01;&#x88C5;&#x6570;&#x636E;&#x5E93;&#x884C;&#x4E3A;&#x7684;<a href="../../ref/models/instances.html#model-instance-methods"><em>&#x6A21;&#x578B;&#x65B9;&#x6CD5;</em></a>&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x5B83;&#x4EEC;&#x3002;&#x7279;&#x522B;&#x662F;&#xFF0C;&#x4F60;&#x5C06;&#x8981;&#x7ECF;&#x5E38;&#x6539;&#x53D8;<a href="../../ref/models/instances.html#django.db.models.Model.save" title="django.db.models.Model.save"><code>save()</code></a> &#x548C;<a href="../../ref/models/instances.html#django.db.models.Model.delete" title="django.db.models.Model.delete"><code>delete()</code></a> &#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x8986;&#x76D6;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#xFF08;&#x548C;&#x5176;&#x5B83;&#x4EFB;&#x4F55;&#x6A21;&#x578B;&#x65B9;&#x6CD5;&#xFF09;&#x6765;&#x6539;&#x53D8;&#x5B83;&#x4EEC;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x8986;&#x76D6;&#x5185;&#x5EFA;&#x6A21;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x662F;&#xFF0C;&#x4F60;&#x60F3;&#x5728;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x65F6;&#x505A;&#x4E00;&#x4E9B;&#x5176;&#x5B83;&#x4E8B;&#x60C5;&#x3002;&#x4F8B;&#x5982;&#xFF08;&#x53C2;&#x89C1;<a href="../../ref/models/instances.html#django.db.models.Model.save" title="django.db.models.Model.save"><code>save()</code></a> &#x4E2D;&#x5173;&#x4E8E;&#x5B83;&#x63A5;&#x53D7;&#x7684;&#x53C2;&#x6570;&#x7684;&#x6587;&#x6863;&#xFF09;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Blog(models.Model):
+    name = models.CharField(max_length=100)
+    tagline = models.TextField()
+
+    def save(self, *args, **kwargs):
+        do_something()
+        super(Blog, self).save(*args, **kwargs) # Call the &quot;real&quot; save() method.
+        do_something_else()
+</code></pre><p>&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x963B;&#x6B62;&#x4FDD;&#x5B58;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Blog(models.Model):
+    name = models.CharField(max_length=100)
+    tagline = models.TextField()
+
+    def save(self, *args, **kwargs):
+        if self.name == &quot;Yoko Ono&apos;s blog&quot;:
+            return # Yoko shall never have her own blog!
+        else:
+            super(Blog, self).save(*args, **kwargs) # Call the &quot;real&quot; save() method.
+</code></pre><p>&#x5FC5;&#x987B;&#x8981;&#x8BB0;&#x4F4F;&#x8C03;&#x7528;&#x8D85;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x2014;&#x2014; <code>super(Blog, self).save(*args, **kwargs)</code> &#x2014;&#x2014; &#x6765;&#x786E;&#x4FDD;&#x5BF9;&#x8C61;&#x88AB;&#x4FDD;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5FD8;&#x8BB0;&#x8C03;&#x7528;&#x8D85;&#x7C7B;&#x7684;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x884C;&#x4E3A;&#x5C06;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x4E14;&#x6570;&#x636E;&#x5E93;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x6539;&#x53D8;&#x3002;</p>
+<p>&#x8FD8;&#x8981;&#x8BB0;&#x4F4F;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x7ED9;&#x8FD9;&#x4E2A;&#x6A21;&#x578B;&#x65B9;&#x6CD5; &#x2014;&#x2014; &#x5373;<code>*args, **kwargs</code>&#x3002; Django &#x672A;&#x6765;&#x5C06;&#x4E00;&#x76F4;&#x4F1A;&#x6269;&#x5C55;&#x5185;&#x5EFA;&#x6A21;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x529F;&#x80FD;&#x5E76;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x53C2;&#x6570;&#x3002;&#x5982;&#x679C;&#x5728;&#x4F60;&#x7684;&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x4E2D;&#x4F7F;&#x7528;<code>*args, **kwargs</code>&#xFF0C;&#x5C06;&#x4FDD;&#x8BC1;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x81EA;&#x52A8;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x65B0;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<p>Overridden model methods are not called on bulk operations</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5F53;<a href="queries.html#topics-db-queries-delete"><em>&#x4F7F;&#x7528;&#x67E5;&#x8BE2;&#x96C6;&#x6279;&#x91CF;&#x5220;&#x9664;&#x5BF9;&#x8C61;&#x65F6;</em></a>&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x4E3A;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x8C03;&#x7528;<a href="../../ref/models/instances.html#django.db.models.Model.delete" title="django.db.models.Model.delete"><code>delete()</code></a> &#x65B9;&#x6CD5;&#x3002;&#x4E3A;&#x786E;&#x4FDD;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5220;&#x9664;&#x903B;&#x8F91;&#x5F97;&#x5230;&#x6267;&#x884C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="../../ref/signals.html#django.db.models.signals.pre_delete" title="django.db.models.signals.pre_delete"><code>pre_delete</code></a> &#x548C;/&#x6216;<a href="../../ref/signals.html#django.db.models.signals.post_delete" title="django.db.models.signals.post_delete"><code>post_delete</code></a> &#x4FE1;&#x53F7;&#x3002;</p>
+<p>&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x5F53;&#x6279;&#x91CF;<a href="../../ref/models/querysets.html#django.db.models.query.QuerySet.bulk_create" title="django.db.models.query.QuerySet.bulk_create"><code>creating</code></a> &#x6216;<a href="../../ref/models/querysets.html#django.db.models.query.QuerySet.update" title="django.db.models.query.QuerySet.update"><code>updating</code></a> &#x5BF9;&#x8C61;&#x65F6;&#x6CA1;&#x6709;&#x53D8;&#x901A;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x4F1A;&#x8C03;&#x7528;<a href="../../ref/models/instances.html#django.db.models.Model.save" title="django.db.models.Model.save"><code>save()</code></a>&#x3001;<a href="../../ref/signals.html#django.db.models.signals.pre_save" title="django.db.models.signals.pre_save"><code>pre_save</code></a>&#x548C; <a href="../../ref/signals.html#django.db.models.signals.post_save" title="django.db.models.signals.post_save"><code>post_save</code></a>&#x3002;</p>
+<h3 id="&#x6267;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;sql">&#x6267;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;SQL</h3>
+<p>&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x5E38;&#x89C1;&#x7684;&#x9700;&#x6C42;&#x662F;&#x5728;&#x6A21;&#x578B;&#x65B9;&#x6CD5;&#x548C;&#x6A21;&#x5757;&#x7EA7;&#x522B;&#x7684;&#x65B9;&#x6CD5;&#x4E2D;&#x7F16;&#x5199;&#x81EA;&#x5B9A;&#x4E49;&#x7684;SQL &#x8BED;&#x53E5;&#x3002;&#x5173;&#x4E8E;&#x4F7F;&#x7528;&#x539F;&#x59CB;SQL &#x8BED;&#x53E5;&#x7684;&#x66F4;&#x591A;&#x7EC6;&#x8282;&#xFF0C;&#x53C2;&#x89C1;<a href="sql.html"><em>&#x4F7F;&#x7528;&#x539F;&#x59CB; SQL</em></a> &#x7684;&#x6587;&#x6863;&#x3002;</p>
+<h2 id="&#x6A21;&#x578B;&#x7EE7;&#x627F;">&#x6A21;&#x578B;&#x7EE7;&#x627F;</h2>
+<p>Django &#x4E2D;&#x7684;&#x6A21;&#x578B;&#x7EE7;&#x627F;&#x4E0E; Python &#x4E2D;&#x666E;&#x901A;&#x7C7B;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;&#x51E0;&#x4E4E;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x662F;&#x672C;&#x9875;&#x5934;&#x90E8;&#x5217;&#x51FA;&#x7684;&#x6A21;&#x578B;&#x57FA;&#x672C;&#x7684;&#x8981;&#x6C42;&#x8FD8;&#x662F;&#x8981;&#x9075;&#x5B88;&#x3002;&#x8FD9;&#x8868;&#x793A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x7C7B;&#x5E94;&#x8BE5;&#x7EE7;&#x627F;<a href="../../ref/models/instances.html#django.db.models.Model" title="django.db.models.Model"><code>django.db.models.Model</code></a>&#x3002;</p>
+<p>&#x4F60;&#x552F;&#x4E00;&#x9700;&#x8981;&#x4F5C;&#x51FA;&#x7684;&#x51B3;&#x5B9A;&#x5C31;&#x662F;&#x4F60;&#x662F;&#x60F3;&#x8BA9;&#x7236;&#x6A21;&#x578B;&#x5177;&#x6709;&#x5B83;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8868;&#xFF0C;&#x8FD8;&#x662F;&#x8BA9;&#x7236;&#x6A21;&#x578B;&#x53EA;&#x6301;&#x6709;&#x4E00;&#x4E9B;&#x5171;&#x540C;&#x7684;&#x4FE1;&#x606F;&#x800C;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x53EA;&#x6709;&#x5728;&#x5B50;&#x6A21;&#x578B;&#x4E2D;&#x624D;&#x80FD;&#x770B;&#x5230;&#x3002;</p>
+<p>&#x5728;Django &#x4E2D;&#x6709;3&#x4E2D;&#x98CE;&#x683C;&#x7684;&#x7EE7;&#x627F;&#x3002;</p>
+<ol>
+<li>&#x901A;&#x5E38;&#xFF0C;&#x4F60;&#x53EA;&#x60F3;&#x4F7F;&#x7528;&#x7236;&#x7C7B;&#x6765;&#x6301;&#x6709;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF0C;&#x4F60;&#x4E0D;&#x60F3;&#x5728;&#x6BCF;&#x4E2A;&#x5B50;&#x6A21;&#x578B;&#x4E2D;&#x90FD;&#x6572;&#x4E00;&#x904D;&#x3002;&#x8FD9;&#x4E2A;&#x7C7B;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x5355;&#x72EC;&#x4F7F;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x4F7F;&#x7528;<a href="#abstract-base-classes"><em>&#x62BD;&#x8C61;&#x57FA;&#x7C7B;</em></a>&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x7EE7;&#x627F;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x6A21;&#x578B;&#x4E14;&#x60F3;&#x8BA9;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x5177;&#x6709;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8868;&#xFF0C;&#x90A3;&#x4E48;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<a href="#multi-table-inheritance"><em>&#x591A;&#x8868;&#x7EE7;&#x627F;</em></a>&#x3002;</li>
+<li>&#x6700;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x53EA;&#x662F;&#x60F3;&#x6539;&#x53D8;&#x6A21;&#x5757;Python &#x7EA7;&#x522B;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x4FEE;&#x6539;&#x6A21;&#x578B;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="#proxy-models"><em>&#x4EE3;&#x7406;&#x6A21;&#x578B;</em></a>&#x3002;</li>
+</ol>
+<h3 id="&#x62BD;&#x8C61;&#x57FA;&#x7C7B;">&#x62BD;&#x8C61;&#x57FA;&#x7C7B;</h3>
+<p>&#x5F53;&#x4F60;&#x60F3;&#x5C06;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x4FE1;&#x606F;&#x5B58;&#x50A8;&#x5230;&#x5F88;&#x591A;model&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x62BD;&#x8C61;&#x5316;&#x7C7B;&#x662F;&#x5341;&#x5206;&#x6709;&#x7528;&#x7684;&#x3002;&#x4F60;&#x7F16;&#x5199;&#x5B8C;&#x57FA;&#x7C7B;&#x4E4B;&#x540E;&#xFF0C;&#x5728; <a href="#meta-options"><em>Meta</em></a>&#x7C7B;&#x4E2D;&#x8BBE;&#x7F6E; <code>abstract=True</code> &#xFF0C;&#x8BE5;&#x7C7B;&#x5C31;&#x4E0D;&#x80FD;&#x521B;&#x5EFA;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x8868;&#x3002;&#x53D6;&#x800C;&#x4EE3;&#x4E4B;&#x7684;&#x662F;&#xFF0C;&#x5F53;&#x5B83;&#x88AB;&#x7528;&#x6765;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5176;&#x4ED6;model&#x7684;&#x57FA;&#x7840;&#x7C7B;&#x65F6;&#xFF0C;&#x5B83;&#x5C06;&#x88AB;&#x52A0;&#x5165;&#x90A3;&#x4E00;&#x5B50;&#x7C7B;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x62BD;&#x8C61;&#x5316;&#x57FA;&#x7840;&#x7C7B;&#x548C;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#x6709;&#x76F8;&#x540C;&#x7684;&#x9879;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4F1A;&#x51FA;&#x73B0;error&#xFF08;&#x5E76;&#x4E14;Django&#x5C06;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;exception&#xFF09;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;</p>
+<pre><code>from django.db import models
+
+class CommonInfo(models.Model):
+    name = models.CharField(max_length=100)
+    age = models.PositiveIntegerField()
+
+    class Meta:
+        abstract = True
+
+class Student(CommonInfo):
+    home_group = models.CharField(max_length=5)
+</code></pre><p><code>Student</code> &#x6A21;&#x578B;&#x5C06;&#x6709;&#x4E09;&#x4E2A;&#x9879;&#xFF1A;<code>name</code>, <code>age</code> &#x548C; <code>home_group</code>&#x3002;<code>CommonInfo</code> &#x6A21;&#x578B;&#x65E0;&#x6CD5;&#x50CF;&#x4E00;&#x822C;&#x7684;Django&#x6A21;&#x578B;&#x4E00;&#x6837;&#x4F7F;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x5316;&#x57FA;&#x7840;&#x7C7B;&#x3002;&#x5B83;&#x65E0;&#x6CD5;&#x751F;&#x6210;&#x6570;&#x636E;&#x8868;&#x5355;&#x6216;&#x8005;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x5B9E;&#x4F8B;&#x5316;&#x6216;&#x8005;&#x50A8;&#x5B58;&#x3002;</p>
+<p>&#x5BF9;&#x5F88;&#x591A;&#x7528;&#x6237;&#x6765;&#x8BF4;, &#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6A21;&#x578B;&#x7EE7;&#x627F;&#x5C31;&#x662F;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x5728; Python &#x8BED;&#x8A00;&#x5C42;&#x7EA7;&#x4E0A;&#x63D0;&#x53D6;&#x516C;&#x5171;&#x4FE1;&#x606F;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x5728;&#x6570;&#x636E;&#x5E93;&#x5C42;&#x7EA7;&#x4E0A;&#xFF0C;&#x5404;&#x4E2A;&#x5B50;&#x7C7B;&#x4ECD;&#x7136;&#x53EA;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<h4 id="&#x5143;-&#x7EE7;&#x627F;"><code>&#x5143;</code> &#x7EE7;&#x627F;</h4>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7C7B;&#x88AB;&#x521B;&#x5EFA;&#x7684;&#x65F6;&#x5019;, Django&#x4F1A;&#x81EA;&#x52A8;&#x628A;&#x4F60;&#x5728;&#x57FA;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684; <a href="#meta-options"><em>Meta</em></a> &#x4F5C;&#x4E3A;&#x5B50;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x3002;&#x5982;&#x679C;&#x5B50;&#x7C7B;&#x6CA1;&#x6709;&#x58F0;&#x660E;&#x81EA;&#x5DF1;&#x7684;<a href="#meta-options"><em>Meta</em></a> &#x7C7B;, &#x4ED6;&#x5C06;&#x4F1A;&#x7EE7;&#x627F;&#x7236;&#x7C7B;&#x7684;<a href="#meta-options"><em>Meta</em></a>. &#x5982;&#x679C;&#x5B50;&#x7C7B;&#x60F3;&#x8981;&#x6269;&#x5C55;&#x7236;&#x7C7B;&#xA0;&#xA0;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x7236;&#x7C7B;&#x7684;&#xA0;<a href="#meta-options"><em>Meta</em></a>&#xA0;&#x5373;&#x53EF;&#xFF0C;&#x4F8B;&#x5982;</p>
+<pre><code>from django.db import models
+
+class CommonInfo(models.Model):
+    # ...
+    class Meta:
+        abstract = True
+        ordering = [&apos;name&apos;]
+
+class Student(CommonInfo):
+    # ...
+    class Meta(CommonInfo.Meta):
+        db_table = &apos;student_info&apos;
+</code></pre><p>&#x7EE7;&#x627F;&#x65F6;&#xFF0C;Django &#x4F1A;&#x5BF9;&#x57FA;&#x7C7B;&#x7684; <a href="#meta-options"><em>Meta</em></a>&#x7C7B;&#x505A;&#x4E00;&#x4E2A;&#x8C03;&#x6574;&#xFF1A;&#x5728;&#x5B89;&#x88C5; <a href="#meta-options"><em>Meta</em></a>&#x5C5E;&#x6027;&#x4E4B;&#x524D;&#xFF0C;Django &#x4F1A;&#x8BBE;&#x7F6E; <code>abstract=False</code>&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x7684;&#x5B50;&#x7C7B;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x53D8;&#x6210;&#x62BD;&#x8C61;&#x7C7B;&#x3002; &#x5F53;&#x7136;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8BA9;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7C7B;&#x7EE7;&#x627F;&#x53E6;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF0C;&#x4E0D;&#x8FC7;&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x663E;&#x5F0F;&#x5730;&#x8BBE;&#x7F6E; <code>abstract=True</code>&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x800C;&#x8A00;&#xFF0C;&#x6709;&#x4E9B;&#x5C5E;&#x6027;&#x653E;&#x5728; &#xA0;<a href="#meta-options"><em>Meta</em></a>&#xA0;&#x5185;&#x5D4C;&#x7C7B;&#x91CC;&#x9762;&#x662F;&#x6CA1;&#x6709;&#x610F;&#x4E49;&#x7684;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5305;&#x542B; <code>db_table</code>&#x5C06;&#x610F;&#x5473;&#x7740;&#x6240;&#x6709;&#x7684;&#x5B50;&#x7C7B;(&#x662F;&#x6307;&#x90A3;&#x4E9B;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x81EA;&#x5DF1;&#x7684; <a href="#meta-options"><em>Meta</em></a> &#x7C7B;&#x7684;&#x5B50;&#x7C7B;)&#x90FD;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x5F20;&#x6570;&#x636E;&#x8868;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x3002;</p>
+<h4 id="&#x5C0F;&#x5FC3;&#x4F7F;&#x7528;-relatedname">&#x5C0F;&#x5FC3;&#x4F7F;&#x7528; <code>related_name</code></h4>
+<p>&#x5982;&#x679C;&#x4F60;&#x5728; <code>ForeignKey</code>&#x6216; &#xA0;<code>ManyToManyField</code>&#x5B57;&#x6BB5;&#x4E0A;&#x4F7F;&#x7528; &#xA0;<a href="../../ref/models/fields.html#django.db.models.ForeignKey.related_name" title="django.db.models.ForeignKey.related_name"><code>related_name</code></a>&#x5C5E;&#x6027;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x603B;&#x662F;&#x4E3A;&#x8BE5;&#x5B57;&#x6BB5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;<em>&#x552F;&#x4E00;</em>&#x7684;&#x53CD;&#x5411;&#x540D;&#x79F0;&#x3002;&#x4F46;&#x5728;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x4E0A;&#x8FD9;&#x6837;&#x505A;&#x5C31;&#x4F1A;&#x5F15;&#x53D1;&#x4E00;&#x4E2A;&#x5F88;&#x4E25;&#x91CD;&#x7684;&#x95EE;&#x9898;&#x3002;&#x56E0;&#x4E3A; Django &#x4F1A;&#x5C06;&#x57FA;&#x7C7B;&#x5B57;&#x6BB5;&#x6DFB;&#x52A0;&#x5230;&#x6BCF;&#x4E2A;&#x5B50;&#x7C7B;&#x5F53;&#x4E2D;&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;&#x5B50;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#x5C5E;&#x6027;&#x503C;&#x90FD;&#x5B8C;&#x5168;&#x76F8;&#x540C; (&#x8FD9;&#x91CC;&#x9762;&#x5C31;&#x5305;&#x62EC;<a href="../../ref/models/fields.html#django.db.models.ForeignKey.related_name" title="django.db.models.ForeignKey.related_name"><code>related_name</code></a>)&#x3002;</p>
+<p>&#x5F53;&#x4F60;&#x5728;(&#x4E14;&#x4EC5;&#x5728;)&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x4E2D;&#x4F7F;&#x7528; <a href="../../ref/models/fields.html#django.db.models.ForeignKey.related_name" title="django.db.models.ForeignKey.related_name"><code>related_name</code></a> &#x65F6;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x7ED5;&#x8FC7;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x540D;&#x79F0;&#x4E2D;&#x5C31;&#x8981;&#x5305;&#x542B;<code>&apos;%(app_label)s&apos;</code>&#x548C;&#xA0;<code>&apos;%(class)s&apos;</code>&#x3002;</p>
+<ul>
+<li><code>&apos;%(class)s&apos;</code> &#x4F1A;&#x66FF;&#x6362;&#x4E3A;&#x5B50;&#x7C7B;&#x7684;&#x5C0F;&#x5199;&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#x683C;&#x5F0F;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5B57;&#x6BB5;&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x4F7F;&#x7528;&#x3002;</li>
+<li><code>&apos;%(app_label)s&apos;</code> &#x4F1A;&#x66FF;&#x6362;&#x4E3A;&#x5E94;&#x7528;&#x7684;&#x5C0F;&#x5199;&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#x683C;&#x5F0F;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5E94;&#x7528;&#x5305;&#x542B;&#x5B50;&#x7C7B;&#x3002;&#x6BCF;&#x4E2A;&#x5B89;&#x88C5;&#x7684;&#x5E94;&#x7528;&#x540D;&#x79F0;&#x90FD;&#x5E94;&#x8BE5;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x5E94;&#x7528;&#x91CC;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7C7B;&#x7684;&#x540D;&#x79F0;&#x4E5F;&#x5E94;&#x8BE5;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4EA7;&#x751F;&#x7684;&#x540D;&#x79F0;&#x5E94;&#x8BE5;&#x5F7C;&#x6B64;&#x4E0D;&#x540C;&#x3002;</li>
+</ul>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x8BBE;&#x6709;&#x4E00;&#x4E2A;app&#x53EB;&#x505A;<code>common/models.py</code>&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Base(models.Model):
+    m2m = models.ManyToManyField(OtherModel, related_name=&quot;%(app_label)s_%(class)s_related&quot;)
+
+    class Meta:
+        abstract = True
+
+class ChildA(Base):
+    pass
+
+class ChildB(Base):
+    pass
+</code></pre><p>&#x4EE5;&#x53CA;&#x53E6;&#x4E00;&#x4E2A;&#x5E94;&#x7528; <code>rare/models.py</code>&#xFF1A;</p>
+<pre><code>from common.models import Base
+
+class ChildB(Base):
+    pass
+</code></pre><p>ChildA.m2m &#x5B57;&#x6BB5;&#x7684;&#x53CD;&#x5411;&#x540D;&#x79F0;&#x662F; childa_related&#xFF0C;&#x800C; ChildB.m2m &#x5B57;&#x6BB5;&#x7684;&#x53CD;&#x5411;&#x540D;&#x79F0;&#x662F; childb_related&#x3002;&#x8FD9;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x5982;&#x4F55;&#x4F7F;&#x7528; &#xA0;<code>&apos;%(class)s&apos;</code> &#x548C;<code>&apos;%(app_label)s</code>&#x6765;&#x6784;&#x9020;&#x4F60;&#x7684;&#x53CD;&#x5411;&#x540D;&#x79F0;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x8FD9;&#x6837;&#x505A;&#xFF0C;Django &#x5C31;&#x4F1A;&#x5728;&#x9A8C;&#x8BC1; model (&#x6216;&#x8FD0;&#x884C; <a href="../../ref/django-admin.html#django-admin-migrate"><code>migrate</code></a>) &#x65F6;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x5728;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x4E2D;&#x4E3A;&#x67D0;&#x4E2A;&#x5173;&#x8054;&#x5B57;&#x6BB5;&#x5B9A;&#x4E49; <a href="../../ref/models/fields.html#django.db.models.ForeignKey.related_name" title="django.db.models.ForeignKey.related_name"><code>related_name</code></a>&#xA0;&#x5C5E;&#x6027;&#xFF0C;&#x90A3;&#x4E48;&#x9ED8;&#x8BA4;&#x7684;&#x53CD;&#x5411;&#x540D;&#x79F0;&#x5C31;&#x662F;&#x5B50;&#x7C7B;&#x540D;&#x79F0;&#x52A0;&#x4E0A;<code>&apos;_set&apos;</code>&#xFF0C;&#x5B83;&#x80FD;&#x5426;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x662F;&#x5426;&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x540C;&#x540D;&#x5B57;&#x6BB5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x53BB;&#x6389; <a href="../../ref/models/fields.html#django.db.models.ForeignKey.related_name" title="django.db.models.ForeignKey.related_name"><code>related_name</code></a>&#x5C5E;&#x6027;&#xFF0C;&#x5728; <code>ChildA</code>&#x4E2D;&#xFF0C;<code>m2m</code> &#x5B57;&#x6BB5;&#x7684;&#x53CD;&#x5411;&#x540D;&#x79F0;&#x5C31;&#x662F; <code>childa_set</code>&#xFF1B;&#x800C; <code>ChildB</code>&#x7684; m2m &#x5B57;&#x6BB5;&#x7684;&#x53CD;&#x5411;&#x540D;&#x79F0;&#x5C31;&#x662F; <code>childb_set</code>&#x3002;</p>
+<h3 id="&#x591A;&#x8868;&#x7EE7;&#x627F;">&#x591A;&#x8868;&#x7EE7;&#x627F;</h3>
+<p>&#x8FD9;&#x662F; Django &#x652F;&#x6301;&#x7684;&#x7B2C;&#x4E8C;&#x79CD;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;&#x3002;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;&#x65F6;&#xFF0C;&#x540C;&#x4E00;&#x5C42;&#x7EA7;&#x4E0B;&#x7684;&#x6BCF;&#x4E2A;&#x5B50; model &#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x771F;&#x6B63;&#x610F;&#x4E49;&#x4E0A;&#x5B8C;&#x6574;&#x7684; model &#x3002; &#x6BCF;&#x4E2A;&#x5B50; model &#x90FD;&#x6709;&#x4E13;&#x5C5E;&#x7684;&#x6570;&#x636E;&#x8868;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#x548C;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x3002; &#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x5728;&#x5B50; model &#x548C;&#x5B83;&#x7684;&#x6BCF;&#x4E2A;&#x7236;&#x7C7B;&#x4E4B;&#x95F4;&#x90FD;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x94FE;&#x63A5; (&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x7684; <a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a>&#x6765;&#x5B9E;&#x73B0;)&#x3002;&#xA0;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Place(models.Model):
+    name = models.CharField(max_length=50)
+    address = models.CharField(max_length=80)
+
+class Restaurant(Place):
+    serves_hot_dogs = models.BooleanField(default=False)
+    serves_pizza = models.BooleanField(default=False)
+</code></pre><p><code>Place</code>&#x91CC;&#x9762;&#x7684;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x5728; <code>Restaurant</code>&#x4E2D;&#x4E5F;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5728;&#x53E6;&#x5916;&#x4E00;&#x5F20;&#x6570;&#x636E;&#x8868;&#x5F53;&#x4E2D;&#x3002;&#x6240;&#x4EE5;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x8BED;&#x53E5;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x7684;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; Place.objects.filter(name=&quot;Bob&apos;s Cafe&quot;)
+&gt;&gt;&gt; Restaurant.objects.filter(name=&quot;Bob&apos;s Cafe&quot;)
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x6709;&#x4E00;&#x4E2A; <code>Place</code>&#xA0;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x540C;&#x65F6;&#x4E5F;&#x662F;&#x4E00;&#x4E2A; <code>Restaurant</code>&#xFF0C; &#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B50; model &#x7684;&#x5C0F;&#x5199;&#x5F62;&#x5F0F;&#x4ECE; Pl<code>Place</code> &#x5BF9;&#x8C61;&#x4E2D;&#x83B7;&#x5F97;&#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x7684; <code>Restaurant</code>&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; p = Place.objects.get(id=12)
+# If p is a Restaurant object, this will give the child class:
+&gt;&gt;&gt; p.restaurant
+&lt;Restaurant: ...&gt;
+</code></pre><p>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4E0A;&#x4F8B;&#x4E2D;&#x7684; <code>p</code> &#x5E76;<em>&#x4E0D;&#x662F;</em><code>Restaurant</code>&#xA0;(&#x6BD4;&#x5982;&#x5B83;&#x4EC5;&#x4EC5;&#x53EA;&#x662F; <code>Place</code>&#x5BF9;&#x8C61;&#xFF0C;&#x6216;&#x8005;&#x5B83;&#x662F;&#x5176;&#x4ED6;&#x7C7B;&#x7684;&#x7236;&#x7C7B;)&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x5F15;&#x7528; <code>p.restaurant</code>&#x5C31;&#x4F1A;&#x629B;&#x51FA;<code>Restaurant.DoesNotExist</code> &#x5F02;&#x5E38;&#x3002;</p>
+<h4 id="&#x591A;&#x8868;&#x7EE7;&#x627F;&#x4E2D;&#x7684;meta">&#x591A;&#x8868;&#x7EE7;&#x627F;&#x4E2D;&#x7684;<code>Meta</code></h4>
+<p>&#x5728;&#x591A;&#x8868;&#x7EE7;&#x627F;&#x4E2D;&#xFF0C;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x7236;&#x7C7B;&#x7684; <a href="#meta-options"><em>Meta</em></a>&#x7C7B;&#x662F;&#x6CA1;&#x4EC0;&#x4E48;&#x610F;&#x4E49;&#x7684;&#x3002;&#x6240;&#x6709;&#x7684; <a href="#meta-options"><em>Meta</em></a>&#xA0;&#x9009;&#x9879;&#x5DF2;&#x7ECF;&#x5BF9;&#x7236;&#x7C7B;&#x8D77;&#x4E86;&#x4F5C;&#x7528;&#xFF0C;&#x518D;&#x6B21;&#x4F7F;&#x7528;&#x53EA;&#x4F1A;&#x8D77;&#x53CD;&#x4F5C;&#x7528;&#x3002;(&#x8FD9;&#x4E0E;&#x4F7F;&#x7528;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x7684;&#x60C5;&#x51B5;&#x6B63;&#x597D;&#x76F8;&#x53CD;&#xFF0C;&#x56E0;&#x4E3A;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x5E76;&#x6CA1;&#x6709;&#x5C5E;&#x4E8E;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x5185;&#x5BB9;)</p>
+<p>&#x6240;&#x4EE5;&#x5B50; model &#x5E76;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x5B83;&#x7236;&#x7C7B;&#x7684; <a href="#meta-options"><em>Meta</em></a>&#xA0;&#x7C7B;&#x3002;&#x4F46;&#x662F;&#x5728;&#x67D0;&#x4E9B;&#x53D7;&#x9650;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x4ECE;&#x7236;&#x7C7B;&#x7EE7;&#x627F;&#x67D0;&#x4E9B; Meta &#xFF1A;&#x5982;&#x679C;&#x5B50;&#x7C7B;&#x6CA1;&#x6709;&#x6307;&#x5B9A; <a href="../../ref/models/options.html#django.db.models.Options.ordering" title="django.db.models.Options.ordering"><code>ordering</code></a>&#x5C5E;&#x6027;&#x6216; <a href="../../ref/models/options.html#django.db.models.Options.get_latest_by" title="django.db.models.Options.get_latest_by"><code>get_latest_by</code></a> &#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x4ECE;&#x7236;&#x7C7B;&#x4E2D;&#x7EE7;&#x627F;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7236;&#x7C7B;&#x6709;&#x4E86;&#x6392;&#x5E8F;&#x8BBE;&#x7F6E;&#xFF0C;&#x800C;&#x4F60;&#x5E76;&#x4E0D;&#x60F3;&#x8BA9;&#x5B50;&#x7C7B;&#x6709;&#x4EFB;&#x4F55;&#x6392;&#x5E8F;&#x8BBE;&#x7F6E;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x663E;&#x5F0F;&#x5730;&#x7981;&#x7528;&#x6392;&#x5E8F;&#xFF1A;</p>
+<pre><code>class ChildModel(ParentModel):
+    # ...
+    class Meta:
+        # Remove parent&apos;s ordering effect
+        ordering = []
+</code></pre><h4 id="&#x7EE7;&#x627F;&#x4E0E;&#x53CD;&#x5411;&#x5173;&#x8054;">&#x7EE7;&#x627F;&#x4E0E;&#x53CD;&#x5411;&#x5173;&#x8054;</h4>
+<p>&#x56E0;&#x4E3A;&#x591A;&#x8868;&#x7EE7;&#x627F;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x9690;&#x542B;&#x7684; <a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a>&#x6765;&#x94FE;&#x63A5;&#x5B50;&#x7C7B;&#x4E0E;&#x7236;&#x7C7B;&#xFF0C;&#x6240;&#x4EE5;&#x8C61;&#x4E0A;&#x4F8B;&#x90A3;&#x6837;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x7236;&#x7C7B;&#x6765;&#x6307;&#x4EE3;&#x5B50;&#x7C7B;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x4E2A; OnetoOneField &#x5B57;&#x6BB5;&#x9ED8;&#x8BA4;&#x7684; <a href="../../ref/models/fields.html#django.db.models.ForeignKey.related_name" title="django.db.models.ForeignKey.related_name"><code>related_name</code></a> &#x503C;&#x4E0E; <a href="../../ref/models/fields.html#django.db.models.ForeignKey" title="django.db.models.ForeignKey"><code>ForeignKey</code></a> &#x548C; <a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a>&#xA0;&#x9ED8;&#x8BA4;&#x7684;&#x53CD;&#x5411;&#x540D;&#x79F0;&#x76F8;&#x540C;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E0E;&#x5176;&#x4ED6; model &#x7684;&#x5B50;&#x7C7B;&#x505A;&#x591A;&#x5BF9;&#x4E00;&#x6216;&#x662F;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#xFF0C;&#x4F60;&#x5C31;<strong>&#x5FC5;&#x987B;</strong>&#x5728;&#x6BCF;&#x4E2A;&#x591A;&#x5BF9;&#x4E00;&#x548C;&#x591A;&#x5BF9;&#x591A;&#x5B57;&#x6BB5;&#x4E0A;&#x5F3A;&#x5236;&#x6307;&#x5B9A; <a href="../../ref/models/fields.html#django.db.models.ForeignKey.related_name" title="django.db.models.ForeignKey.related_name"><code>related_name</code></a>&#x3002;&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x8FD9;&#x4E48;&#x505A;&#xFF0C;Django &#x5C31;&#x4F1A;&#x5728;&#x4F60;&#x8FD0;&#x884C; &#x9A8C;&#x8BC1;(validation) &#xA0;&#x65F6;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4ECD;&#x4EE5;&#x4E0A;&#x9762; <code>Place</code>&#x7C7B;&#x4E3A;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5E26;&#x6709; <a href="../../ref/models/fields.html#django.db.models.ManyToManyField" title="django.db.models.ManyToManyField"><code>ManyToManyField</code></a>&#x5B57;&#x6BB5;&#x7684;&#x5B50;&#x7C7B;&#xFF1A;</p>
+<pre><code>class Supplier(Place):
+    customers = models.ManyToManyField(Place)
+</code></pre><p>&#x8FD9;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF1A;</p>
+<pre><code>Reverse query name for &apos;Supplier.customers&apos; clashes with reverse query
+name for &apos;Supplier.place_ptr&apos;.
+
+HINT: Add or change a related_name argument to the definition for
+&apos;Supplier.customers&apos; or &apos;Supplier.place_ptr&apos;.
+</code></pre><p>&#x50CF;&#x4E0B;&#x9762;&#x90A3;&#x6837;&#xFF0C;&#x5411;<code>customers</code>&#x5B57;&#x6BB5;&#x4E2D;&#x6DFB;&#x52A0;<code>related_name</code>&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#xFF1A;<code>models.ManyToManyField(Place, related_name=&apos;provider&apos;)</code>&#x3002;</p>
+<h4 id="&#x6307;&#x5B9A;&#x94FE;&#x63A5;&#x7236;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;">&#x6307;&#x5B9A;&#x94FE;&#x63A5;&#x7236;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;</h4>
+<p>&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x63D0;&#x5230;&#xFF0C;Django &#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; <a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a>&#x5B57;&#x6BB5;&#x5C06;&#x5B50;&#x7C7B;&#x94FE;&#x63A5;&#x81F3;&#x975E;&#x62BD;&#x8C61;&#x7684;&#x7236; model &#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x6307;&#x5B9A;&#x94FE;&#x63A5;&#x7236;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684; <a href="../../ref/models/fields.html#django.db.models.OneToOneField" title="django.db.models.OneToOneField"><code>OneToOneField</code></a>&#x5B57;&#x6BB5;&#x5E76;&#x8BBE;&#x7F6E; <a href="../../ref/models/fields.html#django.db.models.OneToOneField.parent_link" title="django.db.models.OneToOneField.parent_link"><code>parent_link=True</code></a> &#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x7528;&#x8BE5;&#x5B57;&#x6BB5;&#x94FE;&#x63A5;&#x7236;&#x7C7B;&#x3002;</p>
+<h3 id="&#x4EE3;&#x7406;&#x6A21;&#x578B;">&#x4EE3;&#x7406;&#x6A21;&#x578B;</h3>
+<p>&#x4F7F;&#x7528; &#xA0;<a href="#multi-table-inheritance"><em>&#x591A;&#x8868;&#x7EE7;&#x627F;</em></a>&#x65F6;&#xFF0C;model &#x7684;&#x6BCF;&#x4E2A;&#x5B50;&#x7C7B;&#x90FD;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x5F20;&#x65B0;&#x6570;&#x636E;&#x8868;&#xFF0C;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x6B63;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5B50;&#x7C7B;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7A7A;&#x95F4;&#x6765;&#x5B58;&#x50A8;&#x4E0D;&#x5305;&#x542B;&#x5728;&#x57FA;&#x7C7B;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x6570;&#x636E;&#x3002; &#x4F46;&#x6709;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x53EA;&#x60F3;&#x66F4;&#x6539; model &#x5728; Python &#x5C42;&#x7684;&#x884C;&#x4E3A;&#x5B9E;&#x73B0;&#x3002;&#x6BD4;&#x5982;&#xFF1A;&#x66F4;&#x6539;&#x9ED8;&#x8BA4;&#x7684; manager &#xFF0C;&#x6216;&#x662F;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x800C;&#x8FD9;&#xFF0C;&#x6B63;&#x662F;&#x4EE3;&#x7406; model &#x7EE7;&#x627F;&#x65B9;&#x5F0F;&#x8981;&#x505A;&#x7684;&#xFF1A;&#x4E3A;&#x539F;&#x59CB; model &#x521B;&#x5EFA;&#x4E00;&#x4E2A;<em>&#x4EE3;&#x7406;</em>&#xA0;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#xFF0C;&#x5220;&#x9664;&#xFF0C;&#x66F4;&#x65B0;&#x4EE3;&#x7406; model &#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x800C;&#x4E14;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x90FD;&#x53EF;&#x4EE5;&#x8C61;&#x4F7F;&#x7528;&#x539F;&#x59CB; model &#x4E00;&#x6837;&#x88AB;&#x4FDD;&#x5B58;&#x3002; &#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#xFF1A;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4EE3;&#x7406; model &#x4E2D;&#x6539;&#x53D8;&#x9ED8;&#x8BA4;&#x7684;&#x6392;&#x5E8F;&#x8BBE;&#x7F6E;&#x548C;&#x9ED8;&#x8BA4;&#x7684; manager &#xFF0C;&#x66F4;&#x4E0D;&#x4F1A;&#x5BF9;&#x539F;&#x59CB; model &#x4EA7;&#x751F;&#x5F71;&#x54CD;&#x3002;</p>
+<p>&#x58F0;&#x660E;&#x4EE3;&#x7406; model &#x548C;&#x58F0;&#x660E;&#x666E;&#x901A; model &#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x540C;&#x3002; &#x8BBE;&#x7F6E;<code>Meta</code>&#x7C7B;&#x4E2D; <a href="../../ref/models/options.html#django.db.models.Options.proxy" title="django.db.models.Options.proxy"><code>proxy</code></a>&#xA0;&#x7684;&#x503C;&#x4E3A; <code>True</code>&#xFF0C;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x5BF9;&#x4EE3;&#x7406; model &#x7684;&#x58F0;&#x660E;&#x3002;</p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5047;&#x8BBE;&#x4F60;&#x60F3;&#x7ED9; Django &#x81EA;&#x5E26;&#x7684;&#x6807;&#x51C6; <code>Person</code> model&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+
+class MyPerson(Person):
+    class Meta:
+        proxy = True
+
+    def do_something(self):
+        # ...
+        pass
+</code></pre><p><code>MyPerson</code>&#x7C7B;&#x548C;&#x5B83;&#x7684;&#x7236;&#x7C7B; <code>Person</code>&#xA0;&#x64CD;&#x4F5C;&#x540C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x8868;&#x3002;&#x7279;&#x522B;&#x7684;&#x662F;&#xFF0C;<code>Person</code>&#xA0;&#x7684;&#x4EFB;&#x4F55;&#x5B9E;&#x4F8B;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>MyPerson</code>&#x8BBF;&#x95EE;&#xFF0C;&#x53CD;&#x4E4B;&#x4EA6;&#x7136;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; p = Person.objects.create(first_name=&quot;foobar&quot;)
+&gt;&gt;&gt; MyPerson.objects.get(first_name=&quot;foobar&quot;)
+&lt;MyPerson: foobar&gt;
+</code></pre><p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE3;&#x7406; model &#x7ED9; model &#x5B9A;&#x4E49;&#x4E0D;&#x540C;&#x7684;&#x9ED8;&#x8BA4;&#x6392;&#x5E8F;&#x8BBE;&#x7F6E;&#x3002; &#x4F60;&#x53EF;&#x80FD;&#x5E76;&#x4E0D;&#x60F3;&#x6BCF;&#x6B21;&#x90FD;&#x7ED9;<code>Person</code>&#x6A21;&#x578B;&#x6392;&#x5E8F;&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x7684;&#x65F6;&#x5019;&#x603B;&#x662F;&#x6309;&#x7167;<code>last_name</code>&#x5C5E;&#x6027;&#x6392;&#x5E8F;&#x3002;&#x8FD9;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#xFF1A;</p>
+<pre><code>class OrderedPerson(Person):
+    class Meta:
+        ordering = [&quot;last_name&quot;]
+        proxy = True
+</code></pre><p>&#x73B0;&#x5728;&#xFF0C;&#x666E;&#x901A;&#x7684;<code>Person</code>&#x67E5;&#x8BE2;&#x65F6;&#x65E0;&#x5E8F;&#x7684;&#xFF0C;&#x800C;&#xA0;<code>OrderedPerson</code>&#x67E5;&#x8BE2;&#x4F1A;&#x6309;&#x7167;<code>last_name</code>&#x6392;&#x5E8F;&#x3002;</p>
+<h4 id="&#x67E5;&#x8BE2;&#x96C6;&#x59CB;&#x7EC8;&#x8FD4;&#x56DE;&#x8BF7;&#x6C42;&#x7684;&#x6A21;&#x578B;">&#x67E5;&#x8BE2;&#x96C6;&#x59CB;&#x7EC8;&#x8FD4;&#x56DE;&#x8BF7;&#x6C42;&#x7684;&#x6A21;&#x578B;</h4>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x8BA9;DJango&#x5728;&#x67E5;&#x8BE2;<code>Person</code>&#x5BF9;&#x8C61;&#x65F6;&#x8FD4;&#x56DE;<code>MyPerson</code>&#x5BF9;&#x8C61;&#x3002;<code>Person</code> &#x5BF9;&#x8C61;&#x7684;&#x67E5;&#x8BE2;&#x96C6;&#x4F1A;&#x8FD4;&#x56DE;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#x7684;&#x8981;&#x70B9;&#x662F;&#xFF0C;&#x4F9D;&#x8D56;&#x4E8E;&#x539F;&#x751F;<code>Person</code>&#x5BF9;&#x8C61;&#x7684;&#x4EE3;&#x7801;&#x4ECD;&#x7136;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x800C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4F60;&#x6DFB;&#x52A0;&#x8FDB;&#x6765;&#x7684;&#x6269;&#x5C55;&#x5BF9;&#x8C61;&#xFF08;&#x5B83;&#x4E0D;&#x4F1A;&#x4F9D;&#x8D56;&#x5176;&#x5B83;&#x4EFB;&#x4F55;&#x4EE3;&#x7801;&#xFF09;&#x3002;&#x800C;&#x5E76;&#x4E0D;&#x662F;&#x5C06;<code>Person</code>&#x6A21;&#x578B;&#xFF08;&#x6216;&#x8005;&#x5176;&#x5B83;&#xFF09;&#x5728;&#x6240;&#x6709;&#x5730;&#x65B9;&#x66FF;&#x6362;&#x4E3A;&#x5176;&#x5B83;&#x4F60;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x7684;&#x6A21;&#x578B;&#x3002;</p>
+<h4 id="&#x57FA;&#x7C7B;&#x7684;&#x9650;&#x5236;">&#x57FA;&#x7C7B;&#x7684;&#x9650;&#x5236;</h4>
+<p>&#x4EE3;&#x7406; &#x6A21;&#x578B;&#x5FC5;&#x987B;&#x7EE7;&#x627F;&#x81EA;&#x4E00;&#x4E2A;&#x975E;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x3002; &#x4F60;&#x4E0D;&#x80FD;&#x7EE7;&#x627F;&#x81EA;&#x591A;&#x4E2A;&#x975E;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;&#x4EE3;&#x7406; model &#x4E0D;&#x80FD;&#x8FDE;&#x63A5;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;&#x8868;&#x3002; &#x4EE3;&#x7406; model &#x4E5F;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x4EFB;&#x610F;&#x591A;&#x4E2A;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF0C;&#x4F46;&#x524D;&#x63D0;&#x662F;&#x5B83;&#x4EEC;<em>&#x6CA1;&#x6709;</em>&#xA0;&#x5B9A;&#x4E49;&#x4EFB;&#x4F55; model &#x5B57;&#x6BB5;&#x3002;</p>
+<h4 id="&#x4EE3;&#x7406;&#x6A21;&#x578B;&#x7684;&#x7BA1;&#x7406;&#x5668;">&#x4EE3;&#x7406;&#x6A21;&#x578B;&#x7684;&#x7BA1;&#x7406;&#x5668;</h4>
+<p>&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x5728;&#x4EE3;&#x7406; &#x6A21;&#x578B;&#x4E2D;&#x5B9A;&#x4E49;&#x4EFB;&#x4F55; &#x7BA1;&#x7406;&#x5668; &#xFF0C;&#x4EE3;&#x7406;&#x6A21;&#x578B;&#x5C31;&#x4F1A;&#x4ECE;&#x7236;&#x7C7B;&#x4E2D;&#x7EE7;&#x627F; &#x7BA1;&#x7406;&#x5668;&#xA0;&#x3002; &#x5982;&#x679C;&#x4F60;&#x5728;&#x4EE3;&#x7406; &#x6A21;&#x578B;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A; &#x7BA1;&#x7406;&#x5668; &#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x53D8;&#x6210;&#x9ED8;&#x8BA4;&#x7684;&#x7BA1;&#x7406;&#x5668;&#xA0;&#xFF0C;&#x4E0D;&#x8FC7;&#x5B9A;&#x4E49;&#x5728;&#x7236;&#x7C7B;&#x4E2D;&#x7684;&#x7BA1;&#x7406;&#x5668;&#x4ECD;&#x7136;&#x6709;&#x6548;&#x3002;</p>
+<p>&#x7EE7;&#x7EED;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5F53;&#x4F60;&#x67E5;&#x8BE2;<code>Person</code>&#x6A21;&#x578B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x9ED8;&#x8BA4; &#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class NewManager(models.Manager):
+    # ...
+    pass
+
+class MyPerson(Person):
+    objects = NewManager()
+
+    class Meta:
+        proxy = True
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x5411;&#x4EE3;&#x7406;&#x4E2D;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x66FF;&#x6362;&#x73B0;&#x6709;&#x7684;&#x9ED8;&#x8BA4;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="managers.html#custom-managers-and-inheritance"><em>&#x81EA;&#x5B9A;&#x4E49;&#x7BA1;&#x7406;&#x5668;</em></a>&#x7BA1;&#x7406;&#x5668;&#x6587;&#x6863;&#x4E2D;&#x63CF;&#x8FF0;&#x7684;&#x6280;&#x5DE7;&#xFF1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x65B0;&#x7684;&#x7BA1;&#x7406;&#x5668;&#x7684;&#x57FA;&#x7C7B;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x4E3B;&#x57FA;&#x7C7B;&#x4E4B;&#x540E;&#x7EE7;&#x627F;&#x5B83;&#xFF1A;</p>
+<pre><code># Create an abstract class for the new manager.
+class ExtraManagers(models.Model):
+    secondary = NewManager()
+
+    class Meta:
+        abstract = True
+
+class MyPerson(Person, ExtraManagers):
+    class Meta:
+        proxy = True
+</code></pre><p>&#x4F60;&#x53EF;&#x80FD;&#x4E0D;&#x9700;&#x8981;&#x7ECF;&#x5E38;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x4F46;&#x8FD9;&#x6837;&#x505A;&#x662F;&#x53EF;&#x884C;&#x7684;&#x3002;</p>
+<h4 id="&#x4EE3;&#x7406;-&#x6A21;&#x578B;&#x4E0E;&#x975E;&#x6258;&#x7BA1;-&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;">&#x4EE3;&#x7406; &#x6A21;&#x578B;&#x4E0E;&#x975E;&#x6258;&#x7BA1; &#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;</h4>
+<p>&#x4EE3;&#x7406; model &#x7EE7;&#x627F;&#x770B;&#x4E0A;&#x53BB;&#x548C;&#x4F7F;&#x7528;<code>Meta</code>&#x7C7B;&#x4E2D;&#x7684; <a href="../../ref/models/options.html#django.db.models.Options.managed" title="django.db.models.Options.managed"><code>managed</code></a>&#xA0;&#x5C5E;&#x6027;&#x7684;&#x975E;&#x6258;&#x7BA1; model &#x975E;&#x5E38;&#x76F8;&#x4F3C;&#x3002;&#x4F46;&#x4E24;&#x8005;&#x5E76;&#x4E0D;&#x76F8;&#x540C;&#xFF0C;&#x4F60;&#x5E94;&#x5F53;&#x8003;&#x8651;&#x9009;&#x7528;&#x54EA;&#x79CD;&#x65B9;&#x6848;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x5728;<code>Meta.managed=False</code>&#x7684; model &#x4E2D;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;(&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x662F;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x771F;&#x7684;&#x60F3;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x7A7A; model )&#x3002;&#x5728;&#x521B;&#x5EFA;&#x975E;&#x6258;&#x7BA1; model &#x65F6;&#x8981;&#x8C28;&#x614E;&#x8BBE;&#x7F6E;<a href="../../ref/models/options.html#django.db.models.Options.db_table" title="django.db.models.Options.db_table"><code>Meta.db_table</code></a> &#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x521B;&#x5EFA;&#x7684;&#x975E;&#x6258;&#x7BA1; model &#x6620;&#x5C04;&#x67D0;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;&#x7684; model &#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x4FDD;&#x8BC1;&#x8FD9;&#x4E24;&#x4E2A; model &#x540C;&#x6B65;&#x5E76;&#x5BF9;&#x7A0B;&#x5E8F;&#x8FDB;&#x884C;&#x6539;&#x52A8;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x7E41;&#x5197;&#x800C;&#x8106;&#x5F31;&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x662F;&#x4E24;&#x8005;&#x5BF9; &#x7BA1;&#x7406;&#x5668;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x4E0D;&#x540C;&#x3002; &#x4EE3;&#x7406; model &#x8981;&#x4E0E;&#x5B83;&#x6240;&#x4EE3;&#x7406;&#x7684; model &#x884C;&#x4E3A;&#x76F8;&#x4F3C;&#xFF0C;&#x6240;&#x4EE5;&#x4EE3;&#x7406; model &#x8981;&#x7EE7;&#x627F;&#x7236; model &#x7684; managers &#xFF0C;&#x5305;&#x62EC;&#x5B83;&#x7684;&#x9ED8;&#x8BA4; manager &#x3002; &#x4F46;&#x5728;&#x666E;&#x901A;&#x7684;&#x591A;&#x8868;&#x7EE7;&#x627F;&#x4E2D;&#xFF0C;&#x5B50;&#x7C7B;&#x4E0D;&#x80FD;&#x7EE7;&#x627F;&#x7236;&#x7C7B;&#x7684; manager &#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5728;&#x5904;&#x7406;&#x975E;&#x57FA;&#x7C7B;&#x5B57;&#x6BB5;&#x65F6;&#xFF0C;&#x7236;&#x7C7B;&#x7684; manager &#x672A;&#x5FC5;&#x9002;&#x7528;&#x3002; &#x540E;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x5728; <a href="managers.html#custom-managers-and-inheritance"><em>&#x7BA1;&#x7406;&#x5668;&#x6587;&#x6863;</em></a>&#x6709;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5B9E;&#x73B0;&#x4E86;&#x8FD9;&#x4E24;&#x79CD;&#x7279;&#x6027;&#x4E4B;&#x540E;&#xFF0C;&#x66FE;&#x5C1D;&#x8BD5;&#x628A;&#x4E24;&#x8005;&#x7ED3;&#x5408;&#x5230;&#x4E00;&#x8D77;&#x3002; &#x7ED3;&#x679C;&#x8BC1;&#x660E;&#xFF0C;&#x5B8F;&#x89C2;&#x7684;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x548C;&#x5FAE;&#x89C2;&#x7684; &#x7BA1;&#x7406;&#x5668;&#x63C9;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x4E0D;&#x4EC5;&#x5BFC;&#x81F4; API &#x590D;&#x6742;&#x96BE;&#x7528;&#xFF0C;&#x800C;&#x4E14;&#x8FD8;&#x96BE;&#x4EE5;&#x7406;&#x89E3;&#x3002; &#x7531;&#x4E8E;&#x4EFB;&#x4F55;&#x573A;&#x5408;&#x4E0B;&#x90FD;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x8FD9;&#x4E24;&#x4E2A;&#x9009;&#x9879;&#xFF0C;&#x6240;&#x4EE5;&#x76EE;&#x524D;&#x4E8C;&#x8005;&#x4ECD;&#x662F;&#x5404;&#x81EA;&#x72EC;&#x7ACB;&#x4F7F;&#x7528;&#x7684;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x4E00;&#x822C;&#x89C4;&#x5219;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x5982;&#x679C;&#x4F60;&#x8981;&#x501F;&#x9274;&#x4E00;&#x4E2A;&#x5DF2;&#x6709;&#x7684; &#x6A21;&#x578B;&#x6216;&#x6570;&#x636E;&#x8868;&#xFF0C;&#x4E14;&#x4E0D;&#x60F3;&#x6D89;&#x53CA;&#x6240;&#x6709;&#x7684;&#x539F;&#x59CB;&#x6570;&#x636E;&#x8868;&#x7684;&#x5217;&#xFF0C;&#x90A3;&#x5C31;&#x4EE4; <code>Meta.managed=False</code>&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x89C6;&#x56FE;&#x521B;&#x5EFA; &#x6A21;&#x578B;&#x6216;&#x662F;&#x6570;&#x636E;&#x8868;&#x4E0D;&#x9700;&#x8981;&#x7531; Django &#x63A7;&#x5236;&#x65F6;&#xFF0C;&#x5C31;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5BF9; model &#x505A; Python &#x5C42;&#x7EA7;&#x7684;&#x6539;&#x52A8;&#xFF0C;&#x53C8;&#x60F3;&#x4FDD;&#x7559;&#x5B57;&#x6BB5;&#x4E0D;&#x53D8;&#xFF0C;&#x90A3;&#x5C31;&#x4EE4; <code>Meta.proxy=True</code>&#x3002;&#x56E0;&#x6B64;&#x5728;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x65F6;&#xFF0C;&#x4EE3;&#x7406; model &#x76F8;&#x5F53;&#x4E8E;&#x5B8C;&#x5168;&#x590D;&#x5236;&#x4E86;&#x539F;&#x59CB; &#x6A21;&#x578B;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x3002;</li>
+</ol>
+<h3 id="&#x591A;&#x91CD;&#x7EE7;&#x627F;">&#x591A;&#x91CD;&#x7EE7;&#x627F;</h3>
+<p>&#x5C31;&#x50CF;Python&#x7684;&#x5B50;&#x7C7B;&#x90A3;&#x6837;&#xFF0C;DJango&#x7684;&#x6A21;&#x578B;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x81EA;&#x591A;&#x4E2A;&#x7236;&#x7C7B;&#x6A21;&#x578B;&#x3002;&#x5207;&#x8BB0;&#x4E00;&#x822C;&#x7684;Python&#x540D;&#x79F0;&#x89E3;&#x6790;&#x89C4;&#x5219;&#x4E5F;&#x4F1A;&#x9002;&#x7528;&#x3002;&#x51FA;&#x73B0;&#x7279;&#x5B9A;&#x540D;&#x79F0;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;(&#x6BD4;&#x5982;<a href="#meta-options"><em>Meta</em></a>)&#x662F;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x90A3;&#x4E2A;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5982;&#x679C;&#x591A;&#x4E2A;&#x7236;&#x7C7B;&#x542B;&#x6709;&#xA0;<a href="#meta-options"><em>Meta</em></a>&#x7C7B;&#xFF0C;&#x53EA;&#x6709;&#x7B2C;&#x4E00;&#x4E2A;&#x4F1A;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x4F1A;&#x5FFD;&#x7565;&#x6389;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x4F60;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x7EE7;&#x627F;&#x591A;&#x4E2A;&#x7236;&#x7C7B;&#x3002;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x4E3B;&#x8981;&#x5BF9;&#x201C;mix-in&#x201D;&#x7C7B;&#x6709;&#x7528;&#xFF1A;&#x5411;&#x6BCF;&#x4E2A;&#x7EE7;&#x627F;mix-in&#x7684;&#x7C7B;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x3001;&#x989D;&#x5916;&#x7684;&#x5B57;&#x6BB5;&#x6216;&#x8005;&#x65B9;&#x6CD5;&#x3002;&#x4F60;&#x5E94;&#x8BE5;&#x5C1D;&#x8BD5;&#x5C06;&#x4F60;&#x7684;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x4FDD;&#x6301;&#x5F97;&#x5C3D;&#x53EF;&#x80FD;&#x7B80;&#x6D01;&#x548C;&#x76F4;&#x63A5;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x5C31;&#x4E0D;&#x5FC5;&#x8D39;&#x5F88;&#x5927;&#x529B;&#x6C14;&#x6765;&#x5F04;&#x6E05;&#x695A;&#x67D0;&#x6BB5;&#x7279;&#x5B9A;&#x7684;&#x4FE1;&#x606F;&#x6765;&#x81EA;&#x54EA;&#x91CC;&#x3002;</p>
+<p>Changed in Django 1.7.</p>
+<p>Django 1.7&#x4E4B;&#x524D;&#xFF0C;&#x7EE7;&#x627F;&#x591A;&#x4E2A;&#x542B;&#x6709;<code>id</code>&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#x7684;&#x6A21;&#x578B;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x4E22;&#x5931;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8003;&#x8651;&#x8FD9;&#x4E9B;&#x6A21;&#x578B;&#xFF08;&#x7531;&#x4E8E;<code>id</code>&#x5B57;&#x6BB5;&#x7684;&#x51B2;&#x7A81;&#xFF0C;&#x5B83;&#x4EEC;&#x4E0D;&#x518D;&#x6709;&#x6548;&#xFF09;&#xFF1A;</p>
+<pre><code>class Article(models.Model):
+    headline = models.CharField(max_length=50)
+    body = models.TextField()
+
+class Book(models.Model):
+    title = models.CharField(max_length=50)
+
+class BookReview(Book, Article):
+    pass
+</code></pre><p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x5B50;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8986;&#x5199;&#x4E4B;&#x524D;&#x521B;&#x5EFA;&#x7684;&#x7236;&#x7C7B;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x503C;&#x3002;</p>
+<pre><code>&gt;&gt;&gt; article = Article.objects.create(headline=&apos;Some piece of news.&apos;)
+&gt;&gt;&gt; review = BookReview.objects.create(
+...     headline=&apos;Review of Little Red Riding Hood.&apos;,
+...     title=&apos;Little Red Riding Hood&apos;)
+&gt;&gt;&gt;
+&gt;&gt;&gt; assert Article.objects.get(pk=article.pk).headline == article.headline
+Traceback (most recent call last):
+  File &quot;&lt;console&gt;&quot;, line 1, in &lt;module&gt;
+AssertionError
+&gt;&gt;&gt; # the &quot;Some piece of news.&quot; headline has been overwritten.
+&gt;&gt;&gt; Article.objects.get(pk=article.pk).headline
+&apos;Review of Little Red Riding Hood.&apos;
+</code></pre><p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x6A21;&#x578B;&#x57FA;&#x7C7B;&#x4E2D;&#x4F7F;&#x7528;&#x663E;&#x5F0F;&#x7684;<a href="../../ref/models/fields.html#django.db.models.AutoField" title="django.db.models.AutoField"><code>AutoField</code></a>&#x6765;&#x5408;&#x7406;&#x4F7F;&#x7528;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF1A;</p>
+<pre><code>class Article(models.Model):
+    article_id = models.AutoField(primary_key=True)
+    ...
+
+class Book(models.Model):
+    book_id = models.AutoField(primary_key=True)
+    ...
+
+class BookReview(Book, Article):
+    pass
+</code></pre><p>&#x6216;&#x8005;&#x662F;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x7684;&#x7956;&#x5148;&#x6765;&#x6301;&#x6709;<a href="../../ref/models/fields.html#django.db.models.AutoField" title="django.db.models.AutoField"><code>AutoField</code></a>&#xFF1A;</p>
+<pre><code>class Piece(models.Model):
+    pass
+
+class Article(Piece):
+    ...
+
+class Book(Piece):
+    ...
+
+class BookReview(Book, Article):
+    pass
+</code></pre><h3 id="field-name-hiding-is-not-permitted">Field name &#x201C;hiding&#x201D; is not permitted</h3>
+<p>&#x666E;&#x901A;&#x7684; Python &#x7C7B;&#x7EE7;&#x627F;&#x5141;&#x8BB8;&#x5B50;&#x7C7B;&#x8986;&#x76D6;&#x7236;&#x7C7B;&#x7684;&#x4EFB;&#x4F55;&#x5C5E;&#x6027;&#x3002; &#x4F46;&#x5728; Django &#x4E2D;&#xFF0C;&#x91CD;&#x5199; <a href="../../ref/models/fields.html#django.db.models.Field" title="django.db.models.Field"><code>Field</code></a>&#x5B9E;&#x4F8B;&#x662F;&#x4E0D;&#x5141;&#x8BB8;&#x7684;(&#x81F3;&#x5C11;&#x73B0;&#x5728;&#x8FD8;&#x4E0D;&#x884C;)&#x3002;&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x4E2D;&#x6709;&#x4E00;&#x4E2A; <code>author</code>&#x5B57;&#x6BB5;&#xFF0C;&#x4F60;&#x5C31;&#x4E0D;&#x80FD;&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x521B;&#x5EFA;&#x4EFB;&#x4F55;&#x540D;&#x4E3A; <code>author</code>&#x7684;&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#x91CD;&#x5199;&#x7236;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#x4F1A;&#x5BFC;&#x81F4;&#x5F88;&#x591A;&#x9EBB;&#x70E6;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x521D;&#x59CB;&#x5316;&#x5B9E;&#x4F8B;(&#x6307;&#x5B9A;&#x5728; <code>Model.__init__</code> &#x4E2D;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x5B57;&#x6BB5;) &#x548C;&#x5E8F;&#x5217;&#x5316;&#x3002;&#x800C;&#x666E;&#x901A;&#x7684; Python &#x7C7B;&#x7EE7;&#x627F;&#x673A;&#x5236;&#x5E76;&#x4E0D;&#x80FD;&#x5904;&#x7406;&#x597D;&#x8FD9;&#x4E9B;&#x7279;&#x6027;&#x3002;&#x6240;&#x4EE5; Django &#x7684;&#x7EE7;&#x627F;&#x673A;&#x5236;&#x88AB;&#x8BBE;&#x8BA1;&#x6210;&#x4E0E; Python &#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF0C;&#x8FD9;&#x6837;&#x505A;&#x5E76;&#x4E0D;&#x662F;&#x968F;&#x610F;&#x800C;&#x4E3A;&#x7684;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x9650;&#x5236;&#x4EC5;&#x4EC5;&#x9488;&#x5BF9;&#x505A;&#x4E3A;&#x5C5E;&#x6027;&#x4F7F;&#x7528;&#x7684; <a href="../../ref/models/fields.html#django.db.models.Field" title="django.db.models.Field"><code>Field</code></a>&#x5B9E;&#x4F8B;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x9488;&#x5BF9; Python &#x5C5E;&#x6027;&#xFF0C;Python &#x5C5E;&#x6027;&#x4ECD;&#x662F;&#x53EF;&#x4EE5;&#x88AB;&#x91CD;&#x5199;&#x7684;&#x3002; &#x5728; Python &#x770B;&#x6765;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x9650;&#x5236;&#x4EC5;&#x4EC5;&#x9488;&#x5BF9;&#x5B57;&#x6BB5;&#x5B9E;&#x4F8B;&#x7684;&#x540D;&#x79F0;&#xFF1A;&#x5982;&#x679C;&#x4F60;&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x4E86;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5217;&#x540D;&#x79F0;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x4E2D;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x5B50;&#x7C7B;&#x548C;&#x67D0;&#x4E2A;&#x7956;&#x5148;&#x7C7B;&#x5F53;&#x4E2D;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x5217;&#x540D;&#x79F0;&#x3002;(&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x6570;&#x636E;&#x8868;&#x7684;&#x5B57;&#x6BB5;)&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x5728;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x7956;&#x5148;&#x7C7B;&#x4E2D;&#x91CD;&#x5199;&#x4E86;&#x67D0;&#x4E2A; model &#x5B57;&#x6BB5;&#xFF0C;Django &#x90FD;&#x4F1A;&#x629B;&#x51FA; <a href="../../ref/exceptions.html#django.core.exceptions.FieldError" title="django.core.exceptions.FieldError"><code>FieldError</code></a>&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x53E6;&#x89C1;</p>
+<p><a href="../../ref/models/index.html"><em>The Models Reference</em></a></p>
+<p>Covers all the model related APIs including model fields, related
+objects, and <code>QuerySet</code>.</p>
+<blockquote>
+<p>&#x8BD1;&#x8005;&#xFF1A;<a href="http://python.usyiyi.cn/django/index.html" target="_blank">Django &#x6587;&#x6863;&#x534F;&#x4F5C;&#x7FFB;&#x8BD1;&#x5C0F;&#x7EC4;</a>&#xFF0C;&#x539F;&#x6587;&#xFF1A;<a href="https://docs.djangoproject.com/en/1.8/topics/db/models/" target="_blank">Model syntax</a>&#x3002;</p>
+<p>&#x672C;&#x6587;&#x4EE5; <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank">CC BY-NC-SA 3.0</a> &#x534F;&#x8BAE;&#x53D1;&#x5E03;&#xFF0C;&#x8F6C;&#x8F7D;&#x8BF7;&#x4FDD;&#x7559;&#x4F5C;&#x8005;&#x7F72;&#x540D;&#x548C;&#x6587;&#x7AE0;&#x51FA;&#x5904;&#x3002;</p>
+<p><a href="http://python.usyiyi.cn/django/index.html" target="_blank">Django &#x6587;&#x6863;&#x534F;&#x4F5C;&#x7FFB;&#x8BD1;&#x5C0F;&#x7EC4;</a>&#x4EBA;&#x624B;&#x7D27;&#x7F3A;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x670B;&#x53CB;&#x53EF;&#x4EE5;&#x52A0;&#x5165;&#x6211;&#x4EEC;&#xFF0C;&#x5B8C;&#x5168;&#x516C;&#x76CA;&#x6027;&#x8D28;&#x3002;&#x4EA4;&#x6D41;&#x7FA4;&#xFF1A;467338606&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2_1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 模型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"模型语法","level":"1.3.1.1","depth":3,"next":{"title":"字段类型","level":"1.3.1.2","depth":3,"ref":"","articles":[]},"previous":{"title":"模型","level":"1.3.1","depth":2,"path":"2_1.md","ref":"2_1.md","articles":[{"title":"模型语法","level":"1.3.1.1","depth":3,"path":"2_1_1_Model syntax.md","ref":"2_1_1_Model syntax.md","articles":[]},{"title":"字段类型","level":"1.3.1.2","depth":3,"ref":"","articles":[]},{"title":"元选项","level":"1.3.1.3","depth":3,"path":"2_1_3_Meta options.md","ref":"2_1_3_Meta options.md","articles":[]},{"title":"模型类","level":"1.3.1.4","depth":3,"path":"2_1_4_Model class.md","ref":"2_1_4_Model class.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"django-chinese-docs-1.8","links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"django 学习入门教程"},"file":{"path":"2_1_1_Model syntax.md","mtime":"2016-06-20T01:36:35.218Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:31:29.550Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

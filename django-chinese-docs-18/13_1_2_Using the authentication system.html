@@ -1,0 +1,3280 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>使用认证系统 · django-chinese-docs-1.8</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="13_1_3_Password management.html" />
+    
+    
+    <link rel="prev" href="13_1_1_Overview.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1_First steps.html">
+            
+                <a href="1_First steps.html">
+            
+                    
+                    新手入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_1.html">
+            
+                <a href="1_1.html">
+            
+                    
+                    从零开始
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1_1_1_Django at a glance.html">
+            
+                <a href="1_1_1_Django at a glance.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="1_1_2_Quick install guide.html">
+            
+                <a href="1_1_2_Quick install guide.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1_2.html">
+            
+                <a href="1_2.html">
+            
+                    
+                    教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="1_2_1_Part 1 Models.html">
+            
+                <a href="1_2_1_Part 1 Models.html">
+            
+                    
+                    第1部分：模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="1_2_2_Part 2 The admin site.html">
+            
+                <a href="1_2_2_Part 2 The admin site.html">
+            
+                    
+                    第2部分：管理站点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="1_2_3_Part 3 Views and templates.html">
+            
+                <a href="1_2_3_Part 3 Views and templates.html">
+            
+                    
+                    第3部分：视图和模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="1_2_4_Part 4 Forms and generic views.html">
+            
+                <a href="1_2_4_Part 4 Forms and generic views.html">
+            
+                    
+                    第4部分：表单和通用视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="1_2_5_Part 5 Testing.html">
+            
+                <a href="1_2_5_Part 5 Testing.html">
+            
+                    
+                    第5部分：测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="1_2_6_Part 6 Static files.html">
+            
+                <a href="1_2_6_Part 6 Static files.html">
+            
+                    
+                    第6部分：静态文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1_3.html">
+            
+                <a href="1_3.html">
+            
+                    
+                    高级教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="1_3_1_How to write reusable apps.html">
+            
+                <a href="1_3_1_How to write reusable apps.html">
+            
+                    
+                    如何编写可重用的应用 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="1_3_2_Writing your first patch for Django_.html">
+            
+                <a href="1_3_2_Writing your first patch for Django_.html">
+            
+                    
+                    为Django编写首个补丁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2_The model layer.html">
+            
+                <a href="2_The model layer.html">
+            
+                    
+                    模型层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2_1.html">
+            
+                <a href="2_1.html">
+            
+                    
+                    模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="2_1_1_Model syntax.html">
+            
+                <a href="2_1_1_Model syntax.html">
+            
+                    
+                    模型语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" >
+            
+                <span>
+            
+                    
+                    字段类型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="2_1_3_Meta options.html">
+            
+                <a href="2_1_3_Meta options.html">
+            
+                    
+                    元选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="2_1_4_Model class.html">
+            
+                <a href="2_1_4_Model class.html">
+            
+                    
+                    模型类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2_2.html">
+            
+                <a href="2_2.html">
+            
+                    
+                    查询集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="2_2_1_Making queries.html">
+            
+                <a href="2_2_1_Making queries.html">
+            
+                    
+                    执行查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" >
+            
+                <span>
+            
+                    
+                    查询集方法参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="2_2_3_Lookup expressions.html">
+            
+                <a href="2_2_3_Lookup expressions.html">
+            
+                    
+                    查找表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2_3.html">
+            
+                <a href="2_3.html">
+            
+                    
+                    模型的实例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="2_3_1_Instance methods.html">
+            
+                <a href="2_3_1_Instance methods.html">
+            
+                    
+                    实例方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="2_3_2_Accessing related objects.html">
+            
+                <a href="2_3_2_Accessing related objects.html">
+            
+                    
+                    访问关联对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="2_4.html">
+            
+                <a href="2_4.html">
+            
+                    
+                    迁移
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" >
+            
+                <span>
+            
+                    
+                    迁移简介
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" >
+            
+                <span>
+            
+                    
+                    操作参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="2_4_3_SchemaEditor.html">
+            
+                <a href="2_4_3_SchemaEditor.html">
+            
+                    
+                    模式编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="2_4_4_Writing migrations.html">
+            
+                <a href="2_4_4_Writing migrations.html">
+            
+                    
+                    编写迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="2_5.html">
+            
+                <a href="2_5.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="2_5_1_Manager.html">
+            
+                <a href="2_5_1_Manager.html">
+            
+                    
+                    管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="2_5_2_Performing raw SQL queries.html">
+            
+                <a href="2_5_2_Performing raw SQL queries.html">
+            
+                    
+                    原始的SQL查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" >
+            
+                <span>
+            
+                    
+                    事务
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="2_5_4_Aggregation.html">
+            
+                <a href="2_5_4_Aggregation.html">
+            
+                    
+                    聚合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" >
+            
+                <span>
+            
+                    
+                    自定义字段
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="2_5_6_Multiple databases.html">
+            
+                <a href="2_5_6_Multiple databases.html">
+            
+                    
+                    多数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="2_5_7_Custom lookups.html">
+            
+                <a href="2_5_7_Custom lookups.html">
+            
+                    
+                    自定义查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" >
+            
+                <span>
+            
+                    
+                    查询表达式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="2_5_9_Conditional Expressions.html">
+            
+                <a href="2_5_9_Conditional Expressions.html">
+            
+                    
+                    条件表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.10" data-path="2_5_10_Database Functions.html">
+            
+                <a href="2_5_10_Database Functions.html">
+            
+                    
+                    数据库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="2_6.html">
+            
+                <a href="2_6.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" >
+            
+                <span>
+            
+                    
+                    支持的数据库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="2_6_2_Legacy databases.html">
+            
+                <a href="2_6_2_Legacy databases.html">
+            
+                    
+                    遗留的数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="2_6_3_Providing initial data.html">
+            
+                <a href="2_6_3_Providing initial data.html">
+            
+                    
+                    提供初始数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="2_6_4_Optimize database access.html">
+            
+                <a href="2_6_4_Optimize database access.html">
+            
+                    
+                    优化数据库访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" >
+            
+                <span>
+            
+                    
+                    PostgreSQL特色功能
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3_The view layer.html">
+            
+                <a href="3_The view layer.html">
+            
+                    
+                    视图层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3_1.html">
+            
+                <a href="3_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="3_1_1_URLconfs.html">
+            
+                <a href="3_1_1_URLconfs.html">
+            
+                    
+                    URL配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="3_1_2_View functions.html">
+            
+                <a href="3_1_2_View functions.html">
+            
+                    
+                    视图函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="3_1_3_Shortcuts.html">
+            
+                <a href="3_1_3_Shortcuts.html">
+            
+                    
+                    快捷函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="3_1_4_Decorators.html">
+            
+                <a href="3_1_4_Decorators.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3_2.html">
+            
+                <a href="3_2.html">
+            
+                    
+                    参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="3_2_1_Built-in Views.html">
+            
+                <a href="3_2_1_Built-in Views.html">
+            
+                    
+                    内建的视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" >
+            
+                <span>
+            
+                    
+                    请求/响应 对象
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="3_2_3_TemplateResponse objects.html">
+            
+                <a href="3_2_3_TemplateResponse objects.html">
+            
+                    
+                    TemplateResponse 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3_3.html">
+            
+                <a href="3_3.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="3_3_1_Overview.html">
+            
+                <a href="3_3_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="3_3_2_File objects.html">
+            
+                <a href="3_3_2_File objects.html">
+            
+                    
+                    File 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="3_3_3_Storage API.html">
+            
+                <a href="3_3_3_Storage API.html">
+            
+                    
+                    储存API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="3_3_4_Managing files.html">
+            
+                <a href="3_3_4_Managing files.html">
+            
+                    
+                    管理文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="3_3_5_Custom storage.html">
+            
+                <a href="3_3_5_Custom storage.html">
+            
+                    
+                    自定义存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3_4.html">
+            
+                <a href="3_4.html">
+            
+                    
+                    基于类的视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="3_4_1_Overview.html">
+            
+                <a href="3_4_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="3_4_2_Built-in display views.html">
+            
+                <a href="3_4_2_Built-in display views.html">
+            
+                    
+                    内建显示视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="3_4_3_Built-in editing views.html">
+            
+                <a href="3_4_3_Built-in editing views.html">
+            
+                    
+                    内建编辑视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" >
+            
+                <span>
+            
+                    
+                    使用Mixin
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="3_4_5_API reference.html">
+            
+                <a href="3_4_5_API reference.html">
+            
+                    
+                    API参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.6" data-path="3_4_6_Flattened index.html">
+            
+                <a href="3_4_6_Flattened index.html">
+            
+                    
+                    分类索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3_5.html">
+            
+                <a href="3_5.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="3_5_1_Generating CSV.html">
+            
+                <a href="3_5_1_Generating CSV.html">
+            
+                    
+                    生成 CSV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="3_5_2_Generating PDF.html">
+            
+                <a href="3_5_2_Generating PDF.html">
+            
+                    
+                    生成 PDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3_6.html">
+            
+                <a href="3_6.html">
+            
+                    
+                    中间件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="3_6_1_Overview.html">
+            
+                <a href="3_6_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="3_6_2_Built-in middleware classes.html">
+            
+                <a href="3_6_2_Built-in middleware classes.html">
+            
+                    
+                    内建的中间件类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4_The template layer.html">
+            
+                <a href="4_The template layer.html">
+            
+                    
+                    模板层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4_1.html">
+            
+                <a href="4_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4_2.html">
+            
+                <a href="4_2.html">
+            
+                    
+                    面向设计师
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="4_2_1_Language overview.html">
+            
+                <a href="4_2_1_Language overview.html">
+            
+                    
+                    语言概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" >
+            
+                <span>
+            
+                    
+                    内建标签和过滤器
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" >
+            
+                <span>
+            
+                    
+                    网页设计助手(已废弃)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="4_2_4_Humanization.html">
+            
+                <a href="4_2_4_Humanization.html">
+            
+                    
+                    人性化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4_3.html">
+            
+                <a href="4_3.html">
+            
+                    
+                    面向程序员
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" >
+            
+                <span>
+            
+                    
+                    模板API
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" >
+            
+                <span>
+            
+                    
+                    自定义标签和过滤器
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5_Forms.html">
+            
+                <a href="5_Forms.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5_1.html">
+            
+                <a href="5_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="5_1_1_Overview.html">
+            
+                <a href="5_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="5_1_2_Form API.html">
+            
+                <a href="5_1_2_Form API.html">
+            
+                    
+                    表单API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" >
+            
+                <span>
+            
+                    
+                    内建的字段
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="5_1_4_Built-in widgets.html">
+            
+                <a href="5_1_4_Built-in widgets.html">
+            
+                    
+                    内建的Widget
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5_2.html">
+            
+                <a href="5_2.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" >
+            
+                <span>
+            
+                    
+                    模型表单
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="5_2_2_Integrating media.html">
+            
+                <a href="5_2_2_Integrating media.html">
+            
+                    
+                    整合媒体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" >
+            
+                <span>
+            
+                    
+                    表单集
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" >
+            
+                <span>
+            
+                    
+                    自定义验证
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6_The development process.html">
+            
+                <a href="6_The development process.html">
+            
+                    
+                    开发过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6_1.html">
+            
+                <a href="6_1.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="6_1_1_Overview.html">
+            
+                <a href="6_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" >
+            
+                <span>
+            
+                    
+                    完整列表设置
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6_2.html">
+            
+                <a href="6_2.html">
+            
+                    
+                    应用程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6_3.html">
+            
+                <a href="6_3.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="6_3_Overview.html">
+            
+                <a href="6_3_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="6_4.html">
+            
+                <a href="6_4.html">
+            
+                    
+                    django-admin 和 manage.py
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="6_4_2_Adding custom commands.html">
+            
+                <a href="6_4_2_Adding custom commands.html">
+            
+                    
+                    添加自定义的命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="6_5.html">
+            
+                <a href="6_5.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="6_5_1_Introduction.html">
+            
+                <a href="6_5_1_Introduction.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" >
+            
+                <span>
+            
+                    
+                    编写并运行测试
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" >
+            
+                <span>
+            
+                    
+                    包含的测试工具
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.4" >
+            
+                <span>
+            
+                    
+                    高级主题
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="6_6.html">
+            
+                <a href="6_6.html">
+            
+                    
+                    部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.6.1" data-path="6_6_1_Overview.html">
+            
+                <a href="6_6_1_Overview.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2" data-path="6_6_2_WSGI servers.html">
+            
+                <a href="6_6_2_WSGI servers.html">
+            
+                    
+                    WSGI服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3" >
+            
+                <span>
+            
+                    
+                    FastCGI/SCGI/AJP (已废弃)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.4" data-path="6_6_4_Deploying static files.html">
+            
+                <a href="6_6_4_Deploying static files.html">
+            
+                    
+                    部署静态文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.5" data-path="6_6_5_Tracking code errors by email.html">
+            
+                <a href="6_6_5_Tracking code errors by email.html">
+            
+                    
+                    通过email追踪代码错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7_Admin.html">
+            
+                <a href="7_Admin.html">
+            
+                    
+                    Admin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" >
+            
+                <span>
+            
+                    
+                    管理站点
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7_2_Admin actions.html">
+            
+                <a href="7_2_Admin actions.html">
+            
+                    
+                    管理操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7_3_Admin documentation generator.html">
+            
+                <a href="7_3_Admin documentation generator.html">
+            
+                    
+                    管理文档生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8_Security.html">
+            
+                <a href="8_Security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8_1_Security overview_.html">
+            
+                <a href="8_1_Security overview_.html">
+            
+                    
+                    安全概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8_2_Disclosed security issues in Django.html">
+            
+                <a href="8_2_Disclosed security issues in Django.html">
+            
+                    
+                    说明Django中的安全问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="8_3_Clickjacking protection.html">
+            
+                <a href="8_3_Clickjacking protection.html">
+            
+                    
+                    点击劫持保护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" >
+            
+                <span>
+            
+                    
+                    伪造跨站请求保护
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="8_5_Cryptographic signing.html">
+            
+                <a href="8_5_Cryptographic signing.html">
+            
+                    
+                    加密签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9_Internationalization and localization.html">
+            
+                <a href="9_Internationalization and localization.html">
+            
+                    
+                    国际化和本地化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9_1_1_Overview.html">
+            
+                <a href="9_1_1_Overview.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" >
+            
+                <span>
+            
+                    
+                    国际化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" >
+            
+                <span>
+            
+                    
+                    本地化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="9_1_4_Localized Web UI formatting and form input.html">
+            
+                <a href="9_1_4_Localized Web UI formatting and form input.html">
+            
+                    
+                    本地化WEB UI格式化输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="9_2_“Local flavor”.html">
+            
+                <a href="9_2_“Local flavor”.html">
+            
+                    
+                    “本地特色”
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" >
+            
+                <span>
+            
+                    
+                    时区
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="13_Common Web application tools.html">
+            
+                <a href="13_Common Web application tools.html">
+            
+                    
+                    常见的网站应用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="13_1.html">
+            
+                <a href="13_1.html">
+            
+                    
+                    认证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="13_1_1_Overview.html">
+            
+                <a href="13_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.1.2" data-path="13_1_2_Using the authentication system.html">
+            
+                <a href="13_1_2_Using the authentication system.html">
+            
+                    
+                    使用认证系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.3" data-path="13_1_3_Password management.html">
+            
+                <a href="13_1_3_Password management.html">
+            
+                    
+                    密码管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.4" >
+            
+                <span>
+            
+                    
+                    自定义认证
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.5" >
+            
+                <span>
+            
+                    
+                    API参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" >
+            
+                <span>
+            
+                    
+                    缓存
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="13_3_Logging.html">
+            
+                <a href="13_3_Logging.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" >
+            
+                <span>
+            
+                    
+                    发送邮件
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" >
+            
+                <span>
+            
+                    
+                    组织 feeds (RSS/Atom)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="13_6_Pagination.html">
+            
+                <a href="13_6_Pagination.html">
+            
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" >
+            
+                <span>
+            
+                    
+                    消息框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" >
+            
+                <span>
+            
+                    
+                    序列化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="13_9_1_Sessions.html">
+            
+                <a href="13_9_1_Sessions.html">
+            
+                    
+                    会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" >
+            
+                <span>
+            
+                    
+                    网站地图
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" >
+            
+                <span>
+            
+                    
+                    静态文件处理
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.12" data-path="13_12_Data validation.html">
+            
+                <a href="13_12_Data validation.html">
+            
+                    
+                    数据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="14_Other core functionalities.html">
+            
+                <a href="14_Other core functionalities.html">
+            
+                    
+                    其它核心功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="14_1_Conditional content processing.html">
+            
+                <a href="14_1_Conditional content processing.html">
+            
+                    
+                    按需内容处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" >
+            
+                <span>
+            
+                    
+                    内容类型和泛型关系
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" >
+            
+                <span>
+            
+                    
+                    数据浏览
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="14_4_1_Redirects.html">
+            
+                <a href="14_4_1_Redirects.html">
+            
+                    
+                    重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="14_5_Signals.html">
+            
+                <a href="14_5_Signals.html">
+            
+                    
+                    信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="14_6_System check framework.html">
+            
+                <a href="14_6_System check framework.html">
+            
+                    
+                    系统检查框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" >
+            
+                <span>
+            
+                    
+                    网站框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" >
+            
+                <span>
+            
+                    
+                    Django中的Unicode编码
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >使用认证系统</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4F7F;&#x7528;django&#x8BA4;&#x8BC1;&#x7CFB;&#x7EDF;">&#x4F7F;&#x7528;Django&#x8BA4;&#x8BC1;&#x7CFB;&#x7EDF;</h1>
+<p>&#x8FD9;&#x7BC7;&#x6587;&#x6863;&#x89E3;&#x91CA;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x4E0B;Django&#x8BA4;&#x8BC1;&#x7CFB;&#x7EDF;&#x7684;&#x4F7F;&#x7528;&#x3002;&#x8FD9;&#x4E9B;&#x914D;&#x7F6E;&#x5DF2;&#x7ECF;&#x9010;&#x6B65;&#x53EF;&#x4EE5;&#x6EE1;&#x8DB3;&#x5927;&#x90E8;&#x5206;&#x5E38;&#x89C1;&#x9879;&#x76EE;&#x5BF9;&#x7684;&#x9700;&#x8981;&#xFF0C;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x8303;&#x56F4;&#x975E;&#x5E38;&#x5E7F;&#x6CDB;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x4E14;&#x5177;&#x6709;&#x4E00;&#x5957;&#x7EC6;&#x81F4;&#x7684;&#x5BC6;&#x7801;&#x548C;&#x6743;&#x9650;&#x5B9E;&#x73B0;&#x3002;&#x5BF9;&#x4E8E;&#x9700;&#x8981;&#x4E0E;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x4E0D;&#x540C;&#x9700;&#x6C42;&#x7684;&#x9879;&#x76EE;&#xFF0C;Django&#x652F;&#x6301;<a href="customizing.html"><em>&#x6269;&#x5C55;&#x548C;&#x81EA;&#x5B9A;&#x4E49;</em></a>&#x8BA4;&#x8BC1;&#x3002;</p>
+<p>Django&#x7684;&#x8BA4;&#x8BC1;&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x8BA4;&#x8BC1;&#x548C;&#x6388;&#x6743;&#xFF0C;&#x5E76;&#x901A;&#x5E38;&#x7EDF;&#x4E00;&#x79F0;&#x4E3A;&#x8BA4;&#x8BC1;&#x7CFB;&#x7EDF;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x67D0;&#x4E9B;&#x5730;&#x65B9;&#x662F;&#x8026;&#x5408;&#x7684;&#x3002;</p>
+<h2 id="user&#x5BF9;&#x8C61;">User&#x5BF9;&#x8C61;</h2>
+<p><a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a>&#x5BF9;&#x8C61;&#x662F;&#x8BA4;&#x8BC1;&#x7CFB;&#x7EDF;&#x7684;&#x6838;&#x5FC3;&#x3002;&#x5B83;&#x4EEC;&#x901A;&#x5E38;&#x8868;&#x793A;&#x4E0E;&#x4F60;&#x7684;&#x7AD9;&#x70B9;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x5E76;&#x7528;&#x4E8E;&#x542F;&#x7528;&#x9650;&#x5236;&#x8BBF;&#x95EE;&#x3001;&#x6CE8;&#x518C;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x548C;&#x5173;&#x8054;&#x5185;&#x5BB9;&#x7ED9;&#x521B;&#x5EFA;&#x8005;&#x7B49;&#x3002;&#x5728;Django&#x7684;&#x8BA4;&#x8BC1;&#x6846;&#x67B6;&#x4E2D;&#x53EA;&#x5B58;&#x5728;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x56E0;&#x6B64;&#x8BF8;&#x5982;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.is_superuser"><code>&apos;superusers&apos;</code></a>&#x6216;&#x7BA1;&#x7406;&#x5458;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.is_staff"><code>&apos;staff&apos;</code></a>&#x7528;&#x6237;&#x53EA;&#x662F;&#x5177;&#x6709;&#x7279;&#x6B8A;&#x5C5E;&#x6027;&#x96C6;&#x7684;user&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;user&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;user&#x7684;&#x57FA;&#x672C;&#x5C5E;&#x6027;&#x6709;&#xFF1A;</p>
+<ul>
+<li><a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.username">username</a></li>
+<li><a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.password">password</a></li>
+<li><a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.email">email</a></li>
+<li><a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.first_name">first_name</a></li>
+<li><a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.last_name">last_name</a></li>
+</ul>
+<p>&#x5B8C;&#x6574;&#x7684;&#x53C2;&#x8003;&#x8BF7;&#x53C2;&#x9605;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>full API documentation</code></a>&#xFF0C;&#x8BE5;&#x6587;&#x6863;&#x66F4;&#x504F;&#x91CD;&#x7279;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x3002;</p>
+<h3 id="&#x521B;&#x5EFA;users">&#x521B;&#x5EFA;users</h3>
+<p>&#x521B;&#x5EFA;users&#x6700;&#x76F4;&#x63A5;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x4F7F;&#x7528;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.UserManager.create_user"><code>create_user()</code></a>&#x8F85;&#x52A9;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; from django.contrib.auth.models import User
+&gt;&gt;&gt; user = User.objects.create_user(&apos;john&apos;, &apos;lennon@thebeatles.com&apos;, &apos;johnpassword&apos;)
+
+# At this point, user is a User object that has already been saved
+# to the database. You can continue to change its attributes
+# if you want to change other fields.
+&gt;&gt;&gt; user.last_name = &apos;Lennon&apos;
+&gt;&gt;&gt; user.save()
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x4E86;Django admin&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;<a href="#auth-admin"><em>&#x95F4;&#x63A5;&#x5730;&#x521B;&#x5EFA;users</em></a>.</p>
+<h3 id="&#x521B;&#x5EFA;superusers">&#x521B;&#x5EFA;superusers</h3>
+<p>&#x4F7F;&#x7528;<a href="../../ref/django-admin.html#django-admin-createsuperuser"><code>createsuperuser</code></a>&#x547D;&#x4EE4;&#x521B;&#x5EFA;superusers&#xFF1A;</p>
+<pre><code>$ python manage.py createsuperuser --username=joe --email=joe@example.com
+</code></pre><p>&#x5C06;&#x4F1A;&#x63D0;&#x793A;&#x4F60;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x5BC6;&#x7801;&#x3002;&#x5728;&#x4F60;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x5BC6;&#x7801;&#x540E;&#xFF0C;&#x8BE5;user&#x5C06;&#x4F1A;&#x7ACB;&#x5373;&#x521B;&#x5EFA;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5E26;<a href="../../ref/django-admin.html#django-admin-option---username"><code>--username</code></a>&#x548C;<a href="../../ref/django-admin.html#django-admin-option---email"><code>--email</code></a>&#x9009;&#x9879;&#xFF0C;&#x5C06;&#x4F1A;&#x63D0;&#x793A;&#x4F60;&#x8F93;&#x5165;&#x8FD9;&#x4E9B;&#x503C;&#x3002;</p>
+<h3 id="&#x4FEE;&#x6539;&#x5BC6;&#x7801;">&#x4FEE;&#x6539;&#x5BC6;&#x7801;</h3>
+<p>Django&#x4E0D;&#x4F1A;&#x5728;user&#x6A21;&#x578B;&#x4E0A;&#x5B58;&#x50A8;&#x539F;&#x59CB;&#x7684;&#xFF08;&#x660E;&#x6587;&#xFF09;&#x5BC6;&#x7801;&#xFF0C;&#x800C;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#xFF08;&#x5B8C;&#x6574;&#x7684;&#x7EC6;&#x8282;&#x53C2;&#x89C1;<a href="passwords.html"><em>&#x6587;&#x6863;&#xFF1A;&#x5BC6;&#x7801;&#x662F;&#x5982;&#x4F55;&#x7BA1;&#x7406;&#x7684;</em></a>&#xFF09;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x539F;&#x56E0;&#xFF0C;&#x4E0D;&#x8981;&#x5C1D;&#x8BD5;&#x76F4;&#x63A5;&#x64CD;&#x4F5C;user&#x7684;password&#x5C5E;&#x6027;&#x3002;&#x8FD9;&#x4E5F;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;user&#x65F6;&#x8981;&#x4F7F;&#x7528;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x82E5;&#x8981;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x5BC6;&#x7801;&#xFF0C;&#x4F60;&#x6709;&#x51E0;&#x79CD;&#x9009;&#x62E9;&#xFF1A;</p>
+<p><a href="../../ref/django-admin.html#django-admin-changepassword"><code>manage.py changepassword *username*</code></a>&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x4ECE;&#x547D;&#x4EE4;&#x884C;&#x4FEE;&#x6539;User&#x5BC6;&#x7801;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5B83;&#x63D0;&#x793A;&#x4F60;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;user&#x7684;&#x5BC6;&#x7801;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x8F93;&#x5165;&#x4E24;&#x6B21;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4EEC;&#x5339;&#x914D;&#xFF0C;&#x65B0;&#x7684;&#x5BC6;&#x7801;&#x5C06;&#x4F1A;&#x7ACB;&#x5373;&#x4FEE;&#x6539;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;user&#xFF0C;&#x547D;&#x4EE4;&#x884C;&#x5C06;&#x5C1D;&#x8BD5;&#x4FEE;&#x6539;&#x4E0E;&#x5F53;&#x524D;&#x7CFB;&#x7EDF;&#x7528;&#x6237;&#x5339;&#x914D;&#x7684;&#x7528;&#x6237;&#x540D;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7A0B;&#x5E8F;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#xFF0C;&#x4F7F;&#x7528;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.set_password"><code>set_password()</code></a>&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; from django.contrib.auth.models import User
+&gt;&gt;&gt; u = User.objects.get(username=&apos;john&apos;)
+&gt;&gt;&gt; u.set_password(&apos;new password&apos;)
+&gt;&gt;&gt; u.save()
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x5B89;&#x88C5;&#x4E86;Django admin&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;<a href="#auth-admin"><em>&#x8BA4;&#x8BC1;&#x7CFB;&#x7EDF;&#x7684;admin&#x9875;&#x9762;</em></a>&#x4FEE;&#x6539;user&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
+<p>Django&#x8FD8;&#x63D0;&#x4F9B;<a href="#built-in-auth-views"><em>views</em></a>&#x548C;<a href="#built-in-auth-forms"><em>forms</em></a>&#x7528;&#x4E8E;&#x5141;&#x8BB8;user&#x4FEE;&#x6539;&#x4ED6;&#x4EEC;&#x81EA;&#x5DF1;&#x5BC6;&#x7801;&#x3002;</p>
+<p>New in Django 1.7.</p>
+<p>&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;<a href="../../ref/middleware.html#django.contrib.auth.middleware.SessionAuthenticationMiddleware"><code>SessionAuthenticationMiddleware</code></a>&#xFF0C;&#x4FEE;&#x6539;user&#x7684;&#x5BC6;&#x7801;&#x5C06;&#x4F1A;&#x767B;&#x51FA;&#x4ED6;&#x4EEC;&#x6240;&#x6709;&#x7684;&#x4F1A;&#x8BDD;&#x3002; &#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x9605;<a href="#session-invalidation-on-password-change"><em>&#x5BC6;&#x7801;&#x4FEE;&#x6539;&#x540E;&#x4F1A;&#x8BDD;&#x5931;&#x6548;</em></a>&#x3002;</p>
+<h3 id="&#x8BA4;&#x8BC1;users">&#x8BA4;&#x8BC1;Users</h3>
+<p><code>authenticate</code>(<em>**credentials</em>)<a href="../../_modules/django/contrib/auth.html#authenticate">[source]</a></p>
+<p>&#x8BA4;&#x8BC1;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;<a href="#django.contrib.auth.authenticate"><code>authenticate()</code></a>&#x3002;&#x5B83;&#x4EE5;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x5F62;&#x5F0F;&#x63A5;&#x6536;&#x51ED;&#x8BC1;&#xFF0C;&#x5BF9;&#x4E8E;&#x9ED8;&#x8BA4;&#x7684;&#x914D;&#x7F6E;&#x5B83;&#x662F;<code>username</code>&#x548C;<code>password&#xFF0C;&#x5982;&#x679C;&#x5BC6;&#x7801;&#x5BF9;&#x4E8E;&#x7ED9;&#x5B9A;&#x7684;&#x7528;&#x6237;&#x540D;&#x6709;&#x6548;&#x5B83;&#x5C06;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;</code><a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a>&#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;&#x5BC6;&#x7801;&#x65E0;&#x6548;&#xFF0C;<a href="#django.contrib.auth.authenticate"><code>authenticate()</code></a>&#x8FD4;&#x56DE;<code>None</code>&#x3002;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>from django.contrib.auth import authenticate
+user = authenticate(username=&apos;john&apos;, password=&apos;secret&apos;)
+if user is not None:
+    # the password verified for the user
+    if user.is_active:
+        print()
+    else:
+        print()
+else:
+    # the authentication system was unable to verify the username and password
+    print()
+</code></pre><p>&#x6CE8;</p>
+<p>&#x8FD9;&#x662F;&#x8BA4;&#x8BC1;&#x4E00;&#x7CFB;&#x5217;&#x51ED;&#x8BC1;&#x7684;&#x4F4E;&#x7EA7;&#x7684;&#x65B9;&#x6CD5;&#xFF1B;&#x4F8B;&#x5982;&#xFF0C;&#x5B83;&#x88AB;<a href="../../ref/middleware.html#django.contrib.auth.middleware.RemoteUserMiddleware"><code>RemoteUserMiddleware</code></a>&#x4F7F;&#x7528;&#x3002;&#x9664;&#x975E;&#x4F60;&#x6B63;&#x5728;&#x7F16;&#x5199;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x8BA4;&#x8BC1;&#x7CFB;&#x7EDF;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x5B83;&#x3002;&#x5F53;&#x7136;&#x5982;&#x679C;&#x4F60;&#x5728;&#x5BFB;&#x627E;&#x4E00;&#x79CD;&#x767B;&#x5F55;user&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<a href="#django.contrib.auth.decorators.login_required"><code>login_required()</code></a>&#x88C5;&#x9970;&#x5668;&#x3002;</p>
+<h2 id="&#x6743;&#x9650;&#x548C;&#x6388;&#x6743;">&#x6743;&#x9650;&#x548C;&#x6388;&#x6743;</h2>
+<p>Django&#x4ECE;&#x5F00;&#x59CB;&#x5C31;&#x5E26;&#x6709;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6743;&#x9650;&#x7CFB;&#x7EDF;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x5206;&#x914D;&#x6743;&#x9650;&#x7ED9;&#x7279;&#x5B9A;&#x7684;&#x7528;&#x6237;&#x548C;&#x7528;&#x6237;&#x7EC4;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5B83;&#x88AB;Django&#x7684;admin&#x7AD9;&#x70B9;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x6B22;&#x8FCE;&#x4F60;&#x5728;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x3002;</p>
+<p>Django admin &#x7AD9;&#x70B9;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x7684;&#x6743;&#x9650;&#xFF1A;</p>
+<ul>
+<li>&#x67E5;&#x770B;&quot;add&quot;&#x8868;&#x5355;&#x5E76;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x53EA;&#x9650;&#x5177;&#x6709;&#x8BE5;&#x7C7B;&#x578B;&#x5BF9;&#x8C61;&#x7684;&#x201C;add&#x201D;&#x6743;&#x9650;&#x7684;&#x7528;&#x6237;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x67E5;&#x770B;&#x4FEE;&#x6539;&#x5217;&#x8868;&#x3001;&#x67E5;&#x770B;&#x201C;change&#x201D;&#x8868;&#x5355;&#x4EE5;&#x53CA;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x53EA;&#x9650;&#x5177;&#x6709;&#x8BE5;&#x7C7B;&#x578B;&#x5BF9;&#x8C61;&#x7684;&#x201C;change&#x201D;&#x6743;&#x9650;&#x7684;&#x7528;&#x6237;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x53EA;&#x9650;&#x5177;&#x6709;&#x8BE5;&#x7C7B;&#x578B;&#x5BF9;&#x8C61;&#x7684;&#x201C;delete&#x201D;&#x6743;&#x9650;&#x7684;&#x7528;&#x6237;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<p>&#x6743;&#x9650;&#x4E0D;&#x4F46;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x8BBE;&#x7F6E;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528;<a href="../../ref/contrib/admin/index.html#django.contrib.admin.ModelAdmin"><code>ModelAdmin</code></a>&#x7C7B;&#x63D0;&#x4F9B;&#x7684;<a href="../../ref/contrib/admin/index.html#django.contrib.admin.ModelAdmin.has_add_permission"><code>has_add_permission()</code></a>&#x3001;<a href="../../ref/contrib/admin/index.html#django.contrib.admin.ModelAdmin.has_change_permission"><code>has_change_permission()</code></a>&#x548C;<a href="../../ref/contrib/admin/index.html#django.contrib.admin.ModelAdmin.has_delete_permission"><code>has_delete_permission()</code></a>&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x4E0D;&#x540C;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x81EA;&#x5B9A;&#x4E49;&#x6743;&#x9650;&#x3002;</p>
+<p><a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a>&#x5BF9;&#x8C61;&#x5177;&#x6709;&#x4E24;&#x4E2A;&#x591A;&#x5BF9;&#x591A;&#x7684;&#x5B57;&#x6BB5;&#xFF1A;<code>groups</code>&#x548C;<code>user_permissions</code>&#x3002;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a>&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x7528;&#x548C;&#x5176;&#x5B83;<a href="../db/models.html"><em>Django &#x6A21;&#x578B;</em></a>&#x4E00;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;&#x5B83;&#x4EEC;&#x76F8;&#x5173;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code>myuser.groups = [group_list]
+myuser.groups.add(group, group, ...)
+myuser.groups.remove(group, group, ...)
+myuser.groups.clear()
+myuser.user_permissions = [permission_list]
+myuser.user_permissions.add(permission, permission, ...)
+myuser.user_permissions.remove(permission, permission, ...)
+myuser.user_permissions.clear()
+</code></pre><h3 id="&#x9ED8;&#x8BA4;&#x7684;&#x6743;&#x9650;">&#x9ED8;&#x8BA4;&#x7684;&#x6743;&#x9650;</h3>
+<p>&#x5F53;<code>django.contrib.auth</code>&#x5728;&#x4F60;&#x7684;<a href="../../ref/settings.html#std:setting-INSTALLED_APPS"><code>INSTALLED_APPS</code></a>&#x8BBE;&#x7F6E;&#x4E2D;&#x5217;&#x51FA;&#x65F6;&#xFF0C;&#x5B83;&#x5C06;&#x786E;&#x4FDD;&#x4E3A;&#x4F60;&#x5B89;&#x88C5;&#x7684;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;Django&#x6A21;&#x578B;&#x521B;&#x5EFA;3&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x6743;&#x9650; &#x2013; add&#x3001;change&#x548C;delete&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x6743;&#x9650;&#x5C06;&#x5728;&#x4F60;&#x8FD0;&#x884C;<a href="../../ref/django-admin.html#django-admin-migrate"><code>manage.py migrate</code></a>&#x65F6;&#x521B;&#x5EFA;&#xFF1B;&#x5728;&#x6DFB;&#x52A0;<code>django.contrib.auth</code>&#x5230;<a href="../../ref/settings.html#std:setting-INSTALLED_APPS"><code>INSTALLED_APPS</code></a>&#x4E2D;&#x4E4B;&#x540E;&#xFF0C;&#x5F53;&#x4F60;&#x7B2C;&#x4E00;&#x6B21;&#x8FD0;&#x884C;<code>migrate</code>&#x65F6;&#xFF0C;&#x5C06;&#x4F1A;&#x4E3A;&#x4E4B;&#x524D;&#x5B89;&#x88C5;&#x7684;&#x6A21;&#x578B;&#x521B;&#x5EFA;&#x9ED8;&#x8BA4;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x5305;&#x62EC;&#x4E0E;&#x5176;&#x540C;&#x65F6;&#x6B63;&#x5728;&#x5B89;&#x88C5;&#x7684;&#x65B0;&#x7684;&#x6A21;&#x578B;&#x3002;&#x4E4B;&#x540E;&#xFF0C;&#x6BCF;&#x5F53;&#x4F60;&#x8FD0;&#x884C;<a href="../../ref/django-admin.html#django-admin-migrate"><code>manage.py migrate</code></a>&#x65F6;&#xFF0C;&#x5B83;&#x90FD;&#x5C06;&#x4E3A;&#x65B0;&#x7684;&#x6A21;&#x578B;&#x521B;&#x5EFA;&#x9ED8;&#x8BA4;&#x7684;&#x6743;&#x9650;&#x3002;</p>
+<p>&#x5047;&#x8BBE;&#x4F60;&#x6709;&#x4E2A;&#x5E94;&#x7528;&#x7684;<a href="../../ref/models/options.html#django.db.models.Options.app_label"><code>app_label</code></a>&#x662F;<code>foo</code>&#x548C;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>Bar</code>&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x8981;&#x6D4B;&#x8BD5;&#x57FA;&#x672C;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#xFF1A;</p>
+<ul>
+<li>add: <code>user.has_perm(&apos;foo.add_bar&apos;)</code></li>
+<li>change: <code>user.has_perm(&apos;foo.change_bar&apos;)</code></li>
+<li>delete: <code>user.has_perm(&apos;foo.delete_bar&apos;)</code></li>
+</ul>
+<p>&#x5F88;&#x5C11;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.Permission"><code>Permission</code></a>&#x6A21;&#x578B;&#x3002;</p>
+<h3 id="&#x7EC4;">&#x7EC4;</h3>
+<p><a href="../../ref/contrib/auth.html#django.contrib.auth.models.Group"><code>django.contrib.auth.models.Group</code></a>&#x6A21;&#x578B;&#x662F;&#x7528;&#x6237;&#x5206;&#x7C7B;&#x7684;&#x4E00;&#x79CD;&#x901A;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4F60;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x6743;&#x9650;&#x6216;&#x5176;&#x5B83;&#x6807;&#x7B7E;&#x5230;&#x8FD9;&#x4E9B;&#x7528;&#x6237;&#x3002;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5C5E;&#x4E8E;&#x4EFB;&#x610F;&#x591A;&#x4E2A;&#x7EC4;&#x3002;</p>
+<p>&#x7EC4;&#x4E2D;&#x67D0;&#x4E2A;&#x7528;&#x6237;&#x81EA;&#x52A8;&#x5177;&#x6709;&#x8D4B;&#x7ED9;&#x90A3;&#x4E2A;&#x7EC4;&#x7684;&#x6743;&#x9650;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x7EC4;<code>Site editors</code>&#x5177;&#x6709;&#x6743;&#x9650; <code>can_edit_home_page</code>&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x7EC4;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x7528;&#x6237;&#x90FD;&#x5177;&#x6709;&#x8BE5;&#x6743;&#x9650;&#x3002;</p>
+<p>&#x51FA;&#x6743;&#x9650;&#x4E4B;&#x5916;&#xFF0C;&#x7EC4;&#x8FD8;&#x662F;&#x7ED9;&#x7528;&#x6237;&#x5206;&#x7C7B;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x4FBF;&#x7684;&#x65B9;&#x6CD5;&#x4EE5;&#x7ED9;&#x4ED6;&#x4EEC;&#x67D0;&#x4E9B;&#x6807;&#x7B7E;&#x6216;&#x6269;&#x5C55;&#x7684;&#x529F;&#x80FD;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7EC4;<code>&apos;Special users&apos;</code>&#xFF0C;&#x7136;&#x540E;&#x4F60;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5199;&#x4EE3;&#x7801;&#xFF0C;&#x7ED9;&#x4ED6;&#x4EEC;&#x8BBF;&#x95EE;&#x4F60;&#x7684;&#x7AD9;&#x70B9;&#x4EC5;&#x9650;&#x4F1A;&#x5458;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x6216;&#x8005;&#x7ED9;&#x4ED6;&#x4EEC;&#x53D1;&#x4EC5;&#x9650;&#x4E8E;&#x4F1A;&#x5458;&#x7684;&#x90AE;&#x4EF6;&#x3002;</p>
+<h3 id="&#x7528;&#x7A0B;&#x5E8F;&#x521B;&#x5EFA;&#x6743;&#x9650;">&#x7528;&#x7A0B;&#x5E8F;&#x521B;&#x5EFA;&#x6743;&#x9650;</h3>
+<p>&#x867D;&#x7136;<a href="customizing.html#custom-permissions"><em>custom permissions</em></a>&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x5728;<code>Meta</code>&#x7C7B;&#x4E2D;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x6743;&#x9650;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4E3A;<code>myapp</code>&#x4E2D;&#x7684;<code>BlogPost</code>&#xA0;&#x521B;&#x5EFA;<code>can_publish</code>&#x6743;&#x9650;&#xFF1A;</p>
+<pre><code>from myapp.models import BlogPost
+from django.contrib.auth.models import Group, Permission
+from django.contrib.contenttypes.models import ContentType
+
+content_type = ContentType.objects.get_for_model(BlogPost)
+permission = Permission.objects.create(codename=&apos;can_publish&apos;,
+                                       name=&apos;Can Publish Posts&apos;,
+                                       content_type=content_type)
+</code></pre><p>&#x7136;&#x540E;&#x8BE5;&#x6743;&#x9650;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>user_permissions</code>&#x5C5E;&#x6027;&#x5206;&#x914D;&#x7ED9;&#x4E00;&#x4E2A;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a>&#xFF0C;&#x6216;&#x8005;&#x901A;&#x8FC7;<code>permissions</code>&#x5C5E;&#x6027;&#x5206;&#x914D;&#x7ED9;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.Group"><code>Group</code></a>&#x3002;</p>
+<h3 id="&#x6743;&#x9650;&#x7684;&#x7F13;&#x5B58;">&#x6743;&#x9650;&#x7684;&#x7F13;&#x5B58;</h3>
+<p><a href="../../ref/contrib/auth.html#django.contrib.auth.backends.ModelBackend"><code>ModelBackend</code></a>&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x9700;&#x8981;&#x8BBF;&#x95EE;<code>User</code>&#x5BF9;&#x8C61;&#x6765;&#x68C0;&#x67E5;&#x6743;&#x9650;&#x65F6;&#x4F1A;&#x7F13;&#x5B58;&#x5B83;&#x4EEC;&#x7684;&#x6743;&#x9650;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x8BF7;&#x6C42;-&#x54CD;&#x5E94;&#x5FAA;&#x73AF;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x6743;&#x9650;&#x6DFB;&#x52A0;&#x8FDB;&#x6765;&#x4E4B;&#x540E;&#x5E76;&#x4E0D;&#x4F1A;&#x7ACB;&#x5373;&#x68C0;&#x67E5;&#xFF08;&#x4F8B;&#x5982;&#x5728;admin&#x4E2D;&#xFF09;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6B63;&#x5728;&#x6DFB;&#x52A0;&#x6743;&#x9650;&#x5E76;&#x9700;&#x8981;&#x7ACB;&#x5373;&#x68C0;&#x67E5;&#x5B83;&#x4EEC;&#xFF0C;&#x4F8B;&#x5982;&#x5728;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x6216;&#x89C6;&#x56FE;&#x4E2D;&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#x662F;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x91CD;&#x65B0;&#x83B7;&#x53D6;<code>User</code>&#x3002; &#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.contrib.auth.models import Permission, User
+from django.shortcuts import get_object_or_404
+
+def user_gains_perms(request, user_id):
+    user = get_object_or_404(User, pk=user_id)
+    # any permission check will cache the current set of permissions
+    user.has_perm(&apos;myapp.change_bar&apos;)
+
+    permission = Permission.objects.get(codename=&apos;change_bar&apos;)
+    user.user_permissions.add(permission)
+
+    # Checking the cached permission set
+    user.has_perm(&apos;myapp.change_bar&apos;)  # False
+
+    # Request new instance of User
+    user = get_object_or_404(User, pk=user_id)
+
+    # Permission cache is repopulated from the database
+    user.has_perm(&apos;myapp.change_bar&apos;)  # True
+
+    ...
+</code></pre><h2 id="web&#x8BF7;&#x6C42;&#x4E2D;&#x7684;&#x8BA4;&#x8BC1;">Web&#x8BF7;&#x6C42;&#x4E2D;&#x7684;&#x8BA4;&#x8BC1;</h2>
+<p>Django&#x4F7F;&#x7528;<a href="../http/sessions.html"><em>&#x4F1A;&#x8BDD;</em></a>&#x548C;&#x4E2D;&#x95F4;&#x4EF6;&#x6765;&#x62E6;&#x622A;<a href="../../ref/request-response.html#django.http.HttpRequest"><code>request &#x5BF9;&#x8C61;</code></a>&#x5230;&#x8BA4;&#x8BC1;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;</p>
+<p>&#x5B83;&#x4EEC;&#x5728;&#x6BCF;&#x4E2A;&#x8BF7;&#x6C42;&#x4E0A;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;<a href="../../ref/request-response.html#django.http.HttpRequest.user"><code>request.user</code></a>&#x5C5E;&#x6027;&#xFF0C;&#x8868;&#x793A;&#x5F53;&#x524D;&#x7684;&#x7528;&#x6237;&#x3002;&#x5982;&#x679C;&#x5F53;&#x524D;&#x7684;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x767B;&#x5165;&#xFF0C;&#x8BE5;&#x5C5E;&#x6027;&#x5C06;&#x8BBE;&#x7F6E;&#x6210;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.AnonymousUser"><code>AnonymousUser</code></a>&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x5426;&#x5219;&#x5B83;&#x5C06;&#x662F;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a>&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.is_authenticated"><code>is_authenticated()</code></a>&#x533A;&#x5206;&#x5B83;&#x4EEC;&#xFF0C;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>if request.user.is_authenticated():
+    # Do something for authenticated users.
+    ...
+else:
+    # Do something for anonymous users.
+    ...
+</code></pre><h3 id="&#x5982;&#x4F55;&#x767B;&#x5165;&#x4E00;&#x4E2A;&#x7528;&#x6237;">&#x5982;&#x4F55;&#x767B;&#x5165;&#x4E00;&#x4E2A;&#x7528;&#x6237;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x6709;&#x4E00;&#x4E2A;&#x8BA4;&#x8BC1;&#x4E86;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x4F60;&#x60F3;&#x628A;&#x5B83;&#x9644;&#x5E26;&#x5230;&#x5F53;&#x524D;&#x7684;&#x4F1A;&#x8BDD;&#x4E2D; - &#x8FD9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<a href="#django.contrib.auth.login"><code>login()</code></a>&#x51FD;&#x6570;&#x5B8C;&#x6210;&#x3002;</p>
+<p><code>login</code>()<a href="../../_modules/django/contrib/auth.html#login">[source]</a></p>
+<p>&#x4ECE;&#x89C6;&#x56FE;&#x4E2D;&#x767B;&#x5165;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;<a href="#django.contrib.auth.login"><code>login()</code></a>&#x3002;&#x5B83;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;<a href="../../ref/request-response.html#django.http.HttpRequest"><code>HttpRequest</code></a>&#x5BF9;&#x8C61;&#x548C;&#x4E00;&#x4E2A;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a>&#x5BF9;&#x8C61;&#x3002;<a href="#django.contrib.auth.login"><code>login()</code></a>&#x4F7F;&#x7528;Django&#x7684;&#x4F1A;&#x8BDD;&#x6846;&#x67B6;&#x4FDD;&#x5B58;&#x7528;&#x6237;&#x7684;ID&#x5728;&#x4F1A;&#x8BDD;&#x4E2D;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x4EFB;&#x4F55;&#x5728;&#x533F;&#x540D;&#x4F1A;&#x8BDD;&#x4E2D;&#x8BBE;&#x7F6E;&#x7684;&#x6570;&#x636E;&#x90FD;&#x4F1A;&#x5728;&#x7528;&#x6237;&#x767B;&#x5165;&#x540E;&#x7684;&#x4F1A;&#x8BDD;&#x4E2D;&#x90FD;&#x4F1A;&#x8BB0;&#x4F4F;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5C55;&#x793A;&#x4F60;&#x53EF;&#x80FD;&#x5982;&#x4F55;&#x4F7F;&#x7528;<a href="#django.contrib.auth.authenticate"><code>authenticate()</code></a>&#x548C; <a href="#django.contrib.auth.login"><code>login()</code></a>&#xFF1A;</p>
+<pre><code>from django.contrib.auth import authenticate, login
+
+def my_view(request):
+    username = request.POST[&apos;username&apos;]
+    password = request.POST[&apos;password&apos;]
+    user = authenticate(username=username, password=password)
+    if user is not None:
+        if user.is_active:
+            login(request, user)
+            # Redirect to a success page.
+        else:
+            # Return a &apos;disabled account&apos; error message
+            ...
+    else:
+        # Return an &apos;invalid login&apos; error message.
+        ...
+</code></pre><p>&#x5148;&#x8C03;&#x7528;<code>authenticate()</code>&#xFF1A;</p>
+<p>&#x5F53;&#x4F60;&#x662F;&#x624B;&#x5DE5;&#x767B;&#x5165;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x65F6;&#xFF0C;&#x4F60;<em>&#x5FC5;&#x987B;</em>&#x5728;&#x8C03;&#x7528;<a href="#django.contrib.auth.login"><code>login()</code></a>&#x4E4B;&#x524D;&#x901A;&#x8FC7;<a href="#django.contrib.auth.authenticate"><code>authenticate()</code></a>&#x6210;&#x529F;&#x5730;&#x8BA4;&#x8BC1;&#x8BE5;&#x7528;&#x6237;&#x3002;<a href="#django.contrib.auth.authenticate"><code>authenticate()</code></a>&#x5728;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a>&#x4E0A;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6807;&#x8BC6;&#x54EA;&#x79CD;&#x8BA4;&#x8BC1;&#x540E;&#x53F0;&#x6210;&#x529F;&#x8BA4;&#x8BC1;&#x4E86;&#x8BE5;&#x7528;&#x6237;&#xFF08;&#x7EC6;&#x8282;&#x53C2;&#x89C1;<a href="customizing.html#authentication-backends"><em>&#x540E;&#x53F0;&#x7684;&#x6587;&#x6863;</em></a>&#xFF09;&#xFF0C;&#x4E14;&#x8BE5;&#x4FE1;&#x606F;&#x5728;&#x540E;&#x9762;&#x767B;&#x5F55;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x662F;&#x9700;&#x8981;&#x7684;&#x3002;&#x5982;&#x679C;&#x4F60;&#x89C6;&#x56FE;&#x767B;&#x5165;&#x4E00;&#x4E2A;&#x76F4;&#x63A5;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x53D6;&#x51FA;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x5C06;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<h3 id="&#x5982;&#x4F55;&#x767B;&#x51FA;&#x4E00;&#x4E2A;&#x7528;&#x6237;">&#x5982;&#x4F55;&#x767B;&#x51FA;&#x4E00;&#x4E2A;&#x7528;&#x6237;</h3>
+<p><code>logout</code>()<a href="../../_modules/django/contrib/auth.html#logout">[source]</a></p>
+<p>&#x82E5;&#x8981;&#x767B;&#x51FA;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;<a href="#django.contrib.auth.login"><code>django.contrib.auth.login()</code></a>&#x767B;&#x5165;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4F60;&#x7684;&#x89C6;&#x56FE;&#x4E2D;&#x4F7F;&#x7528;<a href="#django.contrib.auth.logout"><code>django.contrib.auth.logout()</code></a>&#x3002; &#x5B83;&#x63A5;&#x6536;&#x4E00;&#x4E2A;<a href="../../ref/request-response.html#django.http.HttpRequest"><code>HttpRequest</code></a>&#x5BF9;&#x8C61;&#x4E14;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.contrib.auth import logout
+
+def logout_view(request):
+    logout(request)
+    # Redirect to a success page.
+</code></pre><p>&#x6CE8;&#x610F;&#xFF0C;&#x5373;&#x4F7F;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x767B;&#x5165;<a href="#django.contrib.auth.logout"><code>logout()</code></a>&#x4E5F;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;&#x4EFB;&#x4F55;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x5F53;&#x4F60;&#x8C03;&#x7528;<a href="#django.contrib.auth.logout"><code>logout()</code></a>&#x65F6;&#xFF0C;&#x5F53;&#x524D;&#x8BF7;&#x6C42;&#x7684;&#x4F1A;&#x8BDD;&#x6570;&#x636E;&#x5C06;&#x88AB;&#x5B8C;&#x5168;&#x6E05;&#x9664;&#x3002;&#x6240;&#x6709;&#x5B58;&#x5728;&#x7684;&#x6570;&#x636E;&#x90FD;&#x5C06;&#x6E05;&#x9664;&#x3002;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x4EBA;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;Web&#x6D4F;&#x89C8;&#x5668;&#x767B;&#x5165;&#x5E76;&#x8BBF;&#x95EE;&#x524D;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x4F1A;&#x8BDD;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5728;&#x7528;&#x6237;&#x767B;&#x51FA;&#x4E4B;&#x540E;&gt;&#x53EF;&#x4EE5;&#x7ACB;&#x5373;&#x8BBF;&#x95EE;&#x653E;&#x5165;&#x4F1A;&#x8BDD;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8BF7;&#x5728;&#x8C03;&#x7528;<a href="#django.contrib.auth.logout"><code>django.contrib.auth.logout()</code></a><em>&#x4E4B;&#x540E;</em>&#x653E;&#x5165;&#x3002;</p>
+<h3 id="&#x9650;&#x5236;&#x8BBF;&#x95EE;&#x7ED9;&#x767B;&#x9646;&#x540E;&#x7684;&#x7528;&#x6237;">&#x9650;&#x5236;&#x8BBF;&#x95EE;&#x7ED9;&#x767B;&#x9646;&#x540E;&#x7684;&#x7528;&#x6237;</h3>
+<h4 id="&#x539F;&#x59CB;&#x7684;&#x65B9;&#x6CD5;">&#x539F;&#x59CB;&#x7684;&#x65B9;&#x6CD5;</h4>
+<p>&#x9650;&#x5236;&#x9875;&#x9762;&#x8BBF;&#x95EE;&#x7684;&#x7B80;&#x5355;&#x3001;&#x539F;&#x59CB;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x68C0;&#x67E5;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.is_authenticated"><code>request.user.is_authenticated()</code></a>&#x5E76;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x4E00;&#x4E2A;&#x767B;&#x9646;&#x9875;&#x9762;&#xFF1A;</p>
+<pre><code>from django.conf import settings
+from django.shortcuts import redirect
+
+def my_view(request):
+    if not request.user.is_authenticated():
+        return redirect(&apos;%s?next=%s&apos; % (settings.LOGIN_URL, request.path))
+    # ...
+</code></pre><p>...&#x6216;&#x8005;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code>from django.shortcuts import render
+
+def my_view(request):
+    if not request.user.is_authenticated():
+        return render(request, &apos;myapp/login_error.html&apos;)
+    # ...
+</code></pre><h4 id="loginrequired-&#x88C5;&#x9970;&#x5668;">login_required &#x88C5;&#x9970;&#x5668;</h4>
+<p><code>login_required</code>([<em>redirect_field_name=REDIRECT_FIELD_NAME</em>, <em>login_url=None</em>])<a href="../../_modules/django/contrib/auth/decorators.html#login_required">[source]</a></p>
+<p>&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4FBF;&#x6377;&#x7684;<a href="#django.contrib.auth.decorators.login_required"><code>login_required()</code></a>&#x88C5;&#x9970;&#x5668;&#xFF1A;</p>
+<pre><code>from django.contrib.auth.decorators import login_required
+
+@login_required
+def my_view(request):
+    ...
+</code></pre><p><a href="#django.contrib.auth.decorators.login_required"><code>login_required()</code></a>&#x5B8C;&#x6210;&#x4E0B;&#x9762;&#x7684;&#x4E8B;&#x60C5;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x767B;&#x5165;&#xFF0C;&#x5219;&#x91CD;&#x5B9A;&#x5411;&#x5230;<a href="../../ref/settings.html#std:setting-LOGIN_URL">settings.LOGIN_URL</a>&#xFF0C;&#x5E76;&#x4F20;&#x9012;&#x5F53;&#x524D;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;&#x4F8B;&#x5982;&#xFF1A;<code>/accounts/login/?next=/polls/3/</code>&#x3002;</li>
+<li>&#x5982;&#x679C;&#x7528;&#x6237;&#x5DF2;&#x7ECF;&#x767B;&#x5165;&#xFF0C;&#x5219;&#x6B63;&#x5E38;&#x6267;&#x884C;&#x89C6;&#x56FE;&#x3002;&#x89C6;&#x56FE;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x5B89;&#x5168;&#x5730;&#x5047;&#x8BBE;&#x7528;&#x6237;&#x5DF2;&#x7ECF;&#x767B;&#x5165;&#x3002;</li>
+</ul>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5728;&#x6210;&#x529F;&#x8BA4;&#x8BC1;&#x540E;&#x7528;&#x6237;&#x5E94;&#x8BE5;&#x88AB;&#x91CD;&#x5B9A;&#x5411;&#x7684;&#x8DEF;&#x5F84;&#x5B58;&#x50A8;&#x5728;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x4E00;&#x4E2A;&#x53EB;&#x505A;<code>)&#x5E26;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;</code>redirect_field_name`&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code>from django.contrib.auth.decorators import login_required
+
+@login_required(redirect_field_name=&apos;my_redirect_field&apos;)
+def my_view(request):
+    ...
+</code></pre><p>&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x503C;&#x7ED9;<code>redirect_field_name</code>&#xFF0C;&#x4F60;&#x975E;&#x5E38;&#x53EF;&#x80FD;&#x540C;&#x65F6;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x4F60;&#x7684;&#x767B;&#x5F55;&#x6A21;&#x677F;&#xFF0C;&#x56E0;&#x4E3A;&#x5B58;&#x50A8;&#x91CD;&#x5B9A;&#x5411;&#x8DEF;&#x5F84;&#x7684;&#x6A21;&#x677F;&#x4E0A;&#x4E0B;&#x6587;&#x53D8;&#x91CF;&#x5C06;&#x4F7F;&#x7528;<code>redirect_field_name</code>&#x503C;&#x4F5C;&#x4E3A;&#x5B83;&#x7684;&#x952E;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x9ED8;&#x8BA4;&#x7684;<code>&quot;next&quot;</code>&#x3002;</p>
+<p><a href="#django.contrib.auth.decorators.login_required"><code>login_required()</code></a>&#x8FD8;&#x5E26;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;<code>login_url</code>&#x53C2;&#x6570;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.contrib.auth.decorators import login_required
+
+@login_required(login_url=&apos;/accounts/login/&apos;)
+def my_view(request):
+    ...
+</code></pre><p>&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x6307;&#x5B9A;<code>login_url</code>&#x53C2;&#x6570;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x786E;&#x4FDD;<a href="../../ref/settings.html#std:setting-LOGIN_URL"><code>settings.LOGIN_URL</code></a>&#x5E76;&#x4E14;&#x4F60;&#x7684;&#x767B;&#x5F55;&#x89C6;&#x56FE;&#x6B63;&#x786E;&#x5173;&#x8054;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x51E0;&#x884C;&#x5230;&#x4F60;&#x7684;URLconf&#x4E2D;&#xFF1A;</p>
+<pre><code>from django.contrib.auth import views as auth_views
+
+url(r&apos;^accounts/login/$&apos;, auth_views.login),
+</code></pre><p><a href="../../ref/settings.html#std:setting-LOGIN_URL"><code>settings.LOGIN_URL</code></a>&#x540C;&#x65F6;&#x8FD8;&#x63A5;&#x6536;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x540D;&#x548C;<a href="../http/urls.html#naming-url-patterns"><em>&#x547D;&#x540D;&#x7684;URL&#x6A21;&#x5F0F;</em></a>&#x3002;&#x8FD9;&#x5141;&#x8BB8;&#x4F60;&#x81EA;&#x7531;&#x5730;&#x91CD;&#x65B0;&#x6620;&#x5C04;&#x4F60;&#x7684;URLconf&#x4E2D;&#x7684;&#x767B;&#x5F55;&#x89C6;&#x56FE;&#x800C;&#x4E0D;&#x7528;&#x66F4;&#x65B0;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>&#x6CE8;</p>
+<p>login_required&#x88C5;&#x9970;&#x5668;&#x4E0D;&#x68C0;&#x67E5;user&#x7684;is_active&#x6807;&#x5FD7;&#x4F4D;&#x3002;</p>
+<h4 id="&#x7ED9;&#x5DF2;&#x9A8C;&#x8BC1;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x6DFB;&#x52A0;&#x8BBF;&#x95EE;&#x9650;&#x5236;">&#x7ED9;&#x5DF2;&#x9A8C;&#x8BC1;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x6DFB;&#x52A0;&#x8BBF;&#x95EE;&#x9650;&#x5236;</h4>
+<p>&#x57FA;&#x4E8E;&#x7279;&#x5B9A;&#x7684;&#x6743;&#x9650;&#x548C;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;&#x6765;&#x9650;&#x5236;&#x8BBF;&#x95EE;&#xFF0C;&#x4F60;&#x6700;&#x597D;&#x6309;&#x7167;&#x524D;&#x9762;&#x6240;&#x53D9;&#x8FF0;&#x7684;&#x90A3;&#x6837;&#x64CD;&#x505A;&#x3002;</p>
+<p>&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x5728;&#x89C6;&#x56FE;&#x4E2D;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x4F60;&#x5BF9;<a href="../../ref/request-response.html#django.http.HttpRequest.user"><code>request.user</code></a>&#x7684;&#x6D4B;&#x8BD5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x89C6;&#x56FE;&#x68C0;&#x67E5;&#x7528;&#x6237;&#x7684;&#x90AE;&#x4EF6;&#x5C5E;&#x4E8E;&#x7279;&#x5B9A;&#x7684;&#x5730;&#x5740;&#xFF08;&#x4F8B;&#x5982;@example.com&#xFF09;&#xFF0C;&#x82E5;&#x4E0D;&#x662F;&#xFF0C;&#x5219;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x767B;&#x5F55;&#x9875;&#x9762;&#x3002;</p>
+<pre><code>from django.shortcuts import redirect
+
+def my_view(request):
+    if not request.user.email.endswith(&apos;@example.com&apos;):
+        return redirect(&apos;/login/?next=%s&apos; % request.path)
+    # ...
+</code></pre><p><code>user_passes_test</code>(<em>func</em>[, <em>login_url=None</em>, <em>redirect_field_name=REDIRECT_FIELD_NAME</em>])<a href="../../_modules/django/contrib/auth/decorators.html#user_passes_test">[source]</a></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x65B9;&#x4FBF;&#x7684; <code>user_passes_test</code> &#x88C5;&#x9970;&#x5668;&#xFF0C;&#x5F53;&#x56DE;&#x6389;&#x51FD;&#x6570;&#x8FD4;&#x56DE; <code>False</code> &#x65F6;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x91CD;&#x5B9A;&#x5411;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code>from django.contrib.auth.decorators import user_passes_test
+
+def email_check(user):
+    return user.email.endswith(&apos;@example.com&apos;)
+
+@user_passes_test(email_check)
+def my_view(request):
+    ...
+</code></pre><p><a href="#django.contrib.auth.decorators.user_passes_test"><code>user_passes_test()</code></a> &#x8981;&#x6C42;&#x4E00;&#x4E2A;&#x4EE5;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a> &#x5BF9;&#x8C61;&#x4E3A;&#x53C2;&#x6570;&#x7684;&#x56DE;&#x6389;&#x51FD;&#x6570;&#xFF0C;&#x82E5;&#x7528;&#x6237;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;&#x6B64;&#x89C6;&#x56FE;&#xFF0C;&#x8FD4;&#x56DE; <code>True</code>&#x3002;&#x6CE8;&#x610F;&#xFF0C;<a href="#django.contrib.auth.decorators.user_passes_test"><code>user_passes_test()</code></a> &#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x68C0;&#x67E5; <a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a> &#x662F;&#x5426;&#x662F;&#x4E0D;&#x662F;&#x533F;&#x540D;&#x5BF9;&#x8C61;&#x3002;</p>
+<p><a href="#django.contrib.auth.decorators.user_passes_test"><code>user_passes_test()</code></a>&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#xFF1A;</p>
+<p><code>login_url</code></p>
+<p>&#x8BA9;&#x4F60;&#x6307;&#x5B9A;&#x90A3;&#x4E9B;&#x6CA1;&#x6709;&#x901A;&#x8FC7;&#x68C0;&#x67E5;&#x7684;&#x7528;&#x6237;&#x8981;&#x91CD;&#x5B9A;&#x5411;&#x81F3;&#x54EA;&#x91CC;&#x3002;&#x82E5;&#x4E0D;&#x6307;&#x5B9A;&#x5176;&#x503C;&#xFF0C;&#x5B83;&#x53EF;&#x80FD;&#x662F;&#x9ED8;&#x8BA4;&#x7684; <a href="../../ref/settings.html#std:setting-LOGIN_URL"><code>settings.LOGIN_URL</code></a>&#x3002;</p>
+<p><code>redirect_field_name</code></p>
+<p>&#x4E0E;<a href="#django.contrib.auth.decorators.login_required"><code>login_required()</code></a>&#x7684;&#x53C2;&#x6570;&#x76F8;&#x540C;&#x3002;&#x628A;&#x5B83;&#x8BBE;&#x7F6E;&#x4E3A; <code>None</code> &#x6765;&#x628A;&#x5B83;&#x4ECE; URL &#x4E2D;&#x79FB;&#x9664;&#xFF0C;&#x5F53;&#x4F60;&#x60F3;&#x628A;&#x901A;&#x4E0D;&#x8FC7;&#x68C0;&#x67E5;&#x7684;&#x7528;&#x6237;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x6CA1;&#x6709;next page &#x7684;&#x975E;&#x767B;&#x5F55;&#x9875;&#x9762;&#x65F6;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>@user_passes_test(email_check, login_url=&apos;/login/&apos;)
+def my_view(request):
+    ...
+</code></pre><h4 id="permissionrequired-&#x88C5;&#x9970;&#x5668;">permission_required &#x88C5;&#x9970;&#x5668;</h4>
+<p><code>permission_required</code>(<em>perm</em>[, <em>login_url=None</em>, <em>raise_exception=False</em>])<a href="../../_modules/django/contrib/auth/decorators.html#permission_required">[source]</a></p>
+<p>&#x68C0;&#x67E5;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x662F;&#x5426;&#x6709;&#x6307;&#x5B9A;&#x7684;&#x6743;&#x9650;&#x662F;&#x76F8;&#x5BF9;&#x5E38;&#x89C1;&#x7684;&#x9700;&#x6C42;&#x3002;&#x56E0;&#x6B64;&#xFF0C;Django &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#xFF1A; <a href="#django.contrib.auth.decorators.permission_required"><code>permission_required()</code></a> &#x88C5;&#x9970;&#x5668;&#xFF1A;</p>
+<pre><code>from django.contrib.auth.decorators import permission_required
+
+@permission_required(&apos;polls.can_vote&apos;)
+def my_view(request):
+    ...
+</code></pre><p><a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.has_perm"><code>has_perm()</code></a> &#x65B9;&#x6CD5;, &#x6743;&#x9650;&#x540D;&#x79F0;&#x91C7;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x6CD5; <code>&quot;&lt;app label&gt;.&lt;permission codename&gt;&quot;</code> (&#x4F8B;&#x5982; <code>polls.can_vote</code> &#x8868;&#x793A;&#x5728; <code>polls</code> &#x5E94;&#x7528;&#x4E0B;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x6743;&#x9650;&#x3002;</p>
+<p>&#x8981;&#x6CE8;&#x610F;<a href="#django.contrib.auth.decorators.permission_required"><code>permission_required()</code></a> &#x4E5F;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;<code>login_url</code>&#x53C2;&#x6570;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.contrib.auth.decorators import permission_required
+
+@permission_required(&apos;polls.can_vote&apos;, login_url=&apos;/loginpage/&apos;)
+def my_view(request):
+    ...
+</code></pre><p>&#x5728; <a href="#django.contrib.auth.decorators.login_required"><code>login_required()</code></a> &#x88C5;&#x9970;&#x5668;&#x4E2D;&#xFF0C; <code>login_url</code>&#x9ED8;&#x8BA4;&#x4E3A;<a href="../../ref/settings.html#std:setting-LOGIN_URL"><code>settings.</code></a>LOGIN_URL&#x3002;</p>
+<p>&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E86;&#xA0;<code>raise_exception</code> &#x53C2;&#x6570;&#xFF0C;&#x88C5;&#x9970;&#x5668;&#x629B;&#x51FA;<a href="../../ref/exceptions.html#django.core.exceptions.PermissionDenied"><code>PermissionDenied</code></a>&#x5F02;&#x5E38;&#xFF0C;&#x4F7F;&#x7528;&#xA0;<a href="../../ref/views.html#http-forbidden-view"><em>the 403 (HTTP Forbidden) &#x89C6;&#x56FE;</em></a>&#x800C;&#x4E0D;&#x662F;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x767B;&#x5F55;&#x9875;&#x9762;&#x3002;</p>
+<p>Changed in Django 1.7:</p>
+<p><a href="#django.contrib.auth.decorators.permission_required"><code>permission_required()</code></a>&#x88C5;&#x9970;&#x5668;&#x65E2;&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x6743;&#x9650;&#x5E8F;&#x5217;&#x4E5F;&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5355;&#x4E2A;&#x7684;&#x6743;&#x9650;&#x3002;</p>
+<h4 id="&#x5BF9;&#x666E;&#x901A;&#x7684;&#x89C6;&#x56FE;&#x4F7F;&#x7528;&#x6743;&#x9650;">&#x5BF9;&#x666E;&#x901A;&#x7684;&#x89C6;&#x56FE;&#x4F7F;&#x7528;&#x6743;&#x9650;</h4>
+<p>&#x82E5;&#x8981;&#x5BF9;&#x4E00;&#x4E2A;<a href="../../ref/class-based-views/index.html"><em>&#x57FA;&#x4E8E;&#x7C7B;&#x7684;&#x666E;&#x901A;&#x89C6;&#x56FE;</em></a>&#x4F7F;&#x7528;&#x6743;&#x9650;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x8BE5;&#x7C7B;&#x4E0A;&#x88C5;&#x9970;<a href="../../ref/class-based-views/base.html#django.views.generic.base.View.dispatch"><code>View.dispatch</code></a>&#x65B9;&#x6CD5;&#x3002;&#x8BE6;&#x7EC6;&#x7EC6;&#x8282;&#x53C2;&#x89C1;<a href="../class-based-views/intro.html#id2"><em>Decorating the class</em></a>&#x3002; &#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;<a href="../class-based-views/intro.html#mixins-that-wrap-as-view"><em>&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x5C01;&#x88C5;as_view()&#x7684;mixin</em></a>&#x3002;</p>
+<h4 id="&#x5BC6;&#x7801;&#x66F4;&#x6539;&#x540E;&#x7684;&#x4F1A;&#x8BDD;&#x5931;&#x6548;">&#x5BC6;&#x7801;&#x66F4;&#x6539;&#x540E;&#x7684;&#x4F1A;&#x8BDD;&#x5931;&#x6548;</h4>
+<p>New in Django 1.7.</p>
+<p>&#x8B66;&#x544A;</p>
+<p>&#x8FD9;&#x79CD;&#x4FDD;&#x62A4;&#x53EA;&#x5728;<a href="../../ref/settings.html#std:setting-MIDDLEWARE_CLASSES"><code>MIDDLEWARE_CLASSES</code></a>&#x4E2D;<a href="../../ref/middleware.html#django.contrib.auth.middleware.SessionAuthenticationMiddleware"><code>SessionAuthenticationMiddleware</code></a>&#x5F00;&#x542F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5E94;&#x7528;&#x3002;&#x5982;&#x679C;<code>settings.py</code>&#x7531;Django&#xA0;&#x2265; 1.7. &#x7684;<a href="../../ref/django-admin.html#django-admin-startproject"><code>startproject</code></a>&#x751F;&#x6210;&#xFF0C;&#x5B83;&#x4F1A;&#x88AB;&#x5305;&#x542B;&#x8FDB;&#x6765;&#x3002;</p>
+<p>&#x5728;Django 2.0&#x4E2D;&#xFF0C;&#x4F1A;&#x8BDD;&#x9A8C;&#x8BC1;&#x4F1A;&#x53D8;&#x6210;&#x5F3A;&#x5236;&#x6027;&#x7684;&#xFF0C; &#x65E0;&#x8BBA;&#x662F;&#x5426;&#x5F00;&#x542F;&#x4E86;<code>SessionAuthenticationMiddleware</code> &#x3002; &#x5982;&#x679C;&#x4F60;&#x62E5;&#x6709;&#x4E00;&#x4E2A;1.7&#x4E4B;&#x524D;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;&#x4E0D;&#x5305;&#x542B;<code>SessionAuthenticationMiddleware</code>&#x7684;&#x6A21;&#x677F;&#x751F;&#x6210;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x8003;&#x8651;&#x5728;&#x9605;&#x8BFB;&#x4E0B;&#x9762;&#x7684;&#x5347;&#x7EA7;&#x8BF4;&#x660E;&#x4E4B;&#x540E;&#x5F00;&#x542F;&#x5B83;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x7684;<a href="../../ref/settings.html#std:setting-AUTH_USER_MODEL"><code>AUTH_USER_MODEL</code></a>&#x7EE7;&#x627F;&#x81EA;<a href="customizing.html#django.contrib.auth.models.AbstractBaseUser"><code>AbstractBaseUser</code></a>&#xFF0C;&#x6216;&#x8005;&#x5B9E;&#x73B0;&#x4E86;&#x5B83;&#x81EA;&#x5DF1;&#x7684;<a href="customizing.html#django.contrib.auth.models.AbstractBaseUser.get_session_auth_hash"><code>get_session_auth_hash()</code></a>&#x65B9;&#x6CD5;&#xFF0C;&#x9A8C;&#x8BC1;&#x540E;&#x7684;&#x4F1A;&#x8BDD;&#x4F1A;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#x3002;&#x5728;<a href="customizing.html#django.contrib.auth.models.AbstractBaseUser"><code>AbstractBaseUser</code></a>&#x7684;&#x60C5;&#x51B5;&#x4E2D;&#xFF0C;&#x8FD9;&#x662F;&#x5BC6;&#x7801;&#x5B57;&#x6BB5;&#x7684;HMAC&#x3002;&#x5982;&#x679C;&#x5F00;&#x542F;&#x4E86;<a href="../../ref/middleware.html#django.contrib.auth.middleware.SessionAuthenticationMiddleware"><code>SessionAuthenticationMiddleware</code></a> &#xFF0C;Django&#x4F1A;&#x9A8C;&#x8BC1;&#x6BCF;&#x4E2A;&#x8BF7;&#x6C42;&#x5E26;&#x6709;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#x662F;&#x5426;&#x5339;&#x914D;&#x670D;&#x52A1;&#x7AEF;&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#x3002;&#x8FD9;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x6765;&#x767B;&#x51FA;&#x6240;&#x6709;&#x7684;&#x4F1A;&#x8BDD;&#x3002;</p>
+<p>Django&#x4E2D;&#x5305;&#x542B;&#x7684;&#x9ED8;&#x8BA4;&#x7684;&#x5BC6;&#x7801;&#x4FEE;&#x6539;&#x89C6;&#x56FE;&#xFF0C;&#x4EE5;&#x53CA;<a href="index.html#module-django.contrib.auth"><code>django.contrib.auth</code></a>&#x4E2D;&#x7684;&#xA0;<a href="#django.contrib.auth.views.password_change"><code>django.contrib.auth.views.password_change()</code></a>&#x548C;<code>user_change_password</code>&#x89C6;&#x56FE; &#xFF0C;&#x4F1A;&#x4F7F;&#x7528;&#x65B0;&#x7684;&#x5BC6;&#x7801;&#x54C8;&#x5E0C;&#x503C;&#x5347;&#x7EA7;&#x4F1A;&#x8BDD;&#xFF0C;&#x4EE5;&#x4FBF;&#x7528;&#x6237;&#x5728;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x662F;&#x4E0D;&#x4F1A;&#x767B;&#x51FA;&#x3002;&#x5982;&#x679C;&#x4F60;&#x62E5;&#x6709;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5BC6;&#x7801;&#x4FEE;&#x6539;&#x89C6;&#x56FE;&#xFF0C;&#x5E76;&#x4E14;&#x5E0C;&#x671B;&#x5177;&#x6709;&#x76F8;&#x4F3C;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;</p>
+<p><code>update_session_auth_hash</code>(<em>request</em>, <em>user</em>)</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x5F53;&#x524D;&#x8BF7;&#x6C42;&#xFF0C;&#x5E76;&#x4E14;&#x4F1A;&#x5728;&#x4F1A;&#x8BDD;&#x54C8;&#x5E0C;&#x503C;&#x5F97;&#x5230;&#x7684;&#x5730;&#x65B9;&#x5347;&#x7EA7;&#x7528;&#x6237;&#x5BF9;&#x8C61;&#xFF0C;&#x4E5F;&#x4F1A;&#x9002;&#x5F53;&#x5730;&#x5347;&#x7EA7;&#x4F1A;&#x8BDD;&#x54C8;&#x5E0C;&#x503C;&#x3002;&#x4F7F;&#x7528;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>from django.contrib.auth import update_session_auth_hash
+
+def password_change(request):
+    if request.method == &apos;POST&apos;:
+        form = PasswordChangeForm(user=request.user, data=request.POST)
+        if form.is_valid():
+            form.save()
+            update_session_auth_hash(request, form.user)
+    else:
+        ...
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x5728;&#x5347;&#x7EA7;&#x4E00;&#x4E2A;&#x73B0;&#x5B58;&#x7684;&#x7AD9;&#x70B9;&#xFF0C;&#x5E76;&#x4E14;&#x5E0C;&#x671B;&#x5F00;&#x542F;&#x8FD9;&#x4E00;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x800C;&#x4E0D;&#x5E0C;&#x671B;&#x4F60;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;&#x4E4B;&#x540E;&#x91CD;&#x65B0;&#x767B;&#x5F55;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x9996;&#x5148;&#x5347;&#x7EA7;&#x5230;DJango1.7&#x5E76;&#x4E14;&#x8FD0;&#x884C;&#x5B83;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#xFF0C;&#x4EE5;&#x4FBF;&#x6240;&#x6709;&#x4F1A;&#x8BDD;&#x5728;&#x7528;&#x6237;&#x767B;&#x5F55;&#x65F6;&#x81EA;&#x7136;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x5B83;&#x4EEC;&#x5305;&#x542B;&#x4E0A;&#x9762;&#x63CF;&#x8FF0;&#x7684;&#x4F1A;&#x8BDD;&#x54C8;&#x5E0C;&#x3002;&#x4E00;&#x65E6;&#x4F60;&#x4F7F;&#x7528;<a href="../../ref/middleware.html#django.contrib.auth.middleware.SessionAuthenticationMiddleware"><code>SessionAuthenticationMiddleware</code></a>&#x5F00;&#x59CB;&#x8FD0;&#x884C;&#x4F60;&#x7684;&#x7AD9;&#x70B9;&#xFF0C;&#x4EFB;&#x4F55;&#x6CA1;&#x6709;&#x767B;&#x5F55;&#x5E76;&#x4E14;&#x4F1A;&#x8BDD;&#x4F7F;&#x7528;&#x9A8C;&#x8BC1;&#x54C8;&#x5E0C;&#x503C;&#x5347;&#x7EA7;&#x8FC7;&#x7684;&#x7528;&#x6237;&#x7684;&#x73B0;&#x6709;&#x4F1A;&#x8BDD;&#x90FD;&#x4F1A;&#x5931;&#x6548;&#xFF0C;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x767B;&#x5F55;&#x3002;</p>
+<p>&#x6CE8;&#x610F;</p>
+<p>&#x867D;&#x7136;<a href="customizing.html#django.contrib.auth.models.AbstractBaseUser.get_session_auth_hash"><code>get_session_auth_hash()</code></a>&#x7ED9;&#x4E88;<a href="../../ref/settings.html#std:setting-SECRET_KEY"><code>SECRET_KEY</code></a>&#xFF0C;&#x4F7F;&#x7528;&#x65B0;&#x7684;&#x79C1;&#x94A5;&#x5347;&#x7EA7;&#x4F60;&#x7684;&#x7AD9;&#x70B9;&#x4F1A;&#x4F7F;&#x6240;&#x6709;&#x73B0;&#x6709;&#x4F1A;&#x8BDD;&#x5931;&#x6548;&#x3002;</p>
+<h3 id="&#x8BA4;&#x8BC1;&#x7684;&#x89C6;&#x56FE;">&#x8BA4;&#x8BC1;&#x7684;&#x89C6;&#x56FE;</h3>
+<p>Django&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x89C6;&#x56FE;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5904;&#x7406;&#x767B;&#x5F55;&#x3001;&#x767B;&#x51FA;&#x548C;&#x5BC6;&#x7801;&#x7BA1;&#x7406;&#x3002;&#x5B83;&#x4EEC;&#x4F7F;&#x7528;<a href="#built-in-auth-forms"><em>stock auth &#x8868;&#x5355;</em></a>&#xFF0C;&#x4F46;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x8868;&#x5355;&#x3002;</p>
+<p>Django&#x6CA1;&#x6709;&#x4E3A;&#x8BA4;&#x8BC1;&#x89C6;&#x56FE;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x7684;&#x6A21;&#x677F;&#x3002;&#x4F60;&#x5E94;&#x8BE5;&#x4E3A;&#x4F60;&#x60F3;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x89C6;&#x56FE;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;&#x6A21;&#x677F;&#x3002;&#x6A21;&#x677F;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5B9A;&#x4E49;&#x5728;&#x6BCF;&#x4E2A;&#x89C6;&#x56FE;&#x4E2D;&#xFF0C;&#x53C2;&#x89C1;<a href="#all-authentication-views"><em>&#x6240;&#x6709;&#x7684;&#x8BA4;&#x8BC1;&#x89C6;&#x56FE;</em></a>.</p>
+<h4 id="&#x4F7F;&#x7528;&#x89C6;&#x56FE;">&#x4F7F;&#x7528;&#x89C6;&#x56FE;</h4>
+<p>&#x6709;&#x51E0;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x5728;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x89C6;&#x56FE;&#x3002;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x5305;&#x542B;<code>django.contrib.auth.urls</code>&#x4E2D;&#x63D0;&#x4F9B;&#x7684;URLconf&#x5230;&#x4F60;&#x81EA;&#x5DF1;&#x7684;URLconf&#x4E2D;&#xFF0C;&#x4F8B;&#x5982;</p>
+<pre><code>urlpatterns = [
+    url(&apos;^&apos;, include(&apos;django.contrib.auth.urls&apos;))
+]
+</code></pre><p>&#x8FD9;&#x5C06;&#x5305;&#x542B;&#x8FDB;&#x4E0B;&#x9762;&#x7684;URL&#x6A21;&#x5F0F;&#xFF1A;</p>
+<pre><code>^login/$ [name=&apos;login&apos;]
+^logout/$ [name=&apos;logout&apos;]
+^password_change/$ [name=&apos;password_change&apos;]
+^password_change/done/$ [name=&apos;password_change_done&apos;]
+^password_reset/$ [name=&apos;password_reset&apos;]
+^password_reset/done/$ [name=&apos;password_reset_done&apos;]
+^reset/(?P&lt;uidb64&gt;[0-9A-Za-z_\-]+)/(?P&lt;token&gt;[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$ [name=&apos;password_reset_confirm&apos;]
+^reset/done/$ [name=&apos;password_reset_complete&apos;]
+</code></pre><p>&#x8FD9;&#x4E9B;&#x89C6;&#x56FE;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x6613;&#x8BB0;&#x7684;URL&#x540D;&#x79F0;&#x3002;&#x4F7F;&#x7528;&#x547D;&#x540D;URL&#x6A21;&#x5F0F;&#x7684;&#x7EC6;&#x8282;&#x8BF7;&#x53C2;&#x89C1;<a href="../http/urls.html"><em>URL&#x6587;&#x6863;</em></a>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x66F4;&#x591A;&#x5730;&#x63A7;&#x5236;&#x4F60;&#x7684;URL&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4F60;&#x7684;URLconf&#x4E2D;&#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x89C6;&#x56FE;&#xFF1A;</p>
+<pre><code>urlpatterns = [
+    url(&apos;^change-password/&apos;, &apos;django.contrib.auth.views.password_change&apos;)
+]
+</code></pre><p>&#x8FD9;&#x4E9B;&#x89C6;&#x56FE;&#x5177;&#x6709;&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6539;&#x53D8;&#x89C6;&#x56FE;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x89C6;&#x56FE;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x677F;&#x540D;&#x79F0;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;<code>template_name</code>&#x53C2;&#x6570;&#x3002;&#x5B9E;&#x73B0;&#x5B83;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x5728;URLconf&#x4E2D;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x5C06;&#x88AB;&#x4F20;&#x9012;&#x5230;&#x89C6;&#x56FE;&#x4E2D;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>urlpatterns = [
+    url(
+        &apos;^change-password/&apos;,
+        &apos;django.contrib.auth.views.password_change&apos;,
+        {&apos;template_name&apos;: &apos;change-password.html&apos;}
+    )
+]
+</code></pre><p>&#x6240;&#x6709;&#x7684;&#x89C6;&#x56FE;&#x90FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<a href="../../ref/template-response.html#django.template.response.TemplateResponse"><code>TemplateResponse</code></a> &#x5B9E;&#x4F8B;&#xFF0C;&#x8FD9;&#x5141;&#x8BB8;&#x4F60;&#x5728;&#x6E32;&#x67D3;&#x4E4B;&#x524D;&#x5F88;&#x5BB9;&#x6613;&#x81EA;&#x5B9A;&#x4E49;&#x54CD;&#x5E94;&#x3002;&#x5B9E;&#x73B0;&#x5B83;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x5728;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x89C6;&#x56FE;&#x4E2D;&#x5305;&#x88C5;&#x4E00;&#x4E2A;&#x89C6;&#x56FE;&#xFF1A;</p>
+<pre><code>from django.contrib.auth import views
+
+def change_password(request):
+    template_response = views.password_change(request)
+    # Do something with `template_response`
+    return template_response
+</code></pre><p>&#x66F4;&#x591A;&#x7684;&#x7EC6;&#x8282;&#xFF0C;&#x53C2;&#x89C1;<a href="../../ref/template-response.html"><em>TemplateResponse&#x6587;&#x6863;</em></a>&#x3002;</p>
+<h4 id="&#x6240;&#x6709;&#x7684;&#x8BA4;&#x8BC1;&#x89C6;&#x56FE;">&#x6240;&#x6709;&#x7684;&#x8BA4;&#x8BC1;&#x89C6;&#x56FE;</h4>
+<p>&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x4E86;<code>django.contrib.auth</code>&#x63D0;&#x4F9B;&#x7684;&#x6240;&#x6709;&#x89C6;&#x56FE;&#x3002;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x53C2;&#x89C1;<a href="#using-the-views"><em>&#x4F7F;&#x7528;&#x89C6;&#x56FE;</em></a>&#x3002;</p>
+<p><code>login</code>(<em>request</em>[, <em>template_name</em>, <em>redirect_field_name</em>, <em>authentication_form</em>, <em>current_app</em>, <em>extra_context</em>])<a href="../../_modules/django/contrib/auth/views.html#login">[source]</a></p>
+<p><strong>URL &#x540D;&#x79F0;&#xFF1A;</strong><code>login</code></p>
+<p>&#x5173;&#x4E8E;&#x4F7F;&#x7528;&#x547D;&#x540D;URL&#x6A21;&#x5F0F;&#x7684;&#x7EC6;&#x8282;&#x53C2;&#x89C1;<a href="../http/urls.html"><em>URL &#x6587;&#x6863;</em></a>&#x3002;</p>
+<p><strong>&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>template_name</code>: &#x7528;&#x4E8E;&#x7528;&#x6237;&#x767B;&#x5F55;&#x89C6;&#x56FE;&#x7684;&#x6A21;&#x677F;&#x540D;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>registration/login.html</code>&#x3002;</li>
+<li><code>redirect_field_name</code>: <code>GET</code>&#x5B57;&#x6BB5;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5305;&#x542B;&#x767B;&#x9646;&#x540E;&#x91CD;&#x5B9A;&#x5411;URL&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>next</code>&#x3002;</li>
+<li><code>authentication_form</code>: &#x7528;&#x4E8E;&#x8BA4;&#x8BC1;&#x7684;&#x53EF;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#xFF08;&#x901A;&#x5E38;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#x7C7B;&#xFF09;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<a href="#django.contrib.auth.forms.AuthenticationForm">AuthenticationForm</a>&#x3002;</li>
+<li><code>current_app</code>: &#x6307;&#x793A;&#x5305;&#x542B;&#x5F53;&#x524D;&#x89C6;&#x56FE;&#x7684;&#x662F;&#x54EA;&#x4E2A;&#x5E94;&#x7528;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x53C2;&#x89C1;<a href="../http/urls.html#topics-http-reversing-url-namespaces">&#x547D;&#x540D;URL&#x7684;&#x89E3;&#x6790;&#x7B56;&#x7565;</a>&#x3002;</li>
+<li><code>extra_context</code>: &#x4E00;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x5C06;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x4F20;&#x9012;&#x7ED9;&#x6A21;&#x677F;&#x7684;&#x9ED8;&#x8BA4;&#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x4E2D;&#x3002;</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x662F;<code>django.contrib.auth.views.login</code>&#x6240;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x901A;&#x8FC7; <code>GET</code>&#x8C03;&#x7528;&#xFF0C;&#x5B83;&#x663E;&#x793A;&#x4E00;&#x4E2A;POST&#x7ED9;&#x76F8;&#x540C;URL&#x7684;&#x767B;&#x5F55;&#x8868;&#x5355;&#x3002;&#x540E;&#x9762;&#x6709;&#x66F4;&#x591A;&#x8FD9;&#x65B9;&#x9762;&#x7684;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x901A;&#x8FC7;<code>POST</code>&#x8C03;&#x7528;&#x5E76;&#x5E26;&#x6709;&#x7528;&#x6237;&#x63D0;&#x4EA4;&#x7684;&#x51ED;&#x8BC1;&#xFF0C;&#x5B83;&#x4F1A;&#x5C1D;&#x8BD5;&#x767B;&#x5165;&#x8BE5;&#x7528;&#x6237;&#x3002;&#x5982;&#x679C;&#x767B;&#x5165;&#x6210;&#x529F;&#xFF0C;&#x8BE5;&#x89C6;&#x56FE;&#x91CD;&#x5B9A;&#x5411;&#x5230;<code>next</code>&#x4E2D;&#x6307;&#x5B9A;&#x7684;URL&#x3002;&#x5982;&#x679C;<code>next</code>&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#xFF0C;&#x5B83;&#x91CD;&#x5B9A;&#x5411;&#x5230;<a href="../../ref/settings.html#std:setting-LOGIN_REDIRECT_URL">settings.LOGIN_REDIRECT_URL</a>&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;<code>/accounts/profile/</code>&#xFF09;&#x3002;&#x5982;&#x679C;&#x767B;&#x5165;&#x4E0D;&#x6210;&#x529F;&#xFF0C;&#x5219;&#x91CD;&#x65B0;&#x663E;&#x793A;&#x767B;&#x5F55;&#x8868;&#x5355;&#x3002;</li>
+</ul>
+<p>&#x4F60;&#x9700;&#x8981;&#x63D0;&#x4F9B;html&#x6A21;&#x677F;&#x7ED9;login&#xFF0C;&#x9ED8;&#x8BA4;&#x8C03;&#x7528;<code>registration/login.html</code>&#x3002;&#x6A21;&#x677F;&#x4F1A;&#x5F97;&#x5230;4&#x4E2A;&#x6A21;&#x677F;&#x4E0A;&#x4E0B;&#x6587;&#x53D8;&#x91CF;&#xFF1A;</p>
+<ul>
+<li><code>form</code>: &#x4E00;&#x4E2A;&#x8868;&#x793A;<a href="#django.contrib.auth.forms.AuthenticationForm">AuthenticationForm</a>&#x7684;<a href="../../ref/forms/api.html#django.forms.Form">Form</a>&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>next</code>: &#x767B;&#x5165;&#x6210;&#x529F;&#x4E4B;&#x540E;&#x91CD;&#x5B9A;&#x5411;&#x7684;URL&#x3002;&#x5B83;&#x8FD8;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li><code>site</code>: &#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x5B89;&#x88C5;site&#x6846;&#x67B6;&#xFF0C;&#x8FD9;&#x5C06;&#x88AB;&#x8BBE;&#x7F6E;&#x6210;<a href="../../ref/contrib/sites.html#django.contrib.sites.requests.RequestSite">RequestSite</a>&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x5B83;&#x4ECE;&#x5F53;&#x524D;&#x7684;<a href="../../ref/request-response.html#django.http.HttpRequest">HttpRequest</a>&#x83B7;&#x5F97;site&#x540D;&#x79F0;&#x548C;&#x57DF;&#x540D;&#x3002;</li>
+<li><code>site_name</code>: <code>site.name</code>&#x7684;&#x522B;&#x540D;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x5B89;&#x88C5;site&#x6846;&#x67B6;&#xFF0C;&#x8FD9;&#x5C06;&#x88AB;&#x8BBE;&#x7F6E;&#x6210;<a href="../../ref/request-response.html#django.http.HttpRequest.META">request.META[&apos;SERVER_NAME&apos;]</a>&#x7684;&#x503C;&#x3002;&#x5173;&#x4E8E;site &#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x53C2;&#x89C1;<a href="../../ref/contrib/sites.html"><em>&#x201C;sites&#x201D; &#x6846;&#x67B6;</em></a>&#x3002;</li>
+</ul>
+<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x559C;&#x6B22;&#x8C03;&#x7528;<code>registration/login.html</code>&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;<code>template_name</code>&#x53C2;&#x6570;&#x7ED9;&#x4F60;URLconf&#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;URLconf&#x4E2D;&#x7684;&#x884C;&#x5C06;&#x4F7F;&#x7528;<code>myapp/login.html</code>&#xFF1A;</p>
+<pre><code>url(r&apos;^accounts/login/$&apos;, auth_views.login, {&apos;template_name&apos;: &apos;myapp/login.html&apos;}),
+</code></pre><p>&#x901A;&#x8FC7;&#x4F20;&#x9012;<code>redirect_field_name</code>&#x7ED9;&#x89C6;&#x56FE;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;<code>GET</code>&#x5B57;&#x6BB5;&#x7684;&#x503C;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x767B;&#x5165;&#x6210;&#x529F;&#x540E;&#x7684;&#x91CD;&#x5B9A;&#x5411;&#x7684;URL&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x53EB;&#x505A;<code>next</code>&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;<code>registration/login.html</code>&#x6A21;&#x677F;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x6765;&#x4F5C;&#x4E3A;&#x8D77;&#x70B9;&#x3002;&#x5B83;&#x5047;&#x8BBE;&#x4F60;&#x6709;&#x4E00;&#x4E2A;&#x5B9A;&#x4E49;&#x4E86;<code>content</code>&#x5757;&#x7684;<code>base.html</code>&#x6A21;&#x677F;&#xFF1A;</p>
+<pre><code>{% extends &quot;base.html&quot; %}
+
+{% block content %}
+
+{% if form.errors %}
+&lt;p&gt;Your username and password didn&apos;t match. Please try again.&lt;/p&gt;
+{% endif %}
+
+&lt;form method=&quot;post&quot; action=&quot;{% url &apos;django.contrib.auth.views.login&apos; %}&quot;&gt;
+{% csrf_token %}
+&lt;table&gt;
+&lt;tr&gt;
+    &lt;td&gt;{{ form.username.label_tag }}&lt;/td&gt;
+    &lt;td&gt;{{ form.username }}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;{{ form.password.label_tag }}&lt;/td&gt;
+    &lt;td&gt;{{ form.password }}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;input type=&quot;submit&quot; value=&quot;login&quot; /&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;next&quot; value=&quot;{{ next }}&quot; /&gt;
+&lt;/form&gt;
+
+{% endblock %}
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x81EA;&#x5B9A;&#x4E49;&#x8BA4;&#x8BC1;&#xFF08;&#x53C2;&#x89C1;<a href="customizing.html"><em>Customizing Authentication</em></a>&#xFF09;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>authentication_form</code>&#x53C2;&#x6570;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8BA4;&#x8BC1;&#x8868;&#x5355;&#x7ED9;&#x767B;&#x5F55;&#x89C6;&#x56FE;&#x3002;&#x8BE5;&#x8868;&#x5355;&#x5FC5;&#x987B;&#x5728;&#x5B83;&#x7684;<code>__init__</code>&#x65B9;&#x6CD5;&#x4E2D;&#x63A5;&#x6536;&#x4E00;&#x4E2A;<code>request</code>&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;<code>get_user</code>&#x65B9;&#x6CD5;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x8BA4;&#x8BC1;&#x8FC7;&#x7684;&#x7528;&#x6237;&#x5BF9;&#x8C61;&#xFF08;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x6C38;&#x8FDC;&#x53EA;&#x5728;&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x6210;&#x529F;&#x540E;&#x8C03;&#x7528;&#xFF09;&#x3002;</p>
+<p><code>logout</code>(<em>request</em>[, <em>next_page</em>, <em>template_name</em>, <em>redirect_field_name</em>, <em>current_app</em>, <em>extra_context</em>])<a href="../../_modules/django/contrib/auth/views.html#logout">[source]</a></p>
+<p>&#x767B;&#x51FA;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x3002;</p>
+<p><strong>URL&#x540D;&#x79F0;&#xFF1A;</strong><code>logout</code></p>
+<p><strong>&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>next_page</code>: &#x767B;&#x51FA;&#x4E4B;&#x540E;&#x8981;&#x91CD;&#x5B9A;&#x5411;&#x7684;URL&#x3002;</li>
+<li><code>template_name</code>: &#x7528;&#x6237;&#x767B;&#x51FA;&#x4E4B;&#x540E;&#xFF0C;&#x8981;&#x5C55;&#x793A;&#x7684;&#x6A21;&#x677F;&#x7684;&#x5B8C;&#x6574;&#x540D;&#x79F0;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>registration/logged_out.html</code>&#x3002;</li>
+<li><code>redirect_field_name</code>: &#x5305;&#x542B;&#x767B;&#x51FA;&#x4E4B;&#x540E;&#x6240;&#x91CD;&#x5B9A;&#x5411;&#x7684;URL&#x7684;<code>GET</code>&#x5B57;&#x6BB5;&#x7684;&#x540D;&#x79F0;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; <code>next</code>&#x3002;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E86;<code>GET</code>&#x53C2;&#x6570;&#xFF0C;&#x4F1A;&#x8986;&#x76D6;<code>next_page</code> URL&#x3002;</li>
+<li><code>current_app</code>: &#x4E00;&#x4E2A;&#x63D0;&#x793A;&#xFF0C;&#x8868;&#x660E;&#x54EA;&#x4E2A;&#x5E94;&#x7528;&#x542B;&#x6709;&#x4E86;&#x5F53;&#x524D;&#x89C6;&#x56FE;&#x3002; &#x8BE6;&#x89C1; <a href="../http/urls.html#topics-http-reversing-url-namespaces">&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#x7684;URL&#x89E3;&#x6790;&#x7B56;&#x7565;</a> &#x3002;</li>
+<li><code>extra_context</code>: &#x4E00;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x5411;&#x6A21;&#x677F;&#x4F20;&#x9012;&#x7684;&#x9ED8;&#x8BA4;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x4E2D;&#x3002;</li>
+</ul>
+<p><strong>&#x6A21;&#x677F;&#x4E0A;&#x4E0B;&#x6587;&#xFF1A;</strong></p>
+<ul>
+<li><code>title</code>: &#x672C;&#x5730;&#x5316;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x201C;&#x767B;&#x51FA;&#x201D;&#x3002;</li>
+<li><code>site</code>: &#x6839;&#x636E;<a href="../../ref/settings.html#std:setting-SITE_ID">SITE_ID</a> &#x8BBE;&#x7F6E;&#x7684;&#x5F53;&#x524D;<a href="../../ref/contrib/sites.html#django.contrib.sites.models.Site">&#x7AD9;&#x70B9;</a>&#x3002;&#x5982;&#x679C;&#x4F60;&#x5E76;&#x6CA1;&#x6709;&#x5B89;&#x88C5;&#x7AD9;&#x70B9;&#x6846;&#x67B6;&#xFF0C;&#x4F1A;&#x8BBE;&#x7F6E;&#x4E3A;&#xA0;<a href="../../ref/contrib/sites.html#django.contrib.sites.requests.RequestSite">RequestSite</a>&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x5B83;&#x4ECE;&#x5F53;&#x524D;<a href="../../ref/request-response.html#django.http.HttpRequest">HttpRequest</a>&#x6765;&#x83B7;&#x53D6;&#x7AD9;&#x70B9;&#x540D;&#x79F0;&#x548C;&#x57DF;&#x540D;&#x3002;</li>
+<li><code>site_name</code>: <code>site.name</code>&#x7684;&#x522B;&#x540D;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B89;&#x88C5;&#x7AD9;&#x70B9;&#x6846;&#x67B6;&#xFF0C;&#x4F1A;&#x8BBE;&#x7F6E;&#x4E3A;<a href="../../ref/request-response.html#django.http.HttpRequest.META">request.META[&apos;SERVER_NAME&apos;]</a>&#x3002;&#x7AD9;&#x70B9;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x89C1;<a href="../../ref/contrib/sites.html"><em>&#x201C;&#x7AD9;&#x70B9;&#x201D;&#x6846;&#x67B6;</em></a>&#x3002;</li>
+<li><code>current_app</code>: &#x4E00;&#x4E2A;&#x63D0;&#x793A;&#xFF0C;&#x8868;&#x660E;&#x54EA;&#x4E2A;&#x5E94;&#x7528;&#x542B;&#x6709;&#x4E86;&#x5F53;&#x524D;&#x89C6;&#x56FE;&#x3002; &#x8BE6;&#x89C1; <a href="../http/urls.html#topics-http-reversing-url-namespaces">&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#x7684;URL&#x89E3;&#x6790;&#x7B56;&#x7565;</a> &#x3002;</li>
+<li><code>extra_context</code>: &#x4E00;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x5411;&#x6A21;&#x677F;&#x4F20;&#x9012;&#x7684;&#x9ED8;&#x8BA4;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x4E2D;&#x3002;</li>
+</ul>
+<p><code>logout_then_login</code>(<em>request</em>[, <em>login_url</em>, <em>current_app</em>, <em>extra_context</em>])<a href="../../_modules/django/contrib/auth/views.html#logout_then_login">[source]</a></p>
+<p>&#x767B;&#x51FA;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x767B;&#x5F55;&#x9875;&#x9762;&#x3002;</p>
+<p><strong>URL &#x540D;&#x79F0;&#xFF1A;</strong> &#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x7684;URL</p>
+<p><strong>&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>login_url</code>: &#x767B;&#x5F55;&#x9875;&#x9762;&#x8981;&#x91CD;&#x5B9A;&#x5411;&#x7684;URL&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<a href="../../ref/settings.html#std:setting-LOGIN_URL">settings.LOGIN_URL</a>&#x3002;</li>
+<li><code>current_app</code>: &#x4E00;&#x4E2A;&#x63D0;&#x793A;&#xFF0C;&#x8868;&#x660E;&#x54EA;&#x4E2A;&#x5E94;&#x7528;&#x542B;&#x6709;&#x4E86;&#x5F53;&#x524D;&#x89C6;&#x56FE;&#x3002;&#x8BE6;&#x89C1; <a href="../http/urls.html#topics-http-reversing-url-namespaces">&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#x7684;URL&#x89E3;&#x6790;&#x7B56;&#x7565;</a> &#x3002;</li>
+<li><code>extra_context</code>: &#x4E00;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x5411;&#x6A21;&#x677F;&#x4F20;&#x9012;&#x7684;&#x9ED8;&#x8BA4;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x4E2D;&#x3002;</li>
+</ul>
+<p><code>password_change</code>(<em>request</em>[, <em>template_name</em>, <em>post_change_redirect</em>, <em>password_change_form</em>, <em>current_app</em>, <em>extra_context</em>])<a href="../../_modules/django/contrib/auth/views.html#password_change">[source]</a></p>
+<p>&#x5141;&#x8BB8;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x4FEE;&#x6539;&#x4ED6;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
+<p><strong>URL &#x540D;&#x79F0;&#xFF1A;</strong><code>password_change</code></p>
+<p><strong>&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>template_name</code>: &#x7528;&#x6765;&#x663E;&#x793A;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x8868;&#x5355;&#x7684;template&#x7684;&#x5168;&#x540D;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>registration/password_change_form.html</code> &#x3002;</li>
+<li><code>post_change_redirect</code>: &#x5BC6;&#x7801;&#x4FEE;&#x6539;&#x6210;&#x529F;&#x540E;&#x91CD;&#x5B9A;&#x5411;&#x7684;URL&#x3002;</li>
+<li><code>password_change_form</code>: &#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x201C;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x201D;&#x8868;&#x5355;&#xFF0C;&#x5FC5;&#x987B;&#x63A5;&#x53D7;<code>user</code> &#x5173;&#x952E;&#x8BCD;&#x53C2;&#x6570;&#x3002;&#x8868;&#x5355;&#x7528;&#x4E8E;&#x5B9E;&#x9645;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; <a href="#django.contrib.auth.forms.PasswordChangeForm">PasswordChangeForm</a>&#x3002;</li>
+<li><code>current_app</code>: &#x4E00;&#x4E2A;&#x63D0;&#x793A;&#xFF0C;&#x6697;&#x793A;&#x54EA;&#x4E2A;&#x5E94;&#x7528;&#x5305;&#x542B;&#x5F53;&#x524D;&#x7684;&#x89C6;&#x56FE;&#x3002;&#x8BE6;&#x89C1; <a href="../http/urls.html#topics-http-reversing-url-namespaces">&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#x7684;URL&#x89E3;&#x6790;&#x7B56;&#x7565;</a> &#x3002;</li>
+<li><code>extra_context</code>: &#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x4F1A;&#x6DFB;&#x52A0;&#x5230;&#x4F20;&#x9012;&#x7ED9;&#x6A21;&#x677F;&#x7684;&#x9ED8;&#x8BA4;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x4E2D;&#x3002;</li>
+</ul>
+<p><strong>&#x6A21;&#x677F;&#x4E0A;&#x4E0B;&#x6587;&#xFF1A;</strong></p>
+<ul>
+<li><code>form</code>: &#x5BC6;&#x7801;&#x4FEE;&#x6539;&#x8868;&#x5355;&#xFF08;&#x8BF7;&#x89C1;&#x4E0A;&#x9762;&#x7684;<code>password_change_form</code>&#xFF09;&#x3002;</li>
+</ul>
+<p><code>password_change_done</code>(<em>request</em>[, <em>template_name</em>, <em>current_app</em>, <em>extra_context</em>])<a href="../../_modules/django/contrib/auth/views.html#password_change_done">[source]</a></p>
+<p>&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x5728;&#x7528;&#x6237;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x4E4B;&#x540E;&#x663E;&#x793A;&#x3002;</p>
+<p><strong>URL &#x540D;&#x79F0;&#xFF1A;</strong><code>password_change_done</code></p>
+<p><strong>&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>template_name</code>: &#x6240;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x7684;&#x5B8C;&#x6574;&#x540D;&#x79F0;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>registration/password_change_done.html</code>&#x3002;</li>
+<li><code>current_app</code>: &#x4E00;&#x4E2A;&#x63D0;&#x793A;&#xFF0C;&#x6697;&#x793A;&#x54EA;&#x4E2A;&#x5E94;&#x7528;&#x5305;&#x542B;&#x5F53;&#x524D;&#x7684;&#x89C6;&#x56FE;&#x3002; &#x8BE6;&#x89C1; <a href="../http/urls.html#topics-http-reversing-url-namespaces">&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#x7684;URL&#x89E3;&#x6790;&#x7B56;&#x7565;</a> &#x3002;</li>
+<li><code>extra_context</code>: &#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x4F1A;&#x6DFB;&#x52A0;&#x5230;&#x4F20;&#x9012;&#x7ED9;&#x6A21;&#x677F;&#x7684;&#x9ED8;&#x8BA4;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x6570;&#x636E;&#x4E2D;&#x3002;</li>
+</ul>
+<p><code>password_reset</code>(<em>request</em>[, <em>is_admin_site</em>, <em>template_name</em>, <em>email_template_name</em>, <em>password_reset_form</em>, <em>token_generator</em>, <em>post_reset_redirect</em>, <em>from_email</em>, <em>current_app</em>, <em>extra_context</em>, <em>html_email_template_name</em>])<a href="../../_modules/django/contrib/auth/views.html#password_reset">[source]</a></p>
+<p>&#x5141;&#x8BB8;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x751F;&#x6210;&#x4E00;&#x6B21;&#x6027;&#x7684;&#x8FDE;&#x63A5;&#x5E76;&#x53D1;&#x9001;&#x5230;&#x7528;&#x6237;&#x6CE8;&#x518C;&#x7684;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x4E2D;&#x6765;&#x91CD;&#x7F6E;&#x5BC6;&#x7801;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x7684;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x4E0D;&#x5728;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B58;&#x5728;&#xFF0C;&#x8FD9;&#x4E2A;&#x89C6;&#x56FE;&#x4E0D;&#x4F1A;&#x53D1;&#x9001;&#x4EFB;&#x4F55;&#x90AE;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x7528;&#x6237;&#x4E5F;&#x4E0D;&#x4F1A;&#x6536;&#x5230;&#x4EFB;&#x4F55;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;&#x8FD9;&#x4F1A;&#x963B;&#x6B62;&#x6570;&#x636E;&#x6CC4;&#x9732;&#x7ED9;&#x6F5C;&#x5728;&#x7684;&#x653B;&#x51FB;&#x8005;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6253;&#x7B97;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x63D0;&#x4F9B;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;<a href="#django.contrib.auth.forms.PasswordResetForm"><code>PasswordResetForm</code></a>&#xFF0C;&#x5E76;&#x4F7F;&#x7528;<code>password_reset_form</code> &#x53C2;&#x6570;&#x3002;</p>
+<p>&#x7528;&#x65E0;&#x6548;&#x5BC6;&#x7801;&#x6807;&#x8BB0;&#x7684;&#x7528;&#x6237;&#xFF08;&#x53C2;&#x89C1;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.set_unusable_password"><code>set_unusable_password()</code></a>&#xFF09;&#x4E0D;&#x5141;&#x8BB8;&#x8BF7;&#x6C42;&#x91CD;&#x7F6E;&#x5BC6;&#x7801;&#xFF0C;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x4F7F;&#x7528;&#x7C7B;&#x4F3C;&#x4E8E;LDAP&#x7684;&#x5916;&#x90E8;&#x9A8C;&#x8BC1;&#x8D44;&#x6E90;&#x65F6;&#x7684;&#x6EE5;&#x7528;&#x3002;&#x6CE8;&#x610F;&#x5B83;&#x4EEC;&#x4E0D;&#x4F1A;&#x6536;&#x5230;&#x4EFB;&#x4F55;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4F1A;&#x66B4;&#x9732;&#x5B83;&#x4EEC;&#x7684;&#x8D26;&#x6237;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x53D1;&#x9001;&#x4EFB;&#x4F55;&#x90AE;&#x4EF6;&#x3002;</p>
+<p><strong>URL &#x540D;&#x79F0;&#xFF1A;</strong><code>password_reset</code></p>
+<p><strong>&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>template_name</code>: The full name of a template to use for
+displaying the password reset form. Defaults to
+<code>registration/password_reset_form.html</code> if not supplied.</li>
+<li><code>email_template_name</code>: The full name of a template to use for
+generating the email with the reset password link. Defaults to
+<code>registration/password_reset_email.html</code> if not supplied.</li>
+<li><code>subject_template_name</code>: The full name of a template to use for
+the subject of the email with the reset password link. Defaults
+to <code>registration/password_reset_subject.txt</code> if not supplied.</li>
+<li><code>password_reset_form</code>: Form that will be used to get the email of
+the user to reset the password for. Defaults to
+<a href="#django.contrib.auth.forms.PasswordResetForm">{{s.379}}</a>.</li>
+<li><code>token_generator</code>: Instance of the class to check the one time link.
+This will default to <code>default_token_generator</code>, it&#x2019;s an instance of
+<code>django.contrib.auth.tokens.PasswordResetTokenGenerator</code>.</li>
+<li><code>post_reset_redirect</code>: The URL to redirect to after a successful
+password reset request.</li>
+<li><code>from_email</code>: A valid email address. By default Django uses
+the <a href="../../ref/settings.html#std:setting-DEFAULT_FROM_EMAIL">DEFAULT_FROM_EMAIL</a>.</li>
+<li><code>current_app</code>: A hint indicating which application contains the current
+view. See the <a href="../http/urls.html#topics-http-reversing-url-namespaces">{{s.385}}</a> for more information.</li>
+<li><code>extra_context</code>: A dictionary of context data that will be added to the
+default context data passed to the template.</li>
+<li><code>html_email_template_name</code>: The full name of a template to use
+for generating a <code>text/html</code> multipart email with the password reset
+link. By default, HTML email is not sent.</li>
+</ul>
+<p>New in Django 1.7:</p>
+<p>&#x6DFB;&#x52A0;&#x4E86;<code>html_email_template_name</code>&#x3002;</p>
+<p>Deprecated since version 1.8: <code>is_admin_site</code>&#x53C2;&#x6570;&#x5DF2;&#x88AB;&#x5E9F;&#x5F03;&#xFF0C;&#x5C06;&#x5728;Django2.0&#x4E2D;&#x88AB;&#x79FB;&#x9664;&#x3002;</p>
+<p><strong>&#x6A21;&#x677F;&#x4E0A;&#x4E0B;&#x6587;&#xFF1A;</strong></p>
+<ul>
+<li><code>form</code>: The form (see <code>password_reset_form</code> above) for resetting
+the user&#x2019;s password.</li>
+</ul>
+<p><strong>Email&#x6A21;&#x677F;&#x4E0A;&#x4E0B;&#x6587;&#xFF1A;</strong></p>
+<ul>
+<li><code>email</code>: An alias for <code>user.email</code></li>
+<li><code>user</code>: The current <a href="../../ref/contrib/auth.html#django.contrib.auth.models.User">User</a>,
+according to the <code>email</code> form field. Only active users are able to
+reset their passwords (<code>User.is_active is True</code>).</li>
+<li><code>site_name</code>: An alias for <code>site.name</code>. If you don&#x2019;t have the site
+framework installed, this will be set to the value of
+<a href="../../ref/request-response.html#django.http.HttpRequest.META">request.META[&apos;SERVER_NAME&apos;]</a>.
+For more on sites, see <a href="../../ref/contrib/sites.html"><em>The &#x201C;sites&#x201D; framework</em></a>.</li>
+<li><code>domain</code>: An alias for <code>site.domain</code>. If you don&#x2019;t have the site
+framework installed, this will be set to the value of
+<code>request.get_host()</code>.</li>
+<li><code>protocol</code>: http or https</li>
+<li><code>uid</code>: The user&#x2019;s primary key encoded in base 64.</li>
+<li><code>token</code>: Token to check that the reset link is valid.</li>
+</ul>
+<p><code>registration/password_reset_email.html</code>&#x6837;&#x4F8B;&#xFF08;&#x90AE;&#x4EF6;&#x6B63;&#x6587;&#x6A21;&#x677F;&#xFF09;&#xFF1A;</p>
+<pre><code>Someone asked for password reset for email {{ email }}. Follow the link below:
+{{ protocol}}://{{ domain }}{% url &apos;password_reset_confirm&apos; uidb64=uid token=token %}
+</code></pre><p>&#x4E3B;&#x9898;&#x6A21;&#x677F;&#x4F7F;&#x7528;&#x4E86;&#x540C;&#x6837;&#x7684;&#x6A21;&#x677F;&#x4E0A;&#x4E0B;&#x6587;&#x3002;&#x4E3B;&#x9898;&#x5FC5;&#x987B;&#x662F;&#x5355;&#x884C;&#x7684;&#x7EAF;&#x6587;&#x672C;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p><code>password_reset_done</code>(<em>request</em>[, <em>template_name</em>, <em>current_app</em>, <em>extra_context</em>])<a href="../../_modules/django/contrib/auth/views.html#password_reset_done">[source]</a></p>
+<p>&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x5728;&#x5411;&#x7528;&#x6237;&#x53D1;&#x9001;&#x91CD;&#x7F6E;&#x5BC6;&#x7801;&#x7684;&#x90AE;&#x4EF6;&#x540E;&#x5C55;&#x793A;&#x3002;&#x5982;&#x679C;<a href="#django.contrib.auth.views.password_reset"><code>password_reset()</code></a>&#x89C6;&#x56FE;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x8BBE;&#x7F6E;&#xA0;<code>post_reset_redirect</code>URL&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x89C6;&#x56FE;&#x3002;</p>
+<p><strong>URL&#x540D;&#x79F0;&#xFF1A;</strong><code>password_reset_done</code></p>
+<p>&#x6CE8;&#x610F;</p>
+<p>&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x7684;email&#x5730;&#x5740;&#x5728;&#x7CFB;&#x7EDF;&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x7528;&#x6237;&#x672A;&#x6FC0;&#x6D3B;&#xFF0C;&#x6216;&#x8005;&#x5BC6;&#x7801;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x7528;&#x6237;&#x4ECD;&#x7136;&#x4F1A;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x8FD9;&#x4E2A;&#x89C6;&#x56FE;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x4F1A;&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#x3002;</p>
+<p><strong>&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>template_name</code>: The full name of a template to use.
+Defaults to <code>registration/password_reset_done.html</code> if not
+supplied.</li>
+<li><code>current_app</code>: A hint indicating which application contains the current
+view. See the <a href="../http/urls.html#topics-http-reversing-url-namespaces">{{s.393}}</a> for more information.</li>
+<li><code>extra_context</code>: A dictionary of context data that will be added to the
+default context data passed to the template.</li>
+</ul>
+<p><code>password_reset_confirm</code>(<em>request</em>[, <em>uidb64</em>, <em>token</em>, <em>template_name</em>, <em>token_generator</em>, <em>set_password_form</em>, <em>post_reset_redirect</em>, <em>current_app</em>, <em>extra_context</em>])<a href="../../_modules/django/contrib/auth/views.html#password_reset_confirm">[source]</a></p>
+<p>&#x4E3A;&#x8F93;&#x5165;&#x65B0;&#x5BC6;&#x7801;&#x5C55;&#x793A;&#x8868;&#x5355;&#x3002;</p>
+<p><strong>URL&#x540D;&#x79F0;&#xFF1A;</strong><code>password_reset_confirm</code></p>
+<p><strong>&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>uidb64</code>: The user&#x2019;s id encoded in base 64. Defaults to <code>None</code>.</li>
+<li><code>token</code>: Token to check that the password is valid. Defaults to
+<code>None</code>.</li>
+<li><code>template_name</code>: The full name of a template to display the confirm
+password view. Default value is <code>registration/password_reset_confirm.html</code>.</li>
+<li><code>token_generator</code>: Instance of the class to check the password. This
+will default to <code>default_token_generator</code>, it&#x2019;s an instance of
+<code>django.contrib.auth.tokens.PasswordResetTokenGenerator</code>.</li>
+<li><code>set_password_form</code>: Form that will be used to set the password.
+Defaults to <a href="#django.contrib.auth.forms.SetPasswordForm">{{s.395}}</a></li>
+<li><code>post_reset_redirect</code>: URL to redirect after the password reset
+done. Defaults to <code>None</code>.</li>
+<li><code>current_app</code>: A hint indicating which application contains the current
+view. See the <a href="../http/urls.html#topics-http-reversing-url-namespaces">{{s.400}}</a> for more information.</li>
+<li><code>extra_context</code>: A dictionary of context data that will be added to the
+default context data passed to the template.</li>
+</ul>
+<p><strong>Template context:</strong></p>
+<ul>
+<li><code>form</code>: The form (see <code>set_password_form</code> above) for setting the
+new user&#x2019;s password.</li>
+<li><code>validlink</code>: Boolean, True if the link (combination of <code>uidb64</code> and
+<code>token</code>) is valid or unused yet.</li>
+</ul>
+<p><code>password_reset_complete</code>(<em>request</em>[, <em>template_name</em>, <em>current_app</em>, <em>extra_context</em>])<a href="../../_modules/django/contrib/auth/views.html#password_reset_complete">[source]</a></p>
+<p>&#x5C55;&#x793A;&#x4E00;&#x4E2A;&#x89C6;&#x56FE;&#xFF0C;&#x5B83;&#x901A;&#x77E5;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x4FEE;&#x6539;&#x6210;&#x529F;&#x3002;</p>
+<p><strong>URL&#x540D;&#x79F0;&#xFF1A;</strong><code>password_reset_complete</code></p>
+<p><strong>&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>template_name</code>: The full name of a template to display the view.
+Defaults to <code>registration/password_reset_complete.html</code>.</li>
+<li><code>current_app</code>: A hint indicating which application contains the current
+view. See the <a href="../http/urls.html#topics-http-reversing-url-namespaces">{{s.403}}</a> for more information.</li>
+<li><code>extra_context</code>: A dictionary of context data that will be added to the
+default context data passed to the template.</li>
+</ul>
+<h3 id="&#x8F85;&#x52A9;&#x51FD;&#x6570;">&#x8F85;&#x52A9;&#x51FD;&#x6570;</h3>
+<p><code>redirect_to_login</code>(<em>next</em>[, <em>login_url</em>, <em>redirect_field_name</em>])<a href="../../_modules/django/contrib/auth/views.html#redirect_to_login">[source]</a></p>
+<p>&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x767B;&#x5F55;&#x9875;&#x9762;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x767B;&#x5165;&#x6210;&#x529F;&#x540E;&#x56DE;&#x5230;&#x53E6;&#x4E00;&#x4E2A;URL&#x3002;</p>
+<p><strong>&#x5FC5;&#x9700;&#x7684;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>next</code>: The URL to redirect to after a successful login.</li>
+</ul>
+<p><strong>&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>login_url</code>: The URL of the login page to redirect to.
+Defaults to <a href="../../ref/settings.html#std:setting-LOGIN_URL">{{s.411}}</a> if not supplied.</li>
+<li><code>redirect_field_name</code>: The name of a <code>GET</code> field containing the
+URL to redirect to after log out. Overrides <code>next</code> if the given
+<code>GET</code> parameter is passed.</li>
+</ul>
+<h3 id="&#x5185;&#x5EFA;&#x7684;&#x8868;&#x5355;">&#x5185;&#x5EFA;&#x7684;&#x8868;&#x5355;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x7528;&#x5185;&#x5EFA;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x4E0D;&#x60F3;&#x7F16;&#x5199;&#x9488;&#x5BF9;&#x8BE5;&#x529F;&#x80FD;&#x7684;&#x8868;&#x5355;&#xFF0C;&#x8BA4;&#x8BC1;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x4E86;&#x51E0;&#x4E2A;&#x5185;&#x5EFA;&#x7684;&#x8868;&#x5355;&#xFF0C;&#x4F4D;&#x4E8E;<a href="#module-django.contrib.auth.forms"><code>django.contrib.auth.forms</code></a>&#xFF1A;</p>
+<p>&#x6CE8;</p>
+<p>&#x5185;&#x5EFA;&#x7684;&#x9A8C;&#x8BC1;&#x8868;&#x5355;&#x5BF9;&#x4ED6;&#x4EEC;&#x5904;&#x7406;&#x7684;&#x7528;&#x6237;&#x6A21;&#x578B;&#x505A;&#x4E86;&#x7279;&#x5B9A;&#x5047;&#x8BBE;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x4E86;<a href="customizing.html#auth-custom-user"><em>&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7528;&#x6237;&#x6A21;&#x578B;</em></a>&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x4E3A;&#x9A8C;&#x8BC1;&#x7CFB;&#x7EDF;&#x5B9A;&#x4E49;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x8868;&#x5355;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x89C1;&#xA0;<a href="customizing.html#custom-users-and-the-built-in-auth-forms"><em>&#x4F7F;&#x7528;&#x5E26;&#x6709;&#x81EA;&#x5B9A;&#x4E49;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;&#x5185;&#x5EFA;&#x9A8C;&#x8BC1;&#x8868;&#x5355;</em></a>&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<p><em>class </em><code>AdminPasswordChangeForm</code><a href="../../_modules/django/contrib/auth/forms.html#AdminPasswordChangeForm">[source]</a></p>
+<p>&#x7BA1;&#x7406;&#x754C;&#x9762;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x8868;&#x5355;&#xFF0C;&#x7528;&#x4E8E;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x3002;</p>
+<p>&#x63A5;&#x53D7;<code>user</code>&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p><em>class </em><code>AuthenticationForm</code><a href="../../_modules/django/contrib/auth/forms.html#AuthenticationForm">[source]</a></p>
+<p>&#x7528;&#x4E8E;&#x7528;&#x6237;&#x767B;&#x5F55;&#x7684;&#x8868;&#x5355;&#x3002;</p>
+<p>&#x63A5;&#x53D7;<code>request</code> &#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x50A8;&#x5B58;&#x5728;&#x8868;&#x5355;&#x5B9E;&#x4F8B;&#x4E2D;&#xFF0C;&#x88AB;&#x5B50;&#x7C7B;&#x4F7F;&#x7528;&#x3002;</p>
+<p><code>confirm_login_allowed</code>(<em>user</em>)<a href="../../_modules/django/contrib/auth/forms.html#AuthenticationForm.confirm_login_allowed">[source]</a></p>
+<p>New in Django 1.7.</p>
+<p>&#x901A;&#x5E38;&#xFF0C;&#xA0;<code>AuthenticationForm</code>&#x4F1A;&#x62D2;&#x7EDD;&#xA0;<code>is_active</code>&#x6807;&#x5FD7;&#x662F;<code>False</code>&#x7684;&#x7528;&#x6237;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x653F;&#x7B56;&#x8986;&#x76D6;&#x8FD9;&#x4E00;&#x884C;&#x4E3A;&#xFF0C;&#x6765;&#x51B3;&#x5B9A;&#x54EA;&#x4E9B;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x767B;&#x5F55;&#x3002;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7EE7;&#x627F;&#xA0;<code>AuthenticationForm</code>&#x5E76;&#x8986;&#x5199;<code>confirm_login_allowed</code>&#x65B9;&#x6CD5;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x8868;&#x5355;&#x6765;&#x5B9E;&#x73B0;&#x5B83;&#x3002;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x7684;&#x7528;&#x6237;&#x4E0D;&#x80FD;&#x767B;&#x5F55;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5E94;&#x8BE5;&#x629B;&#x51FA;<a href="../../ref/exceptions.html#django.core.exceptions.ValidationError"><code>ValidationError</code></a>&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5141;&#x8BB8;&#x6240;&#x6709;&#x7528;&#x6237;&#x767B;&#x5F55;&#xFF0C;&#x4E0D;&#x7BA1;&#x201C;&#x6D3B;&#x52A8;&#x201D;&#x72B6;&#x6001;&#x5982;&#x4F55;&#xFF1A;</p>
+<pre><code>from django.contrib.auth.forms import AuthenticationForm
+
+class AuthenticationFormWithInactiveUsersOkay(AuthenticationForm):
+    def confirm_login_allowed(self, user):
+        pass
+</code></pre><p>&#x6216;&#x8005;&#x53EA;&#x5141;&#x8BB8;&#x4E00;&#x4E9B;&#x6D3B;&#x52A8;&#x7528;&#x6237;&#x767B;&#x5F55;&#x8FDB;&#x6765;&#xFF1A;</p>
+<pre><code>class PickyAuthenticationForm(AuthenticationForm):
+    def confirm_login_allowed(self, user):
+        if not user.is_active:
+            raise forms.ValidationError(
+                _(),
+                code=&apos;inactive&apos;,
+            )
+        if user.username.startswith(&apos;b&apos;):
+            raise forms.ValidationError(
+                _(),
+                code=&apos;no_b_users&apos;,
+            )
+</code></pre><p><em>class </em><code>PasswordChangeForm</code><a href="../../_modules/django/contrib/auth/forms.html#PasswordChangeForm">[source]</a></p>
+<p>&#x4E00;&#x4E2A;&#x8868;&#x5355;&#xFF0C;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x4FEE;&#x6539;&#x4ED6;&#x4EEC;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
+<p><em>class </em><code>PasswordResetForm</code><a href="../../_modules/django/contrib/auth/forms.html#PasswordResetForm">[source]</a></p>
+<p>&#x4E00;&#x4E2A;&#x8868;&#x5355;&#xFF0C;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x548C;&#x901A;&#x8FC7;&#x90AE;&#x4EF6;&#x53D1;&#x9001;&#x4E00;&#x6B21;&#x6027;&#x5BC6;&#x7801;&#x91CD;&#x7F6E;&#x94FE;&#x63A5;&#x3002;</p>
+<p><code>send_email</code>(<em>subject_template_name</em>, <em>email_template_name</em>, <em>context</em>, <em>from_email</em>, <em>to_email</em>[, <em>html_email_template_name=None</em>])</p>
+<p>New in Django 1.8.</p>
+<p>&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x6765;&#x53D1;&#x9001;<code>EmailMultiAlternatives</code>&#x3002;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x6765;&#x81EA;&#x5B9A;&#x4E49;&#x90AE;&#x4EF6;&#x5982;&#x4F55;&#x53D1;&#x9001;&#x7ED9;&#x7528;&#x6237;&#x3002;</p>
+<table class="docutils field-list" frame="void" rules="none"><colgroup><col class="field-name"><col class="field-body"></colgroup><tbody valign="top"><tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body">*   **subject_template_name** &#x2013; the template for the subject.
+*   **email_template_name** &#x2013; the template for the email body.
+*   **context** &#x2013; context passed to the `subject_template`, `email_template`,
+    and `html_email_template` (if it is not `None`).
+*   **from_email** &#x2013; the sender&#x2019;s email.
+*   **to_email** &#x2013; the email of the requester.
+*   **html_email_template_name** &#x2013; the template for the HTML body;
+    defaults to `None`, in which case a plain text email is sent.
+
+</td></tr></tbody></table>
+
+<p>&#x901A;&#x5E38;&#xFF0C;&#xA0;<code>save()</code> &#x4F4D;&#x4E8E;<code>context</code>&#x4E2D;&#xFF0C;&#x5E76;&#x5E26;&#x6709;&#xA0;<a href="#django.contrib.auth.views.password_reset"><code>password_reset()</code></a> &#x5411;&#x5B83;&#x7684;email&#x4E0A;&#x4E0B;&#x6587;&#x4F20;&#x9012;&#x7684;&#x4E00;&#x4E9B;&#x53D8;&#x91CF;&#x3002;</p>
+<p><em>class </em><code>SetPasswordForm</code><a href="../../_modules/django/contrib/auth/forms.html#SetPasswordForm">[source]</a></p>
+<p>&#x5141;&#x8BB8;&#x7528;&#x6237;&#x4E0D;&#x8F93;&#x5165;&#x65E7;&#x5BC6;&#x7801;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x7684;&#x8868;&#x5355;&#x3002;</p>
+<p><em>class </em><code>UserChangeForm</code><a href="../../_modules/django/contrib/auth/forms.html#UserChangeForm">[source]</a></p>
+<p>&#x7528;&#x6237;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x4E2D;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x548C;&#x8BB8;&#x53EF;&#x7684;&#x8868;&#x5355;&#x3002;</p>
+<p><em>class </em><code>UserCreationForm</code><a href="../../_modules/django/contrib/auth/forms.html#UserCreationForm">[source]</a></p>
+<p>&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x65B0;&#x7528;&#x6237;&#x7684;&#x8868;&#x5355;&#x3002;</p>
+<h3 id="&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x8BA4;&#x8BC1;&#x6570;&#x636E;">&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x8BA4;&#x8BC1;&#x6570;&#x636E;</h3>
+<p>&#x5F53;&#x4F60;&#x4F7F;&#x7528;<a href="../../ref/templates/api.html#django.template.RequestContext"><code>RequestContext</code></a>&#x65F6;&#xFF0C;&#x5F53;&#x524D;&#x767B;&#x5165;&#x7684;&#x7528;&#x6237;&#x548C;&#x5B83;&#x4EEC;&#x7684;&#x6743;&#x9650;&#x5728;<a href="../../ref/templates/api.html"><em>&#x6A21;&#x677F;&#x4E0A;&#x4E0B;&#x6587;</em></a>&#x4E2D;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x6280;&#x672F;&#x7EC6;&#x8282;</p>
+<p>&#x6280;&#x672F;&#x4E0A;&#x8BB2;&#xFF0C;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x53EA;&#x6709;&#x5728;&#x4F60;&#x4F7F;&#x7528;<a href="../../ref/templates/api.html#django.template.RequestContext"><code>RequestContext</code></a>&#x5E76;&#x542F;&#x7528;&#x4E86;<code>&apos;django.contrib.auth.context_processors.auth&apos;</code>&#x4E0A;&#x4E0B;&#x6587;&#x5904;&#x7406;&#x5668;&#x65F6;&#x624D;&#x53EF;&#x4EE5;&#x5728;&#x6A21;&#x677F;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x8BBF;&#x95EE;&#x5230;&#x3002;&#x5B83;&#x662F;&#x9ED8;&#x8BA4;&#x4EA7;&#x751F;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x53C2;&#x89C1;<a href="../../ref/templates/api.html#subclassing-context-requestcontext"><em>RequestContext &#x6587;&#x6863;</em></a>&#x3002;</p>
+<h4 id="&#x7528;&#x6237;">&#x7528;&#x6237;</h4>
+<p>&#x5F53;&#x6E32;&#x67D3;<a href="../../ref/templates/api.html#django.template.RequestContext"><code>RequestContext</code></a>&#x6A21;&#x677F;&#x65F6;&#xFF0C;&#x5F53;&#x524D;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x53EF;&#x80FD;&#x662F;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User"><code>User</code></a>&#x5B9E;&#x4F8B;&#x6216;&#x8005;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.AnonymousUser"><code>AnonymousUser</code></a>&#x5B9E;&#x4F8B;&#xFF0C;&#x4F1A;&#x5B58;&#x50A8;&#x5728;&#x6A21;&#x677F;&#x53D8;&#x91CF;<code>{{ user }}</code>&#x4E2D;&#xFF1A;</p>
+<pre><code>{% if user.is_authenticated %}
+    &lt;p&gt;Welcome, {{ user.username }}. Thanks for logging in.&lt;/p&gt;
+{% else %}
+    &lt;p&gt;Welcome, new user. Please log in.&lt;/p&gt;
+{% endif %}
+</code></pre><p>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;&#x4E0D;&#x662F;<code>RequestContext</code>&#xFF0C;&#x5219;&#x4E0D;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8BE5;&#x6A21;&#x677F;&#x53D8;&#x91CF;&#xFF1A;</p>
+<h4 id="&#x6743;&#x9650;">&#x6743;&#x9650;</h4>
+<p>&#x5F53;&#x524D;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x7684;&#x6743;&#x9650;&#x5B58;&#x50A8;&#x5728;&#x6A21;&#x677F;&#x53D8;&#x91CF;<code>{{ perms }}</code>&#x4E2D;&#x3002;&#x8FD9;&#x662F;&#x4E2A; <code>django.contrib.auth.context_processors</code>&#x5B9E;&#x4F8B;&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x4ED6;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x4E8E;&#x6A21;&#x677F;&#x53CB;&#x597D;&#x7684;&#x6743;&#x9650;&#x4EE3;&#x7406;&#x3002;</p>
+<p>&#x5728;<code>{{ perms }}</code> &#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x5355;&#x4E00;&#x5C5E;&#x6027;&#x7684;&#x67E5;&#x627E;&#x662F;&#xA0;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.has_module_perms"><code>User.has_module_perms</code></a>&#x7684;&#x4EE3;&#x7406;&#x3002;&#x5982;&#x679C;&#x5DF2;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x5728;<code>foo</code> &#x5E94;&#x7528;&#x4E2D;&#x62E5;&#x6709;&#x4EFB;&#x4F55;&#x8BB8;&#x53EF;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4F1A;&#x663E;&#x793A;&#xA0;<code>True</code>&#xFF1A;</p>
+<pre><code>{{ perms.foo }}
+</code></pre><p>&#x4E8C;&#x7EA7;&#x5C5E;&#x6027;&#x7684;&#x67E5;&#x627E;&#x662F;<a href="../../ref/contrib/auth.html#django.contrib.auth.models.User.has_perm"><code>User.has_perm</code></a>&#x7684;&#x4EE3;&#x7406;&#x3002;&#x5982;&#x679C;&#x5DF2;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x62E5;&#x6709;<code>foo.can_vote</code>&#x7684;&#x8BB8;&#x53EF;&#xFF0C;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x4F1A;&#x663E;&#x793A;<code>True</code>&#xFF1A;</p>
+<pre><code>{{ perms.foo.can_vote }}
+</code></pre><p>&#x6240;&#x4EE5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x6A21;&#x677F;&#x7684;<code>{% if %}</code>&#x8BED;&#x53E5;&#x68C0;&#x67E5;&#x6743;&#x9650;&#xFF1A;</p>
+<pre><code>{% if perms.foo %}
+    &lt;p&gt;You have permission to do something in the foo app.&lt;/p&gt;
+    {% if perms.foo.can_vote %}
+        &lt;p&gt;You can vote!&lt;/p&gt;
+    {% endif %}
+    {% if perms.foo.can_drive %}
+        &lt;p&gt;You can drive!&lt;/p&gt;
+    {% endif %}
+{% else %}
+    &lt;p&gt;You don&apos;t have permission to do anything in the foo app.&lt;/p&gt;
+{% endif %}
+</code></pre><p>&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>{% if in %}</code>&#x8BED;&#x53E5;&#x67E5;&#x8BE2;&#x6743;&#x9650;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>{% if &apos;foo&apos; in perms %}
+    {% if &apos;foo.can_vote&apos; in perms %}
+        &lt;p&gt;In lookup works, too.&lt;/p&gt;
+    {% endif %}
+{% endif %}
+</code></pre><h2 id="&#x5728;admin&#x4E2D;&#x7BA1;&#x7406;&#x7528;&#x6237;">&#x5728;admin&#x4E2D;&#x7BA1;&#x7406;&#x7528;&#x6237;</h2>
+<p>&#x5982;&#x679C;<code>django.contrib.admin</code>&#x548C;<code>django.contrib.auth</code>&#x8FD9;&#x4E24;&#x4E2A;&#x4F60;&#x90FD;&#x5B89;&#x88C5;&#x4E86;&#xFF0C;&#x5C06;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;admin&#x65B9;&#x4FBF;&#x5730;&#x67E5;&#x770B;&#x548C;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x3001;&#x7EC4;&#x548C;&#x6743;&#x9650;&#x3002;&#x53EF;&#x4EE5;&#x50CF;&#x5176;&#x5B83;&#x4EFB;&#x4F55;Django&#x6A21;&#x578B;&#x4E00;&#x6837;&#x521B;&#x5EFA;&#x548C;&#x5220;&#x9664;&#x7528;&#x6237;&#x3002;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x7EC4;&#xFF0C;&#x5E76;&#x5206;&#x914D;&#x6743;&#x9650;&#x7ED9;&#x7528;&#x6237;&#x548C;&#x7EC4;&#x3002;admin&#x4E2D;&#x8FD8;&#x4F1A;&#x4FDD;&#x5B58;&#x548C;&#x663E;&#x793A;&#x5BF9;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7F16;&#x8F91;&#x7684;&#x65E5;&#x5FD7;&#x3002;</p>
+<h3 id="&#x521B;&#x5EFA;&#x7528;&#x6237;">&#x521B;&#x5EFA;&#x7528;&#x6237;</h3>
+<p>&#x5728;admin&#x7684;&#x4E3B;&#x9875;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x53EF;&#x4EE5;&#x5728;&#x201C;Auth&#x201D;&#x90E8;&#x5206;&#x770B;&#x5230;&#x201C;Users&#x201D;&#x94FE;&#x63A5;&#x3002;&#x201C;Add user&#x201D; &#x9875;&#x9762;&#x4E0E;&#x6807;&#x51C6;admin&#x9875;&#x9762;&#x4E0D;&#x540C;&#x70B9;&#x5728;&#x4E8E;&#x5B83;&#x8981;&#x6C42;&#x4F60;&#x5728;&#x7F16;&#x8F91;&#x7528;&#x6237;&#x7684;&#x5176;&#x5B83;&#x5B57;&#x6BB5;&#x4E4B;&#x524D;&#x5148;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x3002;</p>
+<p>&#x53E6;&#x8BF7;&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x5F97;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x80FD;&#x591F;&#x4F7F;&#x7528;Django&#x7684;admin&#x7AD9;&#x70B9;&#x521B;&#x5EFA;&#x5176;&#x5B83;&#x7528;&#x6237;&#xFF0C; &#x4F60;&#x9700;&#x8981;&#x7ED9;&#x4ED6;&#x6DFB;&#x52A0;&#x7528;&#x6237;<em>&#x548C;</em>&#x4FEE;&#x6539;&#x7528;&#x6237;&#x7684;&#x6743;&#x9650;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&quot;Add user&#x201D; &#x548C;&#x201C;Change user&#x201D; &#x6743;&#x9650;&#xFF09;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8D26;&#x53F7;&#x5177;&#x6709;&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x7684;&#x6743;&#x9650;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x4FEE;&#x6539;&#x4ED6;&#x4EEC;&#xFF0C;&#x8BE5;&#x8D26;&#x53F7;&#x5C06;&#x4E0D;&#x80FD;&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x4F60;&#x5177;&#x6709;&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x4F60;&#x5C06;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#xFF0C;&#x8FD9;&#x4E9B;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x5C06;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x3002;&#x6240;&#x4EE5;Django&#x540C;&#x65F6;&#x8981;&#x6C42;&#x6DFB;&#x52A0;&#x6743;&#x9650;<em>&#x548C;</em>&#x4FEE;&#x6539;&#x6743;&#x9650;&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x8F7B;&#x91CF;&#x7684;&#x5B89;&#x5168;&#x63AA;&#x65BD;&#x3002;</p>
+<p>&#x4ED4;&#x7EC6;&#x8003;&#x8651;&#x4E00;&#x4E0B;&#x4F60;&#x662F;&#x5982;&#x4F55;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x6743;&#x9650;&#x7684;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E86;&#x4E00;&#x4E2A;&#x975E;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x7F16;&#x8F91;&#x7528;&#x6237;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x8FD9;&#x548C;&#x7ED9;&#x4ED6;&#x4EEC;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x7684;&#x6743;&#x9650;&#x5728;&#x6700;&#x7EC8;&#x6548;&#x679C;&#x4E0A;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x5C06;&#x80FD;&#x591F;&#x63D0;&#x5347;&#x4ED6;&#x4EEC;&#x81EA;&#x5DF1;&#x4E0B;&#x9762;&#x7684;&#x7528;&#x6237;&#x7684;&#x6743;&#x9650;&#x3002;</p>
+<h3 id="&#x4FEE;&#x6539;&#x5BC6;&#x7801;">&#x4FEE;&#x6539;&#x5BC6;&#x7801;</h3>
+<p>&#x7528;&#x6237;&#x5BC6;&#x7801;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x5728;admin&#x4E0A;&#xFF08;&#x4E5F;&#x4E0D;&#x4F1A;&#x5B58;&#x50A8;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x663E;&#x793A; <a href="passwords.html"><em>&#x5BC6;&#x7801;&#x5B58;&#x50A8;&#x7684;&#x7EC6;&#x8282;</em></a>&#x3002; &#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#x7684;&#x663E;&#x793A;&#x4E2D;&#x5305;&#x542B;&#x4E00;&#x6761;&#x6307;&#x5411;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x8868;&#x5355;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x5141;&#x8BB8;&#x7BA1;&#x7406;&#x5458;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
+<blockquote>
+<p>&#x8BD1;&#x8005;&#xFF1A;<a href="http://python.usyiyi.cn/django/index.html" target="_blank">Django &#x6587;&#x6863;&#x534F;&#x4F5C;&#x7FFB;&#x8BD1;&#x5C0F;&#x7EC4;</a>&#xFF0C;&#x539F;&#x6587;&#xFF1A;<a href="https://docs.djangoproject.com/en/1.8/topics/auth/default/" target="_blank">Using the authentication system </a>&#x3002;</p>
+<p>&#x672C;&#x6587;&#x4EE5; <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank">CC BY-NC-SA 3.0</a> &#x534F;&#x8BAE;&#x53D1;&#x5E03;&#xFF0C;&#x8F6C;&#x8F7D;&#x8BF7;&#x4FDD;&#x7559;&#x4F5C;&#x8005;&#x7F72;&#x540D;&#x548C;&#x6587;&#x7AE0;&#x51FA;&#x5904;&#x3002;</p>
+<p><a href="http://python.usyiyi.cn/django/index.html" target="_blank">Django &#x6587;&#x6863;&#x534F;&#x4F5C;&#x7FFB;&#x8BD1;&#x5C0F;&#x7EC4;</a>&#x4EBA;&#x624B;&#x7D27;&#x7F3A;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x670B;&#x53CB;&#x53EF;&#x4EE5;&#x52A0;&#x5165;&#x6211;&#x4EEC;&#xFF0C;&#x5B8C;&#x5168;&#x516C;&#x76CA;&#x6027;&#x8D28;&#x3002;&#x4EA4;&#x6D41;&#x7FA4;&#xFF1A;467338606&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="13_1_1_Overview.html" class="navigation navigation-prev " aria-label="Previous page: 概览">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="13_1_3_Password management.html" class="navigation navigation-next " aria-label="Next page: 密码管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用认证系统","level":"1.11.1.2","depth":3,"next":{"title":"密码管理","level":"1.11.1.3","depth":3,"path":"13_1_3_Password management.md","ref":"13_1_3_Password management.md","articles":[]},"previous":{"title":"概览","level":"1.11.1.1","depth":3,"path":"13_1_1_Overview.md","ref":"13_1_1_Overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"django-chinese-docs-1.8","links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"django 学习入门教程"},"file":{"path":"13_1_2_Using the authentication system.md","mtime":"2016-06-20T01:36:35.140Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:31:29.550Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

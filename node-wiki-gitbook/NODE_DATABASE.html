@@ -1,0 +1,932 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>NODE_DATABASE · node-wiki</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="NODE_TEST.html" />
+    
+    
+    <link rel="prev" href="NODE_EXPRESS_VIEW.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="PREFACE.html">
+            
+                <a href="PREFACE.html">
+            
+                    
+                    PREFACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="NODE_INTRODUCE.html">
+            
+                <a href="NODE_INTRODUCE.html">
+            
+                    
+                    NODE_INTRODUCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="NODE_JAVASCRIPT.html">
+            
+                <a href="NODE_JAVASCRIPT.html">
+            
+                    
+                    NODE_JAVASCRIPT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="NODE_INSTALL.html">
+            
+                <a href="NODE_INSTALL.html">
+            
+                    
+                    NODE_INSTALL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="NODE_ES6.html">
+            
+                <a href="NODE_ES6.html">
+            
+                    
+                    NODE_ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="NODE_BASIC.html">
+            
+                <a href="NODE_BASIC.html">
+            
+                    
+                    NODE_BASIC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="NODE_NPM.html">
+            
+                <a href="NODE_NPM.html">
+            
+                    
+                    NODE_NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="NODE_EXPRESS.html">
+            
+                <a href="NODE_EXPRESS.html">
+            
+                    
+                    NODE_EXPRESS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="NODE_EXPRESS_VIEW.html">
+            
+                <a href="NODE_EXPRESS_VIEW.html">
+            
+                    
+                    NODE_EXPRESS_VIEW
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="NODE_DATABASE.html">
+            
+                <a href="NODE_DATABASE.html">
+            
+                    
+                    NODE_DATABASE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="NODE_TEST.html">
+            
+                <a href="NODE_TEST.html">
+            
+                    
+                    NODE_TEST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="NODE_RUN.html">
+            
+                <a href="NODE_RUN.html">
+            
+                    
+                    NODE_RUN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="TODO_LIST.html">
+            
+                <a href="TODO_LIST.html">
+            
+                    
+                    TODO_LIST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="APPENDIX.html">
+            
+                <a href="APPENDIX.html">
+            
+                    
+                    APPENDIX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="LINKS.html">
+            
+                <a href="LINKS.html">
+            
+                    
+                    LINKS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="BIBLIOGRAPHY.html">
+            
+                <a href="BIBLIOGRAPHY.html">
+            
+                    
+                    BIBLIOGRAPHY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >NODE_DATABASE</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h1>
+<p>&#x4E0D;&#x61C2;Database&#x7684;&#x4EBA;&#x4E0D;&#x662F;Backend Engineer&#xFF0C;&#x53EF;&#x898B;Database&#x591A;&#x9EBC;&#x91CD;&#x8981;&#x3002;
+&#x672C;&#x7AE0;&#x7BC0;&#x5C07;&#x6703;&#x8209;&#x4E00;&#x500B;&#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB;:mysql&#x8DDF;&#x4E00;&#x500B;NOSQL:MongoDB&#x7684;&#x4E32;&#x9023;&#x3002;
+&#x672C;&#x7AE0;&#x7BC0;&#x4E0D;&#x6703;&#x64B0;&#x8FF0;&#x5B89;&#x88DD;&#x8CC7;&#x6599;&#x5EAB;&#x8DDF;SQL&#x8A9E;&#x6CD5;</p>
+<h1 id="&#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB;mysql">&#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB;:mysql</h1>
+<p>&#x9996;&#x5148;&#x9808;&#x5148;&#x5B89;&#x88DD;mysql&#x5957;&#x4EF6;:</p>
+<pre><code>npm install mysql
+</code></pre><h1 id="&#x7BC4;&#x4F8B;&#x4E00;&#x57FA;&#x672C;&#x7BC4;&#x4F8B;">&#x7BC4;&#x4F8B;&#x4E00;:&#x57FA;&#x672C;&#x7BC4;&#x4F8B;</h1>
+<p><a href="https://github.com/y2468101216/node-wiki-gitbook/tree/master/src/node_mysql/mysql.js" target="_blank">https://github.com/y2468101216/node-wiki-gitbook/tree/master/src/node_mysql/mysql.js</a></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * Name:mysql.js
+ * Purpose:mysql &#x9023;&#x63A5;&#x6559;&#x5B78;
+ * Author:Yun
+ * Version:1.0
+ * Update:2015-09-25
+ */</span>
+
+<span class="hljs-keyword">var</span> mysql = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mysql&apos;</span>);
+
+<span class="hljs-comment">//&#x5EFA;&#x7ACB;&#x9023;&#x7DDA;&#x8CC7;&#x6599;</span>
+<span class="hljs-keyword">var</span> connection = mysql.createConnection({
+  host     : <span class="hljs-string">&apos;localhost&apos;</span>,<span class="hljs-comment">//&#x8CC7;&#x6599;&#x5EAB;IP</span>
+  user     : <span class="hljs-string">&apos;root&apos;</span>,<span class="hljs-comment">//&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;</span>
+  password : <span class="hljs-string">&apos;root&apos;</span>,<span class="hljs-comment">//&#x4F7F;&#x7528;&#x8005;&#x5BC6;&#x78BC;</span>
+  database : <span class="hljs-string">&apos;localhost&apos;</span><span class="hljs-comment">//&#x8CC7;&#x6599;&#x5EAB;&#x540D;&#x7A31;</span>
+});
+
+<span class="hljs-comment">//&#x5617;&#x8A66;&#x9023;&#x7DDA;</span>
+connection.connect();
+
+<span class="hljs-comment">//&#x5012;&#x51FA;SQL&#x7D50;&#x679C;</span>
+connection.query(<span class="hljs-string">&apos;SELECT 1 + 1 AS solution&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, rows, fields</span>) </span>{
+  <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;The solution is: &apos;</span>, rows[<span class="hljs-number">0</span>].solution);
+});
+
+<span class="hljs-comment">//&#x7D50;&#x675F;&#x9023;&#x7DDA;</span>
+connection.end();
+</code></pre>
+<p>&#x7D50;&#x679C;:</p>
+<pre><code>The solution is:  2
+</code></pre><p>&#x6BD4;&#x8F03;&#x503C;&#x5F97;&#x4E00;&#x63D0;&#x7684;&#x662F;<code>connection.end();</code>&#x9019;&#x500B;&#x8A9E;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6709;&#x5BEB;php&#x5C31;&#x77E5;&#x9053;PDO&#x662F;&#x4E0D;&#x9700;&#x8981;close connection&#x7684;&#x3002;
+(&#x8A73;&#x898B;<a href="http://stackoverflow.com/questions/18277233/pdo-closing-connection" target="_blank">http://stackoverflow.com/questions/18277233/pdo-closing-connection</a>)</p>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8AAA;&#x4ED6;&#x6BD4;&#x8F03;&#x50CF;mysqli&#x3002;</p>
+<h1 id="&#x7BC4;&#x4F8B;&#x4E8C;parameterized-query">&#x7BC4;&#x4F8B;&#x4E8C;:Parameterized Query</h1>
+<p>&#x5728;&#x958B;&#x59CB;&#x4E4B;&#x524D;&#x5148;&#x8B1B;&#x4E00;&#x4E0B;SQL Injection:</p>
+<ul>
+<li>wiki&#x7684;&#x89E3;&#x91CB;:</li>
+</ul>
+<p>SQL&#x653B;&#x64CA;&#xFF08;SQL injection&#xFF09;&#xFF0C;&#x7C21;&#x7A31;&#x96B1;&#x78BC;&#x653B;&#x64CA;&#xFF0C;&#x662F;&#x767C;&#x751F;&#x65BC;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x4E4B;&#x8CC7;&#x6599;&#x5EAB;&#x5C64;&#x7684;&#x5B89;&#x5168;&#x6F0F;&#x6D1E;&#x3002;&#x7C21;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x662F;&#x5728;&#x8F38;&#x5165;&#x7684;&#x5B57;&#x4E32;&#x4E4B;&#x4E2D;&#x593E;&#x5E36;SQL&#x6307;&#x4EE4;&#xFF0C;&#x5728;&#x8A2D;&#x8A08;&#x4E0D;&#x826F;&#x7684;&#x7A0B;&#x5F0F;&#x7576;&#x4E2D;&#x5FFD;&#x7565;&#x4E86;&#x6AA2;&#x67E5;&#xFF0C;&#x90A3;&#x9EBC;&#x9019;&#x4E9B;&#x593E;&#x5E36;&#x9032;&#x53BB;&#x7684;&#x6307;&#x4EE4;&#x5C31;&#x6703;&#x88AB;&#x8CC7;&#x6599;&#x5EAB;&#x4F3A;&#x670D;&#x5668;&#x8AA4;&#x8A8D;&#x70BA;&#x662F;&#x6B63;&#x5E38;&#x7684;SQL&#x6307;&#x4EE4;&#x800C;&#x57F7;&#x884C;&#xFF0C;&#x56E0;&#x6B64;&#x906D;&#x5230;&#x7834;&#x58DE;&#x6216;&#x662F;&#x5165;&#x4FB5;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x5C31;&#x51FA;&#x73FE;&#x4E86;Parameterized Query&#xFF1A;</p>
+<ul>
+<li>wiki&#x7684;&#x89E3;&#x91CB;:</li>
+</ul>
+<p>&#x53C3;&#x6578;&#x5316;&#x67E5;&#x8A62;&#xFF08;Parameterized Query&#x6216;Parameterized Statement&#xFF09;&#x662F;&#x6307;&#x5728;&#x8A2D;&#x8A08;&#x8207;&#x8CC7;&#x6599;&#x5EAB;&#x9023;&#x7D50;&#x4E26;&#x5B58;&#x53D6;&#x8CC7;&#x6599;&#x6642;&#xFF0C;&#x5728;&#x9700;&#x8981;&#x586B;&#x5165;&#x6578;&#x503C;&#x6216;&#x8CC7;&#x6599;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x4F7F;&#x7528;&#x53C3;&#x6578;&#xFF08;Parameter&#xFF09;&#x4F86;&#x7D66;&#x503C;&#xFF0C;&#x9019;&#x500B;&#x65B9;&#x6CD5;&#x76EE;&#x524D;&#x5DF2;&#x88AB;&#x8996;&#x70BA;&#x6700;&#x6709;&#x6548;&#x53EF;&#x9810;&#x9632;SQL&#x8CC7;&#x6599;&#x96B1;&#x78BC;&#x653B;&#x64CA;&#x7684;&#x653B;&#x64CA;&#x624B;&#x6CD5;&#x7684;&#x9632;&#x79A6;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x5B89;&#x5168;&#x56E0;&#x7D20;&#xFF0C;&#x76F8;&#x6BD4;&#x8D77;&#x62FC;&#x63A5;&#x5B57;&#x4E32;&#x7684;SQL&#x8A9E;&#x53E5;&#xFF0C;&#x53C3;&#x6578;&#x5316;&#x7684;&#x67E5;&#x8A62;&#x5F80;&#x5F80;&#x6709;&#x6548;&#x80FD;&#x512A;&#x52E2;&#x3002;&#x56E0;&#x70BA;&#x53C3;&#x6578;&#x5316;&#x7684;&#x67E5;&#x8A62;&#x80FD;&#x8B93;&#x4E0D;&#x540C;&#x7684;&#x8CC7;&#x6599;&#x901A;&#x904E;&#x53C3;&#x6578;&#x5230;&#x9054;&#x8CC7;&#x6599;&#x5EAB;&#xFF0C;&#x5F9E;&#x800C;&#x516C;&#x7528;&#x540C;&#x4E00;&#x689D;SQL&#x8A9E;&#x53E5;&#x3002;&#x5927;&#x591A;&#x6578;&#x8CC7;&#x6599;&#x5EAB;&#x6703;&#x5FEB;&#x53D6;&#x89E3;&#x91CB;SQL&#x8A9E;&#x53E5;&#x7522;&#x751F;&#x7684;&#x4F4D;&#x5143;&#x7D44;&#x78BC;&#x800C;&#x7701;&#x4E0B;&#x91CD;&#x8907;&#x89E3;&#x6790;&#x7684;&#x958B;&#x92B7;&#x3002;&#x5982;&#x679C;&#x63A1;&#x53D6;&#x62FC;&#x63A5;&#x5B57;&#x4E32;&#x7684;SQL&#x8A9E;&#x53E5;&#xFF0C;&#x5247;&#x6703;&#x7531;&#x65BC;&#x904B;&#x7B97;&#x5143;&#x64DA;&#x662F;SQL&#x8A9E;&#x53E5;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x800C;&#x975E;&#x53C3;&#x6578;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x800C;&#x53CD;&#x8986;&#x5927;&#x91CF;&#x89E3;&#x91CB;SQL&#x8A9E;&#x53E5;&#x7522;&#x751F;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x958B;&#x92B7;&#x3002;</p>
+<p><a href="https://github.com/y2468101216/node-wiki-gitbook/tree/master/src/node_mysql/node_mysql_parameterized_query.js" target="_blank">https://github.com/y2468101216/node-wiki-gitbook/tree/master/src/node_mysql/node_mysql_parameterized_query.js</a></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * Name:mysql.js
+ * Purpose:mysql Parameterized Query
+ * Author:Yun
+ * Version:1.0
+ * Update:2015-09-25
+ */</span>
+
+<span class="hljs-keyword">var</span> mysql = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mysql&apos;</span>);
+
+<span class="hljs-keyword">var</span> connection = mysql.createConnection({
+  host     : <span class="hljs-string">&apos;localhost&apos;</span>,<span class="hljs-comment">//&#x8CC7;&#x6599;&#x5EAB;IP</span>
+  user     : <span class="hljs-string">&apos;root&apos;</span>,<span class="hljs-comment">//&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;</span>
+  password : <span class="hljs-string">&apos;root&apos;</span>,<span class="hljs-comment">//&#x4F7F;&#x7528;&#x8005;&#x5BC6;&#x78BC;</span>
+  database : <span class="hljs-string">&apos;localhost&apos;</span><span class="hljs-comment">//&#x8CC7;&#x6599;&#x5EAB;&#x540D;&#x7A31;</span>
+});
+
+<span class="hljs-comment">//&#x5617;&#x8A66;&#x9023;&#x7DDA;</span>
+connection.connect();
+
+<span class="hljs-comment">//&#x5012;&#x51FA;SQL&#x7D50;&#x679C;</span>
+connection.query(<span class="hljs-string">&apos;SELECT ? + ? AS solution&apos;</span>,[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, rows, fields</span>) </span>{
+  <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;The solution is: &apos;</span>, rows[<span class="hljs-number">0</span>].solution);
+});
+
+<span class="hljs-comment">//&#x7D50;&#x675F;&#x9023;&#x7DDA;</span>
+connection.end();
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x6CE8;&#x610F;&#x5230;&#x53EA;&#x6709;<code>connection.query</code>&#x6539;&#x8B8A;&#x800C;&#x5DF2;&#xFF0C;&#x88E1;&#x9762;&#x591A;&#x63D2;&#x5165;&#x4E00;&#x500B;&#x9663;&#x5217;&#xFF0C;&#x9019;&#x7A2E;&#x5BEB;&#x6CD5;&#x5728;&#x9700;&#x8981;&#x5927;&#x91CF;&#x63D2;&#x5165;&#x6216;&#x66F4;&#x65B0;&#x91CD;&#x8907;&#x7684;SQL&#x6642;&#x7570;&#x5E38;&#x597D;&#x7528;&#xFF0C;
+&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x64B0;&#x5BEB;SQL&#x53EA;&#x9700;&#x66F4;&#x63DB;&#x53C3;&#x6578;&#x5C31;&#x53EF;&#x4EE5;&#xFF0C;&#x53EF;&#x4EE5;&#x7BC0;&#x7701;&#x8A31;&#x591A;&#x884C;&#x6578;&#x3002;</p>
+<h1 id="nosqlmongodb">NOSQL:MongoDB</h1>
+<p>NOSQL&#x662F;&#x6700;&#x8FD1;&#x5F88;&#x706B;&#x7D05;&#x7684;&#x8CC7;&#x6599;&#x5EAB;&#x578B;&#x614B;&#xFF0C;&#x7279;&#x5FB5;&#x662F;&#x4E0D;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;SQL&#x8A9E;&#x8A00;&#x3001;&#x4E0D;&#x9700;&#x8981;&#x898F;&#x5283;table&#x67B6;&#x69CB;&#xFF0C;&#x662F;&#x4E00;&#x500B;&#x65B0;&#x8208;&#x7684;&#x8CC7;&#x6599;&#x5EAB;&#x578B;&#x614B;&#x3002;
+&#x6211;&#x6703;&#x82B1;&#x6BD4;&#x8F03;&#x591A;&#x7BC7;&#x5E45;&#x8B1B;&#x9019;&#x500B;&#xFF0C;&#x56E0;&#x70BA;&#x9019;&#x662F;&#x4E00;&#x500B;&#x5F9E;&#x89C0;&#x5FF5;&#x4E0A;&#x5B8C;&#x5168;&#x4E0D;&#x4E00;&#x6A23;&#x7684;&#x6771;&#x897F;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x9808;&#x5148;&#x5B89;&#x88DD;mongodb&#x5957;&#x4EF6;:</p>
+<pre><code>npm install mongodb
+</code></pre><ul>
+<li>&#x63D2;&#x5165;&#x8CC7;&#x6599;<a href="https://github.com/y2468101216/node-wiki-gitbook/tree/master/src/node_mongodb/mongodb_insert.js" target="_blank">https://github.com/y2468101216/node-wiki-gitbook/tree/master/src/node_mongodb/mongodb_insert.js</a></li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * Name:mongodb_update.js
+ * Purpose:connect &amp; insert mongodb
+ * Author:Yun
+ * Version:1.0
+ * Update:2015-09-30
+ */</span>
+
+<span class="hljs-keyword">var</span> MongoClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mongodb&apos;</span>).MongoClient;<span class="hljs-comment">// mongodb client</span>
+<span class="hljs-keyword">var</span> assert = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;assert&apos;</span>);<span class="hljs-comment">// &#x6E2C;&#x8A66;&#x5DE5;&#x5177;</span>
+
+<span class="hljs-keyword">var</span> url = <span class="hljs-string">&apos;mongodb://localhost:27017/test&apos;</span>;<span class="hljs-comment">// mongodb://&#x767B;&#x5165;url/db&#x540D;&#x7A31;</span>
+
+<span class="hljs-comment">//&#x63D2;&#x5165;&#x8CC7;&#x6599;&#x5230;</span>
+<span class="hljs-keyword">var</span> insertDocument = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">db, callback</span>) </span>{
+    <span class="hljs-comment">// &#x6253;&#x958B;&#x96C6;&#x5408;&#xFF08;&#x6C92;&#x6709;&#x7684;&#x8A71;&#x6703;&#x81EA;&#x52D5;&#x5EFA;&#x4E00;&#x500B;)-&gt;&#x63D2;&#x5165;&#x4E00;&#x7B46;&#x8CC7;&#x6599;</span>
+    db.collection(<span class="hljs-string">&apos;restaurants&apos;</span>).insertOne({
+        <span class="hljs-string">&quot;address&quot;</span> : {
+            <span class="hljs-string">&quot;street&quot;</span> : <span class="hljs-string">&quot;2 Avenue&quot;</span>,
+            <span class="hljs-string">&quot;zipcode&quot;</span> : <span class="hljs-string">&quot;10075&quot;</span>,
+            <span class="hljs-string">&quot;building&quot;</span> : <span class="hljs-string">&quot;1480&quot;</span>,
+            <span class="hljs-string">&quot;coord&quot;</span> : [ <span class="hljs-number">-73.9557413</span>, <span class="hljs-number">40.7720266</span> ]
+        },
+        <span class="hljs-string">&quot;borough&quot;</span> : <span class="hljs-string">&quot;Manhattan&quot;</span>,
+        <span class="hljs-string">&quot;cuisine&quot;</span> : <span class="hljs-string">&quot;Italian&quot;</span>,
+        <span class="hljs-string">&quot;grades&quot;</span> : [ {
+            <span class="hljs-string">&quot;date&quot;</span> : <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2014-10-01T00:00:00Z&quot;</span>),
+            <span class="hljs-string">&quot;grade&quot;</span> : <span class="hljs-string">&quot;A&quot;</span>,
+            <span class="hljs-string">&quot;score&quot;</span> : <span class="hljs-number">11</span>
+        }, {
+            <span class="hljs-string">&quot;date&quot;</span> : <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2014-01-16T00:00:00Z&quot;</span>),
+            <span class="hljs-string">&quot;grade&quot;</span> : <span class="hljs-string">&quot;B&quot;</span>,
+            <span class="hljs-string">&quot;score&quot;</span> : <span class="hljs-number">17</span>
+        } ],
+        <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;Vella&quot;</span>,
+        <span class="hljs-string">&quot;restaurant_id&quot;</span> : <span class="hljs-string">&quot;41704620&quot;</span>
+    }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+        assert.equal(err, <span class="hljs-literal">null</span>);<span class="hljs-comment">// &#x5982;&#x679C;&#x4E0D;&#x662F;&#x671F;&#x671B;&#x503C;(null)&#xFF0C;&#x5247;throw error</span>
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Inserted a document into the restaurants collection.&quot;</span>);
+        callback(result);
+    });
+};
+
+<span class="hljs-comment">//&#x9032;&#x884C;&#x9023;&#x7DDA;</span>
+MongoClient.connect(url, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, db</span>) </span>{
+    assert.equal(<span class="hljs-literal">null</span>, err);<span class="hljs-comment">// &#x5982;&#x679C;&#x4E0D;&#x662F;&#x671F;&#x671B;&#x503C;(null)&#xFF0C;&#x5247;throw error</span>
+    insertDocument(db, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        db.close();<span class="hljs-comment">//&#x95DC;&#x9589;&#x9023;&#x7DDA;</span>
+    });
+});
+</code></pre>
+<p>&#x57F7;&#x884C;&#x5F8C;&#x5370;&#x51FA;</p>
+<pre><code>Inserted a document into the restaurants collection.
+</code></pre><p>&#x4F60;&#x53EF;&#x4EE5;&#x6CE8;&#x610F;&#x5230;&#x5728;&#x5B58;&#x8CC7;&#x6599;&#x6642;&#x4ED6;&#x7684;&#x64F4;&#x5C55;&#x6027;&#x5F88;&#x5F37;(&#x6CE8;&#x610F;grades)&#xFF0C;&#x4E0D;&#x540C;&#x65BC;&#x4E00;&#x822C;&#x7684;&#x8CC7;&#x6599;&#x5EAB;&#x3002;</p>
+<ul>
+<li>&#x67E5;&#x8A62;&#x8CC7;&#x6599;<a href="https://github.com/y2468101216/node-wiki-gitbook/tree/master/src/node_mongodb/mongodb_query.js" target="_blank">https://github.com/y2468101216/node-wiki-gitbook/tree/master/src/node_mongodb/mongodb_query.js</a></li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * Name:mongodb_query.js
+ * Purpose:connect &amp; insert mongodb
+ * Author:Yun
+ * Version:1.0
+ * Update:2015-10-01
+ */</span>
+
+<span class="hljs-keyword">var</span> MongoClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mongodb&apos;</span>).MongoClient;<span class="hljs-comment">//mongodb client</span>
+<span class="hljs-keyword">var</span> assert = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;assert&apos;</span>);<span class="hljs-comment">// &#x6E2C;&#x8A66;&#x5DE5;&#x5177;</span>
+<span class="hljs-keyword">var</span> url = <span class="hljs-string">&apos;mongodb://localhost:27017/test&apos;</span>;<span class="hljs-comment">// mongodb://&#x767B;&#x5165;url/db&#x540D;&#x7A31;</span>
+
+<span class="hljs-comment">//&#x67E5;&#x8A62;&#x8CC7;&#x6599;</span>
+<span class="hljs-keyword">var</span> findRestaurants = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">findCondition, db, callback</span>) </span>{
+    <span class="hljs-keyword">var</span> cursor =db.collection(<span class="hljs-string">&apos;restaurants&apos;</span>).find(findCondition);
+    <span class="hljs-comment">//&#x5C07;&#x6BCF;&#x7B46;&#x8CC7;&#x6599;&#x5012;&#x51FA;&#x4F86;</span>
+    cursor.each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, doc</span>) </span>{
+    assert.equal(err, <span class="hljs-literal">null</span>);
+    <span class="hljs-keyword">if</span> (doc != <span class="hljs-literal">null</span>) {
+         <span class="hljs-comment">//&#x5217;&#x5370;&#x67E5;&#x8A62;&#x689D;&#x4EF6;</span>
+         <span class="hljs-built_in">console</span>.dir(<span class="hljs-string">&apos;find:&apos;</span>);
+         <span class="hljs-built_in">console</span>.log(findCondition);
+         <span class="hljs-comment">//&#x5217;&#x5370;&#x8CC7;&#x6599;</span>
+      <span class="hljs-built_in">console</span>.dir(doc);
+    } <span class="hljs-keyword">else</span> {
+      callback();
+    }
+    });
+};
+
+<span class="hljs-comment">//&#x5217;&#x51FA;&#x5168;&#x90E8;&#x7684;&#x96C6;&#x5408;&#x88E1;&#x7684;&#x8CC7;&#x6599;</span>
+MongoClient.connect(url, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, db</span>) </span>{
+  assert.equal(<span class="hljs-literal">null</span>, err);
+  findRestaurants(<span class="hljs-literal">null</span>, db, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    db.close();
+  });
+});
+
+<span class="hljs-comment">//&#x5C0B;&#x627E;address.zipcode&#x7B49;&#x65BC;10075&#x7684;</span>
+MongoClient.connect(url, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, db</span>) </span>{
+  assert.equal(<span class="hljs-literal">null</span>, err);
+  findRestaurants({ <span class="hljs-string">&quot;address.zipcode&quot;</span>: <span class="hljs-string">&quot;10075&quot;</span> }, db, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    db.close();
+  });
+});
+
+<span class="hljs-comment">//&#x5C0B;&#x627E;address.zipcode&#x7B49;&#x65BC;10076&#x7684;</span>
+MongoClient.connect(url, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, db</span>) </span>{
+  assert.equal(<span class="hljs-literal">null</span>, err);
+  findRestaurants({ <span class="hljs-string">&quot;address.zipcode&quot;</span>: <span class="hljs-string">&quot;10076&quot;</span> }, db, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    db.close();
+  });
+});
+</code></pre>
+<p>&#x57F7;&#x884C;&#x7D50;&#x679C;:</p>
+<pre><code>&apos;find:&apos;
+
+{ _id: { _bsontype: &apos;ObjectID&apos;, id: &apos;V\f&#xDF;&#xA8;8&#xDF;Z&#xD7;Bo;\\&apos; },
+  address:
+   { street: &apos;2 Avenue&apos;,
+     zipcode: &apos;10075&apos;,
+     building: &apos;1480&apos;,
+     coord: [ -73.9557413, 40.7720266 ] },
+  borough: &apos;Manhattan&apos;,
+  cuisine: &apos;Italian&apos;,
+  grades:
+   [ { date: Wed Oct 01 2014 08:00:00 GMT+0800 (CST),
+       grade: &apos;A&apos;,
+       score: 11 },
+     { date: Thu Jan 16 2014 08:00:00 GMT+0800 (CST),
+       grade: &apos;B&apos;,
+       score: 17 } ],
+  name: &apos;Vella&apos;,
+  restaurant_id: &apos;41704620&apos; }
+&apos;find:&apos;
+{ &apos;address.zipcode&apos;: &apos;10075&apos; }
+{ _id: { _bsontype: &apos;ObjectID&apos;, id: &apos;V\f&#xDF;&#xA8;8&#xDF;Z&#xD7;Bo;\\&apos; },
+address:
+ { street: &apos;2 Avenue&apos;,
+   zipcode: &apos;10075&apos;,
+   building: &apos;1480&apos;,
+   coord: [ -73.9557413, 40.7720266 ] },
+borough: &apos;Manhattan&apos;,
+cuisine: &apos;Italian&apos;,
+grades:
+[ { date: Wed Oct 01 2014 08:00:00 GMT+0800 (CST),
+   grade: &apos;A&apos;,
+   score: 11 },
+ { date: Thu Jan 16 2014 08:00:00 GMT+0800 (CST),
+   grade: &apos;B&apos;,
+   score: 17 } ],
+name: &apos;Vella&apos;,
+restaurant_id: &apos;41704620&apos; }
+
+&apos;find:&apos;
+{ &apos;address.zipcode&apos;: &apos;10076&apos; }
+</code></pre><p>&#x4F60;&#x53EF;&#x4EE5;&#x6CE8;&#x610F;&#x5230;mongodb&#x63D2;&#x5165;&#x7684;&#x6642;&#x5019;&#x591A;&#x63D2;&#x4E86;&#x4E00;&#x500B;_id&#xFF0C;&#x90A3;&#x662F;mongodb&#x7684;&#x4E3B;&#x9375;&#xFF0C;&#x4E0D;&#x91CD;&#x8907;&#x552F;&#x4E00;&#xFF0C;
+mongodb&#x7528;&#x5B83;&#x4F86;&#x5206;&#x5225;&#x6BCF;&#x4E00;&#x7B46;&#x8CC7;&#x6599;&#x3002;</p>
+<p>find&#x5176;&#x5BE6;&#x5C31;&#x76F8;&#x7576;SQL&#x88E1;&#x7684;where&#xFF0C;&#x4F46;&#x4ED6;&#x6BD4;where&#x5F37;&#x7684;&#x5730;&#x65B9;&#x662F;&#x5728;&#x65BC;&#x8AAA;&#x4ED6;&#x53EF;&#x4EE5;&#x67E5;&#x8A62;dot notation(EX:address.zipcode)&#x3002;
+&#x9019;&#x9EDE;&#x662F;SQL&#x6240;&#x505A;&#x4E0D;&#x5230;&#x7684;</p>
+<ul>
+<li>&#x66F4;&#x65B0;&#x8CC7;&#x6599;<a href="https://github.com/y2468101216/node-wiki-gitbook/tree/master/src/node_mongodb/mongodb_query.js" target="_blank">https://github.com/y2468101216/node-wiki-gitbook/tree/master/src/node_mongodb/mongodb_query.js</a></li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * Name:mongodb_update.js
+ * Purpose:connect &amp; insert mongodb
+ * Author:Yun
+ * Version:1.0
+ * Update:2015-10-02
+ */</span>
+
+<span class="hljs-keyword">var</span> MongoClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mongodb&apos;</span>).MongoClient;<span class="hljs-comment">// mongodb client</span>
+<span class="hljs-keyword">var</span> assert = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;assert&apos;</span>);<span class="hljs-comment">// &#x6E2C;&#x8A66;&#x5DE5;&#x5177;</span>
+
+<span class="hljs-keyword">var</span> url = <span class="hljs-string">&apos;mongodb://localhost:27017/test&apos;</span>;<span class="hljs-comment">// mongodb://&#x767B;&#x5165;url/db&#x540D;&#x7A31;</span>
+
+<span class="hljs-keyword">var</span> updateRestaurants = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">db, callback</span>) </span>{
+    db.collection(<span class="hljs-string">&apos;restaurants&apos;</span>).updateOne(
+      { <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;Vella&quot;</span> },<span class="hljs-comment">//&#x8A2D;&#x5B9A;&#x689D;&#x4EF6;</span>
+      {
+        $set: { <span class="hljs-string">&quot;cuisine&quot;</span>: <span class="hljs-string">&quot;American (New)&quot;</span> },
+        $currentDate: { <span class="hljs-string">&quot;lastModified&quot;</span>: <span class="hljs-literal">true</span> }
+      }, <span class="hljs-comment">//&#x8A2D;&#x5B9A;&#x66F4;&#x65B0;&#x9805;&#x76EE;</span>
+      <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, results</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(results);<span class="hljs-comment">//&#x5370;&#x51FA;&#x66F4;&#x65B0;&#x7D50;&#x679C;</span>
+      callback();
+    });
+};
+
+MongoClient.connect(url, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, db</span>) </span>{
+  assert.equal(<span class="hljs-literal">null</span>, err);
+
+  updateRestaurants(db, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    db.close();
+  });
+});
+</code></pre>
+<p>&#x57F7;&#x884C;&#x7D50;&#x679C;:</p>
+<pre><code class="lang-javascript">{ result: { ok: <span class="hljs-number">1</span>, nModified: <span class="hljs-number">1</span>, n: <span class="hljs-number">1</span> },
+  connection:
+   { domain: <span class="hljs-literal">null</span>,
+     _events:
+      { close: [<span class="hljs-built_in">Object</span>],
+        error: [<span class="hljs-built_in">Object</span>],
+        timeout: [<span class="hljs-built_in">Object</span>],
+        parseError: [<span class="hljs-built_in">Object</span>],
+        connect: [<span class="hljs-built_in">Function</span>] },
+     _maxListeners: <span class="hljs-literal">undefined</span>,
+     options:
+      { socketOptions: {},
+        auto_reconnect: <span class="hljs-literal">true</span>,
+        host: <span class="hljs-string">&apos;localhost&apos;</span>,
+        port: <span class="hljs-number">27017</span>,
+        cursorFactory: [<span class="hljs-built_in">Object</span>],
+        reconnect: <span class="hljs-literal">true</span>,
+        emitError: <span class="hljs-literal">true</span>,
+        size: <span class="hljs-number">5</span>,
+        disconnectHandler: [<span class="hljs-built_in">Object</span>],
+        bson: {},
+        messageHandler: [<span class="hljs-built_in">Function</span>],
+        wireProtocolHandler: {} },
+     id: <span class="hljs-number">2</span>,
+     logger: { className: <span class="hljs-string">&apos;Connection&apos;</span> },
+     bson: {},
+     tag: <span class="hljs-literal">undefined</span>,
+     messageHandler: [<span class="hljs-built_in">Function</span>],
+     maxBsonMessageSize: <span class="hljs-number">67108864</span>,
+     port: <span class="hljs-number">27017</span>,
+     host: <span class="hljs-string">&apos;localhost&apos;</span>,
+     keepAlive: <span class="hljs-literal">true</span>,
+     keepAliveInitialDelay: <span class="hljs-number">0</span>,
+     noDelay: <span class="hljs-literal">true</span>,
+     connectionTimeout: <span class="hljs-number">0</span>,
+     socketTimeout: <span class="hljs-number">0</span>,
+     destroyed: <span class="hljs-literal">false</span>,
+     domainSocket: <span class="hljs-literal">false</span>,
+     singleBufferSerializtion: <span class="hljs-literal">true</span>,
+     serializationFunction: <span class="hljs-string">&apos;toBinUnified&apos;</span>,
+     ca: <span class="hljs-literal">null</span>,
+     cert: <span class="hljs-literal">null</span>,
+     key: <span class="hljs-literal">null</span>,
+     passphrase: <span class="hljs-literal">null</span>,
+     ssl: <span class="hljs-literal">false</span>,
+     rejectUnauthorized: <span class="hljs-literal">false</span>,
+     responseOptions: { promoteLongs: <span class="hljs-literal">true</span> },
+     flushing: <span class="hljs-literal">false</span>,
+     queue: [],
+     connection:
+      { _connecting: <span class="hljs-literal">false</span>,
+        _hadError: <span class="hljs-literal">false</span>,
+        _handle: [<span class="hljs-built_in">Object</span>],
+        _parent: <span class="hljs-literal">null</span>,
+        _host: <span class="hljs-string">&apos;localhost&apos;</span>,
+        _readableState: [<span class="hljs-built_in">Object</span>],
+        readable: <span class="hljs-literal">true</span>,
+        domain: <span class="hljs-literal">null</span>,
+        _events: [<span class="hljs-built_in">Object</span>],
+        _maxListeners: <span class="hljs-literal">undefined</span>,
+        _writableState: [<span class="hljs-built_in">Object</span>],
+        writable: <span class="hljs-literal">true</span>,
+        allowHalfOpen: <span class="hljs-literal">false</span>,
+        destroyed: <span class="hljs-literal">false</span>,
+        bytesRead: <span class="hljs-number">71</span>,
+        _bytesDispatched: <span class="hljs-number">223</span>,
+        _pendingData: <span class="hljs-literal">null</span>,
+        _pendingEncoding: <span class="hljs-string">&apos;&apos;</span>,
+        _idleNext: <span class="hljs-literal">null</span>,
+        _idlePrev: <span class="hljs-literal">null</span>,
+        _idleTimeout: <span class="hljs-number">-1</span>,
+        read: [<span class="hljs-built_in">Function</span>],
+        _consuming: <span class="hljs-literal">true</span> },
+     writeStream: <span class="hljs-literal">null</span>,
+     buffer: <span class="hljs-literal">null</span>,
+     sizeOfMessage: <span class="hljs-number">0</span>,
+     bytesRead: <span class="hljs-number">0</span>,
+     stubBuffer: <span class="hljs-literal">null</span> },
+  matchedCount: <span class="hljs-number">1</span>,
+  modifiedCount: <span class="hljs-number">1</span>,
+  upsertedId: <span class="hljs-literal">null</span>,
+  upsertedCount: <span class="hljs-number">0</span> }
+</code></pre>
+<p>&#x9019;&#x6A23;&#x53EA;&#x6703;&#x66F4;&#x65B0;&#x7B2C;&#x4E00;&#x7B46;&#x627E;&#x5230;&#x7684;&#x8CC7;&#x6599;&#x3002;
+&#x8DDF;&#x67E5;&#x8A62;&#x4E00;&#x6A23;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;dot notation&#x4F5C;&#x70BA;&#x66F4;&#x65B0;&#x689D;&#x4EF6;</p>
+<ul>
+<li>&#x522A;&#x9664;&#x8CC7;&#x6599;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * Name:mongodb_delete.js
+ * Purpose:connect &amp; update mongodb
+ * Author:Yun
+ * Version:1.0
+ * Update:2015-10-02
+ */</span>
+
+<span class="hljs-keyword">var</span> MongoClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mongodb&apos;</span>).MongoClient;<span class="hljs-comment">// mongodb client</span>
+<span class="hljs-keyword">var</span> assert = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;assert&apos;</span>);<span class="hljs-comment">// &#x6E2C;&#x8A66;&#x5DE5;&#x5177;</span>
+
+<span class="hljs-keyword">var</span> url = <span class="hljs-string">&apos;mongodb://localhost:27017/test&apos;</span>;<span class="hljs-comment">// mongodb://&#x767B;&#x5165;url/db&#x540D;&#x7A31;</span>
+
+<span class="hljs-keyword">var</span> removeRestaurants = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">db, callback</span>) </span>{
+    db.collection(<span class="hljs-string">&apos;restaurants&apos;</span>).deleteOne(
+      { <span class="hljs-string">&quot;borough&quot;</span>: <span class="hljs-string">&quot;Queens&quot;</span> },<span class="hljs-comment">//&#x8A2D;&#x5B9A;&#x689D;&#x4EF6;</span>
+      <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, results</span>) </span>{
+            <span class="hljs-built_in">console</span>.log(results);<span class="hljs-comment">//&#x5370;&#x51FA;&#x66F4;&#x65B0;&#x7D50;&#x679C;</span>
+            callback();
+      }
+    );
+};
+
+MongoClient.connect(url, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, db</span>) </span>{
+    assert.equal(<span class="hljs-literal">null</span>, err);
+
+    removeRestaurants(db, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      db.close();
+    });
+});
+</code></pre>
+<pre><code class="lang-javascript">{ result: { ok: <span class="hljs-number">1</span>, nModified: <span class="hljs-number">1</span>, n: <span class="hljs-number">1</span> },
+  connection:
+   { domain: <span class="hljs-literal">null</span>,
+     _events:
+      { close: [<span class="hljs-built_in">Object</span>],
+        error: [<span class="hljs-built_in">Object</span>],
+        timeout: [<span class="hljs-built_in">Object</span>],
+        parseError: [<span class="hljs-built_in">Object</span>],
+        connect: [<span class="hljs-built_in">Function</span>] },
+     _maxListeners: <span class="hljs-literal">undefined</span>,
+     options:
+      { socketOptions: {},
+        auto_reconnect: <span class="hljs-literal">true</span>,
+        host: <span class="hljs-string">&apos;localhost&apos;</span>,
+        port: <span class="hljs-number">27017</span>,
+        cursorFactory: [<span class="hljs-built_in">Object</span>],
+        reconnect: <span class="hljs-literal">true</span>,
+        emitError: <span class="hljs-literal">true</span>,
+        size: <span class="hljs-number">5</span>,
+        disconnectHandler: [<span class="hljs-built_in">Object</span>],
+        bson: {},
+        messageHandler: [<span class="hljs-built_in">Function</span>],
+        wireProtocolHandler: {} },
+     id: <span class="hljs-number">2</span>,
+     logger: { className: <span class="hljs-string">&apos;Connection&apos;</span> },
+     bson: {},
+     tag: <span class="hljs-literal">undefined</span>,
+     messageHandler: [<span class="hljs-built_in">Function</span>],
+     maxBsonMessageSize: <span class="hljs-number">67108864</span>,
+     port: <span class="hljs-number">27017</span>,
+     host: <span class="hljs-string">&apos;localhost&apos;</span>,
+     keepAlive: <span class="hljs-literal">true</span>,
+     keepAliveInitialDelay: <span class="hljs-number">0</span>,
+     noDelay: <span class="hljs-literal">true</span>,
+     connectionTimeout: <span class="hljs-number">0</span>,
+     socketTimeout: <span class="hljs-number">0</span>,
+     destroyed: <span class="hljs-literal">false</span>,
+     domainSocket: <span class="hljs-literal">false</span>,
+     singleBufferSerializtion: <span class="hljs-literal">true</span>,
+     serializationFunction: <span class="hljs-string">&apos;toBinUnified&apos;</span>,
+     ca: <span class="hljs-literal">null</span>,
+     cert: <span class="hljs-literal">null</span>,
+     key: <span class="hljs-literal">null</span>,
+     passphrase: <span class="hljs-literal">null</span>,
+     ssl: <span class="hljs-literal">false</span>,
+     rejectUnauthorized: <span class="hljs-literal">false</span>,
+     responseOptions: { promoteLongs: <span class="hljs-literal">true</span> },
+     flushing: <span class="hljs-literal">false</span>,
+     queue: [],
+     connection:
+      { _connecting: <span class="hljs-literal">false</span>,
+        _hadError: <span class="hljs-literal">false</span>,
+        _handle: [<span class="hljs-built_in">Object</span>],
+        _parent: <span class="hljs-literal">null</span>,
+        _host: <span class="hljs-string">&apos;localhost&apos;</span>,
+        _readableState: [<span class="hljs-built_in">Object</span>],
+        readable: <span class="hljs-literal">true</span>,
+        domain: <span class="hljs-literal">null</span>,
+        _events: [<span class="hljs-built_in">Object</span>],
+        _maxListeners: <span class="hljs-literal">undefined</span>,
+        _writableState: [<span class="hljs-built_in">Object</span>],
+        writable: <span class="hljs-literal">true</span>,
+        allowHalfOpen: <span class="hljs-literal">false</span>,
+        destroyed: <span class="hljs-literal">false</span>,
+        bytesRead: <span class="hljs-number">71</span>,
+        _bytesDispatched: <span class="hljs-number">223</span>,
+        _pendingData: <span class="hljs-literal">null</span>,
+        _pendingEncoding: <span class="hljs-string">&apos;&apos;</span>,
+        _idleNext: <span class="hljs-literal">null</span>,
+        _idlePrev: <span class="hljs-literal">null</span>,
+        _idleTimeout: <span class="hljs-number">-1</span>,
+        read: [<span class="hljs-built_in">Function</span>],
+        _consuming: <span class="hljs-literal">true</span> },
+     writeStream: <span class="hljs-literal">null</span>,
+     buffer: <span class="hljs-literal">null</span>,
+     sizeOfMessage: <span class="hljs-number">0</span>,
+     bytesRead: <span class="hljs-number">0</span>,
+     stubBuffer: <span class="hljs-literal">null</span> },
+  matchedCount: <span class="hljs-number">1</span>,
+  modifiedCount: <span class="hljs-number">1</span>,
+  upsertedId: <span class="hljs-literal">null</span>,
+  upsertedCount: <span class="hljs-number">0</span> }
+</code></pre>
+<p>&#x9019;&#x6A23;&#x53EA;&#x6703;&#x522A;&#x9664;&#x4E00;&#x7B46;&#xFF0C;&#x8DDF;update&#x5176;&#x5BE6;&#x6C92;&#x5DEE;&#x591A;&#x5C11;</p>
+<h1 id="&#x7D50;&#x8A9E;">&#x7D50;&#x8A9E;</h1>
+<p>MongoDB&#x8DDF;Node.js&#x5C31;&#x8DDF;mysql&#x4E4B;&#x65BC;php&#x4E00;&#x6A23;&#xFF0C;&#x5929;&#x751F;&#x4E00;&#x5C0D;&#xFF0C;&#x4F46;&#x9019;&#x4E26;&#x4E0D;&#x4EE3;&#x8868;&#x4F60;&#x4E0D;&#x80FD;&#x7528;&#x5176;&#x4ED6;&#x7684;&#x8CC7;&#x6599;&#x5EAB;&#x3002;
+&#x6839;&#x64DA;&#x5C08;&#x6848;&#x9078;&#x64C7;&#x4F60;&#x8981;&#x7684;&#x624D;&#x662F;&#x6B63;&#x78BA;&#x7684;&#x3002;</p>
+<h1 id="&#x53C3;&#x8003;&#x8CC7;&#x6599;">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h1>
+<ul>
+<li>wiki-SQL injection:<a href="https://zh.wikipedia.org/wiki/SQL&#x8CC7;&#x6599;&#x96B1;&#x78BC;&#x653B;&#x64CA;" target="_blank">https://zh.wikipedia.org/wiki/SQL&#x8CC7;&#x6599;&#x96B1;&#x78BC;&#x653B;&#x64CA;</a></li>
+<li>wiki-Parameterized Query:<a href="https://zh.wikipedia.org/wiki/&#x53C3;&#x6578;&#x5316;&#x67E5;&#x8A62;" target="_blank">https://zh.wikipedia.org/wiki/&#x53C3;&#x6578;&#x5316;&#x67E5;&#x8A62;</a></li>
+<li>node-mysql:<a href="https://github.com/felixge/node-mysql/#preparing-queries" target="_blank">https://github.com/felixge/node-mysql/#preparing-queries</a></li>
+<li>NOSQL:<a href="https://zh.wikipedia.org/wiki/NoSQL" target="_blank">https://zh.wikipedia.org/wiki/NoSQL</a></li>
+<li>MONGODB:<a href="https://docs.mongodb.org/getting-started/node/" target="_blank">https://docs.mongodb.org/getting-started/node/</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="NODE_EXPRESS_VIEW.html" class="navigation navigation-prev " aria-label="Previous page: NODE_EXPRESS_VIEW">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="NODE_TEST.html" class="navigation navigation-next " aria-label="Next page: NODE_TEST">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"NODE_DATABASE","level":"1.11","depth":1,"next":{"title":"NODE_TEST","level":"1.12","depth":1,"path":"NODE_TEST.md","ref":"NODE_TEST.md","articles":[]},"previous":{"title":"NODE_EXPRESS_VIEW","level":"1.10","depth":1,"path":"NODE_EXPRESS_VIEW.md","ref":"NODE_EXPRESS_VIEW.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"node-wiki","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"NODE_DATABASE.md","mtime":"2016-06-20T01:58:12.549Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:31.307Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

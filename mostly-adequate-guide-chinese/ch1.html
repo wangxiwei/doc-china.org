@@ -1,0 +1,1091 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>第 1 章: 我们在做什么？ · JavaScript 函数式编程</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch1.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    第 1 章: 我们在做什么？
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="ch1.html">
+            
+                <a href="ch1.html#介绍">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="ch1.html">
+            
+                <a href="ch1.html#一个简单例子">
+            
+                    
+                    一个简单例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    第 2 章: 一等公民的函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="ch2.html">
+            
+                <a href="ch2.html#快速概览">
+            
+                    
+                    快速概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="ch2.html">
+            
+                <a href="ch2.html#为何钟爱一等公民">
+            
+                    
+                    为何钟爱一等公民
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    第 3 章: 纯函数的好处
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="ch3.html">
+            
+                <a href="ch3.html#再次强调“纯”">
+            
+                    
+                    再次强调“纯”
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="ch3.html">
+            
+                <a href="ch3.html#副作用可能包括">
+            
+                    
+                    副作用可能包括...
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="ch3.html">
+            
+                <a href="ch3.html#八年级数学">
+            
+                    
+                    八年级数学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="ch3.html">
+            
+                <a href="ch3.html#追求“纯”的理由">
+            
+                    
+                    追求“纯”的理由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="ch3.html">
+            
+                <a href="ch3.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    第 4 章: 柯里化（curry）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="ch4.html">
+            
+                <a href="ch4.html#不可或缺的-curry">
+            
+                    
+                    不可或缺的 curry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="ch4.html">
+            
+                <a href="ch4.html#不仅仅是双关语咖喱">
+            
+                    
+                    不仅仅是双关语／咖喱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="ch4.html">
+            
+                <a href="ch4.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    第 5 章: 代码组合（compose）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="ch5.html">
+            
+                <a href="ch5.html#函数饲养">
+            
+                    
+                    函数饲养
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="ch5.html">
+            
+                <a href="ch5.html#pointfree">
+            
+                    
+                    pointfree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="ch5.html">
+            
+                <a href="ch5.html#debug">
+            
+                    
+                    debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="ch5.html">
+            
+                <a href="ch5.html#范畴学">
+            
+                    
+                    范畴学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="ch5.html">
+            
+                <a href="ch5.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    第 6章: 示例应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="ch6.html">
+            
+                <a href="ch6.html#声明式代码">
+            
+                    
+                    声明式代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="ch6.html">
+            
+                <a href="ch6.html#一个函数式的-flickr">
+            
+                    
+                    一个函数式的 flickr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="ch6.html">
+            
+                <a href="ch6.html#有原则的重构">
+            
+                    
+                    有原则的重构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="ch6.html">
+            
+                <a href="ch6.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    第 7 章: Hindley-Milner 类型签名
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="ch7.html">
+            
+                <a href="ch7.html#初识类型">
+            
+                    
+                    初识类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="ch7.html">
+            
+                <a href="ch7.html#神秘的传奇故事">
+            
+                    
+                    神秘的传奇故事
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="ch7.html">
+            
+                <a href="ch7.html#缩小可能性范围">
+            
+                    
+                    缩小可能性范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="ch7.html">
+            
+                <a href="ch7.html#自由定理">
+            
+                    
+                    自由定理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="ch7.html">
+            
+                <a href="ch7.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    第 8 章: 特百惠
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="ch8.html">
+            
+                <a href="ch8.html#强大的容器">
+            
+                    
+                    强大的容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="ch8.html">
+            
+                <a href="ch8.html#第一个-functor">
+            
+                    
+                    第一个 functor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="ch8.html">
+            
+                <a href="ch8.html#薛定谔的-maybe">
+            
+                    
+                    薛定谔的 Maybe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="ch8.html">
+            
+                <a href="ch8.html#“纯”错误处理">
+            
+                    
+                    “纯”错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="ch8.html">
+            
+                <a href="ch8.html#王老先生有作用">
+            
+                    
+                    王老先生有作用...
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="ch8.html">
+            
+                <a href="ch8.html#异步任务">
+            
+                    
+                    异步任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="ch8.html">
+            
+                <a href="ch8.html#一点理论">
+            
+                    
+                    一点理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="ch8.html">
+            
+                <a href="ch8.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    第 9 章: Monad
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="ch9.html">
+            
+                <a href="ch9.html#pointed-functor">
+            
+                    
+                    pointed functor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="ch9.html">
+            
+                <a href="ch9.html#混合比喻">
+            
+                    
+                    混合比喻
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="ch9.html">
+            
+                <a href="ch9.html#chain-函数">
+            
+                    
+                    chain 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="ch9.html">
+            
+                <a href="ch9.html#理论">
+            
+                    
+                    理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="ch9.html">
+            
+                <a href="ch9.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    第 10 章: Applicative Functor
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="ch10.html">
+            
+                <a href="ch10.html#应用-applicative-functor">
+            
+                    
+                    应用 applicative functor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="ch10.html">
+            
+                <a href="ch10.html#瓶中之船">
+            
+                    
+                    瓶中之船
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="ch10.html">
+            
+                <a href="ch10.html#协调于激励">
+            
+                    
+                    协调于激励
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="ch10.html">
+            
+                <a href="ch10.html#lift">
+            
+                    
+                    lift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="ch10.html">
+            
+                <a href="ch10.html#免费开瓶器">
+            
+                    
+                    免费开瓶器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="ch10.html">
+            
+                <a href="ch10.html#定律">
+            
+                    
+                    定律
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="ch10.html">
+            
+                <a href="ch10.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第 1 章: 我们在做什么？</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;-1-&#x7AE0;&#xFF1A;&#x6211;&#x4EEC;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#xFF1F;">&#x7B2C; 1 &#x7AE0;&#xFF1A;&#x6211;&#x4EEC;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#xFF1F;</h1>
+<h2 id="&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</h2>
+<p>&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x662F; Franklin Risby &#x6559;&#x6388;&#xFF0C;&#x5F88;&#x9AD8;&#x5174;&#x8BA4;&#x8BC6;&#x4F60;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C06;&#x5171;&#x5EA6;&#x4E00;&#x6BB5;&#x65F6;&#x5149;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x8981;&#x6559;&#x4F60;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x7684;&#x77E5;&#x8BC6;&#x3002;&#x597D;&#x4E86;&#xFF0C;&#x5173;&#x4E8E;&#x6211;&#x5C31;&#x4ECB;&#x7ECD;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x4F60;&#x600E;&#x4E48;&#x6837;&#xFF1F;&#x6211;&#x5E0C;&#x671B;&#x4F60;&#x5DF2;&#x7ECF;&#x719F;&#x6089; JavaScript &#x8BED;&#x8A00;&#x4E86;&#xFF0C;&#x5173;&#x4E8E;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x4E5F;&#x6709;&#x4E00;&#x70B9;&#x70B9;&#x7684;&#x7ECF;&#x9A8C;&#x4E86;&#xFF0C;&#x800C;&#x4E14;&#x81EA;&#x8BA4;&#x4E3A;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x683C;&#x7684;&#x7A0B;&#x5E8F;&#x5458;&#x3002;&#x5E0C;&#x671B;&#x4F60;&#x6CA1;&#x6709;&#x6606;&#x866B;&#x5B66;&#x535A;&#x58EB;&#x5B66;&#x4F4D;&#x4E5F;&#x80FD;&#x627E;&#x5230;&#x5E76;&#x6740;&#x6B7B;&#x4E00;&#x4E9B;&#x81ED;&#x866B;&#xFF08;bug&#xFF09;&#x3002;</p>
+<p>&#x6211;&#x5E76;&#x4E0D;&#x5047;&#x8BBE;&#x4F60;&#x4E4B;&#x524D;&#x6709;&#x4EFB;&#x4F55;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x76F8;&#x5173;&#x7684;&#x77E5;&#x8BC6;&#x2014;&#x2014;&#x6211;&#x4EEC;&#x90FD;&#x77E5;&#x9053;&#x5047;&#x8BBE;&#x7684;&#x540E;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x6B64;&#x5904;&#x539F;&#x6587;&#x662F;&#x201C;we both know what happens when you assume&#x201D;&#xFF0C;&#x6E90;&#x81EA;&#x4E00;&#x53E5;&#x540D;&#x8A00;&#x201C;When you assume you make an ASS of U and ME&#x201D;&#xFF0C;&#x610F;&#x601D;&#x662F;&#x201C;&#x8BA9;&#x4E24;&#x4EBA;&#x90FD;&#x96BE;&#x582A;&#x201D;&#xFF09;&#x3002;&#x4F46;&#x6211;&#x731C;&#x60F3;&#x4F60;&#x5728;&#x4F7F;&#x7528;&#x53EF;&#x53D8;&#x72B6;&#x6001;&#xFF08;mutable state&#xFF09;&#x3001;&#x65E0;&#x9650;&#x5236;&#x526F;&#x4F5C;&#x7528;&#xFF08;unrestricted side effects&#xFF09;&#x548C;&#x65E0;&#x539F;&#x5219;&#x8BBE;&#x8BA1;&#xFF08;unprincipled design&#xFF09;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x5DF2;&#x7ECF;&#x9047;&#x5230;&#x8FC7;&#x4E00;&#x4E9B;&#x9EBB;&#x70E6;&#x3002;&#x597D;&#x4E86;&#xFF0C;&#x4ECB;&#x7ECD;&#x5230;&#x6B64;&#x4E3A;&#x6B62;&#xFF0C;&#x6211;&#x4EEC;&#x8FDB;&#x5165;&#x6B63;&#x9898;&#x3002;</p>
+<p>&#x672C;&#x7AE0;&#x7684;&#x76EE;&#x7684;&#x662F;&#x8BA9;&#x4F60;&#x5BF9;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x7684;&#x76EE;&#x7684;&#x6709;&#x4E00;&#x4E2A;&#x521D;&#x6B65;&#x8BA4;&#x8BC6;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E4B;&#x6240;&#x4EE5;&#x662F;<em>&#x51FD;&#x6570;&#x5F0F;</em>&#x7A0B;&#x5E8F;&#x7684;&#x539F;&#x56E0;&#x6709;&#x4E00;&#x5B9A;&#x4E86;&#x89E3;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x5C31;&#x4F1A;&#x50CF;&#x65E0;&#x5934;&#x82CD;&#x8747;&#x4E00;&#x6837;&#xFF0C;&#x4E0D;&#x95EE;&#x9752;&#x7EA2;&#x7682;&#x767D;&#x5730;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x2014;&#x2014;&#x8FD9;&#x7B49;&#x4E8E;&#x662F;&#x5728;&#x505A;&#x65E0;&#x7528;&#x529F;&#x3002;&#x5199;&#x4EE3;&#x7801;&#x9700;&#x8981;&#x9075;&#x5FAA;&#x4E00;&#x5B9A;&#x7684;&#x539F;&#x5219;&#xFF0C;&#x5C31;&#x50CF;&#x300A;&#x6FC0;&#x6218;&#x300B;&#x6E38;&#x620F;&#x91CC;&#x5F53;&#x6C34;&#x53D8;&#x6210;&#x77F3;&#x5934;&#x7684;&#x65F6;&#x5019;&#x4F60;&#x9700;&#x8981;&#x5929;&#x56FD;&#x7F57;&#x76D8;&#x6765;&#x6307;&#x5F15;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x6709;&#x4E00;&#x4E9B;&#x901A;&#x7528;&#x7684;&#x7F16;&#x7A0B;&#x539F;&#x5219;&#x4E86;&#xFF0C;&#x5404;&#x79CD;&#x7F29;&#x5199;&#x8BCD;&#x5E26;&#x9886;&#x6211;&#x4EEC;&#x5728;&#x7F16;&#x7A0B;&#x7684;&#x9ED1;&#x6697;&#x96A7;&#x9053;&#x91CC;&#x524D;&#x884C;&#xFF1A;DRY&#xFF08;&#x4E0D;&#x8981;&#x91CD;&#x590D;&#x81EA;&#x5DF1;&#xFF0C;dont&apos;t repeat yourself&#xFF09;&#xFF0C;&#x9AD8;&#x5185;&#x805A;&#x4F4E;&#x8026;&#x5408;&#xFF08;loose coupling high cohesion&#xFF09;&#xFF0C;YAGNI &#xFF08;&#x4F60;&#x4E0D;&#x4F1A;&#x7528;&#x5230;&#x5B83;&#x7684;&#xFF0C;ya ain&apos;t gonna need it&#xFF09;&#xFF0C;&#x6700;&#x5C0F;&#x610F;&#x5916;&#x539F;&#x5219;&#xFF08;Principle of least surprise&#xFF09;&#xFF0C;&#x5355;&#x4E00;&#x8D23;&#x4EFB;&#xFF08;single responsibility&#xFF09;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x6211;&#x5F53;&#x7136;&#x4E0D;&#x4F1A;&#x5570;&#x91CC;&#x516B;&#x55E6;&#x5730;&#x628A;&#x8FD9;&#x4E9B;&#x5E74;&#x6211;&#x542C;&#x5230;&#x7684;&#x539F;&#x5219;&#x90FD;&#x5217;&#x4E3E;&#x51FA;&#x6765;&#xFF0C;&#x4F60;&#x77E5;&#x9053;&#x91CD;&#x70B9;&#x5C31;&#x884C;&#x3002;&#x91CD;&#x70B9;&#x662F;&#x8FD9;&#x4E9B;&#x539F;&#x5219;&#x540C;&#x6837;&#x9002;&#x7528;&#x4E8E;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5B83;&#x4EEC;&#x4E0E;&#x672C;&#x4E66;&#x7684;&#x4E3B;&#x9898;&#x4E0D;&#x5341;&#x5206;&#x76F8;&#x5173;&#x3002;&#x5728;&#x6211;&#x4EEC;&#x6DF1;&#x5165;&#x4E3B;&#x9898;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x60F3;&#x5148;&#x901A;&#x8FC7;&#x672C;&#x7AE0;&#x7ED9;&#x4F60;&#x8FD9;&#x6837;&#x4E00;&#x79CD;&#x611F;&#x89C9;&#xFF0C;&#x5373;&#x4F60;&#x5728;&#x6572;&#x952E;&#x76D8;&#x7684;&#x65F6;&#x5019;&#x5185;&#x5FC3;&#x5C31;&#x80FD;&#x5F3A;&#x70C8;&#x611F;&#x53D7;&#x5230;&#x7684;&#x90A3;&#x79CD;&#x51FD;&#x6570;&#x5F0F;&#x7684;&#x6C1B;&#x56F4;&#x3002;</p>
+<!--BREAK-->
+<h2 id="&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x4F8B;&#x5B50;">&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x4F8B;&#x5B50;</h2>
+<p>&#x6211;&#x4EEC;&#x4ECE;&#x4E00;&#x4E2A;&#x611A;&#x8822;&#x7684;&#x4F8B;&#x5B50;&#x5F00;&#x59CB;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x6D77;&#x9E25;&#x7A0B;&#x5E8F;&#xFF0C;&#x9E1F;&#x7FA4;&#x5408;&#x5E76;&#x5219;&#x53D8;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x66F4;&#x5927;&#x7684;&#x9E1F;&#x7FA4;&#xFF0C;&#x7E41;&#x6B96;&#x5219;&#x589E;&#x52A0;&#x4E86;&#x9E1F;&#x7FA4;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x589E;&#x52A0;&#x7684;&#x6570;&#x91CF;&#x5C31;&#x662F;&#x5B83;&#x4EEC;&#x7E41;&#x6B96;&#x51FA;&#x6765;&#x7684;&#x6D77;&#x9E25;&#x7684;&#x6570;&#x91CF;&#x3002;&#x6CE8;&#x610F;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x5E76;&#x4E0D;&#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x826F;&#x597D;&#x5B9E;&#x8DF5;&#xFF0C;&#x5B83;&#x53EA;&#x662F;&#x5F3A;&#x8C03;&#x5F53;&#x524D;&#x8FD9;&#x79CD;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x65B9;&#x5F0F;&#x7684;&#x4E00;&#x4E9B;&#x5F0A;&#x7AEF;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> Flock = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">n</span>) </span>{
+  <span class="hljs-keyword">this</span>.seagulls = n;
+};
+
+Flock.prototype.conjoin = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">other</span>) </span>{
+  <span class="hljs-keyword">this</span>.seagulls += other.seagulls;
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+};
+
+Flock.prototype.breed = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">other</span>) </span>{
+  <span class="hljs-keyword">this</span>.seagulls = <span class="hljs-keyword">this</span>.seagulls * other.seagulls;
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+};
+
+<span class="hljs-keyword">var</span> flock_a = <span class="hljs-keyword">new</span> Flock(<span class="hljs-number">4</span>);
+<span class="hljs-keyword">var</span> flock_b = <span class="hljs-keyword">new</span> Flock(<span class="hljs-number">2</span>);
+<span class="hljs-keyword">var</span> flock_c = <span class="hljs-keyword">new</span> Flock(<span class="hljs-number">0</span>);
+
+<span class="hljs-keyword">var</span> result = flock_a.conjoin(flock_c).breed(flock_b).conjoin(flock_a.breed(flock_b)).seagulls;
+<span class="hljs-comment">//=&gt; 32</span>
+</code></pre>
+<p>&#x6211;&#x76F8;&#x4FE1;&#x6CA1;&#x4EBA;&#x4F1A;&#x5199;&#x8FD9;&#x6837;&#x7CDF;&#x7CD5;&#x900F;&#x9876;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x4EE3;&#x7801;&#x7684;&#x5185;&#x90E8;&#x53EF;&#x53D8;&#x72B6;&#x6001;&#x975E;&#x5E38;&#x96BE;&#x4EE5;&#x8FFD;&#x8E2A;&#xFF0C;&#x800C;&#x4E14;&#xFF0C;&#x6700;&#x7EC8;&#x7684;&#x7B54;&#x6848;&#x8FD8;&#x662F;&#x9519;&#x7684;&#xFF01;&#x6B63;&#x786E;&#x7B54;&#x6848;&#x662F; <code>16</code>&#xFF0C;&#x4F46;&#x662F;&#x56E0;&#x4E3A; <code>flock_a</code> &#x5728;&#x8FD0;&#x7B97;&#x8FC7;&#x7A0B;&#x4E2D;&#x6C38;&#x4E45;&#x5730;&#x6539;&#x53D8;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x5F97;&#x51FA;&#x4E86;&#x9519;&#x8BEF;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x8FD9;&#x662F; IT &#x90E8;&#x95E8;&#x6DF7;&#x4E71;&#x7684;&#x8868;&#x73B0;&#xFF0C;&#x975E;&#x5E38;&#x7C97;&#x66B4;&#x7684;&#x8BA1;&#x7B97;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x770B;&#x4E0D;&#x61C2;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x6211;&#x4E5F;&#x770B;&#x4E0D;&#x61C2;&#x3002;&#x91CD;&#x70B9;&#x662F;&#x72B6;&#x6001;&#x548C;&#x53EF;&#x53D8;&#x503C;&#x975E;&#x5E38;&#x96BE;&#x4EE5;&#x8FFD;&#x8E2A;&#xFF0C;&#x5373;&#x4FBF;&#x662F;&#x5728;&#x8FD9;&#x4E48;&#x5C0F;&#x7684;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#x4E5F;&#x4E0D;&#x4F8B;&#x5916;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x8BD5;&#x8BD5;&#x53E6;&#x4E00;&#x79CD;&#x66F4;&#x51FD;&#x6570;&#x5F0F;&#x7684;&#x5199;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> conjoin = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">flock_x, flock_y</span>) </span>{ <span class="hljs-keyword">return</span> flock_x + flock_y };
+<span class="hljs-keyword">var</span> breed = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">flock_x, flock_y</span>) </span>{ <span class="hljs-keyword">return</span> flock_x * flock_y };
+
+<span class="hljs-keyword">var</span> flock_a = <span class="hljs-number">4</span>;
+<span class="hljs-keyword">var</span> flock_b = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> flock_c = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">var</span> result = conjoin(breed(flock_b, conjoin(flock_a, flock_c)), breed(flock_a, flock_b));
+<span class="hljs-comment">//=&gt;16</span>
+</code></pre>
+<p>&#x5F88;&#x597D;&#xFF0C;&#x8FD9;&#x6B21;&#x6211;&#x4EEC;&#x5F97;&#x5230;&#x4E86;&#x6B63;&#x786E;&#x7684;&#x7B54;&#x6848;&#xFF0C;&#x800C;&#x4E14;&#x5C11;&#x5199;&#x4E86;&#x5F88;&#x591A;&#x4EE3;&#x7801;&#x3002;&#x4E0D;&#x8FC7;&#x51FD;&#x6570;&#x5D4C;&#x5957;&#x6709;&#x70B9;&#x8BA9;&#x4EBA;&#x8D39;&#x89E3;...&#xFF08;&#x6211;&#x4EEC;&#x4F1A;&#x5728;&#x7B2C; 5 &#x7AE0;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF09;&#x3002;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x4E5F;&#x66F4;&#x4F18;&#x96C5;&#xFF0C;&#x4E0D;&#x8FC7;&#x4EE3;&#x7801;&#x80AF;&#x5B9A;&#x662F;&#x8D8A;&#x76F4;&#x767D;&#x8D8A;&#x597D;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x518D;&#x6DF1;&#x5165;&#x6316;&#x6398;&#xFF0C;&#x770B;&#x770B;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7A76;&#x7ADF;&#x505A;&#x4E86;&#x4EC0;&#x4E48;&#x4E8B;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x5B83;&#x4E0D;&#x8FC7;&#x662F;&#x5728;&#x8FDB;&#x884C;&#x7B80;&#x5355;&#x7684;&#x52A0;&#xFF08;<code>conjoin</code>&#xFF09; &#x548C;&#x4E58;&#xFF08;<code>breed</code>&#xFF09;&#x8FD0;&#x7B97;&#x800C;&#x5DF2;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x9664;&#x4E86;&#x51FD;&#x6570;&#x540D;&#x6709;&#x4E9B;&#x7279;&#x6B8A;&#xFF0C;&#x5176;&#x4ED6;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x96BE;&#x4EE5;&#x7406;&#x89E3;&#x7684;&#x5730;&#x65B9;&#x3002;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x4EEC;&#x91CD;&#x547D;&#x540D;&#x4E00;&#x4E0B;&#xFF0C;&#x770B;&#x770B;&#x5B83;&#x4EEC;&#x7684;&#x771F;&#x9762;&#x76EE;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> add = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x, y</span>) </span>{ <span class="hljs-keyword">return</span> x + y };
+<span class="hljs-keyword">var</span> multiply = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x, y</span>) </span>{ <span class="hljs-keyword">return</span> x * y };
+
+<span class="hljs-keyword">var</span> flock_a = <span class="hljs-number">4</span>;
+<span class="hljs-keyword">var</span> flock_b = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> flock_c = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">var</span> result = add(multiply(flock_b, add(flock_a, flock_c)), multiply(flock_a, flock_b));
+<span class="hljs-comment">//=&gt;16</span>
+</code></pre>
+<p>&#x8FD9;&#x4E48;&#x4E00;&#x6765;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x6211;&#x4EEC;&#x4E0D;&#x8FC7;&#x662F;&#x5728;&#x8FD0;&#x7528;&#x53E4;&#x4EBA;&#x65E9;&#x5DF2;&#x83B7;&#x5F97;&#x7684;&#x77E5;&#x8BC6;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x7ED3;&#x5408;&#x5F8B;&#xFF08;assosiative&#xFF09;</span>
+add(add(x, y), z) == add(x, add(y, z));
+
+<span class="hljs-comment">// &#x4EA4;&#x6362;&#x5F8B;&#xFF08;commutative&#xFF09;</span>
+add(x, y) == add(y, x);
+
+<span class="hljs-comment">// &#x540C;&#x4E00;&#x5F8B;&#xFF08;identity&#xFF09;</span>
+add(x, <span class="hljs-number">0</span>) == x;
+
+<span class="hljs-comment">// &#x5206;&#x914D;&#x5F8B;&#xFF08;distributive&#xFF09;</span>
+multiply(x, add(y,z)) == add(multiply(x, y), multiply(x, z));
+</code></pre>
+<p>&#x662F;&#x7684;&#xFF0C;&#x8FD9;&#x4E9B;&#x7ECF;&#x5178;&#x7684;&#x6570;&#x5B66;&#x5B9A;&#x5F8B;&#x8FDF;&#x65E9;&#x4F1A;&#x6D3E;&#x4E0A;&#x7528;&#x573A;&#x3002;&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x4F60;&#x4E00;&#x65F6;&#x60F3;&#x4E0D;&#x8D77;&#x6765;&#x4E5F;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x591A;&#x6570;&#x4EBA;&#x5DF2;&#x7ECF;&#x5F88;&#x4E45;&#x6CA1;&#x590D;&#x4E60;&#x8FC7;&#x8FD9;&#x4E9B;&#x6570;&#x5B66;&#x77E5;&#x8BC6;&#x4E86;&#x3002;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x80FD;&#x5426;&#x8FD0;&#x7528;&#x8FD9;&#x4E9B;&#x5B9A;&#x5F8B;&#x7B80;&#x5316;&#x8FD9;&#x4E2A;&#x6D77;&#x9E25;&#x5C0F;&#x7A0B;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x539F;&#x6709;&#x4EE3;&#x7801;</span>
+add(multiply(flock_b, add(flock_a, flock_c)), multiply(flock_a, flock_b));
+
+<span class="hljs-comment">// &#x5E94;&#x7528;&#x540C;&#x4E00;&#x5F8B;&#xFF0C;&#x53BB;&#x6389;&#x591A;&#x4F59;&#x7684;&#x52A0;&#x6CD5;&#x64CD;&#x4F5C;&#xFF08;add(flock_a, flock_c) == flock_a&#xFF09;</span>
+add(multiply(flock_b, flock_a), multiply(flock_a, flock_b));
+
+<span class="hljs-comment">// &#x518D;&#x5E94;&#x7528;&#x5206;&#x914D;&#x5F8B;</span>
+multiply(flock_b, add(flock_a, flock_a));
+</code></pre>
+<p>&#x6F02;&#x4EAE;&#xFF01;&#x9664;&#x4E86;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4E00;&#x70B9;&#x591A;&#x4F59;&#x7684;&#x4EE3;&#x7801;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x5199;&#x3002;&#x5F53;&#x7136;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5B9A;&#x4E49; <code>add</code> &#x548C; <code>multiply</code> &#x662F;&#x4E3A;&#x4E86;&#x4EE3;&#x7801;&#x5B8C;&#x6574;&#x6027;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5E76;&#x4E0D;&#x5FC5;&#x8981;&#x2014;&#x2014;&#x5728;&#x8C03;&#x7528;&#x4E4B;&#x524D;&#x5B83;&#x4EEC;&#x80AF;&#x5B9A;&#x5DF2;&#x7ECF;&#x5728;&#x67D0;&#x4E2A;&#x7C7B;&#x5E93;&#x91CC;&#x5B9A;&#x4E49;&#x597D;&#x4E86;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x5728;&#x60F3;&#x201C;&#x4F60;&#x4E5F;&#x592A;&#x5077;&#x6362;&#x6982;&#x5FF5;&#x4E86;&#x5427;&#xFF0C;&#x5C45;&#x7136;&#x4E3E;&#x4E00;&#x4E2A;&#x8FD9;&#x4E48;&#x6570;&#x5B66;&#x7684;&#x4F8B;&#x5B50;&#x201D;&#xFF0C;&#x6216;&#x8005;&#x201C;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6BD4;&#x8FD9;&#x590D;&#x6742;&#x592A;&#x591A;&#xFF0C;&#x4E0D;&#x80FD;&#x8FD9;&#x4E48;&#x7B80;&#x5355;&#x5730;&#x63A8;&#x7406;&#x201D;&#x3002;&#x6211;&#x4E4B;&#x6240;&#x4EE5;&#x9009;&#x62E9;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x5927;&#x591A;&#x6570;&#x4EBA;&#x90FD;&#x77E5;&#x9053;&#x52A0;&#x6CD5;&#x548C;&#x4E58;&#x6CD5;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5C31;&#x80FD;&#x7406;&#x89E3;&#x6570;&#x5B66;&#x53EF;&#x4EE5;&#x5982;&#x4F55;&#x4E3A;&#x6211;&#x4EEC;&#x6240;&#x7528;&#x3002;</p>
+<p>&#x4E0D;&#x8981;&#x611F;&#x5230;&#x7EDD;&#x671B;&#xFF0C;&#x672C;&#x4E66;&#x540E;&#x9762;&#x8FD8;&#x4F1A;&#x7A7F;&#x63D2;&#x4E00;&#x4E9B;&#x8303;&#x7574;&#x5B66;&#xFF08;category theory&#xFF09;&#x3001;&#x96C6;&#x5408;&#x8BBA;&#xFF08;set theory&#xFF09;&#x4EE5;&#x53CA; lambda &#x8FD0;&#x7B97;&#x7684;&#x77E5;&#x8BC6;&#xFF0C;&#x6559;&#x4F60;&#x5199;&#x66F4;&#x52A0;&#x590D;&#x6742;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x800C;&#x4E14;&#x4E00;&#x70B9;&#x4E5F;&#x4E0D;&#x8F93;&#x672C;&#x7AE0;&#x8FD9;&#x4E2A;&#x6D77;&#x9E25;&#x7A0B;&#x5E8F;&#x7684;&#x7B80;&#x6D01;&#x6027;&#x548C;&#x51C6;&#x786E;&#x6027;&#x3002;&#x4F60;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x5B66;&#x5BB6;&#xFF0C;&#x672C;&#x4E66;&#x8981;&#x6559;&#x7ED9;&#x4F60;&#x7684;&#x7F16;&#x7A0B;&#x8303;&#x5F0F;&#x5B9E;&#x8DF5;&#x8D77;&#x6765;&#x5C31;&#x50CF;&#x662F;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x6846;&#x67B6;&#x6216;&#x8005; api &#x4E00;&#x6837;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x8BB8;&#x4F1A;&#x60CA;&#x8BB6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x50CF;&#x4E0A;&#x4F8B;&#x90A3;&#x6837;&#x9075;&#x5FAA;&#x51FD;&#x6570;&#x5F0F;&#x7684;&#x8303;&#x5F0F;&#x53BB;&#x4E66;&#x5199;&#x5B8C;&#x6574;&#x7684;&#x3001;&#x65E5;&#x5E38;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x6709;&#x7740;&#x4F18;&#x5F02;&#x6027;&#x80FD;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x7B80;&#x6D01;&#x4E14;&#x6613;&#x63A8;&#x7406;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x4EE5;&#x53CA;&#x4E0D;&#x7528;&#x6BCF;&#x6B21;&#x90FD;&#x91CD;&#x65B0;&#x9020;&#x8F6E;&#x5B50;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x5982;&#x679C;&#x4F60;&#x662F;&#x7F6A;&#x72AF;&#xFF0C;&#x90A3;&#x8FDD;&#x6CD5;&#x5BF9;&#x4F60;&#x6765;&#x8BF4;&#x662F;&#x597D;&#x4E8B;&#xFF1B;&#x4F46;&#x5728;&#x672C;&#x4E66;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x80FD;&#x591F;&#x627F;&#x8BA4;&#x5E76;&#x9075;&#x5B88;&#x6570;&#x5B66;&#x4E4B;&#x6CD5;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x53BB;&#x8DF5;&#x884C;&#x6BCF;&#x4E00;&#x90E8;&#x5206;&#x90FD;&#x80FD;&#x5B8C;&#x7F8E;&#x63A5;&#x5408;&#x7684;&#x7406;&#x8BBA;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x4EE5;&#x4E00;&#x79CD;&#x901A;&#x7528;&#x7684;&#x3001;&#x53EF;&#x7EC4;&#x5408;&#x7684;&#x7EC4;&#x4EF6;&#x6765;&#x8868;&#x793A;&#x6211;&#x4EEC;&#x7684;&#x7279;&#x5B9A;&#x95EE;&#x9898;&#xFF0C;&#x7136;&#x540E;&#x5229;&#x7528;&#x8FD9;&#x4E9B;&#x7EC4;&#x4EF6;&#x7684;&#x7279;&#x6027;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x3002;&#x76F8;&#x6BD4;&#x547D;&#x4EE4;&#x5F0F;&#xFF08;&#x7A0D;&#x540E;&#x672C;&#x4E66;&#x5C06;&#x4F1A;&#x4ECB;&#x7ECD;&#x547D;&#x4EE4;&#x5F0F;&#x7684;&#x7CBE;&#x786E;&#x5B9A;&#x4E49;&#xFF0C;&#x6682;&#x65F6;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x5148;&#x628A;&#x91CD;&#x70B9;&#x653E;&#x5728;&#x51FD;&#x6570;&#x5F0F;&#x4E0A;&#xFF09;&#x7F16;&#x7A0B;&#x7684;&#x90A3;&#x79CD;&#x201C;&#x67D0;&#x67D0;&#x53BB;&#x505A;&#x67D0;&#x4E8B;&#x201D;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x5C06;&#x4F1A;&#x6709;&#x66F4;&#x591A;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x4E0D;&#x8FC7;&#x4F60;&#x4F1A;&#x9707;&#x60CA;&#x4E8E;&#x8FD9;&#x79CD;&#x5F3A;&#x7EA6;&#x675F;&#x3001;&#x6570;&#x5B66;&#x6027;&#x7684;&#x201C;&#x6846;&#x67B6;&#x201D;&#x6240;&#x5E26;&#x6765;&#x7684;&#x56DE;&#x62A5;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x770B;&#x5230;&#x51FD;&#x6570;&#x5F0F;&#x7684;&#x70B9;&#x70B9;&#x661F;&#x5149;&#x4E86;&#xFF0C;&#x4F46;&#x5728;&#x771F;&#x6B63;&#x5F00;&#x59CB;&#x6211;&#x4EEC;&#x7684;&#x65C5;&#x7A0B;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x5148;&#x638C;&#x63E1;&#x4E00;&#x4E9B;&#x5177;&#x4F53;&#x7684;&#x6982;&#x5FF5;&#x3002;</p>
+<p><a href="ch2.html">&#x7B2C; 2 &#x7AE0;&#xFF1A;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#x7684;&#x51FD;&#x6570;</a></p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch1.html#介绍" class="navigation navigation-next " aria-label="Next page: 介绍">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第 1 章: 我们在做什么？","level":"1.2","depth":1,"next":{"title":"介绍","level":"1.2.1","depth":2,"anchor":"#介绍","path":"ch1.md","ref":"ch1.md#介绍","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 函数式编程","links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"JavaScript 函数式编程"},"file":{"path":"ch1.md","mtime":"2016-06-20T01:40:23.890Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:39:47.208Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

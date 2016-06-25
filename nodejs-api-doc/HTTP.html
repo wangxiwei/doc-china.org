@@ -1,0 +1,1259 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>HTTP · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="HTTPS.html" />
+    
+    
+    <link rel="prev" href="Globals.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >HTTP</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="http">HTTP</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x4F60;&#x5FC5;&#x987B;&#x901A;&#x8FC7;<code>require(&apos;http&apos;)</code>&#x6765;&#x4F7F;&#x7528;HTTP&#x670D;&#x52A1;&#x5668;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<p><code>node.js</code>&#x4E2D;&#x7684;HTTP&#x63A5;&#x53E3;&#x88AB;&#x8BBE;&#x7F6E;&#x6765;&#x652F;&#x6301;&#x8BB8;&#x591A;HTTP&#x534F;&#x8BAE;&#x91CC;&#x539F;&#x672C;&#x7528;&#x8D77;&#x6765;&#x5F88;&#x56F0;&#x96BE;&#x7684;&#x7279;&#x6027;&#x3002;&#x7279;&#x522B;&#x662F;&#x5927;&#x4E14;&#x6210;&#x5757;&#x7684;&#x6709;&#x7F16;&#x7801;&#x7684;&#x6D88;&#x606F;&#x3002;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x4ECE;&#x4E0D;&#x7F13;&#x51B2;&#x6574;&#x4E2A;&#x8BF7;&#x6C42;&#x6216;&#x54CD;&#x5E94;&#x3002;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5BF9;&#x5B83;&#x4EEC;&#x4F7F;&#x7528;&#x6D41;&#x3002;</p>
+<p>HTTP&#x6D88;&#x606F;&#x5934;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x4E8E;&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-JS">{ <span class="hljs-string">&apos;content-length&apos;</span>: <span class="hljs-string">&apos;123&apos;</span>,
+  <span class="hljs-string">&apos;content-type&apos;</span>: <span class="hljs-string">&apos;text/plain&apos;</span>,
+  <span class="hljs-string">&apos;connection&apos;</span>: <span class="hljs-string">&apos;keep-alive&apos;</span>,
+  <span class="hljs-string">&apos;host&apos;</span>: <span class="hljs-string">&apos;mysite.com&apos;</span>,
+  <span class="hljs-string">&apos;accept&apos;</span>: <span class="hljs-string">&apos;*/*&apos;</span> }
+</code></pre>
+<p>&#x952E;&#x662F;&#x5C0F;&#x5199;&#x7684;&#x3002;&#x503C;&#x6CA1;&#x6709;&#x88AB;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5168;&#x65B9;&#x4F4D;&#x7684;&#x652F;&#x6301;&#x6240;&#x6709;&#x7684;HTTP&#x5E94;&#x7528;&#x3002;<code>node.js</code>&#x7684;HTTP API&#x662F;&#x975E;&#x5E38;&#x5E95;&#x5C42;&#x7684;&#x3002;&#x5B83;&#x53EA;&#x5904;&#x7406;&#x6D41;&#x4EE5;&#x53CA;&#x89E3;&#x91CA;&#x6D88;&#x606F;&#x3002;&#x5B83;&#x5C06;&#x6D88;&#x606F;&#x89E3;&#x91CA;&#x4E3A;&#x6D88;&#x606F;&#x5934;&#x548C;&#x6D88;&#x606F;&#x4F53;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x89E3;&#x91CA;&#x5B9E;&#x9645;&#x7684;&#x6D88;&#x606F;&#x5934;&#x548C;&#x6D88;&#x606F;&#x4F53;&#x3002;</p>
+<p>&#x88AB;&#x5B9A;&#x4E49;&#x7684;&#x6D88;&#x606F;&#x5934;&#x5141;&#x8BB8;&#x4EE5;&#x591A;&#x4E2A;<code>,</code>&#x5B57;&#x7B26;&#x5206;&#x5272;&#xFF0C;&#x9664;&#x4E86;<code>set-cookie</code>&#x548C;<code>cookie</code>&#x5934;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x8868;&#x793A;&#x503C;&#x5F97;&#x6570;&#x7EC4;&#x3002;&#x5982;<code>content-length</code>&#x8FD9;&#x6837;&#x53EA;&#x6709;&#x5355;&#x4E2A;&#x503C;&#x7684;&#x5934;&#x88AB;&#x76F4;&#x63A5;&#x5C06;&#x89E3;&#x6790;&#xFF0C;&#x5E76;&#x4E14;&#x6210;&#x4E3A;&#x89E3;&#x6790;&#x540E;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5355;&#x503C;&#x3002;</p>
+<p>&#x6536;&#x5230;&#x7684;&#x539F;&#x59CB;&#x6D88;&#x606F;&#x5934;&#x4F1A;&#x88AB;&#x4FDD;&#x7559;&#x5728;<code>rawHeaders</code>&#x5C5E;&#x6027;&#x4E2D;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5F62;&#x5F0F;&#x5982;<code>[key, value, key2, value2, ...]</code>&#x7684;&#x6570;&#x7EC4;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E4B;&#x524D;&#x7684;&#x6D88;&#x606F;&#x5934;&#x53EF;&#x4EE5;&#x6709;&#x5982;&#x4E0B;&#x7684;<code>rawHeaders</code>&#xFF1A;</p>
+<pre><code class="lang-js">[ <span class="hljs-string">&apos;ConTent-Length&apos;</span>, <span class="hljs-string">&apos;123456&apos;</span>,
+  <span class="hljs-string">&apos;content-LENGTH&apos;</span>, <span class="hljs-string">&apos;123&apos;</span>,
+  <span class="hljs-string">&apos;content-type&apos;</span>, <span class="hljs-string">&apos;text/plain&apos;</span>,
+  <span class="hljs-string">&apos;CONNECTION&apos;</span>, <span class="hljs-string">&apos;keep-alive&apos;</span>,
+  <span class="hljs-string">&apos;Host&apos;</span>, <span class="hljs-string">&apos;mysite.com&apos;</span>,
+  <span class="hljs-string">&apos;accepT&apos;</span>, <span class="hljs-string">&apos;*/*&apos;</span> ]
+</code></pre>
+<h4 id="httpmethods">http.METHODS</h4>
+<ul>
+<li>Array</li>
+</ul>
+<p>&#x4E00;&#x4E2A;&#x88AB;&#x89E3;&#x6790;&#x5668;&#x6240;&#x652F;&#x6301;&#x7684;HTTP&#x65B9;&#x6CD5;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+<h4 id="httpstatuscodes">http.STATUS_CODES</h4>
+<ul>
+<li>Object</li>
+</ul>
+<p>&#x4E00;&#x4E2A;&#x6240;&#x6709;&#x6807;&#x51C6;HTTP&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x7684;&#x7B80;&#x77ED;&#x63CF;&#x8FF0;&#x3002;&#x4F8B;&#x5982;&#xFF0C;<code>http.STATUS_CODES[404] === &apos;Not Found&apos;</code>&#x3002;</p>
+<h4 id="httpcreateserverrequestlistener">http.createServer([requestListener])</h4>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>http.Server</code>&#x5B9E;&#x4F8B;</li>
+</ul>
+<p><code>requestListener</code>&#x662F;&#x4E00;&#x4E2A;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x4E3A;<code>request</code>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<h4 id="httpcreateclientport-host">http.createClient([port][, host])</h4>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5DF2;&#x7ECF;&#x88AB;&#x542F;&#x7528;&#x3002;&#x8BF7;&#x4F7F;&#x7528;<code>http.request()</code>&#x66FF;&#x4EE3;&#x3002;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x65B0;&#x7684;HTTP&#x5BA2;&#x6237;&#x7AEF;&#x3002;<code>port</code>&#x548C;<code>host</code>&#x6307;&#x5B9A;&#x4E86;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x7684;&#x76EE;&#x6807;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<h4 id="class-httpserver">Class: http.Server</h4>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x4E8B;&#x4EF6;&#x7684;<code>EventEmitter</code>&#xFF1A;</p>
+<h4 id="event-request">Event: &apos;request&apos;</h4>
+<ul>
+<li>function (request, response) { }</li>
+</ul>
+<p>&#x5F53;&#x6709;&#x8BF7;&#x6C42;&#x6765;&#x5230;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x6CE8;&#x610F;&#x6BCF;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#xFF08;&#x5728;&#x957F;&#x8FDE;&#x63A5;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF09;&#x3002;&#x8BF7;&#x6C42;&#x662F;&#x4E00;&#x4E2A;<code>http.IncomingMessage</code>&#x5B9E;&#x4F8B;&#xFF0C;&#x54CD;&#x5E94;&#x662F;&#x4E00;&#x4E2A;<code>http.ServerResponse</code>&#x5B9E;&#x4F8B;&#x3002;</p>
+<h4 id="event-connection">Event: &apos;connection&apos;</h4>
+<ul>
+<li>function (socket) { }</li>
+</ul>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x65B0;&#x7684;TCP&#x6D41;&#x5EFA;&#x7ACB;&#x65F6;&#x89E6;&#x53D1;&#x3002;<code>socket</code>&#x662F;&#x4E00;&#x4E2A;<code>net.Socket</code>&#x7C7B;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x7528;&#x6237;&#x901A;&#x5E38;&#x4E0D;&#x4F1A;&#x63A5;&#x89E6;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x3002;&#x7279;&#x522B;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x534F;&#x8BAE;&#x89E3;&#x91CA;&#x5668;&#x7ED1;&#x5B9A;&#x5B83;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;<code>socket</code>&#x5C06;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;<code>readable</code>&#x4E8B;&#x4EF6;&#x3002;&#x8FD9;&#x4E2A;<code>socket</code>&#x53EF;&#x4EE5;&#x7531;<code>request.connection</code>&#x5F97;&#x5230;&#x3002;</p>
+<h4 id="event-close">Event: &apos;close&apos;</h4>
+<ul>
+<li>function () { }</li>
+</ul>
+<p>&#x5F53;&#x670D;&#x52A1;&#x5668;&#x5173;&#x95ED;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="event-checkcontinue">Event: &apos;checkContinue&apos;</h4>
+<ul>
+<li>function (request, response) { }</li>
+</ul>
+<p>&#x5F53;&#x6BCF;&#x6B21;&#x6536;&#x5230;&#x4E00;&#x4E2A;HTTP<code>Expect: 100-continue</code>&#x8BF7;&#x6C42;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x76D1;&#x542C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x914C;&#x60C5;&#x81EA;&#x52A8;&#x54CD;&#x5E94;&#x4E00;&#x4E2A;<code>100 Continue</code>&#x3002;</p>
+<p>&#x5904;&#x7406;&#x8BE5;&#x4E8B;&#x4EF6;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x4E3B;&#x4F53;&#x5219;&#x8C03;&#x7528;<code>response.writeContinue()</code>&#xFF0C; &#x5982;&#x679C;&#x4E0D;&#x80FD;&#x5219;&#x751F;&#x6210;&#x5408;&#x9002;&#x7684;HTTP&#x54CD;&#x5E94;&#xFF08;&#x5982;<code>400 Bad Request</code>&#xFF09;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5F53;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x5E76;&#x4E14;&#x88AB;&#x5904;&#x7406;&#xFF0C;<code>request</code>&#x4E8B;&#x4EF6;&#x5219;&#x4E0D;&#x4F1A;&#x518D;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="event-connect">Event: &apos;connect&apos;</h4>
+<ul>
+<li>function (request, socket, head) { }</li>
+</ul>
+<p>&#x6BCF;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#x4E00;&#x4E2A;http<code>CONNECT</code>&#x8BF7;&#x6C42;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x6CA1;&#x6709;&#x88AB;&#x76D1;&#x542C;&#xFF0C;&#x90A3;&#x4E48;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;http<code>CONNECT</code>&#x7684;&#x8FDE;&#x63A5;&#x4F1A;&#x88AB;&#x5173;&#x95ED;&#x3002;</p>
+<ul>
+<li><code>request</code>&#x662F;&#x4E00;&#x4E2A;http&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x4E5F;&#x88AB;&#x5305;&#x542B;&#x5728;<code>request</code>&#x4E8B;&#x4EF6;&#x4E2D;&#x3002;</li>
+<li><code>socket</code>&#x662F;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x95F4;&#x7684;&#x7F51;&#x7EDC;&#x5957;&#x63A5;&#x5B57;&#x3002;</li>
+<li><code>head</code>&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#x5B9E;&#x4F8B;&#xFF0C;&#x96A7;&#x9053;&#x6D41;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x62A5;&#x6587;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x53EF;&#x80FD;&#x4E3A;&#x7A7A;</li>
+</ul>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x540E;&#xFF0C;&#x8BF7;&#x6C42;&#x7684;<code>socket</code>&#x5C06;&#x4E0D;&#x4F1A;&#x6709;<code>data</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x4F60;&#x5C06;&#x8981;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;<code>data</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E2A;<code>socket</code>&#x4E2D;&#x53D1;&#x5F80;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<h4 id="event-upgrade">Event: &apos;upgrade&apos;</h4>
+<ul>
+<li>function (request, socket, head) { }</li>
+</ul>
+<p>&#x6BCF;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#x4E00;&#x4E2A;http<code>upgrade</code>&#x8BF7;&#x6C42;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x6CA1;&#x6709;&#x88AB;&#x76D1;&#x542C;&#xFF0C;&#x90A3;&#x4E48;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;<code>upgrade</code>&#x7684;&#x8FDE;&#x63A5;&#x4F1A;&#x88AB;&#x5173;&#x95ED;&#x3002;</p>
+<ul>
+<li><code>request</code>&#x662F;&#x4E00;&#x4E2A;http&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x4E5F;&#x88AB;&#x5305;&#x542B;&#x5728;<code>request</code>&#x4E8B;&#x4EF6;&#x4E2D;&#x3002;</li>
+<li><code>socket</code>&#x662F;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x95F4;&#x7684;&#x7F51;&#x7EDC;&#x5957;&#x63A5;&#x5B57;&#x3002;</li>
+<li><code>head</code>&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#x5B9E;&#x4F8B;&#xFF0C;&#x5347;&#x7EA7;&#x540E;&#x6D41;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x62A5;&#x6587;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x53EF;&#x80FD;&#x4E3A;&#x7A7A;</li>
+</ul>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x540E;&#xFF0C;&#x8BF7;&#x6C42;&#x7684;<code>socket</code>&#x5C06;&#x4E0D;&#x4F1A;&#x6709;<code>data</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x4F60;&#x5C06;&#x8981;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;<code>data</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E2A;<code>socket</code>&#x4E2D;&#x53D1;&#x5F80;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<h4 id="event-clienterror">Event: &apos;clientError&apos;</h4>
+<ul>
+<li>function (exception, socket) { }</li>
+</ul>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x53D1;&#x751F;&#x4E86;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x5C06;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#x3002;</p>
+<p><code>socket</code>&#x662F;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x6765;&#x6E90;&#x7684;<code>net.Socket</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="serverlistenport-hostname-backlog-callback">server.listen(port[, hostname][, backlog][, callback])</h4>
+<p>&#x4ECE;&#x6307;&#x5B9A;&#x7684;&#x7AEF;&#x53E3;&#x548C;&#x4E3B;&#x673A;&#x540D;&#x5F00;&#x59CB;&#x63A5;&#x6536;&#x8FDE;&#x63A5;&#x3002;&#x5982;&#x679C;<code>hostname</code>&#x88AB;&#x5FFD;&#x7565;&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x679C;IPv6&#x53EF;&#x7528;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5C06;&#x63A5;&#x53D7;&#x4EFB;&#x610F;IPv6&#x5730;&#x5740;&#xFF08;::&#xFF09;&#xFF0C;&#x5426;&#x5219;&#x4E3A;&#x4EFB;&#x4F55;IPv4&#x5730;&#x5740;&#xFF08;0.0.0.&#xFF09;&#x3002;<code>port</code>&#x4E3A;<code>0</code>&#x5C06;&#x4F1A;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x7AEF;&#x53E3;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x76D1;&#x542C;&#x4E00;&#x4E2A;unix <code>socket</code>&#xFF0C;&#x8BF7;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x800C;&#x4E0D;&#x662F;&#x7AEF;&#x53E3;&#x548C;&#x4E3B;&#x673A;&#x540D;&#x3002;</p>
+<p><code>backlog</code>&#x662F;&#x8FDE;&#x63A5;&#x7B49;&#x5F85;&#x961F;&#x5217;&#x7684;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x3002;&#x5B83;&#x7684;&#x5B9E;&#x9645;&#x957F;&#x5EA6;&#x5C06;&#x6709;&#x4F60;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;<code>sysctl</code>&#x8BBE;&#x7F6E;&#xFF08;&#x5982;linux&#x4E2D;&#x7684;<code>tcp_max_syn_backlog</code>&#x548C;<code>somaxconn</code>&#xFF09;&#x51B3;&#x5B9A;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>511</code>&#xFF08;&#x4E0D;&#x662F;<code>512</code>&#xFF09;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5F0F;&#x5F02;&#x6B65;&#x7684;&#x3002;&#x6700;&#x540E;&#x4E00;&#x4E2A;<code>callback</code>&#x53C2;&#x6570;&#x5C06;&#x4F1A;&#x6DFB;&#x52A0;&#x81F3;<code>listening</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x3002;&#x53C2;&#x9605;<code>net.Server.listen(port)</code>&#x3002;</p>
+<h4 id="serverlistenpath-callback">server.listen(path[, callback])</h4>
+<p>&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x7684;<code>path</code>&#xFF0C;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x8FDE;&#x63A5;&#x7684; UNIX <code>socket</code>&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5F0F;&#x5F02;&#x6B65;&#x7684;&#x3002;&#x6700;&#x540E;&#x4E00;&#x4E2A;<code>callback</code>&#x53C2;&#x6570;&#x5C06;&#x4F1A;&#x6DFB;&#x52A0;&#x81F3;<code>listening</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x3002;&#x53C2;&#x9605;<code>net.Server.listen(path)</code>&#x3002;</p>
+<h4 id="serverlistenhandle-callback">server.listen(handle[, callback])</h4>
+<ul>
+<li>handle Object</li>
+<li>callback Function</li>
+</ul>
+<p><code>handle</code>&#x5BF9;&#x8C61;&#x662F;&#x65E2;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;server&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;<code>socket</code>&#xFF08;&#x6216;&#x8005;&#x4EFB;&#x610F;&#x4EE5;&#x4E0B;&#x5212;&#x7EBF;&#x5F00;&#x5934;&#x7684;&#x6210;&#x5458;<code>_handle</code>&#xFF09;&#xFF0C;&#x6216;&#x4E00;&#x4E2A;<code>{fd: &lt;n&gt;}</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x8FD9;&#x5C06;&#x4F7F;&#x5F97;&#x670D;&#x52A1;&#x5668;&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x53E5;&#x67C4;&#x63A5;&#x53D7;&#x8FDE;&#x63A5;&#xFF0C;&#x4F46;&#x5B83;&#x5047;&#x8BBE;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x6216;&#x53E5;&#x67C4;&#x5DF2;&#x7ECF;&#x88AB;&#x7ED1;&#x5B9A;&#x81F3;&#x6307;&#x5B9A;&#x7684;&#x7AEF;&#x53E3;&#x6216;&#x57DF;&#x540D;<code>socket</code>&#x3002;</p>
+<p>&#x5728;Windows&#x4E0B;&#x4E0D;&#x652F;&#x6301;&#x76D1;&#x542C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5F0F;&#x5F02;&#x6B65;&#x7684;&#x3002;&#x6700;&#x540E;&#x4E00;&#x4E2A;<code>callback</code>&#x53C2;&#x6570;&#x5C06;&#x4F1A;&#x6DFB;&#x52A0;&#x81F3;<code>listening</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x3002;&#x53C2;&#x9605;<code>net.Server.listen()</code>&#x3002;</p>
+<h4 id="serverclosecallback">server.close([callback])</h4>
+<p>&#x8BA9;&#x670D;&#x52A1;&#x5668;&#x505C;&#x6B62;&#x63A5;&#x6536;&#x65B0;&#x7684;&#x8FDE;&#x63A5;&#x3002;&#x53C2;&#x9605;<code>net.Server.close()</code>&#x3002;</p>
+<h4 id="servermaxheaderscount">server.maxHeadersCount</h4>
+<p>&#x9650;&#x5236;&#x6700;&#x5927;&#x8BF7;&#x6C42;&#x5934;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>1000</code>&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;<code>0</code>&#xFF0C;&#x5219;&#x4EE3;&#x8868;&#x65E0;&#x9650;&#x5236;&#x3002;</p>
+<h4 id="serversettimeoutmsecs-callback">server.setTimeout(msecs, callback)</h4>
+<ul>
+<li>msecs Number</li>
+<li>callback Function</li>
+</ul>
+<p>&#x8BBE;&#x7F6E;<code>socket</code>&#x7684;&#x8D85;&#x65F6;&#x503C;&#xFF0C;&#x5E76;&#x4E14;&#x5982;&#x679C;&#x8D85;&#x65F6;&#xFF0C;&#x4F1A;&#x5728;&#x670D;&#x52A1;&#x5668;&#x5BF9;&#x8C61;&#x4E0A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;<code>timeout</code>&#x4E8B;&#x4EF6;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x4F20;&#x9012;<code>socket</code>&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728;&#x670D;&#x52A1;&#x5668;&#x5BF9;&#x8C61;&#x65F6;&#x53C8;&#x4E00;&#x4E2A;<code>timeout</code>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x800C;&#x8D85;&#x65F6;&#x7684;<code>socket</code>&#x5C06;&#x4F1A;&#x88AB;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x7684;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8D85;&#x65F6;&#x503C;&#x662F;&#x4E24;&#x5206;&#x949F;&#xFF0C;&#x5E76;&#x4E14;&#x5982;&#x679C;&#x8D85;&#x65F6;&#xFF0C;<code>socket</code>&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x9500;&#x6BC1;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7ED9;<code>timeout</code>&#x4E8B;&#x4EF6;&#x4F20;&#x9012;&#x4E86;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5FC5;&#x987B;&#x4E3A;&#x8981;&#x4EB2;&#x81EA;&#x5904;&#x7406;<code>socket</code>&#x8D85;&#x65F6;&#x3002;</p>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>server</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="servertimeout">server.timeout</h4>
+<ul>
+<li>Number &#x9ED8;&#x8BA4;&#x4E3A;<code>120000</code>&#xFF08;&#x4E24;&#x5206;&#x949F;&#xFF09;</li>
+</ul>
+<p>&#x4E00;&#x4E2A;<code>socket</code>&#x88AB;&#x5224;&#x5B9A;&#x4E3A;&#x8D85;&#x65F6;&#x4E4B;&#x524D;&#x7684;&#x6BEB;&#x79D2;&#x6570;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;<code>socket</code>&#x7684;&#x8D85;&#x65F6;&#x903B;&#x8F91;&#x5728;&#x8FDE;&#x63A5;&#x65F6;&#x88AB;&#x8BBE;&#x5B9A;&#xFF0C;&#x6240;&#x4EE5;&#x6539;&#x53D8;&#x5B83;&#x7684;&#x503C;&#x4EC5;&#x5F71;&#x54CD;&#x4E4B;&#x540E;&#x5230;&#x8FBE;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x8BBE;&#x7F6E;&#x4E3A;<code>0</code>&#x5C06;&#x4F1A;&#x4E3A;&#x8FDE;&#x63A5;&#x7981;&#x7528;&#x6240;&#x6709;&#x7684;&#x81EA;&#x52A8;&#x8D85;&#x65F6;&#x884C;&#x4E3A;&#x3002;</p>
+<h4 id="class-httpserverresponse">Class: http.ServerResponse</h4>
+<p>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7531;HTTP&#x670D;&#x52A1;&#x5668;&#x5185;&#x90E8;&#x521B;&#x5EFA;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7531;&#x7528;&#x6237;&#x3002;&#x5B83;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9;<code>request</code>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x4E86;<code>Writable</code>&#x6D41;&#x63A5;&#x53E3;&#x3002;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x4E8B;&#x4EF6;&#x7684;<code>EventEmitter</code>&#xFF1A;</p>
+<h4 id="event-close">Event: &apos;close&apos;</h4>
+<ul>
+<li>function () { }</li>
+</ul>
+<p>&#x8868;&#x660E;&#x5E95;&#x5C42;&#x7684;&#x8FDE;&#x63A5;&#x5728;<code>response.end()</code>&#x88AB;&#x8C03;&#x7528;&#x6216;&#x80FD;&#x591F;&#x51B2;&#x5237;&#x524D;&#x88AB;&#x5173;&#x95ED;&#x3002;</p>
+<h4 id="event-finish">Event: &apos;finish&apos;</h4>
+<ul>
+<li>function () { }</li>
+</ul>
+<p>&#x5F53;&#x54CD;&#x5E94;&#x88AB;&#x8BBE;&#x7F6E;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x66F4;&#x660E;&#x786E;&#x5730;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x5728;&#x5F53;&#x54CD;&#x5E94;&#x5934;&#x7684;&#x6700;&#x540E;&#x4E00;&#x6BB5;&#x548C;&#x54CD;&#x5E94;&#x4F53;&#x4E3A;&#x4E86;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x800C;&#x4EA4;&#x7ED9;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5B83;&#x5E76;&#x4E0D;&#x8868;&#x660E;&#x5BA2;&#x6237;&#x7AEF;&#x5DF2;&#x7ECF;&#x6536;&#x5230;&#x4E86;&#x4EFB;&#x4F55;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;<code>response</code>&#x5BF9;&#x8C61;&#x4E0D;&#x4F1A;&#x518D;&#x89E6;&#x53D1;&#x4EFB;&#x4F55;&#x4E8B;&#x4EF6;&#x3002;</p>
+<h4 id="responsewritecontinue">response.writeContinue()</h4>
+<p>&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x4F20;&#x9012;&#x4E00;&#x4E2A;<code>HTTP/1.1 100 Continue</code>&#x4FE1;&#x606F;&#xFF0C;&#x8868;&#x660E;&#x8BF7;&#x6C42;&#x4F53;&#x5FC5;&#x987B;&#x88AB;&#x4F20;&#x9012;&#x3002;&#x53C2;&#x9605;&#x670D;&#x52A1;&#x5668;&#x7684;<code>checkContinue</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<h4 id="responsewriteheadstatuscode-statusmessage-headers">response.writeHead(statusCode[, statusMessage][, headers])</h4>
+<p>&#x4E3A;&#x8BF7;&#x6C42;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#x5934;&#x3002;<code>statusCode</code>&#x662F;&#x4E00;&#x4E2A;&#x4E09;&#x4F4D;&#x7684;HTTP&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x5982;<code>404</code>&#x3002;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;<code>headers</code>&#xFF0C;&#x662F;&#x54CD;&#x5E94;&#x5934;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;<code>statusMessage</code>&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x8868;&#x793A;&#x72B6;&#x6001;&#x7801;&#x7684;&#x4E00;&#x4E2A;&#x53EF;&#x8BFB;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> body = <span class="hljs-string">&apos;hello world&apos;</span>;
+response.writeHead(<span class="hljs-number">200</span>, {
+  <span class="hljs-string">&apos;Content-Length&apos;</span>: body.length,
+  <span class="hljs-string">&apos;Content-Type&apos;</span>: <span class="hljs-string">&apos;text/plain&apos;</span> });
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x4FE1;&#x606F;&#x53EA;&#x80FD;&#x8C03;&#x7528;&#x4E00;&#x6B21;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x5FC5;&#x987B;&#x5728;<code>response.end()</code>&#x4E4B;&#x524D;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x5728;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x524D;&#x8C03;&#x7528;&#x4E86;<code>response.write()</code>&#x6216;<code>response.end()</code>&#xFF0C;&#x5C06;&#x4F1A;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x4E2A;<code>implicit/mutable</code>&#x5934;&#x4F1A;&#x88AB;&#x8BA1;&#x7B97;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;<code>Content-Length</code>&#x662F;&#x4EE5;&#x5B57;&#x8282;&#x8BA1;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4EE5;&#x5B57;&#x7B26;&#x8BA1;&#x3002;&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x80FD;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x65F6;&#x56E0;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;<code>&apos;hello world&apos;</code>&#x4EC5;&#x5305;&#x542B;&#x5355;&#x5B57;&#x8282;&#x5B57;&#x7B26;&#x3002;&#x5982;&#x679C;&#x54CD;&#x5E94;&#x4F53;&#x5305;&#x542B;&#x4E86;&#x591A;&#x5B57;&#x8282;&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x90A3;&#x4E48;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x7684;&#x7F16;&#x7801;&#x6765;&#x8C03;&#x7528;<code>Buffer.byteLength()</code>&#x6765;&#x786E;&#x5B9A;&#x5B57;&#x8282;&#x6570;&#x3002;&#x5E76;&#x4E14;<code>node.js</code>&#x4E0D;&#x4F1A;&#x68C0;&#x67E5;<code>Content-Length</code>&#x4E0E;&#x54CD;&#x5E94;&#x4F53;&#x7684;&#x5B57;&#x8282;&#x6570;&#x662F;&#x5426;&#x76F8;&#x7B49;&#x3002;</p>
+<h4 id="responsesettimeoutmsecs-callback">response.setTimeout(msecs, callback)</h4>
+<ul>
+<li>msecs Number</li>
+<li>callback Function</li>
+</ul>
+<p>&#x8BBE;&#x7F6E;<code>socket</code>&#x7684;&#x8D85;&#x65F6;&#x503C;&#xFF08;&#x6BEB;&#x79D2;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x4F20;&#x9012;&#x4E86;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x88AB;&#x6DFB;&#x52A0;&#x81F3;<code>response</code>&#x5BF9;&#x8C61;&#x7684;<code>timeout</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4E3A;<code>request</code>&#xFF0C;<code>request</code>&#x6216;&#x670D;&#x52A1;&#x5668;&#x6DFB;&#x52A0;<code>timeout</code>&#x76D1;&#x542C;&#x5668;&#x3002;&#x90A3;&#x4E48;<code>socket</code>&#x4F1A;&#x5728;&#x8D85;&#x65F6;&#x65F6;&#x9500;&#x6BC1;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E3A;<code>request</code>&#xFF0C;<code>request</code>&#x6216;&#x670D;&#x52A1;&#x5668;&#x6DFB;&#x52A0;&#x4E86;<code>timeout</code>&#x76D1;&#x542C;&#x5668;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5FC5;&#x987B;&#x4E3A;&#x8981;&#x4EB2;&#x81EA;&#x5904;&#x7406;<code>socket</code>&#x8D85;&#x65F6;&#x3002;</p>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>response</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="responsestatuscode">response.statusCode</h4>
+<p>&#x5F53;&#x4F7F;&#x7528;&#x9690;&#x5F0F;&#x54CD;&#x5E94;&#x5934;&#xFF08;&#x4E0D;&#x660E;&#x786E;&#x8C03;&#x7528;<code>response.writeHead()</code>&#xFF09;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x63A7;&#x5236;&#x4E86;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x5728;&#x5F53;&#x54CD;&#x5E94;&#x5934;&#x88AB;&#x51B2;&#x5237;&#x65F6;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">response.statusCode = <span class="hljs-number">404</span>;
+</code></pre>
+<p>&#x5728;&#x54CD;&#x5E94;&#x5934;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x8868;&#x660E;&#x4E86;&#x88AB;&#x53D1;&#x9001;&#x7684;&#x72B6;&#x6001;&#x7801;&#x3002;</p>
+<h4 id="responsestatusmessage">response.statusMessage</h4>
+<p>&#x5F53;&#x4F7F;&#x7528;&#x9690;&#x5F0F;&#x54CD;&#x5E94;&#x5934;&#xFF08;&#x4E0D;&#x660E;&#x786E;&#x8C03;&#x7528;<code>response.writeHead()</code>&#xFF09;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x63A7;&#x5236;&#x4E86;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#xFF0C;&#x5728;&#x5F53;&#x54CD;&#x5E94;&#x5934;&#x88AB;&#x51B2;&#x5237;&#x65F6;&#x3002;&#x5F53;&#x5B83;&#x6CA1;&#x6709;&#x88AB;&#x6307;&#x5B9A;&#xFF08;<code>undefined</code>&#xFF09;&#x65F6;&#xFF0C;&#x5C06;&#x4F1A;&#x4F7F;&#x7528;&#x6807;&#x51C6;HTTP&#x72B6;&#x6001;&#x7801;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">response.statusMessage = <span class="hljs-string">&apos;Not found&apos;</span>;
+</code></pre>
+<p>&#x5728;&#x54CD;&#x5E94;&#x5934;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x8868;&#x660E;&#x4E86;&#x88AB;&#x53D1;&#x9001;&#x7684;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x3002;</p>
+<h4 id="responsesetheadername-value">response.setHeader(name, value)</h4>
+<p>&#x4E3A;&#x4E00;&#x4E2A;&#x9690;&#x5F0F;&#x7684;&#x54CD;&#x5E94;&#x5934;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x5934;&#x5185;&#x5BB9;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x5934;&#x5DF2;&#x5B58;&#x5728;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4F1A;&#x88AB;&#x8986;&#x76D6;&#x3002;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x540C;&#x540D;&#x591A;&#x503C;&#x7684;&#x5934;&#x5185;&#x5BB9;&#x65F6;&#x8BF7;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">response.setHeader(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;text/html&quot;</span>);
+<span class="hljs-comment">//or</span>
+
+response.setHeader(<span class="hljs-string">&quot;Set-Cookie&quot;</span>, [<span class="hljs-string">&quot;type=ninja&quot;</span>, <span class="hljs-string">&quot;language=javascript&quot;</span>]);
+</code></pre>
+<h4 id="responseheaderssent">response.headersSent</h4>
+<p>&#x5E03;&#x5C14;&#x503C;&#xFF08;&#x53EA;&#x8BFB;&#xFF09;&#x3002;&#x5982;&#x679C;&#x54CD;&#x5E94;&#x5934;&#x88AB;&#x53D1;&#x9001;&#x5219;&#x4E3A;<code>true</code>&#xFF0C;&#x53CD;&#x4E4B;&#x4E3A;<code>false</code>&#x3002;</p>
+<h4 id="responsesenddate">response.sendDate</h4>
+<p>&#x5F53;&#x4E3A;<code>true</code>&#x65F6;&#xFF0C;&#x5F53;&#x54CD;&#x5E94;&#x5934;&#x4E2D;&#x6CA1;&#x6709;<code>Date</code>&#x503C;&#x65F6;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x8BBE;&#x7F6E;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>true</code>&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x503C;&#x53EA;&#x4F1A;&#x4E3A;&#x4E86;&#x6D4B;&#x8BD5;&#x76EE;&#x7684;&#x624D;&#x4F1A;&#x88AB;&#x7981;&#x7528;&#x3002;HTTP&#x534F;&#x8BAE;&#x8981;&#x6C42;&#x54CD;&#x5E94;&#x5934;&#x4E2D;&#x6709;<code>Date</code>&#x503C;&#x3002;</p>
+<h4 id="responsegetheadername">response.getHeader(name)</h4>
+<p>&#x8BFB;&#x53D6;&#x5DF2;&#x7ECF;&#x88AB;&#x6392;&#x961F;&#x4F46;&#x8FD8;&#x672A;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x54CD;&#x5E94;&#x5934;&#x3002;&#x6CE8;&#x610F;<code>name</code>&#x662F;&#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x53EA;&#x80FD;&#x5728;&#x54CD;&#x5E94;&#x5934;&#x88AB;&#x9690;&#x5F0F;&#x51B2;&#x5237;&#x524D;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-JS"><span class="hljs-keyword">var</span> contentType = response.getHeader(<span class="hljs-string">&apos;content-type&apos;</span>);
+</code></pre>
+<h4 id="responseremoveheadername">response.removeHeader(name)</h4>
+<p>&#x53D6;&#x6D88;&#x4E00;&#x4E2A;&#x5728;&#x961F;&#x5217;&#x4E2D;&#x7B49;&#x5F85;&#x9690;&#x5F0F;&#x53D1;&#x9001;&#x7684;&#x5934;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">response.removeHeader(<span class="hljs-string">&quot;Content-Encoding&quot;</span>);
+</code></pre>
+<h4 id="responsewritechunk-encoding-callback">response.write(chunk[, encoding][, callback])</h4>
+<p>&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x5E76;&#x4E14;<code>response.writeHead()</code>&#x6CA1;&#x6709;&#x5907;&#x8C03;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x8F6C;&#x6362;&#x5230;&#x9690;&#x5F0F;&#x54CD;&#x5E94;&#x5934;&#x6A21;&#x5F0F;&#xFF0C;&#x5E76;&#x4E14;&#x5237;&#x65B0;&#x9690;&#x5F0F;&#x54CD;&#x5E94;&#x5934;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5757;&#x7684;&#x54CD;&#x5E94;&#x4F53;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x88AB;&#x8C03;&#x7528;&#x591A;&#x6B21;&#x6765;&#x4FDD;&#x8BC1;&#x8FDE;&#x7EED;&#x7684;&#x63D0;&#x4F9B;&#x54CD;&#x5E94;&#x4F53;&#x3002;</p>
+<p>&#x6570;&#x636E;&#x5757;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;&#x5982;&#x679C;&#x6570;&#x636E;&#x5757;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x5B83;&#x7684;&#x7F16;&#x7801;&#x3002;&#x9ED8;&#x8BA4;&#x662F;UTF-8.&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4F1A;&#x5728;&#x6570;&#x636E;&#x5757;&#x88AB;&#x51B2;&#x5237;&#x540E;&#x89E6;&#x53D1;&#x3002;
+&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5E95;&#x5C42;&#x7684;HTTP&#x62A5;&#x6587;&#xFF0C;&#x9AD8;&#x7EA7;&#x7684;&#x591A;&#x90E8;&#x5206;&#x62A5;&#x6587;&#x7F16;&#x7801;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;<code>response.write()</code>&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x4F20;&#x9012;&#x7F13;&#x5B58;&#x7684;&#x5934;&#x4FE1;&#x606F;&#x4EE5;&#x53CA;&#x7B2C;&#x4E00;&#x4E2A;&#x62A5;&#x6587;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x7B2C;&#x4E8C;&#x6B21;&#x8C03;&#x7528;&#x65F6;&#xFF0C;<code>node.js</code>&#x5047;&#x8BBE;&#x4F60;&#x5C06;&#x53D1;&#x9001;&#x6570;&#x636E;&#x6D41;&#xFF0C;&#x7136;&#x540E;&#x5206;&#x522B;&#x53D1;&#x9001;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x54CD;&#x5E94;&#x5F0F;&#x7F13;&#x51B2;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x62A5;&#x6587;&#x7684;&#x6570;&#x636E;&#x5757;&#x4E2D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6574;&#x4E2A;&#x6570;&#x636E;&#x90FD;&#x6210;&#x529F;&#x5F97;&#x51B2;&#x5237;&#x81F3;&#x5185;&#x6838;&#x7F13;&#x51B2;&#xFF0C;&#x5219;&#x653E;&#x56DE;<code>true</code>&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x5185;&#x5B58;&#x4E2D;&#x6709;&#x90E8;&#x5206;&#x6216;&#x5168;&#x90E8;&#x7684;&#x6570;&#x636E;&#x5728;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x8FD4;&#x56DE;<code>false</code>&#x3002;<code>drain</code>&#x4E8B;&#x4EF6;&#x5C06;&#x4F1A;&#x5728;&#x7F13;&#x51B2;&#x518D;&#x6B21;&#x91CA;&#x653E;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="responseaddtrailersheaders">response.addTrailers(headers)</h4>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;HTTP&#x5C3E;&#x968F;&#x5934;&#xFF08;&#x4E00;&#x4E2A;&#x5728;&#x6D88;&#x606F;&#x6700;&#x540E;&#x7684;&#x5934;&#xFF09;&#x7ED9;&#x54CD;&#x5E94;&#x3002;</p>
+<p>&#x53EA;&#x6709;&#x5F53;&#x6570;&#x636E;&#x7F16;&#x7801;&#x88AB;&#x7528;&#x4E8E;&#x54CD;&#x5E94;&#x65F6;&#x5C3E;&#x968F;&#x624D;&#x4F1A;&#x89E6;&#x53D1;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x662F;&#xFF08;&#x5982;&#x8BF7;&#x6C42;&#x662F;<code>HTTP/1.0</code>&#xFF09;&#xFF0C;&#x5B83;&#x4EEC;&#x5C06;&#x88AB;&#x5B89;&#x9759;&#x5730;&#x4E22;&#x5F03;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x89E6;&#x53D1;&#x5C3E;&#x968F;&#x6D88;&#x606F;&#xFF0C;HTTP&#x8981;&#x6C42;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x62A5;&#x6587;&#x5934;&#x573A;&#x5217;&#x8868;&#x7684;&#x5C3E;&#x968F;&#x5934;&#xFF1A;</p>
+<pre><code class="lang-js">response.writeHead(<span class="hljs-number">200</span>, { <span class="hljs-string">&apos;Content-Type&apos;</span>: <span class="hljs-string">&apos;text/plain&apos;</span>,
+                          <span class="hljs-string">&apos;Trailer&apos;</span>: <span class="hljs-string">&apos;Content-MD5&apos;</span> });
+response.write(fileData);
+response.addTrailers({<span class="hljs-string">&apos;Content-MD5&apos;</span>: <span class="hljs-string">&quot;7895bf4b8828b55ceaf47747b4bca667&quot;</span>});
+response.end();
+</code></pre>
+<h4 id="responseenddata-encoding-callback">response.end([data][, encoding][, callback])</h4>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x544A;&#x77E5;&#x670D;&#x52A1;&#x5668;&#x6240;&#x6709;&#x7684;&#x54CD;&#x5E94;&#x5934;&#x548C;&#x54CD;&#x5E94;&#x4F53;&#x90FD;&#x5DF2;&#x7ECF;&#x53D1;&#x9001;&#xFF1B;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x8BA4;&#x4E3A;&#x8FD9;&#x4E2A;&#x6D88;&#x606F;&#x5B8C;&#x6210;&#x4E86;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x5728;&#x6BCF;&#x6B21;&#x54CD;&#x5E94;&#x5B8C;&#x6210;&#x540E;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;<code>data</code>&#xFF0C;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x8C03;&#x7528;&#x4E86;<code>response.write(data, encoding)</code>&#x4E4B;&#x540E;&#x518D;&#x8C03;&#x7528;<code>response.end(callback)</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x5728;&#x54CD;&#x5E94;&#x6D41;&#x7ED3;&#x675F;&#x540E;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="httprequestoptions-callback">http.request(options[, callback])</h4>
+<p><code>node.js</code>&#x4E3A;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7EF4;&#x62A4;&#x4E86;&#x51E0;&#x4E2A;&#x8FDE;&#x63A5;&#xFF0C;&#x7528;&#x6765;&#x4EA7;&#x751F;HTTP&#x8BF7;&#x6C42;&#x3002;&#x8FD9;&#x51FD;&#x6570;&#x5141;&#x8BB8;&#x4F60;&#x900F;&#x660E;&#x5730;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x3002;</p>
+<p><code>options</code>&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6216;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5982;&#x679C;<code>options</code>&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B83;&#x5C06;&#x81EA;&#x52A8;&#x5F97;&#x88AB;<code>url.parse()</code>&#x7FFB;&#x8BD1;&#x3002;</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>host: &#x4E00;&#x4E2A;&#x5C06;&#x8981;&#x5411;&#x5176;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7684;&#x670D;&#x52A1;&#x5668;&#x57DF;&#x540D;&#x6216;IP&#x5730;&#x5740;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>localhost</code>&#x3002;</li>
+<li>hostname: <code>host</code>&#x7684;&#x522B;&#x540D;&#x3002;&#x4E3A;&#x4E86;&#x652F;&#x6301;<code>url.parse()</code>&#x7684;&#x8BDD;&#xFF0C;<code>hostname</code>&#x6BD4;<code>host</code>&#x66F4;&#x597D;&#x4E9B;&#x3002;</li>
+<li>family: &#x89E3;&#x6790;<code>host</code>&#x548C;<code>hostname</code>&#x65F6;&#x7684;IP&#x5730;&#x5740;&#x534F;&#x8BAE;&#x65CF;&#x3002;&#x5408;&#x6CD5;&#x503C;&#x662F;<code>4</code>&#x548C;<code>6</code>&#x3002;&#x5F53;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x65F6;&#xFF0C;&#x5C06;&#x90FD;&#x88AB;&#x4F7F;&#x7528;&#x3002;</li>
+<li>port: &#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x53E3;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>80</code>&#x3002;</li>
+<li>localAddress: &#x7528;&#x4E8E;&#x7ED1;&#x5B9A;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x7684;&#x672C;&#x5730;&#x7AEF;&#x53E3;&#x3002;</li>
+<li>socketPath: Unix&#x57DF;<code>socket</code>&#xFF08;&#x4F7F;&#x7528;<code>host:port</code>&#x6216;<code>socketPath</code>&#xFF09;&#x3002;</li>
+<li>method: &#x6307;&#x5B9A;HTTP&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>GET</code>&#x3002;</li>
+<li>path: &#x8BF7;&#x6C42;&#x8DEF;&#x5F84;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>/</code>&#x3002;&#x5982;&#x679C;&#x6709;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5305;&#x542B;&#x3002;&#x4F8B;&#x5982;&apos;/index.html?page=12&apos;&#x3002;&#x8BF7;&#x6C42;&#x8DEF;&#x5F84;&#x5305;&#x542B;&#x975E;&#x6CD5;&#x5B57;&#x7B26;&#x65F6;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x76EE;&#x524D;&#xFF0C;&#x53EA;&#x5426;&#x51B3;&#x7A7A;&#x683C;&#xFF0C;&#x4E0D;&#x8FC7;&#x5728;&#x672A;&#x6765;&#x53EF;&#x80FD;&#x6539;&#x53D8;&#x3002;</li>
+<li>headers: &#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8BF7;&#x6C42;&#x5934;&#x7684;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>auth: &#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x8BA4;&#x8BC1;&#x5934;&#x7684;&#x57FA;&#x672C;&#x8BA4;&#x8BC1;&#xFF0C;&#x5373;<code>&apos;user:password&apos;</code>&#x3002;</li>
+<li><strong>agent</strong>: &#x63A7;&#x5236;<code>agent</code>&#x884C;&#x4E3A;&#x3002;&#x5F53;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x65F6;&#xFF0C;&#x8BF7;&#x6C42;&#x5C06;&#x9ED8;&#x8BA4;&#x4E3A;<code>Connection: keep-alive</code>&#x3002;&#x53EF;&#x80FD;&#x503C;&#x6709;&#xFF1A;<ul>
+<li>undefined (&#x9ED8;&#x8BA4;): &#x5728;&#x8FD9;&#x4E2A;&#x4E3B;&#x673A;&#x548C;&#x7AEF;&#x53E3;&#x4E0A;&#x4F7F;&#x7528;&#x5168;&#x5C40;`agent&#x3002;</li>
+<li>Agent object: &#x5728;<code>agent</code>&#x4E2D;&#x663E;&#x793A;&#x4F7F;&#x7528;passed&#x3002;</li>
+<li>false: &#x8DF3;&#x51FA;<code>agent</code>&#x7684;&#x8FDE;&#x63A5;&#x6C60;&#x3002;&#x9ED8;&#x8BA4;&#x8BF7;&#x6C42;&#x4E3A;<code>Connection: close</code>&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x53EF;&#x9009;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5C06;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x4E3A;<code>response</code>&#x4E8B;&#x4EF6;&#x7684;&#x201C;&#x4E00;&#x6B21;&#x6027;&#x201D;&#x76D1;&#x542C;&#x5668;&#xFF08;one time listener&#xFF09;&#x3002;</p>
+<p><code>http.request()</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>http.ClientRequest</code>&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x8FD9;&#x4E2A;<code>ClientRequest</code>&#x5B9E;&#x4F8B;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x5199;&#x6D41;&#x3002;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>POST</code>&#x8BF7;&#x6C42;&#x4E0A;&#x4F20;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x5C06;&#x4E4B;&#x5199;&#x5165;&#x8FD9;&#x4E2A;<code>ClientRequest</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> postData = querystring.stringify({
+  <span class="hljs-string">&apos;msg&apos;</span> : <span class="hljs-string">&apos;Hello World!&apos;</span>
+});
+
+<span class="hljs-keyword">var</span> options = {
+  hostname: <span class="hljs-string">&apos;www.google.com&apos;</span>,
+  port: <span class="hljs-number">80</span>,
+  path: <span class="hljs-string">&apos;/upload&apos;</span>,
+  method: <span class="hljs-string">&apos;POST&apos;</span>,
+  headers: {
+    <span class="hljs-string">&apos;Content-Type&apos;</span>: <span class="hljs-string">&apos;application/x-www-form-urlencoded&apos;</span>,
+    <span class="hljs-string">&apos;Content-Length&apos;</span>: postData.length
+  }
+};
+
+<span class="hljs-keyword">var</span> req = http.request(options, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;STATUS: &apos;</span> + res.statusCode);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;HEADERS: &apos;</span> + <span class="hljs-built_in">JSON</span>.stringify(res.headers));
+  res.setEncoding(<span class="hljs-string">&apos;utf8&apos;</span>);
+  res.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">chunk</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;BODY: &apos;</span> + chunk);
+  });
+  res.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;No more data in response.&apos;</span>)
+  })
+});
+
+req.on(<span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;problem with request: &apos;</span> + e.message);
+});
+
+<span class="hljs-comment">// write data to request body</span>
+req.write(postData);
+req.end();
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5728;&#x4F8B;&#x5B50;&#x4E2D;&#x8C03;&#x7528;&#x4E86;<code>req.end()</code>&#x3002;&#x4F7F;&#x7528;<code>http.request()</code>&#x65F6;&#x5FC5;&#x987B;&#x8C03;&#x7528;<code>req.end()</code>&#x6765;&#x8868;&#x660E;&#x4F60;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x4E86;&#x8BF7;&#x6C42;&#xFF08;&#x5373;&#x4F7F;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x8981;&#x88AB;&#x5199;&#x5165;&#x8BF7;&#x6C42;&#x4F53;&#xFF09;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6709;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x5728;&#x8BF7;&#x6C42;&#x65F6;&#x53D1;&#x751F;&#xFF08;&#x5982;DNS&#x89E3;&#x6790;&#xFF0C;TCP&#x7EA7;&#x522B;&#x9519;&#x8BEF;&#x6216;&#x5B9E;&#x9645;&#x7684;HTTP&#x89E3;&#x6790;&#x9519;&#x8BEF;&#xFF09;&#xFF0C;&#x4E00;&#x4E2A;<code>error</code>&#x4E8B;&#x4EF6;&#x5C06;&#x4F1A;&#x5728;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x4E0A;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x6709;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x9700;&#x8981;&#x4E3B;&#x8981;&#x7684;&#x8BF7;&#x6C42;&#x5934;&#xFF1A;</p>
+<ul>
+<li><p>&#x53D1;&#x9001;<code>&apos;Connection: keep-alive&apos;</code>&#x4F1A;&#x544A;&#x77E5;<code>node.js</code>&#x4FDD;&#x6301;&#x8FDE;&#x76F4;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x3002;</p>
+</li>
+<li><p>&#x53D1;&#x9001;<code>&apos;Content-length&apos;</code>&#x5934;&#x4F1A;&#x7981;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x6570;&#x636E;&#x5757;&#x7F16;&#x7801;&#x3002;</p>
+</li>
+<li><p>&#x53D1;&#x9001;<code>&apos;Expect&apos;</code>&#x5934;&#x5C06;&#x4F1A;&#x7ACB;&#x523B;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5934;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x5F53;&#x53D1;&#x9001;<code>&apos;Expect: 100-continue&apos;</code>&#x65F6;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x540C;&#x65F6;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x8D85;&#x65F6;&#x548C;&#x76D1;&#x542C;&#x540E;&#x7EED;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x53C2;&#x9605;RFC2616&#x7684;8.2.3&#x7AE0;&#x8282;&#x6765;&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p>
+</li>
+<li><p>&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6388;&#x6743;&#x5934;&#x5C06;&#x4F1A;&#x8986;&#x76D6;&#x4F7F;&#x7528;<code>auth</code>&#x9009;&#x9879;&#x6765;&#x8FDB;&#x884C;&#x57FA;&#x672C;&#x6388;&#x6743;&#x3002;</p>
+</li>
+</ul>
+<h4 id="httpgetoptions-callback">http.get(options[, callback])</h4>
+<p>&#x7531;&#x4E8E;&#x5927;&#x591A;&#x6570;&#x8BF7;&#x6C42;&#x662F;&#x6CA1;&#x6709;&#x8BF7;&#x6C42;&#x4F53;&#x7684;<code>GET</code>&#x8BF7;&#x6C42;&#x3002;<code>node.js</code>&#x63D0;&#x4F9B;&#x4E86;&#x8FD9;&#x4E2A;&#x7B80;&#x4FBF;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x548C;<code>http.request()</code>&#x65B9;&#x6CD5;&#x7684;&#x552F;&#x4E00;&#x533A;&#x522B;&#x662F;&#x5B83;&#x8BBE;&#x7F6E;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x4E3A;<code>GET</code>&#x4E14;&#x81EA;&#x52A8;&#x8C03;&#x7528;<code>req.end()</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">http.get(<span class="hljs-string">&quot;http://www.google.com/index.html&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Got response: &quot;</span> + res.statusCode);
+}).on(<span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Got error: &quot;</span> + e.message);
+});
+</code></pre>
+<h4 id="class-httpagent">Class: http.Agent</h4>
+<p>HTTP Agent&#x662F;&#x7528;&#x6765;&#x628A;HTTP&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x4E2D;&#x7684;<code>socket</code>&#x505A;&#x6210;&#x6C60;&#x3002;</p>
+<p>HTTP Agent &#x4E5F;&#x628A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;&#x9ED8;&#x8BA4;&#x4E3A;&#x4F7F;&#x7528;<code>Connection:keep-alive</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;HTTP&#x8BF7;&#x6C42;&#x6B63;&#x5728;&#x7B49;&#x5F85;&#x6210;&#x4E3A;&#x7A7A;&#x95F2;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x5957;&#x63A5;&#x5B57;&#x5C06;&#x5173;&#x95ED;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>node.js</code>&#x7684;&#x8D44;&#x6E90;&#x6C60;&#x5728;&#x8D1F;&#x8F7D;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5BF9;<code>keep-alive</code>&#x6709;&#x5229;&#xFF0C;&#x4F46;&#x662F;&#x4ECD;&#x7136;&#x4E0D;&#x9700;&#x8981;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4F7F;&#x7528;KeepAlive&#x6765;&#x624B;&#x52A8;&#x5173;&#x95ED;HTTP&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x9009;&#x62E9;&#x4F7F;&#x7528;<code>HTTP KeepAlive</code>&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6807;&#x5FD7;&#x8BBE;&#x4E3A;<code>true</code>&#x7684;Agent&#x5BF9;&#x8C61;&#xFF08;&#x89C1;&#x4E0B;&#x9762;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x9009;&#x9879;&#xFF09;&#x3002;&#x7136;&#x540E;&#xFF0C;Agent&#x5C06;&#x4F1A;&#x5728;&#x8D44;&#x6E90;&#x6C60;&#x4E2D;&#x4FDD;&#x6301;&#x672A;&#x88AB;&#x4F7F;&#x7528;&#x7684;&#x5957;&#x63A5;&#x5B57;&#xFF0C;&#x7528;&#x4E8E;&#x672A;&#x6765;&#x4F7F;&#x7528;&#x3002;&#x5B83;&#x4EEC;&#x5C06;&#x4F1A;&#x88AB;&#x663E;&#x5F0F;&#x6807;&#x8BB0;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;&#x4E0D;&#x4FDD;&#x6301;<code>node.js</code>&#x8FDB;&#x7A0B;&#x7684;&#x8FD0;&#x884C;&#x3002;&#x4F46;&#x662F;&#x5F53;KeepAlive agent&#x6CA1;&#x6709;&#x88AB;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x663E;&#x5F0F;&#x5730;<code>destroy()</code> KeepAlive agent&#x4ECD;&#x7136;&#x662F;&#x4E2A;&#x597D;&#x4E3B;&#x610F;&#xFF0C;&#x8FD9;&#x6837;<code>socket</code>&#x4F1A;&#x88AB;&#x5173;&#x95ED;&#x3002;</p>
+<p>&#x5F53;<code>socket</code>&#x89E6;&#x53D1;&#x4E86;<code>close</code>&#x4E8B;&#x4EF6;&#x6216;&#x8005;&#x7279;&#x6B8A;&#x7684;<code>agentRemove</code>&#x4E8B;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5957;&#x63A5;&#x5B57;&#x4EEC;&#x4ECE;agent&#x7684;&#x8D44;&#x6E90;&#x6C60;&#x4E2D;&#x79FB;&#x9664;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5982;&#x679C;&#x4F60;&#x6253;&#x7B97;&#x4FDD;&#x6301;&#x4E00;&#x4E2A;HTTP&#x8BF7;&#x6C42;&#x957F;&#x65F6;&#x95F4;&#x5F00;&#x542F;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x5E0C;&#x671B;&#x5B83;&#x4FDD;&#x6301;&#x5728;&#x8D44;&#x6E90;&#x6C60;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4E0B;&#x5217;&#x51E0;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x505A;&#x4E8B;&#xFF1A;</p>
+<pre><code class="lang-js">http.get(options, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+  <span class="hljs-comment">// Do stuff</span>
+}).on(<span class="hljs-string">&quot;socket&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">socket</span>) </span>{
+  socket.emit(<span class="hljs-string">&quot;agentRemove&quot;</span>);
+});
+</code></pre>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>agent:false</code>&#x6765;&#x505C;&#x7528;&#x6C60;&#xFF1A;</p>
+<pre><code class="lang-js">http.get({
+  hostname: <span class="hljs-string">&apos;localhost&apos;</span>,
+  port: <span class="hljs-number">80</span>,
+  path: <span class="hljs-string">&apos;/&apos;</span>,
+  agent: <span class="hljs-literal">false</span>  <span class="hljs-comment">// create a new agent just for this one request</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+  <span class="hljs-comment">// Do stuff with response</span>
+})
+</code></pre>
+<p>new Agent([options])#</p>
+<p><strong>options Object &#x4E3A;agent&#x8BBE;&#x7F6E;&#x53EF;&#x914D;&#x7F6E;&#x7684;&#x9009;&#x9879;&#x3002;&#x53EF;&#x4EE5;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;</strong>:</p>
+<ul>
+<li>keepAlive Boolean &#x5728;&#x672A;&#x6765;&#x4FDD;&#x6301;&#x6C60;&#x4E2D;&#x7684;<code>socket</code>&#x88AB;&#x5176;&#x4ED6;&#x8BF7;&#x6C42;&#x6240;&#x4F7F;&#x7528;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code></li>
+<li>keepAliveMsecs Integer &#x5F53;&#x4F7F;&#x7528;HTTP KeepAlive&#x65F6;&#xFF0C;&#x901A;&#x8FC7;&#x88AB;&#x4FDD;&#x6301;&#x8FDE;&#x63A5;&#x7684;<code>socket</code>&#x53D1;&#x9001;TCP KeepAlive &#x62A5;&#x6587;&#x7684;&#x95F4;&#x9694;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>1000</code>&#x3002;&#x53EA;&#x5728;<code>KeepAlive</code>&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x65F6;&#x6709;&#x6548;</li>
+<li>maxSockets Number &#x6BCF;&#x4E2A;&#x4E3B;&#x673A;&#x5141;&#x8BB8;&#x62E5;&#x6709;&#x7684;<code>socket</code>&#x7684;&#x6700;&#x5927;&#x6570;&#x91CF;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>Infinity</code></li>
+<li>maxFreeSockets Number &#x5728;&#x7A7A;&#x95F2;&#x72B6;&#x6001;&#x4E0B;&#x5141;&#x8BB8;&#x6253;&#x5F00;&#x7684;&#x6700;&#x5927;<code>socket</code>&#x6570;&#x3002;&#x4EC5;&#x5728;<code>keepAlive</code>&#x4E3A;<code>true</code>&#x65F6;&#x6709;&#x6548;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>256</code></li>
+</ul>
+<p><code>http.request</code>&#x4F7F;&#x7528;&#x7684;&#x9ED8;&#x8BA4;&#x7684;<code>http.globalAgent</code>&#x5305;&#x542B;&#x5B83;&#x4EEC;&#x5C5E;&#x6027;&#x7684;&#x5404;&#x81EA;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x914D;&#x7F6E;&#x5B83;&#x4EEC;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x521B;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684;<code>Agent</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+<span class="hljs-keyword">var</span> keepAliveAgent = <span class="hljs-keyword">new</span> http.Agent({ keepAlive: <span class="hljs-literal">true</span> });
+options.agent = keepAliveAgent;
+http.request(options, onResponseCallback);
+</code></pre>
+<h4 id="agentmaxsockets">agent.maxSockets</h4>
+<p>&#x9ED8;&#x8BA4;&#x4E3A;<code>Infinity</code>&#x3002;&#x51B3;&#x5B9A;&#x4E86;&#x6BCF;&#x4E2A;&#x6E90;&#x4E0A;&#x53EF;&#x4EE5;&#x62E5;&#x6709;&#x7684;&#x5E76;&#x53D1;&#x7684;<code>socket</code>&#x7684;&#x6570;&#x91CF;&#x3002;&#x6E90;&#x4E3A;<code>&apos;host:port&apos;</code>&#x6216;<code>&apos;host:port:localAddress&apos;</code>&#x7ED3;&#x5408;&#x4F53;&#x3002;</p>
+<h4 id="agentmaxfreesockets">agent.maxFreeSockets</h4>
+<p>&#x9ED8;&#x8BA4;&#x4E3A;<code>256</code>&#x3002;&#x5BF9;&#x4E8E;&#x652F;&#x6301;HTTP KeepAlive&#x7684;Agent&#xFF0C;&#x8FD9;&#x8BBE;&#x7F6E;&#x4E86;&#x5728;&#x7A7A;&#x95F2;&#x72B6;&#x6001;&#x4E0B;&#x4FDD;&#x6301;&#x6253;&#x5F00;&#x7684;&#x6700;&#x5927;<code>socket</code>&#x6570;&#x91CF;&#x3002;</p>
+<h4 id="agentsockets">agent.sockets</h4>
+<p>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x4E86;&#x6B63;&#x5728;&#x88AB;Agent&#x4F7F;&#x7528;de<code>socket</code>&#x6570;&#x7EC4;&#x3002;&#x8BF7;&#x4E0D;&#x8981;&#x4FEE;&#x6539;&#x5B83;&#x3002;</p>
+<h4 id="agentfreesockets">agent.freeSockets</h4>
+<p>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x4E86;&#x5F53;HTTP KeepAlive&#x88AB;&#x4F7F;&#x7528;&#x65F6;&#x6B63;&#x5728;&#x7B49;&#x5F85;&#x7684;<code>socket</code>&#x6570;&#x7EC4;&#x3002;&#x8BF7;&#x4E0D;&#x8981;&#x4FEE;&#x6539;&#x5B83;&#x3002;</p>
+<h4 id="agentrequests">agent.requests</h4>
+<p>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x4E86;&#x8FD8;&#x6CA1;&#x6709;&#x88AB;&#x5206;&#x914D;&#x7ED9;<code>socket</code>&#x7684;&#x8BF7;&#x6C42;&#x961F;&#x5217;&#x3002;&#x8BF7;&#x4E0D;&#x8981;&#x4FEE;&#x6539;&#x5B83;&#x3002;</p>
+<h4 id="agentdestroy">agent.destroy()</h4>
+<p>&#x9500;&#x6BC1;&#x6B63;&#x5728;&#x88AB;agent&#x4F7F;&#x7528;&#x7684;&#x6240;&#x6709;<code>socket</code>&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x8FD9;&#x4E48;&#x505A;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x542F;&#x7528;&#x4E86;<code>KeepAlive</code>&#x7684;agent&#xFF0C;&#x90A3;&#x4E48;&#x6700;&#x597D;&#x660E;&#x786E;&#x5730;&#x5173;&#x95ED;agent&#x5F53;&#x4F60;&#x77E5;&#x9053;&#x5B83;&#x4E0D;&#x4F1A;&#x518D;&#x88AB;&#x4F7F;&#x7528;&#x65F6;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x5728;&#x670D;&#x52A1;&#x5668;&#x5173;&#x95ED;&#x5B83;&#x4EEC;&#x524D;<code>socket</code>&#x53EF;&#x80FD;&#x88AB;&#x95F2;&#x7F6E;&#x3002;</p>
+<h4 id="agentgetnameoptions">agent.getName(options)</h4>
+<p>&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x9009;&#x9879;&#x96C6;&#x5408;&#x6765;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x6765;&#x51B3;&#x5B9A;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x662F;&#x5426;&#x53EF;&#x88AB;&#x518D;&#x4F7F;&#x7528;&#x3002;&#x5728;http&#x4EE3;&#x7406;&#x4E2D;&#xFF0C;&#x8FD9;&#x8FD4;&#x56DE;<code>host:port:localAddress</code>&#x3002;&#x5728;https&#x4EE3;&#x7406;&#x4E2D;&#xFF0C;<code>name</code>&#x5305;&#x62EC;&#x4E86;CA&#xFF0C;cert&#xFF0C;ciphers&#x548C;<code>HTTPS/TLS-specific</code>&#x914D;&#x7F6E;&#x6765;&#x51B3;&#x5B9A;&#x4E00;&#x4E2A;<code>socket</code>&#x662F;&#x5426;&#x80FD;&#x88AB;&#x518D;&#x4F7F;&#x7528;&#x3002;</p>
+<h4 id="httpglobalagent">http.globalAgent</h4>
+<p>&#x6240;&#x6709;&#x7684;http&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x4F7F;&#x7528;&#x7684;&#x9ED8;&#x8BA4;&#x5168;&#x5C40;<code>Agent</code>&#x5B9E;&#x4F8B;&#x3002;</p>
+<h4 id="class-httpclientrequest">Class: http.ClientRequest</h4>
+<p>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x65F6;&#x88AB;&#x5185;&#x90E8;&#x521B;&#x5EFA;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x8FC7;<code>http.request()</code>&#x88AB;&#x8FD4;&#x56DE;&#x3002;&#x5B83;&#x4EE3;&#x8868;&#x4E86;&#x4E00;&#x4E2A;&#x6B63;&#x5728;&#x5904;&#x7406;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x5176;&#x5934;&#x90E8;&#x5DF2;&#x7ECF;&#x8FDB;&#x5165;&#x4E86;&#x961F;&#x5217;&#x3002;&#x8FD9;&#x4E2A;&#x5934;&#x90E8;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>setHeader(name, value)</code>&#xFF0C;<code>getHeader(name)</code>&#x548C;<code>removeHeader(name)</code>&#x4FEE;&#x6539;&#x3002;&#x5B9E;&#x9645;&#x7684;&#x5934;&#x90E8;&#x4F1A;&#x968F;&#x7740;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5757;&#x53D1;&#x9001;&#xFF0C;&#x6216;&#x5728;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x65F6;&#x53D1;&#x9001;&#x3002;</p>
+<p>&#x8981;&#x83B7;&#x5F97;&#x54CD;&#x5E94;&#x5BF9;&#x8C61;&#xFF0C;&#x8BF7;&#x4E3A;<code>response</code>&#x4E8B;&#x4EF6;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x5668;&#x3002;<code>request</code>&#x5BF9;&#x8C61;&#x7684;<code>response</code>&#x4E8B;&#x4EF6;&#x5C06;&#x4F1A;&#x5728;&#x6536;&#x5230;&#x54CD;&#x5E94;&#x5934;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x8FD9;&#x4E2A;<code>response</code>&#x4E8B;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;<code>http.IncomingMessage</code>&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x5728;<code>response</code>&#x4E8B;&#x4EF6;&#x671F;&#x95F4;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED9;&#x54CD;&#x5E94;&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x76D1;&#x542C;&#x5668;&#xFF1B;&#x5C24;&#x5176;&#x662F;&#x76D1;&#x542C;<code>data</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6DFB;&#x52A0;<code>response</code>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#xFF0C;&#x90A3;&#x4E48;&#x54CD;&#x5E94;&#x4F1A;&#x88AB;&#x5B8C;&#x5168;&#x5FFD;&#x7565;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6DFB;&#x52A0;&#x4E86;<code>response</code>&#x4E8B;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>response.read()</code>&#xFF0C;&#x6DFB;&#x52A0;<code>data</code>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x6216;&#x8C03;&#x7528;<code>.resume()</code>&#x65B9;&#x6CD5;&#x7B49;&#x7B49;&#xFF0C;&#x6765;&#x4ECE;&#x54CD;&#x5E94;&#x5BF9;&#x8C61;&#x4E2D;&#x6D88;&#x8017;&#x6570;&#x636E;&#x3002;&#x5728;&#x6570;&#x636E;&#x88AB;&#x6D88;&#x8D39;&#x4E4B;&#x524D;&#xFF0C;<code>end</code>&#x4E8B;&#x4EF6;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x3002;&#x5982;&#x679C;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x88AB;&#x8BFB;&#x53D6;&#xFF0C;&#x5B83;&#x4F1A;&#x6D88;&#x8017;&#x5185;&#x5B58;&#xFF0C;&#x6700;&#x540E;&#x5BFC;&#x81F4;<code>&apos;process out of memory&apos;</code>&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;<code>node.js</code>&#x4E0D;&#x4F1A;&#x68C0;&#x67E5;<code>Content-Length</code>&#x548C;&#x88AB;&#x4F20;&#x8F93;&#x7684;&#x54CD;&#x5E94;&#x4F53;&#x957F;&#x5EA6;&#x662F;&#x5426;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x5B9E;&#x73B0;&#x4E86;<code>Writable</code>&#x6D41;&#x63A5;&#x53E3;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;&#x4EE5;&#x4E0B;&#x4E8B;&#x4EF6;&#x7684;<code>EventEmitter</code>&#xFF1A;</p>
+<h4 id="event-response">Event: &apos;response&apos;</h4>
+<ul>
+<li>function (response) { }</li>
+</ul>
+<p>&#x5F53;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x6536;&#x5230;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x53EA;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x3002;<code>response</code>&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;<code>http.IncomingMessage</code>&#x5B9E;&#x4F8B;&#x3002;</p>
+<ul>
+<li><strong>Options:</strong><ul>
+<li>host: &#x4E00;&#x4E2A;&#x5411;&#x5176;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7684;&#x670D;&#x52A1;&#x5668;&#x7684;&#x57DF;&#x540D;&#x6216;IP&#x5730;&#x5740;</li>
+<li>port: &#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x7684;&#x7AEF;&#x53E3;</li>
+<li>socketPath: Unix&#x57DF;<code>socket</code>&#xFF08;&#x4F7F;&#x7528;<code>host:port</code>&#x6216;<code>socketPath</code>&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<h4 id="event-socket">Event: &apos;socket&apos;</h4>
+<ul>
+<li>function (socket) { }</li>
+</ul>
+<p>&#x5F53;&#x4E00;&#x4E2A;<code>socket</code>&#x88AB;&#x5206;&#x914D;&#x7ED9;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="event-connect">Event: &apos;connect&apos;</h4>
+<ul>
+<li>function (response, socket, head) { }</li>
+</ul>
+<p>&#x6BCF;&#x6B21;&#x670D;&#x52A1;&#x5668;&#x4F7F;&#x7528;<code>CONNECT</code>&#x65B9;&#x6CD5;&#x54CD;&#x5E94;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x6CA1;&#x6709;&#x88AB;&#x76D1;&#x542C;&#xFF0C;&#x90A3;&#x4E48;&#x63A5;&#x53D7;<code>CONNECT</code>&#x65B9;&#x6CD5;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x5C06;&#x4F1A;&#x5173;&#x95ED;&#x5B83;&#x4EEC;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;/&#x670D;&#x52A1;&#x5668;&#x4EE3;&#x7801;&#xFF0C;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x76D1;&#x542C;<code>connect</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+<span class="hljs-keyword">var</span> net = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;net&apos;</span>);
+<span class="hljs-keyword">var</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;url&apos;</span>);
+
+<span class="hljs-comment">// Create an HTTP tunneling proxy</span>
+<span class="hljs-keyword">var</span> proxy = http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+  res.writeHead(<span class="hljs-number">200</span>, {<span class="hljs-string">&apos;Content-Type&apos;</span>: <span class="hljs-string">&apos;text/plain&apos;</span>});
+  res.end(<span class="hljs-string">&apos;okay&apos;</span>);
+});
+proxy.on(<span class="hljs-string">&apos;connect&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, cltSocket, head</span>) </span>{
+  <span class="hljs-comment">// connect to an origin server</span>
+  <span class="hljs-keyword">var</span> srvUrl = url.parse(<span class="hljs-string">&apos;http://&apos;</span> + req.url);
+  <span class="hljs-keyword">var</span> srvSocket = net.connect(srvUrl.port, srvUrl.hostname, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    cltSocket.write(<span class="hljs-string">&apos;HTTP/1.1 200 Connection Established\r\n&apos;</span> +
+                    <span class="hljs-string">&apos;Proxy-agent: node.js-Proxy\r\n&apos;</span> +
+                    <span class="hljs-string">&apos;\r\n&apos;</span>);
+    srvSocket.write(head);
+    srvSocket.pipe(cltSocket);
+    cltSocket.pipe(srvSocket);
+  });
+});
+
+<span class="hljs-comment">// now that proxy is running</span>
+proxy.listen(<span class="hljs-number">1337</span>, <span class="hljs-string">&apos;127.0.0.1&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+
+  <span class="hljs-comment">// make a request to a tunneling proxy</span>
+  <span class="hljs-keyword">var</span> options = {
+    port: <span class="hljs-number">1337</span>,
+    hostname: <span class="hljs-string">&apos;127.0.0.1&apos;</span>,
+    method: <span class="hljs-string">&apos;CONNECT&apos;</span>,
+    path: <span class="hljs-string">&apos;www.google.com:80&apos;</span>
+  };
+
+  <span class="hljs-keyword">var</span> req = http.request(options);
+  req.end();
+
+  req.on(<span class="hljs-string">&apos;connect&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res, socket, head</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;got connected!&apos;</span>);
+
+    <span class="hljs-comment">// make a request over an HTTP tunnel</span>
+    socket.write(<span class="hljs-string">&apos;GET / HTTP/1.1\r\n&apos;</span> +
+                 <span class="hljs-string">&apos;Host: www.google.com:80\r\n&apos;</span> +
+                 <span class="hljs-string">&apos;Connection: close\r\n&apos;</span> +
+                 <span class="hljs-string">&apos;\r\n&apos;</span>);
+    socket.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunk</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(chunk.toString());
+    });
+    socket.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      proxy.close();
+    });
+  });
+});
+</code></pre>
+<h4 id="event-upgrade">Event: &apos;upgrade&apos;</h4>
+<ul>
+<li>function (response, socket, head) { }</li>
+</ul>
+<p>Emitted each time a server responds to a request with an upgrade. If this event isn&apos;t being listened for, clients receiving an upgrade header will have their connections closed.
+&#x6BCF;&#x6B21;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;<code>upgrade</code>&#x54CD;&#x5E94;&#x7ED9;&#x8BF7;&#x6C42;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x6CA1;&#x6709;&#x88AB;&#x76D1;&#x542C;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x63A5;&#x6536;&#x4E00;&#x4E2A;<code>upgrade</code>&#x5934;&#x65F6;&#x4F1A;&#x5173;&#x95ED;&#x5B83;&#x4EEC;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;/&#x670D;&#x52A1;&#x5668;&#x4EE3;&#x7801;&#xFF0C;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x76D1;&#x542C;<code>upgrade</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+
+<span class="hljs-comment">// Create an HTTP server</span>
+<span class="hljs-keyword">var</span> srv = http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+  res.writeHead(<span class="hljs-number">200</span>, {<span class="hljs-string">&apos;Content-Type&apos;</span>: <span class="hljs-string">&apos;text/plain&apos;</span>});
+  res.end(<span class="hljs-string">&apos;okay&apos;</span>);
+});
+srv.on(<span class="hljs-string">&apos;upgrade&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, socket, head</span>) </span>{
+  socket.write(<span class="hljs-string">&apos;HTTP/1.1 101 Web Socket Protocol Handshake\r\n&apos;</span> +
+               <span class="hljs-string">&apos;Upgrade: WebSocket\r\n&apos;</span> +
+               <span class="hljs-string">&apos;Connection: Upgrade\r\n&apos;</span> +
+               <span class="hljs-string">&apos;\r\n&apos;</span>);
+
+  socket.pipe(socket); <span class="hljs-comment">// echo back</span>
+});
+
+<span class="hljs-comment">// now that server is running</span>
+srv.listen(<span class="hljs-number">1337</span>, <span class="hljs-string">&apos;127.0.0.1&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+
+  <span class="hljs-comment">// make a request</span>
+  <span class="hljs-keyword">var</span> options = {
+    port: <span class="hljs-number">1337</span>,
+    hostname: <span class="hljs-string">&apos;127.0.0.1&apos;</span>,
+    headers: {
+      <span class="hljs-string">&apos;Connection&apos;</span>: <span class="hljs-string">&apos;Upgrade&apos;</span>,
+      <span class="hljs-string">&apos;Upgrade&apos;</span>: <span class="hljs-string">&apos;websocket&apos;</span>
+    }
+  };
+
+  <span class="hljs-keyword">var</span> req = http.request(options);
+  req.end();
+
+  req.on(<span class="hljs-string">&apos;upgrade&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res, socket, upgradeHead</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;got upgraded!&apos;</span>);
+    socket.end();
+    process.exit(<span class="hljs-number">0</span>);
+  });
+});
+</code></pre>
+<h4 id="event-continue">Event: &apos;continue&apos;</h4>
+<ul>
+<li>function () { }</li>
+</ul>
+<p>&#x5F53;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;<code>&apos;100 Continue&apos;</code>HTTP&#x54CD;&#x5E94;&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x8BF7;&#x6C42;&#x5305;&#x542B;<code>&apos;Expect: 100-continue&apos;</code>&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x987B;&#x8981;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x4F53;&#x7684;&#x6307;&#x793A;&#x3002;</p>
+<h4 id="event-abort">Event: &apos;abort&apos;</h4>
+<ul>
+<li>function () { }</li>
+</ul>
+<p>&#x5F53;&#x8BF7;&#x6C42;&#x88AB;&#x5BA2;&#x6237;&#x7AEF;&#x4E2D;&#x6B62;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x53EA;&#x4F1A;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;<code>abort()</code>&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="requestflushheaders">request.flushHeaders()</h4>
+<p>&#x51B2;&#x5237;&#x8BF7;&#x6C42;&#x5934;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x6548;&#x7387;&#x539F;&#x56E0;&#xFF0C;<code>node.js</code>&#x901A;&#x5E38;&#x5728;&#x76F4;&#x5230;&#x4F60;&#x8C03;&#x7528;<code>request.end()</code>&#x6216;&#x5199;&#x5165;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5757;&#x524D;&#x90FD;&#x4F1A;&#x7F13;&#x51B2;&#x8BF7;&#x6C42;&#x5934;&#xFF0C;&#x7136;&#x540E;&#x52AA;&#x529B;&#x5C06;&#x8BF7;&#x6C42;&#x5934;&#x548C;&#x6570;&#x636E;&#x6253;&#x5305;&#x4E3A;&#x4E00;&#x4E2A;TCP&#x62A5;&#x6587;&#x3002;</p>
+<p>&#x8FD9;&#x901A;&#x5E38;&#x662F;&#x4F60;&#x60F3;&#x8981;&#x7684;&#xFF08;&#x5B83;&#x8282;&#x7EA6;&#x4E86;&#x4E00;&#x4E2A;TCP&#x5F80;&#x8FD4;&#xFF09;&#x3002;&#x4F46;&#x5F53;&#x7B2C;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#x4F1A;&#x7B49;&#x5F85;&#x5F88;&#x4E45;&#x624D;&#x88AB;&#x53D1;&#x9001;&#x65F6;&#x4E0D;&#x662F;&#x3002;<code>request.flushHeaders()</code>&#x4F7F;&#x4F60;&#x80FD;&#x7ED5;&#x8FC7;&#x8FD9;&#x4E2A;&#x4F18;&#x5316;&#x5E76;&#x4E14;&#x542F;&#x52A8;&#x8BF7;&#x6C42;&#x3002;</p>
+<h4 id="requestwritechunk-encoding-callback">request.write(chunk[, encoding][, callback])</h4>
+<p>&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#x5757;&#x3002;&#x5F53;&#x7528;&#x6237;&#x60F3;&#x8981;&#x5C06;&#x8BF7;&#x6C42;&#x4F53;&#x6D41;&#x5F0F;&#x5F97;&#x53D1;&#x9001;&#x7ED9;&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x591A;&#x6B21;&#x6765;&#x529E;&#x5230;--&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728;&#x521B;&#x5EFA;&#x8BF7;&#x6C42;&#x65F6;&#x4F7F;&#x7528;<code>[&apos;Transfer-Encoding&apos;, &apos;chunked&apos;]</code>&#x5934;&#x3002;</p>
+<p><code>chunk</code>&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#x6216;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p><code>encoding</code>&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x4EC5;&#x5F53;<code>chunk</code>&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x6709;&#x6548;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>&apos;utf8&apos;</code>&#x3002;</p>
+<p><code>callback</code>&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x6570;&#x636E;&#x5757;&#x88AB;&#x51B2;&#x5237;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="requestenddata-encoding-callback">request.end([data][, encoding][, callback])</h4>
+<p>&#x7ED3;&#x675F;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x3002;&#x5982;&#x679C;&#x6709;&#x4EFB;&#x4F55;&#x90E8;&#x5206;&#x7684;&#x8BF7;&#x6C42;&#x4F53;&#x672A;&#x88AB;&#x53D1;&#x9001;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C06;&#x4F1A;&#x5C06;&#x5B83;&#x4EEC;&#x51B2;&#x5237;&#x81F3;&#x6D41;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x8BF7;&#x6C42;&#x662F;&#x6210;&#x5757;&#x7684;&#xFF0C;&#x5B83;&#x4F1A;&#x53D1;&#x9001;&#x7EC8;&#x7ED3;&#x7B26;<code>&apos;0\r\n\r\n&apos;</code>&#x3002;</p>
+<p>&#x5982;&#x679C;<code>data</code>&#x88AB;&#x6307;&#x5B9A;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E0E;&#x8C03;&#x7528;<code>request.write(data, encoding)</code>&#x540E;&#x518D;&#x8C03;&#x7528;<code>request.end(callback)</code>&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>callback</code>&#x88AB;&#x6307;&#x5B9A;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x5728;&#x8BF7;&#x6C42;&#x6D41;&#x7ED3;&#x675F;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="requestabort">request.abort()</h4>
+<p>&#x4E2D;&#x6B62;&#x8BF7;&#x6C42;&#x3002;</p>
+<h4 id="requestsettimeouttimeout-callback">request.setTimeout(timeout[, callback])</h4>
+<p>&#x4E00;&#x65E6;&#x4E00;&#x4E2A;<code>socket</code>&#x88AB;&#x5206;&#x914D;&#x7ED9;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x5E76;&#x4E14;&#x5B8C;&#x6210;&#x8FDE;&#x63A5;&#xFF0C;<code>socket.setTimeout()</code>&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x8FD4;&#x56DE;<code>request</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="requestsetnodelaynodelay">request.setNoDelay([noDelay])</h4>
+<p>&#x4E00;&#x65E6;&#x4E00;&#x4E2A;<code>socket</code>&#x88AB;&#x5206;&#x914D;&#x7ED9;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x5E76;&#x4E14;&#x5B8C;&#x6210;&#x8FDE;&#x63A5;&#xFF0C;<code>socket.setNoDelay()</code>&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="requestsetsocketkeepaliveenable-initialdelay">request.setSocketKeepAlive([enable][, initialDelay])</h4>
+<p>&#x4E00;&#x65E6;&#x4E00;&#x4E2A;<code>socket</code>&#x88AB;&#x5206;&#x914D;&#x7ED9;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x5E76;&#x4E14;&#x5B8C;&#x6210;&#x8FDE;&#x63A5;&#xFF0C;<code>socket.setKeepAlive()</code>&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="httpincomingmessage">http.IncomingMessage</h4>
+<p>&#x4E00;&#x4E2A;<code>IncomingMessage</code>&#x5BF9;&#x8C61;&#x88AB;<code>http.Server</code>&#x6216;<code>http.ClientRequest</code>&#x521B;&#x5EFA;&#xFF0C;&#x5E76;&#x4E14;&#x5206;&#x522B;&#x88AB;&#x4F20;&#x9012;&#x7ED9;<code>request</code>&#x548C;<code>response</code>&#x4E8B;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x5B83;&#x88AB;&#x7528;&#x6765;&#x53D6;&#x5F97;&#x54CD;&#x5E94;&#x72B6;&#x6001;&#xFF0C;&#x54CD;&#x5E94;&#x5934;&#x548C;&#x54CD;&#x5E94;&#x4F53;&#x3002;</p>
+<p>&#x5B83;&#x5B9E;&#x73B0;&#x4E86;<code>Readable</code>&#x6D41;&#x63A5;&#x53E3;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x4EE5;&#x4E0B;&#x989D;&#x5916;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#x3002;</p>
+<h4 id="event-close">Event: &apos;close&apos;</h4>
+<ul>
+<li>function () { }</li>
+</ul>
+<p>&#x8868;&#x660E;&#x5E95;&#x5C42;&#x8FDE;&#x63A5;&#x88AB;&#x5173;&#x95ED;&#x3002;&#x4E0E;<code>end</code>&#x76F8;&#x540C;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x6BCF;&#x6B21;&#x54CD;&#x5E94;&#x53EA;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x3002;</p>
+<h4 id="messagehttpversion">message.httpVersion</h4>
+<p>&#x5F53;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x65F6;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7684;HTTP&#x7248;&#x672C;&#x3002;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x54CD;&#x5E94;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x7684;HTTP&#x7248;&#x672C;&#x3002;&#x901A;&#x5E38;&#x662F;<code>&apos;1.1&apos;</code>&#x6216;<code>&apos;1.0&apos;</code>&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;<code>response.httpVersionMajor</code>&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;<code>response.httpVersionMinor</code>&#x662F;&#x7B2C;&#x4E8C;&#x4E2A;&#x6574;&#x6570;&#x3002;</p>
+<h4 id="messageheaders">message.headers</h4>
+<p>&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;&#x5934;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x53EA;&#x8BFB;&#x7684;&#x5934;&#x540D;&#x79F0;&#x548C;&#x503C;&#x6620;&#x5C04;&#x3002;&#x5934;&#x540D;&#x79F0;&#x662F;&#x5C0F;&#x5199;&#x7684;&#xFF0C;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Prints something like:</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// { &apos;user-agent&apos;: &apos;curl/7.22.0&apos;,</span>
+<span class="hljs-comment">//   host: &apos;127.0.0.1:8000&apos;,</span>
+<span class="hljs-comment">//   accept: &apos;*/*&apos; }</span>
+<span class="hljs-built_in">console</span>.log(request.headers);
+</code></pre>
+<h4 id="messagerawheaders">message.rawHeaders</h4>
+<p>&#x63A5;&#x53D7;&#x5230;&#x7684;&#x539F;&#x59CB;&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;&#x5934;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x952E;&#x548C;&#x503C;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x5B83;&#x5E76;&#x975E;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#x5217;&#x8868;&#x3002;&#x4E8E;&#x662F;&#xFF0C;&#x5076;&#x6570;&#x504F;&#x79FB;&#x91CF;&#x4E3A;&#x952E;&#xFF0C;&#x5947;&#x6570;&#x504F;&#x79FB;&#x91CF;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5934;&#x540D;&#x79F0;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x5C0F;&#x5199;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x91CD;&#x590D;&#x4E5F;&#x6CA1;&#x6709;&#x88AB;&#x5408;&#x5E76;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Prints something like:</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// [ &apos;user-agent&apos;,</span>
+<span class="hljs-comment">//   &apos;this is invalid because there can be only one&apos;,</span>
+<span class="hljs-comment">//   &apos;User-Agent&apos;,</span>
+<span class="hljs-comment">//   &apos;curl/7.22.0&apos;,</span>
+<span class="hljs-comment">//   &apos;Host&apos;,</span>
+<span class="hljs-comment">//   &apos;127.0.0.1:8000&apos;,</span>
+<span class="hljs-comment">//   &apos;ACCEPT&apos;,</span>
+<span class="hljs-comment">//   &apos;*/*&apos; ]</span>
+<span class="hljs-built_in">console</span>.log(request.rawHeaders);
+</code></pre>
+<h4 id="messagetrailers">message.trailers</h4>
+<p>&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;&#x5C3E;&#x90E8;&#x5BF9;&#x8C61;&#x3002;&#x53EA;&#x5728;<code>end</code>&#x4E8B;&#x4EF6;&#x4E2D;&#x5B58;&#x5728;&#x3002;</p>
+<h4 id="messagerawtrailers">message.rawTrailers</h4>
+<p>&#x63A5;&#x53D7;&#x5230;&#x7684;&#x539F;&#x59CB;&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;&#x5934;&#x5C3E;&#x90E8;&#x952E;&#x503C;&#x5BF9;&#x3002;&#x53EA;&#x5728;<code>end</code>&#x4E8B;&#x4EF6;&#x4E2D;&#x5B58;&#x5728;&#x3002;</p>
+<h4 id="messagesettimeoutmsecs-callback">message.setTimeout(msecs, callback)</h4>
+<ul>
+<li>msecs Number</li>
+<li>callback Function</li>
+</ul>
+<p>&#x8C03;&#x7528;<code>message.connection.setTimeout(msecs, callback)</code>&#x3002;</p>
+<p>&#x8FD4;&#x56DE;<code>message</code>&#x3002;</p>
+<h4 id="messagemethod">message.method</h4>
+<p>&#x4EC5;&#x5BF9;&#x4ECE;<code>http.Server</code>&#x83B7;&#x5F97;&#x7684;&#x8BF7;&#x6C42;&#x6709;&#x6548;&#x3002;</p>
+<p>&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x53EA;&#x8BFB;&#x3002;&#x4F8B;&#x5982;&#xFF1A;<code>&apos;GET&apos;</code>&#xFF0C;<code>&apos;DELETE&apos;</code>&#x3002;</p>
+<h4 id="messageurl">message.url</h4>
+<p>&#x4EC5;&#x5BF9;&#x4ECE;<code>http.Server</code>&#x83B7;&#x5F97;&#x7684;&#x8BF7;&#x6C42;&#x6709;&#x6548;&#x3002;</p>
+<p>&#x8BF7;&#x6C42;&#x7684;URL&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x8FD9;&#x4EC5;&#x4EC5;&#x53EA;&#x5305;&#x542B;&#x5B9E;&#x9645;HTTP&#x8BF7;&#x6C42;&#x4E2D;&#x7684;URL&#x3002;&#x5982;&#x679C;&#x8BF7;&#x6C42;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-SHELL">GET /status?name=ryan HTTP/1.1\r\n
+Accept: text/plain\r\n
+\r\n
+</code></pre>
+<p>&#x90A3;&#x4E48;<code>request.url</code>&#x5C06;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-string">&apos;/status?name=ryan&apos;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5206;&#x5757;&#x5730;&#x89E3;&#x91CA;URL&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>require(&apos;url&apos;).parse(request.url)</code>&#x3002;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">iojs&gt; <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;url&apos;</span>).parse(<span class="hljs-string">&apos;/status?name=ryan&apos;</span>)
+{ href: <span class="hljs-string">&apos;/status?name=ryan&apos;</span>,
+  search: <span class="hljs-string">&apos;?name=ryan&apos;</span>,
+  query: <span class="hljs-string">&apos;name=ryan&apos;</span>,
+  pathname: <span class="hljs-string">&apos;/status&apos;</span> }
+</code></pre>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4ECE;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x63D0;&#x53D6;&#x53C2;&#x6570;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>require(&apos;querystring&apos;).parse</code>&#x51FD;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x7ED9;<code>require(&apos;url&apos;).parse</code>&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x9012;<code>true</code>&#xFF0C;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">iojs&gt; <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;url&apos;</span>).parse(<span class="hljs-string">&apos;/status?name=ryan&apos;</span>, <span class="hljs-literal">true</span>)
+{ href: <span class="hljs-string">&apos;/status?name=ryan&apos;</span>,
+  search: <span class="hljs-string">&apos;?name=ryan&apos;</span>,
+  query: { name: <span class="hljs-string">&apos;ryan&apos;</span> },
+  pathname: <span class="hljs-string">&apos;/status&apos;</span> }
+</code></pre>
+<h4 id="messagestatuscode">message.statusCode</h4>
+<p>&#x53EA;&#x5BF9;&#x4ECE;<code>http.ClientRequest</code>&#x5230;&#x6765;&#x7684;&#x54CD;&#x5E94;&#x6709;&#x6548;&#x3002;</p>
+<p>3&#x4F4D;&#x6574;&#x6570;HTTP&#x72B6;&#x6001;&#x7801;&#x3002;&#x5982;<code>404</code>&#x3002;</p>
+<h4 id="messagestatusmessage">message.statusMessage</h4>
+<p>&#x53EA;&#x5BF9;&#x4ECE;<code>http.ClientRequest</code>&#x5230;&#x6765;&#x7684;&#x54CD;&#x5E94;&#x6709;&#x6548;&#x3002;</p>
+<p>HTTP&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x3002;&#x5982;<code>OK</code>&#x6216;<code>Internal Server Error</code>&#x3002;</p>
+<h4 id="messagesocket">message.socket</h4>
+<p>&#x4E0E;&#x6B64;&#x8FDE;&#x63A5;&#x5173;&#x8054;&#x7684;<code>net.Socket</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x901A;&#x8FC7;HTTPS&#x7684;&#x652F;&#x6301;&#xFF0C;&#x4F7F;&#x7528;<code>request.socket.getPeerCertificate()</code>&#x6765;&#x83B7;&#x53D6;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8EAB;&#x4EFD;&#x7EC6;&#x8282;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Globals.html" class="navigation navigation-prev " aria-label="Previous page: Globals">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="HTTPS.html" class="navigation navigation-next " aria-label="Next page: HTTPS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTTP","level":"1.14","depth":1,"next":{"title":"HTTPS","level":"1.15","depth":1,"path":"HTTPS.md","ref":"HTTPS.md","articles":[]},"previous":{"title":"Globals","level":"1.13","depth":1,"path":"Globals.md","ref":"Globals.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"HTTP.md","mtime":"2016-06-20T01:36:08.962Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

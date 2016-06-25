@@ -1,0 +1,820 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Web 服务器 · PHP 开发者实践</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dbserver.html" />
+    
+    
+    <link rel="prev" href="operating-system.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface/">
+            
+                <a href="../preface/">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../preface/why.html">
+            
+                <a href="../preface/why.html">
+            
+                    
+                    源起
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../preface/cross-the-gfw.html">
+            
+                <a href="../preface/cross-the-gfw.html">
+            
+                    
+                    科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    LA/NMP 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="operating-system.html">
+            
+                <a href="operating-system.html">
+            
+                    
+                    Linux 操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="webserver.html">
+            
+                <a href="webserver.html">
+            
+                    
+                    Web 服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="dbserver.html">
+            
+                <a href="dbserver.html">
+            
+                    
+                    数据库服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="php.html">
+            
+                <a href="php.html">
+            
+                    
+                    PHP 语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="website-architecture.html">
+            
+                <a href="website-architecture.html">
+            
+                    
+                    网站系统架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../2-development-environment/">
+            
+                <a href="../2-development-environment/">
+            
+                    
+                    一致性开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../2-development-environment/virtualization.html">
+            
+                <a href="../2-development-environment/virtualization.html">
+            
+                    
+                    虚拟化技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../2-development-environment/amp-packages.html">
+            
+                <a href="../2-development-environment/amp-packages.html">
+            
+                    
+                    集成环境安装包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../2-development-environment/editors.html">
+            
+                <a href="../2-development-environment/editors.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../3-development/">
+            
+                <a href="../3-development/">
+            
+                    
+                    设计 & 开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../3-development/rules.html">
+            
+                <a href="../3-development/rules.html">
+            
+                    
+                    开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../3-development/coding.html">
+            
+                <a href="../3-development/coding.html">
+            
+                    
+                    设计编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../3-development/testing.html">
+            
+                <a href="../3-development/testing.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../3-development/debugging.html">
+            
+                <a href="../3-development/debugging.html">
+            
+                    
+                    诊断与调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../3-development/security.html">
+            
+                <a href="../3-development/security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../3-development/documentation.html">
+            
+                <a href="../3-development/documentation.html">
+            
+                    
+                    文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../4-development-process/">
+            
+                <a href="../4-development-process/">
+            
+                    
+                    过程 & 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../4-development-process/life-cycle-model.html">
+            
+                <a href="../4-development-process/life-cycle-model.html">
+            
+                    
+                    开发过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../4-development-process/version-control.html">
+            
+                <a href="../4-development-process/version-control.html">
+            
+                    
+                    版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../4-development-process/ci.html">
+            
+                <a href="../4-development-process/ci.html">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../4-development-process/deployment.html">
+            
+                <a href="../4-development-process/deployment.html">
+            
+                    
+                    上线部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../5-php-internals/">
+            
+                <a href="../5-php-internals/">
+            
+                    
+                    PHP Internals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../5-php-internals/php-extension.html">
+            
+                <a href="../5-php-internals/php-extension.html">
+            
+                    
+                    PHP 扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../5-php-internals/php-vm.html">
+            
+                <a href="../5-php-internals/php-vm.html">
+            
+                    
+                    PHP 虚拟机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Web 服务器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="web-&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;---apache-nginx">Web &#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668; - Apache, Nginx</h1>
+<p>&#x8FD1;&#x51E0;&#x5E74; Web &#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x5E02;&#x573A;&#x53EF;&#x4EE5;&#x8BF4;&#x662F; Nginx &#x4E00;&#x4E2A;&#x4EBA;&#x7684;&#x821E;&#x53F0;&#xFF0C;&#x51ED;&#x501F;&#x826F;&#x597D;&#x7684;&#x6027;&#x80FD;&#x8868;&#x73B0;&#x3001;&#x7A33;&#x5B9A;&#x53EF;&#x9760;&#x7684;&#x53D1;&#x6325;&#xFF0C;Nginx &#x4ECE; Lighttpd &#x7B49;&#x9AD8;&#x6027;&#x80FD; Web &#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x7ADE;&#x4E89;&#x8005;&#x4E2D;&#x8131;&#x9896;&#x800C;&#x51FA;&#xFF0C;&#x4E00;&#x8DEF;&#x9AD8;&#x6B4C;&#x731B;&#x8FDB;&#xFF0C;&#x77ED;&#x77ED;&#x51E0;&#x5E74;&#x65F6;&#x95F4;&#x5C31;&#x62FF;&#x4E0B;&#x4E86;&#x8FD1;&#x767E;&#x5206;&#x4E4B;&#x4E8C;&#x5341;&#x7684;&#x5E02;&#x573A;&#x4EFD;&#x989D;&#x3002;&#x4F46;&#x662F;&#x51ED;&#x7740;&#x5386;&#x53F2;&#x79EF;&#x7D2F;&#x4E0B;&#x7684;&#x5E9E;&#x5927;&#x7528;&#x6237;&#x6570;&#xFF0C;Apache &#x76EE;&#x524D;&#x4ECD;&#x7136;&#x662F; <a href="http://news.netcraft.com/archives/2015/02/24/february-2015-web-server-survey.html" target="_blank">&#x6700;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x7684; Web &#x670D;&#x52A1;&#x5668;&#xFF08;&#x6839;&#x636E; NetCraft 2015 &#x5E74; 2 &#x6708;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x5168;&#x7403;&#x8BBF;&#x95EE;&#x91CF;&#x6700;&#x5927;&#x7684;&#x4E00;&#x767E;&#x4E07;&#x4E2A;&#x7F51;&#x7AD9;&#x4E2D; Apache &#x5E02;&#x573A;&#x5360;&#x6709;&#x7387;&#x4E3A; 50%&#xFF0C;&#x4E8C;&#x4E09;&#x540D;&#x5206;&#x522B;&#x4E3A; Nginx 21%&#x3001;IIS 12%&#xFF09;</a>&#xFF0C;&#x4F9D;&#x7136;&#x6709;&#x5927;&#x91CF;&#x5386;&#x53F2;&#x957F;&#x671F;&#x9879;&#x76EE;&#x4EE5;&#x53CA;&#x66F4;&#x6CE8;&#x91CD; Apache &#x4E30;&#x5BCC;&#x7684;&#x529F;&#x80FD;&#x4E14;&#x5BF9;&#x6027;&#x80FD;&#x8981;&#x6C42;&#x4E0D;&#x90A3;&#x4E48;&#x9AD8;&#x7684;&#x65B0;&#x9879;&#x76EE;&#x9009;&#x62E9;&#x5E76;&#x4F7F;&#x7528; Apache&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x4E0A;&#x8FF0;&#x539F;&#x56E0;&#xFF0C;&#x5728;&#x76EE;&#x524D; Nginx &#x5DF2;&#x9010;&#x6B65;&#x662F;&#x591A;&#x6570;&#x4E92;&#x8054;&#x7F51;&#x516C;&#x53F8;&#x9996;&#x9009;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x4ECD;&#x5305;&#x62EC;&#x4E86; Apache &#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<h2 id="apache-http-server&#xFF08;&#x7B80;&#x79F0;-apache&#xFF09;">Apache HTTP Server&#xFF08;&#x7B80;&#x79F0; Apache&#xFF09;</h2>
+<p><a href="http://httpd.apache.org/" target="_blank"><strong>Apache</strong></a> &#x662F;&#x4E00;&#x4E2A;&#x8DE8;&#x5E73;&#x53F0;&#x3001;&#x91C7;&#x7528;&#x6A21;&#x5757;&#x5316;&#x8BBE;&#x8BA1;&#x7684; Web &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7531;&#x4E8E;&#x5176;&#x7B80;&#x5355;&#x9AD8;&#x6548;&#x3001;&#x7A33;&#x5B9A;&#x5B89;&#x5168;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x88AB;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x673A;&#x6280;&#x672F;&#x7684;&#x5404;&#x4E2A;&#x9886;&#x57DF;&#x3002;</p>
+<h3 id="apache-&#x547D;&#x4EE4;">Apache &#x547D;&#x4EE4;</h3>
+<pre><code class="lang-sh">httpd                       <span class="hljs-comment"># &#x542F;&#x52A8; Apache</span>
+httpd -h                    <span class="hljs-comment"># &#x663E;&#x793A;&#x5E2E;&#x52A9;</span>
+httpd -v                    <span class="hljs-comment"># &#x663E;&#x793A;&#x7248;&#x672C;&#x4FE1;&#x606F;</span>
+httpd -V                    <span class="hljs-comment"># &#x663E;&#x793A;&#x7248;&#x672C;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x7248;&#x672C;&#x548C;&#x914D;&#x7F6E;&#x53C2;&#x6570;</span>
+httpd -t                    <span class="hljs-comment"># &#x68C0;&#x67E5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;</span>
+httpd <span class="hljs-_">-l</span>                    <span class="hljs-comment"># &#x663E;&#x793A;&#x7F16;&#x8BD1;&#x6A21;&#x5757;</span>
+httpd -L                    <span class="hljs-comment"># &#x663E;&#x793A;&#x914D;&#x7F6E;&#x6307;&#x4EE4;&#x8BF4;&#x660E;</span>
+httpd <span class="hljs-_">-f</span> &lt;/path/to/config&gt;  <span class="hljs-comment"># &#x6307;&#x5B9A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+httpd -S                    <span class="hljs-comment"># &#x663E;&#x793A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x8BBE;&#x5B9A;</span>
+</code></pre>
+<h3 id="&#x4E00;&#x4E9B;-apache-&#x914D;&#x7F6E;&#x3001;&#x6A21;&#x5757;">&#x4E00;&#x4E9B; Apache &#x914D;&#x7F6E;&#x3001;&#x6A21;&#x5757;</h3>
+<blockquote>
+<p><strong>&#x7C97;&#x4F53;&#x90E8;&#x5206;</strong> - &#x4E2A;&#x4EBA;&#x8BA4;&#x4E3A;&#x53EF;&#x591A;&#x5173;&#x6CE8;</p>
+</blockquote>
+<ul>
+<li>Options<ul>
+<li>&#x7B26;&#x53F7;&#x8FDE;&#x63A5; - FollowSymLinks<br>&#x5F00;&#x542F;&#x540E;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5C06;&#x5141;&#x8BB8;&#x5728;&#x6B64;&#x76EE;&#x5F55;&#x4E2D;&#x4F7F;&#x7528;&#x7B26;&#x53F7;&#x8FDE;&#x63A5;&#xFF0C;Apache &#x4F1A;&#x68C0;&#x67E5;&#x6BCF;&#x4E2A;&#x8BF7;&#x6C42;&#x4E2D;&#x662F;&#x5426;&#x5305;&#x542B;&#x5BF9;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x5BF9;&#x8BF7;&#x6C42;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x6BCF;&#x4E2A;&#x8DEF;&#x5F84;&#x505A;&#x4E00;&#x6B21; lstat() &#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x3002;&#x5982;&#x8003;&#x8651;&#x5B89;&#x5168;&#x9632;&#x62A4;&#xFF1A;&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#xFF1B;&#x5982;&#x8003;&#x8651;&#x6027;&#x80FD;&#xFF1A;&#x6C38;&#x8FDC;&#x4F7F;&#x7528; Options FollowSysLinks &#x4E14;&#x7EDD;&#x4E0D;&#x4F7F;&#x7528; Options SysLinkIfOwnerMatch</li>
+<li>&#x76EE;&#x5F55;&#x6D4F;&#x89C8; - Indexes, &#x5EFA;&#x8BAE;&#x5173;&#x95ED;</li>
+</ul>
+</li>
+<li>ServerRoot, DocumentRoot</li>
+<li>&#x7F51;&#x7AD9;&#x9ED8;&#x8BA4;&#x9996;&#x9875;&#x6587;&#x4EF6; - DirectoryIndex</li>
+<li><strong>&#x865A;&#x62DF;&#x4E3B;&#x673A; - NameVirtualHost, ServerName, VirutalHost, ServerAlias</strong></li>
+<li><strong>.htaccess &#x652F;&#x6301; - AllowOverride, .htaccess</strong><br>&#x53EA;&#x5728;&#x5FC5;&#x8981;&#x76EE;&#x5F55;&#x4E2D;&#x542F;&#x7528; AllowOverride&#xFF08;2.4 &#x7248;&#x672C;&#x9ED8;&#x8BA4;&#x5173;&#x95ED;&#xFF09;&#x3002;.htaccess &#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x6781;&#x5927;&#x4FBF;&#x5229; Apache &#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x6BCF;&#x6B21;&#x4FEE;&#x6539;&#x90FD;&#x8981;&#x7F16;&#x8F91; Apache &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF08;&#x9700;&#x8981;&#x91CD;&#x542F;&#x670D;&#x52A1;&#x751F;&#x6548;&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x964D;&#x4F4E;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6027;&#x80FD;&#x3002;</li>
+<li><a href="http://httpd.apache.org/docs/2.4/mpm.html" target="_blank"><strong>&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;/&#x591A;&#x5904;&#x7406;&#x6A21;&#x5757;&#xFF08;MPM&#xFF09;</strong></a>&#xFF1A;<ul>
+<li>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;&#xFF1A;<code>httpd -l</code></li>
+<li><a href="http://httpd.apache.org/docs/2.4/mod/prefork.html" target="_blank">Prefork &#x6A21;&#x5F0F;</a><ul>
+<li>StartServers: &#x670D;&#x52A1;&#x5668;&#x542F;&#x52A8;&#x65F6;&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x7684;&#x8FDB;&#x7A0B;&#x6570;</li>
+<li>MinSpareServers: &#x6700;&#x5C0F;&#x7684;&#x7A7A;&#x95F2;&#x8FDB;&#x7A0B;&#x6570;</li>
+<li>MaxSpareServers: &#x6700;&#x5927;&#x7684;&#x7A7A;&#x95F2;&#x8FDB;&#x7A0B;&#x6570;</li>
+<li>ServerLimit: &#x5728;Apache&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#xFF0C;&#x9650;&#x5236;MaxClients&#x7684;&#x6700;&#x5927;&#x503C;</li>
+<li>MaxClients: &#x6700;&#x5927;&#x7684;&#x5E76;&#x53D1;&#x8BF7;&#x6C42;&#x6570;&#xFF0C;&#x6700;&#x5927;&#x503C;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7; ServerLimit &#x8BBE;&#x7F6E;&#x7684;&#x503C;</li>
+<li>MaxRequestsPerChild: &#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x7684;&#x6700;&#x591A;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#xFF08;&#x8FDB;&#x7A0B;&#x590D;&#x7528;&#xFF09;&#xFF0C;&#x5982;&#x8BF7;&#x6C42;&#x8D85;&#x8FC7;&#x8BE5;&#x8BBE;&#x7F6E;&#x5219;&#x6740;&#x6B7B;&#x8FDB;&#x7A0B;&#xFF0C;0&#x8868;&#x793A;&#x6C38;&#x4E0D;&#x8FC7;&#x671F;&#x3002;</li>
+</ul>
+</li>
+<li><a href="http://httpd.apache.org/docs/2.4/mod/worker.html" target="_blank">Worker &#x6A21;&#x5F0F;</a><ul>
+<li>StartServers: &#x670D;&#x52A1;&#x5668;&#x542F;&#x52A8;&#x65F6;&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x7684;&#x8FDB;&#x7A0B;&#x6570;</li>
+<li>MaxClients: &#x6700;&#x5927;&#x7684;&#x5E76;&#x53D1;&#x8BF7;&#x6C42;&#x6570;</li>
+<li>MinSpareThreads: &#x6700;&#x5C0F;&#x7684;&#x7EBF;&#x7A0B;&#x7A7A;&#x95F2;&#x6570;</li>
+<li>MaxSpareThreads: &#x6700;&#x5927;&#x7684;&#x7EBF;&#x7A0B;&#x7A7A;&#x95F2;&#x6570;</li>
+<li>ThreadsPerChild: &#x6BCF;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x7684;&#x7EBF;&#x7A0B;&#x6570;</li>
+<li>MaxRequestsPerChild: &#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x7684;&#x6700;&#x591A;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#xFF08;&#x7EBF;&#x7A0B;&#x590D;&#x7528;&#xFF09;&#xFF0C;&#x5982;&#x8BF7;&#x6C42;&#x8D85;&#x8FC7;&#x8BE5;&#x8BBE;&#x7F6E;&#x5219;&#x6740;&#x6B7B;&#x7EBF;&#x7A0B;&#xFF0C;0&#x8868;&#x793A;&#x6C38;&#x4E0D;&#x8FC7;&#x671F;&#x3002;</li>
+</ul>
+</li>
+<li><a href="http://httpd.apache.org/docs/2.4/mod/event.html" target="_blank">Event &#x6A21;&#x5F0F;</a></li>
+</ul>
+</li>
+<li>&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x3001;&#x8DEF;&#x5F84;&#x3001;&#x683C;&#x5F0F; - <a href="http://httpd.apache.org/docs/2.4mod/core.html#loglevel" target="_blank">LogLevel</a>, <a href="http://httpd.apache.org/docs/2.4/mod/core.html#errorlog" target="_blank">ErrorLog</a>, <a href="http://httpd.apache.org/docs/2.4/mod/mod_log_config.html#customlog" target="_blank">CustomLog</a></li>
+<li>&#x8BA4;&#x8BC1;&#xFF0C;&#x6388;&#x6743;&#x4E0E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;<ul>
+<li><strong>Order, Deny, Allow</strong>, <a href="http://httpd.apache.org/docs/2.4/howto/access.html" target="_blank">Apache: Access Control</a></li>
+<li><a href="http://httpd.apache.org/docs/2.4/howto/auth.html" target="_blank">Apache: Authentication and Authorization</a></li>
+</ul>
+</li>
+<li>SSL &#x652F;&#x6301; - <a href="http://httpd.apache.org/docs/2.4/mod/mod_ssl.html" target="_blank">mod_ssl</a></li>
+<li>&#x907F;&#x514D; DNS &#x67E5;&#x8BE2; - HostnameLookups off</li>
+<li>&#x8BF7;&#x6C42;&#x8D85;&#x65F6; - <a href="http://httpd.apache.org/docs/2.4/mod/core.html#timeout" target="_blank">Timeout</a></li>
+<li>&#x6587;&#x4EF6;&#x5305;&#x542B; - <a href="http://httpd.apache.org/docs/2.4/mod/core.html#include" target="_blank">Include</a></li>
+<li>&#x7F13;&#x5B58; - <a href="http://httpd.apache.org/docs/2.4/caching.html" target="_blank">Cache Guide</a></li>
+<li>&#x4EE3;&#x7406; - Proxy, <a href="http://httpd.apache.org/docs/2.4/mod/mod_proxy.html" target="_blank">mod_proxy</a></li>
+</ul>
+<h3 id="&#x6269;&#x5C55;&#x9605;&#x8BFB;">&#x6269;&#x5C55;&#x9605;&#x8BFB;</h3>
+<ul>
+<li><a href="http://httpd.apache.org/docs/current/" target="_blank"><strong>Apache &#x4E2D;&#x6587;&#x6587;&#x6863;</strong></a></li>
+<li><a href="http://wiki.apache.org/httpd/FAQ" target="_blank"><strong>Apache: Frequently Asked Questions</strong></a> - &#x82F1;&#x6587;&#xFF0C;&#x5B98;&#x65B9;&#x95EE;&#x9898;&#x6C47;&#x603B;&#xFF0C;&#x7BC7;&#x5E45;&#x6709;&#x70B9;&#x957F;&#xFF0C;&#x5EFA;&#x8BAE;&#x8FC7;&#x4E00;&#x904D;</li>
+<li><a href="http://book.douban.com/subject/3356185/" target="_blank"><strong>Book: Apache Cookbook &#x4E2D;&#x6587;&#x7248;</strong></a> - &#x5173;&#x4E8E; Apache &#x670D;&#x52A1;&#x5668;&#x5B89;&#x88C5;&#x3001;&#x914D;&#x7F6E;&#x4EE5;&#x53CA;&#x65E5;&#x5E38;&#x5DE5;&#x4F5C;&#x4E2D;&#x53EF;&#x80FD;&#x9047;&#x5230;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#x7684;&#x53C2;&#x8003;&#x4E66;</li>
+<li><a href="http://www.ibm.com/developerworks/cn/opensource/os-cn-apachehttpd/" target="_blank"><strong>Developerworks: &#x5C06; Apache httpd &#x4F5C;&#x4E3A;&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x5E73;&#x53F0;</strong></a> - Apache &#x6269;&#x5C55;&#x5F00;&#x53D1;&#x5FEB;&#x901F;&#x5165;&#x95E8;&#x793A;&#x4F8B;</li>
+</ul>
+<h2 id="nginx">Nginx</h2>
+<p><a href="http://nginx.org/" target="_blank"><strong>Nginx</strong></a> (&quot;engine x&quot;) &#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x6027;&#x80FD;&#x7684; HTTP &#x548C;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A; IMAP/POP3/SMTP &#x90AE;&#x4EF6;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668; &#x3002; Nginx &#x662F;&#x7531; Igor Sysoev &#x4E3A;&#x4FC4;&#x7F57;&#x65AF;&#x8BBF;&#x95EE;&#x91CF;&#x7B2C;&#x4E8C;&#x7684; Rambler.ru &#x7AD9;&#x70B9;&#x5F00;&#x53D1;&#x7684;&#xFF0C;&#x81EA;&#x53D1;&#x5E03;&#x4EE5;&#x6765;&#x7684;&#x5F88;&#x957F;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x91CC;&#xFF0C;Nginx &#x4E3A; <a href="http://www.yandex.ru/" target="_blank">Yandex</a>, <a href="http://mail.ru/" target="_blank">Mail.Ru</a>, <a href="http://vk.com/" target="_blank">VK</a>, &#x4EE5;&#x53CA; <a href="http://www.rambler.ru/" target="_blank">Rambler</a> &#x7B49;&#x4FC4;&#x7F57;&#x65AF;&#x7F51;&#x7AD9;&#x7ECF;&#x53D7;&#x4F4F;&#x4E86;&#x5F3A;&#x5927;&#x7684;&#x8BBF;&#x95EE;&#x8003;&#x9A8C;&#x3002;Igor &#x5C06;&#x6E90;&#x4EE3;&#x7801;&#x4EE5;&#x7C7B; BSD &#x8BB8;&#x53EF;&#x8BC1;&#x7684;&#x5F62;&#x5F0F;&#xFF08;<a href="http://nginx.org/LICENSE" target="_blank">2-clause BSD-like license</a>&#xFF09;&#x53D1;&#x5E03;&#x3002;&#x81EA; Nginx &#x53D1;&#x5E03;&#x4EE5;&#x6765;&#xFF0C;Nginx &#x5DF2;&#x7ECF;&#x56E0;&#x4E3A;&#x5B83;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x3001;&#x4E30;&#x5BCC;&#x7684;&#x529F;&#x80FD;&#x96C6;&#x3001;&#x793A;&#x4F8B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x548C;&#x4F4E;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x7684;&#x6D88;&#x8017;&#x800C;&#x8D8A;&#x6765;&#x8D8A;&#x53D7;&#x5230;&#x5404;&#x5927;&#x4E92;&#x8054;&#x7F51;&#x516C;&#x53F8;&#x7684;&#x6B22;&#x8FCE;&#x3002;&#x76EE;&#x524D;&#x56FD;&#x5185;&#x5404;&#x5927;&#x7F51;&#x7AD9;&#x90FD;&#x5DF2;&#x7ECF;&#x90E8;&#x7F72;&#x4E86; Nginx&#xFF0C;&#x5982;&#x65B0;&#x6D6A;&#x3001;&#x7F51;&#x6613;&#x3001;&#x817E;&#x8BAF;&#x7B49;&#xFF0C;Nginx &#x6280;&#x672F;&#x5728;&#x56FD;&#x5185;&#x65E5;&#x8D8B;&#x706B;&#x70ED;&#xFF0C;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x7F51;&#x7AD9;&#x5F00;&#x59CB;&#x90E8;&#x7F72; Nginx&#x3002;</p>
+<p>-- &#x6E90;&#x81EA;&#xFF1A;<a href="http://wiki.nginx.org/NginxChs" target="_blank">http://wiki.nginx.org/NginxChs</a></p>
+<h3 id="nginx-&#x547D;&#x4EE4;">Nginx &#x547D;&#x4EE4;</h3>
+<pre><code class="lang-sh">nginx                       <span class="hljs-comment"># &#x542F;&#x52A8; Nginx</span>
+nginx -h                    <span class="hljs-comment"># &#x663E;&#x793A;&#x5E2E;&#x52A9;</span>
+nginx -c &lt;/path/to/config&gt;  <span class="hljs-comment"># &#x6307;&#x5B9A;&#x4E00;&#x4E2A; Nginx &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x4EE5;&#x4EE3;&#x66FF;&#x7F3A;&#x7701;&#x7684;&#x3002;</span>
+nginx -t                    <span class="hljs-comment"># &#x4E0D;&#x8FD0;&#x884C;&#xFF0C;&#x4EC5;&#x4EC5;&#x6D4B;&#x8BD5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BED;&#x6CD5;&#x7684;&#x6B63;&#x786E;&#x6027;&#x3002;</span>
+nginx -v                    <span class="hljs-comment"># &#x663E;&#x793A; Nginx &#x7684;&#x7248;&#x672C;&#x3002;</span>
+nginx -V                    <span class="hljs-comment"># &#x663E;&#x793A; Nginx &#x7684;&#x7248;&#x672C;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x7248;&#x672C;&#x548C;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x3002; </span>
+nginx <span class="hljs-_">-s</span> reload             <span class="hljs-comment"># &#x66F4;&#x6539;&#x4E86;&#x914D;&#x7F6E;&#x540E;&#x65E0;&#x9700;&#x91CD;&#x542F; Nginx&#xFF0C;&#x5E73;&#x6ED1;&#x91CD;&#x542F;&#x3002;</span>
+nginx <span class="hljs-_">-s</span> stop               <span class="hljs-comment"># &#x505C;&#x6B62; Nginx</span>
+</code></pre>
+<h3 id="nginx-&#x5E38;&#x89C1;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x529F;&#x80FD;">Nginx &#x5E38;&#x89C1;&#x4F7F;&#x7528;&#x573A;&#x666F;/&#x529F;&#x80FD;</h3>
+<ul>
+<li><a href="http://nginx.com/resources/admin-guide/web-server/" target="_blank">Web &#x670D;&#x52A1;&#x5668;</a> - &#x63D0;&#x4F9B;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x670D;&#x52A1;&#x3001;&#x5730;&#x5740;&#x91CD;&#x5199;&#x3001;&#x9ED8;&#x8BA4;&#x9519;&#x8BEF;&#x9875;&#x9762;&#x7B49;</li>
+<li><a href="http://nginx.com/resources/admin-guide/reverse-proxy/" target="_blank">&#x53CD;&#x5411;&#x4EE3;&#x7406;</a> - &#x53CD;&#x5411;&#x4EE3;&#x7406; Apache &#x670D;&#x52A1;&#x3001;PHP-FPM &#x670D;&#x52A1;&#x3001;Memecached &#x670D;&#x52A1;&#x7B49;</li>
+<li><a href="http://nginx.com/resources/admin-guide/load-balancer/" target="_blank">&#x8D1F;&#x8F7D;&#x5747;&#x8861;</a> - &#x5C06;&#x8BF7;&#x6C42;&#x6839;&#x636E;&#x8BBE;&#x5B9A;&#x7684;&#x7B56;&#x7565;&#x7B97;&#x6CD5;&#x5206;&#x53D1;&#x5230;&#x4E00;&#x7EC4;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x7684;&#x5176;&#x4E2D;&#x4E00;&#x53F0;</li>
+<li><a href="http://nginx.com/resources/admin-guide/caching/" target="_blank">Web &#x5185;&#x5BB9;&#x9759;&#x6001;&#x7F13;&#x5B58;</a> - &#x7F13;&#x5B58;&#x540E;&#x7AEF;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x63D0;&#x4F9B;&#x7684;&#x9759;&#x6001;&#x6216;&#x52A8;&#x6001;&#x5185;&#x5BB9;</li>
+<li><a href="http://nginx.com/resources/admin-guide/restricting-access/" target="_blank">&#x8BBF;&#x95EE;&#x63A7;&#x5236;</a> - &#x901A;&#x8FC7; auth_basic, limit_req_zone, limit_req, limit_conn, limit_rate &#x7B49;&#x914D;&#x7F6E;&#x6765;&#x9650;&#x5236;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x3001;&#x8BBF;&#x95EE; IP&#x3001;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x6570;&#x3001;&#x5E26;&#x5BBD;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x7B49;&#x3002;</li>
+</ul>
+<h3 id="nginx-&#x6A21;&#x5757;">Nginx &#x6A21;&#x5757;</h3>
+<p>Nginx &#x7684;&#x6A21;&#x5757;&#x4ECE;&#x529F;&#x80FD;&#x89D2;&#x5EA6;&#x4E3B;&#x8981;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x4E09;&#x7C7B;&#xFF0C;</p>
+<ul>
+<li><strong>Handler &#x6A21;&#x5757;</strong> - &#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x5E76;&#x4EA7;&#x751F;&#x5F85;&#x54CD;&#x5E94;&#x5185;&#x5BB9;&#xFF0C;&#x6BD4;&#x5982; ngx_http_static_module &#x6A21;&#x5757;&#xFF0C;&#x8D1F;&#x8D23;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x9759;&#x6001;&#x9875;&#x9762;&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x5E76;&#x5C06;&#x5BF9;&#x5E94;&#x7684;&#x78C1;&#x76D8;&#x6587;&#x4EF6;&#x51C6;&#x5907;&#x4E3A;&#x54CD;&#x5E94;&#x5185;&#x5BB9;&#x8F93;&#x51FA;&#x3002;</li>
+<li><strong>Filter &#x6A21;&#x5757;&#xFF09;</strong> - &#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x5BF9;&#x8F93;&#x51FA;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x8F93;&#x51FA;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x5982; ngx_http_not_modified_filter_module, ngx_http_header_filter_module &#x6A21;&#x5757;&#x3002;</li>
+<li><strong>Upstream &#x6A21;&#x5757;</strong> - &#x5B9E;&#x73B0;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5C06;&#x771F;&#x6B63;&#x7684;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x5982; ngx_http_proxy_module&#x3001;ngx_http_fastcgi_module &#x6A21;&#x5757;&#x3002;</li>
+</ul>
+<blockquote>
+<p>Nginx &#x6A21;&#x5757;&#x5217;&#x8868;&#xFF1A; <a href="http://wiki.nginx.org/Modules" target="_blank">http://wiki.nginx.org/Modules</a></p>
+</blockquote>
+<h3 id="nginx-&#x914D;&#x7F6E;&#x6307;&#x4EE4;">Nginx &#x914D;&#x7F6E;&#x6307;&#x4EE4;</h3>
+<p>Nginx &#x914D;&#x7F6E;&#x9879;&#x6307;&#x4EE4;&#xFF08;Directives&#xFF09;&#x6839;&#x636E;&#x4F5C;&#x7528;&#x57DF;/&#x6307;&#x4EE4;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;context&#xFF09;&#x53EF;&#x5206;&#x7C7B;&#x5982;&#x4E0B;&#xFF0C;</p>
+<ul>
+<li><strong>main</strong> - Nginx &#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4E0E;&#x5177;&#x4F53;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#xFF08;&#x6BD4;&#x5982; HTTP &#x670D;&#x52A1;&#x6216;&#x8005; Email &#x670D;&#x52A1;&#x4EE3;&#x7406;&#xFF09;&#x65E0;&#x5173;&#x7684;&#x4E00;&#x4E9B;&#x53C2;&#x6570;&#xFF0C;&#x6BD4;&#x5982;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6570;&#xFF0C;&#x8FD0;&#x884C;&#x7684;&#x7528;&#x6237;&#x7B49;&#x3002;</li>
+<li><strong>event</strong> - &#x5B9A;&#x4E49; Nginx &#x4E8B;&#x4EF6;&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;&#x4E0E;&#x8FDE;&#x63A5;&#x6570;&#x4E0A;&#x9650;&#x7B49;&#x53C2;&#x6570;&#x3002;</li>
+<li><strong>http</strong> - &#x4E0E;&#x63D0;&#x4F9B; HTTP &#x670D;&#x52A1;&#x76F8;&#x5173;&#x7684;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x3002;&#x5982;&#x662F;&#x5426;&#x4F7F;&#x7528; keepalive&#x3001;&#x662F;&#x5426;&#x4F7F;&#x7528;gzip&#x8FDB;&#x884C;&#x538B;&#x7F29;&#x7B49;&#x3002;</li>
+<li><strong>server</strong> - HTTP &#x670D;&#x52A1;&#x4E0A;&#x652F;&#x6301;&#x82E5;&#x5E72;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x3002;&#x6BCF;&#x4E2A;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x7684; server &#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x914D;&#x7F6E;&#x9879;&#x91CC;&#x9762;&#x5305;&#x542B;&#x8BE5;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x76F8;&#x5173;&#x7684;&#x914D;&#x7F6E;&#x3002;&#x5728;&#x63D0;&#x4F9B; mail &#x670D;&#x52A1;&#x7684;&#x4EE3;&#x7406;&#x65F6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5EFA;&#x7ACB;&#x82E5;&#x5E72; server&#xFF0C;&#x6BCF;&#x4E2A; server &#x901A;&#x8FC7;&#x76D1;&#x542C;&#x7684;&#x5730;&#x5740;&#x6765;&#x533A;&#x5206;&#x3002;</li>
+<li><strong>location</strong> - http &#x670D;&#x52A1;&#x4E2D;&#xFF0C;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x7684; URL &#x5BF9;&#x5E94;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x914D;&#x7F6E;&#x9879;&#x3002;</li>
+<li><strong>mail</strong> - &#x5B9E;&#x73B0; email &#x76F8;&#x5173;&#x7684; SMTP/IMAP/POP3 &#x4EE3;&#x7406;&#x65F6;&#xFF0C;&#x5171;&#x4EAB;&#x7684;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#x9879;&#xFF08;&#x56E0;&#x4E3A;&#x53EF;&#x80FD;&#x5B9E;&#x73B0;&#x591A;&#x4E2A;&#x4EE3;&#x7406;&#xFF0C;&#x5DE5;&#x4F5C;&#x5728;&#x591A;&#x4E2A;&#x76D1;&#x542C;&#x5730;&#x5740;&#x4E0A;&#xFF09;&#x3002;</li>
+</ul>
+<blockquote>
+<ul>
+<li>Nginx &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BF4;&#x660E;&#xFF1A; <a href="http://wiki.nginx.org/ModulesByExample" target="_blank">&#x5B98;&#x65B9;&#x793A;&#x4F8B;-&#x82F1;&#x6587;</a>&#xFF0C;<a href="http://www.ha97.com/5194.html" target="_blank">&#x4E2D;&#x6587;&#x8BE6;&#x89E3;</a></li>
+<li>Nginx &#x914D;&#x7F6E;&#x6307;&#x4EE4;&#x5217;&#x8868;&#xFF1A; <a href="http://nginx.org/en/docs/dirindex.html" target="_blank">&#x82F1;&#x6587;</a>&#xFF0C;<a href="http://nginx.org/cn/docs/dirindex.html" target="_blank">&#x4E2D;&#x6587;</a></li>
+</ul>
+</blockquote>
+<h3 id="&#x6269;&#x5C55;&#x9605;&#x8BFB;">&#x6269;&#x5C55;&#x9605;&#x8BFB;</h3>
+<ul>
+<li><a href="http://nginx.com/blog/tuning-nginx/" target="_blank"><strong>Nginx &#x6027;&#x80FD;&#x8C03;&#x4F18; - &#x82F1;&#x6587;</strong></a></li>
+<li><a href="http://tengine.taobao.org/" target="_blank"><strong>Tengine</strong></a> - Tengine &#x662F;&#x7531;&#x6DD8;&#x5B9D;&#x7F51;&#x57FA;&#x4E8E; Nginx &#x53D1;&#x8D77;&#x7684; Web &#x670D;&#x52A1;&#x5668;&#x9879;&#x76EE;&#xFF08;&#x5B8C;&#x7F8E;&#x517C;&#x5BB9; Nginx&#xFF09;&#x3002;&#x5B83;&#x5728; Nginx &#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x9488;&#x5BF9;&#x5927;&#x8BBF;&#x95EE;&#x91CF;&#x7F51;&#x7AD9;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x6DFB;&#x52A0;&#x4E86;&#x5F88;&#x591A;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;&#x548C;&#x7279;&#x6027;&#x3002;Tengine &#x7684;&#x6027;&#x80FD;&#x548C;&#x7A33;&#x5B9A;&#x6027;&#x5DF2;&#x7ECF;&#x5728;&#x5927;&#x578B;&#x7684;&#x7F51;&#x7AD9;&#x5982;&#x6DD8;&#x5B9D;&#x7F51;&#xFF0C;&#x5929;&#x732B;&#x5546;&#x57CE;&#x7B49;&#x5F97;&#x5230;&#x4E86;&#x5F88;&#x597D;&#x7684;&#x68C0;&#x9A8C;&#x3002;</li>
+<li><a href="http://openresty.org/" target="_blank"><strong>OpenResty</strong></a> - OpenResty &#x901A;&#x8FC7;&#x6C47;&#x805A;&#x5404;&#x79CD; Nginx &#x6A21;&#x5757;&#xFF0C;&#x4ECE;&#x800C;&#x5C06; Nginx &#x6709;&#x6548;&#x7684;&#x53D8;&#x6210;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684; Web &#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x3002;&#x8FD9;&#x6837;&#xFF0C;Web &#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Lua &#x811A;&#x672C;&#x8BED;&#x8A00;&#x8C03;&#x52A8; Nginx &#x652F;&#x6301;&#x7684;&#x5404;&#x79CD;&#x6A21;&#x5757;&#xFF0C;&#x5FEB;&#x901F;&#x6784;&#x9020;&#x51FA;&#x8DB3;&#x4EE5;&#x80DC;&#x4EFB; 10K+ &#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x54CD;&#x5E94;&#x7684;&#x8D85;&#x9AD8;&#x6027;&#x80FD; Web &#x5E94;&#x7528;&#x7CFB;&#x7EDF;&#x3002;</li>
+<li><a href="http://tengine.taobao.org/book/index.html" target="_blank"><strong>Nginx &#x6A21;&#x5757;&#x5F00;&#x53D1; &amp; &#x539F;&#x7406;&#x5256;&#x6790;&#xFF1A;Nginx&#x5F00;&#x53D1;&#x4ECE;&#x5165;&#x95E8;&#x5230;&#x7CBE;&#x901A;</strong></a> - &#x6DD8;&#x5B9D;&#x6838;&#x5FC3;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;&#x5668;&#x5E73;&#x53F0;&#x7EC4;&#x540C;&#x5B66;&#x7EC4;&#x7EC7;&#x7F16;&#x5199;&#x7684;&#x4E00;&#x672C;&#x5173;&#x4E8E; Nginx &#x6A21;&#x5757;&#x7684;&#x5F00;&#x53D1;&#x4EE5;&#x53CA;&#x5B83;&#x7684;&#x5185;&#x90E8;&#x539F;&#x7406;&#x7684;&#x5728;&#x7EBF;&#x4E66;&#x3002;</li>
+</ul>
+<h2 id="web-&#x670D;&#x52A1;&#x5668;&#x5E38;&#x7528;&#x914D;&#x7F6E;">Web &#x670D;&#x52A1;&#x5668;&#x5E38;&#x7528;&#x914D;&#x7F6E;</h2>
+<ul>
+<li><a href="http://wiki.nginx.org/ModuleComparisonMatrix" target="_blank">Module comparison matrix</a> - Nginx, Apache, Lighttpd &#x6A21;&#x5757;&#x5BF9;&#x5E94;&#x8868;</li>
+<li><a href="http://en.wikipedia.org/wiki/Principle_of_least_privilege" target="_blank">&#x6700;&#x5C0F;&#x6743;&#x9650;&#x539F;&#x5219;</a> &#x8BBE;&#x7F6E;&#x6587;&#x4EF6;&#x3001;&#x6587;&#x4EF6;&#x5939;&#x6743;&#x9650;<ul>
+<li>chmod, chown</li>
+<li>rwx? 755&#xFF1F; - <a href="http://en.wikipedia.org/wiki/File_system_permissions#Notation_of_traditional_Unix_permissions" target="_blank">Linux &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x6743;&#x9650; - &#x82F1;&#x6587;</a></li>
+</ul>
+</li>
+<li>&#x5355;&#x72EC;&#x5EFA;&#x7ACB;&#x8FD0;&#x884C;&#x7528;&#x6237;&#x53CA;&#x7528;&#x6237;&#x7EC4;<ul>
+<li>Apache - <a href="http://httpd.apache.org/docs/current/mod/mod_unixd.html#user" target="_blank">User</a>, <a href="http://httpd.apache.org/docs/current/mod/mod_unixd.html#group" target="_blank">Group</a></li>
+<li>Nginx - <a href="http://nginx.org/en/docs/ngx_core_module.html#user" target="_blank">user</a></li>
+</ul>
+</li>
+<li><p>&#x5408;&#x7406;&#x4F7F;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58; - Expires, Etag, Cache-Control, Last-Modified
+&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58;&#xFF08;Browser Caching&#xFF09;&#x662F;&#x4E3A;&#x4E86;&#x8282;&#x7EA6;&#x7F51;&#x7EDC;&#x7684;&#x8D44;&#x6E90;&#x3001;&#x52A0;&#x5FEB;&#x6D4F;&#x89C8;&#x901F;&#x5EA6;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x7528;&#x6237;&#x78C1;&#x76D8;&#x4E0A;&#x5BF9;&#x6700;&#x8FD1;&#x8BF7;&#x6C42;&#x8FC7;&#x7684;&#x6587;&#x6863;&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#xFF0C;&#x5F53;&#x8BBF;&#x95EE;&#x8005;&#x518D;&#x6B21;&#x8BF7;&#x6C42;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x65F6;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x5C1D;&#x8BD5;&#x76F4;&#x63A5;&#x4ECE;&#x672C;&#x5730;&#x78C1;&#x76D8;&#x83B7;&#x53D6;&#x6587;&#x6863;&#x5185;&#x5BB9;&#xFF0C;&#x52A0;&#x901F;&#x9875;&#x9762;&#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58;&#x4E3B;&#x8981;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;</p>
+<ul>
+<li>&#x7F13;&#x5B58;&#x534F;&#x5546; - Etag, Last-modifie
+&#x7F13;&#x5B58;&#x534F;&#x5546;&#x7684;&#x65B9;&#x5F0F;&#x53BB;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x8BE2;&#x95EE;&#x9875;&#x9762;&#x6709;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#x8FC7;&#xFF0C;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#x5219;&#x8FD4;&#x56DE; 304 &#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x5185;&#x5BB9;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x65B0;&#x5185;&#x5BB9;</li>
+<li>&#x5F7B;&#x5E95;&#x7F13;&#x5B58; - Cache-Control&#xFF0C;Expires
+&#x5F7B;&#x5E95;&#x7F13;&#x5B58;&#x7684;&#x65B9;&#x5F0F;&#x5728;&#x7F13;&#x5B58;&#x5931;&#x6548;&#x4E4B;&#x524D;&#x4E0D;&#x518D;&#x8DDF;&#x670D;&#x52A1;&#x5668;&#x4EA4;&#x4E92;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x5185;&#x5BB9;</li>
+</ul>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x4E86;&#x89E3;&#x5230;&#x66F4;&#x591A;&#x4FE1;&#x606F; - <a href="https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers#cache-prevention" target="_blank">Heroku: Increasing Application Performance with HTTP Cache Headers</a></p>
+</li>
+<li>&#x4F7F;&#x7528;&#x538B;&#x7F29; - &#x8282;&#x7701;&#x7F51;&#x7EDC;&#x5E26;&#x5BBD;<ul>
+<li>Apache - <a href="http://httpd.apache.org/docs/2.4/mod/mod_deflate.html" target="_blank">mod_deflate</a>, </li>
+<li>Nginx - <a href="http://nginx.org/en/docs/http/ngx_http_gzip_module.html" target="_blank">gzip</a></li>
+</ul>
+</li>
+<li>&#x4FDD;&#x6301;&#x8FDE;&#x63A5; - KeepAlive &#x53C2;&#x6570;&#x8BA9;&#x670D;&#x52A1;&#x5668;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x4E4B;&#x95F4;&#x5728;&#x6307;&#x5B9A;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x4FDD;&#x6301;&#x540C;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x3002;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x6709;&#x597D;&#x5904;&#x4E5F;&#x6709;&#x574F;&#x5904;&#xFF0C;&#x597D;&#x5904;&#x662F;&#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x51FA;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x4E0D;&#x5FC5;&#x6BCF;&#x6B21;&#x90FD;&#x82B1;&#x65F6;&#x95F4;&#x53BB;&#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#xFF0C;&#x574F;&#x5904;&#x662F;&#x8FD9;&#x6BB5;&#x65F6;&#x95F4;&#x5185;&#x5373;&#x4F7F;&#x5BA2;&#x6237;&#x7AEF;&#x4E0D;&#x518D;&#x53D1;&#x51FA;&#x65B0;&#x7684;&#x8BF7;&#x6C42;&#x3001;&#x8BBF;&#x95EE;&#x65B0;&#x7684;&#x9875;&#x9762;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FDE;&#x63A5;&#x4E5F;&#x4F1A;&#x88AB;&#x5360;&#x7528;&#xFF0C;&#x8FD9;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8D44;&#x6E90;&#x6765;&#x8BF4;&#x662F;&#x4E00;&#x79CD;&#x6D6A;&#x8D39;&#x3002;<ul>
+<li>Apache - <a href="http://httpd.apache.org/docs/2.4/mod/core.html#keepalive" target="_blank">KeepAlive</a>, <a href="http://httpd.apache.org/docs/2.4/mod/core.html#keepalivetimeout" target="_blank">KeepAliveTimeout</a>, <a href="http://httpd.apache.org/docs/2.4/mod/core.html#maxkeepaliverequests" target="_blank">MaxKeepAliveRequests</a></li>
+<li>Nginx - <a href="http://nginx.org/r/keepalive" target="_blank">keepalive</a>, <a href="http://nginx.org/r/keepalive_requests" target="_blank">keepalive_requests</a>, <a href="http://nginx.org/r/keepalive_timeout" target="_blank">keepalive_timeout</a></li>
+</ul>
+</li>
+<li><p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x63A8;&#x8350;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</p>
+<pre><code class="lang-sh">  mkdir ./site-available ./site-enabled
+  <span class="hljs-built_in">echo</span> &#x5728; site-available &#x4E2D;&#x5199;&#x597D;&#x7F51;&#x7AD9;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
+  <span class="hljs-built_in">cd</span> ../site-enabled
+  ln <span class="hljs-_">-s</span> ../site-available/xxx.conf
+</code></pre>
+</li>
+<li><p>&#x8BA1;&#x7B97;&#x8FDB;&#x7A0B;&#x5E73;&#x5747;&#x5360;&#x7528;&#x5185;&#x5B58; (kb) - &#x4EE5;&#x4FBF;&#x51B3;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x9700;&#x8981;&#x591A;&#x5C11;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#xFF08;&#x4EE5; Apache &#x4E3A;&#x4F8B;&#xFF09;</p>
+<pre><code class="lang-sh">  ps aux | grep -v grep | awk <span class="hljs-string">&apos;/sbin\/httpd/ {sum+=$6;n++}; END {print sum/n}&apos;</span>
+</code></pre>
+</li>
+<li><p>&#x5730;&#x5740;&#x91CD;&#x5199; - URL Rewrite</p>
+<blockquote>
+<p><a href="https://github.com/mow/apache2nginx" target="_blank">Tool&#xFF1A;Apache &#x89C4;&#x5219;&#x8F6C; Nginx &#x89C4;&#x5219;</a></p>
+</blockquote>
+<ul>
+<li>Apache - <a href="http://httpd.apache.org/docs/2.4/rewrite/" target="_blank">mod_rewirte &#x6A21;&#x5757;</a></li>
+<li>Nginx - <a href="http://nginx.org/en/docs/http/ngx_http_rewrite_module.html" target="_blank">ngx_http_rewrite_module &#x6A21;&#x5757;</a></li>
+</ul>
+</li>
+<li>&#x54CD;&#x5E94;&#x5934;&#x4E0D;&#x663E;&#x793A;&#x7248;&#x672C;&#x4FE1;&#x606F;&#x53CA;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x4FE1;&#x606F;<ul>
+<li>Apache<ul>
+<li>ServerTokens - &#x662F;&#x5426;&#x5728;&#x9519;&#x8BEF;&#x9875;&#x9762;&#x3001;&#x76EE;&#x5F55;&#x5217;&#x8868;&#x7B49;&#x9875;&#x9762;&#x7684;&#x5E95;&#x90E8;&#x663E;&#x793A;&#x670D;&#x52A1;&#x5668;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;</li>
+<li>ServerSignature - HTTP &#x5934;&#x4E2D;&#x662F;&#x5426;&#x56DE;&#x663E; Apache &#x7248;&#x672C;&#x4FE1;&#x606F;</li>
+</ul>
+</li>
+<li>Nginx - server_tokens off;</li>
+</ul>
+</li>
+<li>&#x5173;&#x95ED;&#x4E0D;&#x7528;&#x7684;&#x6A21;&#x5757;&#x53CA;&#x529F;&#x80FD;<ul>
+<li>Apache - &#x6CE8;&#x91CA;&#x6389;&#x4E0D;&#x7528;&#x7684; LoadModule &#x914D;&#x7F6E;&#x9879;</li>
+<li>Nginx - &#x7F16;&#x8BD1;&#x65F6;&#x786E;&#x5B9A;&#xFF08;Tengine &#x652F;&#x6301;&#x8FD0;&#x884C;&#x65F6;&#x52A8;&#x6001;&#x52A0;&#x8F7D; HTTP &#x6A21;&#x5757;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x6269;&#x5C55;&#x9605;&#x8BFB;">&#x6269;&#x5C55;&#x9605;&#x8BFB;</h3>
+<ul>
+<li><a href="http://www.cyberciti.biz/tips/linux-unix-bsd-nginx-webserver-security.html" target="_blank">Tutorial: Top 20 Nginx WebServer Best Security Practices</a></li>
+<li><a href="http://book.douban.com/subject/3924175/" target="_blank">Book: &#x6784;&#x5EFA;&#x9AD8;&#x6027;&#x80FD;Web&#x7AD9;&#x70B9;</a></li>
+<li><a href="http://book.douban.com/subject/3132277/" target="_blank">Book: &#x9AD8;&#x6027;&#x80FD;&#x7F51;&#x7AD9;&#x5EFA;&#x8BBE;&#x6307;&#x5357;</a></li>
+<li><a href="http://book.douban.com/subject/4719162/" target="_blank">Book: &#x9AD8;&#x6027;&#x80FD;&#x7F51;&#x7AD9;&#x5EFA;&#x8BBE;&#x8FDB;&#x9636;&#x6307;&#x5357;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="operating-system.html" class="navigation navigation-prev " aria-label="Previous page: Linux 操作系统">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dbserver.html" class="navigation navigation-next " aria-label="Next page: 数据库服务器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Web 服务器","level":"1.3.2","depth":2,"next":{"title":"数据库服务器","level":"1.3.3","depth":2,"path":"1-lanmp/dbserver.md","ref":"1-lanmp/dbserver.md","articles":[]},"previous":{"title":"Linux 操作系统","level":"1.3.1","depth":2,"path":"1-lanmp/operating-system.md","ref":"1-lanmp/operating-system.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PHP 开发者实践","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"PHP 编程学习入门教程"},"file":{"path":"1-lanmp/webserver.md","mtime":"2016-06-20T01:42:07.592Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:43:25.824Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

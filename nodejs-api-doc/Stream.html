@@ -1,0 +1,1656 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Stream · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="StringDecoder.html" />
+    
+    
+    <link rel="prev" href="REPL.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Stream</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="stream">Stream</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x6D41;&#x662F;&#x4E00;&#x4E2A;&#x88AB;<code>node.js</code>&#x5185;&#x90E8;&#x7684;&#x8BB8;&#x591A;&#x5BF9;&#x8C61;&#x6240;&#x5B9E;&#x73B0;&#x7684;&#x62BD;&#x8C61;&#x63A5;&#x53E3;&#x3002;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x53D1;&#x5F80;HTTP&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BF7;&#x6C42;&#x662F;&#x4E00;&#x4E2A;&#x7559;&#xFF0C;<code>stdout</code>&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x6D41;&#x3002;&#x6D41;&#x53EF;&#x4EE5;&#x662F;&#x53EF;&#x8BFB;&#x7684;&#xFF0C;&#x53EF;&#x5199;&#x7684;&#x6216;&#x53CC;&#x5411;&#x7684;&#x3002;&#x6240;&#x6709;&#x7684;&#x6D41;&#x90FD;&#x662F;<code>EventEmitter</code>&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>require(&apos;stream&apos;)</code>&#x6765;&#x53D6;&#x8D27;<code>Stream</code>&#x7684;&#x57FA;&#x7C7B;&#x3002;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x4E86;<code>Readable</code>&#x6D41;&#xFF0C;<code>Writable</code>&#x6D41;&#xFF0C;<code>Duplex</code>&#x6D41;&#x548C;<code>Transform</code>&#x6D41;&#x7684;&#x57FA;&#x7C7B;&#x3002;</p>
+<p>&#x6B64;&#x6587;&#x6863;&#x5206;&#x4E3A;&#x4E09;&#x4E2A;&#x7AE0;&#x8282;&#x3002;&#x7B2C;&#x4E00;&#x7AE0;&#x8282;&#x89E3;&#x91CA;&#x4E86;&#x5728;&#x4F60;&#x7684;&#x7F16;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x6D41;&#x65F6;&#x9700;&#x8981;&#x7684;API&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x6D41;&#x5F0F;API&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x505C;&#x6B62;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x7AE0;&#x8282;&#x89E3;&#x91CA;&#x4E86;&#x4F60;&#x5728;&#x6784;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x6D41;&#x65F6;&#x9700;&#x8981;&#x7684;API&#xFF0C;&#x8FD9;&#x4E9B;API&#x662F;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x4F60;&#x8FD9;&#x4E48;&#x505A;&#x800C;&#x8BBE;&#x8BA1;&#x7684;&#x3002;</p>
+<p>&#x7B2C;&#x4E09;&#x7AE0;&#x8282;&#x6DF1;&#x5165;&#x8BB2;&#x8FF0;&#x4E86;&#x6D41;&#x7684;&#x5DE5;&#x4F5C;&#x673A;&#x5236;&#xFF0C;&#x5305;&#x62EC;&#x4E00;&#x4E9B;&#x5185;&#x90E8;&#x7684;&#x673A;&#x5236;&#x548C;&#x51FD;&#x6570;&#xFF0C;&#x4F60;&#x4E0D;&#x5E94;&#x8BE5;&#x53BB;&#x6539;&#x52A8;&#x5B83;&#x4EEC;&#x9664;&#x975E;&#x4F60;&#x77E5;&#x9053;&#x4F60;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#x3002;</p>
+<h3 id="&#x9762;&#x5411;&#x6D41;&#x6D88;&#x8D39;&#x8005;&#x7684;api">&#x9762;&#x5411;&#x6D41;&#x6D88;&#x8D39;&#x8005;&#x7684;API</h3>
+<p>&#x6D41;&#x53EF;&#x4EE5;&#x662F;&#x53EF;&#x8BFB;&#x7684;&#xFF0C;&#x53EF;&#x5199;&#x7684;&#xFF0C;&#x6216;&#x53CC;&#x5DE5;&#x7684;&#x3002;</p>
+<p>&#x6240;&#x6709;&#x7684;&#x6D41;&#x90FD;&#x662F;<code>EventEmitters</code>&#x3002;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x4E5F;&#x5404;&#x81EA;&#x6709;&#x4E00;&#x4E9B;&#x72EC;&#x7279;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#xFF0C;&#x8FD9;&#x53D6;&#x51B3;&#x4E8E;&#x5B83;&#x4EEC;&#x662F;&#x53EF;&#x8BFB;&#x6D41;&#xFF0C;&#x53EF;&#x5199;&#x6D41;&#x6216;&#x53CC;&#x5DE5;&#x6D41;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6D41;&#x540C;&#x65F6;&#x662F;&#x53EF;&#x8BFB;&#x7684;&#x548C;&#x53EF;&#x5199;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x8868;&#x793A;&#x5B83;&#x5B9E;&#x73B0;&#x4E86;&#x4EE5;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x4E8B;&#x4EF6;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x8FD9;&#x4E9B;API&#x540C;&#x65F6;&#x4E5F;&#x6DB5;&#x76D6;<code>Duplex</code>&#x6216;<code>Transform</code>&#x6D41;&#xFF0C;&#x5373;&#x4F7F;&#x5B83;&#x4EEC;&#x7684;&#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x6709;&#x4E9B;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x5728;&#x4F60;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x4E3A;&#x4E86;&#x6D88;&#x8D39;&#x6D41;&#x800C;&#x53BB;&#x5B9E;&#x73B0;&#x6D41;&#x63A5;&#x53E3;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x3002;&#x5982;&#x679C;&#x4F60;&#x786E;&#x5B9E;&#x6B63;&#x5728;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x5B9E;&#x73B0;&#x6D41;&#x63A5;&#x53E3;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x4E0B;&#x4E00;&#x7AE0;&#x8282;<code>&#x9762;&#x5411;&#x6D41;&#x5B9E;&#x73B0;&#x8005;&#x7684;API</code>&#x3002;</p>
+<p>&#x51E0;&#x4E4E;&#x6240;&#x6709;<code>node.js</code>&#x7A0B;&#x5E8F;&#xFF0C;&#x4E0D;&#x8BBA;&#x591A;&#x7B80;&#x5355;&#xFF0C;&#x90FD;&#x4F7F;&#x7528;&#x4E86;&#x6D41;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x5728;<code>node.js</code>&#x662F;&#x4F7F;&#x7528;&#x6D41;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+
+<span class="hljs-keyword">var</span> server = http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-comment">// req is an http.IncomingMessage, which is a Readable Stream</span>
+  <span class="hljs-comment">// res is an http.ServerResponse, which is a Writable Stream</span>
+
+  <span class="hljs-keyword">var</span> body = <span class="hljs-string">&apos;&apos;</span>;
+  <span class="hljs-comment">// we want to get the data as utf8 strings</span>
+  <span class="hljs-comment">// If you don&apos;t set an encoding, then you&apos;ll get Buffer objects</span>
+  req.setEncoding(<span class="hljs-string">&apos;utf8&apos;</span>);
+
+  <span class="hljs-comment">// Readable streams emit &apos;data&apos; events once a listener is added</span>
+  req.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">chunk</span>) </span>{
+    body += chunk;
+  });
+
+  <span class="hljs-comment">// the end event tells you that you have entire body</span>
+  req.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.parse(body);
+    } <span class="hljs-keyword">catch</span> (er) {
+      <span class="hljs-comment">// uh oh!  bad json!</span>
+      res.statusCode = <span class="hljs-number">400</span>;
+      <span class="hljs-keyword">return</span> res.end(<span class="hljs-string">&apos;error: &apos;</span> + er.message);
+    }
+
+    <span class="hljs-comment">// write back something interesting to the user:</span>
+    res.write(<span class="hljs-keyword">typeof</span> data);
+    res.end();
+  });
+});
+
+server.listen(<span class="hljs-number">1337</span>);
+
+<span class="hljs-comment">// $ curl localhost:1337 -d &apos;{}&apos;</span>
+<span class="hljs-comment">// object</span>
+<span class="hljs-comment">// $ curl localhost:1337 -d &apos;&quot;foo&quot;&apos;</span>
+<span class="hljs-comment">// string</span>
+<span class="hljs-comment">// $ curl localhost:1337 -d &apos;not json&apos;</span>
+<span class="hljs-comment">// error: Unexpected token o</span>
+</code></pre>
+<h4 id="class-streamreadable">Class: stream.Readable</h4>
+<p>&#x53EF;&#x8BFB;&#x6D41;&#x63A5;&#x53E3;&#x662F;&#x4E00;&#x4E2A;&#x4F60;&#x53EF;&#x4EE5;&#x4ECE;&#x4E4B;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x6570;&#x636E;&#x6E90;&#x7684;&#x62BD;&#x8C61;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x6570;&#x636E;&#x4ECE;&#x53EF;&#x8BFB;&#x6D41;&#x800C;&#x6765;&#x3002;</p>
+<p>&#x9664;&#x975E;&#x4F60;&#x6307;&#x793A;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x597D;&#x63A5;&#x53D7;&#x6570;&#x636E;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x8BFB;&#x6D41;&#x4E0D;&#x4F1A;&#x5F00;&#x59CB;&#x53D1;&#x751F;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x53EF;&#x8BFB;&#x6D41;&#x6709;&#x4E24;&#x4E2A;&#x201C;&#x6A21;&#x5F0F;&#x201D;&#xFF1A;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#x548C;&#x6682;&#x505C;&#x6A21;&#x5F0F;&#x3002;&#x5F53;&#x5728;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#x65F6;&#xFF0C;&#x6570;&#x636E;&#x7531;&#x5E95;&#x5C42;&#x7CFB;&#x7EDF;&#x8BFB;&#x51FA;&#xFF0C;&#x5E76;&#x4E14;&#x4F1A;&#x5C3D;&#x5FEB;&#x5730;&#x63D0;&#x4F9B;&#x7ED9;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x5F53;&#x5728;&#x6682;&#x505C;&#x6A21;&#x5F0F;&#x65F6;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x8C03;&#x7528;<code>stream.read()</code>&#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5757;&#x3002;&#x6D41;&#x9ED8;&#x8BA4;&#x662F;&#x6682;&#x505C;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;<code>data</code>&#x4E8B;&#x4EF6;&#x6CA1;&#x6709;&#x88AB;&#x7ED1;&#x5B9A;&#x76D1;&#x542C;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x5BFC;&#x6D41;&#xFF08;pipe&#xFF09;&#x76EE;&#x6807;&#xFF0C;&#x5E76;&#x4E14;&#x6D41;&#x88AB;&#x5207;&#x6362;&#x5230;&#x4E86;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x6570;&#x636E;&#x5C06;&#x4F1A;&#x88AB;&#x4E22;&#x5931;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x505A;&#x6CD5;&#x5207;&#x6362;&#x5230;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><p>&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;<code>data</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x6765;&#x76D1;&#x542C;&#x6570;&#x636E;&#x3002;</p>
+</li>
+<li><p>&#x8C03;&#x7528;<code>resume()</code>&#x65B9;&#x6CD5;&#x6765;&#x660E;&#x786E;&#x5F00;&#x542F;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#x3002;</p>
+</li>
+<li><p>&#x8C03;&#x7528;<code>pipe()</code>&#x65B9;&#x6CD5;&#x5C06;&#x6570;&#x636E;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x53EF;&#x5199;&#x6D41;&#x3002;</p>
+</li>
+</ul>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x540C;&#x610F;&#x4E0B;&#x9762;&#x4EFB;&#x610F;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x5207;&#x6362;&#x56DE;&#x6682;&#x505C;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5BFC;&#x6D41;&#xFF08;pipe&#xFF09;&#x76EE;&#x6807;&#xFF0C;&#x8C03;&#x7528;<code>pause()</code>&#x65B9;&#x6CD5;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x6709;&#x5BFC;&#x6D41;&#xFF08;pipe&#xFF09;&#x76EE;&#x6807;&#xFF0C;&#x79FB;&#x9664;&#x6240;&#x6709;&#x7684;<code>data</code>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x8FC7;<code>unpipe()</code>&#x65B9;&#x6CD5;&#x79FB;&#x9664;&#x6240;&#x6709;&#x5BFC;&#x6D41;&#x76EE;&#x6807;&#x3002;</p>
+</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x7531;&#x4E8E;&#x4E3A;&#x4E86;&#x5411;&#x540E;&#x517C;&#x4EFB;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x79FB;&#x9664;<code>data</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x5C06;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x6682;&#x505C;&#x6D41;&#x3002;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x5BFC;&#x6D41;&#x76EE;&#x6807;&#xFF0C;&#x8C03;&#x7528;<code>pause()</code>&#x65B9;&#x6CD5;&#x5C06;&#x4E0D;&#x4F1A;&#x4FDD;&#x8BC1;&#x76EE;&#x6807;&#x6D41;&#x6392;&#x7A7A;&#x5E76;&#x8BF7;&#x6C42;&#x66F4;&#x591A;&#x6570;&#x636E;&#x65F6;&#x4FDD;&#x6301;&#x6682;&#x505C;&#x3002;</p>
+<p>&#x4E00;&#x4E9B;&#x5185;&#x7F6E;&#x7684;&#x53EF;&#x8BFB;&#x6D41;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<ul>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x7684;HTTP&#x8BF7;&#x6C42;</li>
+<li>&#x670D;&#x52A1;&#x7AEF;&#x7684;HTTP&#x54CD;&#x5E94;</li>
+<li>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8BFB;&#x53D6;&#x6D41;</li>
+<li><code>zlib</code>&#x6D41;</li>
+<li><code>crypto</code>&#x6D41;</li>
+<li>tcp sockets</li>
+<li>&#x5B50;&#x8FDB;&#x7A0B;&#x7684;stdout&#x548C;stderr</li>
+<li><code>process.stdin</code></li>
+</ul>
+<h4 id="event-readable">Event: &apos;readable&apos;</h4>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5757;&#x80FD;&#x53EF;&#x4EE5;&#x4ECE;&#x6D41;&#x4E2D;&#x88AB;&#x8BFB;&#x51FA;&#x65F6;&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;<code>readable</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<p>&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x76D1;&#x542C;&#x4E00;&#x4E2A;<code>readable</code>&#x4E8B;&#x4EF6;&#x4F1A;&#x5BFC;&#x81F4;&#x4E00;&#x4E9B;&#x5C06;&#x8981;&#x88AB;&#x8BFB;&#x51FA;&#x7684;&#x6570;&#x636E;&#x4ECE;&#x5E95;&#x5C42;&#x7CFB;&#x7EDF;&#x8FDB;&#x5165;&#x5185;&#x90E8;&#x7F13;&#x51B2;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x6CA1;&#x6709;&#x51C6;&#x5907;&#x597D;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = getReadableStreamSomehow();
+readable.on(<span class="hljs-string">&apos;readable&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// there is some data to read now</span>
+});
+</code></pre>
+<p>&#x5F53;&#x5185;&#x90E8;&#x7F13;&#x51B2;&#x88AB;&#x6392;&#x7A7A;&#x65F6;&#xFF0C;&#x4E00;&#x65E6;&#x6709;&#x66F4;&#x591A;&#x6570;&#x636E;&#xFF0C;<code>readable</code>&#x4E8B;&#x4EF6;&#x4F1A;&#x518D;&#x6B21;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="event-data">Event: &apos;data&apos;</h4>
+<ul>
+<li>chunk Buffer | String &#x6570;&#x636E;&#x5757;</li>
+</ul>
+<p>&#x4E3A;&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x88AB;&#x6682;&#x505C;&#x7684;&#x6D41;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;<code>data</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x4F1A;&#x4F7F;&#x5176;&#x5207;&#x6362;&#x5230;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#x3002;&#x4E4B;&#x540E;&#x6570;&#x636E;&#x4F1A;&#x88AB;&#x5C3D;&#x5FEB;&#x5F97;&#x4F20;&#x9012;&#x7ED9;&#x7528;&#x6237;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x53EA;&#x662F;&#x60F3;&#x5C3D;&#x5FEB;&#x5F97;&#x4ECE;&#x6D41;&#x4E2D;&#x53D6;&#x5F97;&#x6240;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x662F;&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = getReadableStreamSomehow();
+readable.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunk</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;got %d bytes of data&apos;</span>, chunk.length);
+});
+</code></pre>
+<h4 id="event-end">Event: &apos;end&apos;</h4>
+<p>&#x5F53;&#x6CA1;&#x6709;&#x66F4;&#x591A;&#x53EF;&#x8BFB;&#x7684;&#x6570;&#x636E;&#x65F6;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x9664;&#x975E;&#x6570;&#x636E;&#x88AB;&#x5B8C;&#x5168;&#x6D88;&#x8D39;&#xFF0C;<code>end</code>&#x4E8B;&#x4EF6;&#x624D;&#x4F1A;&#x89E6;&#x53D1;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5207;&#x6362;&#x5230;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#xFF0C;&#x6216;&#x91CD;&#x590D;&#x8C03;&#x7528;<code>read()</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = getReadableStreamSomehow();
+readable.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunk</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;got %d bytes of data&apos;</span>, chunk.length);
+});
+readable.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;there will be no more data.&apos;</span>);
+});
+</code></pre>
+<h4 id="event-close">Event: &apos;close&apos;</h4>
+<p>&#x5F53;&#x5E95;&#x5C42;&#x8D44;&#x6E90;&#xFF08;&#x5982;&#x6E90;&#x5934;&#x7684;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#xFF09;&#x88AB;&#x5173;&#x95ED;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x6D41;&#x90FD;&#x4F1A;&#x89E6;&#x53D1;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x3002;</p>
+<h4 id="event-error">Event: &apos;error&apos;</h4>
+<ul>
+<li>Error Object</li>
+</ul>
+<p>&#x5F53;&#x63A5;&#x53D7;&#x6570;&#x636E;&#x65F6;&#x6709;&#x9519;&#x8BEF;&#x53D1;&#x751F;&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;&#x6B64;&#x4E8B;&#x4EF6;&#x3002;</p>
+<h4 id="readablereadsize">readable.read([size])</h4>
+<ul>
+<li>size Number &#x53EF;&#x9009;&#xFF0C;&#x6307;&#x5B9A;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x6570;&#x91CF;</li>
+<li>Return String | Buffer | null</li>
+</ul>
+<p><code>read()</code>&#x65B9;&#x6CD5;&#x4ECE;&#x5185;&#x90E8;&#x7F13;&#x51B2;&#x4E2D;&#x53D6;&#x51FA;&#x6570;&#x636E;&#x5E76;&#x8FD4;&#x56DE;&#x5B83;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x53EF;&#x7528;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x8FD4;&#x56DE;<code>null</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F20;&#x9012;&#x4E86;&#x4E00;&#x4E2A;<code>size</code>&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x5B57;&#x8282;&#x7684;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;<code>size</code>&#x53C2;&#x6570;&#x7684;&#x5B57;&#x8282;&#x6570;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x8FD4;&#x56DE;<code>null</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x6307;&#x5B9A;<code>size</code>&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;&#x5185;&#x90E8;&#x7F13;&#x51B2;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x5728;&#x6682;&#x5B9A;&#x6A21;&#x5F0F;&#x4E2D;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x5728;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x5730;&#x91CD;&#x590D;&#x8C03;&#x7528;&#xFF0C;&#x77E5;&#x9053;&#x5185;&#x90E8;&#x7F13;&#x51B2;&#x88AB;&#x6392;&#x7A7A;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = getReadableStreamSomehow();
+readable.on(<span class="hljs-string">&apos;readable&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> chunk;
+  <span class="hljs-keyword">while</span> (<span class="hljs-literal">null</span> !== (chunk = readable.read())) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;got %d bytes of data&apos;</span>, chunk.length);
+  }
+});
+</code></pre>
+<p>&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5757;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4E5F;&#x4F1A;&#x89E6;&#x53D1;<code>data</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<h4 id="readablesetencodingencoding">readable.setEncoding(encoding)</h4>
+<ul>
+<li>encoding String &#x4F7F;&#x7528;&#x7684;&#x7F16;&#x7801;</li>
+<li>Return: this</li>
+</ul>
+<p>&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x5BFC;&#x81F4;&#x6D41;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x800C;&#x4E0D;&#x662F;<code>Buffer</code>&#x5BF9;&#x8C61;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8C03;&#x7528;<code>readable.setEncoding(&apos;utf8&apos;)</code>&#xFF0C;&#x90A3;&#x4E48;&#x8F93;&#x51FA;&#x7684;&#x6570;&#x636E;&#x5C06;&#x88AB;&#x89E3;&#x91CA;&#x4E3A;UTF-8&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4E14;&#x4F5C;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x8FD4;&#x56DE;&#x3002;&#x5982;&#x679C;&#x4F60;&#x8C03;&#x7528;&#x4E86;<code>readable.setEncoding(&apos;hex&apos;)</code>&#xFF0C;&#x90A3;&#x4E48;&#x6570;&#x636E;&#x5C06;&#x88AB;&#x4F7F;&#x7528;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x683C;&#x5F0F;&#x7F16;&#x7801;&#x3002;</p>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x6B63;&#x786E;&#x5730;&#x5904;&#x7406;&#x591A;&#x5B57;&#x8282;&#x5B57;&#x7B26;&#x3002;&#x5982;&#x679C;&#x4F60;&#x53EA;&#x662F;&#x7B80;&#x5355;&#x5730;&#x76F4;&#x63A5;&#x53D6;&#x51FA;&#x7F13;&#x51B2;&#x5E76;&#x4E14;&#x5BF9;&#x5B83;&#x4EEC;&#x8C03;&#x7528;<code>buf.toString(encoding)</code>&#xFF0C;&#x5C06;&#x4F1A;&#x5BFC;&#x81F4;&#x9519;&#x4F4D;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = getReadableStreamSomehow();
+readable.setEncoding(<span class="hljs-string">&apos;utf8&apos;</span>);
+readable.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunk</span>) </span>{
+  assert.equal(<span class="hljs-keyword">typeof</span> chunk, <span class="hljs-string">&apos;string&apos;</span>);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;got %d characters of string data&apos;</span>, chunk.length);
+});
+</code></pre>
+<h4 id="readableresume">readable.resume()</h4>
+<ul>
+<li>Return: this</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x8BA9;&#x53EF;&#x8BFB;&#x6D41;&#x7EE7;&#x7EED;&#x89E6;&#x53D1;<code>data</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x4F7F;&#x6D41;&#x5207;&#x6362;&#x81F3;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x6D88;&#x8D39;&#x6D41;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x4F60;&#x60F3;&#x76D1;&#x542C;&#x5B83;&#x7684;<code>end</code>&#x4E8B;&#x4EF6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>readable.resume()</code>&#x6765;&#x6253;&#x5F00;&#x6570;&#x636E;&#x6D41;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = getReadableStreamSomehow();
+readable.resume();
+readable.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;got to the end, but did not read anything&apos;</span>);
+});
+</code></pre>
+<h4 id="readablepause">readable.pause()</h4>
+<ul>
+<li>Return: this</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x4F7F;&#x4E00;&#x4E2A;&#x5904;&#x4E8E;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#x7684;&#x6D41;&#x505C;&#x6B62;&#x89E6;&#x53D1;<code>data</code>&#x4E8B;&#x4EF6;&#xFF0C;&#x5E76;&#x5207;&#x6362;&#x81F3;&#x6682;&#x505C;&#x6A21;&#x5F0F;&#x3002;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x6570;&#x636E;&#x5C06;&#x4ECD;&#x7136;&#x5B58;&#x5728;&#x4E8E;&#x5185;&#x90E8;&#x7F13;&#x51B2;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = getReadableStreamSomehow();
+readable.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunk</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;got %d bytes of data&apos;</span>, chunk.length);
+  readable.pause();
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;there will be no more data for 1 second&apos;</span>);
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;now data will start flowing again&apos;</span>);
+    readable.resume();
+  }, <span class="hljs-number">1000</span>);
+});
+</code></pre>
+<h4 id="readableispaused">readable.isPaused()</h4>
+<ul>
+<li>Return: Boolean</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;&#x6D41;&#x662F;&#x5426;&#x88AB;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7801;&#x6240;&#x6682;&#x505C;&#xFF08;&#x8C03;&#x7528;<code>readable.pause()</code>&#xFF0C;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x5728;&#x4E4B;&#x540E;&#x8C03;&#x7528;<code>readable.resume()</code>&#xFF09;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = <span class="hljs-keyword">new</span> stream.Readable
+
+readable.isPaused() <span class="hljs-comment">// === false</span>
+readable.pause()
+readable.isPaused() <span class="hljs-comment">// === true</span>
+readable.resume()
+readable.isPaused() <span class="hljs-comment">// === false</span>
+</code></pre>
+<h4 id="readablepipedestination-options">readable.pipe(destination[, options])</h4>
+<ul>
+<li>destination Writable Stream &#x5199;&#x5165;&#x6570;&#x636E;&#x7684;&#x76EE;&#x6807;</li>
+<li><strong>options Object</strong><ul>
+<li>end Boolean &#x5F53;&#x8BFB;&#x53D6;&#x8005;&#x7ED3;&#x675F;&#x65F6;&#x7ED3;&#x675F;&#x5199;&#x5165;&#x8005;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>true</code>&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x53D6;&#x51FA;&#x53EF;&#x8BFB;&#x6D41;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x4E4B;&#x5199;&#x5165;&#x6307;&#x5B9A;&#x7684;&#x76EE;&#x6807;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x8282;&#x6D41;&#x91CF;&#xFF0C;&#x6240;&#x4EE5;&#x5F53;&#x5FEB;&#x901F;&#x8BFB;&#x53D6;&#x53EF;&#x8BFB;&#x6D41;&#x65F6;&#x76EE;&#x6807;&#x4E0D;&#x4F1A;&#x6EA2;&#x51FA;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x5C06;&#x6570;&#x636E;&#x5B89;&#x5168;&#x5730;&#x5BFC;&#x6D41;&#x81F3;&#x591A;&#x4E2A;&#x76EE;&#x6807;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = getReadableStreamSomehow();
+<span class="hljs-keyword">var</span> writable = fs.createWriteStream(<span class="hljs-string">&apos;file.txt&apos;</span>);
+<span class="hljs-comment">// All the data from readable goes into &apos;file.txt&apos;</span>
+readable.pipe(writable);
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x76EE;&#x6807;&#x6D41;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x53EF;&#x4EE5;&#x94FE;&#x5F0F;&#x8C03;&#x7528;<code>pipe()</code>&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> r = fs.createReadStream(<span class="hljs-string">&apos;file.txt&apos;</span>);
+<span class="hljs-keyword">var</span> z = zlib.createGzip();
+<span class="hljs-keyword">var</span> w = fs.createWriteStream(<span class="hljs-string">&apos;file.txt.gz&apos;</span>);
+r.pipe(z).pipe(w);
+</code></pre>
+<p>&#x4F8B;&#x5B50;&#xFF0C;&#x6A21;&#x4EFF;UNIX&#x7684;<code>cat</code>&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-js">process.stdin.pipe(process.stdout);
+</code></pre>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5F53;&#x6E90;&#x6D41;&#x89E6;&#x53D1;<code>end</code>&#x4E8B;&#x4EF6;&#x65F6;&#xFF0C;&#x76EE;&#x6807;&#x6D41;&#x4F1A;&#x88AB;&#x8C03;&#x7528;<code>end()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x76EE;&#x6807;&#x5C31;&#x4E0D;&#x518D;&#x662F;&#x53EF;&#x5199;&#x7684;&#x4E86;&#x3002;&#x5C06;&#x4F20;&#x9012;<code>{ end: false }</code>&#x4F5C;&#x4E3A;<code>options</code>&#x53C2;&#x6570;&#xFF0C;&#x5C06;&#x4FDD;&#x6301;&#x76EE;&#x6807;&#x6D41;&#x5F00;&#x542F;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF0C;&#x4FDD;&#x6301;&#x88AB;&#x5199;&#x5165;&#x7684;&#x6D41;&#x5F00;&#x542F;&#xFF0C;&#x6240;&#x4EE5;&#x201C;Goodbye&#x201D;&#x53EF;&#x4EE5;&#x5728;&#x672B;&#x7AEF;&#x88AB;&#x5199;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-js">reader.pipe(writer, { end: <span class="hljs-literal">false</span> });
+reader.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  writer.end(<span class="hljs-string">&apos;Goodbye\n&apos;</span>);
+});
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x4E0D;&#x8BBA;&#x6307;&#x5B9A;&#x4EFB;&#x4F55;<code>options</code>&#x53C2;&#x6570;&#xFF0C;<code>process.stderr</code>&#x548C;<code>process.stdout</code>&#x5728;&#x7A0B;&#x5E8F;&#x9000;&#x51FA;&#x524D;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x88AB;&#x5173;&#x95ED;&#x3002;</p>
+<h4 id="readableunpipedestination">readable.unpipe([destination])</h4>
+<ul>
+<li>destination Writable Stream &#x53EF;&#x9009;&#xFF0C;&#x6307;&#x5B9A;&#x89E3;&#x9664;&#x5BFC;&#x6D41;&#x7684;&#x6D41;</li>
+</ul>
+<p>&#x8FD9;&#x65B9;&#x6CD5;&#x4F1A;&#x79FB;&#x9664;&#x4E4B;&#x524D;&#x8C03;&#x7528;<code>pipe()</code>&#x65B9;&#x6CD5;&#x6240;&#x8BBE;&#x7F6E;&#x7684;&#x94A9;&#x5B50;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x76EE;&#x6807;&#xFF0C;&#x90A3;&#x4E48;&#x6240;&#x6709;&#x7684;&#x5BFC;&#x6D41;&#x90FD;&#x4F1A;&#x88AB;&#x79FB;&#x9664;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x76EE;&#x6807;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x6CA1;&#x6709;&#x4E3A;&#x76EE;&#x6807;&#x8BBE;&#x7F6E;&#x5BFC;&#x6D41;&#xFF0C;&#x90A3;&#x4E48;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = getReadableStreamSomehow();
+<span class="hljs-keyword">var</span> writable = fs.createWriteStream(<span class="hljs-string">&apos;file.txt&apos;</span>);
+<span class="hljs-comment">// All the data from readable goes into &apos;file.txt&apos;,</span>
+<span class="hljs-comment">// but only for the first second</span>
+readable.pipe(writable);
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;stop writing to file.txt&apos;</span>);
+  readable.unpipe(writable);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;manually close the file stream&apos;</span>);
+  writable.end();
+}, <span class="hljs-number">1000</span>);
+</code></pre>
+<h4 id="readableunshiftchunk">readable.unshift(chunk)</h4>
+<ul>
+<li>chunk Buffer | String &#x8981;&#x63D2;&#x56DE;&#x8BFB;&#x53D6;&#x961F;&#x5217;&#x5F00;&#x5934;&#x7684;&#x6570;&#x636E;&#x5757;&#x3002;</li>
+</ul>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x5728;&#x8BB8;&#x591A;&#x573A;&#x666F;&#x4E2D;&#x90FD;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x4E00;&#x4E2A;&#x6D41;&#x6B63;&#x5728;&#x88AB;&#x4E00;&#x4E2A;&#x89E3;&#x6790;&#x5668;&#x6D88;&#x8D39;&#xFF0C;&#x89E3;&#x6790;&#x5668;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5C06;&#x67D0;&#x4E9B;&#x521A;&#x62C9;&#x53D6;&#x51FA;&#x7684;&#x6570;&#x636E;&#x201C;&#x9006;&#x6D88;&#x8D39;&#x201D;&#x56DE;&#x6765;&#x6E90;&#xFF0C;&#x4EE5;&#x4FBF;&#x6D41;&#x80FD;&#x5C06;&#x5B83;&#x4F20;&#x9012;&#x7ED9;&#x5176;&#x5B83;&#x6D88;&#x8D39;&#x8005;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x53D1;&#x73B0;&#x4F60;&#x5FC5;&#x987B;&#x7ECF;&#x5E38;&#x5728;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x8C03;&#x7528;<code>stream.unshift(chunk)</code>&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x8003;&#x8651;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;<code>Transform</code>&#x6D41;&#xFF08;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#x7684;&#x9762;&#x5411;&#x6D41;&#x5B9E;&#x73B0;&#x8005;&#x7684;API&#xFF09;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Pull off a header delimited by \n\n</span>
+<span class="hljs-comment">// use unshift() if we get too much</span>
+<span class="hljs-comment">// Call the callback with (error, header, stream)</span>
+<span class="hljs-keyword">var</span> StringDecoder = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;string_decoder&apos;</span>).StringDecoder;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">parseHeader</span>(<span class="hljs-params">stream, callback</span>) </span>{
+  stream.on(<span class="hljs-string">&apos;error&apos;</span>, callback);
+  stream.on(<span class="hljs-string">&apos;readable&apos;</span>, onReadable);
+  <span class="hljs-keyword">var</span> decoder = <span class="hljs-keyword">new</span> StringDecoder(<span class="hljs-string">&apos;utf8&apos;</span>);
+  <span class="hljs-keyword">var</span> header = <span class="hljs-string">&apos;&apos;</span>;
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onReadable</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> chunk;
+    <span class="hljs-keyword">while</span> (<span class="hljs-literal">null</span> !== (chunk = stream.read())) {
+      <span class="hljs-keyword">var</span> str = decoder.write(chunk);
+      <span class="hljs-keyword">if</span> (str.match(<span class="hljs-regexp">/\n\n/</span>)) {
+        <span class="hljs-comment">// found the header boundary</span>
+        <span class="hljs-keyword">var</span> split = str.split(<span class="hljs-regexp">/\n\n/</span>);
+        header += split.shift();
+        <span class="hljs-keyword">var</span> remaining = split.join(<span class="hljs-string">&apos;\n\n&apos;</span>);
+        <span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(remaining, <span class="hljs-string">&apos;utf8&apos;</span>);
+        <span class="hljs-keyword">if</span> (buf.length)
+          stream.unshift(buf);
+        stream.removeListener(<span class="hljs-string">&apos;error&apos;</span>, callback);
+        stream.removeListener(<span class="hljs-string">&apos;readable&apos;</span>, onReadable);
+        <span class="hljs-comment">// now the body of the message can be read from the stream.</span>
+        callback(<span class="hljs-literal">null</span>, header, stream);
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// still reading the header.</span>
+        header += str;
+      }
+    }
+  }
+}
+</code></pre>
+<h4 id="readablewrapstream">readable.wrap(stream)</h4>
+<ul>
+<li>stream Stream &#x4E00;&#x4E2A;&#x201C;&#x65E7;&#x5F0F;&#x201D;&#x53EF;&#x8BFB;&#x6D41;</li>
+</ul>
+<p><code>Node.js</code> v0.10 &#x4EE5;&#x53CA;&#x4E4B;&#x524D;&#x7248;&#x672C;&#x7684;&#x6D41;&#x6CA1;&#x6709;&#x5B8C;&#x5168;&#x5305;&#x542B;&#x5982;&#x4ECA;&#x7684;&#x6240;&#x6709;&#x7684;&#x6D41;API&#xFF08;&#x66F4;&#x591A;&#x7684;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#x7684;&#x201C;&#x517C;&#x5BB9;&#x6027;&#x201D;&#xFF09;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x8001;&#x65E7;&#x7684;<code>node.js</code>&#x5E93;&#xFF0C;&#x5B83;&#x89E6;&#x53D1;<code>data</code>&#x65F6;&#x95F4;&#x5E76;&#x4E14;&#x6709;&#x4E00;&#x4E2A;&#x4EC5;&#x4F5C;&#x67E5;&#x8BE2;&#x7528;&#x9014;&#x7684;<code>pause()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>wrap()</code>&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x201C;&#x65E7;&#x5F0F;&#x201D;&#x6D41;&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#x6E90;&#x7684;&#x53EF;&#x8BFB;&#x6D41;&#x3002;</p>
+<p>&#x4F60;&#x51E0;&#x4E4E;&#x4E0D;&#x4F1A;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x7684;&#x5B58;&#x5728;&#x4EC5;&#x662F;&#x4E3A;&#x4E86;&#x8001;&#x65E7;&#x7684;<code>node.js</code>&#x7A0B;&#x5E8F;&#x548C;&#x5E93;&#x4EA4;&#x4E92;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> OldReader = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./old-api-module.js&apos;</span>).OldReader;
+<span class="hljs-keyword">var</span> oreader = <span class="hljs-keyword">new</span> OldReader;
+<span class="hljs-keyword">var</span> Readable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Readable;
+<span class="hljs-keyword">var</span> myReader = <span class="hljs-keyword">new</span> Readable().wrap(oreader);
+
+myReader.on(<span class="hljs-string">&apos;readable&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  myReader.read(); <span class="hljs-comment">// etc.</span>
+});
+</code></pre>
+<h4 id="class-streamwritable">Class: stream.Writable</h4>
+<p>&#x53EF;&#x5199;&#x6D41;&#x63A5;&#x53E3;&#x662F;&#x4E00;&#x4E2A;&#x4F60;&#x53EF;&#x4EE5;&#x5411;&#x5176;&#x5199;&#x5165;&#x6570;&#x636E;&#x7684;&#x76EE;&#x6807;&#x7684;&#x62BD;&#x8C61;&#x3002;</p>
+<p>&#x4E00;&#x4E9B;&#x5185;&#x90E8;&#x7684;&#x53EF;&#x5199;&#x6D41;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<ul>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x7684;http&#x8BF7;&#x6C42;</li>
+<li>&#x670D;&#x52A1;&#x7AEF;&#x7684;http&#x54CD;&#x5E94;</li>
+<li>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5199;&#x5165;&#x6D41;</li>
+<li><code>zlib</code>&#x6D41;</li>
+<li><code>crypto</code>&#x6D41;</li>
+<li>tcp <code>socket</code></li>
+<li>&#x5B50;&#x8FDB;&#x7A0B;<code>stdin</code></li>
+<li><code>process.stdout</code>&#xFF0C;<code>process.stderr</code></li>
+</ul>
+<h4 id="writablewritechunk-encoding-callback">writable.write(chunk[, encoding][, callback])</h4>
+<ul>
+<li>chunk String | Buffer &#x8981;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;</li>
+<li>encoding String &#x7F16;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x6570;&#x636E;&#x5757;&#x662F;&#x5B57;&#x7B26;&#x4E32;</li>
+<li>callback Function &#x5F53;&#x6570;&#x636E;&#x5757;&#x5199;&#x5165;&#x5B8C;&#x6BD5;&#x540E;&#x8C03;&#x7528;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</li>
+<li>Returns: Boolean &#x5982;&#x679C;&#x88AB;&#x5168;&#x90E8;&#x5904;&#x7406;&#x5219;&#x8FD4;&#x56DE;<code>true</code></li>
+</ul>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x5411;&#x5E95;&#x5C42;&#x7CFB;&#x7EDF;&#x5199;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x6570;&#x636E;&#x88AB;&#x5168;&#x90E8;&#x5904;&#x7406;&#x540E;&#x8C03;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x6307;&#x793A;&#x4E86;&#x4F60;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x7ACB;&#x523B;&#x5199;&#x5165;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x6570;&#x636E;&#x9700;&#x8981;&#x88AB;&#x5185;&#x90E8;&#x7F13;&#x51B2;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;<code>false</code>&#x3002;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#x3002;</p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x7ECF;&#x4F9B;&#x53C2;&#x8003;&#x3002;&#x5373;&#x4F7F;&#x8FD4;&#x56DE;<code>false</code>&#xFF0C;&#x4F60;&#x4ECD;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x5199;&#x5165;&#x6570;&#x636E;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x5C06;&#x4F1A;&#x88AB;&#x7F13;&#x51B2;&#x5728;&#x5185;&#x5B58;&#x91CC;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x597D;&#x4E0D;&#x8981;&#x8FD9;&#x6837;&#x505A;&#x3002;&#x5E94;&#x8BE5;&#x5728;&#x5199;&#x5165;&#x66F4;&#x591A;&#x6570;&#x636E;&#x524D;&#x7B49;&#x5F85;<code>drain</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<h4 id="event-drain">Event: &apos;drain&apos;</h4>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;<code>writable.write(chunk)</code>&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x4E86;<code>false</code>&#xFF0C;&#x90A3;&#x4E48;<code>drain</code>&#x4E8B;&#x4EF6;&#x4F1A;&#x6307;&#x793A;&#x51FA;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x5411;&#x6D41;&#x5199;&#x5165;&#x6570;&#x636E;&#x7684;&#x65F6;&#x673A;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Write the data to the supplied writable stream 1MM times.</span>
+<span class="hljs-comment">// Be attentive to back-pressure.</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">writeOneMillionTimes</span>(<span class="hljs-params">writer, data, encoding, callback</span>) </span>{
+  <span class="hljs-keyword">var</span> i = <span class="hljs-number">1000000</span>;
+  write();
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">write</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> ok = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">do</span> {
+      i -= <span class="hljs-number">1</span>;
+      <span class="hljs-keyword">if</span> (i === <span class="hljs-number">0</span>) {
+        <span class="hljs-comment">// last time!</span>
+        writer.write(data, encoding, callback);
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// see if we should continue, or wait</span>
+        <span class="hljs-comment">// don&apos;t pass the callback, because we&apos;re not done yet.</span>
+        ok = writer.write(data, encoding);
+      }
+    } <span class="hljs-keyword">while</span> (i &gt; <span class="hljs-number">0</span> &amp;&amp; ok);
+    <span class="hljs-keyword">if</span> (i &gt; <span class="hljs-number">0</span>) {
+      <span class="hljs-comment">// had to stop early!</span>
+      <span class="hljs-comment">// write some more once it drains</span>
+      writer.once(<span class="hljs-string">&apos;drain&apos;</span>, write);
+    }
+  }
+}
+</code></pre>
+<h4 id="writablecork">writable.cork()</h4>
+<p>&#x5F3A;&#x5236;&#x6EDE;&#x7559;&#x6240;&#x6709;&#x5199;&#x5165;&#x3002;</p>
+<p>&#x6EDE;&#x7559;&#x7684;&#x6570;&#x636E;&#x4F1A;&#x5728;&#x8C03;&#x7528;<code>.uncork()</code>&#x6216;<code>.end()</code>&#x65B9;&#x6CD5;&#x540E;&#x88AB;&#x5199;&#x5165;&#x3002;</p>
+<h4 id="writableuncork">writable.uncork()</h4>
+<p>&#x5199;&#x5165;&#x5728;&#x8C03;&#x7528;<code>.cork()</code>&#x65B9;&#x6CD5;&#x6240;&#x6709;&#x88AB;&#x6EDE;&#x7559;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<h4 id="writablesetdefaultencodingencoding">writable.setDefaultEncoding(encoding)</h4>
+<ul>
+<li>encoding String &#x65B0;&#x7684;&#x9ED8;&#x8BA4;&#x7F16;&#x7801;</li>
+</ul>
+<p>&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x53EF;&#x5199;&#x6D41;&#x7684;&#x9ED8;&#x8BA4;&#x7F16;&#x7801;&#x3002;</p>
+<h4 id="writableendchunk-encoding-callback">writable.end([chunk][, encoding][, callback])</h4>
+<ul>
+<li>chunk String | Buffer &#x53EF;&#x9009;&#xFF0C;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;</li>
+<li>encoding String &#x7F16;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x6570;&#x636E;&#x5757;&#x662F;&#x5B57;&#x7B26;&#x4E32;</li>
+<li>callback Function &#x53EF;&#x9009;&#xFF0C;&#x56DE;&#x8C03;&#x51FD;&#x6570;</li>
+</ul>
+<p>&#x5F53;&#x6CA1;&#x6709;&#x66F4;&#x591A;&#x53EF;&#x5199;&#x7684;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x4E3A;<code>finish</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x3002;</p>
+<p>&#x5728;&#x8C03;&#x7528;&#x4E86;<code>end()</code>&#x540E;&#x8C03;&#x7528;<code>write()</code>&#x4F1A;&#x5BFC;&#x81F4;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// write &apos;hello, &apos; and then end with &apos;world!&apos;</span>
+<span class="hljs-keyword">var</span> file = fs.createWriteStream(<span class="hljs-string">&apos;example.txt&apos;</span>);
+file.write(<span class="hljs-string">&apos;hello, &apos;</span>);
+file.end(<span class="hljs-string">&apos;world!&apos;</span>);
+<span class="hljs-comment">// writing more now is not allowed!</span>
+</code></pre>
+<h4 id="event-finish">Event: &apos;finish&apos;</h4>
+<p>&#x5F53;&#x8C03;&#x7528;&#x4E86;<code>end()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x90FD;&#x88AB;&#x5199;&#x5165;&#x4E86;&#x5E95;&#x5C42;&#x7CFB;&#x7EDF;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> writer = getWritableStreamSomehow();
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i ++) {
+  writer.write(<span class="hljs-string">&apos;hello, #&apos;</span> + i + <span class="hljs-string">&apos;!\n&apos;</span>);
+}
+writer.end(<span class="hljs-string">&apos;this is the end\n&apos;</span>);
+writer.on(<span class="hljs-string">&apos;finish&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;all writes are now complete.&apos;</span>);
+});
+</code></pre>
+<h4 id="event-pipe">Event: &apos;pipe&apos;</h4>
+<ul>
+<li>src Readable Stream &#x5BF9;&#x8FD9;&#x4E2A;&#x53EF;&#x5199;&#x6D41;&#x8FDB;&#x884C;&#x5BFC;&#x6D41;&#x7684;&#x6E90;&#x53EF;&#x8BFB;&#x6D41;</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x5C06;&#x4F1A;&#x5728;&#x53EF;&#x8BFB;&#x6D41;&#x88AB;&#x4E00;&#x4E2A;&#x53EF;&#x5199;&#x6D41;&#x4F7F;&#x7528;<code>pipe()</code>&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x5BFC;&#x6D41;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> writer = getWritableStreamSomehow();
+<span class="hljs-keyword">var</span> reader = getReadableStreamSomehow();
+writer.on(<span class="hljs-string">&apos;pipe&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">src</span>) </span>{
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;something is piping into the writer&apos;</span>);
+  assert.equal(src, reader);
+});
+reader.pipe(writer);
+</code></pre>
+<h4 id="event-unpipe">Event: &apos;unpipe&apos;</h4>
+<ul>
+<li>src Readable Stream &#x5BF9;&#x8FD9;&#x4E2A;&#x53EF;&#x5199;&#x6D41;&#x505C;&#x6B62;&#x5BFC;&#x6D41;&#x7684;&#x6E90;&#x53EF;&#x8BFB;&#x6D41;</li>
+</ul>
+<p>&#x5F53;&#x53EF;&#x8BFB;&#x6D41;&#x5BF9;&#x5176;&#x8C03;&#x7528;<code>unpipe()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x6E90;&#x53EF;&#x8BFB;&#x6D41;&#x7684;&#x76EE;&#x6807;&#x96C6;&#x5408;&#x4E2D;&#x5220;&#x9664;&#x8FD9;&#x4E2A;&#x53EF;&#x5199;&#x6D41;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x5C06;&#x4F1A;&#x89E6;&#x53D1;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> writer = getWritableStreamSomehow();
+<span class="hljs-keyword">var</span> reader = getReadableStreamSomehow();
+writer.on(<span class="hljs-string">&apos;unpipe&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">src</span>) </span>{
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;something has stopped piping into the writer&apos;</span>);
+  assert.equal(src, reader);
+});
+reader.pipe(writer);
+reader.unpipe(writer);
+</code></pre>
+<h4 id="event-error">Event: &apos;error&apos;</h4>
+<ul>
+<li>Error object</li>
+</ul>
+<p>&#x5728;&#x5199;&#x5165;&#x6570;&#x636E;&#x6216;&#x5BFC;&#x6D41;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="class-streamduplex">Class: stream.Duplex</h4>
+<p>&#x53CC;&#x5DE5;&#x662F;&#x540C;&#x65F6;&#x5B9E;&#x73B0;&#x4E86;&#x53EF;&#x8BFB;&#x6D41;&#x4E0E;&#x53EF;&#x5199;&#x6D41;&#x7684;&#x501F;&#x53E3;&#x3002;&#x5B83;&#x7684;&#x7528;&#x5904;&#x8BF7;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#x3002;</p>
+<p>&#x5185;&#x90E8;&#x53CC;&#x5DE5;&#x6D41;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<ul>
+<li>tcp <code>socket</code></li>
+<li><code>zlib</code>&#x6D41;</li>
+<li><code>crypto</code>&#x6D41;</li>
+</ul>
+<h4 id="class-streamtransform">Class: stream.Transform</h4>
+<p>&#x8F6C;&#x6362;&#x6D41;&#x662F;&#x4E00;&#x79CD;&#x8F93;&#x51FA;&#x7531;&#x8F93;&#x5165;&#x8BA1;&#x7B97;&#x6240;&#x5F97;&#x7684;&#x6813;&#x5171;&#x6D41;&#x3002;&#x5B83;&#x4EEC;&#x540C;&#x65F6;&#x96C6;&#x6210;&#x4E86;&#x53EF;&#x8BFB;&#x6D41;&#x4E0E;&#x53EF;&#x5199;&#x6D41;&#x7684;&#x501F;&#x53E3;&#x3002;&#x5B83;&#x4EEC;&#x7684;&#x7528;&#x5904;&#x8BF7;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#x3002;</p>
+<p>&#x5185;&#x90E8;&#x8F6C;&#x6362;&#x6D41;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<ul>
+<li><code>zlib</code>&#x6D41;</li>
+<li><code>crypto</code>&#x6D41;</li>
+</ul>
+<h3 id="&#x9762;&#x5411;&#x6D41;&#x5B9E;&#x73B0;&#x8005;&#x7684;api">&#x9762;&#x5411;&#x6D41;&#x5B9E;&#x73B0;&#x8005;&#x7684;API</h3>
+<p>&#x5B9E;&#x73B0;&#x6240;&#x6709;&#x79CD;&#x7C7B;&#x7684;&#x6D41;&#x7684;&#x6A21;&#x5F0F;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF1A;</p>
+<ol>
+<li>&#x4E3A;&#x4F60;&#x7684;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x5408;&#x9002;&#x7684;&#x7236;&#x7C7B;&#xFF08;<code>util.inherits</code>&#x975E;&#x5E38;&#x5408;&#x9002;&#x4E8E;&#x505A;&#x8FD9;&#x4E2A;&#xFF09;&#x3002;</li>
+<li>&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x5185;&#x90E8;&#x673A;&#x5236;&#x88AB;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5728;&#x4F60;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x8C03;&#x7528;&#x5408;&#x9002;&#x7684;&#x7236;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#x3002;</li>
+</ol>
+<p>&#x88AB;&#x6269;&#x5C55;&#x7684;&#x7C7B;&#x548C;&#x8981;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x8981;&#x7F16;&#x5199;&#x7684;&#x6D41;&#x7C7B;&#x7684;&#x7C7B;&#x578B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x7528;&#x9014;</th>
+<th style="text-align:center">&#x7C7B;</th>
+<th style="text-align:right">&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x53EA;&#x8BFB;</td>
+<td style="text-align:center">Readable</td>
+<td style="text-align:right">_read</td>
+</tr>
+<tr>
+<td>&#x53EA;&#x5199;</td>
+<td style="text-align:center">Writable</td>
+<td style="text-align:right">_write, _writev</td>
+</tr>
+<tr>
+<td>&#x53EF;&#x8BFB;&#x4EE5;&#x53CA;&#x53EF;&#x5199;</td>
+<td style="text-align:center">Duplex</td>
+<td style="text-align:right">_read, _write, _writev</td>
+</tr>
+<tr>
+<td>&#x64CD;&#x4F5C;&#x88AB;&#x5199;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x8BFB;&#x51FA;&#x7ED3;&#x679C;</td>
+<td style="text-align:center">Transform</td>
+<td style="text-align:right">_transform, _flush</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;&#x4F60;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#x662F;&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x8C03;&#x7528;&#x4E0A;&#x6587;&#x7684;&#x9762;&#x5411;&#x6D41;&#x6D88;&#x8D39;&#x8005;&#x7684;API&#x3002;&#x5426;&#x5219;&#xFF0C;&#x4F60;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x6D88;&#x8D39;&#x4F60;&#x7684;&#x6D41;&#x63A5;&#x53E3;&#x65F6;&#x53EF;&#x80FD;&#x6709;&#x6F5C;&#x5728;&#x7684;&#x526F;&#x4F5C;&#x7528;&#x3002;</p>
+<h4 id="class-streamreadable">Class: stream.Readable</h4>
+<p><code>stream.Readable</code>&#x662F;&#x4E00;&#x4E2A;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x5E95;&#x5C42;&#x7684;<code>_read(size)</code>&#x65B9;&#x6CD5;&#x7684;&#x62BD;&#x8C61;&#x7C7B;&#x3002;</p>
+<p>&#x8BF7;&#x53C2;&#x9605;&#x4E0A;&#x6587;&#x7684;&#x9762;&#x5411;&#x6D41;&#x6D88;&#x8D39;&#x8005;&#x7684;API&#x6765;&#x4E86;&#x89E3;&#x5982;&#x4F55;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x6D88;&#x8D39;&#x6D41;&#x3002;&#x4EE5;&#x4E0B;&#x89E3;&#x91CA;&#x4E86;&#x5982;&#x679C;&#x5728;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x5B9E;&#x73B0;&#x53EF;&#x8BFB;&#x6D41;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;&#x4E00;&#x4E2A;&#x8BA1;&#x6570;&#x6D41;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x8BFB;&#x6D41;&#x7684;&#x57FA;&#x7840;&#x4F8B;&#x5B50;&#x3002;&#x5B83;&#x4ECE;1&#x5230;1&#xFF0C;000&#xFF0C;000&#x9012;&#x589E;&#x6570;&#x5B57;&#xFF0C;&#x7136;&#x540E;&#x7ED3;&#x675F;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> Readable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Readable;
+<span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+util.inherits(Counter, Readable);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Counter</span>(<span class="hljs-params">opt</span>) </span>{
+  Readable.call(<span class="hljs-keyword">this</span>, opt);
+  <span class="hljs-keyword">this</span>._max = <span class="hljs-number">1000000</span>;
+  <span class="hljs-keyword">this</span>._index = <span class="hljs-number">1</span>;
+}
+
+Counter.prototype._read = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> i = <span class="hljs-keyword">this</span>._index++;
+  <span class="hljs-keyword">if</span> (i &gt; <span class="hljs-keyword">this</span>._max)
+    <span class="hljs-keyword">this</span>.push(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">var</span> str = <span class="hljs-string">&apos;&apos;</span> + i;
+    <span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> Buffer(str, <span class="hljs-string">&apos;ascii&apos;</span>);
+    <span class="hljs-keyword">this</span>.push(buf);
+  }
+};
+</code></pre>
+<p>&#x4F8B;&#x5B50;&#xFF1A;&#x7B80;&#x5355;&#x534F;&#x8BAE; v1 &#xFF08;&#x6B21;&#x4F18;&#xFF09;</p>
+<p>&#x8FD9;&#x7C7B;&#x4F3C;&#x4E8E;&#x4E0A;&#x6587;&#x4E2D;&#x63D0;&#x5230;&#x7684;<code>parseHeader</code>&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x6D41;&#x5B9E;&#x73B0;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x6CE8;&#x610F;&#x8FD9;&#x4E2A;&#x5B9E;&#x73B0;&#x4E0D;&#x5C06;&#x6D41;&#x5165;&#x7684;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x66F4;&#x597D;&#x5730;&#x5B9E;&#x73B0;&#x662F;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x8F6C;&#x6362;&#x6D41;&#x5B9E;&#x73B0;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#x66F4;&#x597D;&#x5730;&#x5B9E;&#x73B0;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// A parser for a simple data protocol.</span>
+<span class="hljs-comment">// The &quot;header&quot; is a JSON object, followed by 2 \n characters, and</span>
+<span class="hljs-comment">// then a message body.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> This can be done more simply as a Transform stream!</span>
+<span class="hljs-comment">// Using Readable directly for this is sub-optimal.  See the</span>
+<span class="hljs-comment">// alternative example below under the Transform section.</span>
+
+<span class="hljs-keyword">var</span> Readable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Readable;
+<span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.inherits(SimpleProtocol, Readable);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SimpleProtocol</span>(<span class="hljs-params">source, options</span>) </span>{
+  <span class="hljs-keyword">if</span> (!(<span class="hljs-keyword">this</span> <span class="hljs-keyword">instanceof</span> SimpleProtocol))
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> SimpleProtocol(source, options);
+
+  Readable.call(<span class="hljs-keyword">this</span>, options);
+  <span class="hljs-keyword">this</span>._inBody = <span class="hljs-literal">false</span>;
+  <span class="hljs-keyword">this</span>._sawFirstCr = <span class="hljs-literal">false</span>;
+
+  <span class="hljs-comment">// source is a readable stream, such as a socket or file</span>
+  <span class="hljs-keyword">this</span>._source = source;
+
+  <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+  source.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    self.push(<span class="hljs-literal">null</span>);
+  });
+
+  <span class="hljs-comment">// give it a kick whenever the source is readable</span>
+  <span class="hljs-comment">// read(0) will not consume any bytes</span>
+  source.on(<span class="hljs-string">&apos;readable&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    self.read(<span class="hljs-number">0</span>);
+  });
+
+  <span class="hljs-keyword">this</span>._rawHeader = [];
+  <span class="hljs-keyword">this</span>.header = <span class="hljs-literal">null</span>;
+}
+
+SimpleProtocol.prototype._read = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">n</span>) </span>{
+  <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._inBody) {
+    <span class="hljs-keyword">var</span> chunk = <span class="hljs-keyword">this</span>._source.read();
+
+    <span class="hljs-comment">// if the source doesn&apos;t have data, we don&apos;t have data yet.</span>
+    <span class="hljs-keyword">if</span> (chunk === <span class="hljs-literal">null</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.push(<span class="hljs-string">&apos;&apos;</span>);
+
+    <span class="hljs-comment">// check if the chunk has a \n\n</span>
+    <span class="hljs-keyword">var</span> split = <span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; chunk.length; i++) {
+      <span class="hljs-keyword">if</span> (chunk[i] === <span class="hljs-number">10</span>) { <span class="hljs-comment">// &apos;\n&apos;</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._sawFirstCr) {
+          split = i;
+          <span class="hljs-keyword">break</span>;
+        } <span class="hljs-keyword">else</span> {
+          <span class="hljs-keyword">this</span>._sawFirstCr = <span class="hljs-literal">true</span>;
+        }
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">this</span>._sawFirstCr = <span class="hljs-literal">false</span>;
+      }
+    }
+
+    <span class="hljs-keyword">if</span> (split === <span class="hljs-number">-1</span>) {
+      <span class="hljs-comment">// still waiting for the \n\n</span>
+      <span class="hljs-comment">// stash the chunk, and try again.</span>
+      <span class="hljs-keyword">this</span>._rawHeader.push(chunk);
+      <span class="hljs-keyword">this</span>.push(<span class="hljs-string">&apos;&apos;</span>);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">this</span>._inBody = <span class="hljs-literal">true</span>;
+      <span class="hljs-keyword">var</span> h = chunk.slice(<span class="hljs-number">0</span>, split);
+      <span class="hljs-keyword">this</span>._rawHeader.push(h);
+      <span class="hljs-keyword">var</span> header = Buffer.concat(<span class="hljs-keyword">this</span>._rawHeader).toString();
+      <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">this</span>.header = <span class="hljs-built_in">JSON</span>.parse(header);
+      } <span class="hljs-keyword">catch</span> (er) {
+        <span class="hljs-keyword">this</span>.emit(<span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;invalid simple protocol data&apos;</span>));
+        <span class="hljs-keyword">return</span>;
+      }
+      <span class="hljs-comment">// now, because we got some extra data, unshift the rest</span>
+      <span class="hljs-comment">// back into the read queue so that our consumer will see it.</span>
+      <span class="hljs-keyword">var</span> b = chunk.slice(split);
+      <span class="hljs-keyword">this</span>.unshift(b);
+
+      <span class="hljs-comment">// and let them know that we are done parsing the header.</span>
+      <span class="hljs-keyword">this</span>.emit(<span class="hljs-string">&apos;header&apos;</span>, <span class="hljs-keyword">this</span>.header);
+    }
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// from there on, just provide the data to our consumer.</span>
+    <span class="hljs-comment">// careful not to push(null), since that would indicate EOF.</span>
+    <span class="hljs-keyword">var</span> chunk = <span class="hljs-keyword">this</span>._source.read();
+    <span class="hljs-keyword">if</span> (chunk) <span class="hljs-keyword">this</span>.push(chunk);
+  }
+};
+
+<span class="hljs-comment">// Usage:</span>
+<span class="hljs-comment">// var parser = new SimpleProtocol(source);</span>
+<span class="hljs-comment">// Now parser is a readable stream that will emit &apos;header&apos;</span>
+<span class="hljs-comment">// with the parsed header data.</span>
+</code></pre>
+<h4 id="new-streamreadableoptions">new stream.Readable([options])</h4>
+<ul>
+<li><strong>options Object</strong><ul>
+<li>highWaterMark Number &#x5728;&#x505C;&#x6B62;&#x4ECE;&#x5E95;&#x5C42;&#x8D44;&#x6E90;&#x8BFB;&#x53D6;&#x4E4B;&#x524D;&#xFF0C;&#x5728;&#x5185;&#x90E8;&#x7F13;&#x51B2;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x6700;&#x5927;&#x5B57;&#x8282;&#x6570;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;16kb&#xFF0C;&#x5BF9;&#x4E8E;<code>objectMode</code>&#x5219;&#x662F;16</li>
+<li>encoding String &#x5982;&#x679C;&#x88AB;&#x6307;&#x5B9A;&#xFF0C;&#x90A3;&#x4E48;&#x7F13;&#x51B2;&#x5C06;&#x88AB;&#x5229;&#x7528;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>null</code></li>
+<li>objectMode Boolean &#x662F;&#x5426;&#x8BE5;&#x6D41;&#x5E94;&#x8BE5;&#x8868;&#x73B0;&#x5982;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6D41;&#x3002;&#x610F;&#x601D;&#x662F;&#x8BF4;<code>stream.read(n)</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x5BF9;&#x8C61;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5927;&#x5C0F;&#x4E3A;<code>n</code>&#x7684;<code>Buffer</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code></li>
+</ul>
+</li>
+</ul>
+<p>&#x5728;&#x5B9E;&#x73B0;&#x4E86;<code>Readable</code>&#x7C7B;&#x7684;&#x7C7B;&#x4E2D;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x8C03;&#x7528;&#x4E86;<code>Readable</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x6837;&#x7F13;&#x51B2;&#x8BBE;&#x7F6E;&#x624D;&#x80FD;&#x88AB;&#x6B63;&#x786E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<h4 id="readablereadsize">readable._read(size)</h4>
+<ul>
+<li>size Number &#x5F02;&#x6B65;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x5B57;&#x8282;&#x6570;</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x8981;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x3002;&#x5B83;&#x5E94;&#x8BE5;&#x88AB;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x4EC5;&#x88AB;<code>Readable</code>&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x6240;&#x6709;&#x7684;&#x53EF;&#x8BFB;&#x6D41;&#x90FD;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7528;&#x6765;&#x4ECE;&#x5E95;&#x5C42;&#x8D44;&#x6E90;&#x4E2D;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6709;&#x4E00;&#x4E2A;&#x4E0B;&#x5212;&#x7EBF;&#x524D;&#x7F00;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5BF9;&#x4E8E;&#x7C7B;&#x662F;&#x5185;&#x90E8;&#x7684;&#xFF0C;&#x5E76;&#x5E94;&#x8BE5;&#x76F4;&#x63A5;&#x88AB;&#x7528;&#x6237;&#x7684;&#x7A0B;&#x5E8F;&#x8C03;&#x7528;&#x3002;&#x4F60;&#x5E94;&#x5728;&#x4F60;&#x7684;&#x62D3;&#x5C55;&#x7C7B;&#x91CC;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5F53;&#x6570;&#x636E;&#x53EF;&#x7528;&#x65F6;&#xFF0C;&#x8C03;&#x7528;<code>readable.push(chunk)</code>&#x65B9;&#x6CD5;&#x5C06;&#x4E4B;&#x63A8;&#x5165;&#x8BFB;&#x53D6;&#x961F;&#x5217;&#x3002;&#x5982;&#x679C;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;<code>false</code>&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5E94;&#x5F53;&#x505C;&#x6B62;&#x8BFB;&#x53D6;&#x3002;&#x5F53;<code>_read</code>&#x65B9;&#x6CD5;&#x518D;&#x6B21;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4F60;&#x5E94;&#x5F53;&#x63A8;&#x5165;&#x66F4;&#x591A;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x53C2;&#x6570;<code>size</code>&#x4EC5;&#x4F5C;&#x67E5;&#x8BE2;&#x3002;&#x201C;read&#x201D;&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x7684;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x6765;&#x77E5;&#x9053;&#x5E94;&#x5F53;&#x6293;&#x53D6;&#x591A;&#x5C11;&#x6570;&#x636E;&#xFF1B;&#x5176;&#x4F59;&#x4E0E;&#x4E4B;&#x65E0;&#x5173;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;TCP&#x6216;TLS&#xFF0C;&#x5219;&#x53EF;&#x5FFD;&#x7565;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x5728;&#x53EF;&#x7528;&#x65F6;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x201C;&#x7B49;&#x5230;&#x201D;<code>size</code>&#x4E2A;&#x5B57;&#x8282;&#x53EF;&#x7528;&#x65F6;&#x624D;&#x8C03;&#x7528;<code>stream.push(chunk)</code>&#x3002;</p>
+<h4 id="readablepushchunk-encoding">readable.push(chunk[, encoding])</h4>
+<ul>
+<li>chunk Buffer | null | String &#x88AB;&#x63A8;&#x5165;&#x8BFB;&#x53D6;&#x961F;&#x5217;&#x7684;&#x6570;&#x636E;&#x5757;</li>
+<li>encoding String &#x5B57;&#x7B26;&#x4E32;&#x6570;&#x636E;&#x5757;&#x7684;&#x7F16;&#x7801;&#x3002;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;<code>Buffer</code>&#x7F16;&#x7801;&#xFF0C;&#x5982;&apos;utf8&apos;&#x6216;&apos;ascii&apos;</li>
+<li>return Boolean &#x662F;&#x5426;&#x5E94;&#x8BE5;&#x7EE7;&#x7EED;&#x63A8;&#x5165;</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5E94;&#x8BE5;&#x88AB;<code>Readable</code>&#x6D41;&#x7684;&#x5B9E;&#x73B0;&#x8005;&#x8C03;&#x7528;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6D88;&#x8D39;&#x8005;&#x3002;</p>
+<p><code>_read()</code>&#x51FD;&#x6570;&#x5728;&#x81F3;&#x5C11;&#x8C03;&#x7528;&#x4E00;&#x6B21;<code>push(chunk)</code>&#x65B9;&#x6CD5;&#x524D;&#xFF0C;&#x4E0D;&#x4F1A;&#x88AB;&#x518D;&#x6B21;&#x8C03;&#x7528;&#x3002;</p>
+<p><code>Readable</code>&#x7C7B;&#x901A;&#x8FC7;&#x5728;<code>readable</code>&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x8C03;&#x7528;<code>read()</code>&#x65B9;&#x6CD5;&#x5C06;&#x6570;&#x636E;&#x63A8;&#x5165; &#x4E4B;&#x540E;&#x7528;&#x4E8E;&#x8BFB;&#x51FA;&#x6570;&#x636E;&#x7684;&#x8BFB;&#x53D6;&#x961F;&#x5217; &#x6765;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p><code>push()</code>&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x660E;&#x786E;&#x5730;&#x5411;&#x8BFB;&#x53D6;&#x961F;&#x5217;&#x4E2D;&#x63D2;&#x5165;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x5B83;&#x7684;&#x53C2;&#x6570;&#x4E3A;<code>null</code>&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x7ED3;&#x675F;&#x4FE1;&#x53F7;&#xFF08;<code>EOF</code>&#xFF09;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;API&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x7075;&#x6D3B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x6B63;&#x5728;&#x5305;&#x88C5;&#x4E00;&#x4E2A;&#x6709;<code>pause/resume</code>&#x673A;&#x5236;&#x548C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x4F4E;&#x7EA7;&#x522B;&#x6E90;&#x3002;&#x90A3;&#x90A3;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x5305;&#x88C5;&#x8FD9;&#x4E9B;&#x4F4E;&#x7EA7;&#x522B;&#x6E90;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// source is an object with readStop() and readStart() methods,</span>
+<span class="hljs-comment">// and an `ondata` member that gets called when it has data, and</span>
+<span class="hljs-comment">// an `onend` member that gets called when the data is over.</span>
+
+util.inherits(SourceWrapper, Readable);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SourceWrapper</span>(<span class="hljs-params">options</span>) </span>{
+  Readable.call(<span class="hljs-keyword">this</span>, options);
+
+  <span class="hljs-keyword">this</span>._source = getLowlevelSourceObject();
+  <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+
+  <span class="hljs-comment">// Every time there&apos;s data, we push it into the internal buffer.</span>
+  <span class="hljs-keyword">this</span>._source.ondata = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunk</span>) </span>{
+    <span class="hljs-comment">// if push() returns false, then we need to stop reading from source</span>
+    <span class="hljs-keyword">if</span> (!self.push(chunk))
+      self._source.readStop();
+  };
+
+  <span class="hljs-comment">// When the source ends, we push the EOF-signaling `null` chunk</span>
+  <span class="hljs-keyword">this</span>._source.onend = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    self.push(<span class="hljs-literal">null</span>);
+  };
+}
+
+<span class="hljs-comment">// _read will be called when the stream wants to pull more data in</span>
+<span class="hljs-comment">// the advisory size argument is ignored in this case.</span>
+SourceWrapper.prototype._read = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">size</span>) </span>{
+  <span class="hljs-keyword">this</span>._source.readStart();
+};
+</code></pre>
+<h4 id="class-streamwritable">Class: stream.Writable</h4>
+<p><code>stream.Writable</code>&#x662F;&#x4E00;&#x4E2A;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x5E95;&#x5C42;&#x7684;<code>_write(chunk, encoding, callback)</code>&#x65B9;&#x6CD5;&#x7684;&#x62BD;&#x8C61;&#x7C7B;&#x3002;</p>
+<p>&#x8BF7;&#x53C2;&#x9605;&#x4E0A;&#x6587;&#x7684;&#x9762;&#x5411;&#x6D41;&#x6D88;&#x8D39;&#x8005;&#x7684;API&#x6765;&#x4E86;&#x89E3;&#x5982;&#x4F55;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x6D88;&#x8D39;&#x6D41;&#x3002;&#x4EE5;&#x4E0B;&#x89E3;&#x91CA;&#x4E86;&#x5982;&#x679C;&#x5728;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x5B9E;&#x73B0;&#x53EF;&#x5199;&#x6D41;&#x3002;</p>
+<h4 id="new-streamwritableoptions">new stream.Writable([options])</h4>
+<ul>
+<li><strong>options Object</strong><ul>
+<li>highWaterMark Number <code>write()</code>&#x65B9;&#x6CD5;&#x5F00;&#x59CB;&#x8FD4;&#x56DE;<code>false</code>&#x7684;&#x7F13;&#x51B2;&#x7EA7;&#x522B;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;16kb&#xFF0C;&#x5BF9;&#x4E8E;<code>objectMode</code>&#x6D41;&#x5219;&#x662F;<code>16</code></li>
+<li>decodeStrings Boolean &#x662F;&#x5426;&#x5728;&#x4F20;&#x9012;&#x7ED9;<code>write()</code>&#x65B9;&#x6CD5;&#x524D;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x89E3;&#x7801;&#x6210;<code>Buffer</code>&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>true</code></li>
+<li>objectMode Boolean &#x662F;&#x5426;<code>write(anyObj)</code>&#x4E3A;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x64CD;&#x4F5C;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x4F60;&#x53EF;&#x4EE5;&#x5199;&#x5165;&#x4EFB;&#x610F;&#x6570;&#x636E;&#x800C;&#x4E0D;&#x4EC5;&#x662F;<code>Buffer</code>&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x636E;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code></li>
+</ul>
+</li>
+</ul>
+<p>&#x5728;&#x5B9E;&#x73B0;&#x4E86;<code>Writable</code>&#x7C7B;&#x7684;&#x7C7B;&#x4E2D;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x8C03;&#x7528;&#x4E86;<code>Writable</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x6837;&#x7F13;&#x51B2;&#x8BBE;&#x7F6E;&#x624D;&#x80FD;&#x88AB;&#x6B63;&#x786E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<h4 id="writablewritechunk-encoding-callback">writable._write(chunk, encoding, callback)</h4>
+<ul>
+<li>chunk Buffer | String &#x5C06;&#x8981;&#x88AB;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x5757;&#x3002;&#x9664;&#x975E;<code>decodeStrings</code>&#x914D;&#x7F6E;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;<code>false</code>&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x4E00;&#x76F4;&#x662F;&#x4E00;&#x4E2A;<code>buffer</code></li>
+<li>encoding String &#x5982;&#x679C;&#x6570;&#x636E;&#x5757;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x5C31;&#x662F;&#x7F16;&#x7801;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;<code>buffer</code>&#xFF0C;&#x90A3;&#x4E48;&#x5219;&#x4F1A;&#x5FFD;&#x7565;&#x5B83;</li>
+<li>callback Function &#x5F53;&#x4F60;&#x5904;&#x7406;&#x5B8C;&#x7ED9;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x5757;&#x540E;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;</li>
+</ul>
+<p>&#x6240;&#x6709;&#x7684;<code>Writable</code>&#x6D41;&#x7684;&#x5B9E;&#x73B0;&#x90FD;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;<code>_write()</code>&#x65B9;&#x6CD5;&#x6765;&#x7ED9;&#x5E95;&#x5C42;&#x8D44;&#x6E90;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x3002;&#x5B83;&#x5E94;&#x8BE5;&#x88AB;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x4EC5;&#x88AB;<code>Writable</code>&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x7684;<code>callback(error)</code>&#x6A21;&#x5F0F;&#x6765;&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x5199;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#x6216;&#x53D1;&#x751F;&#x4E86;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x9009;&#x9879;&#x4E2D;&#x8BBE;&#x7F6E;&#x4E86;<code>decodeStrings</code>&#x6807;&#x5FD7;&#xFF0C;&#x90A3;&#x4E48;&#x6570;&#x636E;&#x5757;&#x5C06;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#xFF0C;&#x7F16;&#x7801;&#x5C06;&#x4F1A;&#x51B3;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x4E2A;&#x662F;&#x4E3A;&#x4E86;&#x5E2E;&#x52A9;&#x5904;&#x7406;&#x7F16;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x5730;&#x5C06;<code>decodeStrings</code>&#x9009;&#x9879;&#x8BBE;&#x4E3A;<code>false</code>&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x4F1A;&#x5B89;&#x5168;&#x5730;&#x5FFD;&#x7565;<code>encoding</code>&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x6570;&#x636E;&#x5757;&#x662F;<code>Buffer</code>&#x5F62;&#x5F0F;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6709;&#x4E00;&#x4E2A;&#x4E0B;&#x5212;&#x7EBF;&#x524D;&#x7F00;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5BF9;&#x4E8E;&#x7C7B;&#x662F;&#x5185;&#x90E8;&#x7684;&#xFF0C;&#x5E76;&#x5E94;&#x8BE5;&#x76F4;&#x63A5;&#x88AB;&#x7528;&#x6237;&#x7684;&#x7A0B;&#x5E8F;&#x8C03;&#x7528;&#x3002;&#x4F60;&#x5E94;&#x5728;&#x4F60;&#x7684;&#x62D3;&#x5C55;&#x7C7B;&#x91CC;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<h4 id="writablewritevchunks-callback">writable._writev(chunks, callback)</h4>
+<ul>
+<li>chunks Array &#x5C06;&#x88AB;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x5757;&#x6570;&#x7EC4;&#x3002;&#x5176;&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x90FD;&#x6709;&#x5982;&#x4E0B;&#x683C;&#x5F0F;&#xFF1A;<code>{ chunk: ..., encoding: ... }</code></li>
+<li>callback Function &#x5F53;&#x4F60;&#x5904;&#x7406;&#x5B8C;&#x7ED9;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x5757;&#x540E;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x3002;&#x5B83;&#x5E94;&#x8BE5;&#x88AB;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x4EC5;&#x88AB;<code>Writable</code>&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5BF9;&#x4E8E;&#x4F60;&#x7684;&#x5B9E;&#x73B0;&#x662F;&#x5B8C;&#x5168;&#x53EF;&#x9009;&#x7684;&#x3002;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x5B83;&#x662F;&#x4E0D;&#x5FC5;&#x7684;&#x3002;&#x5982;&#x679C;&#x5B9E;&#x73B0;&#xFF0C;&#x5B83;&#x4F1A;&#x88AB;&#x4EE5;&#x6240;&#x6709;&#x6EDE;&#x7559;&#x5728;&#x5199;&#x5165;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5757;&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="class-streamduplex">Class: stream.Duplex</h4>
+<p>&#x4E00;&#x4E2A;&#x201C;&#x53CC;&#x5DE5;&#x201D;&#x6D41;&#x65E2;&#x662F;&#x53EF;&#x8BFB;&#x7684;&#xFF0C;&#x53C8;&#x662F;&#x53EF;&#x5199;&#x7684;&#x3002;&#x5982;TCP<code>socket</code>&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x548C;&#x4F60;&#x5B9E;&#x73B0;<code>Readable</code>&#x6216;<code>Writable</code>&#x6D41;&#x65F6;&#x4E00;&#x6837;&#xFF0C;<code>stream.Duplex</code>&#x662F;&#x4E00;&#x4E2A;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x5E95;&#x5C42;&#x7684;<code>_read(size)</code>&#x548C;<code>_write(chunk, encoding, callback)</code>&#x65B9;&#x6CD5;&#x7684;&#x62BD;&#x8C61;&#x7C7B;&#x3002;</p>
+<p>&#x7531;&#x4E8E;<code>JavaScript</code>&#x5E76;&#x4E0D;&#x5177;&#x5907;&#x591A;&#x7EE7;&#x627F;&#x80FD;&#x529B;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x662F;&#x7EE7;&#x627F;&#x4E8E;<code>Readable</code>&#x7C7B;&#xFF0C;&#x5E76;&#x5BC4;&#x751F;&#x4E8E;<code>Writable</code>&#x7C7B;&#x3002;&#x6240;&#x4EE5;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x7C7B;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x540C;&#x65F6;&#x5B9E;&#x73B0;&#x4F4E;&#x7EA7;&#x522B;&#x7684;<code>_read(n)</code>&#x65B9;&#x6CD5;&#x548C;&#x4F4E;&#x7EA7;&#x522B;&#x7684;<code>_write(chunk, encoding, callback)</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<h4 id="new-streamduplexoptions">new stream.Duplex(options)</h4>
+<ul>
+<li><strong>options Object</strong> &#x540C;&#x65F6;&#x4F20;&#x9012;&#x7ED9;<code>Writable</code>&#x548C;<code>Readable</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x5E76;&#x4E14;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF1A;<ul>
+<li>allowHalfOpen Boolean &#x9ED8;&#x8BA4;&#x4E3A;<code>true</code>&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;<code>false</code>&#xFF0C;&#x90A3;&#x4E48;&#x6D41;&#x7684;&#x53EF;&#x8BFB;&#x7684;&#x4E00;&#x7AEF;&#x7ED3;&#x675F;&#x65F6;&#x53EF;&#x5199;&#x7684;&#x4E00;&#x7AEF;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x7ED3;&#x675F;&#xFF0C;&#x53CD;&#x4E4B;&#x4EA6;&#x7136;&#x3002;</li>
+<li>readableObjectMode Boolean &#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#xFF0C;&#x4E3A;&#x6D41;&#x7684;&#x53EF;&#x8BFB;&#x7684;&#x4E00;&#x7AEF;&#x8BBE;&#x7F6E;<code>objectMode</code>&#x3002;&#x5F53;<code>objectMode</code>&#x4E3A;<code>true</code>&#x65F6;&#x6CA1;&#x6709;&#x6548;&#x679C;&#x3002;</li>
+<li>writableObjectMode Boolean &#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#xFF0C;&#x4E3A;&#x6D41;&#x7684;&#x53EF;&#x5199;&#x7684;&#x4E00;&#x7AEF;&#x8BBE;&#x7F6E;<code>objectMode</code>&#x3002;&#x5F53;<code>objectMode</code>&#x4E3A;<code>true</code>&#x65F6;&#x6CA1;&#x6709;&#x6548;&#x679C;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x5728;&#x5B9E;&#x73B0;&#x4E86;<code>Duplex</code>&#x7C7B;&#x7684;&#x7C7B;&#x4E2D;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x8C03;&#x7528;&#x4E86;<code>Duplex</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x6837;&#x7F13;&#x51B2;&#x8BBE;&#x7F6E;&#x624D;&#x80FD;&#x88AB;&#x6B63;&#x786E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<h4 id="class-streamtransform">Class: stream.Transform</h4>
+<p>&#x201C;&#x8F6C;&#x6362;&#x201D;&#x6D41;&#x662F;&#x4E00;&#x4E2A;&#x8F93;&#x51FA;&#x4E8E;&#x8F93;&#x5165;&#x5B58;&#x5728;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#x7684;&#x53CC;&#x5DE5;&#x6D41;&#xFF0C;&#x5982;&#x4E00;&#x4E2A;<code>zilib</code>&#x6D41;&#x6216;&#x4E00;&#x4E2A;<code>crypto</code>&#x6D41;&#x3002;</p>
+<p>&#x8F93;&#x51FA;&#x548C;&#x8F93;&#x51FA;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x76F8;&#x540C;&#x7684;&#x6570;&#x636E;&#x5757;&#x6570;&#x6216;&#x540C;&#x65F6;&#x5230;&#x8FBE;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x6D41;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x6570;&#x636E;&#x5757;&#x7684;&#x8F93;&#x51FA;&#x5F53;&#x8F93;&#x5165;&#x7ED3;&#x675F;&#x65F6;&#x3002;&#x4E00;&#x4E2A;<code>zlib</code>&#x6D41;&#x7684;&#x8F93;&#x51FA;&#x6BD4;&#x5176;&#x8F93;&#x5165;&#x5C0F;&#x5F97;&#x591A;&#x6216;&#x5927;&#x5F97;&#x591A;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x5B9E;&#x73B0;<code>_read()</code>&#x65B9;&#x6CD5;&#x548C;<code>_write()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8F6C;&#x6362;&#x6D41;&#x8FD8;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;<code>_transform()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x9009;&#x5730;&#x5B9E;&#x73B0;<code>_flush()</code>&#x65B9;&#x6CD5;&#xFF08;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#xFF09;&#x3002;</p>
+<h4 id="new-streamtransformoptions">new stream.Transform([options])</h4>
+<ul>
+<li>options Object &#x540C;&#x65F6;&#x4F20;&#x9012;&#x7ED9;<code>Writable</code>&#x548C;<code>Readable</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</li>
+</ul>
+<p>&#x5728;&#x5B9E;&#x73B0;&#x4E86;<code>Transform</code>&#x7C7B;&#x7684;&#x7C7B;&#x4E2D;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x8C03;&#x7528;&#x4E86;<code>Transform</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x6837;&#x7F13;&#x51B2;&#x8BBE;&#x7F6E;&#x624D;&#x80FD;&#x88AB;&#x6B63;&#x786E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<h4 id="transformtransformchunk-encoding-callback">transform._transform(chunk, encoding, callback)</h4>
+<ul>
+<li>chunk Buffer | String &#x5C06;&#x8981;&#x88AB;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x5757;&#x3002;&#x9664;&#x975E;<code>decodeStrings</code>&#x914D;&#x7F6E;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;<code>false</code>&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x4E00;&#x76F4;&#x662F;&#x4E00;&#x4E2A;<code>buffer</code></li>
+<li>encoding String &#x5982;&#x679C;&#x6570;&#x636E;&#x5757;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x5C31;&#x662F;&#x7F16;&#x7801;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;buffer&#xFF0C;&#x90A3;&#x4E48;&#x5219;&#x4F1A;&#x5FFD;&#x7565;&#x5B83;</li>
+<li>callback Function &#x5F53;&#x4F60;&#x5904;&#x7406;&#x5B8C;&#x7ED9;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x5757;&#x540E;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x3002;&#x5B83;&#x5E94;&#x8BE5;&#x88AB;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x4EC5;&#x88AB;<code>Transform</code>&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x6240;&#x6709;<code>Transform</code>&#x6D41;&#x7684;&#x5B9E;&#x73B0;&#x90FD;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;<code>_transform</code>&#x65B9;&#x6CD5;&#x6765;&#x63A5;&#x53D7;&#x8F93;&#x5165;&#x548C;&#x4EA7;&#x751F;&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x5728;<code>Transform</code>&#x7C7B;&#x4E2D;&#xFF0C;<code>_transform</code>&#x53EF;&#x4EE5;&#x505A;&#x9700;&#x8981;&#x505A;&#x7684;&#x4EFB;&#x4F55;&#x4E8B;&#xFF0C;&#x5982;&#x5904;&#x7406;&#x9700;&#x8981;&#x5199;&#x5165;&#x7684;&#x5B57;&#x8282;&#xFF0C;&#x5C06;&#x5B83;&#x4EEC;&#x4F20;&#x9012;&#x7ED9;&#x53EF;&#x5199;&#x7AEF;&#xFF0C;&#x5F02;&#x6B65;I/O&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x8C03;&#x7528;<code>transform.push(outputChunk)</code>0&#x6B21;&#x6216;&#x591A;&#x6B21;&#x6765;&#x4ECE;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x5757;&#x4EA7;&#x751F;&#x8F93;&#x51FA;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x60F3;&#x4ECE;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5757;&#x4E2D;&#x8F93;&#x51FA;&#x591A;&#x5C11;&#x6570;&#x636E;&#x4F5C;&#x4E3A;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x4EC5;&#x5F53;&#x76EE;&#x524D;&#x7684;&#x6570;&#x636E;&#x5757;&#x88AB;&#x5B8C;&#x5168;&#x6D88;&#x8D39;&#x540E;&#xFF0C;&#x624D;&#x4F1A;&#x8C03;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x8F93;&#x5165;&#x53EF;&#x80FD;&#x4F1A;&#x6CA1;&#x6709;&#x8F93;&#x51FA;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5C06;&#x6570;&#x636E;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x5165;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x6570;&#x636E;&#x5C06;&#x88AB;&#x4F20;&#x9012;&#x7ED9;<code>push</code>&#x65B9;&#x6CD5;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4E24;&#x4E2A;&#x4F8B;&#x5B50;&#x662F;&#x76F8;&#x7B49;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-js">transform.prototype._transform = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data, encoding, callback</span>) </span>{
+  <span class="hljs-keyword">this</span>.push(data);
+  callback();
+}
+
+transform.prototype._transform = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data, encoding, callback</span>) </span>{
+  callback(<span class="hljs-literal">null</span>, data);
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6709;&#x4E00;&#x4E2A;&#x4E0B;&#x5212;&#x7EBF;&#x524D;&#x7F00;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5BF9;&#x4E8E;&#x7C7B;&#x662F;&#x5185;&#x90E8;&#x7684;&#xFF0C;&#x5E76;&#x5E94;&#x8BE5;&#x76F4;&#x63A5;&#x88AB;&#x7528;&#x6237;&#x7684;&#x7A0B;&#x5E8F;&#x8C03;&#x7528;&#x3002;&#x4F60;&#x5E94;&#x5728;&#x4F60;&#x7684;&#x62D3;&#x5C55;&#x7C7B;&#x91CC;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<h4 id="transformflushcallback">transform._flush(callback)</h4>
+<ul>
+<li>callback Function &#x5F53;&#x4F60;&#x6392;&#x7A7A;&#x4E86;&#x6240;&#x6709;&#x5269;&#x4F59;&#x6570;&#x636E;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x8C03;&#x7528;</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x3002;&#x5B83;&#x5E94;&#x8BE5;&#x88AB;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x4EC5;&#x88AB;<code>Transform</code>&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x5728;&#x4E00;&#x4E9B;&#x60C5;&#x666F;&#x4E2D;&#xFF0C;&#x4F60;&#x7684;&#x8F6C;&#x6362;&#x64CD;&#x4F5C;&#x9700;&#x8981;&#x5728;&#x6D41;&#x7684;&#x672B;&#x5C3E;&#x591A;&#x53D1;&#x751F;&#x4E00;&#x70B9;&#x70B9;&#x6570;&#x636E;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;<code>Zlib</code>&#x538B;&#x7F29;&#x6D41;&#x4F1A;&#x5B58;&#x50A8;&#x4E00;&#x4E9B;&#x5185;&#x90E8;&#x72B6;&#x6001;&#x4EE5;&#x4FBF;&#x5B83;&#x80FD;&#x4F18;&#x5316;&#x538B;&#x7F29;&#x8F93;&#x51FA;&#x3002;&#x4F46;&#x662F;&#x5728;&#x6700;&#x540E;&#xFF0C;&#x5B83;&#x9700;&#x8981;&#x5C3D;&#x53EF;&#x80FD;&#x597D;&#x5F97;&#x5904;&#x7406;&#x8FD9;&#x4E9B;&#x7559;&#x4E0B;&#x7684;&#x4E1C;&#x897F;&#x6765;&#x4F7F;&#x6570;&#x636E;&#x5B8C;&#x6574;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E2D;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;<code>_flush</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4F1A;&#x5728;&#x6700;&#x540E;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5728;&#x6240;&#x6709;&#x5199;&#x5165;&#x6570;&#x636E;&#x88AB;&#x6D88;&#x8D39;&#x3001;&#x4F46;&#x5728;&#x89E6;&#x53D1;<code>end</code>&#x8868;&#x793A;&#x53EF;&#x8BFB;&#x7AEF;&#x5230;&#x8FBE;&#x672B;&#x5C3E;&#x4E4B;&#x524D;&#x3002;&#x548C;<code>_transform</code>&#x4E00;&#x6837;&#xFF0C;&#x53EA;&#x9700;&#x5728;&#x5199;&#x5165;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#x65F6;&#x9002;&#x5F53;&#x5730;&#x8C03;&#x7528;<code>transform.push(chunk)</code>&#x96F6;&#x6216;&#x591A;&#x6B21;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6709;&#x4E00;&#x4E2A;&#x4E0B;&#x5212;&#x7EBF;&#x524D;&#x7F00;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5BF9;&#x4E8E;&#x7C7B;&#x662F;&#x5185;&#x90E8;&#x7684;&#xFF0C;&#x5E76;&#x5E94;&#x8BE5;&#x76F4;&#x63A5;&#x88AB;&#x7528;&#x6237;&#x7684;&#x7A0B;&#x5E8F;&#x8C03;&#x7528;&#x3002;&#x4F60;&#x5E94;&#x5728;&#x4F60;&#x7684;&#x62D3;&#x5C55;&#x7C7B;&#x91CC;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<h4 id="events-finish-&#x548C;-end">Events: &apos;finish&apos; &#x548C; &apos;end&apos;</h4>
+<p><code>finish</code>&#x548C;<code>end</code>&#x4E8B;&#x4EF6;&#x5206;&#x522B;&#x6765;&#x81EA;&#x4E8E;&#x7236;&#x7C7B;<code>Writable</code>&#x548C;<code>Readable</code>&#x3002;<code>finish</code>&#x4E8B;&#x4EF6;&#x5728;<code>end()</code>&#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x4EE5;&#x53CA;&#x6240;&#x6709;&#x7684;&#x8F93;&#x5165;&#x88AB;<code>_transform</code>&#x65B9;&#x6CD5;&#x5904;&#x7406;&#x540E;&#x89E6;&#x53D1;&#x3002;<code>end</code>&#x4E8B;&#x4EF6;&#x5728;&#x6240;&#x6709;&#x7684;&#x5728;<code>_flush</code>&#x65B9;&#x6CD5;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x88AB;&#x8C03;&#x7528;&#x540E;&#x7684;&#x6570;&#x636E;&#x88AB;&#x8F93;&#x51FA;&#x540E;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="example-simpleprotocol-&#x89E3;&#x91CA;&#x5668;-v2">Example: SimpleProtocol &#x89E3;&#x91CA;&#x5668; v2</h4>
+<p>&#x4E0A;&#x6587;&#x4E2D;&#x7684;&#x7B80;&#x5355;&#x534F;&#x8BAE;&#x89E3;&#x91CA;&#x5668;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5730;&#x901A;&#x8FC7;&#x9AD8;&#x7EA7;&#x522B;&#x7684;<code>Transform</code>&#x6D41;&#x66F4;&#x597D;&#x5730;&#x5B9E;&#x73B0;&#x3002;&#x4E0E;&#x4E0A;&#x6587;&#x4F8B;&#x5B50;&#x4E2D;&#x7684;<code>parseHeader</code>&#x548C;<code>SimpleProtocol v1</code>&#x76F8;&#x4F3C;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6CA1;&#x6709;&#x4ECE;&#x53C2;&#x6570;&#x4E2D;&#x63D0;&#x4F9B;&#x8F93;&#x5165;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5B83;&#x5BFC;&#x6D41;&#x81F3;&#x89E3;&#x91CA;&#x5668;&#x4E2D;&#xFF0C;&#x8FD9;&#x66F4;&#x7B26;&#x5408;<code>node.js</code>&#x7684;&#x4F7F;&#x7528;&#x4E60;&#x60EF;&#x3002;</p>
+<pre><code class="lang-j">var util = require(&apos;util&apos;);
+var Transform = require(&apos;stream&apos;).Transform;
+util.inherits(SimpleProtocol, Transform);
+
+function SimpleProtocol(options) {
+  if (!(this instanceof SimpleProtocol))
+    return new SimpleProtocol(options);
+
+  Transform.call(this, options);
+  this._inBody = false;
+  this._sawFirstCr = false;
+  this._rawHeader = [];
+  this.header = null;
+}
+
+SimpleProtocol.prototype._transform = function(chunk, encoding, done) {
+  if (!this._inBody) {
+    // check if the chunk has a \n\n
+    var split = -1;
+    for (var i = 0; i &lt; chunk.length; i++) {
+      if (chunk[i] === 10) { // &apos;\n&apos;
+        if (this._sawFirstCr) {
+          split = i;
+          break;
+        } else {
+          this._sawFirstCr = true;
+        }
+      } else {
+        this._sawFirstCr = false;
+      }
+    }
+
+    if (split === -1) {
+      // still waiting for the \n\n
+      // stash the chunk, and try again.
+      this._rawHeader.push(chunk);
+    } else {
+      this._inBody = true;
+      var h = chunk.slice(0, split);
+      this._rawHeader.push(h);
+      var header = Buffer.concat(this._rawHeader).toString();
+      try {
+        this.header = JSON.parse(header);
+      } catch (er) {
+        this.emit(&apos;error&apos;, new Error(&apos;invalid simple protocol data&apos;));
+        return;
+      }
+      // and let them know that we are done parsing the header.
+      this.emit(&apos;header&apos;, this.header);
+
+      // now, because we got some extra data, emit this first.
+      this.push(chunk.slice(split));
+    }
+  } else {
+    // from there on, just provide the data to our consumer as-is.
+    this.push(chunk);
+  }
+  done();
+};
+
+// Usage:
+// var parser = new SimpleProtocol();
+// source.pipe(parser)
+// Now parser is a readable stream that will emit &apos;header&apos;
+// with the parsed header data.
+</code></pre>
+<h4 id="class-streampassthrough">Class: stream.PassThrough</h4>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;<code>Transform</code>&#x6D41;&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x5C06;&#x8F93;&#x5165;&#x7684;&#x6D41;&#x7B80;&#x5355;&#x5730;&#x4F20;&#x9012;&#x7ED9;&#x8F93;&#x51FA;&#x3002;&#x5B83;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x7528;&#x6765;&#x6F14;&#x793A;&#x548C;&#x6D4B;&#x8BD5;&#xFF0C;&#x4F46;&#x5B83;&#x5728;&#x67D0;&#x4E9B;&#x9700;&#x8981;&#x6784;&#x5EFA;&#x7279;&#x6B8A;&#x6D41;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x80FD;&#x6709;&#x7528;&#x3002;</p>
+<h3 id="&#x7B80;&#x5316;&#x7684;&#x6784;&#x9020;&#x5668;api">&#x7B80;&#x5316;&#x7684;&#x6784;&#x9020;&#x5668;API</h3>
+<p>&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x6784;&#x9020;&#x6D41;&#x800C;&#x4E0D;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#x3002;</p>
+<p>&#x8FD9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x5408;&#x9002;&#x7684;&#x65B9;&#x6CD5;&#x4F5C;&#x4E3A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x53C2;&#x6570;&#x6765;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<h4 id="readable">Readable</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readable = <span class="hljs-keyword">new</span> stream.Readable({
+  read: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">n</span>) </span>{
+    <span class="hljs-comment">// sets this._read under the hood</span>
+  }
+});
+</code></pre>
+<h4 id="writable">Writable</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> writable = <span class="hljs-keyword">new</span> stream.Writable({
+  write: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunk, encoding, next</span>) </span>{
+    <span class="hljs-comment">// sets this._write under the hood</span>
+  }
+});
+
+<span class="hljs-comment">// or</span>
+
+<span class="hljs-keyword">var</span> writable = <span class="hljs-keyword">new</span> stream.Writable({
+  writev: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunks, next</span>) </span>{
+    <span class="hljs-comment">// sets this._writev under the hood</span>
+  }
+});
+</code></pre>
+<h4 id="duplex">Duplex</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> duplex = <span class="hljs-keyword">new</span> stream.Duplex({
+  read: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">n</span>) </span>{
+    <span class="hljs-comment">// sets this._read under the hood</span>
+  },
+  write: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunk, encoding, next</span>) </span>{
+    <span class="hljs-comment">// sets this._write under the hood</span>
+  }
+});
+
+<span class="hljs-comment">// or</span>
+
+<span class="hljs-keyword">var</span> duplex = <span class="hljs-keyword">new</span> stream.Duplex({
+  read: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">n</span>) </span>{
+    <span class="hljs-comment">// sets this._read under the hood</span>
+  },
+  writev: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunks, next</span>) </span>{
+    <span class="hljs-comment">// sets this._writev under the hood</span>
+  }
+});
+</code></pre>
+<h4 id="transform">Transform</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> transform = <span class="hljs-keyword">new</span> stream.Transform({
+  transform: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunk, encoding, next</span>) </span>{
+    <span class="hljs-comment">// sets this._transform under the hood</span>
+  },
+  flush: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">done</span>) </span>{
+    <span class="hljs-comment">// sets this._flush under the hood</span>
+  }
+});
+</code></pre>
+<h3 id="&#x6D41;&#xFF1A;&#x5185;&#x90E8;&#x7EC6;&#x8282;">&#x6D41;&#xFF1A;&#x5185;&#x90E8;&#x7EC6;&#x8282;</h3>
+<h4 id="&#x7F13;&#x51B2;">&#x7F13;&#x51B2;</h4>
+<p><code>Writable</code>&#x6D41;&#x548C;<code>Readable</code>&#x6D41;&#x90FD;&#x4F1A;&#x5206;&#x522B;&#x5728;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x7684;&#x53EB;<code>_writableState.buffer</code>&#x6216;<code>_readableState.buffer</code>&#x7684;&#x5BF9;&#x8C61;&#x91CC;&#x7F13;&#x51B2;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x6F5C;&#x5728;&#x7684;&#x88AB;&#x7F13;&#x51B2;&#x7684;&#x6570;&#x636E;&#x91CF;&#x53D6;&#x51B3;&#x4E8E;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;<code>highWaterMark</code>&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x5728;<code>Readable</code>&#x6D41;&#x4E2D;&#xFF0C;&#x5F53;&#x5176;&#x7684;&#x5B9E;&#x73B0;&#x8C03;&#x7528;<code>stream.push(chunk)</code>&#x65F6;&#x5C31;&#x4F1A;&#x53D1;&#x751F;&#x7F13;&#x51B2;&#x3002;&#x5982;&#x679C;&#x6D41;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x6CA1;&#x6709;&#x8C03;&#x7528;<code>stream.read()</code>&#xFF0C;&#x90A3;&#x4E48;&#x6570;&#x636E;&#x5C31;&#x4F1A;&#x4FDD;&#x7559;&#x5728;&#x5185;&#x90E8;&#x961F;&#x5217;&#x4E2D;&#x76F4;&#x5230;&#x5B83;&#x88AB;&#x6D88;&#x8D39;&#x3002;</p>
+<p>&#x5728;<code>Writable</code>&#x6D41;&#x4E2D;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x91CD;&#x590D;&#x8C03;&#x7528;<code>stream.write(chunk)</code>&#x65F6;&#x5C31;&#x4F1A;&#x53D1;&#x751F;&#x7F13;&#x51B2;&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x5F53;<code>write()</code>&#x8FD4;&#x56DE;<code>false</code>&#x65F6;&#x3002;</p>
+<p>&#x6D41;&#xFF0C;&#x5C24;&#x5176;&#x662F;<code>pipe()</code>&#x65B9;&#x6CD5;&#x7684;&#x521D;&#x8877;&#xFF0C;&#x662F;&#x9650;&#x5236;&#x6570;&#x636E;&#x7684;&#x6EDE;&#x7559;&#x91CF;&#x5728;&#x4E00;&#x4E2A;&#x53EF;&#x63A5;&#x53D7;&#x7684;&#x6C34;&#x5E73;&#xFF0C;&#x8FD9;&#x6837;&#x624D;&#x4F7F;&#x5F97;&#x4E0D;&#x540C;&#x4F20;&#x8F93;&#x901F;&#x5EA6;&#x7684;&#x6765;&#x6E90;&#x548C;&#x76EE;&#x6807;&#x4E0D;&#x4F1A;&#x6DF9;&#x6CA1;&#x53EF;&#x7528;&#x7684;&#x5185;&#x5B58;&#x3002;</p>
+<h4 id="streamread0">stream.read(0)</h4>
+<p>&#x5728;&#x4E00;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x60F3;&#x4E0D;&#x6D88;&#x8D39;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x800C;&#x53BB;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x5E95;&#x5C42;&#x53EF;&#x8BFB;&#x6D41;&#x673A;&#x5236;&#x7684;&#x5237;&#x65B0;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>stream.read(0)</code>&#xFF0C;&#x5B83;&#x603B;&#x662F;&#x8FD4;&#x56DE;<code>null</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5185;&#x90E8;&#x7684;&#x8BFB;&#x7F13;&#x51B2;&#x91CF;&#x5728;<code>highWaterMark</code>&#x4E4B;&#x4E0B;&#xFF0C;&#x5E76;&#x4E14;&#x6D41;&#x6CA1;&#x6709;&#x6B63;&#x5728;&#x8BFB;&#x53D6;&#xFF0C;&#x90A3;&#x4E48;&#x8C03;&#x7528;<code>read(0)</code>&#x5C06;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x4F4E;&#x7EA7;&#x522B;&#x7684;<code>_read</code>&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x51E0;&#x4E4E;&#x6C38;&#x8FDC;&#x6CA1;&#x6709;&#x5FC5;&#x987B;&#x8FD9;&#x4E48;&#x505A;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x5728;<code>node.js</code>&#x7684;<code>Readable</code>&#x6D41;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x4EE3;&#x7801;&#x7684;&#x51E0;&#x5904;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x3002;</p>
+<h4 id="streampush">stream.push(&apos;&apos;)</h4>
+<p>&#x63A8;&#x5165;&#x4E00;&#x4E2A;0&#x5B57;&#x8282;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>Buffer</code>&#xFF08;&#x4E0D;&#x5904;&#x4E8E;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#xFF09;&#x6709;&#x4E00;&#x4E2A;&#x6709;&#x8DA3;&#x7684;&#x526F;&#x4F5C;&#x7528;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;<code>stream.push()</code>&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x5B83;&#x5C06;&#x4F1A;&#x7ED3;&#x675F;&#x8BFB;&#x53D6;&#x8FDB;&#x7A0B;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5B83;&#x4E0D;&#x6DFB;&#x52A0;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x5230;&#x53EF;&#x8BFB;&#x7F13;&#x51B2;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x7528;&#x6237;&#x53EF;&#x6D88;&#x8D39;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x5728;&#x6781;&#x5C11;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x5F53;&#x4E0B;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#xFF0C;&#x4F46;&#x4F60;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x540C;&#x8FC7;&#x8C03;&#x7528;<code>stream.read(0)</code>&#x6765;&#x5F97;&#x77E5;&#x5408;&#x9002;&#x518D;&#x6B21;&#x68C0;&#x67E5;&#x3002;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>stream.push(&apos;&apos;)</code>&#x3002;</p>
+<p>&#x81F3;&#x4ECA;&#x4E3A;&#x6B62;&#xFF0C;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x7684;&#x552F;&#x4E00;&#x4F7F;&#x7528;&#x4E4B;&#x5904;&#x662F;&#x5728;<code>tls.CryptoStream</code>&#x7C7B;&#x4E2D;&#xFF0C;&#x5B83;&#x5C06;&#x5728;<code>node.js</code>&#x7684;1.0&#x7248;&#x672C;&#x4E2D;&#x88AB;&#x5E9F;&#x5F03;&#x3002;&#x5982;&#x679C;&#x4F60;&#x53D1;&#x73B0;&#x4F60;&#x4E0D;&#x5F97;&#x4E0D;&#x4F7F;&#x7528;<code>stream.push(&apos;&apos;)</code>&#xFF0C;&#x8BF7;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x53E6;&#x5916;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x51E0;&#x4E4E;&#x8868;&#x793A;&#x53D1;&#x751F;&#x4E86;&#x67D0;&#x4E9B;&#x53EF;&#x6015;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<h3 id="&#x4E0E;&#x65E7;&#x7248;&#x672C;&#x7684;nodejs&#x7684;&#x517C;&#x5BB9;&#x6027;">&#x4E0E;&#x65E7;&#x7248;&#x672C;&#x7684;<code>Node.js</code>&#x7684;&#x517C;&#x5BB9;&#x6027;</h3>
+<p>&#x5728;<code>Node.js</code>&#x7684;0.10&#x7248;&#x672C;&#x4E4B;&#x524D;&#xFF0C;&#x53EF;&#x8BFB;&#x6D41;&#x63A5;&#x53E3;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x5E76;&#x4E14;&#x529F;&#x80FD;&#x548C;&#x529F;&#x7528;&#x90FD;&#x4E0D;&#x5F3A;&#x3002;</p>
+<ul>
+<li><code>data</code>&#x4E8B;&#x4EF6;&#x4F1A;&#x7ACB;&#x523B;&#x89E6;&#x53D1;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7B49;&#x5F85;&#x4F60;&#x8C03;&#x7528;<code>read()</code>&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;<code>I/O</code>&#x64CD;&#x4F5C;&#x6765;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EA;&#x80FD;&#x5C06;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5728;&#x67D0;&#x4E9B;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x4EE5;&#x9632;&#x6570;&#x636E;&#x6D41;&#x5931;&#x3002;</li>
+<li><code>pause()</code>&#x4EC5;&#x4F9B;&#x67E5;&#x8BE2;&#xFF0C;&#x5E76;&#x4E0D;&#x4FDD;&#x8BC1;&#x751F;&#x6548;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x8FD8;&#x662F;&#x8981;&#x51C6;&#x5907;&#x63A5;&#x6536;<code>data</code>&#x4E8B;&#x4EF6;&#x5728;&#x6D41;&#x5DF2;&#x7ECF;&#x5904;&#x4E8E;&#x6682;&#x505C;&#x6A21;&#x5F0F;&#x4E2D;&#x65F6;&#x3002;</li>
+</ul>
+<p>&#x5728;<code>node.js</code> v1.0 &#x548C;<code>Node.js</code> v0.10&#x4E2D;&#xFF0C;&#x4E0B;&#x6587;&#x6240;&#x8FF0;&#x7684;<code>Readable</code>&#x7C7B;&#x6DFB;&#x52A0;&#x8FDB;&#x6765;&#x3002;&#x4E3A;&#x4E86;&#x5411;&#x540E;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;<code>data</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x88AB;&#x6DFB;&#x52A0;&#x65F6;&#x6216;<code>resume()</code>&#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x53EF;&#x8BFB;&#x6D41;&#x5207;&#x6362;&#x81F3;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#x3002;&#x5176;&#x4F5C;&#x7528;&#x662F;&#xFF0C;&#x5373;&#x4FBF;&#x60A8;&#x4E0D;&#x4F7F;&#x7528;&#x65B0;&#x7684;<code>read()</code>&#x65B9;&#x6CD5;&#x548C;<code>readable</code>&#x4E8B;&#x4EF6;&#xFF0C;&#x60A8;&#x4E5F;&#x4E0D;&#x5FC5;&#x62C5;&#x5FC3;&#x4E22;&#x5931;&#x6570;&#x636E;&#x5757;&#x3002;</p>
+<p>&#x5927;&#x591A;&#x6570;&#x7A0B;&#x5E8F;&#x90FD;&#x4F1A;&#x4FDD;&#x6301;&#x529F;&#x80FD;&#x6B63;&#x5E38;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x4EE5;&#x4E0B;&#x6709;&#x4E00;&#x4E9B;&#x8FB9;&#x754C;&#x60C5;&#x51B5;&#xFF1A;</p>
+<ul>
+<li>&#x6CA1;&#x6709;&#x6DFB;&#x52A0;&#x4EFB;&#x4F55;<code>data</code>&#x4E8B;&#x4EF6;</li>
+<li>&#x4ECE;&#x672A;&#x8C03;&#x7528;<code>resume()</code>&#x65B9;&#x6CD5;</li>
+<li>&#x6D41;&#x6CA1;&#x6709;&#x88AB;&#x5BFC;&#x6D41;&#x81F3;&#x4EFB;&#x4F55;&#x53EF;&#x5199;&#x7684;&#x76EE;&#x6807;</li>
+</ul>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x8003;&#x8651;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// WARNING!  BROKEN!</span>
+net.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">socket</span>) </span>{
+
+  <span class="hljs-comment">// we add an &apos;end&apos; method, but never consume the data</span>
+  socket.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// It will never get here.</span>
+    socket.end(<span class="hljs-string">&apos;I got your message (but didnt read it)\n&apos;</span>);
+  });
+
+}).listen(<span class="hljs-number">1337</span>);
+</code></pre>
+<p>&#x5728;<code>Node.js</code> v0.10&#x524D;&#xFF0C;&#x5230;&#x6765;&#x7684;&#x4FE1;&#x606F;&#x6570;&#x636E;&#x4F1A;&#x88AB;&#x7B80;&#x5355;&#x5730;&#x4E22;&#x5F03;&#x3002;&#x4F46;&#x662F;&#x5728;<code>node.js</code> v1.0 &#x548C;<code>Node.js</code> v0.10&#x540E;&#xFF0C;<code>socket</code>&#x4F1A;&#x88AB;&#x6C38;&#x8FDC;&#x6682;&#x505C;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;&#x8C03;&#x7528;<code>resume()</code>&#x65B9;&#x6CD5;&#x6765;&#x5F00;&#x542F;&#x6570;&#x636E;&#x6D41;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Workaround</span>
+net.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">socket</span>) </span>{
+
+  socket.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    socket.end(<span class="hljs-string">&apos;I got your message (but didnt read it)\n&apos;</span>);
+  });
+
+  <span class="hljs-comment">// start the flow of data, discarding it.</span>
+  socket.resume();
+
+}).listen(<span class="hljs-number">1337</span>);
+</code></pre>
+<p>&#x9664;&#x4E86;&#x65B0;&#x7684;<code>Readable</code>&#x6D41;&#x5207;&#x6362;&#x81F3;&#x6D41;&#x52A8;&#x6A21;&#x5F0F;&#x4E4B;&#x5916;&#xFF0C;&#x5728;v0.10&#x4E4B;&#x524D;&#x7684;&#x6D41;&#x53EF;&#x4EE5;&#x88AB;&#x4F7F;&#x7528;<code>wrap()</code>&#x65B9;&#x6CD5;&#x5305;&#x88F9;&#x3002;</p>
+<h4 id="&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;">&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;</h4>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6D41;&#x4EC5;&#x64CD;&#x4F5C;&#x5B57;&#x7B26;&#x4E32;&#x548C;<code>Buffer</code>&#x3002;</p>
+<p>&#x5904;&#x4E8E;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#x4E2D;&#x7684;&#x6D41;&#x9664;&#x4E86;<code>Buffer</code>&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x5916;&#xFF0C;&#x8FD8;&#x80FD;&#x8BFB;&#x51FA;&#x666E;&#x901A;&#x7684;<code>JavaScirpt</code>&#x503C;&#x3002;</p>
+<p>&#x5904;&#x4E8E;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#x4E2D;&#x7684;&#x53EF;&#x8BFB;&#x6D41;&#x5728;&#x8C03;&#x7528;<code>stream.read(size)</code>&#x540E;&#x53EA;&#x4F1A;&#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x4E0D;&#x8BBA;<code>size</code>&#x53C2;&#x6570;&#x662F;&#x4EC0;&#x4E48;&#x3002;</p>
+<p>&#x5904;&#x4E8E;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#x4E2D;&#x7684;&#x53EF;&#x5199;&#x6D41;&#x603B;&#x662F;&#x5FFD;&#x7565;<code>stream.write(data, encoding)</code>&#x4E2D;&#x7684;<code>encoding</code>&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x5904;&#x4E8E;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#x4E2D;&#x7684;&#x6D41;&#xFF0C;&#x7279;&#x6B8A;&#x503C;<code>null</code>&#x4ECD;&#x7136;&#x4FDD;&#x7559;&#x5B83;&#x7684;&#x7279;&#x6B8A;&#x610F;&#x4E49;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5BF9;&#x4E8E;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#x7684;&#x53EF;&#x8BFB;&#x6D41;&#xFF0C;<code>stream.read()</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>null</code>&#x4ECD;&#x610F;&#x5473;&#x7740;&#x6CA1;&#x6709;&#x66F4;&#x591A;&#x7684;&#x6570;&#x636E;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;<code>stream.push(null)</code>&#x4F1A;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x672B;&#x7AEF;&#x4FE1;&#x53F7;&#xFF08;<code>EOF</code>&#xFF09;&#x3002;</p>
+<p>&#x6838;&#x5FC3;<code>node.js</code>&#x4E2D;&#x6CA1;&#x6709;&#x6D41;&#x662F;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x6A21;&#x5F0F;&#x4EC5;&#x4EC5;&#x4F9B;&#x7528;&#x6237;&#x7684;&#x6D41;&#x5E93;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x4F60;&#x5E94;&#x5F53;&#x5728;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;<code>options</code>&#x53C2;&#x6570;&#x5BF9;&#x8C61;&#x4E2D;&#x8BBE;&#x7F6E;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#x3002;&#x5728;&#x6D41;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x8BBE;&#x7F6E;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#x65F6;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x53CC;&#x5DE5;&#x6D41;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x5F97;&#x901A;&#x8FC7;<code>readableObjectMode</code>&#x548C;<code>writableObjectMode</code>&#x8BBE;&#x7F6E;&#x53EF;&#x8BFB;&#x7AEF;&#x548C;&#x53EF;&#x5199;&#x7AEF;&#x3002;&#x8FD9;&#x4E9B;&#x914D;&#x7F6E;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x901A;&#x8FC7;&#x8F6C;&#x6362;&#x6D41;&#x5B9E;&#x73B0;&#x89E3;&#x91CA;&#x5668;&#x548C;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+<span class="hljs-keyword">var</span> StringDecoder = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;string_decoder&apos;</span>).StringDecoder;
+<span class="hljs-keyword">var</span> Transform = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Transform;
+util.inherits(JSONParseStream, Transform);
+
+<span class="hljs-comment">// Gets \n-delimited JSON string data, and emits the parsed objects</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">JSONParseStream</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">if</span> (!(<span class="hljs-keyword">this</span> <span class="hljs-keyword">instanceof</span> JSONParseStream))
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> JSONParseStream();
+
+  Transform.call(<span class="hljs-keyword">this</span>, { readableObjectMode : <span class="hljs-literal">true</span> });
+
+  <span class="hljs-keyword">this</span>._buffer = <span class="hljs-string">&apos;&apos;</span>;
+  <span class="hljs-keyword">this</span>._decoder = <span class="hljs-keyword">new</span> StringDecoder(<span class="hljs-string">&apos;utf8&apos;</span>);
+}
+
+JSONParseStream.prototype._transform = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chunk, encoding, cb</span>) </span>{
+  <span class="hljs-keyword">this</span>._buffer += <span class="hljs-keyword">this</span>._decoder.write(chunk);
+  <span class="hljs-comment">// split on newlines</span>
+  <span class="hljs-keyword">var</span> lines = <span class="hljs-keyword">this</span>._buffer.split(<span class="hljs-regexp">/\r?\n/</span>);
+  <span class="hljs-comment">// keep the last partial line buffered</span>
+  <span class="hljs-keyword">this</span>._buffer = lines.pop();
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> l = <span class="hljs-number">0</span>; l &lt; lines.length; l++) {
+    <span class="hljs-keyword">var</span> line = lines[l];
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">JSON</span>.parse(line);
+    } <span class="hljs-keyword">catch</span> (er) {
+      <span class="hljs-keyword">this</span>.emit(<span class="hljs-string">&apos;error&apos;</span>, er);
+      <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-comment">// push the parsed object out to the readable consumer</span>
+    <span class="hljs-keyword">this</span>.push(obj);
+  }
+  cb();
+};
+
+JSONParseStream.prototype._flush = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cb</span>) </span>{
+  <span class="hljs-comment">// Just handle any leftover</span>
+  <span class="hljs-keyword">var</span> rem = <span class="hljs-keyword">this</span>._buffer.trim();
+  <span class="hljs-keyword">if</span> (rem) {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">JSON</span>.parse(rem);
+    } <span class="hljs-keyword">catch</span> (er) {
+      <span class="hljs-keyword">this</span>.emit(<span class="hljs-string">&apos;error&apos;</span>, er);
+      <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-comment">// push the parsed object out to the readable consumer</span>
+    <span class="hljs-keyword">this</span>.push(obj);
+  }
+  cb();
+};
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="REPL.html" class="navigation navigation-prev " aria-label="Previous page: REPL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="StringDecoder.html" class="navigation navigation-next " aria-label="Next page: String Decoder">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Stream","level":"1.25","depth":1,"next":{"title":"String Decoder","level":"1.26","depth":1,"path":"StringDecoder.md","ref":"StringDecoder.md","articles":[]},"previous":{"title":"REPL","level":"1.24","depth":1,"path":"REPL.md","ref":"REPL.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"Stream.md","mtime":"2016-06-20T01:36:09.024Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

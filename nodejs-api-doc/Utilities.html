@@ -1,0 +1,1045 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Utilities · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="V8.html" />
+    
+    
+    <link rel="prev" href="URL.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Utilities</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="util">util</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x5728;&#x6A21;&#x5757;<code>&apos;util&apos;</code>&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;<code>require(&apos;util&apos;)</code>&#x6765;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x3002;</p>
+<p><code>util</code>&#x6A21;&#x5757;&#x4E3B;&#x8981;&#x7684;&#x8BBE;&#x8BA1;&#x610F;&#x56FE;&#x662F;&#x6EE1;&#x8DB3;<code>node.js</code>&#x5185;&#x90E8;API&#x7684;&#x9700;&#x8981;&#x3002;&#x4F46;&#x662F;&#x8BB8;&#x591A;&#x5DE5;&#x5177;&#x5BF9;&#x4E8E;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x4E5F;&#x5341;&#x5206;&#x6709;&#x7528;&#x3002;&#x5982;&#x679C;&#x4F60;&#x53D1;&#x73B0;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x4F60;&#x7684;&#x9700;&#x8981;&#xFF0C;&#x90A3;&#x4E48;&#x9F13;&#x52B1;&#x4F60;&#x7F16;&#x5199;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x5177;&#x96C6;&#x3002;&#x6211;&#x4EEC;&#x5BF9;&#x4EFB;&#x4F55;<code>node.js</code>&#x5185;&#x90E8;&#x529F;&#x80FD;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x90FD;&#x4E0D;&#x611F;&#x5174;&#x8DA3;&#x3002;</p>
+<h4 id="utildebuglogsection">util.debuglog(section)</h4>
+<ul>
+<li>section String &#x9700;&#x8981;&#x88AB;&#x8C03;&#x8BD5;&#x7684;&#x7A0B;&#x5E8F;&#x8282;&#x70B9;</li>
+<li>Returns: Function &#x65E5;&#x5FD7;&#x5904;&#x7406;&#x51FD;&#x6570;</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x88AB;&#x7528;&#x6765;&#x5728;<code>NODE_DEBUG</code>&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5B58;&#x5728;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6709;&#x6761;&#x4EF6;&#x5199;&#x5165;<code>stderr</code>&#x7684;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;<code>section</code>&#x540D;&#x51FA;&#x73B0;&#x5728;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x8FD4;&#x56DE;&#x7684;&#x51FD;&#x6570;&#x4E0E;<code>console.error()</code>&#x7C7B;&#x4F3C;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x8FD4;&#x56DE;&#x7A7A;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> debuglog = util.debuglog(<span class="hljs-string">&apos;foo&apos;</span>);
+
+<span class="hljs-keyword">var</span> bar = <span class="hljs-number">123</span>;
+debuglog(<span class="hljs-string">&apos;hello from foo [%d]&apos;</span>, bar);
+</code></pre>
+<p>&#x5982;&#x679C;&#x7A0B;&#x5E8F;&#x5728;<code>NODE_DEBUG=foo</code>&#x73AF;&#x5883;&#x4E0B;&#x8FD0;&#x884C;&#xFF0C;&#x90A3;&#x4E48;&#x8F93;&#x51FA;&#x5C06;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-SHELL">FOO 3245: hello from foo [123]
+</code></pre>
+<p><code>3245</code>&#x662F;&#x8FDB;&#x7A0B;id&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4E0D;&#x4F1A;&#x6253;&#x5370;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x9017;&#x53F7;&#x8BBE;&#x7F6E;&#x591A;&#x4E2A;<code>NODE_DEBUG</code>&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;&#x4F8B;&#x5982;&#xFF0C;<code>NODE_DEBUG=fs,net,tls</code>&#x3002;</p>
+<h4 id="utilformatformat-">util.format(format[, ...])</h4>
+<p>&#x4F7F;&#x7528;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x50CF;<code>printf</code>&#x4E00;&#x6837;&#x7684;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#x5316;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;0&#x4E2A;&#x6216;&#x66F4;&#x591A;&#x5360;&#x4F4D;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x6BCF;&#x4E2A;&#x5360;&#x4F4D;&#x7B26;&#x90FD;&#x88AB;&#x5176;&#x540E;&#x7684;&#x53C2;&#x6570;&#x6240;&#x66FF;&#x6362;&#x3002;&#x652F;&#x6301;&#x7684;&#x5360;&#x4F4D;&#x7B26;&#x6709;&#xFF1A;</p>
+<ul>
+<li>%s - &#x5B57;&#x7B26;&#x4E32;</li>
+<li>%d - &#x6570;&#x5B57;&#xFF08;&#x6574;&#x6570;&#x548C;&#x6D6E;&#x70B9;&#x6570;&#xFF09;</li>
+<li>%j - JSON&#x3002;&#x5982;&#x679C;&#x53C2;&#x6570;&#x5305;&#x542B;&#x5FAA;&#x73AF;&#x5F15;&#x7528;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;<code>&apos;[Circular]&apos;</code>&#x3002;</li>
+<li>%% - &#x5355;&#x72EC;&#x7684;&#x767E;&#x5206;&#x6BD4;&#x7B26;&#x53F7;&#xFF08;<code>&apos;%&apos;</code>&#xFF09;&#xFF0C;&#x5B83;&#x4E0D;&#x6D88;&#x8017;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<p>&#x5982;&#x679C;&#x5360;&#x4F4D;&#x7B26;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5360;&#x4F4D;&#x7B26;&#x5C06;&#x4E0D;&#x88AB;&#x66FF;&#x6362;&#x3002;</p>
+<pre><code class="lang-js">util.format(<span class="hljs-string">&apos;%s:%s&apos;</span>, <span class="hljs-string">&apos;foo&apos;</span>); <span class="hljs-comment">// &apos;foo:%s&apos;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x53C2;&#x6570;&#x591A;&#x4F59;&#x5360;&#x4F4D;&#x7B26;&#xFF0C;&#x90A3;&#x4E48;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#x4F1A;&#x88AB;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x5BF9;&#x4E8E;&#x5BF9;&#x8C61;&#x548C;&#x94FE;&#x63A5;&#xFF0C;&#x4F7F;&#x7528;<code>util.inspect()</code>&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x4EE5;&#x7A7A;&#x683C;&#x8FDE;&#x63A5;&#x3002;</p>
+<pre><code class="lang-js">util.format(<span class="hljs-string">&apos;%s:%s&apos;</span>, <span class="hljs-string">&apos;foo&apos;</span>, <span class="hljs-string">&apos;bar&apos;</span>, <span class="hljs-string">&apos;baz&apos;</span>); <span class="hljs-comment">// &apos;foo:bar baz&apos;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E0D;&#x662F;&#x683C;&#x5F0F;&#x5316;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;<code>util.format()</code>&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4EE5;&#x7A7A;&#x683C;&#x8FDE;&#x63A5;&#x7684;&#x6240;&#x6709;&#x53C2;&#x6570;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x90FD;&#x88AB;&#x8C03;&#x7528;<code>util.inspect()</code>&#x6765;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code class="lang-js">util.format(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>); <span class="hljs-comment">// &apos;1 2 3&apos;</span>
+</code></pre>
+<h4 id="utillogstring">util.log(string)</h4>
+<p>&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;&#x5E26;&#x6709;&#x65F6;&#x95F4;&#x6233;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>).log(<span class="hljs-string">&apos;Timestamped message.&apos;</span>);
+</code></pre>
+<h4 id="utilinspectobject-options">util.inspect(object[, options])</h4>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x4E86;<code>object</code>&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5728;&#x8C03;&#x8BD5;&#x65F6;&#x5F88;&#x6709;&#x7528;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;<code>options</code>&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x88AB;&#x4F20;&#x9012;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x6765;&#x5F71;&#x54CD;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x683C;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><p>showHidden - &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#xFF0C;&#x90A3;&#x4E48;&#x5BF9;&#x8C61;&#x7684;&#x4E0D;&#x53EF;&#x679A;&#x4E3E;&#x5C5E;&#x6027;&#x4E5F;&#x4F1A;&#x88AB;&#x663E;&#x793A;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+</li>
+<li><p>depth - &#x544A;&#x8BC9;<code>inspect</code>&#x683C;&#x5F0F;&#x5316;&#x5BF9;&#x8C61;&#x65F6;&#x9700;&#x8981;&#x9012;&#x5F52;&#x7684;&#x6B21;&#x6570;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x5DE8;&#x5927;&#x7684;&#x590D;&#x6742;&#x5BF9;&#x8C61;&#x5341;&#x5206;&#x6709;&#x7528;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>2</code>&#x3002;&#x4F20;&#x9012;<code>null</code>&#x8868;&#x793A;&#x65E0;&#x9650;&#x9012;&#x5F52;&#x3002;</p>
+</li>
+<li><p>colors - &#x5982;&#x679C;&#x4E3A;<code>true</code>&#xFF0C;&#x90A3;&#x4E48;&#x8F93;&#x51FA;&#x4F1A;&#x5E26;&#x6709;ANSI&#x989C;&#x8272;&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;&#x989C;&#x8272;&#x662F;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#x3002;</p>
+</li>
+<li><p>customInspect - &#x5982;&#x679C;&#x4E3A;<code>false</code>&#xFF0C;&#x90A3;&#x4E48;&#x5B9A;&#x4E49;&#x5728;&#x88AB;&#x68C0;&#x67E5;&#x5BF9;&#x8C61;&#x4E0A;&#x7684;<code>inspect(depth, opts)</code>&#x51FD;&#x6570;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+</li>
+</ul>
+<p>&#x4E00;&#x4E2A;&#x68C0;&#x67E5;<code>util</code>&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+<span class="hljs-built_in">console</span>.log(util.inspect(util, { showHidden: <span class="hljs-literal">true</span>, depth: <span class="hljs-literal">null</span> }));
+</code></pre>
+<p>&#x53C2;&#x6570;&#x503C;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x4E86;&#x5B83;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;<code>inspect(depth, opts)</code>&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#x5B83;&#x4EEC;&#x4F1A;&#x6536;&#x5230;&#x5F53;&#x524D;&#x7684;&#x9012;&#x5F52;&#x6DF1;&#x5EA6;&#x503C;&#xFF0C;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x4F20;&#x9012;&#x7ED9;<code>util.inspect()</code>&#x7684;&#x9009;&#x9879;&#x3002;</p>
+<h5 id="&#x81EA;&#x5B9A;&#x4E49;utilinspect&#x989C;&#x8272;">&#x81EA;&#x5B9A;&#x4E49;<code>util.inspect</code>&#x989C;&#x8272;</h5>
+<p><code>util.inspect</code>&#x7684;&#x6709;&#x989C;&#x8272;&#x7684;&#x8F93;&#x51FA;&#xFF08;&#x5982;&#x679C;&#x542F;&#x7528;&#xFF09;&#x53EF;&#x4EE5;&#x5168;&#x5C40;&#x7684;&#x901A;&#x8FC7;<code>util.inspect.styles</code>&#x548C;<code>util.inspect.colors</code>&#x5BF9;&#x8C61;&#x6765;&#x81EA;&#x5B9A;&#x4E49;&#x3002;</p>
+<p><code>util.inspect.styles</code>&#x662F;&#x901A;&#x8FC7;<code>util.inspect.colors</code>&#x8BBE;&#x7F6E;&#x6BCF;&#x4E2A;&#x98CE;&#x683C;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x7684;&#x6620;&#x5C04;&#x3002;&#x9AD8;&#x4EAE;&#x98CE;&#x683C;&#x548C;&#x5B83;&#x4EEC;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>number (yellow) boolean (yellow) string (green) date (magenta) regexp (red) null (bold) undefined (grey) special</code>&#x3002;&#x8FD9;&#x65F6;&#x7684;&#x552F;&#x4E00;&#x65B9;&#x6CD5;(cyan) * <code>name (intentionally no styling)</code>&#x3002;</p>
+<p>&#x9884;&#x5B9A;&#x4E49;&#x989C;&#x8272;&#x6709;<code>white, grey, black, blue, cyan, green, magenta, red &#x548C; yellow</code>&#x3002;&#x4ED6;&#x4EEC;&#x90FD;&#x662F;<code>bold</code>&#xFF0C;<code>italic</code>&#xFF0C;<code>underline</code>&#x548C;<code>inverse</code>&#x4EE3;&#x7801;&#x3002;</p>
+<h5 id="&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x7684;inspect&#x51FD;&#x6570;">&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x7684;<code>inspect()</code>&#x51FD;&#x6570;</h5>
+<p>&#x5BF9;&#x8C61;&#x4E5F;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;<code>inspect(depth)</code>&#x51FD;&#x6570;&#xFF0C;<code>util.inspect()</code>&#x5C06;&#x4F1A;&#x8C03;&#x7528;&#x5B83;&#xFF0C;&#x5E76;&#x4E14;&#x8F93;&#x51FA;&#x5B83;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+<span class="hljs-keyword">var</span> obj = { name: <span class="hljs-string">&apos;nate&apos;</span> };
+obj.inspect = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">depth</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;{&apos;</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos;}&apos;</span>;
+};
+
+util.inspect(obj);
+  <span class="hljs-comment">// &quot;{nate}&quot;</span>
+</code></pre>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x8FD4;&#x56DE;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x7531;&#x8FD9;&#x4E2A;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x683C;&#x5F0F;&#x5316;&#x800C;&#x6765;&#x7684;&#xFF0C;&#x8FD9;&#x4E5F;<code>JSON.stringify()</code>&#x76F8;&#x4F3C;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> obj = { foo: <span class="hljs-string">&apos;this will not show up in the inspect() output&apos;</span> };
+obj.inspect = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">depth</span>) </span>{
+  <span class="hljs-keyword">return</span> { bar: <span class="hljs-string">&apos;baz&apos;</span> };
+};
+
+util.inspect(obj);
+  <span class="hljs-comment">// &quot;{ bar: &apos;baz&apos; }&quot;</span>
+</code></pre>
+<h4 id="utilisarrayobject">util.isArray(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p><code>Array.isArray</code>&#x7684;&#x5185;&#x90E8;&#x522B;&#x540D;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isArray([])
+  <span class="hljs-comment">// true</span>
+util.isArray(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>)
+  <span class="hljs-comment">// true</span>
+util.isArray({})
+  <span class="hljs-comment">// false</span>
+</code></pre>
+<h4 id="utilisregexpobject">util.isRegExp(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isRegExp(<span class="hljs-regexp">/some regexp/</span>)
+  <span class="hljs-comment">// true</span>
+util.isRegExp(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&apos;another regexp&apos;</span>))
+  <span class="hljs-comment">// true</span>
+util.isRegExp({})
+  <span class="hljs-comment">// false</span>
+</code></pre>
+<h4 id="utilisdateobject">util.isDate(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isDate(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>())
+  <span class="hljs-comment">// true</span>
+util.isDate(<span class="hljs-built_in">Date</span>())
+  <span class="hljs-comment">// false (without &apos;new&apos; returns a String)</span>
+util.isDate({})
+  <span class="hljs-comment">// false</span>
+</code></pre>
+<h4 id="utiliserrorobject">util.isError(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x5BF9;&#x8C61;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isError(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>())
+  <span class="hljs-comment">// true</span>
+util.isError(<span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>())
+  <span class="hljs-comment">// true</span>
+util.isError({ name: <span class="hljs-string">&apos;Error&apos;</span>, message: <span class="hljs-string">&apos;an error occurred&apos;</span> })
+  <span class="hljs-comment">// false</span>
+</code></pre>
+<h4 id="utilisbooleanobject">util.isBoolean(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isBoolean(<span class="hljs-number">1</span>)
+  <span class="hljs-comment">// false</span>
+util.isBoolean(<span class="hljs-number">0</span>)
+  <span class="hljs-comment">// false</span>
+util.isBoolean(<span class="hljs-literal">false</span>)
+  <span class="hljs-comment">// true</span>
+</code></pre>
+<h4 id="utilisnullobject">util.isNull(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E25;&#x683C;&#x7684;<code>null</code>&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isNull(<span class="hljs-number">0</span>)
+  <span class="hljs-comment">// false</span>
+util.isNull(<span class="hljs-literal">undefined</span>)
+  <span class="hljs-comment">// false</span>
+util.isNull(<span class="hljs-literal">null</span>)
+  <span class="hljs-comment">// true</span>
+</code></pre>
+<h4 id="utilisnullorundefinedobject">util.isNullOrUndefined(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;<code>null</code>&#x6216;<code>undefined</code>&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isNullOrUndefined(<span class="hljs-number">0</span>)
+  <span class="hljs-comment">// false</span>
+util.isNullOrUndefined(<span class="hljs-literal">undefined</span>)
+  <span class="hljs-comment">// true</span>
+util.isNullOrUndefined(<span class="hljs-literal">null</span>)
+  <span class="hljs-comment">// true</span>
+</code></pre>
+<h4 id="utilisnumberobject">util.isNumber(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isNumber(<span class="hljs-literal">false</span>)
+  <span class="hljs-comment">// false</span>
+util.isNumber(<span class="hljs-literal">Infinity</span>)
+  <span class="hljs-comment">// true</span>
+util.isNumber(<span class="hljs-number">0</span>)
+  <span class="hljs-comment">// true</span>
+util.isNumber(<span class="hljs-literal">NaN</span>)
+  <span class="hljs-comment">// true</span>
+</code></pre>
+<h4 id="utilisstringobject">util.isString(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isString(<span class="hljs-string">&apos;&apos;</span>)
+  <span class="hljs-comment">// true</span>
+util.isString(<span class="hljs-string">&apos;foo&apos;</span>)
+  <span class="hljs-comment">// true</span>
+util.isString(<span class="hljs-built_in">String</span>(<span class="hljs-string">&apos;foo&apos;</span>))
+  <span class="hljs-comment">// true</span>
+util.isString(<span class="hljs-number">5</span>)
+  <span class="hljs-comment">// false</span>
+</code></pre>
+<h4 id="utilissymbolobject">util.isSymbol(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;<code>Symbol</code>&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isSymbol(<span class="hljs-number">5</span>)
+  <span class="hljs-comment">// false</span>
+util.isSymbol(<span class="hljs-string">&apos;foo&apos;</span>)
+  <span class="hljs-comment">// false</span>
+util.isSymbol(<span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&apos;foo&apos;</span>))
+  <span class="hljs-comment">// true</span>
+</code></pre>
+<h4 id="utilisundefinedobject">util.isUndefined(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;<code>undefined</code>&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+<span class="hljs-keyword">var</span> foo;
+util.isUndefined(<span class="hljs-number">5</span>)
+  <span class="hljs-comment">// false</span>
+util.isUndefined(foo)
+  <span class="hljs-comment">// true</span>
+util.isUndefined(<span class="hljs-literal">null</span>)
+  <span class="hljs-comment">// false</span>
+</code></pre>
+<h4 id="utilisobjectobject">util.isObject(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x4E25;&#x683C;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isObject(<span class="hljs-number">5</span>)
+  <span class="hljs-comment">// false</span>
+util.isObject(<span class="hljs-literal">null</span>)
+  <span class="hljs-comment">// false</span>
+util.isObject({})
+  <span class="hljs-comment">// true</span>
+util.isObject(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{})
+  <span class="hljs-comment">// false</span>
+</code></pre>
+<h4 id="utilisfunctionobject">util.isFunction(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Foo</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-keyword">var</span> Bar = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+
+util.isFunction({})
+  <span class="hljs-comment">// false</span>
+util.isFunction(Foo)
+  <span class="hljs-comment">// true</span>
+util.isFunction(Bar)
+  <span class="hljs-comment">// true</span>
+</code></pre>
+<h4 id="utilisprimitiveobject">util.isPrimitive(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x672C;&#x503C;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isPrimitive(<span class="hljs-number">5</span>)
+  <span class="hljs-comment">// true</span>
+util.isPrimitive(<span class="hljs-string">&apos;foo&apos;</span>)
+  <span class="hljs-comment">// true</span>
+util.isPrimitive(<span class="hljs-literal">false</span>)
+  <span class="hljs-comment">// true</span>
+util.isPrimitive(<span class="hljs-literal">null</span>)
+  <span class="hljs-comment">// true</span>
+util.isPrimitive(<span class="hljs-literal">undefined</span>)
+  <span class="hljs-comment">// true</span>
+util.isPrimitive({})
+  <span class="hljs-comment">// false</span>
+util.isPrimitive(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{})
+  <span class="hljs-comment">// false</span>
+util.isPrimitive(<span class="hljs-regexp">/^$/</span>)
+  <span class="hljs-comment">// false</span>
+util.isPrimitive(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>())
+  <span class="hljs-comment">// false</span>
+</code></pre>
+<h4 id="utilisbufferobject">util.isBuffer(object)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;</p>
+</blockquote>
+<p>&#x5982;&#x679C;<code>object</code>&#x662F;&#x4E00;&#x4E2A;<code>buffer</code>&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+util.isBuffer({ length: <span class="hljs-number">0</span> })
+  <span class="hljs-comment">// false</span>
+util.isBuffer([])
+  <span class="hljs-comment">// false</span>
+util.isBuffer(<span class="hljs-keyword">new</span> Buffer(<span class="hljs-string">&apos;hello world&apos;</span>))
+  <span class="hljs-comment">// true</span>
+</code></pre>
+<h4 id="utilinheritsconstructor-superconstructor">util.inherits(constructor, superConstructor)</h4>
+<p>&#x5C06;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6240;&#x6709;&#x7684;&#x539F;&#x578B;&#x65B9;&#x6CD5;&#x7EE7;&#x627F;&#x5230;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x4E2D;&#x3002;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#x5C06;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E00;&#x4E2A;&#x8D85;&#x7C7B;&#x521B;&#x5EFA;&#x7684;&#x65B0;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x8D77;&#x89C1;&#xFF0C;&#x8D85;&#x7C7B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>constructor.super_</code>&#x6765;&#x8BBF;&#x95EE;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;util&quot;</span>);
+<span class="hljs-keyword">var</span> events = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;events&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyStream</span>(<span class="hljs-params"></span>) </span>{
+    events.EventEmitter.call(<span class="hljs-keyword">this</span>);
+}
+
+util.inherits(MyStream, events.EventEmitter);
+
+MyStream.prototype.write = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-keyword">this</span>.emit(<span class="hljs-string">&quot;data&quot;</span>, data);
+}
+
+<span class="hljs-keyword">var</span> stream = <span class="hljs-keyword">new</span> MyStream();
+
+<span class="hljs-built_in">console</span>.log(stream <span class="hljs-keyword">instanceof</span> events.EventEmitter); <span class="hljs-comment">// true</span>
+<span class="hljs-built_in">console</span>.log(MyStream.super_ === events.EventEmitter); <span class="hljs-comment">// true</span>
+
+stream.on(<span class="hljs-string">&quot;data&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Received data: &quot;&apos;</span> + data + <span class="hljs-string">&apos;&quot;&apos;</span>);
+})
+stream.write(<span class="hljs-string">&quot;It works!&quot;</span>); <span class="hljs-comment">// Received data: &quot;It works!&quot;</span>
+</code></pre>
+<h4 id="utildeprecatefunction-string">util.deprecate(function, string)</h4>
+<p>&#x6807;&#x8BB0;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x4E3A;&#x4E0D;&#x5E94;&#x518D;&#x4F7F;&#x7528;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+exports.puts = util.deprecate(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = <span class="hljs-built_in">arguments</span>.length; i &lt; len; ++i) {
+    process.stdout.write(<span class="hljs-built_in">arguments</span>[i] + <span class="hljs-string">&apos;\n&apos;</span>);
+  }
+}, <span class="hljs-string">&apos;util.puts: Use console.log instead&apos;</span>);
+</code></pre>
+<p>&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x88AB;&#x8FD0;&#x884C;&#x65F6;&#x4F1A;&#x53D1;&#x51FA;&#x4E00;&#x6B21;&#x8B66;&#x544A;&#x7684;&#xFF0C;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>--no-deprecation</code>&#x88AB;&#x8BBE;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C06;&#x4E3A;&#x7A7A;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x901A;&#x8FC7;<code>process.noDeprecation</code>&#x5E03;&#x5C14;&#x503C;&#x914D;&#x7F6E;&#xFF08;&#x53EA;&#x6709;&#x5728;&#x6A21;&#x5757;&#x88AB;&#x52A0;&#x8F7D;&#x524D;&#x8BBE;&#x7F6E;&#xFF0C;&#x624D;&#x4F1A;&#x6709;&#x6548;&#xFF09;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>--trace-deprecation</code>&#x88AB;&#x8BBE;&#x7F6E;&#xFF0C;&#x5F53;&#x88AB;&#x5F03;&#x7528;&#x7684;API&#x7B2C;&#x4E00;&#x6B21;&#x88AB;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x4F1A;&#x5411;&#x63A7;&#x5236;&#x53F0;&#x6253;&#x5370;&#x4E00;&#x4E2A;&#x8B66;&#x544A;&#x548C;&#x5806;&#x6808;&#x4FE1;&#x606F;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x901A;&#x8FC7;<code>process.traceDeprecation</code>&#x5E03;&#x5C14;&#x503C;&#x914D;&#x7F6E;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>--throw-deprecation</code>&#x88AB;&#x8BBE;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x88AB;&#x5F03;&#x7528;&#x7684;API&#x88AB;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x5E94;&#x7528;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x901A;&#x8FC7;<code>process.throwDeprecation</code>&#x5E03;&#x5C14;&#x503C;&#x914D;&#x7F6E;&#x3002;</p>
+<p><code>process.throwDeprecation</code>&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#x4E8E;<code>process.traceDeprecation</code>&#x3002;</p>
+<h4 id="utildebugstring">util.debug(string)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;: &#x4F7F;&#x7528;<code>console.error()</code>&#x4EE3;&#x66FF;&#x3002;</p>
+</blockquote>
+<p>&#x88AB;&#x5F03;&#x7528;&#xFF0C;<code>console.error</code>&#x7684;&#x524D;&#x8EAB;&#x3002;</p>
+<h4 id="utilerror">util.error([...])</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;: &#x4F7F;&#x7528;<code>console.error()</code>&#x4EE3;&#x66FF;&#x3002;</p>
+</blockquote>
+<p>&#x88AB;&#x5F03;&#x7528;&#xFF0C;<code>console.error</code>&#x7684;&#x524D;&#x8EAB;&#x3002;</p>
+<h4 id="utilputs">util.puts([...])</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;: &#x4F7F;&#x7528;<code>console.log()</code>&#x4EE3;&#x66FF;&#x3002;</p>
+</blockquote>
+<p>&#x88AB;&#x5F03;&#x7528;&#xFF0C;<code>console.log</code>&#x7684;&#x524D;&#x8EAB;&#x3002;</p>
+<h4 id="utilprint">util.print([...])</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;: &#x4F7F;&#x7528;<code>console.log()</code>&#x4EE3;&#x66FF;&#x3002;</p>
+</blockquote>
+<p>&#x88AB;&#x5F03;&#x7528;&#xFF0C;<code>console.log</code>&#x7684;&#x524D;&#x8EAB;&#x3002;</p>
+<h4 id="utilpumpreadablestream-writablestream-callback">util.pump(readableStream, writableStream[, callback])</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;: &#x4F7F;&#x7528;<code>readableStream.pipe(writableStream)</code>&#x4EE3;&#x66FF;&#x3002;</p>
+</blockquote>
+<p>&#x88AB;&#x5F03;&#x7528;&#xFF0C;<code>stream.pipe()</code>&#x7684;&#x524D;&#x8EAB;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="URL.html" class="navigation navigation-prev " aria-label="Previous page: URL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="V8.html" class="navigation navigation-next " aria-label="Next page: V8">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Utilities","level":"1.32","depth":1,"next":{"title":"V8","level":"1.33","depth":1,"path":"V8.md","ref":"V8.md","articles":[]},"previous":{"title":"URL","level":"1.31","depth":1,"path":"URL.md","ref":"URL.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"Utilities.md","mtime":"2016-06-20T01:36:09.040Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

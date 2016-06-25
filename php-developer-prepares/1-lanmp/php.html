@@ -1,0 +1,759 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>PHP 语言 · PHP 开发者实践</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="website-architecture.html" />
+    
+    
+    <link rel="prev" href="dbserver.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface/">
+            
+                <a href="../preface/">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../preface/why.html">
+            
+                <a href="../preface/why.html">
+            
+                    
+                    源起
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../preface/cross-the-gfw.html">
+            
+                <a href="../preface/cross-the-gfw.html">
+            
+                    
+                    科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    LA/NMP 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="operating-system.html">
+            
+                <a href="operating-system.html">
+            
+                    
+                    Linux 操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="webserver.html">
+            
+                <a href="webserver.html">
+            
+                    
+                    Web 服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="dbserver.html">
+            
+                <a href="dbserver.html">
+            
+                    
+                    数据库服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="php.html">
+            
+                <a href="php.html">
+            
+                    
+                    PHP 语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="website-architecture.html">
+            
+                <a href="website-architecture.html">
+            
+                    
+                    网站系统架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../2-development-environment/">
+            
+                <a href="../2-development-environment/">
+            
+                    
+                    一致性开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../2-development-environment/virtualization.html">
+            
+                <a href="../2-development-environment/virtualization.html">
+            
+                    
+                    虚拟化技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../2-development-environment/amp-packages.html">
+            
+                <a href="../2-development-environment/amp-packages.html">
+            
+                    
+                    集成环境安装包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../2-development-environment/editors.html">
+            
+                <a href="../2-development-environment/editors.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../3-development/">
+            
+                <a href="../3-development/">
+            
+                    
+                    设计 & 开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../3-development/rules.html">
+            
+                <a href="../3-development/rules.html">
+            
+                    
+                    开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../3-development/coding.html">
+            
+                <a href="../3-development/coding.html">
+            
+                    
+                    设计编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../3-development/testing.html">
+            
+                <a href="../3-development/testing.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../3-development/debugging.html">
+            
+                <a href="../3-development/debugging.html">
+            
+                    
+                    诊断与调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../3-development/security.html">
+            
+                <a href="../3-development/security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../3-development/documentation.html">
+            
+                <a href="../3-development/documentation.html">
+            
+                    
+                    文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../4-development-process/">
+            
+                <a href="../4-development-process/">
+            
+                    
+                    过程 & 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../4-development-process/life-cycle-model.html">
+            
+                <a href="../4-development-process/life-cycle-model.html">
+            
+                    
+                    开发过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../4-development-process/version-control.html">
+            
+                <a href="../4-development-process/version-control.html">
+            
+                    
+                    版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../4-development-process/ci.html">
+            
+                <a href="../4-development-process/ci.html">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../4-development-process/deployment.html">
+            
+                <a href="../4-development-process/deployment.html">
+            
+                    
+                    上线部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../5-php-internals/">
+            
+                <a href="../5-php-internals/">
+            
+                    
+                    PHP Internals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../5-php-internals/php-extension.html">
+            
+                <a href="../5-php-internals/php-extension.html">
+            
+                    
+                    PHP 扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../5-php-internals/php-vm.html">
+            
+                <a href="../5-php-internals/php-vm.html">
+            
+                    
+                    PHP 虚拟机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >PHP 语言</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="php">PHP</h1>
+<h2 id="&#x5404;&#x7248;&#x672C;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x6539;&#x52A8;">&#x5404;&#x7248;&#x672C;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x6539;&#x52A8;</h2>
+<ul>
+<li>PHP 5.3 - namespace, closure</li>
+<li>PHP 5.4 - trait, short array syntax<ul>
+<li><a href="http://php.net/manual/en/migration54.new-features.php" target="_blank">http://php.net/manual/en/migration54.new-features.php</a></li>
+</ul>
+</li>
+<li>PHP 5.5 - finally, generator<ul>
+<li><a href="http://php.net/manual/en/migration55.new-features.php" target="_blank">http://php.net/manual/en/migration55.new-features.php</a></li>
+</ul>
+</li>
+<li>PHP 5.6 - constant expressions, variadic function, argument unpacking, phpdbg<ul>
+<li><a href="http://php.net/manual/en/migration56.new-features.php" target="_blank">http://php.net/manual/en/migration56.new-features.php</a></li>
+</ul>
+</li>
+<li>PHP 7.0 - Improved <strong>performance</strong>: PHP 7 is up to twice as fast as PHP 5.6, Consistent 64-bit support, Many fatal errors are now Exceptions, Removal of old and unsupported SAPIs and extensions, The null coalescing operator (??), Combined comparison Operator (&lt;=&gt;), Return Type Declarations, Scalar Type Declarations, Anonymous Classes<ul>
+<li><a href="http://php.net/manual/en/migration70.new-features.php" target="_blank">http://php.net/manual/en/migration70.new-features.php</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="php-&#x547D;&#x4EE4;">PHP &#x547D;&#x4EE4;</h2>
+<h2 id="php-&#x77E5;&#x8BC6;&#x7ED3;&#x6784;">PHP &#x77E5;&#x8BC6;&#x7ED3;&#x6784;</h2>
+<blockquote>
+<ul>
+<li>PHP &#x8BED;&#x8A00;&#x57FA;&#x7840;&#x8BF7;&#x53C2;&#x8003; <a href="http://php.net/manual" target="_blank">PHP &#x5B98;&#x65B9;&#x6587;&#x6863;</a></li>
+<li>&#x5173;&#x4E8E;&#x5B89;&#x5168;&#x3001;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7B49;&#x66F4;&#x591A;&#x5185;&#x5BB9;&#x8BF7;&#x53C2;&#x8003;&#x300C;&#x8BBE;&#x8BA1;&amp;&#x5F00;&#x53D1;&#x300D;&#x76F8;&#x5173;&#x7AE0;&#x8282;</li>
+</ul>
+</blockquote>
+<ul>
+<li><a href="http://www.php-internals.com/book/?p=chapt02/02-01-php-life-cycle-and-zend-engine" target="_blank">PHP &#x751F;&#x547D;&#x5468;&#x671F;</a></li>
+<li><a href="http://php-fpm.org/about/" target="_blank">PHP FPM (FastCGI Process Manager)</a></li>
+<li><a href="http://php.net/manual/en/features.commandline.php" target="_blank">&#x547D;&#x4EE4;&#x884C;&#x6A21;&#x5F0F;</a></li>
+<li>&#x8BED;&#x8A00;&#x7ED3;&#x6784;(Language Construct) - language construct is not a function, cannot be called using <a href="http://php.net/manual/en/functions.variable-functions.php" target="_blank">variable functions</a>, such as echo, print, unset(), isset(), empty(), include, require<ul>
+<li><a href="http://stackoverflow.com/questions/1180184/what-is-the-difference-between-a-language-construct-and-a-built-in-function-in" target="_blank">Stack Overflow: Language Construct vs Function</a></li>
+</ul>
+</li>
+<li>&#x6570;&#x7EC4;&#x64CD;&#x4F5C;&#xFF08;&#x4E2A;&#x4EBA;&#x8BA4;&#x4E3A; PHP &#x4E0E;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x5BF9;&#x6BD4;&#xFF0C;&#x5F3A;&#x5927;&#x7684;&#x6570;&#x7EC4;&#x529F;&#x80FD;&#x5927;&#x5927;&#x7B80;&#x5316;&#x4E86;&#x5F00;&#x53D1;&#x8005;&#x5BF9;&#x6570;&#x636E;&#x7684;&#x7ED3;&#x6784;&#x7C7B;&#x7EC4;&#x7EC7;&#x5DE5;&#x4F5C;&#xFF09;<ul>
+<li>&#x5173;&#x8054;&#x6570;&#x7EC4;</li>
+<li>&#x591A;&#x7EF4;&#x6570;&#x7EC4;</li>
+<li>&#x6392;&#x5E8F;</li>
+</ul>
+</li>
+<li>&#x81EA;&#x52A8;&#x52A0;&#x8F7D; - Autoloading<ul>
+<li>__autoload</li>
+<li>spl_autoload_register()</li>
+</ul>
+</li>
+<li>&#x7C7B;&#x578B;&#x6BD4;&#x8F83; - <a href="http://php.net/manual/en/types.comparisons.php" target="_blank">PHP type comparison tables</a><ul>
+<li>isset(), empty(), is_null(), boolean : if($x) &#x51FD;&#x6570;&#x5BF9;&#x53D8;&#x91CF; $x &#x8FDB;&#x884C;&#x6BD4;&#x8F83;</li>
+<li>&#x677E;&#x6563;&#x6BD4;&#x8F83; == vs &#x4E25;&#x683C;&#x6BD4;&#x8F83; ===</li>
+</ul>
+</li>
+<li><p>&#x9B54;&#x672F;&#x65B9;&#x6CD5; - magic method</p>
+<blockquote>
+<p>PHP &#x5C06;&#x6240;&#x6709;&#x4EE5; __&#xFF08;&#x4E24;&#x4E2A;&#x4E0B;&#x5212;&#x7EBF;&#xFF09;&#x5F00;&#x5934;&#x7684;&#x7C7B;&#x65B9;&#x6CD5;&#x4FDD;&#x7559;&#x4E3A;&#x9B54;&#x672F;&#x65B9;&#x6CD5;&#x3002;&#x6240;&#x4EE5;&#x5728;&#x5B9A;&#x4E49;&#x7C7B;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x9664;&#x4E86;&#x4E0A;&#x8FF0;&#x9B54;&#x672F;&#x65B9;&#x6CD5;&#xFF0C;&#x5EFA;&#x8BAE;&#x4E0D;&#x8981;&#x4EE5; __ &#x4E3A;&#x524D;&#x7F00;&#x3002;</p>
+</blockquote>
+<ul>
+<li>&#x5C5E;&#x6027;&#x91CD;&#x8F7D;<ul>
+<li>__get() - &#x8C03;&#x7528;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x5C5E;&#x6027;&#x65F6;&#x8C03;&#x7528;</li>
+<li>__set() - &#x5BF9;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#x65F6;&#x8C03;&#x7528;</li>
+<li>__isset() - &#x5BF9;&#x672A;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x4F7F;&#x7528; isset()&#x3001;empty() &#x65B9;&#x6CD5;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+<li>__unset() - &#x5BF9;&#x672A;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x4F7F;&#x7528; unset() &#x65B9;&#x6CD5;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+</ul>
+</li>
+<li>&#x65B9;&#x6CD5;&#x91CD;&#x8F7D;<ul>
+<li>__call() - &#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x65B9;&#x6CD5;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+<li>__callStatic() - &#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+</ul>
+</li>
+<li>&#x5E8F;&#x5217;&#x5316;<ul>
+<li>__sleep() - &#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+<li>__wakeup() - &#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+</ul>
+</li>
+<li>&#x6784;&#x9020;&#x51FD;&#x6570;<ul>
+<li>__construct() - &#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5BF9;&#x8C61;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+<li>__destruct() - &#x6790;&#x6784;&#x51FD;&#x6570;&#xFF0C;&#x5BF9;&#x8C61;&#x91CA;&#x653E;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+</ul>
+</li>
+<li>&#x5176;&#x4ED6;<ul>
+<li>__invoke() - &#x5C1D;&#x8BD5;&#x4EE5;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+<li>__toString() - &#x5F53;&#x4E00;&#x4E2A;&#x7C7B;&#x88AB;&#x5C1D;&#x8BD5;&#x5F53;&#x505A;&#x5B57;&#x7B26;&#x4E32;&#x4F7F;&#x7528;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x53EA;&#x80FD;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5426;&#x5219;&#x89E6;&#x53D1; PHP &#x81F4;&#x547D;&#x9519;&#x8BEF;</li>
+<li>__clone() - &#x4F7F;&#x7528; clone &#x5173;&#x952E;&#x5B57;&#x4F5C;&#x5BF9;&#x8C61;&#x590D;&#x5236;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+<li>__set_state() - &#x4F7F;&#x7528; var_export() &#x65B9;&#x6CD5;&#x5BFC;&#x51FA;&#x7C7B;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+<li>__debugInfo() - &#x4F7F;&#x7528; var_dump() &#x65B9;&#x6CD5;&#x5BFC;&#x51FA;&#x7C7B;&#x65F6;&#x88AB;&#x8C03;&#x7528;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>OOP - &#x9762;&#x5411;&#x5BF9;&#x8C61;<ul>
+<li>&#x7EE7;&#x627F;&#x3001;&#x5C01;&#x88C5;&#x3001;&#x591A;&#x6001;</li>
+<li>SPL - Standard PHP Library</li>
+<li>&#x62BD;&#x8C61;&#x7C7B; vs &#x63A5;&#x53E3;</li>
+<li>&#x8BBF;&#x95EE;&#x63A7;&#x5236; - public, private, protected</li>
+<li>&#x5C5E;&#x6027;</li>
+<li>&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x3001;&#x5C5E;&#x6027;</li>
+<li>&#x9759;&#x6001;&#x5EF6;&#x65F6;&#x7ED1;&#x5B9A; - static</li>
+<li>&#x5E38;&#x91CF; vs define</li>
+<li>&#x547D;&#x540D;&#x7A7A;&#x95F4;</li>
+<li>&#x53CD;&#x5C04;</li>
+<li>&#x7C7B;&#x51FD;&#x6570; vs &#x5BF9;&#x8C61;&#x51FD;&#x6570;</li>
+<li>Final &#x7C7B;</li>
+<li>Traits - like Partial Class in C#</li>
+</ul>
+</li>
+<li>OPCode</li>
+<li>&#x56DE;&#x8C03;&#x3001;&#x533F;&#x540D;&#x51FD;&#x6570;&#x548C;&#x95ED;&#x5305;</li>
+<li>&#x751F;&#x6210;&#x5668; - <a href="http://php.net/manual/en/language.generators.overview.php" target="_blank">Generator</a><ul>
+<li>yield</li>
+</ul>
+</li>
+<li>heredoc &amp; nowdoc (PHP 5.3.0 &#x65B0;&#x589E;)</li>
+<li>PDO &amp; mysqlnd</li>
+<li>&#x9519;&#x8BEF;&#x548C;&#x5F02;&#x5E38;&#x5904;&#x7406;<ul>
+<li>PHP Error<ul>
+<li>trigger_error</li>
+<li>&#x5C06; PHP Error &#x8F6C;&#x4E3A; Exception &#x5904;&#x7406; - <a href="http://php.net/manual/en/function.set-error-handler.php" target="_blank">set_error_handler</a></li>
+</ul>
+</li>
+<li>PHP Exception</li>
+</ul>
+</li>
+<li><p>Coding Tips - &#x8BED;&#x8A00;&#x5C42;&#x9762;&#x7F16;&#x5199;&#x9AD8;&#x6027;&#x80FD; PHP &#x4EE3;&#x7801; - &#x5355;&#x5F15;&#x53F7;&#x6BD4;&#x53CC;&#x5F15;&#x53F7;&#x5FEB;&#xFF1F; echo &#x6BD4; print &#x597D;&#xFF1F;</p>
+<blockquote>
+<p>NOTE: &#x4E24;&#x7BC7;&#x6587;&#x7AE0;&#x90FD;&#x6709;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x6CA1;&#x6709;&#x66F4;&#x65B0;&#x4E86;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD8;&#x662F;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x53C2;&#x8003;&#x4EF7;&#x503C;</p>
+</blockquote>
+<ul>
+<li><a href="http://maettig.com/code/php/php-performance-benchmarks.php" target="_blank">Collection of PHP Performance Benchmarks</a></li>
+<li><a href="http://www.phpbench.com/" target="_blank">PHP Benchmark</a></li>
+</ul>
+</li>
+<li>&#x5B89;&#x5168;&#x6A21;&#x5F0F; - safe_mode&#xFF08;&#x81EA; PHP 5.3.0 &#x8D77;&#x5E9F;&#x5F03;&#x5E76;&#x5C06;&#x81EA; PHP 5.4.0 &#x8D77;&#x79FB;&#x9664;&#x3002;&#xFF09;</li>
+</ul>
+<h2 id="&#x6269;&#x5C55;&#x9605;&#x8BFB;">&#x6269;&#x5C55;&#x9605;&#x8BFB;</h2>
+<ul>
+<li><a href="http://book.douban.com/subject/3549421/" target="_blank"><strong>Book: PHP &#x548C; MySQL Web &#x5F00;&#x53D1; - PHP 5.3/2009</strong></a> - PHP &#x5F00;&#x53D1;&#x5165;&#x95E8;&#x6700;&#x4F73;&#x9009;&#x62E9;&#xFF0C;&#x4E3B;&#x8981;&#x5173;&#x6CE8;&#x8BED;&#x8A00;&#x672C;&#x8EAB;</li>
+<li><a href="http://book.douban.com/subject/6559267/" target="_blank"><strong>Book: &#x6DF1;&#x5165;PHP &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x3001;&#x6A21;&#x5F0F;&#x4E0E;&#x5B9E;&#x8DF5;</strong></a> - PHP &#x5F00;&#x53D1;&#x8FDB;&#x9636;&#xFF0C;&#x5173;&#x6CE8;&#x4F7F;&#x7528;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x5F00;&#x53D1;&#x3001;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7F16;&#x5199;&#x7A33;&#x5B9A;&#x53EF;&#x7EF4;&#x62A4;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x540C;&#x65F6;&#x4ECB;&#x7ECD;&#x4E86;&#x7248;&#x672C;&#x7BA1;&#x7406;(SVN)&#x3001;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x7B49;&#x5B9E;&#x8DF5;&#x77E5;&#x8BC6;</li>
+<li><a href="http://shop.oreilly.com/product/0636920033868.do" target="_blank"><strong>Book: Morden PHP - PHP 5.6/2015</strong></a> - PHP: The Right Way &#x4F5C;&#x8005;&#x65B0;&#x4F5C;&#xFF0C;&#x5173;&#x4E8E; PHP &#x5F00;&#x53D1;&#x5B9E;&#x8DF5;&#x7684;&#x4E00;&#x672C;&#x4E66;</li>
+<li><a href="https://github.com/ziadoz/awesome-php" target="_blank"><strong>Github: Awesome PHP</strong></a> - PHP &#x76F8;&#x5173;&#x5E93;&#x3001;&#x8D44;&#x6E90;&#x6574;&#x7406;</li>
+<li><a href="https://github.com/phptodayorg/php-must-watch" target="_blank"><strong>Github: PHP must watch</strong></a> - PHP &#x76F8;&#x5173;&#x89C6;&#x9891;&#x6574;&#x7406;</li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="dbserver.html" class="navigation navigation-prev " aria-label="Previous page: 数据库服务器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="website-architecture.html" class="navigation navigation-next " aria-label="Next page: 网站系统架构">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PHP 语言","level":"1.3.4","depth":2,"next":{"title":"网站系统架构","level":"1.3.5","depth":2,"path":"1-lanmp/website-architecture.md","ref":"1-lanmp/website-architecture.md","articles":[]},"previous":{"title":"数据库服务器","level":"1.3.3","depth":2,"path":"1-lanmp/dbserver.md","ref":"1-lanmp/dbserver.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PHP 开发者实践","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"PHP 编程学习入门教程"},"file":{"path":"1-lanmp/php.md","mtime":"2016-06-20T01:42:07.588Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:43:25.824Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

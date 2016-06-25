@@ -1,0 +1,831 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>REPL · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Stream.html" />
+    
+    
+    <link rel="prev" href="Readline.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >REPL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="repl">REPL</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x4E00;&#x4E2A; &#x8BFB;&#x53D6;-&#x6267;&#x884C;-&#x6253;&#x5370;-&#x5FAA;&#x73AF;&#xFF08;REPL&#xFF09;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5355;&#x72EC;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x4E5F;&#x80FD;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x88AB;&#x96C6;&#x6210;&#x5728;&#x5176;&#x4ED6;&#x7A0B;&#x5E8F;&#x4E2D;&#x3002;<code>REPL</code>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x4EA4;&#x4E92;&#x7740;&#x8FD0;&#x884C;<code>JavaScript</code>&#x7136;&#x540E;&#x67E5;&#x770B;&#x7ED3;&#x679C;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x8C03;&#x8BD5;&#xFF0C;&#x6D4B;&#x8BD5;&#x6216;&#x53EA;&#x662F;&#x5C1D;&#x8BD5;&#x4E00;&#x4E9B;&#x4E1C;&#x897F;&#x3002;</p>
+<p>&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x4E0D;&#x5E26;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x76F4;&#x63A5;&#x6267;&#x884C;<code>iojs</code>&#xFF0C;&#x4F60;&#x4F1A;&#x8FDB;&#x5165;REPL&#x754C;&#x9762;&#x3002;&#x5B83;&#x6709;&#x4E00;&#x4E2A;&#x6781;&#x7B80;&#x7684;emacs&#x884C;&#x7F16;&#x8F91;&#x5668;&#x3002;</p>
+<pre><code class="lang-SHELL">mjr:~$ iojs
+Type &apos;.help&apos; for options.
+&gt; a = [ 1, 2, 3];
+[ 1, 2, 3 ]
+&gt; a.forEach(function (v) {
+...   console.log(v);
+...   });
+1
+2
+3
+</code></pre>
+<p>&#x8981;&#x4F7F;&#x7528;&#x9AD8;&#x7EA7;&#x7684;&#x884C;&#x7F16;&#x8F91;&#x5668;&#x7684;&#x8BDD;&#xFF0C;&#x5E26;&#x7740;&#x73AF;&#x5883;&#x53D8;&#x91CF;<code>NODE_NO_READLINE=1</code>&#x542F;&#x52A8;<code>node.js</code>&#x3002;&#x5B83;&#x5C06;&#x4F1A;&#x5728;&#x5141;&#x8BB8;&#x4F60;&#x4F7F;&#x7528;<code>rlwrap</code>&#x7684;&#x7EC8;&#x7AEF;&#x8BBE;&#x7F6E;&#x4E2D;&#xFF0C;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x4E3B;&#x8981;&#x7684;&#x8C03;&#x8BD5;<code>REPL</code>&#xFF08;main and debugger REPL&#xFF09;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x52A0;&#x5165;<code>bashrc</code>&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-SHELL">alias iojs=&quot;env NODE_NO_READLINE=1 rlwrap iojs&quot;
+</code></pre>
+<p>&#x5185;&#x7F6E;&#x7684;<code>REPL</code>&#xFF08;&#x901A;&#x8FC7;&#x8FD0;&#x884C;<code>iojs</code>&#x6216;<code>iojs -i</code>&#x542F;&#x52A8;&#xFF09;&#x53EF;&#x4EE5;&#x88AB;&#x4EE5;&#x4E0B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6240;&#x63A7;&#x5236;&#xFF1A;</p>
+<ul>
+<li>NODE_REPL_HISTORY_FILE - &#x5982;&#x679C;&#x6307;&#x5B9A;&#xFF0C;&#x90A3;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x53EF;&#x8BFB;&#x4E5F;&#x53EF;&#x5199;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;&#x5F53;&#x7ED9;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x5C06;&#x542F;&#x7528;&#x6301;&#x4E45;&#x5316;&#x7684;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x652F;&#x6301;&#xFF1A;<code>REPL</code>&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x5C06;&#x4F1A;&#x8DE8;<code>iojs``REPL</code>&#x4F1A;&#x8BDD;&#x6301;&#x4E45;&#x5316;&#x3002;</li>
+<li>NODE_REPL_HISTORY_SIZE - &#x9ED8;&#x8BA4;&#x4E3A;<code>1000</code>&#x3002;&#x4E0E;<code>NODE_REPL_HISTORY_FILE</code>&#x7ED3;&#x5408;&#xFF0C;&#x63A7;&#x5236;&#x9700;&#x8981;&#x6301;&#x4E45;&#x5316;&#x7684;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x6570;&#x91CF;&#x3002;&#x5FC5;&#x987B;&#x4E3A;&#x6B63;&#x6570;&#x3002;</li>
+<li>NODE_REPL_MODE - &#x53EF;&#x4EE5;&#x662F;<code>sloppy</code>&#xFF0C;<code>strict</code>&#x6216;<code>magic</code>&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>magic</code>&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5728;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x4E2D;&#x6267;&#x884C;<code>&quot;strict mode only&quot;</code>&#x58F0;&#x660E;&#x3002;</li>
+</ul>
+<h4 id="replstartoptions">repl.start(options)</h4>
+<p>&#x8FD4;&#x56DE;&#x5E76;&#x542F;&#x52A8;&#x4E00;&#x4E2A;<code>REPLServer</code>&#x5B9E;&#x4F8B;&#xFF0C;&#x7EE7;&#x627F;&#x4E8E;<code>[Readline Interface][]</code>&#x3002;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x503C;&#x5F97;<code>options</code>&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ul>
+<li><p>prompt - &#x6240;&#x6709;<code>I/O</code>&#x7684;&#x63D0;&#x793A;&#x7B26;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>&gt;</code>&#x3002;</p>
+</li>
+<li><p>input - &#x76D1;&#x542C;&#x7684;&#x53EF;&#x8BFB;&#x6D41;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>process.stdin</code>&#x3002;</p>
+</li>
+<li><p>output - &#x8F93;&#x51FA;&#x6570;&#x636E;&#x7684;&#x53EF;&#x5199;&#x6D41;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>process.stdout</code>&#x3002;</p>
+</li>
+<li><p>terminal - &#x5982;&#x679C;&#x6D41;&#x9700;&#x8981;&#x88AB;&#x50CF;TTY&#x5BF9;&#x5F85;&#xFF0C;&#x5E76;&#x4E14;&#x6709;<code>ANSI/VT100</code>&#x8F6C;&#x4E49;&#x4EE3;&#x7801;&#x5199;&#x5165;&#xFF0C;&#x8BBE;&#x7F6E;&#x5176;&#x4E3A;<code>true</code>&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;&#x5728;&#x5B9E;&#x4F8B;&#x5316;&#x65F6;&#x68C0;&#x67E5;&#x5230;&#x7684;<code>output</code>&#x6D41;&#x7684;<code>isTTY</code>&#x5C5E;&#x6027;&#x3002;</p>
+</li>
+<li><p>eval - &#x88AB;&#x7528;&#x6765;&#x6267;&#x884C;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x51FD;&#x6570;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;&#x88AB;&#x5F02;&#x6B65;&#x5305;&#x88C5;&#x8FC7;&#x7684;<code>eval()</code>&#x3002;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#x7684;&#x81EA;&#x5B9A;&#x4E49;<code>eval</code>&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+</li>
+<li><p>useColors - &#x4E00;&#x4E2A;&#x8868;&#x660E;&#x4E86;&#x662F;&#x5426;<code>writer</code>&#x51FD;&#x6570;&#x9700;&#x8981;&#x8F93;&#x51FA;&#x989C;&#x8272;&#x7684;&#x5E03;&#x5C14;&#x503C;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;&#x4E0D;&#x540C;&#x7684;<code>writer</code>&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x4F1A;&#x505A;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>REPL</code>&#x7684;&#x7EC8;&#x7AEF;&#x503C;&#x3002;</p>
+</li>
+<li><p>useGlobal - &#x82E5;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#xFF0C;&#x90A3;&#x4E48;<code>REPL</code>&#x5C06;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x8FD0;&#x884C;&#x6BCF;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x5728;&#x4E0D;&#x540C;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+</li>
+<li><p>ignoreUndefined - &#x82E5;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x503C;&#x662F;<code>undefined</code>&#xFF0C;<code>REPL</code>&#x5C06;&#x4E0D;&#x4F1A;&#x8F93;&#x51FA;&#x5B83;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+</li>
+<li><p>writer - &#x5F53;&#x6BCF;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x88AB;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x65F6;&#xFF0C;&#x90FD;&#x4F1A;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x4E86;&#x5C55;&#x793A;&#x7684;&#x683C;&#x5F0F;&#xFF08;&#x5305;&#x62EC;&#x989C;&#x8272;&#xFF09;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>util.inspect</code>&#x3002;</p>
+</li>
+<li><p><strong>replMode</strong> - &#x63A7;&#x5236;&#x662F;&#x5426;<code>REPL</code>&#x8FD0;&#x884C;&#x6240;&#x6709;&#x7684;&#x6A21;&#x5F0F;&#x5728;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x6A21;&#x5F0F;&#xFF0C;&#x6216;&#x6DF7;&#x5408;&#x6A21;&#x5F0F;&#xFF08;<code>&quot;magic&quot;</code>&#x6A21;&#x5F0F;&#xFF09;&#x3002;&#x63A5;&#x53D7;&#x4EE5;&#x4E0B;&#x503C;&#xFF1A;</p>
+<ul>
+<li>repl.REPL_MODE_SLOPPY - &#x5728;&#x6DF7;&#x6742;&#x6A21;&#x5F0F;&#x4E0B;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#x3002;</li>
+<li>repl.REPL_MODE_STRICT - &#x5728;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x4E0B;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#x3002;&#x8FD9;&#x4E0E;&#x5728;&#x6BCF;&#x4E2A;&#x547D;&#x4EE4;&#x524D;&#x6DFB;&#x52A0;<code>&apos;use strict&apos;</code>&#x8BED;&#x53E5;&#x76F8;&#x7B49;&#x3002;</li>
+<li>repl.REPL_MODE_MAGIC - &#x8BD5;&#x56FE;&#x5728;&#x9ED8;&#x8BA4;&#x6A21;&#x5F0F;&#x4E2D;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x5982;&#x679C;&#x5931;&#x8D25;&#x4E86;&#xFF0C;&#x4F1A;&#x91CD;&#x65B0;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4F60;&#x81EA;&#x5DF1;&#x7684;<code>eval</code>&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x7B7E;&#x540D;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">eval</span>(<span class="hljs-params">cmd, context, filename, callback</span>) </span>{
+  callback(<span class="hljs-literal">null</span>, result);
+}
+</code></pre>
+<p>&#x5728;&#x7528;tab&#x8865;&#x5168;&#x65F6; - <code>eval</code>&#x5C06;&#x4F1A;&#x5E26;&#x7740;&#x4E00;&#x4E2A;&#x4F5C;&#x4E3A;&#x8F93;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#x7684;<code>.scope</code>&#x8C03;&#x7528;&#x3002;&#x5B83;&#x88AB;&#x671F;&#x671B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>scope</code>&#x540D;&#x5B57;&#x6570;&#x7EC4;&#xFF0C;&#x88AB;&#x7528;&#x6765;&#x81EA;&#x52A8;&#x8865;&#x5168;&#x3002;</p>
+<p>&#x591A;&#x4E2A;<code>REPL</code>&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x76F8;&#x540C;&#x7684;<code>node.js</code>&#x5B9E;&#x4F8B;&#x3002;&#x5171;&#x4EAB;&#x540C;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x662F;&#x5404;&#x81EA;&#x7684;I/O&#x72EC;&#x7ACB;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x5728;<code>stdin</code>&#xFF0C;Unix <code>socket</code> &#x548C; TCP <code>socket</code> &#x4E0A;&#x542F;&#x52A8;&#x4E00;&#x4E2A;<code>REPL</code>&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> net = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;net&quot;</span>),
+    repl = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;repl&quot;</span>);
+
+connections = <span class="hljs-number">0</span>;
+
+repl.start({
+  prompt: <span class="hljs-string">&quot;node.js via stdin&gt; &quot;</span>,
+  input: process.stdin,
+  output: process.stdout
+});
+
+net.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">socket</span>) </span>{
+  connections += <span class="hljs-number">1</span>;
+  repl.start({
+    prompt: <span class="hljs-string">&quot;node.js via Unix socket&gt; &quot;</span>,
+    input: socket,
+    output: socket
+  }).on(<span class="hljs-string">&apos;exit&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    socket.end();
+  })
+}).listen(<span class="hljs-string">&quot;/tmp/iojs-repl-sock&quot;</span>);
+
+net.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">socket</span>) </span>{
+  connections += <span class="hljs-number">1</span>;
+  repl.start({
+    prompt: <span class="hljs-string">&quot;node.js via TCP socket&gt; &quot;</span>,
+    input: socket,
+    output: socket
+  }).on(<span class="hljs-string">&apos;exit&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    socket.end();
+  });
+}).listen(<span class="hljs-number">5001</span>);
+</code></pre>
+<p>&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x4F1A;&#x5728;<code>stdin</code>&#x4E0A;&#x542F;&#x52A8;&#x4E00;&#x4E2A;<code>REPL</code>&#x3002;&#x53E6;&#x5916;&#x7684;<code>REPL</code>&#x5BA2;&#x6237;&#x7AEF;&#x5C06;&#x4F1A;&#x901A;&#x8FC7;Unix <code>socket</code>&#x6216;TCP <code>socket</code>&#x8FDE;&#x63A5;&#x3002;<code>telnet</code>&#x5728;&#x8FDE;&#x63A5;TCP <code>socket</code>&#x65F6;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;<code>socat</code>&#x5728;&#x8FDE;&#x63A5;Unix <code>socket</code>&#x548C;TCP <code>socket</code>&#x65F6;&#x90FD;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x4ECE;&#x57FA;&#x4E8E;Unix <code>socket</code> &#x7684;&#x670D;&#x52A1;&#x5668;&#x542F;&#x52A8;<code>REPL</code>&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x91CD;&#x542F;&#xFF0C;&#x800C;&#x8FDE;&#x63A5;&#x5230;&#x4E00;&#x4E2A;&#x957F;&#x4E45;&#x6267;&#x884C;&#x7684;&#xFF08;long-running&#xFF09;<code>node.js</code>&#x8FDB;&#x7A0B;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x901A;&#x8FC7;<code>net.Server</code>&#x548C;<code>net.Socket</code>&#x5B9E;&#x4F8B;&#x8FD0;&#x884C;&#x201C;&#x5168;&#x7279;&#x6027;&#x201D;&#xFF08;&#x7EC8;&#x7AEF;&#xFF09;<code>REPL</code>&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x53C2;&#x9605;<code>https://gist.github.com/2209310</code>&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x901A;&#x8FC7;<code>curl(1)</code>&#x8FD0;&#x884C;<code>REPL</code>&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x53C2;&#x9605;<code>https://gist.github.com/2053342</code>&#x3002;</p>
+<h4 id="event-exit">Event: &apos;exit&apos;</h4>
+<ul>
+<li>function () {}</li>
+</ul>
+<p>&#x5F53;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x4EFB;&#x610F;&#x4E00;&#x79CD;&#x5DF2;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x5F0F;&#x9000;&#x51FA;<code>REPL</code>&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5177;&#x4F53;&#x5730;&#x8BF4;&#xFF0C;&#x5728;<code>REPL</code>&#x4E2D;&#x952E;&#x5165;<code>.exit</code>&#xFF0C;&#x4E24;&#x6B21;&#x6309;&#x4E0B;<code>Ctrl+C</code>&#x6765;&#x53D1;&#x9001;<code>SIGINT</code>&#x4FE1;&#x53F7;&#xFF0C;&#x6309;&#x4E0B;<code>Ctrl+D</code>&#x6765;&#x53D1;&#x9001;&#x7ED3;&#x675F;&#x4FE1;&#x53F7;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">r.on(<span class="hljs-string">&apos;exit&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Got &quot;exit&quot; event from repl!&apos;</span>);
+  process.exit();
+});
+</code></pre>
+<h4 id="event-reset">Event: &apos;reset&apos;</h4>
+<ul>
+<li>function (context) {}</li>
+</ul>
+<p>&#x5F53;<code>REPL</code>&#x5185;&#x5BB9;&#x88AB;&#x91CD;&#x7F6E;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5F53;&#x4F60;&#x952E;&#x5165;<code>.clear</code>&#x65F6;&#x53D1;&#x751F;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4EE5;<code>{ useGlobal: true }</code>&#x542F;&#x52A8;<code>REPL</code>&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x5C06;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Extend the initial repl context.</span>
+r = repl.start({ options ... });
+someExtension.extend(r.context);
+
+<span class="hljs-comment">// When a new context is created extend it as well.</span>
+r.on(<span class="hljs-string">&apos;reset&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">context</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;repl has a new context&apos;</span>);
+  someExtension.extend(context);
+});
+</code></pre>
+<h3 id="repl-&#x7279;&#x6027;">REPL &#x7279;&#x6027;</h3>
+<p>&#x5728;<code>REPL</code>&#x5185;&#xFF0C;&#x6309;&#x4E0B;<code>Control+D</code>&#x5C06;&#x4F1A;&#x9000;&#x51FA;&#x3002;&#x591A;&#x884C;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x88AB;&#x8F93;&#x5165;&#x3002;Tab&#x8865;&#x5168;&#x540C;&#x65F6;&#x652F;&#x6301;&#x5168;&#x5C40;&#x548C;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x6838;&#x5FC3;&#x6A21;&#x5757;&#x5C06;&#x4F1A;&#x88AB;&#x6309;&#x9700;&#x8F7D;&#x5165;&#x73AF;&#x5883;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8C03;&#x7528;<code>fs</code>&#xFF0C;&#x5C06;&#x4F1A;&#x4ECE;<code>global.fs</code>&#x83B7;&#x53D6;&#xFF0C;&#x4F5C;&#x4E3A;<code>require()``fs</code>&#x6A21;&#x5757;&#x7684;&#x66FF;&#x4EE3;&#x3002;</p>
+<p>&#x7279;&#x6B8A;&#x7684;&#x53D8;&#x91CF;<code>_</code>&#xFF08;&#x4E0B;&#x5212;&#x7EBF;&#xFF09;&#x5305;&#x542B;&#x4E86;&#x4E0A;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<pre><code class="lang-SHELL">&gt; [ &quot;a&quot;, &quot;b&quot;, &quot;c&quot; ]
+[ &apos;a&apos;, &apos;b&apos;, &apos;c&apos; ]
+&gt; _.length
+3
+&gt; _ += 1
+4
+</code></pre>
+<p><code>REPL</code>&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x91CC;&#x7684;&#x4EFB;&#x4F55;&#x53D8;&#x91CF;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5C06;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x7ED9;&#x4E00;&#x4E2A;&#x5173;&#x8054;&#x4E86;&#x6240;&#x6709;<code>REPLServer</code>&#x7684;<code>context</code>&#x5BF9;&#x8C61;&#x6765;&#x66B4;&#x9732;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7ED9;<code>REPL</code>&#x3002;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// repl_test.js</span>
+<span class="hljs-keyword">var</span> repl = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;repl&quot;</span>),
+    msg = <span class="hljs-string">&quot;message&quot;</span>;
+
+repl.start(<span class="hljs-string">&quot;&gt; &quot;</span>).context.m = msg;
+</code></pre>
+<p><code>context</code>&#x5BF9;&#x8C61;&#x91CC;&#x7684;&#x5BF9;&#x8C61;&#x4F1A;&#x8868;&#x73B0;&#x5F97;&#x50CF;<code>REPL</code>&#x7684;&#x672C;&#x5730;&#x53D8;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-SHELL">mjr:~$ iojs repl_test.js
+&gt; m
+&apos;message&apos;
+</code></pre>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x7684;<code>REPL</code>&#x547D;&#x4EE4;&#xFF1A;</p>
+<ul>
+<li>.break - &#x5F53;&#x4F60;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x591A;&#x884C;&#x8868;&#x8FBE;&#x5F0F;&#x65F6;&#xFF0C;&#x6709;&#x65F6;&#x4F60;&#x8D70;&#x795E;&#x4E86;&#xFF0C;&#x6216;&#x6709;&#x65F6;&#x4F60;&#x4E0D;&#x5173;&#x5FC3;&#x5982;&#x4F55;&#x5B8C;&#x6210;&#x5B83;&#x4E86;&#x3002;<code>.break</code>&#x5C06;&#x4F1A;&#x8BA9;&#x4F60;&#x91CD;&#x65B0;&#x6765;&#x8FC7;&#x3002;</li>
+<li>.clear - &#x91CD;&#x7F6E;<code>context</code>&#x5BF9;&#x8C61;&#x4E3A;&#x4E00;&#x4E2A;&#x7A7A;&#x5BF9;&#x8C61;&#x5E76;&#x4E14;&#x6E05;&#x9664;&#x6240;&#x6709;&#x591A;&#x884C;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</li>
+<li>.exit - &#x5173;&#x95ED;I/O&#x6D41;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x4F1A;&#x5BFC;&#x81F4;<code>REPL</code>&#x9000;&#x51FA;&#x3002;</li>
+<li>.help - &#x5C55;&#x793A;&#x7279;&#x6B8A;&#x547D;&#x4EE4;&#x5217;&#x8868;&#x3002;</li>
+<li><p><strong>.save</strong> &#x5C06;&#x5F53;&#x524D;&#x7684;<code>REPL</code>&#x4F1A;&#x8BDD;&#x4FDD;&#x5B58;&#x5165;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
+<ul>
+<li><code>.save ./file/to/save.js</code></li>
+</ul>
+</li>
+<li><p><strong>.load</strong> - &#x4ECE;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x8F7D;<code>REPL</code>&#x4F1A;&#x8BDD;&#x3002;</p>
+<ul>
+<li><code>.load ./file/to/load.js</code></li>
+</ul>
+</li>
+</ul>
+<p>&#x8FD9;&#x4E9B;&#x7EC4;&#x5408;&#x952E;&#x5728;<code>REPL</code>&#x4E2D;&#x6709;&#x4EE5;&#x4E0B;&#x5F71;&#x54CD;&#xFF1A;</p>
+<ul>
+<li>ctrl + C - &#x4E0E;<code>.break</code>&#x5173;&#x952E;&#x5B57;&#x76F8;&#x4F3C;&#x3002;&#x7EC8;&#x6B62;&#x5F53;&#x524D;&#x547D;&#x4EE4;&#x3002;&#x5728;&#x4E00;&#x4E2A;&#x7A7A;&#x884C;&#x4E0A;&#x8FDE;&#x6309;&#x4E24;&#x6B21;&#x4F1A;&#x5F3A;&#x5236;&#x9000;&#x51FA;&#x3002;</li>
+<li>ctrl + D - &#x4E0E;<code>.exit</code>&#x5173;&#x952E;&#x5B57;&#x76F8;&#x4F3C;&#x3002;</li>
+<li>tab - &#x5C55;&#x793A;&#x6240;&#x6709;&#x7684;&#x5168;&#x5C40;&#x548C;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x3002;</li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Readline.html" class="navigation navigation-prev " aria-label="Previous page: Readline">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Stream.html" class="navigation navigation-next " aria-label="Next page: Stream">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"REPL","level":"1.24","depth":1,"next":{"title":"Stream","level":"1.25","depth":1,"path":"Stream.md","ref":"Stream.md","articles":[]},"previous":{"title":"Readline","level":"1.23","depth":1,"path":"Readline.md","ref":"Readline.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"REPL.md","mtime":"2016-06-20T01:36:09.008Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

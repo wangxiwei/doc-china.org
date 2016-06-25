@@ -1,0 +1,1937 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>脚本 GitHub · Pro Git 2 中文版</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6-summary.html" />
+    
+    
+    <link rel="prev" href="4-managing-organization.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../01-introduction/1-introduction.html">
+            
+                <a href="../../01-introduction/1-introduction.html">
+            
+                    
+                    起步
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../01-introduction/sections/about-version-control.html">
+            
+                <a href="../../01-introduction/sections/about-version-control.html">
+            
+                    
+                    关于版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../01-introduction/sections/history.html">
+            
+                <a href="../../01-introduction/sections/history.html">
+            
+                    
+                    Git 简史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../01-introduction/sections/basics.html">
+            
+                <a href="../../01-introduction/sections/basics.html">
+            
+                    
+                    Git 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../01-introduction/sections/command-line.html">
+            
+                <a href="../../01-introduction/sections/command-line.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../01-introduction/sections/installing.html">
+            
+                <a href="../../01-introduction/sections/installing.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../01-introduction/sections/first-time-setup.html">
+            
+                <a href="../../01-introduction/sections/first-time-setup.html">
+            
+                    
+                    初次运行 Git 前的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../01-introduction/sections/help.html">
+            
+                <a href="../../01-introduction/sections/help.html">
+            
+                    
+                    获取帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../01-introduction/sections/summary.html">
+            
+                <a href="../../01-introduction/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../02-git-basics/1-git-basics.html">
+            
+                <a href="../../02-git-basics/1-git-basics.html">
+            
+                    
+                    Git 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../02-git-basics/sections/getting-a-repository.html">
+            
+                <a href="../../02-git-basics/sections/getting-a-repository.html">
+            
+                    
+                    获取 Git 仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../02-git-basics/sections/recording-changes.html">
+            
+                <a href="../../02-git-basics/sections/recording-changes.html">
+            
+                    
+                    记录每次更新到仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../02-git-basics/sections/viewing-history.html">
+            
+                <a href="../../02-git-basics/sections/viewing-history.html">
+            
+                    
+                    查看提交历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../02-git-basics/sections/undoing.html">
+            
+                <a href="../../02-git-basics/sections/undoing.html">
+            
+                    
+                    撤消操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../02-git-basics/sections/remotes.html">
+            
+                <a href="../../02-git-basics/sections/remotes.html">
+            
+                    
+                    远程仓库的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../02-git-basics/sections/tagging.html">
+            
+                <a href="../../02-git-basics/sections/tagging.html">
+            
+                    
+                    打标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../02-git-basics/sections/aliases.html">
+            
+                <a href="../../02-git-basics/sections/aliases.html">
+            
+                    
+                    Git 别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../02-git-basics/sections/summary.html">
+            
+                <a href="../../02-git-basics/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../03-git-branching/1-git-branching.html">
+            
+                <a href="../../03-git-branching/1-git-branching.html">
+            
+                    
+                    Git 分支
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../03-git-branching/sections/nutshell.html">
+            
+                <a href="../../03-git-branching/sections/nutshell.html">
+            
+                    
+                    分支简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../03-git-branching/sections/basic-branching-and-merging.html">
+            
+                <a href="../../03-git-branching/sections/basic-branching-and-merging.html">
+            
+                    
+                    分支的新建与合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../03-git-branching/sections/branch-management.html">
+            
+                <a href="../../03-git-branching/sections/branch-management.html">
+            
+                    
+                    分支管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../03-git-branching/sections/workflows.html">
+            
+                <a href="../../03-git-branching/sections/workflows.html">
+            
+                    
+                    分支开发工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../03-git-branching/sections/remote-branches.html">
+            
+                <a href="../../03-git-branching/sections/remote-branches.html">
+            
+                    
+                    远程分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../03-git-branching/sections/rebasing.html">
+            
+                <a href="../../03-git-branching/sections/rebasing.html">
+            
+                    
+                    变基
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../03-git-branching/sections/summary.html">
+            
+                <a href="../../03-git-branching/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../04-git-server/1-git-server.html">
+            
+                <a href="../../04-git-server/1-git-server.html">
+            
+                    
+                    服务器上的 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../04-git-server/sections/protocols.html">
+            
+                <a href="../../04-git-server/sections/protocols.html">
+            
+                    
+                    协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../04-git-server/sections/git-on-a-server.html">
+            
+                <a href="../../04-git-server/sections/git-on-a-server.html">
+            
+                    
+                    在服务器上搭建 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../04-git-server/sections/generating-ssh-key.html">
+            
+                <a href="../../04-git-server/sections/generating-ssh-key.html">
+            
+                    
+                    生成 SSH 公钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../04-git-server/sections/setting-up-server.html">
+            
+                <a href="../../04-git-server/sections/setting-up-server.html">
+            
+                    
+                    配置服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../04-git-server/sections/git-daemon.html">
+            
+                <a href="../../04-git-server/sections/git-daemon.html">
+            
+                    
+                    Git 守护进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../04-git-server/sections/smart-http.html">
+            
+                <a href="../../04-git-server/sections/smart-http.html">
+            
+                    
+                    Smart HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../04-git-server/sections/gitweb.html">
+            
+                <a href="../../04-git-server/sections/gitweb.html">
+            
+                    
+                    GitWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../04-git-server/sections/gitlab.html">
+            
+                <a href="../../04-git-server/sections/gitlab.html">
+            
+                    
+                    GitLab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../../04-git-server/sections/hosted.html">
+            
+                <a href="../../04-git-server/sections/hosted.html">
+            
+                    
+                    第三方托管的选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../../04-git-server/sections/summary.html">
+            
+                <a href="../../04-git-server/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../05-distributed-git/1-distributed-git.html">
+            
+                <a href="../../05-distributed-git/1-distributed-git.html">
+            
+                    
+                    分布式 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../05-distributed-git/sections/distributed-workflows.html">
+            
+                <a href="../../05-distributed-git/sections/distributed-workflows.html">
+            
+                    
+                    分布式工作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../05-distributed-git/sections/contributing.html">
+            
+                <a href="../../05-distributed-git/sections/contributing.html">
+            
+                    
+                    向一个项目贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../05-distributed-git/sections/maintaining.html">
+            
+                <a href="../../05-distributed-git/sections/maintaining.html">
+            
+                    
+                    维护项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../05-distributed-git/sections/summary.html">
+            
+                <a href="../../05-distributed-git/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../1-github.html">
+            
+                <a href="../1-github.html">
+            
+                    
+                    Github
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="1-setting-up-account.html">
+            
+                <a href="1-setting-up-account.html">
+            
+                    
+                    账户的创建和配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="2-contributing.html">
+            
+                <a href="2-contributing.html">
+            
+                    
+                    对项目做出贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="3-maintaining.html">
+            
+                <a href="3-maintaining.html">
+            
+                    
+                    维护项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="4-managing-organization.html">
+            
+                <a href="4-managing-organization.html">
+            
+                    
+                    管理组织
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.5" data-path="5-scripting.html">
+            
+                <a href="5-scripting.html">
+            
+                    
+                    脚本 GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="6-summary.html">
+            
+                <a href="6-summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../07-git-tools/1-git-tools.html">
+            
+                <a href="../../07-git-tools/1-git-tools.html">
+            
+                    
+                    Git 工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../07-git-tools/sections/revision-selection.html">
+            
+                <a href="../../07-git-tools/sections/revision-selection.html">
+            
+                    
+                    选择修订版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../07-git-tools/sections/interactive-staging.html">
+            
+                <a href="../../07-git-tools/sections/interactive-staging.html">
+            
+                    
+                    交互式暂存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../07-git-tools/sections/stashing-cleaning.html">
+            
+                <a href="../../07-git-tools/sections/stashing-cleaning.html">
+            
+                    
+                    储藏与清理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../07-git-tools/sections/signing.html">
+            
+                <a href="../../07-git-tools/sections/signing.html">
+            
+                    
+                    签署工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../07-git-tools/sections/searching.html">
+            
+                <a href="../../07-git-tools/sections/searching.html">
+            
+                    
+                    搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../07-git-tools/sections/rewriting-history.html">
+            
+                <a href="../../07-git-tools/sections/rewriting-history.html">
+            
+                    
+                    重写历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../07-git-tools/sections/reset.html">
+            
+                <a href="../../07-git-tools/sections/reset.html">
+            
+                    
+                    重置揭密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../../07-git-tools/sections/advanced-merging.html">
+            
+                <a href="../../07-git-tools/sections/advanced-merging.html">
+            
+                    
+                    高级合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../../07-git-tools/sections/rerere.html">
+            
+                <a href="../../07-git-tools/sections/rerere.html">
+            
+                    
+                    Rerere
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../../07-git-tools/sections/debugging.html">
+            
+                <a href="../../07-git-tools/sections/debugging.html">
+            
+                    
+                    使用 Git 调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../../07-git-tools/sections/submodules.html">
+            
+                <a href="../../07-git-tools/sections/submodules.html">
+            
+                    
+                    子模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../../07-git-tools/sections/bundling.html">
+            
+                <a href="../../07-git-tools/sections/bundling.html">
+            
+                    
+                    打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../../07-git-tools/sections/replace.html">
+            
+                <a href="../../07-git-tools/sections/replace.html">
+            
+                    
+                    替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../../07-git-tools/sections/credentials.html">
+            
+                <a href="../../07-git-tools/sections/credentials.html">
+            
+                    
+                    凭证存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../../07-git-tools/sections/summary.html">
+            
+                <a href="../../07-git-tools/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../08-customizing-git/1-customizing-git.html">
+            
+                <a href="../../08-customizing-git/1-customizing-git.html">
+            
+                    
+                    自定义 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../08-customizing-git/sections/config.html">
+            
+                <a href="../../08-customizing-git/sections/config.html">
+            
+                    
+                    配置 Gits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../08-customizing-git/sections/attributes.html">
+            
+                <a href="../../08-customizing-git/sections/attributes.html">
+            
+                    
+                    Git 属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../08-customizing-git/sections/hooks.html">
+            
+                <a href="../../08-customizing-git/sections/hooks.html">
+            
+                    
+                    Git 钩子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../08-customizing-git/sections/policy.html">
+            
+                <a href="../../08-customizing-git/sections/policy.html">
+            
+                    
+                    使用强制策略的一个例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../08-customizing-git/sections/summary.html">
+            
+                <a href="../../08-customizing-git/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../09-git-and-other-scms/1-git-and-other-scms.html">
+            
+                <a href="../../09-git-and-other-scms/1-git-and-other-scms.html">
+            
+                    
+                    Git 与其他系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../09-git-and-other-scms/sections/git-client.html">
+            
+                <a href="../../09-git-and-other-scms/sections/git-client.html">
+            
+                    
+                    作为客户端的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../09-git-and-other-scms/sections/git-migrate.html">
+            
+                <a href="../../09-git-and-other-scms/sections/git-migrate.html">
+            
+                    
+                    迁移到 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../09-git-and-other-scms/sections/summary.html">
+            
+                <a href="../../09-git-and-other-scms/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../10-git-internals/1-git-internals.html">
+            
+                <a href="../../10-git-internals/1-git-internals.html">
+            
+                    
+                    Git 内部原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../10-git-internals/sections/plumbing-porcelain.html">
+            
+                <a href="../../10-git-internals/sections/plumbing-porcelain.html">
+            
+                    
+                    底层命令和高层命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../10-git-internals/sections/objects.html">
+            
+                <a href="../../10-git-internals/sections/objects.html">
+            
+                    
+                    Git 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../10-git-internals/sections/refs.html">
+            
+                <a href="../../10-git-internals/sections/refs.html">
+            
+                    
+                    Git 引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../../10-git-internals/sections/packfiles.html">
+            
+                <a href="../../10-git-internals/sections/packfiles.html">
+            
+                    
+                    包文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../../10-git-internals/sections/refspec.html">
+            
+                <a href="../../10-git-internals/sections/refspec.html">
+            
+                    
+                    引用规格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../../10-git-internals/sections/transfer-protocols.html">
+            
+                <a href="../../10-git-internals/sections/transfer-protocols.html">
+            
+                    
+                    传输协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../../10-git-internals/sections/maintenance.html">
+            
+                <a href="../../10-git-internals/sections/maintenance.html">
+            
+                    
+                    维护与数据恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../../10-git-internals/sections/environment.html">
+            
+                <a href="../../10-git-internals/sections/environment.html">
+            
+                    
+                    环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../../10-git-internals/sections/summary.html">
+            
+                <a href="../../10-git-internals/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../A-git-in-other-environments/1-git-other-environments.html">
+            
+                <a href="../../A-git-in-other-environments/1-git-other-environments.html">
+            
+                    
+                    附录A：其它环境中的 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../A-git-in-other-environments/sections/guis.html">
+            
+                <a href="../../A-git-in-other-environments/sections/guis.html">
+            
+                    
+                    图形界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../A-git-in-other-environments/sections/visualstudio.html">
+            
+                <a href="../../A-git-in-other-environments/sections/visualstudio.html">
+            
+                    
+                    Visual Studio 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../A-git-in-other-environments/sections/eclipse.html">
+            
+                <a href="../../A-git-in-other-environments/sections/eclipse.html">
+            
+                    
+                    Eclipse 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../../A-git-in-other-environments/sections/bash.html">
+            
+                <a href="../../A-git-in-other-environments/sections/bash.html">
+            
+                    
+                    Bash 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../../A-git-in-other-environments/sections/zsh.html">
+            
+                <a href="../../A-git-in-other-environments/sections/zsh.html">
+            
+                    
+                    Zsh 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../../A-git-in-other-environments/sections/powershell.html">
+            
+                <a href="../../A-git-in-other-environments/sections/powershell.html">
+            
+                    
+                    Powershell 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../../A-git-in-other-environments/sections/summary.html">
+            
+                <a href="../../A-git-in-other-environments/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../B-embedding-git/1-embedding-git.html">
+            
+                <a href="../../B-embedding-git/1-embedding-git.html">
+            
+                    
+                    附录B：将 Git 嵌入你的应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../B-embedding-git/sections/command-line.html">
+            
+                <a href="../../B-embedding-git/sections/command-line.html">
+            
+                    
+                    命令行 Git 方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../B-embedding-git/sections/libgit2.html">
+            
+                <a href="../../B-embedding-git/sections/libgit2.html">
+            
+                    
+                    Libgit2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../../B-embedding-git/sections/jgit.html">
+            
+                <a href="../../B-embedding-git/sections/jgit.html">
+            
+                    
+                    JGit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../C-git-commands/1-git-commands.html">
+            
+                <a href="../../C-git-commands/1-git-commands.html">
+            
+                    
+                    附录C：Git 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../contributors.html">
+            
+                <a href="../../contributors.html">
+            
+                    
+                    原书贡献者
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >脚本 GitHub</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect2">
+<h3 id="__github">&#x811A;&#x672C; GitHub</h3>
+<div class="paragraph">
+<p>&#x6240;&#x4EE5;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x4ECB;&#x7ECD;&#x4E86; GitHub &#x7684;&#x5927;&#x90E8;&#x5206;&#x529F;&#x80FD;&#x4E0E;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF0C;&#x4F46;&#x662F;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5C0F;&#x7EC4;&#x6216;&#x9879;&#x76EE;&#x90FD;&#x4F1A;&#x53BB;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x60F3;&#x8981;&#x521B;&#x9020;&#x6216;&#x6269;&#x5C55;&#x60F3;&#x8981;&#x6574;&#x5408;&#x7684;&#x670D;&#x52A1;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5BF9;&#x6211;&#x4EEC;&#x6765;&#x8BF4;&#x5F88;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;GitHub &#x5728;&#x8BB8;&#x591A;&#x65B9;&#x9762;&#x90FD;&#x771F;&#x7684;&#x5F88;&#x65B9;&#x4FBF; Hack&#x3002;
+&#x5728;&#x672C;&#x8282;&#x4E2D;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x4F7F;&#x7528; GitHub &#x94A9;&#x5B50;&#x7CFB;&#x7EDF;&#x4E0E; API &#x63A5;&#x53E3;&#xFF0C;&#x4F7F; GitHub &#x6309;&#x7167;&#x6211;&#x4EEC;&#x7684;&#x8BBE;&#x60F3;&#x6765;&#x5DE5;&#x4F5C;&#x3002;</p>
+</div>
+<div class="sect3">
+<h4 id="__">&#x94A9;&#x5B50;</h4>
+<div class="paragraph">
+<p>GitHub &#x4ED3;&#x5E93;&#x7BA1;&#x7406;&#x4E2D;&#x7684;&#x94A9;&#x5B50;&#x4E0E;&#x670D;&#x52A1;&#x533A;&#x5757;&#x662F; GitHub &#x4E0E;&#x5916;&#x90E8;&#x7CFB;&#x7EDF;&#x4EA4;&#x4E92;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+</div>
+<div class="sect4">
+<h5 id="___2">&#x670D;&#x52A1;</h5>
+<div class="paragraph">
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E0B;&#x670D;&#x52A1;&#x3002;
+&#x94A9;&#x5B50;&#x4E0E;&#x670D;&#x52A1;&#x6574;&#x5408;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x4ED3;&#x5E93;&#x7684;&#x8BBE;&#x7F6E;&#x533A;&#x5757;&#x4E2D;&#x627E;&#x5230;&#xFF0C;&#x5C31;&#x5728;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x6DFB;&#x52A0;&#x534F;&#x4F5C;&#x8005;&#x4E0E;&#x6539;&#x53D8;&#x9879;&#x76EE;&#x7684;&#x9ED8;&#x8BA4;&#x5206;&#x652F;&#x7684;&#x5730;&#x65B9;&#x3002;
+&#x5728; ``Webhooks and Services&apos;&apos; &#x6807;&#x7B7E;&#x4E0B;&#x4F60;&#x4F1A;&#x770B;&#x5230;&#x4E0E; <a href="#_services_hooks">&#x670D;&#x52A1;&#x4E0E;&#x94A9;&#x5B50;&#x914D;&#x7F6E;&#x533A;&#x57DF;</a> &#x7C7B;&#x4F3C;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+</div>
+<div id="_services_hooks" class="imageblock">
+<div class="content">
+<img src="../images/scripting-01-services.png" alt="&#x670D;&#x52A1;&#x4E0E;&#x94A9;&#x5B50;">
+</div>
+<div class="title">Figure 1. &#x670D;&#x52A1;&#x4E0E;&#x94A9;&#x5B50;&#x914D;&#x7F6E;&#x533A;&#x57DF;</div>
+</div>
+<div class="paragraph">
+<p>&#x6709;&#x8BB8;&#x591A;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x662F;&#x6574;&#x5408;&#x5230;&#x5176;&#x4ED6;&#x7684;&#x5546;&#x4E1A;&#x4E0E;&#x5F00;&#x6E90;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;
+&#x5B83;&#x4EEC;&#x4E2D;&#x7684;&#x5927;&#x591A;&#x6570;&#x662F;&#x4E3A;&#x4E86;&#x6574;&#x5408;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x670D;&#x52A1;&#x3001;BUG &#x4E0E;&#x95EE;&#x9898;&#x8FFD;&#x8E2A;&#x7CFB;&#x7EDF;&#x3001;&#x804A;&#x5929;&#x5BA4;&#x7CFB;&#x7EDF;&#x4E0E;&#x6587;&#x6863;&#x7CFB;&#x7EDF;&#x3002;
+&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x4ECB;&#x7ECD;&#x3002;
+&#x5982;&#x679C;&#x4ECE; <code>Add Service&apos;&apos; &#x9009;&#x62E9; </code>email&apos;&apos;&#xFF0C;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C; <a href="#_service_config">&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x670D;&#x52A1;&#x914D;&#x7F6E;</a> &#x7684;&#x914D;&#x7F6E;&#x5C4F;&#x5E55;&#x3002;</p>
+</div>
+<div id="_service_config" class="imageblock">
+<div class="content">
+<img src="../images/scripting-02-email-service.png" alt="&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x670D;&#x52A1;">
+</div>
+<div class="title">Figure 2. &#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x670D;&#x52A1;&#x914D;&#x7F6E;</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x70B9;&#x51FB; ``Add service&apos;&apos; &#x6309;&#x94AE;&#xFF0C;&#x6BCF;&#x6B21;&#x6709;&#x4EBA;&#x63A8;&#x9001;&#x5185;&#x5BB9;&#x5230;&#x4ED3;&#x5E93;&#x65F6;&#xFF0C;&#x6307;&#x5B9A;&#x7684;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x5730;&#x5740;&#x90FD;&#x4F1A;&#x6536;&#x5230;&#x4E00;&#x5C01;&#x90AE;&#x4EF6;&#x3002;
+&#x670D;&#x52A1;&#x53EF;&#x4EE5;&#x76D1;&#x542C;&#x8BB8;&#x591A;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x5927;&#x591A;&#x6570;&#x53EA;&#x76D1;&#x542C;&#x63A8;&#x9001;&#x4E8B;&#x4EF6;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x90A3;&#x4E9B;&#x6570;&#x636E;&#x505A;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x6709;&#x4E00;&#x4E2A;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x7CFB;&#x7EDF;&#x60F3;&#x8981;&#x6574;&#x5408;&#x5230; GitHub&#xFF0C;&#x5E94;&#x5F53;&#x5148;&#x68C0;&#x67E5;&#x8FD9;&#x91CC;&#x770B;&#x6709;&#x6CA1;&#x6709;&#x5DF2;&#x6709;&#x7684;&#x53EF;&#x7528;&#x7684;&#x670D;&#x52A1;&#x6574;&#x5408;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x6B63;&#x4F7F;&#x7528; Jenkins &#x6765;&#x6D4B;&#x8BD5;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x5E93;&#xFF0C;&#x5F53;&#x6BCF;&#x6B21;&#x6709;&#x4EBA;&#x63A8;&#x9001;&#x5230;&#x4F60;&#x7684;&#x4ED3;&#x5E93;&#x65F6;&#x4F60;&#x53EF;&#x4EE5;&#x542F;&#x7528; Jenkins &#x5185;&#x7F6E;&#x7684;&#x6574;&#x5408;&#x542F;&#x52A8;&#x6D4B;&#x8BD5;&#x8FD0;&#x884C;&#x3002;</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="___3">&#x94A9;&#x5B50;</h5>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E9B;&#x66F4;&#x5177;&#x4F53;&#x7684;&#x4E8B;&#xFF0C;&#x6216;&#x8005;&#x60F3;&#x8981;&#x6574;&#x5408;&#x4E00;&#x4E2A;&#x4E0D;&#x5728;&#x8FD9;&#x4E2A;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x670D;&#x52A1;&#x6216;&#x7AD9;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x8F6C;&#x800C;&#x4F7F;&#x7528;&#x66F4;&#x901A;&#x7528;&#x7684;&#x94A9;&#x5B50;&#x7CFB;&#x7EDF;&#x3002;
+GitHub &#x4ED3;&#x5E93;&#x94A9;&#x5B50;&#x662F;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x3002;
+&#x6307;&#x5B9A;&#x4E00;&#x4E2A; URL &#x7136;&#x540E; GitHub &#x5728;&#x4EFB;&#x4E00;&#x671F;&#x671B;&#x7684;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x5C31;&#x4F1A;&#x53D1;&#x9001;&#x4E00;&#x4E2A; HTTP &#x8BF7;&#x6C42;&#x5230;&#x90A3;&#x4E2A; URL &#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x901A;&#x5E38;&#x505A;&#x8FD9;&#x4EF6;&#x4E8B;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5C0F;&#x7684; web &#x670D;&#x52A1;&#x6765;&#x76D1;&#x542C; GitHub &#x94A9;&#x5B50;&#x8BF7;&#x6C42;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;&#x505A;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E3A;&#x4E86;&#x542F;&#x7528;&#x4E00;&#x4E2A;&#x94A9;&#x5B50;&#xFF0C;&#x70B9;&#x51FB; <a href="#_services_hooks">&#x670D;&#x52A1;&#x4E0E;&#x94A9;&#x5B50;&#x914D;&#x7F6E;&#x533A;&#x57DF;</a> &#x4E2D;&#x7684; ``Add webhook&apos;&apos; &#x6309;&#x94AE;&#x3002;
+&#x8FD9;&#x4F1A;&#x5C06;&#x4F60;&#x5F15;&#x5BFC;&#x81F3;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C; <a href="#_web_hook">Web &#x94A9;&#x5B50;&#x914D;&#x7F6E;</a> &#x7684;&#x9875;&#x9762;&#x3002;</p>
+</div>
+<div id="_web_hook" class="imageblock">
+<div class="content">
+<img src="../images/scripting-03-webhook.png" alt="Web &#x94A9;&#x5B50;&#x914D;&#x7F6E;">
+</div>
+<div class="title">Figure 3. Web &#x94A9;&#x5B50;&#x914D;&#x7F6E;</div>
+</div>
+<div class="paragraph">
+<p>Web &#x94A9;&#x5B50;&#x7684;&#x8BBE;&#x7F6E;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;
+&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x53EA;&#x9700;&#x8981;&#x8F93;&#x5165;&#x4E00;&#x4E2A; URL &#x4E0E;&#x4E00;&#x4E2A;&#x5BC6;&#x94A5;&#x7136;&#x540E;&#x70B9;&#x51FB; <code>`Add webhook&apos;&apos;&#x3002;
+&#x6709;&#x51E0;&#x4E2A;&#x9009;&#x9879;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5728;&#x54EA;&#x4E2A;&#x4E8B;&#x4EF6;&#x65F6;&#x60F3;&#x8981; GitHub &#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x2009;&#x2014;&#x2009;&#x9ED8;&#x8BA4;&#x7684;&#x884C;&#x4E3A;&#x662F;&#x53EA;&#x6709;&#x5F53;&#x67D0;&#x4EBA;&#x63A8;&#x9001;&#x65B0;&#x4EE3;&#x7801;&#x5230;&#x4ED3;&#x5E93;&#x7684;&#x4EFB;&#x4E00;&#x5206;&#x652F;&#x65F6;&#x7684; `push</code> &#x4E8B;&#x4EF6;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x4E2A;&#x8BBE;&#x7F6E;&#x5904;&#x7406; web &#x94A9;&#x5B50;&#x7684; web &#x670D;&#x52A1;&#x7684;&#x5C0F;&#x4F8B;&#x5B50;&#x3002;
+&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x4F7F;&#x7528; Ruby web &#x6846;&#x67B6; Sinatra&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x76F8;&#x5F53;&#x7B80;&#x6D01;&#xFF0C;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x8F7B;&#x677E;&#x5730;&#x770B;&#x5230;&#x6211;&#x4EEC;&#x6B63;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5728;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x4EBA;&#x63A8;&#x9001;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#x7684;&#x7279;&#x5B9A;&#x5206;&#x652F;&#x5E76;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x6587;&#x4EF6;&#x65F6;&#x5F97;&#x5230;&#x4E00;&#x5C01;&#x90AE;&#x4EF6;&#x3002;
+&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F8;&#x5F53;&#x5BB9;&#x6613;&#x5730;&#x4F7F;&#x7528;&#x7C7B;&#x4F3C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x505A;&#x5230;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">&apos;sinatra&apos;</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">&apos;json&apos;</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">&apos;mail&apos;</span>
+
+post <span class="hljs-string">&apos;/payload&apos;</span> <span class="hljs-keyword">do</span>
+  push = JSON.parse(request.body.read) <span class="hljs-comment"># parse the JSON</span>
+
+  <span class="hljs-comment"># gather the data we&apos;re looking for</span>
+  pusher = push[<span class="hljs-string">&quot;pusher&quot;</span>][<span class="hljs-string">&quot;name&quot;</span>]
+  branch = push[<span class="hljs-string">&quot;ref&quot;</span>]
+
+  <span class="hljs-comment"># get a list of all the files touched</span>
+  files = push[<span class="hljs-string">&quot;commits&quot;</span>].map <span class="hljs-keyword">do</span> |commit|
+    commit[<span class="hljs-string">&apos;added&apos;</span>] + commit[<span class="hljs-string">&apos;modified&apos;</span>] + commit[<span class="hljs-string">&apos;removed&apos;</span>]
+  <span class="hljs-keyword">end</span>
+  files = files.flatten.uniq
+
+  <span class="hljs-comment"># check for our criteria</span>
+  <span class="hljs-keyword">if</span> pusher == <span class="hljs-string">&apos;schacon&apos;</span> &amp;&amp;
+     branch == <span class="hljs-string">&apos;ref/heads/special-branch&apos;</span> &amp;&amp;
+     files.<span class="hljs-keyword">include</span>?(<span class="hljs-string">&apos;special-file.txt&apos;</span>)
+
+    Mail.deliver <span class="hljs-keyword">do</span>
+      from     <span class="hljs-string">&apos;tchacon@example.com&apos;</span>
+      to       <span class="hljs-string">&apos;tchacon@example.com&apos;</span>
+      subject  <span class="hljs-string">&apos;Scott Changed the File&apos;</span>
+      body     <span class="hljs-string">&quot;ALARM&quot;</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x62FF;&#x5230;&#x4E00;&#x4E2A; GitHub &#x4F20;&#x9001;&#x7ED9;&#x6211;&#x4EEC;&#x7684; JSON &#x8BF7;&#x6C42;&#x7136;&#x540E;&#x67E5;&#x627E;&#x63A8;&#x9001;&#x8005;&#xFF0C;&#x4ED6;&#x4EEC;&#x63A8;&#x9001;&#x5230;&#x4E86;&#x4EC0;&#x4E48;&#x5206;&#x652F;&#x4EE5;&#x53CA;&#x63A8;&#x9001;&#x7684;&#x6240;&#x6709;&#x63D0;&#x4EA4;&#x90FD;&#x6539;&#x52A8;&#x4E86;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x3002;
+&#x7136;&#x540E;&#x6211;&#x4EEC;&#x68C0;&#x67E5;&#x5B83;&#x662F;&#x5426;&#x4E0E;&#x6211;&#x4EEC;&#x7684;&#x6761;&#x4EF6;&#x533A;&#x914D;&#xFF0C;&#x5982;&#x679C;&#x5339;&#x914D;&#x5219;&#x53D1;&#x9001;&#x4E00;&#x5C01;&#x90AE;&#x4EF6;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E3A;&#x4E86;&#x5F00;&#x53D1;&#x4E0E;&#x6D4B;&#x8BD5;&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x5728;&#x8BBE;&#x7F6E;&#x94A9;&#x5B50;&#x7684;&#x5730;&#x65B9;&#x6709;&#x4E00;&#x4E2A;&#x6F02;&#x4EAE;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x63A7;&#x5236;&#x53F0;&#x3002;
+&#x53EF;&#x4EE5;&#x770B;&#x5230; GitHub &#x4E3A;&#x90A3;&#x4E2A; webhook &#x7684;&#x6700;&#x540E;&#x51E0;&#x6B21;&#x8BF7;&#x6C42;&#x3002;
+&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x94A9;&#x5B50;&#xFF0C;&#x5F53;&#x5B83;&#x53D1;&#x9001;&#x540E;&#x90FD;&#x53EF;&#x4EE5;&#x6DF1;&#x5165;&#x6316;&#x6398;&#xFF0C;&#x68C0;&#x6D4B;&#x5B83;&#x662F;&#x5426;&#x662F;&#x6210;&#x529F;&#x7684;&#x4E0E;&#x8BF7;&#x6C42;&#x53CA;&#x56DE;&#x5E94;&#x7684;&#x6D88;&#x606F;&#x5934;&#x4E0E;&#x6D88;&#x606F;&#x4F53;&#x3002;
+&#x8FD9;&#x4F7F;&#x5F97;&#x6D4B;&#x8BD5;&#x4E0E;&#x8C03;&#x8BD5;&#x94A9;&#x5B50;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x3002;</p>
+</div>
+<div id="_web_hook_debug" class="imageblock">
+<div class="content">
+<img src="../images/scripting-04-webhook-debug.png" alt="Web &#x94A9;&#x5B50;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;">
+</div>
+<div class="title">Figure 4. Web &#x94A9;&#x5B50;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;</div>
+</div>
+<div class="paragraph">
+<p>&#x5F00;&#x53D1;&#x8005;&#x63A7;&#x5236;&#x53F0;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5F88;&#x68D2;&#x7684;&#x529F;&#x80FD;&#x662F;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x91CD;&#x65B0;&#x53D1;&#x9001;&#x4EFB;&#x4F55;&#x8BF7;&#x6C42;&#x6765;&#x6D4B;&#x8BD5;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5173;&#x4E8E;&#x5982;&#x4F55;&#x7F16;&#x5199; web &#x94A9;&#x5B50;&#x4E0E;&#x6240;&#x6709;&#x53EF;&#x76D1;&#x542C;&#x7684;&#x4E0D;&#x540C;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x8BBF;&#x95EE;&#x5728; <a href="https://developer.github.com/webhooks/" class="bare" target="_blank">https://developer.github.com/webhooks/</a> &#x7684; GitHub &#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;&#x3002;</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_github_api">GitHub API</h4>
+<div class="paragraph">
+<p>
+&#x670D;&#x52A1;&#x4E0E;&#x94A9;&#x5B50;&#x7ED9;&#x4F60;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x63A5;&#x6536;&#x5173;&#x4E8E;&#x5728;&#x4ED3;&#x5E93;&#x4E2D;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x4EF6;&#x7684;&#x63A8;&#x9001;&#x901A;&#x77E5;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x76F8;&#x5173;&#x4E8B;&#x4EF6;&#x7684;&#x8BE6;&#x60C5;&#x5462;&#xFF1F;&#x5982;&#x4F55;&#x81EA;&#x52A8;&#x5316;&#x4E00;&#x4E9B;&#x8BF8;&#x5982;&#x6DFB;&#x52A0;&#x534F;&#x4F5C;&#x8005;&#x6216;&#x7ED9;&#x95EE;&#x9898;&#x52A0;&#x6807;&#x7B7E;&#x7684;&#x4E8B;&#x60C5;&#x5462;&#xFF1F;</p>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x662F; GitHub API &#x6D3E;&#x4E0A;&#x7528;&#x573A;&#x7684;&#x5730;&#x65B9;&#x3002;
+&#x5728;&#x81EA;&#x52A8;&#x5316;&#x6D41;&#x884C;&#x7684;&#x8D8B;&#x52BF;&#x4E0B;&#xFF0C;GitHub &#x63D0;&#x4F9B;&#x4E86;&#x5927;&#x91CF;&#x7684; API &#x63A5;&#x53E3;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x51E0;&#x4E4E;&#x4EFB;&#x4F55;&#x80FD;&#x5728;&#x7F51;&#x7AD9;&#x4E0A;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x3002;
+&#x5728;&#x672C;&#x8282;&#x4E2D;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5B66;&#x4E60;&#x5982;&#x4F55;&#x6388;&#x6743;&#x4E0E;&#x8FDE;&#x63A5;&#x5230; API&#xFF0C;&#x5982;&#x4F55;&#x901A;&#x8FC7; API &#x5728;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x4E0A;&#x8BC4;&#x8BBA;&#x4E0E;&#x5982;&#x4F55;&#x4FEE;&#x6539;&#x4E00;&#x4E2A; Pull Request &#x7684;&#x72B6;&#x6001;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="___4">&#x57FA;&#x672C;&#x7528;&#x9014;</h4>
+<div class="paragraph">
+<p>&#x53EF;&#x4EE5;&#x505A;&#x7684;&#x6700;&#x57FA;&#x672C;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#x5411;&#x4E00;&#x4E2A;&#x4E0D;&#x9700;&#x8981;&#x6388;&#x6743;&#x7684;&#x63A5;&#x53E3;&#x4E0A;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684; GET &#x8BF7;&#x6C42;&#x3002;
+&#x8BE5;&#x63A5;&#x53E3;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x6216;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#x7684;&#x53EA;&#x8BFB;&#x4FE1;&#x606F;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x77E5;&#x9053;&#x66F4;&#x591A;&#x5173;&#x4E8E;&#x540D;&#x4E3A; ``schacon&apos;&apos; &#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x7C7B;&#x4F3C;&#x4E0B;&#x9762;&#x7684;&#x4E1C;&#x897F;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">$ curl https://api.github.com/users/schacon
+{
+  &quot;login&quot;: &quot;schacon&quot;,
+  &quot;id&quot;: 70,
+  &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/70&quot;,
+# &#x2026;
+  &quot;name&quot;: &quot;Scott Chacon&quot;,
+  &quot;company&quot;: &quot;GitHub&quot;,
+  &quot;following&quot;: 19,
+  &quot;created_at&quot;: &quot;2008-01-27T17:19:28Z&quot;,
+  &quot;updated_at&quot;: &quot;2014-06-10T02:37:23Z&quot;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6709;&#x5927;&#x91CF;&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#x7684;&#x63A5;&#x53E3;&#x6765;&#x83B7;&#x5F97;&#x5173;&#x4E8E;&#x7EC4;&#x7EC7;&#x3001;&#x9879;&#x76EE;&#x3001;&#x95EE;&#x9898;&#x3001;&#x63D0;&#x4EA4;&#x7684;&#x4FE1;&#x606F;&#x2009;&#x2014;&#x2009;&#x5DEE;&#x4E0D;&#x591A;&#x5C31;&#x662F;&#x4F60;&#x80FD;&#x5728; GitHub &#x4E0A;&#x770B;&#x5230;&#x7684;&#x6240;&#x6709;&#x4E1C;&#x897F;&#x3002;
+&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; API &#x6765;&#x6E32;&#x67D3;&#x4EFB;&#x610F; Markdown &#x6216;&#x5BFB;&#x627E;&#x4E00;&#x4E2A; <code>.gitignore</code> &#x6A21;&#x677F;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">$ curl https://api.github.com/gitignore/templates/Java
+{
+  &quot;name&quot;: &quot;Java&quot;,
+  &quot;source&quot;: &quot;*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+&quot;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="___5">&#x5728;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x4E0A;&#x8BC4;&#x8BBA;</h4>
+<div class="paragraph">
+<p>&#x7136;&#x800C;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5728;&#x7F51;&#x7AD9;&#x4E0A;&#x8FDB;&#x884C;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x5728; Issue &#x6216; Pull Request &#x4E0A;&#x8BC4;&#x8BBA;&#xFF0C;&#x6216;&#x8005;&#x60F3;&#x8981;&#x67E5;&#x770B;&#x79C1;&#x6709;&#x5185;&#x5BB9;&#x6216;&#x4E0E;&#x5176;&#x4EA4;&#x4E92;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x6388;&#x6743;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x91CC;&#x63D0;&#x4F9B;&#x4E86;&#x51E0;&#x79CD;&#x6388;&#x6743;&#x65B9;&#x5F0F;&#x3002;
+&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EC5;&#x9700;&#x7528;&#x6237;&#x540D;&#x4E0E;&#x5BC6;&#x7801;&#x7684;&#x57FA;&#x672C;&#x6388;&#x6743;&#xFF0C;&#x4F46;&#x662F;&#x901A;&#x5E38;&#x66F4;&#x597D;&#x7684;&#x4E3B;&#x610F;&#x662F;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x4E2A;&#x4EBA;&#x8BBF;&#x95EE;&#x4EE4;&#x724C;&#x3002;
+&#x53EF;&#x4EE5;&#x4ECE;&#x8BBE;&#x7F6E;&#x9875;&#x7684; ``Applications&apos;&apos; &#x6807;&#x7B7E;&#x751F;&#x6210;&#x8BBF;&#x95EE;&#x4EE4;&#x724C;&#x3002;</p>
+</div>
+<div id="_access_token" class="imageblock">
+<div class="content">
+<img src="../images/scripting-05-access-token.png" alt="&#x8BBF;&#x95EE;&#x4EE4;&#x724C;">
+</div>
+<div class="title">Figure 5. &#x4ECE;&#x8BBE;&#x7F6E;&#x9875;&#x7684; ``Applications&apos;&apos; &#x6807;&#x7B7E;&#x751F;&#x6210;&#x8BBF;&#x95EE;&#x4EE4;&#x724C;&#x3002;</div>
+</div>
+<div class="paragraph">
+<p>&#x5B83;&#x4F1A;&#x8BE2;&#x95EE;&#x8FD9;&#x4E2A;&#x4EE4;&#x724C;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E0E;&#x4E00;&#x4E2A;&#x63CF;&#x8FF0;&#x3002;
+&#x786E;&#x4FDD;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x6837;&#x5F53;&#x811A;&#x672C;&#x6216;&#x5E94;&#x7528;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x65F6;&#x4F60;&#x4F1A;&#x5F88;&#x653E;&#x5FC3;&#x5730;&#x79FB;&#x9664;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>GitHub &#x53EA;&#x4F1A;&#x663E;&#x793A;&#x4EE4;&#x724C;&#x4E00;&#x6B21;&#xFF0C;&#x6240;&#x4EE5;&#x8BB0;&#x5F97;&#x4E00;&#x5B9A;&#x8981;&#x62F7;&#x8D1D;&#x5B83;&#x3002;
+&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x5728;&#x811A;&#x672C;&#x4E2D;&#x4F7F;&#x7528;&#x5B83;&#x4EE3;&#x66FF;&#x4F7F;&#x7528;&#x7528;&#x6237;&#x540D;&#x5199;&#x5BC6;&#x7801;&#x6765;&#x6388;&#x6743;&#x3002;
+&#x8FD9;&#x5F88;&#x6F02;&#x4EAE;&#xFF0C;&#x56E0;&#x4E3A;&#x53EF;&#x4EE5;&#x9650;&#x5236;&#x60F3;&#x8981;&#x505A;&#x7684;&#x8303;&#x56F4;&#x5E76;&#x4E14;&#x4EE4;&#x724C;&#x662F;&#x53EF;&#x5E9F;&#x9664;&#x7684;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x4E5F;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x63D0;&#x9AD8;&#x9891;&#x7387;&#x4E0A;&#x9650;&#x7684;&#x9644;&#x52A0;&#x4F18;&#x70B9;&#x3002;
+&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6388;&#x6743;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x4F1A;&#x88AB;&#x9650;&#x5236;&#x5728;&#x4E00;&#x5C0F;&#x65F6;&#x6700;&#x591A;&#x53D1;&#x8D77; 60 &#x6B21;&#x8BF7;&#x6C42;&#x3002;
+&#x5982;&#x679C;&#x6388;&#x6743;&#x5219;&#x53EF;&#x4EE5;&#x4E00;&#x5C0F;&#x65F6;&#x6700;&#x591A;&#x53D1;&#x8D77; 5000 &#x6B21;&#x8BF7;&#x6C42;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x6240;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x5229;&#x7528;&#x5B83;&#x6765;&#x5BF9;&#x6211;&#x4EEC;&#x7684;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x8FDB;&#x884C;&#x8BC4;&#x8BBA;&#x3002;
+&#x60F3;&#x8981;&#x5BF9;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x95EE;&#x9898; Issue #6 &#x7559;&#x4E0B;&#x4E00;&#x6761;&#x8BC4;&#x8BBA;&#x3002;
+&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x521A;&#x521A;&#x751F;&#x6210;&#x7684;&#x4EE4;&#x724C;&#x4F5C;&#x4E3A; Authorization &#x5934;&#x4FE1;&#x606F;&#xFF0C;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x5230; <code>repos/&lt;user&gt;/&lt;repo&gt;/issues/&lt;num&gt;/comments</code> &#x7684; HTTP POST &#x8BF7;&#x6C42;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">$ curl -H <span class="hljs-string">&quot;Content-Type: application/json&quot;</span> \
+       -H <span class="hljs-string">&quot;Authorization: token TOKEN&quot;</span> \
+       --data <span class="hljs-string">&apos;{&quot;body&quot;:&quot;A new comment, :+1:&quot;}&apos;</span> \
+       https:<span class="hljs-comment">//api.github.com/repos/schacon/blink/issues/6/comments</span>
+{
+  <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">58322100</span>,
+  <span class="hljs-string">&quot;html_url&quot;</span>: <span class="hljs-string">&quot;https://github.com/schacon/blink/issues/6#issuecomment-58322100&quot;</span>,
+  ...
+  <span class="hljs-string">&quot;user&quot;</span>: {
+    <span class="hljs-string">&quot;login&quot;</span>: <span class="hljs-string">&quot;tonychacon&quot;</span>,
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">7874698</span>,
+    <span class="hljs-string">&quot;avatar_url&quot;</span>: <span class="hljs-string">&quot;https://avatars.githubusercontent.com/u/7874698?v=2&quot;</span>,
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;User&quot;</span>,
+  },
+  <span class="hljs-string">&quot;created_at&quot;</span>: <span class="hljs-string">&quot;2014-10-08T07:48:19Z&quot;</span>,
+  <span class="hljs-string">&quot;updated_at&quot;</span>: <span class="hljs-string">&quot;2014-10-08T07:48:19Z&quot;</span>,
+  <span class="hljs-string">&quot;body&quot;</span>: <span class="hljs-string">&quot;A new comment, :+1:&quot;</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#x5982;&#x679C;&#x8FDB;&#x5165;&#x5230;&#x90A3;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6211;&#x4EEC;&#x521A;&#x521A;&#x53D1;&#x5E03;&#x7684;&#x8BC4;&#x8BBA;&#xFF0C;&#x50CF; <a href="#_api_comment">&#x4ECE; GitHub API &#x53D1;&#x5E03;&#x7684;&#x4E00;&#x6761;&#x8BC4;&#x8BBA;</a> &#x4E00;&#x6837;&#x3002;</p>
+</div>
+<div id="_api_comment" class="imageblock">
+<div class="content">
+<img src="../images/scripting-06-comment.png" alt="API &#x8BC4;&#x8BBA;">
+</div>
+<div class="title">Figure 6. &#x4ECE; GitHub API &#x53D1;&#x5E03;&#x7684;&#x4E00;&#x6761;&#x8BC4;&#x8BBA;</div>
+</div>
+<div class="paragraph">
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; API &#x53BB;&#x505A;&#x4EFB;&#x4F55;&#x53EF;&#x4EE5;&#x5728;&#x7F51;&#x7AD9;&#x4E0A;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x2009;&#x2014;&#x2009;&#x521B;&#x5EFA;&#x4E0E;&#x8BBE;&#x7F6E;&#x91CC;&#x7A0B;&#x7891;&#x3001;&#x6307;&#x6D3E;&#x4EBA;&#x5458;&#x5230; Issues &#x4E0E; Pull Requests&#xFF0C;&#x521B;&#x5EFA;&#x4E0E;&#x4FEE;&#x6539;&#x6807;&#x7B7E;&#x3001;&#x8BBF;&#x95EE;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x3001;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x63D0;&#x4EA4;&#x4E0E;&#x5206;&#x652F;&#x3001;&#x6253;&#x5F00;&#x5173;&#x95ED;&#x6216;&#x5408;&#x5E76; Pull Requests&#x3001;&#x521B;&#x5EFA;&#x4E0E;&#x7F16;&#x8F91;&#x56E2;&#x961F;&#x3001;&#x5728; Pull Request &#x4E2D;&#x8BC4;&#x8BBA;&#x67D0;&#x884C;&#x4EE3;&#x7801;&#x3001;&#x641C;&#x7D22;&#x7F51;&#x7AD9;&#x7B49;&#x7B49;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__pull_request">&#x4FEE;&#x6539; Pull Request &#x7684;&#x72B6;&#x6001;</h4>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528; Pull Requests &#x7684;&#x8BDD;&#x6211;&#x4EEC;&#x5C06;&#x8981;&#x770B;&#x5230;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x4F1A;&#x5F88;&#x6709;&#x7528;&#x3002;
+&#x6BCF;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x4E0E;&#x5B83;&#x5173;&#x8054;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x6709; API &#x6765;&#x6DFB;&#x52A0;&#x4E0E;&#x67E5;&#x8BE2;&#x72B6;&#x6001;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5927;&#x591A;&#x6570;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x4E0E;&#x6D4B;&#x8BD5;&#x670D;&#x52A1;&#x901A;&#x8FC7;&#x6D4B;&#x8BD5;&#x63A8;&#x9001;&#x7684;&#x4EE3;&#x7801;&#x540E;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A; API &#x6765;&#x56DE;&#x5E94;&#xFF0C;&#x7136;&#x540E;&#x62A5;&#x544A;&#x63D0;&#x4EA4;&#x662F;&#x5426;&#x901A;&#x8FC7;&#x4E86;&#x5168;&#x90E8;&#x6D4B;&#x8BD5;&#x3002;
+&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8BE5;&#x63A5;&#x53E3;&#x6765;&#x68C0;&#x67E5;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x662F;&#x5426;&#x7ECF;&#x8FC7;&#x5408;&#x9002;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x3001;&#x63D0;&#x4EA4;&#x8005;&#x662F;&#x5426;&#x9075;&#x5FAA;&#x4E86;&#x6240;&#x6709;&#x4F60;&#x7684;&#x8D21;&#x732E;&#x51C6;&#x5219;&#x3001;&#x63D0;&#x4EA4;&#x662F;&#x5426;&#x7ECF;&#x8FC7;&#x6709;&#x6548;&#x7684;&#x7B7E;&#x540D;&#x2009;&#x2014;&#x2009;&#x79CD;&#x79CD;&#x8FD9;&#x7C7B;&#x4E8B;&#x60C5;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5047;&#x8BBE;&#x5728;&#x4ED3;&#x5E93;&#x4E2D;&#x8BBE;&#x7F6E;&#x4E86;&#x4E00;&#x4E2A; web &#x94A9;&#x5B50;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x68C0;&#x67E5;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x4E2D;&#x7684; <code>Signed-off-by</code> &#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5C0F;&#x7684; web &#x670D;&#x52A1;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">&apos;httparty&apos;</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">&apos;sinatra&apos;</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">&apos;json&apos;</span>
+
+post <span class="hljs-string">&apos;/payload&apos;</span> <span class="hljs-keyword">do</span>
+  push = JSON.parse(request.body.read) <span class="hljs-comment"># parse the JSON</span>
+  repo_name = push[<span class="hljs-string">&apos;repository&apos;</span>][<span class="hljs-string">&apos;full_name&apos;</span>]
+
+  <span class="hljs-comment"># look through each commit message</span>
+  push[<span class="hljs-string">&quot;commits&quot;</span>].each <span class="hljs-keyword">do</span> |commit|
+
+    <span class="hljs-comment"># look for a Signed-off-by string</span>
+    <span class="hljs-keyword">if</span> /Signed-off-by/.match commit[<span class="hljs-string">&apos;message&apos;</span>]
+      state = <span class="hljs-string">&apos;success&apos;</span>
+      description = <span class="hljs-string">&apos;Successfully signed off!&apos;</span>
+    <span class="hljs-keyword">else</span>
+      state = <span class="hljs-string">&apos;failure&apos;</span>
+      description = <span class="hljs-string">&apos;No signoff found.&apos;</span>
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-comment"># post status to GitHub</span>
+    sha = commit[<span class="hljs-string">&quot;id&quot;</span>]
+    status_url = <span class="hljs-string">&quot;https://api.github.com/repos/<span class="hljs-subst">#{repo_name}</span>/statuses/<span class="hljs-subst">#{sha}</span>&quot;</span>
+
+    status = {
+      <span class="hljs-string">&quot;state&quot;</span>       =&gt; state,
+      <span class="hljs-string">&quot;description&quot;</span> =&gt; description,
+      <span class="hljs-string">&quot;target_url&quot;</span>  =&gt; <span class="hljs-string">&quot;http://example.com/how-to-signoff&quot;</span>,
+      <span class="hljs-string">&quot;context&quot;</span>     =&gt; <span class="hljs-string">&quot;validate/signoff&quot;</span>
+    }
+    HTTParty.post(status_url,
+      <span class="hljs-symbol">:body</span> =&gt; status.to_json,
+      <span class="hljs-symbol">:headers</span> =&gt; {
+        <span class="hljs-string">&apos;Content-Type&apos;</span>  =&gt; <span class="hljs-string">&apos;application/json&apos;</span>,
+        <span class="hljs-string">&apos;User-Agent&apos;</span>    =&gt; <span class="hljs-string">&apos;tonychacon/signoff&apos;</span>,
+        <span class="hljs-string">&apos;Authorization&apos;</span> =&gt; <span class="hljs-string">&quot;token <span class="hljs-subst">#{ENV[<span class="hljs-string">&apos;TOKEN&apos;</span>]}</span>&quot;</span> }
+    )
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5E0C;&#x671B;&#x8FD9;&#x76F8;&#x5F53;&#x5BB9;&#x6613;&#x505A;&#x3002;
+&#x5728;&#x8FD9;&#x4E2A; web &#x94A9;&#x5B50;&#x5904;&#x7406;&#x5668;&#x4E2D;&#x6211;&#x4EEC;&#x6D4F;&#x89C8;&#x521A;&#x521A;&#x63A8;&#x9001;&#x4E0A;&#x6765;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#xFF0C;&#x5728;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x4E2D;&#x67E5;&#x627E;&#x5B57;&#x7B26;&#x4E32; &apos;Signed-off-by&apos; &#x5E76;&#x4E14;&#x6700;&#x7EC8;&#x4F7F;&#x7528; HTTP &#x5411; <code>/repos/&lt;user&gt;/&lt;repo&gt;/statuses/&lt;commit_sha&gt;</code> API &#x63A5;&#x53E3;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x72B6;&#x6001;&#x7684; POST &#x8BF7;&#x6C42;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#x53EF;&#x4EE5;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#xFF08;&apos;success&apos;, &apos;failure&apos;, &apos;error&apos;&#xFF09;&#x3001;&#x4E00;&#x4E2A;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#x7684;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#x3001;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x7684;&#x76EE;&#x6807; URL &#x4E0E;&#x4E00;&#x4E2A; <code>context&apos;&apos; &#x4EE5;&#x9632;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x63D0;&#x4EA4;&#x6709;&#x591A;&#x4E2A;&#x72B6;&#x6001;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x670D;&#x52A1;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x4E0E;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#x7684;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x4E5F;&#x53EF;&#x80FD;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x2009;&#x2014;&#x2009;</code>context&apos;&apos; &#x5B57;&#x6BB5;&#x662F;&#x7528;&#x6765;&#x533A;&#x522B;&#x5B83;&#x4EEC;&#x7684;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x67D0;&#x4EBA;&#x5728; GitHub &#x4E2D;&#x6253;&#x5F00;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Pull Request &#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x94A9;&#x5B50;&#x5DF2;&#x7ECF;&#x8BBE;&#x7F6E;&#xFF0C;&#x4F1A;&#x770B;&#x5230;&#x7C7B;&#x4F3C; <a href="#_commit_status">&#x901A;&#x8FC7; API &#x7684;&#x63D0;&#x4EA4;&#x72B6;&#x6001;</a> &#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+</div>
+<div id="_commit_status" class="imageblock">
+<div class="content">
+<img src="../images/scripting-07-status.png" alt="&#x63D0;&#x4EA4;&#x72B6;&#x6001;">
+</div>
+<div class="title">Figure 7. &#x901A;&#x8FC7; API &#x7684;&#x63D0;&#x4EA4;&#x72B6;&#x6001;</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x5C0F;&#x7684;&#x7EFF;&#x8272;&#x5BF9;&#x52FE;&#x6807;&#x8BB0;&#x5728;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x4E2D;&#x6709; ``Signed-off-by&apos;&apos; &#x7684;&#x63D0;&#x4EA4;&#x65C1;&#x8FB9;&#xFF0C;&#x7EA2;&#x8272;&#x7684;&#x5BF9;&#x52FE;&#x6807;&#x8BB0;&#x5728;&#x4F5C;&#x8005;&#x5FD8;&#x8BB0;&#x7B7E;&#x540D;&#x7684;&#x63D0;&#x4EA4;&#x65C1;&#x8FB9;&#x3002;
+&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x5230; Pull Request &#x663E;&#x793A;&#x5728;&#x90A3;&#x4E2A;&#x5206;&#x652F;&#x4E0A;&#x7684;&#x6700;&#x540E;&#x63D0;&#x4EA4;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5982;&#x679C;&#x5931;&#x8D25;&#x7684;&#x8BDD;&#x4F1A;&#x8B66;&#x544A;&#x4F60;&#x3002;
+&#x5982;&#x679C;&#x5BF9;&#x6D4B;&#x8BD5;&#x7ED3;&#x679C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A; API &#x90A3;&#x4E48;&#x5C31;&#x4E0D;&#x4F1A;&#x4E0D;&#x5C0F;&#x5FC3;&#x5408;&#x5E76;&#x67D0;&#x4E9B;&#x672A;&#x901A;&#x8FC7;&#x6D4B;&#x8BD5;&#x7684;&#x6700;&#x65B0;&#x63D0;&#x4EA4;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_octokit">Octokit</h4>
+<div class="paragraph">
+<p>&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x4E9B;&#x4F8B;&#x5B50;&#x4E2D;&#x90FD;&#x662F;&#x901A;&#x8FC7; <code>curl</code> &#x4E0E;&#x57FA;&#x672C;&#x7684; HTTP &#x8BF7;&#x6C42;&#x6765;&#x505A;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x4EE5;&#x66F4;&#x81EA;&#x7136;&#x7684;&#x65B9;&#x5F0F;&#x5229;&#x7528; API &#x7684;&#x5F00;&#x6E90;&#x5E93;&#x5B58;&#x5728;&#x7740;&#x3002;
+&#x5728;&#x5199;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x88AB;&#x652F;&#x6301;&#x7684;&#x8BED;&#x8A00;&#x5305;&#x62EC; Go&#x3001;Objective-C&#x3001;Ruby &#x4E0E; .NET&#x3002;
+&#x8BBF;&#x95EE; <a href="http://github.com/octokit" class="bare" target="_blank">http://github.com/octokit</a> &#x4E86;&#x89E3;&#x66F4;&#x591A;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x5B83;&#x4EEC;&#x5E2E;&#x4F60;&#x5904;&#x7406;&#x4E86;&#x66F4;&#x591A; HTTP &#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5E0C;&#x671B;&#x8FD9;&#x4E9B;&#x5DE5;&#x5177;&#x80FD;&#x5E2E;&#x52A9;&#x4F60;&#x81EA;&#x5B9A;&#x4E49;&#x4E0E;&#x4FEE;&#x6539; GitHub &#x6765;&#x66F4;&#x597D;&#x5730;&#x4E3A;&#x7279;&#x5B9A;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x5DE5;&#x4F5C;&#x3002;
+&#x5173;&#x4E8E;&#x5168;&#x90E8; API &#x7684;&#x5B8C;&#x6574;&#x6587;&#x6863;&#x4E0E;&#x5E38;&#x89C1;&#x4EFB;&#x52A1;&#x7684;&#x6307;&#x5357;&#xFF0C;&#x8BF7;&#x67E5;&#x9605; <a href="https://developer.github.com" class="bare" target="_blank">https://developer.github.com</a>&#x3002;</p>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4-managing-organization.html" class="navigation navigation-prev " aria-label="Previous page: 管理组织">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6-summary.html" class="navigation navigation-next " aria-label="Next page: 总结">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"脚本 GitHub","level":"1.7.5","depth":2,"next":{"title":"总结","level":"1.7.6","depth":2,"path":"06-github/sections/6-summary.adoc","ref":"06-github/sections/6-summary.adoc","articles":[]},"previous":{"title":"管理组织","level":"1.7.4","depth":2,"path":"06-github/sections/4-managing-organization.adoc","ref":"06-github/sections/4-managing-organization.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Pro Git 2 中文版","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"git 学习入门教程"},"file":{"path":"06-github/sections/5-scripting.adoc","mtime":"2016-06-20T01:42:18.523Z","type":"asciidoc"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:43:49.119Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

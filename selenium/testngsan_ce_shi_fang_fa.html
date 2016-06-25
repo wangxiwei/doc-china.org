@@ -1,0 +1,798 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>TestNG·三 测试方法 · WebDriver·TestNg学习日志</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="testngsi_ce_shi_fang_fa_zhi_gong_chang.html" />
+    
+    
+    <link rel="prev" href="testnger_ce_shi_zu.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    WebDriver·TestNg学习日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="webdrivershi_ji_er_4e0ab7_zhi_ling_webdriver_li_lu.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_ling_webdriver_li_lu.html">
+            
+                    
+                    WebDriver·零 理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="webdrivershi_ji_er_4e0ab7_zhi_yi_huan_jing_bu_shu.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_yi_huan_jing_bu_shu.html">
+            
+                    
+                    WebDriver·一 环境部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="webdrivershi_ji_er_4e0ab7_zhi_er_liu_lan_qi_cao_zu.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_er_liu_lan_qi_cao_zu.html">
+            
+                    
+                    WebDriver·二 浏览器操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="webdrivershi_ji_er_4e0ab7_zhi_san_ding_wei_ye_mian.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_san_ding_wei_ye_mian.html">
+            
+                    
+                    WebDriver·三 定位页面元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="webdrivershi_ji_er_4e0ab7_zhi_si_cao_zuo_ye_mian_y.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_si_cao_zuo_ye_mian_y.html">
+            
+                    
+                    WebDriver·四 操作页面元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="webdrivershi_ji_er_4e0ab7_zhi_wu_iframe_de_chu_li.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_wu_iframe_de_chu_li.html">
+            
+                    
+                    WebDriver·五 iframe的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="webdrivershi_ji_er_4e0ab7_zhi_liu_huo_de_dan_chu_c.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_liu_huo_de_dan_chu_c.html">
+            
+                    
+                    WebDriver·六 获得弹出窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="webdrivershi_ji_er_4e0ab7_zhi_qi_chu_li_dui_hua_ku.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_qi_chu_li_dui_hua_ku.html">
+            
+                    
+                    WebDriver·七 处理对话框alert\confirm\prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="webdrivershi_ji_er_4e0ab7_zhi_ba_cao_zuo_cookies.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_ba_cao_zuo_cookies.html">
+            
+                    
+                    WebDriver·八 操作cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="webdrivershi_ji_er_4e0ab7_zhi_jiu_deng_dai_ye_mian.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_jiu_deng_dai_ye_mian.html">
+            
+                    
+                    WebDriver·九 等待页面加载元素完成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_feng_zhuang_yu_z.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_feng_zhuang_yu_z.html">
+            
+                    
+                    WebDriver·十 封装与重用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_yi_zai_selenium2.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_yi_zai_selenium2.html">
+            
+                    
+                    WebDriver·十1 在selenium2.0中使用selenium1.0的API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_er_jie_tu_seleni.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_er_jie_tu_seleni.html">
+            
+                    
+                    WebDriver·十二 截图selenium-webdriver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="webdrivershi_ji_er_4e0ab7_zhishi_san_diao_yong_jav.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhishi_san_diao_yong_jav.html">
+            
+                    
+                    WebDriver·十三 调用Java Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_si_remotewebdriv.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_si_remotewebdriv.html">
+            
+                    
+                    WebDriver·十四 RemoteWebDriver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_wu_tuo_ye_dong_z.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_wu_tuo_ye_dong_z.html">
+            
+                    
+                    WebDriver·十五 拖曳动作模拟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_liu_table_kong_j.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_liu_table_kong_j.html">
+            
+                    
+                    WebDriver·十六 Table控件的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_qi_duan_yan.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_qi_duan_yan.html">
+            
+                    
+                    WebDriver·十七 断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_ba_she_zhi_yuan_.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_ba_she_zhi_yuan_.html">
+            
+                    
+                    WebDriver·十八 设置元素焦点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="webdrivershi_ji_er_4e0ab7_zhi_shi_jiu_chang_yong_f.html">
+            
+                <a href="webdrivershi_ji_er_4e0ab7_zhi_shi_jiu_chang_yong_f.html">
+            
+                    
+                    WebDriver·十九 常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="testngyi_ji_chu_gai_nian.html">
+            
+                <a href="testngyi_ji_chu_gai_nian.html">
+            
+                    
+                    TestNG·一 基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="testnger_ce_shi_zu.html">
+            
+                <a href="testnger_ce_shi_zu.html">
+            
+                    
+                    TestNG·二 测试组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.23" data-path="testngsan_ce_shi_fang_fa.html">
+            
+                <a href="testngsan_ce_shi_fang_fa.html">
+            
+                    
+                    TestNG·三 测试方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="testngsi_ce_shi_fang_fa_zhi_gong_chang.html">
+            
+                <a href="testngsi_ce_shi_fang_fa_zhi_gong_chang.html">
+            
+                    
+                    TestNG·四 测试方法之工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="testngwu_yun_xingtestng.html">
+            
+                <a href="testngwu_yun_xingtestng.html">
+            
+                    
+                    TestNG·五 运行TestNG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="testngliu_ce_shi_jie_guo.html">
+            
+                <a href="testngliu_ce_shi_jie_guo.html">
+            
+                    
+                    TestNG·六 测试结果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="testngqi_annotation.html">
+            
+                <a href="testngqi_annotation.html">
+            
+                    
+                    TestNG·七 annotation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="testngba_bing_fa_ce_shi.html">
+            
+                <a href="testngba_bing_fa_ce_shi.html">
+            
+                    
+                    TestNG·八 并发测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="testngjiu_shi_yong_testng_-_xslt_gai_xie_testng_de.html">
+            
+                <a href="testngjiu_shi_yong_testng_-_xslt_gai_xie_testng_de.html">
+            
+                    
+                    TestNG·九 使用testng-xslt改写testng的测试报告
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="webdriver_&_testngcan_shu_hua_ji_yong_li_pai_xu.html">
+            
+                <a href="webdriver_&_testngcan_shu_hua_ji_yong_li_pai_xu.html">
+            
+                    
+                    WebDriver & TestNG·参数化及用例排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="webdriver_&_testngjia_gou.html">
+            
+                <a href="webdriver_&_testngjia_gou.html">
+            
+                    
+                    WebDriver & TestNG·架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >TestNG·三 测试方法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="testng&#xB7;&#x4E09;-&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;">TestNG&#xB7;&#x4E09; &#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;</h1>
+<hr>
+<p>&#x4E00;&#x3001;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;</p>
+<p>&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x662F;&#x53EF;&#x4EE5;&#x5E26;&#x6709;&#x53C2;&#x6570;&#x7684;&#x3002;&#x6BCF;&#x4E2A;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x90FD;&#x53EF;&#x4EE5;&#x5E26;&#x6709;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;TestNG&#x7684;@Parameters &#x5411;&#x65B9;&#x6CD5;&#x4F20;&#x9012;&#x6B63;&#x786E;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x8BBE;&#x7F6E;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#xFF1A;&#x4F7F;&#x7528; testng.xml &#x6216;&#x8005; Data Providers &#x3002;</p>
+<p>&#xFF08;&#x4E00;&#xFF09;&#x4F7F;&#x7528; testng.xml &#x8BBE;&#x7F6E;&#x53C2;&#x6570;</p>
+<p>1.&#x5982;&#x679C;&#x53EA;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x7B80;&#x5355;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x5728; testng.xml&#x6587;&#x4EF6;&#x4E2D;&#x6307;&#x5B9A;&#xFF1A;</p>
+<pre><code>@Parameters({ &quot;first-name&quot; })
+@Test
+public void testSingleString(String firstName) { 
+  System.out.println(&quot;Invoked testString &quot; + firstName);
+  assert &quot;Cedric&quot;.equals(firstName);
+}
+</code></pre><p>&#x5728;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BA9; firstName &#x53C2;&#x6570;&#x80FD;&#x591F;&#x63A5;&#x5230;XML&#x6587;&#x4EF6;&#x4E2D;&#x53EB;&#x505A; first-name &#x53C2;&#x6570;&#x7684;&#x503C;&#x3002;&#x8FD9;&#x4E2A;XML&#x53C2;&#x6570;&#x88AB;&#x5B9A;&#x4E49;&#x5728; testng.xml&#xFF1A;</p>
+<pre><code>&lt;suite name=&quot;My suite&quot;&gt;
+  &lt;parameter name=&quot;first-name&quot;  value=&quot;Cedric&quot;/&gt;
+  &lt;test name=&quot;Simple example&quot;&gt;
+</code></pre><p>&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x5728; @Before/After &#x548C; @Factory &#x6CE8;&#x89E3;&#x4E0A;&#xFF1A;</p>
+<pre><code>@Parameters({ &quot;datasource&quot;, &quot;jdbcDriver&quot; })
+@BeforeMethod
+public void beforeTest(String ds, String driver) {
+  m_dataSource = ...;                              // &#x67E5;&#x8BE2;&#x6570;&#x636E;&#x6E90;&#x7684;&#x503C;
+  m_jdbcDriver = driver;
+}
+</code></pre><p>&#x8FD9;&#x6B21;&#x6709;&#x4E24;&#x4E2A;Java&#x53C2;&#x6570; ds &#x548C; driver &#x4F1A;&#x5206;&#x522B;&#x63A5;&#x6536;&#x5230;&#x6765;&#x81EA;&#x5C5E;&#x6027;datasource &#x548C; jdbc-driver &#x6240;&#x6307;&#x5B9A;&#x7684;&#x503C;&#x3002;</p>
+<p>2.&#x53C2;&#x6570;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Optional &#x6CE8;&#x91CA;&#x6765;&#x58F0;&#x660E;&#xFF1A;</p>
+<pre><code>@Parameters(&quot;db&quot;)
+@Test
+public void testNonExistentParameter(@Optional(&quot;mysql&quot;) String db) { ... }
+</code></pre><p>&#x5982;&#x679C;&#x5728;&#x4F60;&#x7684;testng.xml&#x6587;&#x4EF6;&#x4E2D;&#x6CA1;&#x6709;&#x627E;&#x5230;&quot;db&quot;&#xFF0C;&#x4F60;&#x7684;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x5C31;&#x4F1A;&#x4F7F;&#x7528; @Optional &#x4E2D;&#x7684;&#x503C;&#xFF1A; &quot;mysql&quot;&#x3002;</p>
+<p>3.@Parameters &#x53EF;&#x4EE5;&#x88AB;&#x653E;&#x7F6E;&#x5230;&#x5982;&#x4E0B;&#x4F4D;&#x7F6E;&#xFF1A;</p>
+<p>1.&#x5728;&#x4EFB;&#x4F55;&#x5DF2;&#x7ECF;&#x88AB; @Test, @Before/After &#x6216; @Factory &#x6CE8;&#x89E3;&#x8FC7;&#x7684;&#x5730;&#x65B9;&#x3002;
+2.&#x5728;&#x6D4B;&#x8BD5;&#x7C7B;&#x4E2D;&#x81F3;&#x591A;&#x88AB;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7B7E;&#x3002;&#x8FD9;&#x6837;&#xFF0C;TestNG&#x624D;&#x80FD;&#x5728;&#x9700;&#x8981;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528; testng.xml &#x4E2D;&#x7279;&#x5B9A;&#x7684;&#x53C2;&#x6570;&#x6765;&#x5B9E;&#x4F8B;&#x5316;&#x8FD9;&#x4E2A;&#x7C7B;&#x3002;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x4F5C;&#x521D;&#x59CB;&#x5316;&#x67D0;&#x4E9B;&#x7C7B;&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x4EE5;&#x4FBF;&#x7A0D;&#x540E;&#x4F1A;&#x88AB;&#x7C7B;&#x4E2D;&#x5176;&#x4ED6;&#x7684;&#x65B9;&#x6CD5;&#x6240;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<p>XML&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x4F1A;&#x6309;&#x7167;Java&#x53C2;&#x6570;&#x5728;&#x6CE8;&#x89E3;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x987A;&#x5E8F;&#x88AB;&#x6620;&#x5C04;&#x8FC7;&#x53BB;&#xFF0C;&#x5E76;&#x4E14;&#x5982;&#x679C;&#x6570;&#x91CF;&#x4E0D;&#x5339;&#x914D;&#xFF0C;TestNG&#x4F1A;&#x62A5;&#x9519;&#x3002;
+&#x53C2;&#x6570;&#x662F;&#x6709;&#x4F5C;&#x7528;&#x8303;&#x56F4;&#x7684;&#x3002;&#x5728;testng.xml &#x4E2D;&#xFF0C;&#x4F60;&#x5373;&#x53EF;&#x4EE5;&#x5728;<suite> &#x6807;&#x7B7E;&#x4E0B;&#x58F0;&#x660E;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728; <test>&#x4E0B;&#x58F0;&#x660E;&#x3002;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x90FD;&#x6709;&#x76F8;&#x540C;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x5B9A;&#x4E49;&#x5728; <test> &#x4E2D;&#x7684;&#x6709;&#x4F18;&#x5148;&#x6743;&#x3002;&#x8FD9;&#x5728;&#x4F60;&#x9700;&#x8981;&#x8986;&#x76D6;&#x67D0;&#x4E9B;&#x6D4B;&#x8BD5;&#x4E2D;&#x7279;&#x5B9A;&#x53C2;&#x6570;&#x7684;&#x503C;&#x65F6;&#xFF0C;&#x4F1A;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x3002;</test></test></suite></p>
+<p>&#xFF08;&#x4E8C;&#xFF09;&#x4F7F;&#x7528;DataProviders&#x63D0;&#x4F9B;&#x53C2;&#x6570;</p>
+<p>&#x5728; testng.xml &#x4E2D;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x5982;&#x4E0B;&#x7684;&#x4E0D;&#x8DB3;&#xFF1A;</p>
+<p>1.&#x5982;&#x679C;&#x4F60;&#x538B;&#x6839;&#x4E0D;&#x7528; testng.xml.
+2.&#x4F60;&#x9700;&#x8981;&#x4F20;&#x9012;&#x590D;&#x6742;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x4ECE;Java&#x4E2D;&#x521B;&#x5EFA;&#x53C2;&#x6570;&#xFF08;&#x590D;&#x6742;&#x5BF9;&#x8C61;&#xFF0C;&#x5BF9;&#x8C61;&#x4ECE;&#x5C5E;&#x6027;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x8BFB;&#x53D6;&#x7684;etc...&#xFF09;
+&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Data Provider&#x6765;&#x7ED9;&#x9700;&#x8981;&#x7684;&#x6D4B;&#x8BD5;&#x63D0;&#x4F9B;&#x53C2;&#x6570;&#x3002;&#x6240;&#x8C13;&#x6570;&#x636E;&#x63D0;&#x4F9B;&#x8005;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x80FD;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x7684;&#x6570;&#x7EC4;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x88AB;@DataProvider&#x6CE8;&#x89E3;&#x6807;&#x6CE8;&#xFF1A;</p>
+<p>DataProvider&#x7684;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>@DataProvider(name = &quot;range-provider&quot;)
+public Object[][] rangeData() {
+int lower = 5;
+int upper = 10;
+return new Object[][] {
+{ lower-1, lower, upper, false },
+{ lower, lower, upper, true },
+{ lower+1, lower, upper, true },
+{ upper, lower, upper, true},
+{ upper+1, lower, upper, false },
+};
+}
+</code></pre><p>&#x8C03;&#x7528;DataProvider&#x7684;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>@Test(dataProvider = &quot;range-provider&quot;)
+public void testIsBetween(int n, int lower,int upper, boolean expected)
+{
+println(&quot;Received &quot; + n + &quot; &quot; + lower + &quot;-&quot;+ upper + &quot; expected: &quot; + expected);
+Assert.assertEquals(expected, isBetween(n, lower, upper));
+}
+</code></pre><p>&#x88AB;@Test&#x6807;&#x6CE8;&#x7684;&#x65B9;&#x6CD5;&#x901A;&#x8FC7;dataProvider&#x5C5E;&#x6027;&#x6307;&#x660E;&#x5176;&#x6570;&#x636E;&#x63D0;&#x4F9B;&#x5546;&#x3002;&#x8FD9;&#x4E2A;&#x540D;&#x5B57;&#x5FC5;&#x987B;&#x4E0E;@DataProvider(name=&quot;...&quot;) &#x4E2D;&#x7684;&#x540D;&#x5B57;&#x76F8;&#x4E00;&#x81F4;&#x3002;</p>
+<p>DataProvider&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;Object&#x7684;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x90FD;&#x4F1A;&#x4F20;&#x9012;&#x7ED9;&#x8C03;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F7F;&#x7528;&#x3002;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C; @Test&#x6807;&#x8BC6;&#x7684;test method&#x88AB;&#x6267;&#x884C;&#x7684;&#x6B21;&#x6570;&#x548C;object[][]&#x5305;&#x542B;&#x7684;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x7684;&#x4E2A;&#x6570;&#x662F;&#x4E00;&#x81F4;&#x7684;&#xFF0C;&#x800C;@Test&#x6807;&#x8BC6;&#x7684;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#xFF0C;&#x4E5F;&#x548C;object&#x5185;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x5185;&#x7684;&#x5143;&#x7D20;&#x6570;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;</p>
+<p>&#x8FD0;&#x884C;&#x540E;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>Received 4 5-10 expected: false
+Received 5 5-10 expected: true
+Received 6 5-10 expected: true
+Received 10 5-10 expected: true
+Received 11 5-10 expected: false
+===============================================
+Parameter Suite
+Total tests run: 5, Failures: 0, Skips: 0
+===============================================
+</code></pre><p>&#xFF08;&#x4E09;&#xFF09;DataProviders&#x6269;&#x5C55;</p>
+<p>&#x9ED8;&#x8BA4;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6570;&#x636E;&#x63D0;&#x4F9B;&#x8005;&#x4F1A;&#x67E5;&#x627E;&#x5F53;&#x524D;&#x7684;&#x6D4B;&#x8BD5;&#x7C7B;&#x6216;&#x8005;&#x6D4B;&#x8BD5;&#x7C7B;&#x7684;&#x57FA;&#x7C7B;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x5B83;&#x80FD;&#x591F;&#x88AB;&#x5176;&#x4ED6;&#x7684;&#x7C7B;&#x6240;&#x4F7F;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x8981;&#x5C06;&#x5176;&#x6307;&#x5B9A;&#x4E3A;static&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x8FC7; dataProviderClass &#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x7C7B;&#xFF1A;</p>
+<pre><code>public static class StaticProvider {
+  @DataProvider(name = &quot;create&quot;)
+  public static Object[][] createData() {
+    return new Object[][] {
+      new Object[] { new Integer(42) }
+    }
+  }
+}
+public class MyTest {
+  @Test(dataProvider = &quot;create&quot;, dataProviderClass = StaticProvider.class)
+  public void test(Integer n) {
+    // ...
+  }
+}
+</code></pre><p>Data Provider&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#xFF1A;</p>
+<p>1.&#x542B;&#x6709;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4; (Object[][])&#xFF0C;&#x5176;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x4E0B;&#x6807;&#x6307;&#x660E;&#x4E86;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x8981;&#x8C03;&#x7528;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E0B;&#x6807;&#x5219;&#x5B8C;&#x5168;&#x4E0E;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x4E2A;&#x6570;&#x76F8;&#x5339;&#x914D;&#x3002;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5DF2;&#x7ECF;&#x8BF4;&#x660E;&#x3002;</p>
+<p>2.&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x662F;&#x8FED;&#x4EE3;&#x5668; Iterator<object[]>&#x3002;&#x4E8C;&#x8005;&#x7684;&#x533A;&#x522B;&#x662F;&#x8FED;&#x4EE3;&#x5668;&#x5141;&#x8BB8;&#x4F60;&#x5EF6;&#x8FDF;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x3002;</object[]></p>
+<p>TestNG&#x4F1A;&#x8C03;&#x7528;&#x8FED;&#x4EE3;&#x5668;&#xFF0C;&#x4E4B;&#x540E;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x4F1A;&#x4E00;&#x4E2A;&#x63A5;&#x4E00;&#x4E2A;&#x7684;&#x8C03;&#x7528;&#x7531;&#x8FED;&#x4EE3;&#x5668;&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x3002;&#x5728;&#x4F60;&#x9700;&#x8981;&#x4F20;&#x9012;&#x5F88;&#x591A;&#x53C2;&#x6570;&#x7EC4;&#x7ED9;&#x6D4B;&#x8BD5;&#x7EC4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x65E0;&#x987B;&#x63D0;&#x524D;&#x521B;&#x5EFA;&#x4E00;&#x5806;&#x503C;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4F7F;&#x7528;JDK5 &#x7684;&#x4F8B;&#x5B50; (&#x6CE8;&#x610F; JDK 1.4 &#x7684;&#x4F8B;&#x5B50;&#x4E0D;&#x9002;&#x7528;&#x6CDB;&#x578B;)&#xFF1A;</p>
+<pre><code>public Iterator createData() {
+  return new MyIterator(DATA);
+)
+@DataProvider(name = &quot;test1&quot;)
+public Iterator
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x58F0;&#x660E;&#x7684; @DataProvider &#x4F7F;&#x7528; java.lang.reflect.Method &#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;TestNG &#x4F1A;&#x628A;&#x5F53;&#x524D;&#x7684;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x5F53;&#x6210;&#x53C2;&#x6570;&#x4F20;&#x7ED9;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x4E00;&#x70B9;&#x5728;&#x4F60;&#x7684;&#x591A;&#x4E2A;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;@DataProvider&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5E76;&#x4E14;&#x4F60;&#x60F3;&#x8981;&#x4F9D;&#x636E;&#x5177;&#x4F53;&#x7684;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7684;&#x503C;&#x65F6;&#xFF0C;&#x7279;&#x522B;&#x6709;&#x7528;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5B83;&#x5185;&#x90E8;&#x7684; @DataProvider &#x4E2D;&#x7684;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x7684;&#x540D;&#x5B57;&#xFF1A;</p>
+<pre><code>@DataProvider(name = &quot;dp&quot;)
+public Object[][] createData(Method m) {
+  System.out.println(m.getName());  
+  return new Object[][] { new Object[] { &quot;Cedric&quot; }};
+}
+@Test(dataProvider = &quot;dp&quot;)
+public void test1(String s) {
+}
+@Test(dataProvider = &quot;dp&quot;)
+public void test2(String s) {
+}
+</code></pre><p>&#x6240;&#x4EE5;&#x4F1A;&#x663E;&#x793A;&#xFF1A;</p>
+<pre><code>test1 
+test2
+</code></pre><p>Data provider&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5C5E;&#x6027; parallel&#x5B9E;&#x73B0;&#x5E76;&#x884C;&#x8FD0;&#x884C;&#xFF1A;</p>
+<pre><code>@DataProvider(parallel = true)
+// ...
+</code></pre><p>&#x4F7F;&#x7528;XML&#x6587;&#x4EF6;&#x8FD0;&#x884C;&#x7684;data provider&#x4EAB;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7EBF;&#x7A0B;&#x6C60;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x5927;&#x5C0F;&#x662F;10.&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x8BE5;&#x5728; <suite> &#x6807;&#x7B7E;&#x4E2D;&#x7684;&#x503C;&#x6765;&#x66F4;&#x6539;&#xFF1A;</suite></p>
+<pre><code>&lt;suite name=&quot;Suite1&quot; data-provider-thread-count=&quot;20&quot; &gt;
+...
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x8BA9;&#x6307;&#x5B9A;&#x7684;&#x51E0;&#x4E2A;data provider&#x8FD0;&#x884C;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x7EBF;&#x7A0B;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x4E0D;&#x540C;&#x7684;xml&#x6587;&#x4EF6;&#x6765;&#x8FD0;&#x884C;&#x3002;</p>
+<p>&#x4E8C;&#x3001;&#x4F9D;&#x8D56;&#x65B9;&#x6CD5;</p>
+<p>&#x6709;&#x4E9B;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x6309;&#x7167;&#x7279;&#x5B9A;&#x987A;&#x5E8F;&#x8C03;&#x7528;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>1.&#x786E;&#x4FDD;&#x5728;&#x8FDB;&#x884C;&#x66F4;&#x591A;&#x7684;&#x65B9;&#x6CD5;&#x6D4B;&#x8BD5;&#x4E4B;&#x524D;&#xFF0C;&#x6709;&#x4E00;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x5DF2;&#x7ECF;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x3002;
+2.
+2.&#x5728;&#x521D;&#x59CB;&#x5316;&#x6D4B;&#x8BD5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x540C;&#x65F6;&#x5E0C;&#x671B;&#x8FD9;&#x4E2A;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#xFF08; @Before/After &#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x6700;&#x540E;&#x751F;&#x6210;&#x7684;&#x62A5;&#x544A;&#x4E2D;&#xFF09;&#x3002;</p>
+<p>&#x4E3A;&#x6B64;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; @Test &#x4E2D;&#x7684; dependsOnMethods &#x6216; dependsOnGroups &#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x8FD9;&#x4E24;&#x79CD;&#x4F9D;&#x8D56;&#xFF1A;</p>
+<p>1.Hard dependencies&#xFF08;&#x786C;&#x4F9D;&#x8D56;&#xFF09;&#x3002;&#x6240;&#x6709;&#x7684;&#x88AB;&#x4F9D;&#x8D56;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x6210;&#x529F;&#x8FD0;&#x884C;&#x3002;&#x53EA;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x51FA;&#x95EE;&#x9898;&#xFF0C;&#x6D4B;&#x8BD5;&#x5C31;&#x4E0D;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x62A5;&#x544A;&#x4E2D;&#x88AB;&#x6807;&#x8BB0;&#x4E3A;SKIP&#x3002;
+2.
+2.Soft dependencies&#xFF08;&#x8F6F;&#x4F9D;&#x8D56;&#xFF09;&#x3002;&#x5373;&#x4FBF;&#x662F;&#x6709;&#x4E9B;&#x4F9D;&#x8D56;&#x65B9;&#x6CD5;&#x5931;&#x8D25;&#x4E86;&#xFF0C;&#x4E5F;&#x4E00;&#x6837;&#x8FD0;&#x884C;&#x3002;&#x5982;&#x679C;&#x4F60;&#x53EA;&#x662F;&#x9700;&#x8981;&#x4FDD;&#x8BC1;&#x4F60;&#x7684;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x6309;&#x7167;&#x987A;&#x5E8F;&#x6267;&#x884C;&#xFF0C;&#x800C;&#x4E0D;&#x5173;&#x5FC3;&#x4ED6;&#x4EEC;&#x7684;&#x4F9D;&#x8D56;&#x65B9;&#x6CD5;&#x662F;&#x5426;&#x6210;&#x529F;&#x3002;&#x90A3;&#x4E48;&#x8FD9;&#x79CD;&#x673A;&#x5236;&#x5C31;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6DFB;&#x52A0; &quot;alwaysRun=true&quot; &#x5230; @Test &#x6765;&#x5B9E;&#x73B0;&#x8F6F;&#x4F9D;&#x8D56;&#x3002;
+3.
+&#x786C;&#x4F9D;&#x8D56;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>@Test
+public void serverStartedOk() {}
+@Test(dependsOnMethods = { &quot;serverStartedOk&quot; })
+public void method1() {}
+</code></pre><p>&#x6B64;&#x4F8B;&#x4E2D;&#xFF0C;method1() &#x4F9D;&#x8D56;&#x4E8E;&#x65B9;&#x6CD5; serverStartedOk()&#xFF0C;&#x4ECE;&#x800C;&#x4FDD;&#x8BC1; serverStartedOk() &#x603B;&#x662F;&#x5148;&#x8FD0;&#x884C;&#x3002;</p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x8BA9;&#x82E5;&#x5E72;&#x65B9;&#x6CD5;&#x4F9D;&#x8D56;&#x4E8E;&#x7EC4;&#xFF1A;</p>
+<pre><code>@Test(groups = { &quot;init&quot; })
+public void serverStartedOk() {}
+@Test(groups = { &quot;init&quot; })
+public void initEnvironment() {}
+@Test(dependsOnGroups = { &quot;init.* })
+public void method1() {}
+</code></pre><p>&#x672C;&#x4F8B;&#x4E2D;,method1()&#x4F9D;&#x8D56;&#x4E8E;&#x5339;&#x914D;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&quot;init.*&quot;&#x7684;&#x7EC4;&#xFF0C;&#x7531;&#x6B64;&#x4FDD;&#x8BC1;&#x4E86;serverStartedOk()&#x548C;  initEnvironment() &#x603B;&#x662F;&#x5148;&#x4E8E; method1()&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x6B63;&#x5982;&#x524D;&#x9762;&#x6240;&#x8BF4;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x5728;&#x76F8;&#x540C;&#x7EC4;&#x4E2D;&#x7684;&#x8C03;&#x7528;&#x53EF;&#x662F;&#x5728;&#x5938;&#x6D4B;&#x8BD5;&#x4E2D;&#x4E0D;&#x4FDD;&#x8BC1;&#x987A;&#x5E8F;&#x7684;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x786C;&#x4F9D;&#x8D56;&#xFF0C;&#x5E76;&#x4E14;&#x88AB;&#x4F9D;&#x8D56;&#x65B9;&#x6CD5;&#x5931;&#x8D25;(alwaysRun=false&#xFF0C;&#x5373;&#x9ED8;&#x8BA4;&#x662F;&#x786C;&#x4F9D;&#x8D56;)&#xFF0C;&#x4F9D;&#x8D56;&#x65B9;&#x6CD5;&#x5219;&#x4E0D;&#x662F;&#x88AB;&#x6807;&#x8BB0;&#x4E3A;FAIL&#x800C;&#x662F;SKIP&#x3002;&#x88AB;&#x8DF3;&#x8FC7;&#x7684;&#x65B9;&#x6CD5;&#x4F1A;&#x88AB;&#x5728;&#x6700;&#x540E;&#x7684;&#x62A5;&#x544A;&#x4E2D;&#x6807;&#x8BB0;&#x51FA;&#x6765;&#xFF08;HTML&#x65E2;&#x4E0D;&#x7528;&#x7EA2;&#x8272;&#x4E5F;&#x4E0D;&#x662F;&#x7EFF;&#x8272;&#x6240;&#x8868;&#x793A;&#xFF09;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x88AB;&#x8DF3;&#x8FC7;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x662F;&#x5FC5;&#x7136;&#x5931;&#x8D25;&#xFF0C;&#x6240;&#x4EE5;&#x88AB;&#x6807;&#x51FA;&#x6765;&#x505A;&#x4EE5;&#x533A;&#x522B;&#x3002;</p>
+<p>&#x65E0;&#x8BBA;dependsOnGroups &#x8FD8;&#x662F; dependsOnMethods &#x90FD;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;&#x5BF9;&#x4E8E; dependsOnMethods&#xFF0C;&#x5982;&#x679C;&#x88AB;&#x4F9D;&#x8D56;&#x7684;&#x65B9;&#x6CD5;&#x6709;&#x591A;&#x4E2A;&#x91CD;&#x8F7D;&#xFF0C;&#x90A3;&#x4E48;&#x6240;&#x6709;&#x7684;&#x91CD;&#x8F7D;&#x65B9;&#x6CD5;&#x90FD;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x5982;&#x679C;&#x4F60;&#x53EA;&#x5E0C;&#x671B;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x91CD;&#x8F7D;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; dependsOnGroups&#x3002;</p>
+<p>&#x4E09;&#x3001;&#x7C7B;&#x7EA7;&#x6CE8;&#x89E3;</p>
+<p>&#x901A;&#x5E38; @Test &#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6807;&#x6CE8;&#x7C7B;&#xFF0C;&#x800C;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code>@Test
+public class Test1 {
+  public void test1() {
+  }
+  public void test2() {
+  }
+}
+</code></pre><p>&#x5904;&#x4E8E;&#x7C7B;&#x7EA7;&#x7684; @Test &#x4F1A;&#x4F7F;&#x5F97;&#x7C7B;&#x4E2D;&#x6240;&#x6709;&#x7684;public&#x65B9;&#x6CD5;&#x6210;&#x4E3A;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x4E0D;&#x7BA1;&#x4ED6;&#x4EEC;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x88AB;&#x6807;&#x6CE8;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x4F60;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x7528; @Test &#x6CE8;&#x89E3;&#x91CD;&#x590D;&#x6807;&#x6CE8;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x8981;&#x4E3A;&#x5176;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x7279;&#x522B;&#x7684;&#x5C5E;&#x6027;&#x65F6;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>@Test
+public class Test1 {
+  public void test1() {
+  }
+  @Test(groups = &quot;g1&quot;)
+  public void test2() {
+  }
+}
+</code></pre><p>&#x4E0A;&#x4F8B;&#x4E2D; test1() &#x548C; test2() &#x90FD;&#x88AB;&#x5904;&#x7406;&#xFF0C;&#x4E0D;&#x8FC7;&#x5728;&#x6B64;&#x4E4B;&#x4E0A; test2() &#x73B0;&#x5728;&#x8FD8;&#x5C5E;&#x4E8E;&#x7EC4; &quot;g1&quot;&#x3002;</p>
+<p><a href="http://testng.org/doc/index.html" target="_blank">http://testng.org/doc/index.html</a></p>
+<p><a href="http://blog.csdn.net/zhu_ai_xin_520/article/details/6199217" target="_blank">http://blog.csdn.net/zhu_ai_xin_520/article/details/6199217</a></p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="testnger_ce_shi_zu.html" class="navigation navigation-prev " aria-label="Previous page: TestNG·二 测试组">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="testngsi_ce_shi_fang_fa_zhi_gong_chang.html" class="navigation navigation-next " aria-label="Next page: TestNG·四 测试方法之工厂">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"TestNG·三 测试方法","level":"1.1.23","depth":2,"next":{"title":"TestNG·四 测试方法之工厂","level":"1.1.24","depth":2,"path":"testngsi_ce_shi_fang_fa_zhi_gong_chang.md","ref":"testngsi_ce_shi_fang_fa_zhi_gong_chang.md","articles":[]},"previous":{"title":"TestNG·二 测试组","level":"1.1.22","depth":2,"path":"testnger_ce_shi_zu.md","ref":"testnger_ce_shi_zu.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WebDriver·TestNg学习日志","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"WebDriver·TestNg·selenium2 学习入门教程"},"file":{"path":"testngsan_ce_shi_fang_fa.md","mtime":"2016-06-17T06:44:36.243Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-17T07:00:14.598Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

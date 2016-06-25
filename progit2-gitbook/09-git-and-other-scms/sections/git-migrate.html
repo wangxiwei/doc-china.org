@@ -1,0 +1,2449 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>迁移到 Git · Pro Git 2 中文版</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="summary.html" />
+    
+    
+    <link rel="prev" href="git-client.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../01-introduction/1-introduction.html">
+            
+                <a href="../../01-introduction/1-introduction.html">
+            
+                    
+                    起步
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../01-introduction/sections/about-version-control.html">
+            
+                <a href="../../01-introduction/sections/about-version-control.html">
+            
+                    
+                    关于版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../01-introduction/sections/history.html">
+            
+                <a href="../../01-introduction/sections/history.html">
+            
+                    
+                    Git 简史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../01-introduction/sections/basics.html">
+            
+                <a href="../../01-introduction/sections/basics.html">
+            
+                    
+                    Git 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../01-introduction/sections/command-line.html">
+            
+                <a href="../../01-introduction/sections/command-line.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../01-introduction/sections/installing.html">
+            
+                <a href="../../01-introduction/sections/installing.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../01-introduction/sections/first-time-setup.html">
+            
+                <a href="../../01-introduction/sections/first-time-setup.html">
+            
+                    
+                    初次运行 Git 前的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../01-introduction/sections/help.html">
+            
+                <a href="../../01-introduction/sections/help.html">
+            
+                    
+                    获取帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../01-introduction/sections/summary.html">
+            
+                <a href="../../01-introduction/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../02-git-basics/1-git-basics.html">
+            
+                <a href="../../02-git-basics/1-git-basics.html">
+            
+                    
+                    Git 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../02-git-basics/sections/getting-a-repository.html">
+            
+                <a href="../../02-git-basics/sections/getting-a-repository.html">
+            
+                    
+                    获取 Git 仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../02-git-basics/sections/recording-changes.html">
+            
+                <a href="../../02-git-basics/sections/recording-changes.html">
+            
+                    
+                    记录每次更新到仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../02-git-basics/sections/viewing-history.html">
+            
+                <a href="../../02-git-basics/sections/viewing-history.html">
+            
+                    
+                    查看提交历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../02-git-basics/sections/undoing.html">
+            
+                <a href="../../02-git-basics/sections/undoing.html">
+            
+                    
+                    撤消操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../02-git-basics/sections/remotes.html">
+            
+                <a href="../../02-git-basics/sections/remotes.html">
+            
+                    
+                    远程仓库的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../02-git-basics/sections/tagging.html">
+            
+                <a href="../../02-git-basics/sections/tagging.html">
+            
+                    
+                    打标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../02-git-basics/sections/aliases.html">
+            
+                <a href="../../02-git-basics/sections/aliases.html">
+            
+                    
+                    Git 别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../02-git-basics/sections/summary.html">
+            
+                <a href="../../02-git-basics/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../03-git-branching/1-git-branching.html">
+            
+                <a href="../../03-git-branching/1-git-branching.html">
+            
+                    
+                    Git 分支
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../03-git-branching/sections/nutshell.html">
+            
+                <a href="../../03-git-branching/sections/nutshell.html">
+            
+                    
+                    分支简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../03-git-branching/sections/basic-branching-and-merging.html">
+            
+                <a href="../../03-git-branching/sections/basic-branching-and-merging.html">
+            
+                    
+                    分支的新建与合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../03-git-branching/sections/branch-management.html">
+            
+                <a href="../../03-git-branching/sections/branch-management.html">
+            
+                    
+                    分支管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../03-git-branching/sections/workflows.html">
+            
+                <a href="../../03-git-branching/sections/workflows.html">
+            
+                    
+                    分支开发工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../03-git-branching/sections/remote-branches.html">
+            
+                <a href="../../03-git-branching/sections/remote-branches.html">
+            
+                    
+                    远程分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../03-git-branching/sections/rebasing.html">
+            
+                <a href="../../03-git-branching/sections/rebasing.html">
+            
+                    
+                    变基
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../03-git-branching/sections/summary.html">
+            
+                <a href="../../03-git-branching/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../04-git-server/1-git-server.html">
+            
+                <a href="../../04-git-server/1-git-server.html">
+            
+                    
+                    服务器上的 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../04-git-server/sections/protocols.html">
+            
+                <a href="../../04-git-server/sections/protocols.html">
+            
+                    
+                    协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../04-git-server/sections/git-on-a-server.html">
+            
+                <a href="../../04-git-server/sections/git-on-a-server.html">
+            
+                    
+                    在服务器上搭建 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../04-git-server/sections/generating-ssh-key.html">
+            
+                <a href="../../04-git-server/sections/generating-ssh-key.html">
+            
+                    
+                    生成 SSH 公钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../04-git-server/sections/setting-up-server.html">
+            
+                <a href="../../04-git-server/sections/setting-up-server.html">
+            
+                    
+                    配置服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../04-git-server/sections/git-daemon.html">
+            
+                <a href="../../04-git-server/sections/git-daemon.html">
+            
+                    
+                    Git 守护进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../04-git-server/sections/smart-http.html">
+            
+                <a href="../../04-git-server/sections/smart-http.html">
+            
+                    
+                    Smart HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../04-git-server/sections/gitweb.html">
+            
+                <a href="../../04-git-server/sections/gitweb.html">
+            
+                    
+                    GitWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../04-git-server/sections/gitlab.html">
+            
+                <a href="../../04-git-server/sections/gitlab.html">
+            
+                    
+                    GitLab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../../04-git-server/sections/hosted.html">
+            
+                <a href="../../04-git-server/sections/hosted.html">
+            
+                    
+                    第三方托管的选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../../04-git-server/sections/summary.html">
+            
+                <a href="../../04-git-server/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../05-distributed-git/1-distributed-git.html">
+            
+                <a href="../../05-distributed-git/1-distributed-git.html">
+            
+                    
+                    分布式 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../05-distributed-git/sections/distributed-workflows.html">
+            
+                <a href="../../05-distributed-git/sections/distributed-workflows.html">
+            
+                    
+                    分布式工作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../05-distributed-git/sections/contributing.html">
+            
+                <a href="../../05-distributed-git/sections/contributing.html">
+            
+                    
+                    向一个项目贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../05-distributed-git/sections/maintaining.html">
+            
+                <a href="../../05-distributed-git/sections/maintaining.html">
+            
+                    
+                    维护项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../05-distributed-git/sections/summary.html">
+            
+                <a href="../../05-distributed-git/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../06-github/1-github.html">
+            
+                <a href="../../06-github/1-github.html">
+            
+                    
+                    Github
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../06-github/sections/1-setting-up-account.html">
+            
+                <a href="../../06-github/sections/1-setting-up-account.html">
+            
+                    
+                    账户的创建和配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../06-github/sections/2-contributing.html">
+            
+                <a href="../../06-github/sections/2-contributing.html">
+            
+                    
+                    对项目做出贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../06-github/sections/3-maintaining.html">
+            
+                <a href="../../06-github/sections/3-maintaining.html">
+            
+                    
+                    维护项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../06-github/sections/4-managing-organization.html">
+            
+                <a href="../../06-github/sections/4-managing-organization.html">
+            
+                    
+                    管理组织
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../06-github/sections/5-scripting.html">
+            
+                <a href="../../06-github/sections/5-scripting.html">
+            
+                    
+                    脚本 GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../06-github/sections/6-summary.html">
+            
+                <a href="../../06-github/sections/6-summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../07-git-tools/1-git-tools.html">
+            
+                <a href="../../07-git-tools/1-git-tools.html">
+            
+                    
+                    Git 工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../07-git-tools/sections/revision-selection.html">
+            
+                <a href="../../07-git-tools/sections/revision-selection.html">
+            
+                    
+                    选择修订版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../07-git-tools/sections/interactive-staging.html">
+            
+                <a href="../../07-git-tools/sections/interactive-staging.html">
+            
+                    
+                    交互式暂存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../07-git-tools/sections/stashing-cleaning.html">
+            
+                <a href="../../07-git-tools/sections/stashing-cleaning.html">
+            
+                    
+                    储藏与清理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../07-git-tools/sections/signing.html">
+            
+                <a href="../../07-git-tools/sections/signing.html">
+            
+                    
+                    签署工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../07-git-tools/sections/searching.html">
+            
+                <a href="../../07-git-tools/sections/searching.html">
+            
+                    
+                    搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../07-git-tools/sections/rewriting-history.html">
+            
+                <a href="../../07-git-tools/sections/rewriting-history.html">
+            
+                    
+                    重写历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../07-git-tools/sections/reset.html">
+            
+                <a href="../../07-git-tools/sections/reset.html">
+            
+                    
+                    重置揭密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../../07-git-tools/sections/advanced-merging.html">
+            
+                <a href="../../07-git-tools/sections/advanced-merging.html">
+            
+                    
+                    高级合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../../07-git-tools/sections/rerere.html">
+            
+                <a href="../../07-git-tools/sections/rerere.html">
+            
+                    
+                    Rerere
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../../07-git-tools/sections/debugging.html">
+            
+                <a href="../../07-git-tools/sections/debugging.html">
+            
+                    
+                    使用 Git 调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../../07-git-tools/sections/submodules.html">
+            
+                <a href="../../07-git-tools/sections/submodules.html">
+            
+                    
+                    子模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../../07-git-tools/sections/bundling.html">
+            
+                <a href="../../07-git-tools/sections/bundling.html">
+            
+                    
+                    打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../../07-git-tools/sections/replace.html">
+            
+                <a href="../../07-git-tools/sections/replace.html">
+            
+                    
+                    替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../../07-git-tools/sections/credentials.html">
+            
+                <a href="../../07-git-tools/sections/credentials.html">
+            
+                    
+                    凭证存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../../07-git-tools/sections/summary.html">
+            
+                <a href="../../07-git-tools/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../08-customizing-git/1-customizing-git.html">
+            
+                <a href="../../08-customizing-git/1-customizing-git.html">
+            
+                    
+                    自定义 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../08-customizing-git/sections/config.html">
+            
+                <a href="../../08-customizing-git/sections/config.html">
+            
+                    
+                    配置 Gits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../08-customizing-git/sections/attributes.html">
+            
+                <a href="../../08-customizing-git/sections/attributes.html">
+            
+                    
+                    Git 属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../08-customizing-git/sections/hooks.html">
+            
+                <a href="../../08-customizing-git/sections/hooks.html">
+            
+                    
+                    Git 钩子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../08-customizing-git/sections/policy.html">
+            
+                <a href="../../08-customizing-git/sections/policy.html">
+            
+                    
+                    使用强制策略的一个例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../08-customizing-git/sections/summary.html">
+            
+                <a href="../../08-customizing-git/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../1-git-and-other-scms.html">
+            
+                <a href="../1-git-and-other-scms.html">
+            
+                    
+                    Git 与其他系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="git-client.html">
+            
+                <a href="git-client.html">
+            
+                    
+                    作为客户端的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.2" data-path="git-migrate.html">
+            
+                <a href="git-migrate.html">
+            
+                    
+                    迁移到 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../10-git-internals/1-git-internals.html">
+            
+                <a href="../../10-git-internals/1-git-internals.html">
+            
+                    
+                    Git 内部原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../10-git-internals/sections/plumbing-porcelain.html">
+            
+                <a href="../../10-git-internals/sections/plumbing-porcelain.html">
+            
+                    
+                    底层命令和高层命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../10-git-internals/sections/objects.html">
+            
+                <a href="../../10-git-internals/sections/objects.html">
+            
+                    
+                    Git 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../10-git-internals/sections/refs.html">
+            
+                <a href="../../10-git-internals/sections/refs.html">
+            
+                    
+                    Git 引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../../10-git-internals/sections/packfiles.html">
+            
+                <a href="../../10-git-internals/sections/packfiles.html">
+            
+                    
+                    包文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../../10-git-internals/sections/refspec.html">
+            
+                <a href="../../10-git-internals/sections/refspec.html">
+            
+                    
+                    引用规格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../../10-git-internals/sections/transfer-protocols.html">
+            
+                <a href="../../10-git-internals/sections/transfer-protocols.html">
+            
+                    
+                    传输协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../../10-git-internals/sections/maintenance.html">
+            
+                <a href="../../10-git-internals/sections/maintenance.html">
+            
+                    
+                    维护与数据恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../../10-git-internals/sections/environment.html">
+            
+                <a href="../../10-git-internals/sections/environment.html">
+            
+                    
+                    环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../../10-git-internals/sections/summary.html">
+            
+                <a href="../../10-git-internals/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../A-git-in-other-environments/1-git-other-environments.html">
+            
+                <a href="../../A-git-in-other-environments/1-git-other-environments.html">
+            
+                    
+                    附录A：其它环境中的 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../A-git-in-other-environments/sections/guis.html">
+            
+                <a href="../../A-git-in-other-environments/sections/guis.html">
+            
+                    
+                    图形界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../A-git-in-other-environments/sections/visualstudio.html">
+            
+                <a href="../../A-git-in-other-environments/sections/visualstudio.html">
+            
+                    
+                    Visual Studio 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../A-git-in-other-environments/sections/eclipse.html">
+            
+                <a href="../../A-git-in-other-environments/sections/eclipse.html">
+            
+                    
+                    Eclipse 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../../A-git-in-other-environments/sections/bash.html">
+            
+                <a href="../../A-git-in-other-environments/sections/bash.html">
+            
+                    
+                    Bash 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../../A-git-in-other-environments/sections/zsh.html">
+            
+                <a href="../../A-git-in-other-environments/sections/zsh.html">
+            
+                    
+                    Zsh 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../../A-git-in-other-environments/sections/powershell.html">
+            
+                <a href="../../A-git-in-other-environments/sections/powershell.html">
+            
+                    
+                    Powershell 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../../A-git-in-other-environments/sections/summary.html">
+            
+                <a href="../../A-git-in-other-environments/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../B-embedding-git/1-embedding-git.html">
+            
+                <a href="../../B-embedding-git/1-embedding-git.html">
+            
+                    
+                    附录B：将 Git 嵌入你的应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../B-embedding-git/sections/command-line.html">
+            
+                <a href="../../B-embedding-git/sections/command-line.html">
+            
+                    
+                    命令行 Git 方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../B-embedding-git/sections/libgit2.html">
+            
+                <a href="../../B-embedding-git/sections/libgit2.html">
+            
+                    
+                    Libgit2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../../B-embedding-git/sections/jgit.html">
+            
+                <a href="../../B-embedding-git/sections/jgit.html">
+            
+                    
+                    JGit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../C-git-commands/1-git-commands.html">
+            
+                <a href="../../C-git-commands/1-git-commands.html">
+            
+                    
+                    附录C：Git 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../contributors.html">
+            
+                <a href="../../contributors.html">
+            
+                    
+                    原书贡献者
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >迁移到 Git</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect2">
+<h3 id="_migrating">&#x8FC1;&#x79FB;&#x5230; Git</h3>
+<div class="paragraph">
+<p>
+&#x5982;&#x679C;&#x4F60;&#x73B0;&#x5728;&#x6709;&#x4E00;&#x4E2A;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x5176;&#x4ED6; VCS &#x7684;&#x4EE3;&#x7801;&#x5E93;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x5DF2;&#x7ECF;&#x51B3;&#x5B9A;&#x5F00;&#x59CB;&#x4F7F;&#x7528; Git&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x5C06;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x8FC1;&#x79FB;&#x81F3; Git&#x3002;
+&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x4F1A;&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x901A;&#x7528;&#x7CFB;&#x7EDF;&#x7684;&#x5BFC;&#x5165;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x5F00;&#x53D1;&#x4F60;&#x81EA;&#x5DF1;&#x5B9A;&#x5236;&#x7684;&#x5BFC;&#x5165;&#x5668;&#x3002;
+&#x4F60;&#x5C06;&#x4F1A;&#x5B66;&#x4E60;&#x5982;&#x4F55;&#x4ECE;&#x51E0;&#x4E2A;&#x5927;&#x578B;&#x4E13;&#x4E1A;&#x5E94;&#x7528;&#x7684; SCM &#x7CFB;&#x7EDF;&#x4E2D;&#x5BFC;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x4EC5;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x662F;&#x5927;&#x591A;&#x6570;&#x60F3;&#x8981;&#x8F6C;&#x6362;&#x7684;&#x7528;&#x6237;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x4E5F;&#x56E0;&#x4E3A;&#x83B7;&#x53D6;&#x9488;&#x5BF9;&#x5B83;&#x4EEC;&#x7684;&#x9AD8;&#x8D28;&#x91CF;&#x5DE5;&#x5177;&#x5F88;&#x5BB9;&#x6613;&#x3002;</p>
+</div>
+<div class="sect3">
+<h4 id="_subversion">Subversion</h4>
+<div class="paragraph">
+<p>
+
+&#x5982;&#x679C;&#x4F60;&#x9605;&#x8BFB;&#x8FC7;&#x524D;&#x9762;&#x5173;&#x4E8E; <code>git svn</code> &#x7684;&#x7AE0;&#x8282;&#xFF0C;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x4F7F;&#x7528;&#x90A3;&#x4E9B;&#x6307;&#x4EE4;&#x6765; <code>git svn clone</code> &#x4E00;&#x4E2A;&#x4ED3;&#x5E93;&#xFF0C;&#x505C;&#x6B62;&#x4F7F;&#x7528; Subversion &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x63A8;&#x9001;&#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Git &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x4F7F;&#x7528;&#x4E86;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x5386;&#x53F2;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE; Subversion &#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5C3D;&#x53EF;&#x80FD;&#x5FEB;&#x5730;&#x62C9;&#x53D6;&#x6570;&#x636E;&#x6765;&#x5B8C;&#x6210;&#x8FD9;&#x4EF6;&#x4E8B;&#xFF08;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x82B1;&#x8D39;&#x4E00;&#x4E9B;&#x65F6;&#x95F4;&#xFF09;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x7136;&#x800C;&#xFF0C;&#x5BFC;&#x5165;&#x5E76;&#x4E0D;&#x5B8C;&#x7F8E;&#xFF1B;&#x56E0;&#x4E3A;&#x82B1;&#x8D39;&#x592A;&#x957F;&#x65F6;&#x95F4;&#x4E86;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x65E9;&#x5DF2;&#x7528;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x5BFC;&#x5165;&#x64CD;&#x4F5C;&#x3002;
+&#x5BFC;&#x5165;&#x4EA7;&#x751F;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x5C31;&#x662F;&#x4F5C;&#x8005;&#x4FE1;&#x606F;&#x3002;
+&#x5728; Subversion &#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x4EBA;&#x63D0;&#x4EA4;&#x65F6;&#x90FD;&#x9700;&#x8981;&#x5728;&#x7CFB;&#x7EDF;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x5B83;&#x4F1A;&#x88AB;&#x8BB0;&#x5F55;&#x5728;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x5185;&#x3002;
+&#x5728;&#x4E4B;&#x524D;&#x7AE0;&#x8282;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x663E;&#x793A;&#x4E86; <code>schacon</code>&#xFF0C;&#x6BD4;&#x5982; <code>blame</code> &#x8F93;&#x51FA;&#x4E0E; <code>git svn log</code>&#x3002;
+&#x5982;&#x679C;&#x60F3;&#x8981;&#x5C06;&#x4E0A;&#x9762;&#x7684; Subversion &#x7528;&#x6237;&#x6620;&#x5C04;&#x5230;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684; Git &#x4F5C;&#x8005;&#x6570;&#x636E;&#x4E2D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x4E00;&#x4E2A; Subversion &#x7528;&#x6237;&#x5230; Git &#x7528;&#x6237;&#x7684;&#x6620;&#x5C04;&#x3002;
+&#x521B;&#x5EFA;&#x4E00;&#x4E2A; <code>users.txt</code> &#x7684;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#x6620;&#x5C04;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>schacon = Scott Chacon &lt;schacon@geemail.com&gt;
+selse = Someo Nelse &lt;selse@geemail.com&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4E3A;&#x4E86;&#x83B7;&#x5F97; SVN &#x4F7F;&#x7528;&#x7684;&#x4F5C;&#x8005;&#x540D;&#x5B57;&#x5217;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ svn log --xml | grep author | sort -u | \
+  perl -pe &apos;s/.*&gt;(.*?)&lt;.*/$1 = /&apos;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x4F1A;&#x5C06;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x4E3A; XML &#x683C;&#x5F0F;&#xFF0C;&#x7136;&#x540E;&#x4FDD;&#x7559;&#x4F5C;&#x8005;&#x4FE1;&#x606F;&#x884C;&#x3001;&#x53BB;&#x9664;&#x91CD;&#x590D;&#x3001;&#x53BB;&#x9664; XML &#x6807;&#x8BB0;&#x3002;
+&#xFF08;&#x5F88;&#x663E;&#x7136;&#x8FD9;&#x53EA;&#x4F1A;&#x5728;&#x5B89;&#x88C5;&#x4E86; <code>grep</code>&#x3001;<code>sort</code> &#x4E0E; <code>perl</code> &#x7684;&#x673A;&#x5668;&#x4E0A;&#x8FD0;&#x884C;&#x3002;&#xFF09;
+&#x7136;&#x540E;&#xFF0C;&#x5C06;&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x4F60;&#x7684; users.txt &#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x8BB0;&#x5F55;&#x540E;&#x9762;&#x52A0;&#x5165;&#x5BF9;&#x5E94;&#x7684; Git &#x7528;&#x6237;&#x6570;&#x636E;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x6B64;&#x6587;&#x4EF6;&#x63D0;&#x4F9B;&#x7ED9; <code>git svn</code> &#x6765;&#x5E2E;&#x52A9;&#x5B83;&#x66F4;&#x52A0;&#x7CBE;&#x786E;&#x5730;&#x6620;&#x5C04;&#x4F5C;&#x8005;&#x6570;&#x636E;&#x3002;
+&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F20;&#x9012; <code>--no-metadata</code> &#x7ED9; <code>clone</code> &#x4E0E; <code>init</code> &#x547D;&#x4EE4;&#xFF0C;&#x544A;&#x8BC9; <code>git svn</code> &#x4E0D;&#x8981;&#x5305;&#x62EC; Subversion &#x901A;&#x5E38;&#x4F1A;&#x5BFC;&#x5165;&#x7684;&#x5143;&#x6570;&#x636E;&#x3002;
+&#x8FD9;&#x4F1A;&#x4F7F;&#x4F60;&#x7684; <code>import</code> &#x547D;&#x4EE4;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git svn clone http://my-project.googlecode.com/svn/ \
+      --authors-file=users.txt --no-metadata -s my_project</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#x5728; <code>my_project</code> &#x76EE;&#x5F55;&#x4E2D;&#x5E94;&#x5F53;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684; Subversion &#x5BFC;&#x5165;&#x3002;
+&#x5E76;&#x4E0D;&#x50CF;&#x662F;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x7684;&#x63D0;&#x4EA4;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>commit 37efa680e8473b615de980fa935944215428a35a
+Author: schacon &lt;schacon@4c93b258-373f-11de-be05-5f7a86268029&gt;
+Date:   Sun May 3 00:12:22 2009 +0000
+
+    fixed install - go to trunk
+
+    git-svn-id: https://my-project.googlecode.com/svn/trunk@94 4c93b258-373f-11de-
+    be05-5f7a86268029</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x53CD;&#x800C;&#x5B83;&#x4EEC;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>commit 03a8785f44c8ea5cdb0e8834b7c8e6c469be2ff2
+Author: Scott Chacon &lt;schacon@geemail.com&gt;
+Date:   Sun May 3 00:12:22 2009 +0000
+
+    fixed install - go to trunk</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4E0D;&#x4EC5;&#x662F; Author &#x5B57;&#x6BB5;&#x66F4;&#x597D;&#x770B;&#x4E86;&#xFF0C;<code>git-svn-id</code> &#x4E5F;&#x4E0D;&#x5728;&#x4E86;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x5E94;&#x5F53;&#x505A;&#x4E00;&#x4E9B;&#x5BFC;&#x5165;&#x540E;&#x7684;&#x6E05;&#x7406;&#x5DE5;&#x4F5C;&#x3002;
+&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x4F60;&#x5E94;&#x5F53;&#x6E05;&#x7406; <code>git svn</code> &#x8BBE;&#x7F6E;&#x7684;&#x5947;&#x602A;&#x7684;&#x5F15;&#x7528;&#x3002;
+&#x9996;&#x5148;&#x79FB;&#x52A8;&#x6807;&#x7B7E;&#xFF0C;&#x8FD9;&#x6837;&#x5B83;&#x4EEC;&#x5C31;&#x662F;&#x6807;&#x7B7E;&#x800C;&#x4E0D;&#x662F;&#x5947;&#x602A;&#x7684;&#x8FDC;&#x7A0B;&#x5F15;&#x7528;&#xFF0C;&#x7136;&#x540E;&#x4F60;&#x4F1A;&#x79FB;&#x52A8;&#x5269;&#x4F59;&#x7684;&#x5206;&#x652F;&#x8FD9;&#x6837;&#x5B83;&#x4EEC;&#x5C31;&#x662F;&#x672C;&#x5730;&#x7684;&#x4E86;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E3A;&#x4E86;&#x5C06;&#x6807;&#x7B7E;&#x53D8;&#x4E3A;&#x5408;&#x9002;&#x7684; Git &#x6807;&#x7B7E;&#xFF0C;&#x8FD0;&#x884C;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ cp -Rf .git/refs/remotes/origin/tags/* .git/refs/tags/
+$ rm -Rf .git/refs/remotes/origin/tags</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x4F1A;&#x4F7F;&#x539F;&#x6765;&#x5728; <code>remotes/origin/tags/</code> &#x91CC;&#x7684;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x5F15;&#x7528;&#x53D8;&#x6210;&#x771F;&#x6B63;&#x7684;&#xFF08;&#x8F7B;&#x91CF;&#xFF09;&#x6807;&#x7B7E;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x5C06; <code>refs/remotes</code> &#x4E0B;&#x5269;&#x4F59;&#x7684;&#x5F15;&#x7528;&#x79FB;&#x52A8;&#x4E3A;&#x672C;&#x5730;&#x5206;&#x652F;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ cp -Rf .git/refs/remotes/* .git/refs/heads/
+$ rm -Rf .git/refs/remotes</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#x6240;&#x6709;&#x7684;&#x65E7;&#x5206;&#x652F;&#x90FD;&#x662F;&#x771F;&#x6B63;&#x7684; Git &#x5206;&#x652F;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x7684;&#x65E7;&#x6807;&#x7B7E;&#x90FD;&#x662F;&#x771F;&#x6B63;&#x7684; Git &#x6807;&#x7B7E;&#x3002;
+&#x6700;&#x540E;&#x4E00;&#x4EF6;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#xFF0C;&#x5C06;&#x4F60;&#x7684;&#x65B0; Git &#x670D;&#x52A1;&#x5668;&#x6DFB;&#x52A0;&#x4E3A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x5E76;&#x63A8;&#x9001;&#x5230;&#x4E0A;&#x9762;&#x3002;
+&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x5C06;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x5668;&#x6DFB;&#x52A0;&#x4E3A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git remote add origin git@my-git-server:myrepository.git</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x56E0;&#x4E3A;&#x60F3;&#x8981;&#x4E0A;&#x4F20;&#x6240;&#x6709;&#x5206;&#x652F;&#x4E0E;&#x6807;&#x7B7E;&#xFF0C;&#x4F60;&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git push origin --all</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x901A;&#x8FC7;&#x4EE5;&#x4E0A;&#x6F02;&#x4EAE;&#x3001;&#x5E72;&#x51C0;&#x5730;&#x5BFC;&#x5165;&#x64CD;&#x4F5C;&#xFF0C;&#x4F60;&#x7684;&#x6240;&#x6709;&#x5206;&#x652F;&#x4E0E;&#x6807;&#x7B7E;&#x90FD;&#x5E94;&#x8BE5;&#x5728;&#x65B0; Git &#x670D;&#x52A1;&#x5668;&#x4E0A;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mercurial">Mercurial</h4>
+<div class="paragraph">
+<p>
+&#x56E0;&#x4E3A; Mercurial &#x4E0E; Git &#x5728;&#x8868;&#x793A;&#x7248;&#x672C;&#x65F6;&#x6709;&#x7740;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x4E5F;&#x56E0;&#x4E3A; Git &#x62E5;&#x6709;&#x66F4;&#x52A0;&#x5F3A;&#x5927;&#x7684;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x5C06;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;&#x4ECE; Mercurial &#x8F6C;&#x6362;&#x5230; Git &#x662F;&#x76F8;&#x5F53;&#x76F4;&#x63A5;&#x7684;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x53EB;&#x4F5C;&#x201C;hg-fast-export&#x201D;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x9700;&#x8981;&#x4ECE;&#x8FD9;&#x91CC;&#x62F7;&#x8D1D;&#x4E00;&#x4EFD;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git clone http://repo.or.cz/r/fast-export.git /tmp/fast-export</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8F6C;&#x6362;&#x7684;&#x7B2C;&#x4E00;&#x6B65;&#x5C31;&#x662F;&#x8981;&#x5148;&#x5F97;&#x5230;&#x60F3;&#x8981;&#x8F6C;&#x6362;&#x7684; Mercurial &#x4ED3;&#x5E93;&#x7684;&#x5B8C;&#x6574;&#x514B;&#x9686;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ hg clone &lt;remote repo URL&gt; /tmp/hg-repo</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4E0B;&#x4E00;&#x6B65;&#x5C31;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4F5C;&#x8005;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x3002;
+Mercurial &#x5BF9;&#x653E;&#x5165;&#x5230;&#x53D8;&#x66F4;&#x96C6;&#x4F5C;&#x8005;&#x5B57;&#x6BB5;&#x7684;&#x5185;&#x5BB9;&#x6BD4; Git &#x66F4;&#x5BBD;&#x5BB9;&#x4E00;&#x4E9B;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6E05;&#x7406;&#x7684;&#x597D;&#x673A;&#x4F1A;&#x3002;
+&#x53EA;&#x9700;&#x8981;&#x7528;&#x5230; <code>bash</code> &#x7EC8;&#x7AEF;&#x4E0B;&#x7684;&#x4E00;&#x884C;&#x547D;&#x4EE4;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ cd /tmp/hg-repo
+$ hg log | grep user: | sort | uniq | sed &apos;s/user: *//&apos; &gt; ../authors</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x4F1A;&#x82B1;&#x8D39;&#x51E0;&#x79D2;&#x949F;&#xFF0C;&#x5177;&#x4F53;&#x8981;&#x770B;&#x9879;&#x76EE;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x6709;&#x591A;&#x5C11;&#xFF0C;&#x6700;&#x7EC8; <code>/tmp/authors</code> &#x6587;&#x4EF6;&#x770B;&#x8D77;&#x6765;&#x4F1A;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>bob
+bob@localhost
+bob &lt;bob@company.com&gt;
+bob jones &lt;bob &lt;AT&gt; company &lt;DOT&gt; com&gt;
+Bob Jones &lt;bob@company.com&gt;
+Joe Smith &lt;joe@company.com&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x4EBA;&#xFF08;Bob&#xFF09;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x540D;&#x5B57;&#x521B;&#x5EFA;&#x53D8;&#x66F4;&#x96C6;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x4E0D;&#x7B26;&#x5408; Git &#x63D0;&#x4EA4;&#x7684;&#x89C4;&#x8303;&#x3002;
+Hg-fast-export &#x901A;&#x8FC7;&#x5411;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x884C;&#x5C3E;&#x6DFB;&#x52A0; <code>={new name and email address}</code> &#x6765;&#x4FEE;&#x6B63;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x79FB;&#x9664;&#x4EFB;&#x4F55;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x4FDD;&#x7559;&#x7684;&#x7528;&#x6237;&#x540D;&#x6240;&#x5728;&#x7684;&#x884C;&#x3002;
+&#x5982;&#x679C;&#x6240;&#x6709;&#x7684;&#x7528;&#x6237;&#x540D;&#x770B;&#x8D77;&#x6765;&#x90FD;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x6839;&#x672C;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x3002;
+&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x6587;&#x4EF6;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>bob=Bob Jones &lt;bob@company.com&gt;
+bob@localhost=Bob Jones &lt;bob@company.com&gt;
+bob jones &lt;bob &lt;AT&gt; company &lt;DOT&gt; com&gt;=Bob Jones &lt;bob@company.com&gt;
+bob &lt;bob@company.com&gt;=Bob Jones &lt;bob@company.com&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4E0B;&#x4E00;&#x6B65;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Git &#x4ED3;&#x5E93;&#xFF0C;&#x7136;&#x540E;&#x8FD0;&#x884C;&#x5BFC;&#x51FA;&#x811A;&#x672C;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git init /tmp/converted
+$ cd /tmp/converted
+$ /tmp/fast-export/hg-fast-export.sh -r /tmp/hg-repo -A /tmp/authors</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>-r</code> &#x9009;&#x9879;&#x544A;&#x8BC9; hg-fast-export &#x53BB;&#x54EA;&#x91CC;&#x5BFB;&#x627E;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x8F6C;&#x6362;&#x7684; Mercurial &#x4ED3;&#x5E93;&#xFF0C;<code>-A</code> &#x6807;&#x8BB0;&#x544A;&#x8BC9;&#x5B83;&#x5728;&#x54EA;&#x627E;&#x5230;&#x4F5C;&#x8005;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x3002;
+&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x4F1A;&#x5206;&#x6790; Mercurial &#x53D8;&#x66F4;&#x96C6;&#x7136;&#x540E;&#x5C06;&#x5B83;&#x4EEC;&#x8F6C;&#x6362;&#x6210; Git&#x201C;fast-import&#x201D;&#x529F;&#x80FD;&#xFF08;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4E4B;&#x540E;&#x8BE6;&#x7EC6;&#x8BA8;&#x8BBA;&#xFF09;&#x9700;&#x8981;&#x7684;&#x811A;&#x672C;&#x3002;
+&#x8FD9;&#x4F1A;&#x82B1;&#x4E00;&#x70B9;&#x65F6;&#x95F4;&#xFF08;&#x5C3D;&#x7BA1;&#x5B83;&#x6BD4;&#x901A;&#x8FC7;&#x7F51;&#x683C; <em>&#x66F4;</em> &#x5FEB;&#xFF09;&#xFF0C;&#x8F93;&#x51FA;&#x76F8;&#x5F53;&#x7684;&#x5197;&#x957F;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ /tmp/fast-export/hg-fast-export.sh -r /tmp/hg-repo -A /tmp/authors
+Loaded 4 authors
+master: Exporting full revision 1/22208 with 13/0/0 added/changed/removed files
+master: Exporting simple delta revision 2/22208 with 1/1/0 added/changed/removed files
+master: Exporting simple delta revision 3/22208 with 0/1/0 added/changed/removed files
+[&#x2026;]
+master: Exporting simple delta revision 22206/22208 with 0/4/0 added/changed/removed files
+master: Exporting simple delta revision 22207/22208 with 0/2/0 added/changed/removed files
+master: Exporting thorough delta revision 22208/22208 with 3/213/0 added/changed/removed files
+Exporting tag [0.4c] at [hg r9] [git :10]
+Exporting tag [0.4d] at [hg r16] [git :17]
+[&#x2026;]
+Exporting tag [3.1-rc] at [hg r21926] [git :21927]
+Exporting tag [3.1] at [hg r21973] [git :21974]
+Issued 22315 commands
+git-fast-import statistics:
+---------------------------------------------------------------------
+Alloc&apos;d objects:     120000
+Total objects:       115032 (    208171 duplicates                  )
+      blobs  :        40504 (    205320 duplicates      26117 deltas of      39602 attempts)
+      trees  :        52320 (      2851 duplicates      47467 deltas of      47599 attempts)
+      commits:        22208 (         0 duplicates          0 deltas of          0 attempts)
+      tags   :            0 (         0 duplicates          0 deltas of          0 attempts)
+Total branches:         109 (         2 loads     )
+      marks:        1048576 (     22208 unique    )
+      atoms:           1952
+Memory total:          7860 KiB
+       pools:          2235 KiB
+     objects:          5625 KiB
+---------------------------------------------------------------------
+pack_report: getpagesize()            =       4096
+pack_report: core.packedGitWindowSize = 1073741824
+pack_report: core.packedGitLimit      = 8589934592
+pack_report: pack_used_ctr            =      90430
+pack_report: pack_mmap_calls          =      46771
+pack_report: pack_open_windows        =          1 /          1
+pack_report: pack_mapped              =  340852700 /  340852700
+---------------------------------------------------------------------
+
+$ git shortlog -sn
+   369  Bob Jones
+   365  Joe Smith</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x90A3;&#x770B;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x597D;&#x3002;
+&#x6240;&#x6709; Mercurial &#x6807;&#x7B7E;&#x90FD;&#x5DF2;&#x88AB;&#x8F6C;&#x6362;&#x6210; Git &#x6807;&#x7B7E;&#xFF0C;Mercurial &#x5206;&#x652F;&#x4E0E;&#x4E66;&#x7B7E;&#x90FD;&#x88AB;&#x8F6C;&#x6362;&#x6210; Git &#x5206;&#x652F;&#x3002;
+&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x597D;&#x5C06;&#x4ED3;&#x5E93;&#x63A8;&#x9001;&#x5230;&#x65B0;&#x7684;&#x670D;&#x52A1;&#x5668;&#x90A3;&#x8FB9;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git remote add origin git@my-git-server:myrepository.git
+$ git push origin --all</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_perforce_import">Perforce</h4>
+<div class="paragraph">
+<p>
+&#x4E0B;&#x4E00;&#x4E2A;&#x5C06;&#x8981;&#x770B;&#x5230;&#x5BFC;&#x5165;&#x7684;&#x7CFB;&#x7EDF;&#x662F; Perforce&#x3002;
+&#x5C31;&#x50CF;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x8BA8;&#x8BBA;&#x8FC7;&#x7684;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x8BA9; Git &#x4E0E; Perforce &#x4E92;&#x76F8;&#x901A;&#x4FE1;&#xFF1A;git-p4 &#x4E0E; Perforce Git Fusion&#x3002;</p>
+</div>
+<div class="sect4">
+<h5 id="_perforce_git_fusion">Perforce Git Fusion</h5>
+<div class="paragraph">
+<p>Git Fusion &#x4F7F;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x6BEB;&#x65E0;&#x75DB;&#x82E6;&#x3002;
+&#x53EA;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5728; <a href="#_p4_git_fusion">[_p4_git_fusion]</a> &#x4E2D;&#x8BA8;&#x8BBA;&#x8FC7;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x914D;&#x7F6E;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x8BBE;&#x7F6E;&#x3001;&#x7528;&#x6237;&#x6620;&#x5C04;&#x4E0E;&#x5206;&#x652F;&#xFF0C;&#x7136;&#x540E;&#x514B;&#x9686;&#x6574;&#x4E2A;&#x4ED3;&#x5E93;&#x3002;
+Git Fusion &#x8BA9;&#x4F60;&#x5904;&#x5728;&#x4E00;&#x4E2A;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x539F;&#x751F; Git &#x4ED3;&#x5E93;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x613F;&#x610F;&#x7684;&#x8BDD;&#x4F60;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x5C06;&#x5B83;&#x63A8;&#x9001;&#x5230;&#x4E00;&#x4E2A;&#x539F;&#x751F; Git &#x6258;&#x7BA1;&#x4E2D;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x7684;&#x8BDD;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Perforce &#x4F5C;&#x4E3A;&#x4F60;&#x7684; Git &#x6258;&#x7BA1;&#x3002;</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_git_p4">Git-p4</h5>
+<div class="paragraph">
+<p>Git-p4 &#x4E5F;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5BFC;&#x5165;&#x5DE5;&#x5177;&#x3002;
+&#x4F5C;&#x4E3A;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4ECE; Perforce &#x516C;&#x5F00;&#x4ED3;&#x5E93;&#x4E2D;&#x5BFC;&#x5165; Jam &#x9879;&#x76EE;&#x3002;
+&#x4E3A;&#x4E86;&#x8BBE;&#x7F6E;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x5FC5;&#x987B;&#x5BFC;&#x51FA; P4PORT &#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6307;&#x5411; Perforce &#x4ED3;&#x5E93;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ export P4PORT=public.perforce.com:1666</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>&#x4E3A;&#x4E86;&#x7EE7;&#x7EED;&#x540E;&#x7EED;&#x6B65;&#x9AA4;&#xFF0C;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x5230; Perforce &#x4ED3;&#x5E93;&#x3002;
+&#x5728;&#x6211;&#x4EEC;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x5C06;&#x4F1A;&#x4F7F;&#x7528;&#x5728; public.perforce.com &#x7684;&#x516C;&#x5F00;&#x4ED3;&#x5E93;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x4F60;&#x6709;&#x6743;&#x9650;&#x7684;&#x4ED3;&#x5E93;&#x3002;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>
+&#x8FD0;&#x884C; <code>git p4 clone</code> &#x547D;&#x4EE4;&#x4ECE; Perforce &#x670D;&#x52A1;&#x5668;&#x5BFC;&#x5165; Jam &#x9879;&#x76EE;&#xFF0C;&#x63D0;&#x4F9B;&#x4ED3;&#x5E93;&#x3001;&#x9879;&#x76EE;&#x8DEF;&#x5F84;&#x4E0E;&#x4F60;&#x60F3;&#x8981;&#x5B58;&#x653E;&#x5BFC;&#x5165;&#x9879;&#x76EE;&#x7684;&#x8DEF;&#x5F84;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git-p4 clone //guest/perforce_software/jam@all p4import
+Importing from //guest/perforce_software/jam@all into p4import
+Initialized empty Git repository in /private/tmp/p4import/.git/
+Import destination: refs/remotes/p4/master
+Importing revision 9957 (100%)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x9879;&#x76EE;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x4F60;&#x5728;&#x5206;&#x652F;&#x89C6;&#x56FE;&#xFF08;&#x6216;&#x8005;&#x8BF4;&#x4E00;&#x4E9B;&#x76EE;&#x5F55;&#xFF09;&#x4E2D;&#x914D;&#x7F6E;&#x4E86;&#x4E00;&#x4E9B;&#x5206;&#x652F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06; <code>--detect-branches</code> &#x9009;&#x9879;&#x4F20;&#x9012;&#x7ED9; <code>git p4 clone</code> &#x6765;&#x5BFC;&#x5165;&#x9879;&#x76EE;&#x7684;&#x6240;&#x6709;&#x5206;&#x652F;&#x3002;
+&#x67E5;&#x770B; <a href="#_git_p4_branches">[_git_p4_branches]</a> &#x6765;&#x4E86;&#x89E3;&#x5173;&#x4E8E;&#x8FD9;&#x70B9;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x6B64;&#x65F6;&#x4F60;&#x51E0;&#x4E4E;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x4E86;&#x3002;
+&#x5982;&#x679C;&#x8FDB;&#x5165; <code>p4import</code> &#x76EE;&#x5F55;&#x4E2D;&#x5E76;&#x8FD0;&#x884C; <code>git log</code>&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4F60;&#x7684;&#x5BFC;&#x5165;&#x5DE5;&#x4F5C;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git log -2
+commit e5da1c909e5db3036475419f6379f2c73710c4e6
+Author: giles &lt;giles@giles@perforce.com&gt;
+Date:   Wed Feb 8 03:13:27 2012 -0800
+
+    Correction to line 355; change &lt;/UL&gt; to &lt;/OL&gt;.
+
+    [git-p4: depot-paths = &quot;//public/jam/src/&quot;: change = 8068]
+
+commit aa21359a0a135dda85c50a7f7cf249e4f7b8fd98
+Author: kwirth &lt;kwirth@perforce.com&gt;
+Date:   Tue Jul 7 01:35:51 2009 -0800
+
+    Fix spelling error on Jam doc page (cummulative -&gt; cumulative).
+
+    [git-p4: depot-paths = &quot;//public/jam/src/&quot;: change = 7304]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230; <code>git-p4</code>&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x91CC;&#x90FD;&#x7559;&#x4E0B;&#x4E86;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#x3002;
+&#x5982;&#x679C;&#x4E4B;&#x540E;&#x60F3;&#x8981;&#x5F15;&#x7528; Perforce &#x7684;&#x4FEE;&#x6539;&#x5E8F;&#x53F7;&#x7684;&#x8BDD;&#xFF0C;&#x6807;&#x8BC6;&#x7B26;&#x4FDD;&#x7559;&#x5728;&#x90A3;&#x91CC;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;
+&#x7136;&#x800C;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x79FB;&#x9664;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x73B0;&#x5728;&#x6B63;&#x662F;&#x8FD9;&#x4E48;&#x505A;&#x7684;&#x65F6;&#x5019; - &#x5728;&#x4F60;&#x5F00;&#x59CB;&#x5728;&#x65B0;&#x4ED3;&#x5E93;&#x4E2D;&#x5DE5;&#x4F5C;&#x4E4B;&#x524D;&#x3002;
+
+&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>git filter-branch</code> &#x5C06;&#x5168;&#x90E8;&#x6807;&#x8BC6;&#x7B26;&#x79FB;&#x9664;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git filter-branch --msg-filter &apos;sed -e &quot;/^\[git-p4:/d&quot;&apos;
+Rewrite e5da1c909e5db3036475419f6379f2c73710c4e6 (125/125)
+Ref &apos;refs/heads/master&apos; was rewritten</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x8FD0;&#x884C; <code>git log</code>&#xFF0C;&#x4F60;&#x4F1A;&#x770B;&#x5230;&#x6240;&#x6709;&#x63D0;&#x4EA4;&#x7684; SHA-1 &#x6821;&#x9A8C;&#x548C;&#x90FD;&#x6539;&#x53D8;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x4E2D;&#x4E0D;&#x518D;&#x6709; <code>git-p4</code> &#x5B57;&#x7B26;&#x4E32;&#x4E86;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git log -2
+commit b17341801ed838d97f7800a54a6f9b95750839b7
+Author: giles &lt;giles@giles@perforce.com&gt;
+Date:   Wed Feb 8 03:13:27 2012 -0800
+
+    Correction to line 355; change &lt;/UL&gt; to &lt;/OL&gt;.
+
+commit 3e68c2e26cd89cb983eb52c024ecdfba1d6b3fff
+Author: kwirth &lt;kwirth@perforce.com&gt;
+Date:   Tue Jul 7 01:35:51 2009 -0800
+
+    Fix spelling error on Jam doc page (cummulative -&gt; cumulative).</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#x5BFC;&#x5165;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x597D;&#x63A8;&#x9001;&#x5230;&#x4F60;&#x7684;&#x65B0; Git &#x670D;&#x52A1;&#x5668;&#x4E0A;&#x4E86;&#x3002;</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_git_tfs">TFS</h4>
+<div class="paragraph">
+<p>
+&#x5982;&#x679C;&#x4F60;&#x7684;&#x56E2;&#x961F;&#x6B63;&#x5728;&#x5C06;&#x4ED6;&#x4EEC;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x7BA1;&#x7406;&#x4ECE; TFVC &#x8F6C;&#x6362;&#x4E3A; Git&#xFF0C;&#x4F60;&#x4EEC;&#x4F1A;&#x60F3;&#x8981;&#x6700;&#x9AD8;&#x7A0B;&#x5EA6;&#x7684;&#x65E0;&#x635F;&#x8F6C;&#x6362;&#x3002;
+&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x867D;&#x7136;&#x6211;&#x4EEC;&#x5728;&#x4E4B;&#x524D;&#x7684;&#x4EA4;&#x4E92;&#x7AE0;&#x8282;&#x4ECB;&#x7ECD;&#x4E86; git-tfs &#x4E0E; git-tf &#x4E24;&#x79CD;&#x5DE5;&#x5177;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x672C;&#x90E8;&#x5206;&#x53EA;&#x80FD;&#x4ECB;&#x7ECD; git-tfs&#xFF0C;&#x56E0;&#x4E3A; git-tfs &#x652F;&#x6301;&#x5206;&#x652F;&#xFF0C;&#x800C;&#x4F7F;&#x7528; git-tf &#x4EE3;&#x4EF7;&#x592A;&#x5927;&#x3002;</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x5411;&#x8F6C;&#x6362;&#x3002;
+&#x8FD9;&#x610F;&#x5473;&#x7740; Git &#x4ED3;&#x5E93;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#x5230;&#x539F;&#x59CB;&#x7684; TFVC &#x9879;&#x76EE;&#x3002;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>&#x7B2C;&#x4E00;&#x4EF6;&#x4E8B;&#x662F;&#x6620;&#x5C04;&#x7528;&#x6237;&#x540D;&#x3002;
+TFVC &#x5BF9;&#x5F85;&#x53D8;&#x66F4;&#x96C6;&#x4F5C;&#x8005;&#x5B57;&#x6BB5;&#x7684;&#x5185;&#x5BB9;&#x76F8;&#x5F53;&#x5BBD;&#x5BB9;&#xFF0C;&#x4F46;&#x662F; Git &#x9700;&#x8981;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#x7684;&#x540D;&#x5B57;&#x4E0E;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x3002;
+&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>tf</code> &#x547D;&#x4EE4;&#x884C;&#x5BA2;&#x6237;&#x7AEF;&#x6765;&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#xFF0C;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-powershell" data-lang="powershell">PS&gt; tf history $/myproject -recursive &gt; AUTHORS_TMP</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x4F1A;&#x5C06;&#x5386;&#x53F2;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x53D8;&#x66F4;&#x96C6;&#x6293;&#x53D6;&#x4E0B;&#x6765;&#x5E76;&#x653E;&#x5230; AUTHORS_TMP &#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5C06; <code>User</code> &#x5217;&#xFF08;&#x7B2C;&#x4E8C;&#x4E2A;&#xFF09;&#x53D6;&#x51FA;&#x6765;&#x3002;
+&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x627E;&#x5230;&#x5217;&#x5F00;&#x59CB;&#x4E0E;&#x7ED3;&#x675F;&#x7684;&#x5B57;&#x7B26;&#x5E76;&#x66FF;&#x6362;&#xFF0C;&#x5728;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#xFF0C;<code>cut</code> &#x547D;&#x4EE4;&#x7684;&#x53C2;&#x6570; <code>11-20</code> &#x5C31;&#x662F;&#x6211;&#x4EEC;&#x627E;&#x5230;&#x7684;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-powershell" data-lang="powershell">PS&gt; cat AUTHORS_TMP | cut -b <span class="hljs-number">11</span>-<span class="hljs-number">20</span> | tail -n+<span class="hljs-number">3</span> | uniq | sort &gt; AUTHORS</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>cut</code> &#x547D;&#x4EE4;&#x53EA;&#x4F1A;&#x4FDD;&#x7559;&#x6BCF;&#x884C;&#x4E2D;&#x7B2C; 11 &#x4E2A;&#x5230;&#x7B2C; 22 &#x4E2A;&#x5B57;&#x7B26;&#x3002;
+<code>tail</code> &#x547D;&#x4EE4;&#x4F1A;&#x8DF3;&#x8FC7;&#x524D;&#x4E24;&#x884C;&#xFF0C;&#x5C31;&#x662F;&#x5B57;&#x6BB5;&#x8868;&#x5934;&#x4E0E; ASCII &#x98CE;&#x683C;&#x7684;&#x4E0B;&#x5212;&#x7EBF;&#x3002;
+&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x7684;&#x7ED3;&#x679C;&#x901A;&#x8FC7;&#x7BA1;&#x9053;&#x9001;&#x5230; <code>uniq</code> &#x6765;&#x53BB;&#x9664;&#x91CD;&#x590D;&#xFF0C;&#x7136;&#x540E;&#x4FDD;&#x5B58;&#x5230; <code>AUTOHRS</code> &#x6587;&#x4EF6;&#x4E2D;&#x3002;
+&#x4E0B;&#x4E00;&#x6B65;&#x662F;&#x624B;&#x52A8;&#x7684;&#xFF1B;&#x4E3A;&#x4E86;&#x8BA9; git-tfs &#x6709;&#x6548;&#x5730;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x6BCF;&#x4E00;&#x884C;&#x5FC5;&#x987B;&#x662F;&#x8FD9;&#x79CD;&#x683C;&#x5F0F;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-text" data-lang="text">DOMAIN\username = User Name &lt;email@address.com&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5DE6;&#x8FB9;&#x7684;&#x90E8;&#x5206;&#x662F; TFVC &#x4E2D;&#x7684; ``User&apos;&apos; &#x5B57;&#x6BB5;&#xFF0C;&#x7B49;&#x53F7;&#x53F3;&#x8FB9;&#x7684;&#x90E8;&#x5206;&#x662F;&#x5C06;&#x88AB;&#x7528;&#x4F5C; Git &#x63D0;&#x4EA4;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E00;&#x65E6;&#x6709;&#x4E86;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x4E0B;&#x4E00;&#x4EF6;&#x4E8B;&#x5C31;&#x662F;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x4F60;&#x9700;&#x8981;&#x7684; TFVC &#x9879;&#x76EE;&#x7684;&#x5B8C;&#x6574;&#x514B;&#x9686;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-powershell" data-lang="powershell">PS&gt; git tfs clone --with-branches --authors=AUTHORS https://username.visualstudio.com/DefaultCollection $/project/Trunk project_git</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x63A5;&#x4E0B;&#x6765;&#x8981;&#x4ECE;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x5E95;&#x90E8;&#x6E05;&#x7406; <code>git-tfs-id</code> &#x533A;&#x5757;&#x3002;
+&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4F1A;&#x5B8C;&#x6210;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-powershell" data-lang="powershell">PS&gt; git filter-branch -f --msg-filter <span class="hljs-string">&apos;sed &quot;s/^git-tfs-id:.*$//g&quot;&apos;</span> -- --all</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x90A3;&#x4F1A;&#x4F7F;&#x7528; Git &#x7EC8;&#x7AEF;&#x73AF;&#x5883;&#x4E2D;&#x7684; <code>sed</code> &#x547D;&#x4EE4;&#x6765;&#x5C06;&#x6240;&#x6709;&#x4EE5; ``git-tfs-id:&apos;&apos; &#x5F00;&#x5934;&#x7684;&#x884C;&#x66FF;&#x6362;&#x4E3A; Git &#x4F1A;&#x5FFD;&#x7565;&#x7684;&#x7A7A;&#x767D;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5168;&#x90E8;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4F60;&#x5C31;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x597D;&#x53BB;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x63A8;&#x9001;&#x4F60;&#x6240;&#x6709;&#x7684;&#x5206;&#x652F;&#x4E0A;&#x53BB;&#xFF0C;&#x7136;&#x540E;&#x4F60;&#x7684;&#x56E2;&#x961F;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x7528; Git &#x5DE5;&#x4F5C;&#x4E86;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_custom_importer">&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5BFC;&#x5165;&#x5668;</h4>
+<div class="paragraph">
+<p>
+
+&#x5982;&#x679C;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x4E0D;&#x662F;&#x4E0A;&#x8FF0;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x7EBF;&#x67E5;&#x627E;&#x4E00;&#x4E2A;&#x5BFC;&#x5165;&#x5668; - &#x9488;&#x5BF9;&#x8BB8;&#x591A;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x6709;&#x5F88;&#x591A;&#x9AD8;&#x8D28;&#x91CF;&#x7684;&#x5BFC;&#x5165;&#x5668;&#xFF0C;&#x5305;&#x62EC; CVS&#x3001;Clear Case&#x3001;Visual Source Safe&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x4E00;&#x4E2A;&#x6863;&#x6848;&#x76EE;&#x5F55;&#x3002;
+&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x9002;&#x5408;&#x4F60;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4E0D;&#x77E5;&#x540D;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x6216;&#x8005;&#x9700;&#x8981;&#x66F4;&#x5927;&#x81EA;&#x7531;&#x5EA6;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x5BFC;&#x5165;&#x8FC7;&#x7A0B;&#xFF0C;&#x5E94;&#x5F53;&#x4F7F;&#x7528; <code>git fast-import</code>&#x3002;
+&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x4ECE;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x4E2D;&#x8BFB;&#x53D6;&#x7B80;&#x5355;&#x6307;&#x4EE4;&#x6765;&#x5199;&#x5165;&#x7279;&#x5B9A;&#x7684; Git &#x6570;&#x636E;&#x3002;
+&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x521B;&#x5EFA; Git &#x5BF9;&#x8C61;&#x6BD4;&#x8FD0;&#x884C;&#x539F;&#x59CB; Git &#x547D;&#x4EE4;&#x6216;&#x76F4;&#x63A5;&#x5199;&#x5165;&#x539F;&#x59CB;&#x5BF9;&#x8C61;&#xFF08;&#x67E5;&#x770B; <a href="#_git_internals">[_git_internals]</a> &#x4E86;&#x89E3;&#x66F4;&#x591A;&#x5185;&#x5BB9;&#xFF09;&#x66F4;&#x5BB9;&#x6613;&#x4E9B;&#x3002;
+&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4F60;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x5BFC;&#x5165;&#x811A;&#x672C;&#xFF0C;&#x4ECE;&#x4F60;&#x8981;&#x5BFC;&#x5165;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x8BFB;&#x53D6;&#x5FC5;&#x8981;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x76F4;&#x63A5;&#x6253;&#x5370;&#x6307;&#x4EE4;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x3002;
+&#x7136;&#x540E;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x5E76;&#x901A;&#x8FC7; <code>git fast-import</code> &#x91CD;&#x5B9A;&#x5411;&#x7BA1;&#x9053;&#x8F93;&#x51FA;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E3A;&#x4E86;&#x5FEB;&#x901F;&#x6F14;&#x793A;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5199;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5BFC;&#x5165;&#x5668;&#x3002;
+&#x5047;&#x8BBE;&#x4F60;&#x5728; <code>current</code> &#x5DE5;&#x4F5C;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x4F1A;&#x5907;&#x4EFD;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x5230;&#x65F6;&#x95F4;&#x6807;&#x7B7E; <code>back_YYYY_MM_DD</code> &#x5907;&#x4EFD;&#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x4F60;&#x60F3;&#x8981;&#x5C06;&#x8FD9;&#x4E9B;&#x5BFC;&#x5165;&#x5230; Git &#x4E2D;&#x3002;
+&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x770B;&#x8D77;&#x6765;&#x662F;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ ls /opt/import_from
+back_2014_01_02
+back_2014_01_04
+back_2014_01_14
+back_2014_02_03
+current</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4E3A;&#x4E86;&#x5BFC;&#x5165;&#x4E00;&#x4E2A; Git &#x76EE;&#x5F55;&#xFF0C;&#x9700;&#x8981;&#x4E86;&#x89E3; Git &#x5982;&#x4F55;&#x5B58;&#x50A8;&#x5B83;&#x7684;&#x6570;&#x636E;&#x3002;
+&#x4F60;&#x53EF;&#x80FD;&#x8BB0;&#x5F97;&#xFF0C;Git &#x5728;&#x5E95;&#x5C42;&#x5B58;&#x50A8;&#x6307;&#x5411;&#x5185;&#x5BB9;&#x5FEB;&#x7167;&#x7684;&#x63D0;&#x4EA4;&#x5BF9;&#x8C61;&#x7684;&#x94FE;&#x8868;&#x3002;
+&#x6240;&#x6709;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x544A;&#x8BC9; <code>fast-import</code> &#x54EA;&#x4E9B;&#x5185;&#x5BB9;&#x662F;&#x5FEB;&#x7167;&#xFF0C;&#x54EA;&#x4E2A;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x6307;&#x5411;&#x5B83;&#x4EEC;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x8FDB;&#x5165;&#x7684;&#x987A;&#x5E8F;&#x3002;
+&#x4F60;&#x7684;&#x7B56;&#x7565;&#x662F;&#x4E00;&#x6B21;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x5FEB;&#x7167;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x6BCF;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x521B;&#x5EFA;&#x63D0;&#x4EA4;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x4E0E;&#x524D;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x540C;&#x6211;&#x4EEC;&#x5728; <a href="#_an_example_git_enforced_policy">[_an_example_git_enforced_policy]</a> &#x91CC;&#x505A;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x4F7F;&#x7528; Ruby &#x5199;&#x8FD9;&#x4E2A;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x6211;&#x4EEC;&#x5E73;&#x5E38;&#x5DE5;&#x4F5C;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x5E76;&#x4E14;&#x5B83;&#x5F88;&#x5BB9;&#x6613;&#x8BFB;&#x61C2;&#x3002;
+&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x4F60;&#x719F;&#x6089;&#x7684;&#x4E1C;&#x897F;&#x6765;&#x975E;&#x5E38;&#x8F7B;&#x677E;&#x5730;&#x5199;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50; - &#x5B83;&#x53EA;&#x9700;&#x8981;&#x5C06;&#x5408;&#x9002;&#x7684;&#x4FE1;&#x606F;&#x6253;&#x5370;&#x5230; <code>&#x6807;&#x51C6;&#x8F93;&#x51FA;</code>&#x3002;
+&#x7136;&#x800C;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5728; Windows &#x4E0A;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x9700;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;&#x4E0D;&#x8981;&#x5F15;&#x5165;&#x56DE;&#x8F66;&#x7B26;&#x5230;&#x884C;&#x5C3E; - git fast-import &#x975E;&#x5E38;&#x7279;&#x522B;&#x5730;&#x53EA;&#x63A5;&#x53D7;&#x6362;&#x884C;&#x7B26;&#xFF08;LF&#xFF09;&#x800C;&#x4E0D;&#x662F; Windows &#x4F7F;&#x7528;&#x7684;&#x56DE;&#x8F66;&#x6362;&#x884C;&#x7B26;&#xFF08;CRLF&#xFF09;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#x5F00;&#x59CB;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x5165;&#x76EE;&#x6807;&#x76EE;&#x5F55;&#x4E2D;&#x5E76;&#x8BC6;&#x522B;&#x6BCF;&#x4E00;&#x4E2A;&#x5B50;&#x76EE;&#x5F55;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x90FD;&#x662F;&#x4F60;&#x8981;&#x5BFC;&#x5165;&#x4E3A;&#x63D0;&#x4EA4;&#x7684;&#x5FEB;&#x7167;&#x3002;
+&#x8981;&#x8FDB;&#x5165;&#x5230;&#x6BCF;&#x4E2A;&#x5B50;&#x76EE;&#x5F55;&#x4E2D;&#x5E76;&#x4E3A;&#x5BFC;&#x51FA;&#x5B83;&#x6253;&#x5370;&#x5FC5;&#x8981;&#x7684;&#x547D;&#x4EE4;&#x3002;
+&#x57FA;&#x672C;&#x4E3B;&#x5FAA;&#x73AF;&#x50CF;&#x8FD9;&#x4E2A;&#x6837;&#x5B50;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">last_mark = <span class="hljs-keyword">nil</span>
+
+<span class="hljs-comment"># loop through the directories</span>
+Dir.chdir(ARGV[<span class="hljs-number">0</span>]) <span class="hljs-keyword">do</span>
+  Dir.glob(<span class="hljs-string">&quot;*&quot;</span>).each <span class="hljs-keyword">do</span> |dir|
+    <span class="hljs-keyword">next</span> <span class="hljs-keyword">if</span> File.file?(dir)
+
+    <span class="hljs-comment"># move into the target directory</span>
+    Dir.chdir(dir) <span class="hljs-keyword">do</span>
+      last_mark = print_export(dir, last_mark)
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x6BCF;&#x4E2A;&#x76EE;&#x5F55;&#x5185;&#x8FD0;&#x884C; <code>print_export</code>&#xFF0C;&#x5C06;&#x4F1A;&#x62FF;&#x5230;&#x6E05;&#x5355;&#x5E76;&#x6807;&#x8BB0;&#x4E4B;&#x524D;&#x7684;&#x5FEB;&#x7167;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x6E05;&#x5355;&#x5E76;&#x6807;&#x8BB0;&#x73B0;&#x5728;&#x7684;&#x5FEB;&#x7167;&#xFF1B;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x4EEC;&#x5408;&#x9002;&#x5730;&#x8FDE;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#x3002;
+<code>`&#x6807;&#x8BB0;&apos;&apos; &#x662F;&#x4E00;&#x4E2A;&#x7ED9;&#x63D0;&#x4EA4;&#x6807;&#x8BC6;&#x7B26;&#x7684; `fast-import</code> &#x672F;&#x8BED;&#xFF1B;&#x5F53;&#x4F60;&#x521B;&#x5EFA;&#x63D0;&#x4EA4;&#xFF0C;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x8D4B;&#x4E88;&#x4E00;&#x4E2A;&#x6807;&#x8BB0;&#x6765;&#x5C06;&#x5B83;&#x4E0E;&#x5176;&#x4ED6;&#x63D0;&#x4EA4;&#x8FDE;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#x3002;
+&#x8FD9;&#x6837;&#xFF0C;&#x5728;&#x4F60;&#x7684; <code>print_export</code> &#x65B9;&#x6CD5;&#x4E2D;&#x7B2C;&#x4E00;&#x4EF6;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x5C31;&#x662F;&#x4ECE;&#x76EE;&#x5F55;&#x540D;&#x5B57;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6807;&#x8BB0;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">mark = convert_dir_to_mark(dir)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x7684;&#x6570;&#x7EC4;&#x5E76;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x505A;&#x4E3A;&#x6807;&#x8BB0;&#xFF0C;&#x56E0;&#x4E3A;&#x6807;&#x8BB0;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x3002;
+&#x65B9;&#x6CD5;&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">$marks = []
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">convert_dir_to_mark</span><span class="hljs-params">(dir)</span></span>
+  <span class="hljs-keyword">if</span> !$marks.<span class="hljs-keyword">include</span>?(dir)
+    $marks &lt;&lt; dir
+  <span class="hljs-keyword">end</span>
+  ($marks.index(dir) + <span class="hljs-number">1</span>).to_s
+<span class="hljs-keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x65E2;&#x7136;&#x6709;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x4EE3;&#x8868;&#x4F60;&#x7684;&#x63D0;&#x4EA4;&#xFF0C;&#x90A3;&#x8FD8;&#x8981;&#x7ED9;&#x63D0;&#x4EA4;&#x5143;&#x6570;&#x636E;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x3002;
+&#x56E0;&#x4E3A;&#x76EE;&#x5F55;&#x540D;&#x5B57;&#x8868;&#x8FBE;&#x4E86;&#x65E5;&#x671F;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x5C06;&#x4F1A;&#x4ECE;&#x4E2D;&#x89E3;&#x6790;&#x51FA;&#x65E5;&#x671F;&#x3002;
+&#x4F60;&#x7684; <code>print_export</code> &#x6587;&#x4EF6;&#x7684;&#x4E0B;&#x4E00;&#x884C;&#x662F;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">date = convert_dir_to_date(dir)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>convert_dir_to_date</code> &#x5B9A;&#x4E49;&#x4E3A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">convert_dir_to_date</span><span class="hljs-params">(dir)</span></span>
+  <span class="hljs-keyword">if</span> dir == <span class="hljs-string">&apos;current&apos;</span>
+    <span class="hljs-keyword">return</span> Time.now().to_i
+  <span class="hljs-keyword">else</span>
+    dir = dir.gsub(<span class="hljs-string">&apos;back_&apos;</span>, <span class="hljs-string">&apos;&apos;</span>)
+    (year, month, day) = dir.split(<span class="hljs-string">&apos;_&apos;</span>)
+    <span class="hljs-keyword">return</span> Time.local(year, month, day).to_i
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x90A3;&#x4F1A;&#x8FD4;&#x56DE;&#x6BCF;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x65E5;&#x671F;&#x7684;&#x6574;&#x6570;&#x3002;
+&#x6700;&#x540E;&#x4E00;&#x9879;&#x6BCF;&#x4E2A;&#x63D0;&#x4EA4;&#x9700;&#x8981;&#x7684;&#x5143;&#x6570;&#x636E;&#x662F;&#x63D0;&#x4EA4;&#x8005;&#x4FE1;&#x606F;&#xFF0C;&#x5B83;&#x5C06;&#x4F1A;&#x88AB;&#x786C;&#x7F16;&#x7801;&#x5728;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x4E2D;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">$author = <span class="hljs-string">&apos;John Doe &lt;john@example.com&gt;&apos;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#x51C6;&#x5907;&#x5F00;&#x59CB;&#x4E3A;&#x4F60;&#x7684;&#x5BFC;&#x5165;&#x5668;&#x6253;&#x5370;&#x51FA;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x3002;
+&#x521D;&#x59CB;&#x4FE1;&#x606F;&#x58F0;&#x660E;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x5BF9;&#x8C61;&#x4E0E;&#x5B83;&#x6240;&#x5728;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x7D27;&#x63A5;&#x7740;&#x4E00;&#x4E2A;&#x4F60;&#x751F;&#x6210;&#x7684;&#x6807;&#x8BB0;&#x3001;&#x63D0;&#x4EA4;&#x8005;&#x4FE1;&#x606F;&#x4E0E;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x3001;&#x7136;&#x540E;&#x662F;&#x4E00;&#x4E2A;&#x4E4B;&#x524D;&#x7684;&#x63D0;&#x4EA4;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x5B58;&#x5728;&#x7684;&#x8BDD;&#x3002;
+&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby"><span class="hljs-comment"># print the import information</span>
+puts <span class="hljs-string">&apos;commit refs/heads/master&apos;</span>
+puts <span class="hljs-string">&apos;mark :&apos;</span> + mark
+puts <span class="hljs-string">&quot;committer <span class="hljs-subst">#{$author}</span> <span class="hljs-subst">#{date}</span> -0700&quot;</span>
+export_data(<span class="hljs-string">&apos;imported from &apos;</span> + dir)
+puts <span class="hljs-string">&apos;from :&apos;</span> + last_mark <span class="hljs-keyword">if</span> last_mark</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6211;&#x4EEC;&#x5C06;&#x786C;&#x7F16;&#x7801;&#x65F6;&#x533A;&#x4FE1;&#x606F;&#xFF08;-0700&#xFF09;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x5F88;&#x5BB9;&#x6613;&#x3002;
+&#x5982;&#x679C;&#x4ECE;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x5BFC;&#x5165;&#xFF0C;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E3A;&#x4E00;&#x4E2A;&#x504F;&#x79FB;&#x7684;&#x65F6;&#x533A;&#x3002;
+&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E3A;&#x7279;&#x6B8A;&#x7684;&#x683C;&#x5F0F;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>data (size)\n(contents)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x4E2A;&#x683C;&#x5F0F;&#x5305;&#x62EC;&#x6587;&#x672C;&#x6570;&#x636E;&#x3001;&#x5C06;&#x8981;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x5927;&#x5C0F;&#x3001;&#x4E00;&#x4E2A;&#x6362;&#x884C;&#x7B26;&#x3001;&#x6700;&#x7EC8;&#x7684;&#x6570;&#x636E;&#x3002;
+&#x56E0;&#x4E3A;&#x4E4B;&#x540E;&#x8FD8;&#x9700;&#x8981;&#x4E3A;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x6307;&#x5B9A;&#x76F8;&#x540C;&#x7684;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5E2E;&#x52A9;&#x51FD;&#x6570;&#xFF0C;<code>export_data</code>&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">export_data</span><span class="hljs-params">(string)</span></span>
+  print <span class="hljs-string">&quot;data <span class="hljs-subst">#{string.size}</span>\n<span class="hljs-subst">#{string}</span>&quot;</span>
+<span class="hljs-keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5269;&#x4E0B;&#x7684;&#x5DE5;&#x4F5C;&#x5C31;&#x662F;&#x6307;&#x5B9A;&#x6BCF;&#x4E00;&#x4E2A;&#x5FEB;&#x7167;&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x3002;
+&#x8FD9;&#x5F88;&#x8F7B;&#x677E;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x7167; - &#x53EF;&#x4EE5;&#x5728;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x540E;&#x6253;&#x5370; <code>deleteall</code> &#x547D;&#x4EE4;&#x3002;
+Git &#x5C06;&#x4F1A;&#x9002;&#x5F53;&#x5730;&#x8BB0;&#x5F55;&#x6BCF;&#x4E00;&#x4E2A;&#x5FEB;&#x7167;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">puts <span class="hljs-string">&apos;deleteall&apos;</span>
+Dir.glob(<span class="hljs-string">&quot;**/*&quot;</span>).each <span class="hljs-keyword">do</span> |file|
+  <span class="hljs-keyword">next</span> <span class="hljs-keyword">if</span> !File.file?(file)
+  inline_data(file)
+<span class="hljs-keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x56E0;&#x4E3A;&#x5927;&#x591A;&#x6570;&#x7CFB;&#x7EDF;&#x8BA4;&#x4E3A;&#x4ED6;&#x4EEC;&#x7684;&#x7248;&#x672C;&#x662F;&#x4ECE;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x53D8;&#x5316;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#xFF0C;fast-import &#x4E5F;&#x53EF;&#x4EE5;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x6765;&#x6307;&#x5B9A;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x662F;&#x6DFB;&#x52A0;&#x7684;&#x3001;&#x5220;&#x9664;&#x7684;&#x6216;&#x4FEE;&#x6539;&#x7684;&#x4E0E;&#x65B0;&#x5185;&#x5BB9;&#x662F;&#x54EA;&#x4E9B;&#x3002;
+&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x5FEB;&#x7167;&#x95F4;&#x7684;&#x4E0D;&#x540C;&#x5E76;&#x53EA;&#x63D0;&#x4F9B;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x505A;&#x4F1A;&#x5F88;&#x590D;&#x6742; - &#x4E5F;&#x53EF;&#x4EE5;&#x628A;&#x6240;&#x6709;&#x6570;&#x636E;&#x7ED9; Git &#x7136;&#x540E;&#x8BA9;&#x5B83;&#x4E3A;&#x4F60;&#x6307;&#x51FA;&#x6765;&#x3002;
+&#x5982;&#x679C;&#x8FD9;&#x66F4;&#x9002;&#x5408;&#x4F60;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x67E5;&#x9605; <code>fast-import</code> man &#x5E2E;&#x52A9;&#x9875;&#x6765;&#x4E86;&#x89E3;&#x5982;&#x4F55;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x63D0;&#x4F9B;&#x4F60;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x79CD;&#x5217;&#x51FA;&#x65B0;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x6216;&#x7528;&#x65B0;&#x5185;&#x5BB9;&#x6307;&#x5B9A;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x7684;&#x683C;&#x5F0F;&#x5982;&#x540C;&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>M 644 inline path/to/file
+data (size)
+(file contents)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x91CC;&#xFF0C;644 &#x662F;&#x6A21;&#x5F0F;&#xFF08;&#x5982;&#x679C;&#x4F60;&#x6709;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#xFF0C;&#x53CD;&#x800C;&#x4F60;&#x9700;&#x8981;&#x68C0;&#x6D4B;&#x5E76;&#x6307;&#x5B9A; 755&#xFF09;&#xFF0C;inline &#x8868;&#x793A;&#x5C06;&#x4F1A;&#x7ACB;&#x5373;&#x628A;&#x5185;&#x5BB9;&#x653E;&#x5728;&#x672C;&#x884C;&#x4E4B;&#x540E;&#x3002;
+&#x4F60;&#x7684; <code>inline_data</code> &#x65B9;&#x6CD5;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">inline_data</span><span class="hljs-params">(file, code = <span class="hljs-string">&apos;M&apos;</span>, mode = <span class="hljs-string">&apos;644&apos;</span>)</span></span>
+  content = File.read(file)
+  puts <span class="hljs-string">&quot;<span class="hljs-subst">#{code}</span> <span class="hljs-subst">#{mode}</span> inline <span class="hljs-subst">#{file}</span>&quot;</span>
+  export_data(content)
+<span class="hljs-keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x53EF;&#x4EE5;&#x91CD;&#x7528;&#x4E4B;&#x524D;&#x5B9A;&#x4E49;&#x7684; <code>export_data</code> &#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4E0E;&#x4F60;&#x5B9A;&#x4E49;&#x7684;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;&#x4E00;&#x6837;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x6700;&#x540E;&#x4E00;&#x4EF6;&#x4F60;&#x9700;&#x8981;&#x505A;&#x7684;&#x662F;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x6807;&#x8BB0;&#x4EE5;&#x4FBF;&#x5B83;&#x53EF;&#x4EE5;&#x4F20;&#x7ED9;&#x4E0B;&#x4E00;&#x4E2A;&#x8FED;&#x4EE3;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby"><span class="hljs-keyword">return</span> mark</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x5728; Windows &#x4E0A;&#x8FD8;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x6B65;&#x9AA4;&#x3002;
+&#x6B63;&#x5982;&#x4E4B;&#x524D;&#x63D0;&#x5230;&#x7684;&#xFF0C;Windows &#x4F7F;&#x7528; CRLF &#x4F5C;&#x4E3A;&#x6362;&#x884C;&#x7B26;&#x800C; git fast-import &#x53EA;&#x63A5;&#x53D7; LF&#x3002;
+&#x4E3A;&#x4E86;&#x4FEE;&#x6B63;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4F7F; git fast-import &#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x544A;&#x8BC9; ruby &#x4F7F;&#x7528; LF &#x4EE3;&#x66FF; CRLF&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">$stdout.binmode</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>&#x5C31;&#x662F;&#x8FD9;&#x6837;&#x3002;
+&#x8FD9;&#x662F;&#x5168;&#x90E8;&#x7684;&#x811A;&#x672C;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby"><span class="hljs-comment">#!/usr/bin/env ruby</span>
+
+$stdout.binmode
+$author = <span class="hljs-string">&quot;John Doe &lt;john@example.com&gt;&quot;</span>
+
+$marks = []
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">convert_dir_to_mark</span><span class="hljs-params">(dir)</span></span>
+    <span class="hljs-keyword">if</span> !$marks.<span class="hljs-keyword">include</span>?(dir)
+        $marks &lt;&lt; dir
+    <span class="hljs-keyword">end</span>
+    ($marks.index(dir)+<span class="hljs-number">1</span>).to_s
+<span class="hljs-keyword">end</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">convert_dir_to_date</span><span class="hljs-params">(dir)</span></span>
+    <span class="hljs-keyword">if</span> dir == <span class="hljs-string">&apos;current&apos;</span>
+        <span class="hljs-keyword">return</span> Time.now().to_i
+    <span class="hljs-keyword">else</span>
+        dir = dir.gsub(<span class="hljs-string">&apos;back_&apos;</span>, <span class="hljs-string">&apos;&apos;</span>)
+        (year, month, day) = dir.split(<span class="hljs-string">&apos;_&apos;</span>)
+        <span class="hljs-keyword">return</span> Time.local(year, month, day).to_i
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">export_data</span><span class="hljs-params">(string)</span></span>
+    print <span class="hljs-string">&quot;data <span class="hljs-subst">#{string.size}</span>\n<span class="hljs-subst">#{string}</span>&quot;</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">inline_data</span><span class="hljs-params">(file, code=<span class="hljs-string">&apos;M&apos;</span>, mode=<span class="hljs-string">&apos;644&apos;</span>)</span></span>
+    content = File.read(file)
+    puts <span class="hljs-string">&quot;<span class="hljs-subst">#{code}</span> <span class="hljs-subst">#{mode}</span> inline <span class="hljs-subst">#{file}</span>&quot;</span>
+    export_data(content)
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_export</span><span class="hljs-params">(dir, last_mark)</span></span>
+    date = convert_dir_to_date(dir)
+    mark = convert_dir_to_mark(dir)
+
+    puts <span class="hljs-string">&apos;commit refs/heads/master&apos;</span>
+    puts <span class="hljs-string">&quot;mark :<span class="hljs-subst">#{mark}</span>&quot;</span>
+    puts <span class="hljs-string">&quot;committer <span class="hljs-subst">#{$author}</span> <span class="hljs-subst">#{date}</span> -0700&quot;</span>
+    export_data(<span class="hljs-string">&quot;imported from <span class="hljs-subst">#{dir}</span>&quot;</span>)
+    puts <span class="hljs-string">&quot;from :<span class="hljs-subst">#{last_mark}</span>&quot;</span> <span class="hljs-keyword">if</span> last_mark
+
+    puts <span class="hljs-string">&apos;deleteall&apos;</span>
+    Dir.glob(<span class="hljs-string">&quot;**/*&quot;</span>).each <span class="hljs-keyword">do</span> |file|
+        <span class="hljs-keyword">next</span> <span class="hljs-keyword">if</span> !File.file?(file)
+        inline_data(file)
+    <span class="hljs-keyword">end</span>
+    mark
+<span class="hljs-keyword">end</span>
+
+
+<span class="hljs-comment"># Loop through the directories</span>
+last_mark = <span class="hljs-keyword">nil</span>
+Dir.chdir(ARGV[<span class="hljs-number">0</span>]) <span class="hljs-keyword">do</span>
+    Dir.glob(<span class="hljs-string">&quot;*&quot;</span>).each <span class="hljs-keyword">do</span> |dir|
+        <span class="hljs-keyword">next</span> <span class="hljs-keyword">if</span> File.file?(dir)
+
+        <span class="hljs-comment"># move into the target directory</span>
+        Dir.chdir(dir) <span class="hljs-keyword">do</span>
+            last_mark = print_export(dir, last_mark)
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#xFF0C;&#x4F60;&#x4F1A;&#x5F97;&#x5230;&#x7C7B;&#x4F3C;&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ ruby import.rb /opt/import_from
+commit refs/heads/master
+mark :1
+committer John Doe &lt;john@example.com&gt; 1388649600 -0700
+data 29
+imported from back_2014_01_02deleteall
+M 644 inline README.md
+data 28
+# Hello
+
+This is my readme.
+commit refs/heads/master
+mark :2
+committer John Doe &lt;john@example.com&gt; 1388822400 -0700
+data 29
+imported from back_2014_01_04from :1
+deleteall
+M 644 inline main.rb
+data 34
+#!/bin/env ruby
+
+puts &quot;Hey there&quot;
+M 644 inline README.md
+(...)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4E3A;&#x4E86;&#x8FD0;&#x884C;&#x5BFC;&#x5165;&#x5668;&#xFF0C;&#x5C06;&#x8FD9;&#x4E9B;&#x8F93;&#x51FA;&#x7528;&#x7BA1;&#x9053;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x4F60;&#x60F3;&#x8981;&#x5BFC;&#x5165;&#x7684; Git &#x76EE;&#x5F55;&#x4E2D;&#x7684; <code>git fast-import</code>&#x3002;
+&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x76EE;&#x5F55;&#x5E76;&#x5728;&#x5176;&#x4E2D;&#x8FD0;&#x884C; <code>git init</code> &#x4F5C;&#x4E3A;&#x5F00;&#x59CB;&#xFF0C;&#x7136;&#x540E;&#x8FD0;&#x884C;&#x4F60;&#x7684;&#x811A;&#x672C;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git init
+Initialized empty Git repository in /opt/import_to/.git/
+$ ruby import.rb /opt/import_from | git fast-import
+git-fast-import statistics:
+---------------------------------------------------------------------
+Alloc&apos;d objects:       5000
+Total objects:           13 (         6 duplicates                  )
+      blobs  :            5 (         4 duplicates          3 deltas of          5 attempts)
+      trees  :            4 (         1 duplicates          0 deltas of          4 attempts)
+      commits:            4 (         1 duplicates          0 deltas of          0 attempts)
+      tags   :            0 (         0 duplicates          0 deltas of          0 attempts)
+Total branches:           1 (         1 loads     )
+      marks:           1024 (         5 unique    )
+      atoms:              2
+Memory total:          2344 KiB
+       pools:          2110 KiB
+     objects:           234 KiB
+---------------------------------------------------------------------
+pack_report: getpagesize()            =       4096
+pack_report: core.packedGitWindowSize = 1073741824
+pack_report: core.packedGitLimit      = 8589934592
+pack_report: pack_used_ctr            =         10
+pack_report: pack_mmap_calls          =          5
+pack_report: pack_open_windows        =          2 /          2
+pack_report: pack_mapped              =       1457 /       1457
+---------------------------------------------------------------------</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6B63;&#x5982;&#x4F60;&#x6240;&#x770B;&#x5230;&#x7684;&#xFF0C;&#x5F53;&#x5B83;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x7ED9;&#x4F60;&#x4E00;&#x4E32;&#x5173;&#x4E8E;&#x5B83;&#x5B8C;&#x6210;&#x5185;&#x5BB9;&#x7684;&#x7EDF;&#x8BA1;&#x3002;
+&#x8FD9;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x4E00;&#x5171;&#x5BFC;&#x5165;&#x4E86; 13 &#x4E2A;&#x5BF9;&#x8C61;&#x3001;4 &#x6B21;&#x63D0;&#x4EA4;&#x5230; 1 &#x4E2A;&#x5206;&#x652F;&#x3002;
+&#x73B0;&#x5728;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C; <code>git log</code> &#x6765;&#x770B;&#x4E00;&#x4E0B;&#x4F60;&#x7684;&#x65B0;&#x5386;&#x53F2;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git log -2
+commit 3caa046d4aac682a55867132ccdfbe0d3fdee498
+Author: John Doe &lt;john@example.com&gt;
+Date:   Tue Jul 29 19:39:04 2014 -0700
+
+    imported from current
+
+commit 4afc2b945d0d3c8cd00556fbe2e8224569dc9def
+Author: John Doe &lt;john@example.com&gt;
+Date:   Mon Feb 3 01:00:00 2014 -0700
+
+    imported from back_2014_02_03</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x505A;&#x5F97;&#x5F88;&#x597D; - &#x4E00;&#x4E2A;&#x6F02;&#x4EAE;&#x3001;&#x5E72;&#x51C0;&#x7684; Git &#x4ED3;&#x5E93;&#x3002;
+&#x8981;&#x6CE8;&#x610F;&#x7684;&#x4E00;&#x70B9;&#x662F;&#x5E76;&#x6CA1;&#x6709;&#x68C0;&#x51FA;&#x4EFB;&#x4F55;&#x4E1C;&#x897F; - &#x4E00;&#x5F00;&#x59CB;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x5185;&#x5E76;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6587;&#x4EF6;&#x3002;
+&#x4E3A;&#x4E86;&#x5F97;&#x5230;&#x4ED6;&#x4EEC;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x5C06;&#x5206;&#x652F;&#x91CD;&#x7F6E;&#x5230; <code>master</code> &#x6240;&#x5728;&#x7684;&#x5730;&#x65B9;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ ls
+$ git reset --hard master
+HEAD is now at 3caa046 imported from current
+$ ls
+README.md main.rb</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>fast-import</code> &#x5DE5;&#x5177;&#x505A;&#x5F88;&#x591A;&#x4E8B;&#x60C5; - &#x5904;&#x7406;&#x4E0D;&#x540C;&#x6A21;&#x5F0F;&#x3001;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3001;&#x591A;&#x4E2A;&#x5206;&#x652F;&#x4E0E;&#x5408;&#x5E76;&#x3001;&#x6807;&#x7B7E;&#x3001;&#x8FDB;&#x5EA6;&#x6307;&#x793A;&#x7B49;&#x7B49;&#x3002;
+&#x4E00;&#x4E9B;&#x66F4;&#x590D;&#x6742;&#x60C5;&#x5F62;&#x4E0B;&#x7684;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x5728; Git &#x6E90;&#x4EE3;&#x7801;&#x76EE;&#x5F55;&#x4E2D;&#x7684; <code>contrib/fast-import</code> &#x76EE;&#x5F55;&#x4E2D;&#x627E;&#x5230;&#x3002;</p>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="git-client.html" class="navigation navigation-prev " aria-label="Previous page: 作为客户端的 Git">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="summary.html" class="navigation navigation-next " aria-label="Next page: 总结">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"迁移到 Git","level":"1.10.2","depth":2,"next":{"title":"总结","level":"1.10.3","depth":2,"path":"09-git-and-other-scms/sections/summary.adoc","ref":"09-git-and-other-scms/sections/summary.adoc","articles":[]},"previous":{"title":"作为客户端的 Git","level":"1.10.1","depth":2,"path":"09-git-and-other-scms/sections/git-client.adoc","ref":"09-git-and-other-scms/sections/git-client.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Pro Git 2 中文版","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"git 学习入门教程"},"file":{"path":"09-git-and-other-scms/sections/git-migrate.adoc","mtime":"2016-06-20T01:42:18.827Z","type":"asciidoc"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:43:49.119Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

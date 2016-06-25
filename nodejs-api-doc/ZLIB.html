@@ -1,0 +1,868 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>ZLIB · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="VM.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >ZLIB</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="zlib">Zlib</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x8981;&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> zlib = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;zlib&apos;</span>);
+</code></pre>
+<p>&#x5B83;&#x63D0;&#x4F9B;&#x4E86;<code>Gzip/Gunzip</code>&#xFF0C;<code>Deflate/Inflate</code>&#x548C;<code>DeflateRaw/InflateRaw</code>&#x7C7B;&#x7684;&#x7ED1;&#x5B9A;&#x3002;&#x6BCF;&#x4E2A;&#x7C7B;&#x90FD;&#x6709;&#x76F8;&#x540C;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x5E76;&#x4E14;&#x90FD;&#x662F;&#x53EF;&#x8BFB;/&#x53EF;&#x5199;&#x6D41;&#x3002;</p>
+<h4 id="&#x4F8B;&#x5B50;">&#x4F8B;&#x5B50;</h4>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5C06;&#x4E00;&#x4E2A;<code>fs.ReadStream</code>&#x7684;&#x6570;&#x636E;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;<code>zlib</code>&#x6D41;&#xFF0C;&#x7136;&#x540E;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;<code>fs.WriteStream</code>&#xFF0C;&#x6765;&#x538B;&#x7F29;&#x6216;&#x89E3;&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> gzip = zlib.createGzip();
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+<span class="hljs-keyword">var</span> inp = fs.createReadStream(<span class="hljs-string">&apos;input.txt&apos;</span>);
+<span class="hljs-keyword">var</span> out = fs.createWriteStream(<span class="hljs-string">&apos;input.txt.gz&apos;</span>);
+
+inp.pipe(gzip).pipe(out);
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x4FBF;&#x6377;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x6B65;&#x9AA4;&#x91CC;&#x5B8C;&#x6210;&#x538B;&#x7F29;&#x6216;&#x89E3;&#x538B;&#x7F29;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> input = <span class="hljs-string">&apos;.................................&apos;</span>;
+zlib.deflate(input, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, buffer</span>) </span>{
+  <span class="hljs-keyword">if</span> (!err) {
+    <span class="hljs-built_in">console</span>.log(buffer.toString(<span class="hljs-string">&apos;base64&apos;</span>));
+  }
+});
+
+<span class="hljs-keyword">var</span> buffer = <span class="hljs-keyword">new</span> Buffer(<span class="hljs-string">&apos;eJzT0yMAAGTvBe8=&apos;</span>, <span class="hljs-string">&apos;base64&apos;</span>);
+zlib.unzip(buffer, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, buffer</span>) </span>{
+  <span class="hljs-keyword">if</span> (!err) {
+    <span class="hljs-built_in">console</span>.log(buffer.toString());
+  }
+});
+</code></pre>
+<p>&#x5982;&#x679C;&#x8981;&#x5728;HTTP&#x5BA2;&#x6237;&#x7AEF;&#x6216;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x5728;&#x8BF7;&#x6C42;&#x65F6;&#x9700;&#x8981;&#x5E26;&#x4E0A;<code>accept-encoding</code>&#x5934;&#xFF0C;&#x5728;&#x54CD;&#x5E94;&#x65F6;&#x9700;&#x8981;&#x5E26;&#x4E0A;<code>content-encoding</code>&#x5934;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E9B;&#x4F8B;&#x5B50;&#x90FD;&#x53EA;&#x662F;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x6982;&#x5FF5;&#x3002;<code>zlib</code>&#x7F16;&#x7801;&#x7684;&#x5F00;&#x9500;&#x662F;&#x975E;&#x5E38;&#x6602;&#x8D35;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x7ED3;&#x679C;&#x9700;&#x8981;&#x88AB;&#x7F13;&#x5B58;&#x3002;&#x66F4;&#x591A;&#x5173;&#x4E8E;&#x901F;&#x5EA6;/&#x5185;&#x5B58;/&#x538B;&#x7F29;&#x7684;&#x6743;&#x8861;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#x7684;<code>&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x8C03;&#x4F18;</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// client request example</span>
+<span class="hljs-keyword">var</span> zlib = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;zlib&apos;</span>);
+<span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+<span class="hljs-keyword">var</span> request = http.get({ host: <span class="hljs-string">&apos;izs.me&apos;</span>,
+                         path: <span class="hljs-string">&apos;/&apos;</span>,
+                         port: <span class="hljs-number">80</span>,
+                         headers: { <span class="hljs-string">&apos;accept-encoding&apos;</span>: <span class="hljs-string">&apos;gzip,deflate&apos;</span> } });
+request.on(<span class="hljs-string">&apos;response&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>) </span>{
+  <span class="hljs-keyword">var</span> output = fs.createWriteStream(<span class="hljs-string">&apos;izs.me_index.html&apos;</span>);
+
+  <span class="hljs-keyword">switch</span> (response.headers[<span class="hljs-string">&apos;content-encoding&apos;</span>]) {
+    <span class="hljs-comment">// or, just use zlib.createUnzip() to handle both cases</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;gzip&apos;</span>:
+      response.pipe(zlib.createGunzip()).pipe(output);
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;deflate&apos;</span>:
+      response.pipe(zlib.createInflate()).pipe(output);
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">default</span>:
+      response.pipe(output);
+      <span class="hljs-keyword">break</span>;
+  }
+});
+
+<span class="hljs-comment">// server example</span>
+<span class="hljs-comment">// Running a gzip operation on every request is quite expensive.</span>
+<span class="hljs-comment">// It would be much more efficient to cache the compressed buffer.</span>
+<span class="hljs-keyword">var</span> zlib = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;zlib&apos;</span>);
+<span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">request, response</span>) </span>{
+  <span class="hljs-keyword">var</span> raw = fs.createReadStream(<span class="hljs-string">&apos;index.html&apos;</span>);
+  <span class="hljs-keyword">var</span> acceptEncoding = request.headers[<span class="hljs-string">&apos;accept-encoding&apos;</span>];
+  <span class="hljs-keyword">if</span> (!acceptEncoding) {
+    acceptEncoding = <span class="hljs-string">&apos;&apos;</span>;
+  }
+
+  <span class="hljs-comment">// Note: this is not a conformant accept-encoding parser.</span>
+  <span class="hljs-comment">// See http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3</span>
+  <span class="hljs-keyword">if</span> (acceptEncoding.match(<span class="hljs-regexp">/\bdeflate\b/</span>)) {
+    response.writeHead(<span class="hljs-number">200</span>, { <span class="hljs-string">&apos;content-encoding&apos;</span>: <span class="hljs-string">&apos;deflate&apos;</span> });
+    raw.pipe(zlib.createDeflate()).pipe(response);
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (acceptEncoding.match(<span class="hljs-regexp">/\bgzip\b/</span>)) {
+    response.writeHead(<span class="hljs-number">200</span>, { <span class="hljs-string">&apos;content-encoding&apos;</span>: <span class="hljs-string">&apos;gzip&apos;</span> });
+    raw.pipe(zlib.createGzip()).pipe(response);
+  } <span class="hljs-keyword">else</span> {
+    response.writeHead(<span class="hljs-number">200</span>, {});
+    raw.pipe(response);
+  }
+}).listen(<span class="hljs-number">1337</span>);
+</code></pre>
+<h4 id="zlibcreategzipoptions">zlib.createGzip([options])</h4>
+<p>&#x6839;&#x636E;&#x4E00;&#x4E2A;<code>options</code>&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Gzip</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="zlibcreategunzipoptions">zlib.createGunzip([options])</h4>
+<p>&#x6839;&#x636E;&#x4E00;&#x4E2A;<code>options</code>&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Gunzip</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="zlibcreatedeflateoptions">zlib.createDeflate([options])</h4>
+<p>&#x6839;&#x636E;&#x4E00;&#x4E2A;<code>options</code>&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Deflate</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="zlibcreateinflateoptions">zlib.createInflate([options])</h4>
+<p>&#x6839;&#x636E;&#x4E00;&#x4E2A;<code>options</code>&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Inflate</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="zlibcreatedeflaterawoptions">zlib.createDeflateRaw([options])</h4>
+<p>&#x6839;&#x636E;&#x4E00;&#x4E2A;<code>options</code>&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>DeflateRaw</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="zlibcreateinflaterawoptions">zlib.createInflateRaw([options])</h4>
+<p>&#x6839;&#x636E;&#x4E00;&#x4E2A;<code>options</code>&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>InflateRaw</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="zlibcreateunzipoptions">zlib.createUnzip([options])</h4>
+<p>&#x6839;&#x636E;&#x4E00;&#x4E2A;<code>options</code>&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Unzip</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="class-zlibzlib">Class: zlib.Zlib</h4>
+<p>&#x8FD9;&#x4E2A;&#x7C7B;&#x672A;&#x88AB;<code>zlib</code>&#x6A21;&#x5757;&#x66B4;&#x9732;&#x3002;&#x5B83;&#x4E4B;&#x6240;&#x4EE5;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x662F;<code>compressor/decompressor</code>&#x7C7B;&#x7684;&#x57FA;&#x7C7B;&#x3002;</p>
+<h4 id="zlibflushkind-callback">zlib.flush([kind], callback)</h4>
+<p><code>kind</code>&#x9ED8;&#x8BA4;&#x4E3A;<code>zlib.Z_FULL_FLUSH</code>&#x3002;</p>
+<p>&#x51B2;&#x5237;&#x7B49;&#x5F85;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x3002;&#x4E0D;&#x8981;&#x8F7B;&#x7387;&#x5730;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x8FC7;&#x65E9;&#x7684;&#x51B2;&#x5237;&#x4F1A;&#x7ED9;&#x538B;&#x7F29;&#x7B97;&#x6CD5;&#x5E26;&#x6765;&#x6D88;&#x6781;&#x5F71;&#x54CD;&#x3002;</p>
+<h4 id="zlibparamslevel-strategy-callback">zlib.params(level, strategy, callback)</h4>
+<p>&#x52A8;&#x6001;&#x5730;&#x66F4;&#x65B0;&#x538B;&#x7F29;&#x7B49;&#x7EA7;&#x548C;&#x538B;&#x7F29;&#x7B56;&#x7565;&#x3002;&#x53EA;&#x9002;&#x7528;&#x4E8E;<code>deflate</code>&#x7B97;&#x6CD5;&#x3002;</p>
+<h4 id="zlibreset">zlib.reset()</h4>
+<p>&#x5C06;<code>compressor/decompressor</code>&#x91CD;&#x7F6E;&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x53EA;&#x4F7F;&#x7528;&#x4E8E;<code>inflate</code>&#x548C;<code>deflate</code>&#x7B97;&#x6CD5;&#x3002;</p>
+<h4 id="class-zlibgzip">Class: zlib.Gzip</h4>
+<p>&#x4F7F;&#x7528;<code>gzip</code>&#x538B;&#x7F29;&#x6570;&#x636E;&#x3002;</p>
+<h4 id="class-zlibgunzip">Class: zlib.Gunzip</h4>
+<p>&#x89E3;&#x538B;&#x4E00;&#x4E2A;<code>gzip</code>&#x6D41;&#x3002;</p>
+<h4 id="class-zlibdeflate">Class: zlib.Deflate</h4>
+<p>&#x4F7F;&#x7528;<code>deflate</code>&#x538B;&#x7F29;&#x6570;&#x636E;&#x3002;</p>
+<h4 id="class-zlibinflate">Class: zlib.Inflate</h4>
+<p>&#x89E3;&#x538B;&#x4E00;&#x4E2A;<code>deflate</code>&#x6D41;&#x3002;</p>
+<h4 id="class-zlibdeflateraw">Class: zlib.DeflateRaw</h4>
+<p>&#x4F7F;&#x7528;<code>deflate</code>&#x538B;&#x7F29;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x6DFB;&#x52A0;<code>zlib</code>&#x5934;&#x3002;</p>
+<h4 id="class-zlibinflateraw">Class: zlib.InflateRaw</h4>
+<p>&#x89E3;&#x538B;&#x4E00;&#x4E2A;&#x539F;&#x59CB;<code>deflate</code>&#x6D41;&#x3002;</p>
+<h4 id="class-zlibunzip">Class: zlib.Unzip</h4>
+<p>&#x901A;&#x8FC7;&#x81EA;&#x52A8;&#x63A2;&#x6D4B;&#x5934;&#x4FE1;&#x606F;&#xFF0C;&#x89E3;&#x538B;<code>Gzip</code>&#x6216;<code>Deflate</code>&#x538B;&#x7F29;&#x6D41;&#x3002;</p>
+<h4 id="&#x4FBF;&#x6377;&#x65B9;&#x6CD5;">&#x4FBF;&#x6377;&#x65B9;&#x6CD5;</h4>
+<p>&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x4E00;&#x4E2A;<code>buffer</code>&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684; <code>zlib</code>&#x7C7B;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x5E76;&#x4E14;&#x4F1A;&#x4EE5;<code>callback(error, result)</code>&#x7684;&#x5F62;&#x5F0F;&#x6267;&#x884C;&#x63D0;&#x4F9B;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x540C;&#x6B65;&#x7248;&#x672C;&#xFF0C;&#x9664;&#x53BB;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x63A5;&#x53D7;&#x76F8;&#x540C;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<h4 id="zlibdeflatebuf-options-callback">zlib.deflate(buf[, options], callback)</h4>
+<h4 id="zlibdeflatesyncbuf-options">zlib.deflateSync(buf[, options])</h4>
+<p>&#x4F7F;&#x7528;<code>Deflate</code>&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h4 id="zlibdeflaterawbuf-options-callback">zlib.deflateRaw(buf[, options], callback)</h4>
+<h4 id="zlibdeflaterawsyncbuf-options">zlib.deflateRawSync(buf[, options])</h4>
+<p>&#x4F7F;&#x7528;<code>DeflateRaw</code>&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h4 id="zlibgzipbuf-options-callback">zlib.gzip(buf[, options], callback)</h4>
+<h4 id="zlibgzipsyncbuf-options">zlib.gzipSync(buf[, options])</h4>
+<p>&#x4F7F;&#x7528;<code>Gzip</code>&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h4 id="zlibgunzipbuf-options-callback">zlib.gunzip(buf[, options], callback)</h4>
+<h4 id="zlibgunzipsyncbuf-options">zlib.gunzipSync(buf[, options])</h4>
+<p>&#x4F7F;&#x7528;<code>Gunzip</code>&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h4 id="zlibinflatebuf-options-callback">zlib.inflate(buf[, options], callback)</h4>
+<h4 id="zlibinflatesyncbuf-options">zlib.inflateSync(buf[, options])</h4>
+<p>&#x4F7F;&#x7528;<code>Inflate</code>&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h4 id="zlibinflaterawbuf-options-callback">zlib.inflateRaw(buf[, options], callback)</h4>
+<h4 id="zlibinflaterawsyncbuf-options">zlib.inflateRawSync(buf[, options])</h4>
+<p>&#x4F7F;&#x7528;<code>InflateRaw</code>&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h4 id="zlibunzipbuf-options-callback">zlib.unzip(buf[, options], callback)</h4>
+<h4 id="zlibunzipsyncbuf-options">zlib.unzipSync(buf[, options])</h4>
+<p>&#x4F7F;&#x7528;<code>Unzip</code>&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h4 id="options">Options</h4>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x7C7B;&#x90FD;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;<code>options</code>&#x5BF9;&#x8C61;&#x3002;&#x6240;&#x6709;&#x7684;<code>options</code>&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x4E00;&#x4E9B;&#x9009;&#x9879;&#x53EA;&#x4E0E;&#x538B;&#x7F29;&#x76F8;&#x5173;&#xFF0C;&#x4F1A;&#x88AB;&#x89E3;&#x538B;&#x7F29;&#x7C7B;&#x5FFD;&#x7565;&#xFF1A;</p>
+<ul>
+<li>flush (&#x9ED8;&#x8BA4;&#xFF1A;<code>zlib.Z_NO_FLUSH</code>)</li>
+<li>chunkSize (&#x9ED8;&#x8BA4;&#xFF1A;<code>16*1024</code>)</li>
+<li>windowBits</li>
+<li>level (&#x4EC5;&#x7528;&#x4E8E;&#x538B;&#x7F29;)</li>
+<li>memLevel (&#x4EC5;&#x7528;&#x4E8E;&#x538B;&#x7F29;)</li>
+<li>strategy (&#x4EC5;&#x7528;&#x4E8E;&#x538B;&#x7F29;)</li>
+<li>dictionary (&#x4EC5;&#x7528;&#x4E8E;<code>deflate/inflate</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;&#x76EE;&#x5F55;)</li>
+</ul>
+<p>&#x53C2;&#x9605;<code>http://zlib.net/manual.html#Advanced</code>&#x4E2D;<code>deflateInit2</code>&#x548C;<code>inflateInit2</code>&#x7684;&#x63CF;&#x8FF0;&#x6765;&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p>
+<h4 id="&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x8C03;&#x4F18;">&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x8C03;&#x4F18;</h4>
+<p>&#x6765;&#x81EA;<code>zlib/zconf.h</code>&#xFF0C;&#x5C06;&#x5176;&#x4FEE;&#x6539;&#x4E3A;<code>node.js</code>&#x7684;&#x7528;&#x6CD5;&#xFF1A;</p>
+<p>&#x9ED8;&#x8BA4;&#x7684;&#x5185;&#x5B58;&#x8981;&#x6C42;&#xFF08;&#x5B57;&#x8282;&#xFF09;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-js">(<span class="hljs-number">1</span> &lt;&lt; (windowBits+<span class="hljs-number">2</span>)) +  (<span class="hljs-number">1</span> &lt;&lt; (memLevel+<span class="hljs-number">9</span>))
+</code></pre>
+<p>&#x6362;&#x8A00;&#x4E4B;&#xFF1A;<code>windowBits=15</code>&#x7684;128K &#x52A0;&#x4E0A; <code>menLevel = 8</code>&#xFF08;&#x9ED8;&#x8BA4;&#x503C;&#xFF09;&#x7684;128K &#x52A0;&#x4E0A;&#x5176;&#x4ED6;&#x5C0F;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E9B;&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x5C06;&#x9ED8;&#x8BA4;&#x5185;&#x5B58;&#x9700;&#x6C42;&#x4ECE;256K&#x51CF;&#x5C11;&#x81F3;128K&#xFF0C;&#x5C06;&#x9009;&#x9879;&#x8BBE;&#x7F6E;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-js">{ windowBits: <span class="hljs-number">14</span>, memLevel: <span class="hljs-number">7</span> }
+</code></pre>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x5B83;&#x4F1A;&#x964D;&#x4F4E;&#x538B;&#x7F29;&#x7B49;&#x7EA7;&#xFF08;&#x6CA1;&#x6709;&#x514D;&#x8D39;&#x7684;&#x5348;&#x9910;&#xFF09;&#x3002;</p>
+<p><code>inflate</code>&#x7684;&#x5185;&#x5B58;&#x9700;&#x6C42;&#xFF08;&#x5B57;&#x8282;&#xFF09;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-number">1</span> &lt;&lt; windowBits
+</code></pre>
+<p>&#x6362;&#x8A00;&#x4E4B;&#xFF1A;<code>windowBits=15</code>&#xFF08;&#x9ED8;&#x8BA4;&#x503C;&#xFF09;&#x7684;32K&#x52A0;&#x4E0A;&#x5176;&#x4ED6;&#x5C0F;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E9B;&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x5185;&#x90E8;&#x8F93;&#x51FA;&#x7F13;&#x51B2;&#x5916;&#x7684;<code>chunkSize</code>&#x5927;&#x5C0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;16K&#x3002;</p>
+<p><code>zlib</code>&#x538B;&#x7F29;&#x7684;&#x901F;&#x5EA6;&#x52A8;&#x6001;&#x5F97;&#x53D7;&#x8BBE;&#x7F6E;&#x7684;&#x538B;&#x7F29;&#x7B49;&#x7EA7;&#x7684;&#x5F71;&#x54CD;&#x3002;&#x9AD8;&#x7684;&#x7B49;&#x7EA7;&#x4F1A;&#x5E26;&#x6765;&#x66F4;&#x597D;&#x5730;&#x538B;&#x7F29;&#x6548;&#x679C;&#xFF0C;&#x4F46;&#x662F;&#x82B1;&#x8D39;&#x7684;&#x65F6;&#x95F4;&#x66F4;&#x957F;&#x3002;&#x4F4E;&#x7684;&#x7B49;&#x7EA7;&#x4F1A;&#x5E26;&#x6765;&#x66F4;&#x5C11;&#x7684;&#x538B;&#x7F29;&#x6548;&#x679C;&#xFF0C;&#x4F46;&#x662F;&#x66F4;&#x5FEB;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#xFF0C;&#x66F4;&#x9AD8;&#x7684;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x9009;&#x9879;&#x610F;&#x5473;&#x7740;<code>node.js</code>&#x4F1A;&#x8C03;&#x7528;<code>zlib</code>&#x66F4;&#x5C11;&#x6B21;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x4E00;&#x6B21;&#x5355;&#x72EC;&#x7684;&#x5199;&#x64CD;&#x4F5C;&#x4E2D;&#x5B83;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x66F4;&#x591A;&#x7684;&#x6570;&#x636E;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x8FD9;&#x662F;&#x5F71;&#x54CD;&#x901F;&#x5EA6;&#x548C;&#x5185;&#x5B58;&#x5360;&#x7528;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x56E0;&#x7D20;&#x3002;</p>
+<h4 id="&#x5E38;&#x91CF;">&#x5E38;&#x91CF;</h4>
+<p>&#x6240;&#x6709;&#x5728;<code>zlib.h</code>&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5E38;&#x91CF;&#xFF0C;&#x90FD;&#x4E5F;&#x88AB;&#x5B9A;&#x4E49;&#x5728;&#x4E86;<code>require(&apos;zlib&apos;)</code>&#x4E2D;&#x3002;&#x5927;&#x591A;&#x6570;&#x64CD;&#x4F5C;&#x4E2D;&#xFF0C;&#x4F60;&#x90FD;&#x5C06;&#x4E0D;&#x4F1A;&#x7528;&#x5230;&#x5B83;&#x4EEC;&#x3002;&#x5B83;&#x4EEC;&#x51FA;&#x73B0;&#x5728;&#x8FD9;&#x91CC;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x4F60;&#x5BF9;&#x5B83;&#x4EEC;&#x7684;&#x5B58;&#x5728;&#x4E0D;&#x5957;&#x611F;&#x5230;&#x60CA;&#x8BB6;&#x3002;&#x8BE5;&#x7AE0;&#x8282;&#x51E0;&#x4E4E;&#x5B8C;&#x5168;&#x6765;&#x81EA;<code>zlib</code>&#x6587;&#x4EF6;&#x3002;&#x66F4;&#x591A;&#x8BE6;&#x60C5;&#x8BF7;&#x53C2;&#x9605;<code>http://zlib.net/manual.html#Constants</code>&#x3002;</p>
+<p>&#x5141;&#x8BB8;&#x7684;&#x51B2;&#x5237;&#x503C;&#xFF1A;</p>
+<pre><code>zlib.Z_NO_FLUSH
+zlib.Z_PARTIAL_FLUSH
+zlib.Z_SYNC_FLUSH
+zlib.Z_FULL_FLUSH
+zlib.Z_FINISH
+zlib.Z_BLOCK
+zlib.Z_TREES
+</code></pre><p><code>compression/decompression</code>&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x7801;&#x3002;&#x8D1F;&#x503C;&#x4EE3;&#x8868;&#x9519;&#x8BEF;&#xFF0C;&#x6B63;&#x503C;&#x4EE3;&#x8868;&#x7279;&#x6B8A;&#x4F46;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x4E8B;&#x4EF6;&#xFF1A;</p>
+<pre><code>zlib.Z_OK
+zlib.Z_STREAM_END
+zlib.Z_NEED_DICT
+zlib.Z_ERRNO
+zlib.Z_STREAM_ERROR
+zlib.Z_DATA_ERROR
+zlib.Z_MEM_ERROR
+zlib.Z_BUF_ERROR
+zlib.Z_VERSION_ERROR
+</code></pre><p>&#x538B;&#x7F29;&#x7B49;&#x7EA7;&#xFF1A;</p>
+<pre><code>zlib.Z_NO_COMPRESSION
+zlib.Z_BEST_SPEED
+zlib.Z_BEST_COMPRESSION
+zlib.Z_DEFAULT_COMPRESSION
+</code></pre><p>&#x538B;&#x7F29;&#x7B56;&#x7565;&#xFF1A;</p>
+<pre><code>zlib.Z_FILTERED
+zlib.Z_HUFFMAN_ONLY
+zlib.Z_RLE
+zlib.Z_FIXED
+zlib.Z_DEFAULT_STRATEGY
+</code></pre><p><code>data_type</code>&#x57DF;&#x7684;&#x53EF;&#x80FD;&#x503C;&#xFF1A;</p>
+<pre><code>zlib.Z_BINARY
+zlib.Z_TEXT
+zlib.Z_ASCII
+zlib.Z_UNKNOWN
+</code></pre><p><code>deflate</code>&#x538B;&#x7F29;&#x65B9;&#x6CD5;&#xFF08;&#x5F53;&#x524D;&#x7248;&#x672C;&#x53EA;&#x652F;&#x6301;&#x8FD9;&#x4E00;&#x4E2A;&#xFF09;&#xFF1A;</p>
+<pre><code>zlib.Z_DEFLATED
+</code></pre><p>&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;<code>zalloc</code>&#xFF0C;<code>zfree</code>&#xFF0C;<code>opaque</code>&#xFF1A;</p>
+<pre><code>zlib.Z_NULL
+</code></pre>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="VM.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: VM">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ZLIB","level":"1.35","depth":1,"previous":{"title":"VM","level":"1.34","depth":1,"path":"VM.md","ref":"VM.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"ZLIB.md","mtime":"2016-06-20T01:36:09.055Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

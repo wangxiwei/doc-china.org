@@ -1,0 +1,771 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>文档 · PHP 开发者实践</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../4-development-process/" />
+    
+    
+    <link rel="prev" href="security.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface/">
+            
+                <a href="../preface/">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../preface/why.html">
+            
+                <a href="../preface/why.html">
+            
+                    
+                    源起
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../preface/cross-the-gfw.html">
+            
+                <a href="../preface/cross-the-gfw.html">
+            
+                    
+                    科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../1-lanmp/">
+            
+                <a href="../1-lanmp/">
+            
+                    
+                    LA/NMP 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../1-lanmp/operating-system.html">
+            
+                <a href="../1-lanmp/operating-system.html">
+            
+                    
+                    Linux 操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../1-lanmp/webserver.html">
+            
+                <a href="../1-lanmp/webserver.html">
+            
+                    
+                    Web 服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../1-lanmp/dbserver.html">
+            
+                <a href="../1-lanmp/dbserver.html">
+            
+                    
+                    数据库服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../1-lanmp/php.html">
+            
+                <a href="../1-lanmp/php.html">
+            
+                    
+                    PHP 语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../1-lanmp/website-architecture.html">
+            
+                <a href="../1-lanmp/website-architecture.html">
+            
+                    
+                    网站系统架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../2-development-environment/">
+            
+                <a href="../2-development-environment/">
+            
+                    
+                    一致性开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../2-development-environment/virtualization.html">
+            
+                <a href="../2-development-environment/virtualization.html">
+            
+                    
+                    虚拟化技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../2-development-environment/amp-packages.html">
+            
+                <a href="../2-development-environment/amp-packages.html">
+            
+                    
+                    集成环境安装包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../2-development-environment/editors.html">
+            
+                <a href="../2-development-environment/editors.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    设计 & 开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="rules.html">
+            
+                <a href="rules.html">
+            
+                    
+                    开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="coding.html">
+            
+                <a href="coding.html">
+            
+                    
+                    设计编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="debugging.html">
+            
+                <a href="debugging.html">
+            
+                    
+                    诊断与调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.6" data-path="documentation.html">
+            
+                <a href="documentation.html">
+            
+                    
+                    文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../4-development-process/">
+            
+                <a href="../4-development-process/">
+            
+                    
+                    过程 & 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../4-development-process/life-cycle-model.html">
+            
+                <a href="../4-development-process/life-cycle-model.html">
+            
+                    
+                    开发过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../4-development-process/version-control.html">
+            
+                <a href="../4-development-process/version-control.html">
+            
+                    
+                    版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../4-development-process/ci.html">
+            
+                <a href="../4-development-process/ci.html">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../4-development-process/deployment.html">
+            
+                <a href="../4-development-process/deployment.html">
+            
+                    
+                    上线部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../5-php-internals/">
+            
+                <a href="../5-php-internals/">
+            
+                    
+                    PHP Internals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../5-php-internals/php-extension.html">
+            
+                <a href="../5-php-internals/php-extension.html">
+            
+                    
+                    PHP 扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../5-php-internals/php-vm.html">
+            
+                <a href="../5-php-internals/php-vm.html">
+            
+                    
+                    PHP 虚拟机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >文档</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6587;&#x6863;">&#x6587;&#x6863;</h1>
+<p>&#x5982;&#x4F55;&#x4E3A;&#x9879;&#x76EE;&#x5199;&#x6587;&#x6863;&#x3001;&#x7528;&#x4EC0;&#x4E48;&#x5199;&#x6587;&#x6863;&#x3001;&#x5982;&#x4F55;&#x65B9;&#x4FBF;&#x7684;&#x7BA1;&#x7406;/&#x66F4;&#x65B0;&#x6587;&#x6863;&#xFF0C;&#x8FD9;&#x662F;&#x5F88;&#x591A;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x90FD;&#x8981;&#x7ECF;&#x5E38;&#x9762;&#x5BF9;&#x7684;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#x3002;&#x6839;&#x636E;&#x4E2A;&#x4EBA;&#x7ECF;&#x9A8C;&#xFF0C;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x7C7B;&#x5DE5;&#x4F5C;&#x4E2D;&#x6211;&#x4EEC;&#x6D89;&#x53CA;&#x5230;&#x7684;&#x6587;&#x6863;&#x53EF;&#x80FD;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x4E0B;&#x9762;&#x51E0;&#x7C7B;&#xFF0C;</p>
+<ul>
+<li>&#x51FD;&#x6570;/&#x7C7B;&#x7684;&#x63A5;&#x53E3;&#x8BF4;&#x660E;&#x6587;&#x6863;&#xFF0C; &#x6BD4;&#x5982; XXX Framework API Documentation</li>
+<li>&#x670D;&#x52A1;&#x7AEF;&#x63A5;&#x53E3;&#x8BF4;&#x660E;&#x6587;&#x6863;&#xFF0C;&#x6BD4;&#x5982; Web Service API, Restful API &#x7B49;</li>
+<li>&#x4F7F;&#x7528;&#x6307;&#x5357;&#x3001;&#x624B;&#x518C;&#x7B49;&#x8BF4;&#x660E;&#x6587;&#x6863;&#xFF0C;&#x6BD4;&#x5982; Getting Start XXX, XXX Tutorial, XXX Guideline, XXX Manual &#x7B49;</li>
+<li>&#x8BBE;&#x8BA1;&#x76F8;&#x5173;&#x6587;&#x6863;&#xFF0C;&#x6BD4;&#x5982; &#x6570;&#x636E;&#x5E93; ER &#x56FE;&#x3001;&#x7C7B;&#x56FE;&#x3001;&#x65F6;&#x5E8F;&#x56FE;&#x7B49;&#xFF08;Enterprise Architect&#xFF09;</li>
+</ul>
+<h2 id="&#x76F8;&#x5173;&#x5DE5;&#x5177;&#x5E73;&#x53F0;">&#x76F8;&#x5173;&#x5DE5;&#x5177;/&#x5E73;&#x53F0;</h2>
+<p>&#x4E0B;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5206;&#x522B;&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x76F8;&#x5173;&#x5DE5;&#x5177;/&#x5E73;&#x53F0;</p>
+<h3 id="&#x4F7F;&#x7528;&#x6307;&#x5357;&#x3001;&#x624B;&#x518C;&#x7B49;&#x8BF4;&#x660E;&#x6587;&#x6863;">&#x4F7F;&#x7528;&#x6307;&#x5357;&#x3001;&#x624B;&#x518C;&#x7B49;&#x8BF4;&#x660E;&#x6587;&#x6863;</h3>
+<p>&#x6B64;&#x7C7B;&#x6587;&#x6863;&#x5185;&#x5BB9;&#x591A;&#x4EE5;&#x5927;&#x6BB5;&#x6587;&#x5B57;&#x8BF4;&#x660E;&#x4E3A;&#x4E3B;&#xFF0C;&#x4E00;&#x822C;&#x6309;&#x7AE0;&#x8282;&#x8FDB;&#x884C;&#x5185;&#x5BB9;&#x7EC4;&#x7EC7;&#xFF0C;&#x968F;&#x7740;&#x9879;&#x76EE;&#x7684;&#x4E0D;&#x65AD;&#x6210;&#x719F;&#x3001;&#x6F14;&#x8FDB;&#xFF0C;&#x5F88;&#x591A;&#x6210;&#x719F;&#x9879;&#x76EE;&#x7684;&#x6587;&#x6863;&#x90FD;&#x4F1A;&#x6709;&#x76F8;&#x5F53;&#x7BC7;&#x5E45;&#xFF1B;&#x4E8E;&#x6B64;&#x540C;&#x65F6;&#xFF0C;&#x51FA;&#x4E8E;&#x683C;&#x5F0F;&#x3001;&#x6392;&#x7248;&#x7B49;&#x9700;&#x6C42;&#xFF0C;&#x9010;&#x6B65;&#x5F62;&#x6210;&#x4E86;&#x591A;&#x79CD;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#x6807;&#x51C6;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x6BD4;&#x5982; TeX, DocBook, Markdown, reStructuredText, AsciiDoc &#x7B49;&#x3002;&#x76EE;&#x524D;&#x4E92;&#x8054;&#x7F51;&#x9879;&#x76EE;&#x4E2D;&#x4E3B;&#x8981;&#x6D41;&#x884C; Markdown, reStructuredText, AsciiDoc &#x7B49;&#x8F7B;&#x91CF;&#x7EA7;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;Tex&#x3001;DocBook &#x8FC7;&#x4E8E;&#x590D;&#x6742;&#xFF0C;reStructuredText &#x4E3B;&#x8981;&#x5728; Python &#x5F00;&#x53D1;&#x8005;&#x4E2D;&#x6D41;&#x884C;&#xFF0C;Org-mode &#x4E3B;&#x8981;&#x4EE5; Emacs &#x7528;&#x6237;&#x4E3A;&#x4E3B;&#xFF0C;Markdown &#x6700;&#x4E3A;&#x6D41;&#x884C;&#xFF08;&#x7531;&#x4E8E; Markdown &#x8FC7;&#x4E8E;&#x7B80;&#x5355;&#xFF0C;&#x76EE;&#x524D;&#x51E0;&#x5927;&#x7EC4;&#x7EC7;/&#x516C;&#x53F8;&#x5206;&#x522B;&#x5B9A;&#x4E49;&#x4E86;&#x81EA;&#x5DF1;&#x7684; Markdown &#x6269;&#x5C55;&#x8BED;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982; GitHub Flavored Markdown&#xFF0C;MultiMarkdown&#xFF0C;Markdown Extra&#xFF0C;Pandoc Markdown &#x7B49;&#xFF09;&#x3002;</p>
+<p>&#x6269;&#x5C55;&#x9605;&#x8BFB;&#xFF1A;</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_document_markup_languages" target="_blank">Comparison of document markup languages</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lightweight_markup_language" target="_blank">Lightweight markup language</a> - &#x5176;&#x4E2D;&#x6709;&#x597D;&#x51E0;&#x79CD;&#x90FD;&#x662F; Markdown &#x7684;&#x65B9;&#x8A00;&#xFF1B;&#x6BDB;&#x4E3B;&#x5E2D;&#x6559;&#x5BFC;&#x6211;&#x4EEC;&#x8981;&#x8FA9;&#x8BC1;&#x7684;&#x53BB;&#x770B;&#x95EE;&#x9898;&#xFF0C;&#x591A;&#x79CD;&#x65B9;&#x8A00;&#x540C;&#x65F6;&#x51FA;&#x73B0;&#x4E00;&#x65B9;&#x9762;&#x53CD;&#x6620;&#x51FA;&#x4EE5;&#x7B80;&#x4E3A;&#x7F8E;&#x8D77;&#x5BB6;&#x7684; Markdown &#x662F;&#x5982;&#x6B64;&#x6D41;&#x884C;&#xFF0C;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#x4E5F;&#x663E;&#x793A;&#x51FA; Markdown &#x6269;&#x5C55;&#x8BED;&#x6CD5;&#x6807;&#x51C6;&#x6DF7;&#x4E71;&#x7684;&#x65E0;&#x5948;&#x3002;</li>
+<li><a href="http://hyperpolyglot.org/lightweight-markup" target="_blank">Lightweight Markup: Markdown, reStructuredText, MediaWiki, AsciiDoc, Org-mode</a></li>
+</ul>
+<h4 id="rest&#xFF08;restructuredtext&#xFF09;">ReST&#xFF08;reStructuredText&#xFF09;</h4>
+<ul>
+<li><a href="http://sphinx-doc.org/" target="_blank">Sphinx Documentation</a>&#xFF0C;&#x53EF;&#x80FD;&#x662F; ReST&#xFF08;reStructuredText&#xFF09; &#x7CFB;&#x7684;&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x4E86;&#x5427;&#xFF0C;Python &#x5F00;&#x53D1;&#xFF0C;&#x7531;&#x4E8E;&#x8BED;&#x6CD5;&#x7B80;&#x5355;&#x3001;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#xFF0C;&#x975E;&#x5E38;&#x591A;&#x7684;&#x9879;&#x76EE;&#x90FD;&#x4F7F;&#x7528; Sphinx &#x6765;&#x751F;&#x6210;&#x9879;&#x76EE;&#x6587;&#x6863;&#xFF08;<a href="http://sphinx-doc.org/examples.html" target="_blank">&#x611F;&#x53D7;&#x4E0B;?</a>&#xFF09;&#xFF0C;&#x8DDF;&#x4ED6;&#x4E00;&#x8D77;&#x51FA;&#x73B0;&#x7684;&#x8FD8;&#x6709; <a href="https://readthedocs.org/" target="_blank">Read The Docs</a>&#xFF08;&#x5F00;&#x6E90;&#x6587;&#x6863;&#x751F;&#x6210;&#x7684;&#x6258;&#x7BA1;&#x5E73;&#x53F0;&#x548C;&#x793E;&#x533A;&#xFF0C;&#x540C;&#x65F6;&#x652F;&#x6301; reStructuredText &#x683C;&#x5F0F;&#x4EE5;&#x53CA; Markdown &#x683C;&#x5F0F;&#xFF09; &#x8FD9;&#x4F4D;&#x5144;&#x5F1F;&#xFF0C;&#x5173;&#x4E8E;&#x4ED6;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x53EF;&#x4EE5;<a href="https://coderwall.com/p/vemncg/what-is-the-difference-rest-docutils-sphinx-readthedocs" target="_blank">&#x770B;&#x4E0B;&#x8FD9;&#x91CC;</a>&#xFF1B;&#x76F8;&#x5173; PHP &#x9879;&#x76EE;&#x793A;&#x4F8B;&#xFF0C;<ul>
+<li><a href="http://guzzle3.readthedocs.org/" target="_blank">Guzzle</a>&#xFF0C;<a href="https://github.com/guzzle/guzzle/tree/v3.8.1/docs" target="_blank">&#x6E90;&#x7801;</a></li>
+<li><a href="http://book.cakephp.org/3.0/en/index.html" target="_blank">CakePHP Cookbook 3.x</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="markdown">Markdown</h4>
+<p>&#x7531;&#x4E8E; <a href="http://daringfireball.net/projects/markdown/" target="_blank">Markdown</a> &#x7B80;&#x5355;&#x6613;&#x8BFB;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x666E;&#x901A;&#x7684;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x5C31;&#x80FD;&#x591F;&#x7F16;&#x8F91;&#xFF0C;&#x8BED;&#x6CD5;&#x66F4;&#x662F;&#x7B80;&#x5355;&#x5230;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x6570;&#x5206;&#x949F;&#x5185;&#x5B66;&#x4F1A;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x4F5C;&#x4E3A;&#x4E00;&#x95E8; 2004 &#x5E74;&#x624D;&#x88AB;&#x53D1;&#x660E;&#x51FA;&#x6765;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;Markdown &#x5F88;&#x5FEB;&#x4FBF;&#x5F97;&#x5230;&#x4E86;&#x8BF8;&#x5982; <a href="https://github.com" target="_blank">Github</a>&#xFF0C;<a href="https://www.reddit.com/" target="_blank">reddit</a>, <a href="http://stackexchange.com/" target="_blank">Stack Exchange</a>, <a href="http://sourceforge.net/" target="_blank">Bitbucket</a> &#x7B49;&#x5927;&#x91CF;&#x7F51;&#x7AD9;&#x7684;&#x652F;&#x6301;&#x3002;&#x800C;&#x4F34;&#x968F;&#x7740; Github &#x65CB;&#x98CE;&#x6A2A;&#x626B;&#x6574;&#x4E2A;&#x5F00;&#x6E90;&#x754C;&#xFF0C; git + Github + Markdown + Jekyll &#x7EC4;&#x5408;&#x66F4;&#x662F;&#x6210;&#x4E3A;&#x4E92;&#x8054;&#x7F51;&#x65F6;&#x4EE3;&#x5927;&#x91CF;&#x79D1;&#x6280;&#x5199;&#x4F5C;&#x8005;&#x751A;&#x81F3;&#x5C0F;&#x90E8;&#x5206;&#x6587;&#x827A;&#x9752;&#x5E74;&#x7684;&#x4E3B;&#x529B;&#x751F;&#x4EA7;&#x529B;&#x5E73;&#x53F0;&#x3002;</p>
+<ul>
+<li><a href="https://jekyllrb.com/" target="_blank">Jekyll</a> - &#x4E0D;&#x4EC5;&#x4EC5;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x9759;&#x6001;&#x535A;&#x5BA2;&#x7AD9;&#x70B9;&#xFF0C;Jekyll &#x540C;&#x6837;&#x9002;&#x7528;&#x4E8E;&#x6587;&#x6863;&#x5185;&#x5BB9;&#x751F;&#x6210;&#xFF0C;Wista&#xFF08;&#x4E00;&#x5BB6;&#x4F01;&#x4E1A;&#x89C6;&#x9891;&#x6258;&#x7BA1;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x5546;&#xFF09;<a href="http://wistia.com/blog/jekyll-for-documentation" target="_blank">&#x5728;&#x8FD9;&#x91CC;</a>&#x5206;&#x4EAB;&#x4E86;&#x4ED6;&#x4EEC;&#x57FA;&#x4E8E; Jekyll &#x7684;&#x6587;&#x6863;&#x7BA1;&#x7406;&#x7ECF;&#x9A8C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;<a href="http://wistia.com/doc" target="_blank">&#x70B9;&#x8FD9;&#x91CC;&#x5148;&#x7779;&#x4E3A;&#x5FEB;</a>&#xFF08;<a href="https://github.com/wistia/wistia-doc" target="_blank">&#x6E90;&#x7801;</a>&#xFF09;&#x3002;&#x4E0B;&#x9762;&#x5217;&#x4E3E;&#x4E86; Jekyll &#x6587;&#x6863;&#x5176;&#x4ED6;&#x76F8;&#x5173;&#x4E3B;&#x9898;&#xFF0C;<ul>
+<li><a href="https/github.com/tomjohnson1492/documentation-theme-jekyll">Jekyll Documentation Theme</a>&#xFF0C;&#x793A;&#x4F8B;&#xFF1A;<a href="http://idratherbewriting.com/documentation-theme-jekyll" target="_blank">Official Doc</a></li>
+<li><a href="https://github.com/bruth/jekyll-docs-template/" target="_blank">Jekyll-docs-template</a>&#xFF0C;&#x793A;&#x4F8B;&#xFF1A;<a href="http://bruth.github.io/jekyll-docs-template/" target="_blank">Official Doc</a>&#xFF0C;<a href="http://modeltree.harvest.io/ref/lookup-syntax.html" target="_blank">ModelTree</a></li>
+</ul>
+</li>
+<li><a href="http://www.mkdocs.org/" target="_blank">MkDocs</a> - &#x6839;&#x636E; Markdown &#x6587;&#x6863;&#x751F;&#x6210;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#xFF0C;Python &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#xFF0C;<ul>
+<li><a href="http://docs.slimframework.com/" target="_blank">SlimFramework v2 Doc</a> - &#x4E2A;&#x4EBA;&#x5E38;&#x7528;&#x7684;&#x4E00;&#x4E2A; PHP &#x8F7B;&#x91CF;&#x7EA7;&#x6846;&#x67B6;&#xFF0C;&#x5C0F;&#x5185;&#x6838; + Composer &#x5305;&#xFF0C;&#x53EF;&#x73A9;&#x6027;&#x5F88;&#x9AD8;~ &#x7C7B;&#x4F3C;&#x7684;&#x53EF;&#x9009;&#x9879;&#x8FD8;&#x6709; <a href="http://silex.sensiolabs.org/" target="_blank">Silex</a> &#x548C; <a href="https://lumen.laravel.com/" target="_blank">Lumen</a></li>
+<li><a href="http://dev.xiaomi.com/docs/" target="_blank">&#x5C0F;&#x7C73;&#x5F00;&#x653E;&#x5E73;&#x53F0;&#x6587;&#x6863;&#x4E2D;&#x5FC3;</a></li>
+<li><a href="http://www.flaskapi.org/" target="_blank">Flask API Doc</a> - &#x53E6;&#x5916;&#x4E00;&#x6B3E;&#x8F7B;&#x91CF;&#x7EA7; Python Web &#x5F00;&#x53D1;&#x6846;&#x67B6;</li>
+</ul>
+</li>
+<li><a href="https://github.com/GitbookIO/gitbook" target="_blank">GitBook</a> - &#x9664;&#x4E86; Markdown&#xFF0C;GitBook &#x8FD8;&#x652F;&#x6301;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x4E0E; Markdown &#x5F88;&#x7C7B;&#x4F3C;&#x4F46;&#x529F;&#x80FD;&#x66F4;&#x4E30;&#x5BCC;&#x7684;&#x6807;&#x8BB0;&#x8BED;&#x8A00; AsciiDoc&#xFF1B;GitBook &#x9664;&#x4E86;&#x63D0;&#x4F9B;&#x57FA;&#x4E8E; node.js &#x5F00;&#x53D1;&#x7684;&#x53EF;&#x4F9B;&#x672C;&#x5730;&#x8FD0;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x7248;&#x672C;&#x5916;&#xFF0C;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;<a href="https://www.gitbook.com/" target="_blank">&#x5728;&#x7EBF;&#x6258;&#x7BA1;&#x670D;&#x52A1;</a>&#x3002;<ul>
+<li><a href="http://help.gitbook.com/format/languages.html" target="_blank">GitBook Multi-Languages support</a></li>
+</ul>
+</li>
+<li><a href="https://peachdocs.org/" target="_blank">Peach</a> - &#x56FD;&#x4EBA;&#x57FA;&#x4E8E; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x6B3E;&#x652F;&#x6301;&#x591A;&#x8BED;&#x8A00;&#x3001;&#x5B9E;&#x65F6;&#x540C;&#x6B65;&#x4EE5;&#x53CA;&#x5168;&#x6587;&#x641C;&#x7D22;&#x529F;&#x80FD;&#x7684; Web &#x6587;&#x6863;&#x670D;&#x52A1;&#x5668;&#x3002;&#x8D5E;&#x4E00;&#x4E2A;~&#xFF0C;&#x4F7F;&#x7528;&#x793A;&#x4F8B;&#xFF0C;<ul>
+<li><a href="https://peachdocs.org/docs" target="_blank">Peach &#x6587;&#x6863;</a> - Peach &#x5B98;&#x65B9;&#x6587;&#x6863;</li>
+<li><a href="https://gogs.io/docs" target="_blank">Gogs &#x6587;&#x6863;</a> - &#x56FD;&#x4EBA;&#x57FA;&#x4E8E; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x7684;&#x7C7B; Gitlab &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x754C;&#x9762;&#x6BD4;&#x8F83;&#x5C0F;&#x6E05;&#x65B0;&#x54E6;~</li>
+</ul>
+</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x5BF9;&#x6BD4;&#x4E86;&#x51E0;&#x6B3E;&#x652F;&#x6301; Markdown &#x7684;&#x4E3B;&#x6D41;&#x6587;&#x6863;&#x5DE5;&#x5177;&#x4E4B;&#x95F4;&#x4E3B;&#x8981;&#x7279;&#x6027;&#x7684;&#x533A;&#x522B;&#xFF08;&#x5B9E;&#x9645;&#x533A;&#x522B;&#x53EF;&#x80FD;&#x4E0E;&#x6211;&#x6240;&#x7406;&#x89E3;&#x7684;&#x6709;&#x504F;&#x5DEE;&#xFF09;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x81EA;&#x52A9;&#x6258;&#x7BA1;----</th>
+<th style="text-align:center">&#x591A;&#x8BED;&#x8A00;&#x6587;&#x6863;</th>
+<th style="text-align:center">&#x5B9E;&#x65F6;&#x540C;&#x6B65;</th>
+<th style="text-align:center">&#x9759;&#x6001; HTML</th>
+<th style="text-align:center">&#x591A;&#x7248;&#x672C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Read The Docs</td>
+<td style="text-align:center">&#x2717;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;</td>
+</tr>
+<tr>
+<td style="text-align:center">Peach</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;&#xFF08;&#x53EF;&#x7F13;&#x5B58;&#xFF09;</td>
+<td style="text-align:center"><a href="https://peachdocs.org/docs/intro/roadmap" target="_blank">&#x8BA1;&#x5212;&#x4E2D;</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Mkdocs</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2717;</td>
+<td style="text-align:center">&#x2717;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2717;</td>
+</tr>
+<tr>
+<td style="text-align:center">GitBook</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2717;</td>
+</tr>
+<tr>
+<td style="text-align:center">Jekyll</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;&#xFF08;&#x63D2;&#x4EF6;&#xFF09;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;</td>
+<td style="text-align:center">&#x2713;&#xFF08;&#x4E0D;&#x5B8C;&#x7F8E;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="asciidoc">AsciiDoc</h4>
+<p><a href="http://asciidoc.org/" target="_blank">AsciiDoc</a> &#x6700;&#x521D;&#x57FA;&#x4E8E; Python &#x5F00;&#x53D1;&#xFF0C;&#x5176;&#x57FA;&#x672C;&#x8BED;&#x6CD5;&#x8DDF; Markdown &#x7C7B;&#x4F3C;&#xFF0C;&#x4F8B;&#x5982;&#x4EE5; = &#x5F00;&#x5934;&#x4F5C;&#x4E3A;&#x6807;&#x9898;&#x3001;&#x4EE5; * &#x53F7;&#x5F00;&#x5934;&#x4F5C;&#x4E3A;&#x5217;&#x8868;&#x9879;&#x7B49;&#xFF0C;&#x8BE6;&#x7EC6;&#x7684;&#x8BED;&#x6CD5;&#x8BF4;&#x660E;&#x53EF;&#x4EE5;<a href="http://powerman.name/doc/asciidoc" target="_blank">&#x770B;&#x8FD9;&#x91CC;</a>&#xFF0C;&#x4F46; AsciiDoc &#x6BD4; Markdown &#x652F;&#x6301;&#x66F4;&#x591A;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x6BD4;&#x5982;&#x8868;&#x683C;&#x3001;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x7B49;&#xFF0C;&#x540C;&#x65F6; AsciiDoc &#x662F; O&apos;Reilly &#x7684; <a href="http://chimera.labs.oreilly.com/" target="_blank">Atlas &#x5728;&#x7EBF;&#x51FA;&#x7248;&#x5E73;&#x53F0;</a> &#x7684;&#x63A8;&#x8350;&#x8BED;&#x8A00;&#xFF0C;&#x76F8;&#x5F53;&#x5927;&#x90E8;&#x5206;&#x7684; <a href="https://git.wiki.kernel.org/index.php/AsciiDoc" target="_blank">Git &#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x90FD;&#x4F7F;&#x7528;&#x4E86; AsciiDoc &#x683C;&#x5F0F;&#x3002;</p>
+<p>&#x6269;&#x5C55;&#x9605;&#x8BFB;&#xFF1A;</p>
+<ul>
+<li><a href="http://asciidoctor.org/" target="_blank">AsciiDoctor</a> - 2013 &#x5E74;&#x53D1;&#x5E03;&#xFF0C;&#x662F; AsciiDoc &#x57FA;&#x4E8E; Ruby &#x8BED;&#x8A00;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x4E3B;&#x8981;<a href="http://asciidoctor.org/news/2013/01/30/asciidoc-returns-to-github/" target="_blank">&#x5728; GitHub &#x4F7F;&#x7528;</a>&#x3002;</li>
+</ul>
+<h4 id="docbook">DocBook</h4>
+<ul>
+<li><a href="http://www.docbook.org/" target="_blank">DocBook</a> &#x6BD4; HTML &#x8BED;&#x8A00;&#x8FD8;&#x65E9;&#x4E00;&#x5E74;&#xFF08;1992 &#x5E74;&#xFF09;&#x51FA;&#x73B0;&#x7684; XML &#x7CFB;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x7684;&#x751F;&#x6210;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#xFF0C;&#x6BD4;&#x5982; HTMl&#x3001;PDF&#x3001;CHM &#x7B49;&#xFF0C;&#x5F00;&#x6E90;&#x754C;&#x4F7F;&#x7528; DocBook &#x7684;&#x9879;&#x76EE;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x6BD4;&#x5982;&#x5927;&#x5BB6;&#x8033;&#x719F;&#x80FD;&#x8BE6;&#x7684;&#x4E00;&#x4E9B;&#x9879;&#x76EE;&#xFF0C;<a href="https://www.kernel.org/" target="_blank">Linux Kernel</a>&#x3001;<a href="http://www.freebsd.org/" target="_blank">FreeBSD</a>&#x3001;<a href="http://www3.uk.postgresql.org/users-lounge/docs/" target="_blank">PostgreSQL</a>&#x3001;<a href="http://www.oreilly.com/" target="_blank">O&apos;Reilly Media</a>&#x3001;<a href="http://docs.openstack.org/" target="_blank">OpenStack</a>&#xFF0C;<a href="http://www.php.net/download-docs.php" target="_blank">PHP &#x7684;&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x4E5F;&#x7528;&#x7684;&#x5B83;&#x54E6;&#xFF0C;&#x66F4;&#x591A;&#x9879;&#x76EE;&#x548C;&#x7EC4;&#x7EC7;&#x5217;&#x8868;&#x53EF;&#x4EE5;<a href="http://wiki.docbook.org/WhoUsesDocBook" target="_blank">&#x770B;&#x8FD9;&#x91CC;</a>&#xFF1B;&#x4E0D;&#x8FC7;&#x7EAF; PHP &#x76F8;&#x5173;&#x9879;&#x76EE;&#x4F7F;&#x7528; Docbook &#x7684;&#x8F83;&#x5C11;&#xFF0C;&#x6BD5;&#x7ADF;&#x4F7F;&#x7528; XML &#x6765;&#x5199;&#x6587;&#x6863;&#x95E8;&#x69DB;&#x6709;&#x70B9;&#x9AD8; :sunglasses:&#xFF0C;&#x9879;&#x76EE;&#x793A;&#x4F8B;&#xFF0C;<ul>
+<li><a href="https://phpunit.de/manual/5.1/en/index.html" target="_blank">PHPUnit Documentation</a>&#xFF0C;<a href="https://github.com/sebastianbergmann/phpunit-documentation" target="_blank">&#x6E90;&#x7801;</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="tex">Tex</h4>
+<p><a href="http://tug.org/" target="_blank">Tex</a> &#x662F;&#x7531; <a href="https://zh.wikipedia.org/wiki/Donald_Knuth" target="_blank">Donald Knuth</a> &#x521B;&#x9020;&#x7684;&#x57FA;&#x4E8E;&#x4F4E;&#x7EA7;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x7535;&#x5B50;&#x6392;&#x7248;&#x7CFB;&#x7EDF;&#xFF0C;&#x5229;&#x7528; TeX &#x80FD;&#x591F;&#x5BF9;&#x6587;&#x7AE0;&#x8FDB;&#x884C;&#x5341;&#x5206;&#x7CBE;&#x7F8E;&#x7684;&#x6392;&#x7248;&#xFF0C;TeX &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x5957;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#x5E76;&#x4E14;&#x5341;&#x5206;&#x7075;&#x6D3B;&#x7684;&#x6392;&#x7248;&#x8BED;&#x8A00;&#xFF0C;&#x540C;&#x65F6; TeX &#x7CFB;&#x7EDF;&#x662F;&#x516C;&#x8BA4;&#x7684;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x6392;&#x5F97;&#x6700;&#x597D;&#x7684;&#x7CFB;&#x7EDF;&#x3002;</p>
+<ul>
+<li><a href="https://latex-project.org/" target="_blank">LaTeX</a> - LaTeX&#xFF08;&#x53D1;&#x97F3;&#x4E3A;&#x201C;Lah-tech&#x201D;&#x6216;&#x201C;Lay-tech&#x201D;&#xFF09;&#x662F;&#x7531; <a href="https://zh.wikipedia.org/wiki/Leslie_Lamport" target="_blank">Leslie Lamport</a> &#x5F00;&#x53D1;&#x7684;&#x5F53;&#x4ECA;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x6D41;&#x884C;&#x548C;&#x4F7F;&#x7528;&#x6700;&#x4E3A;&#x5E7F;&#x6CDB;&#x7684;TeX&#x5B8F;&#x96C6;&#x3002; &#x628A; LaTeX &#x653E;&#x5230;&#x6700;&#x540E;&#x662F;&#x7531;&#x4E8E; TeX &#x8BED;&#x6CD5;&#x7684;&#x9AD8;&#x95E8;&#x69DB;&#xFF0C;&#x5BFC;&#x81F4;&#x9664;&#x4E86;&#x4E13;&#x4E1A;&#x7684;&#x79D1;&#x5B66;&#x7814;&#x7A76;&#x3001;&#x51FA;&#x7248;&#x9886;&#x57DF;&#xFF0C;&#x9664;&#x4E86;&#x6211;&#x4EEC;&#x656C;&#x4EF0;&#x7684;&#x90A3;&#x4E9B;&#x5927;&#x795E;&#x4EEC;&#xFF0C;&#x5728;&#x504F;&#x5DE5;&#x7A0B;/&#x5E94;&#x7528;&#x7C7B;&#x7684;&#x666E;&#x901A;&#x7801;&#x519C;&#x754C;&#x4E2D;&#x6CA1;&#x6709;&#x771F;&#x6B63;&#x5927;&#x89C4;&#x6A21;&#x6D41;&#x884C;&#x5F00;&#x6765;&#x3002;</li>
+</ul>
+<h3 id="&#x51FD;&#x6570;&#x7C7B;&#x7684;&#x63A5;&#x53E3;&#x8BF4;&#x660E;&#x6587;&#x6863;">&#x51FD;&#x6570;/&#x7C7B;&#x7684;&#x63A5;&#x53E3;&#x8BF4;&#x660E;&#x6587;&#x6863;</h3>
+<ul>
+<li><a href="http://www.phpdoc.org/" target="_blank">PHPDoc</a>&#xFF0C;&#x5199; PHP &#x7684;&#x90FD;&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#x8FD9;&#x4E2A;&#x54C8;&#xFF0C;&#x563F;&#x563F;&#x3002;&#x793A;&#x4F8B;&#xFF0C;<ul>
+<li><a href="http://framework.zend.com/apidoc/2.4/" target="_blank">Zend Framework 2.4 API Documentation</a></li>
+<li><a href="http://demo.phpdoc.org/Clean2/" target="_blank">Offical Demo with Clean2 theme</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/FriendsOfPHP/Sami" target="_blank">Sami</a>&#xFF0C;Symfony &#x6846;&#x67B6;&#x4F7F;&#x7528;&#x7684;&#x6587;&#x6863;&#x751F;&#x6210;&#x5DE5;&#x5177;&#xFF0C;&#x793A;&#x4F8B;&#xFF0C;<ul>
+<li><a href="http://api.symfony.com/3.0/index.html" target="_blank">Symfony 3.0 API</a></li>
+<li><a href="https://getcomposer.org/apidoc/master/index.html" target="_blank">Composer API</a></li>
+</ul>
+</li>
+<li><a href="http://www.stack.nl/~dimitri/doxygen/" target="_blank">Doxygen</a>&#xFF0C;&#x8D85;&#x7EA7;&#x8001;&#x724C;&#x6587;&#x6863;&#x751F;&#x6210;&#x5DE5;&#x5177;&#x4E86;&#xFF0C;&#x9664;&#x4E86; PHP &#x5916;&#x8FD8;&#x652F;&#x6301;&#x5176;&#x4ED6; N &#x79CD;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;</li>
+<li><a href="http://phpdox.de/" target="_blank">phpDox</a></li>
+<li><a href="http://www.apigen.org/" target="_blank">Apigen</a><ul>
+<li><a href="http://docs.aws.amazon.com/aws-sdk-php/v3/api/" target="_blank">Amazon AWS SDK for PHP 3.x</a></li>
+<li><a href="http://api.cakephp.org/3.1/" target="_blank">CakePHP API Docs</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x670D;&#x52A1;&#x7AEF;&#x63A5;&#x53E3;&#x8BF4;&#x660E;&#x6587;&#x6863;">&#x670D;&#x52A1;&#x7AEF;&#x63A5;&#x53E3;&#x8BF4;&#x660E;&#x6587;&#x6863;</h3>
+<ul>
+<li><a href="http://swagger.io/" target="_blank">Swagger</a>, <a href="http://petstore.swagger.wordnik.com/" target="_blank">Demo</a></li>
+<li><a href="https://apiary.io" target="_blank">Apiary</a> - &#xFF08;<strong>&#x63A8;&#x8350;</strong>&#xFF09;Apiary.io&#x5E73;&#x53F0;&#x5177;&#x6709;&#x534F;&#x540C;&#x8BBE;&#x8BA1;&#x3001;&#x5373;&#x65F6;API&#x6A21;&#x62DF;&#x3001;&#x5FEB;&#x901F;&#x751F;&#x6210;&#x6E90;&#x7801;&#x3001;&#x81EA;&#x52A8;&#x6D4B;&#x8BD5;&#x548C;&#x4EE3;&#x7801;&#x8C03;&#x8BD5;&#x7684;&#x5F00;&#x6E90;&#x8BBE;&#x8BA1;&#x5DE5;&#x5177;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x662F;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x6A21;&#x62DF;&#x6D4B;&#x8BD5;&#xFF0C;&#x56E0;&#x4E3A;&#x8BE5;&#x5E73;&#x53F0;&#x5177;&#x5907;&#x6A21;&#x62DF;&#x670D;&#x52A1;&#x5668;&#x6D4B;&#x8BD5;&#x670D;&#x52A1;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x8BBE;&#x8BA1;&#x597D;&#x7684;&#x7A0B;&#x5E8F;&#x5728;&#x7EBF;&#x6D4B;&#x8BD5;&#x3001;&#x9A8C;&#x8BC1;&#x3002;</li>
+<li><a href="http://apidocjs.com/" target="_blank">Apidoc</a>, <a href="http://apidocjs.com/example/" target="_blank">Demo</a> </li>
+<li><a href="https://github.com/tripit/slate" target="_blank">Slate</a> - &#x521B;&#x5EFA;&#x597D;&#x770B;&#x7684; API &#x6587;&#x6863;&#xFF0C;Travis-CI, Appium &#x7B49;&#x9879;&#x76EE;&#x4F7F;&#x7528;&#x4E2D;&#xFF0C;&#x66F4;&#x591A;&#x4F8B;&#x5B50;&#xFF1A;<a href="https://github.com/tripit/slate#examples-of-slate-in-the-wild" target="_blank">Examples of Slate in the Wild</a></li>
+<li><a href="http://json-schema.org/" target="_blank">JSON-Schema</a></li>
+<li><a href="https://github.com/interagent/prmd" target="_blank">prmd</a> - JSON Schema tools and doc generation for HTTP APIs</li>
+<li><a href="http://segmentfault.com/q/1010000002523945" target="_blank">&#x5982;&#x4F55;&#x7F16;&#x5199; API &#x7684;&#x6587;&#x6863;&#xFF1F;</a></li>
+</ul>
+<h3 id="&#x8BBE;&#x8BA1;&#x76F8;&#x5173;&#x6587;&#x6863;">&#x8BBE;&#x8BA1;&#x76F8;&#x5173;&#x6587;&#x6863;</h3>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="security.html" class="navigation navigation-prev " aria-label="Previous page: 安全">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../4-development-process/" class="navigation navigation-next " aria-label="Next page: 过程 & 实践">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"文档","level":"1.5.6","depth":2,"next":{"title":"过程 & 实践","level":"1.6","depth":1,"path":"4-development-process/README.md","ref":"4-development-process/README.md","articles":[{"title":"开发过程","level":"1.6.1","depth":2,"path":"4-development-process/life-cycle-model.md","ref":"4-development-process/life-cycle-model.md","articles":[]},{"title":"版本管理","level":"1.6.2","depth":2,"path":"4-development-process/version-control.md","ref":"4-development-process/version-control.md","articles":[]},{"title":"持续集成","level":"1.6.3","depth":2,"path":"4-development-process/ci.md","ref":"4-development-process/ci.md","articles":[]},{"title":"上线部署","level":"1.6.4","depth":2,"path":"4-development-process/deployment.md","ref":"4-development-process/deployment.md","articles":[]}]},"previous":{"title":"安全","level":"1.5.5","depth":2,"path":"3-development/security.md","ref":"3-development/security.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PHP 开发者实践","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"PHP 编程学习入门教程"},"file":{"path":"3-development/documentation.md","mtime":"2016-06-20T01:42:07.625Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:43:25.824Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

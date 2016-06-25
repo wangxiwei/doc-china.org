@@ -1,0 +1,843 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Path · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Process.html" />
+    
+    
+    <link rel="prev" href="OS.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Path</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="path">Path</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x4E86;&#x5904;&#x7406;&#x548C;&#x8F6C;&#x6362;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x90FD;&#x4EC5;&#x63D0;&#x4F9B;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x529F;&#x80FD;&#x3002;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E0D;&#x4F1A;&#x53BB;&#x68C0;&#x67E5;&#x8DEF;&#x5F84;&#x662F;&#x5426;&#x53EF;&#x7528;&#x3002;</p>
+<p>&#x901A;&#x8FC7;<code>require(&apos;path&apos;)</code>&#x6765;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x63D0;&#x4F9B;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<h4 id="pathnormalizep">path.normalize(p)</h4>
+<p>&#x89C4;&#x8303;&#x5316;&#x5B57;&#x7B26;&#x4E32;&#x8DEF;&#x5F84;&#xFF0C;&#x6CE8;&#x610F;<code>&apos;..&apos;</code>&#x548C;<code>&apos;.&apos;</code>&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x5F53;&#x6709;&#x591A;&#x4E2A;&#x8FDE;&#x7EED;&#x659C;&#x6760;&#x65F6;&#xFF0C;&#x5B83;&#x4EEC;&#x4F1A;&#x88AB;&#x66FF;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x659C;&#x6760;&#xFF1B;&#x5F53;&#x8DEF;&#x5F84;&#x7684;&#x6700;&#x540E;&#x6709;&#x4E00;&#x4E2A;&#x659C;&#x6760;&#xFF0C;&#x5B83;&#x4F1A;&#x88AB;&#x4FDD;&#x7559;&#x3002;&#x5728;Windows&#x4E0B;&#x4F7F;&#x7528;&#x53CD;&#x659C;&#x6760;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.normalize(<span class="hljs-string">&apos;/foo/bar//baz/asdf/quux/..&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;/foo/bar/baz/asdf&apos;</span>
+</code></pre>
+<h4 id="pathjoinpath1-path2-">path.join([path1][, path2][, ...])</h4>
+<p>&#x8FDE;&#x63A5;&#x6240;&#x6709;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x89C4;&#x8303;&#x5316;&#x7ED3;&#x679C;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5728;0.8&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x975E;&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#xFF0C;&#x5728;0.10&#x7248;&#x672C;&#x53CA;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.join(<span class="hljs-string">&apos;/foo&apos;</span>, <span class="hljs-string">&apos;bar&apos;</span>, <span class="hljs-string">&apos;baz/asdf&apos;</span>, <span class="hljs-string">&apos;quux&apos;</span>, <span class="hljs-string">&apos;..&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;/foo/bar/baz/asdf&apos;</span>
+
+path.join(<span class="hljs-string">&apos;foo&apos;</span>, {}, <span class="hljs-string">&apos;bar&apos;</span>)
+<span class="hljs-comment">// throws exception</span>
+<span class="hljs-built_in">TypeError</span>: Arguments to path.join must be strings
+</code></pre>
+<h4 id="pathresolvefrom--to">path.resolve([from ...], to)</h4>
+<p>&#x5C06;<code>to</code>&#x89E3;&#x6790;&#x4E3A;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>to</code>&#x4E0D;&#x5DF2;&#x7ECF;&#x662F;&#x76F8;&#x5BF9;&#x4E8E;<code>from</code>&#x53C2;&#x6570;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;<code>to</code>&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230;<code>from</code>&#x7684;&#x53F3;&#x8FB9;&#xFF0C;&#x76F4;&#x5230;&#x627E;&#x51FA;&#x7EDD;&#x5BF9;&#x4E86;&#x8DEF;&#x5F84;&#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;<code>from</code>&#x4E2D;&#x6240;&#x6709;&#x7684;&#x8DEF;&#x5F84;&#x4ECD;&#x6CA1;&#x6709;&#x627E;&#x51FA;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x5F53;&#x524D;&#x7684;&#x5DE5;&#x4F5C;&#x8DEF;&#x5F84;&#x4E5F;&#x4F1A;&#x88AB;&#x4F7F;&#x7528;&#x3002;&#x7ED3;&#x679C;&#x8DEF;&#x5F84;&#x4F1A;&#x88AB;&#x89C4;&#x8303;&#x5316;&#xFF0C;&#x5E76;&#x4E14;&#x7ED3;&#x5C3E;&#x7684;&#x659C;&#x6760;&#x4F1A;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x9664;&#x975E;&#x89E3;&#x6790;&#x5F97;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x6839;&#x8DEF;&#x5F84;&#x3002;&#x975E;&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x4E2A;&#x601D;&#x8DEF;&#x662F;&#x5C06;&#x5B83;&#x770B;&#x505A;shell&#x4E2D;&#x4E00;&#x7CFB;&#x5217;&#x7684;<code>cd</code>&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-js">path.resolve(<span class="hljs-string">&apos;foo/bar&apos;</span>, <span class="hljs-string">&apos;/tmp/file/&apos;</span>, <span class="hljs-string">&apos;..&apos;</span>, <span class="hljs-string">&apos;a/../subfile&apos;</span>)
+</code></pre>
+<p>&#x76F8;&#x4F3C;&#x4E8E;&#xFF1A;</p>
+<pre><code class="lang-SHELL">cd foo/bar
+cd /tmp/file/
+cd ..
+cd a/../subfile
+pwd
+</code></pre>
+<p>&#x533A;&#x522B;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x8DEF;&#x5F84;&#x4E0D;&#x9700;&#x8981;&#x4E00;&#x5B9A;&#x5B58;&#x5728;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.resolve(<span class="hljs-string">&apos;/foo/bar&apos;</span>, <span class="hljs-string">&apos;./baz&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;/foo/bar/baz&apos;</span>
+
+path.resolve(<span class="hljs-string">&apos;/foo/bar&apos;</span>, <span class="hljs-string">&apos;/tmp/file/&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;/tmp/file&apos;</span>
+
+path.resolve(<span class="hljs-string">&apos;wwwroot&apos;</span>, <span class="hljs-string">&apos;static_files/png/&apos;</span>, <span class="hljs-string">&apos;../gif/image.gif&apos;</span>)
+<span class="hljs-comment">// if currently in /home/myself/iojs, it returns</span>
+<span class="hljs-string">&apos;/home/myself/iojs/wwwroot/static_files/gif/image.gif&apos;</span>
+</code></pre>
+<h4 id="pathisabsolutepath">path.isAbsolute(path)</h4>
+<p>&#x5224;&#x65AD;<code>path</code>&#x662F;&#x5426;&#x662F;&#x4E00;&#x4E2A;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;&#x4E00;&#x4E2A;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x603B;&#x662F;&#x88AB;&#x89E3;&#x6790;&#x4E3A;&#x76F8;&#x540C;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x65E0;&#x8BBA;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x662F;&#x54EA;&#x91CC;&#x3002;</p>
+<p>Posix&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.isAbsolute(<span class="hljs-string">&apos;/foo/bar&apos;</span>) <span class="hljs-comment">// true</span>
+path.isAbsolute(<span class="hljs-string">&apos;/baz/..&apos;</span>)  <span class="hljs-comment">// true</span>
+path.isAbsolute(<span class="hljs-string">&apos;qux/&apos;</span>)     <span class="hljs-comment">// false</span>
+path.isAbsolute(<span class="hljs-string">&apos;.&apos;</span>)        <span class="hljs-comment">// false</span>
+</code></pre>
+<p>Windows&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.isAbsolute(<span class="hljs-string">&apos;//server&apos;</span>)  <span class="hljs-comment">// true</span>
+path.isAbsolute(<span class="hljs-string">&apos;C:/foo/..&apos;</span>) <span class="hljs-comment">// true</span>
+path.isAbsolute(<span class="hljs-string">&apos;bar\\baz&apos;</span>)   <span class="hljs-comment">// false</span>
+path.isAbsolute(<span class="hljs-string">&apos;.&apos;</span>)         <span class="hljs-comment">// false</span>
+</code></pre>
+<h4 id="pathrelativefrom-to">path.relative(from, to)</h4>
+<p>&#x89E3;&#x6790;&#x4ECE;<code>from</code>&#x5230;<code>to</code>&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x6709;&#x4E24;&#x4E2A;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x5E76;&#x4E14;&#x6211;&#x4EEC;&#x8981;&#x5F97;&#x5230;&#x5B83;&#x4EEC;&#x95F4;&#x4E00;&#x4E2A;&#x5BF9;&#x4E8E;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;&#x8FD9;&#x5B9E;&#x9645;&#x4E0A;&#x662F;<code>path.resolve</code>&#x7684;&#x76F8;&#x53CD;&#x64CD;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x770B;&#x8FD9;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1A;</p>
+<pre><code class="lang-js">path.resolve(<span class="hljs-keyword">from</span>, path.relative(<span class="hljs-keyword">from</span>, to)) == path.resolve(to)
+</code></pre>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.relative(<span class="hljs-string">&apos;C:\\orandea\\test\\aaa&apos;</span>, <span class="hljs-string">&apos;C:\\orandea\\impl\\bbb&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;..\\..\\impl\\bbb&apos;</span>
+
+path.relative(<span class="hljs-string">&apos;/data/orandea/test/aaa&apos;</span>, <span class="hljs-string">&apos;/data/orandea/impl/bbb&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;../../impl/bbb&apos;</span>
+</code></pre>
+<h4 id="pathdirnamep">path.dirname(p)</h4>
+<p>&#x8FD4;&#x56DE;&#x8DEF;&#x5F84;&#x7684;&#x76EE;&#x5F55;&#x540D;&#x3002;&#x4E0E;Unix <code>dirname</code> &#x547D;&#x4EE4;&#x76F8;&#x4F3C;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.dirname(<span class="hljs-string">&apos;/foo/bar/baz/asdf/quux&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;/foo/bar/baz/asdf&apos;</span>
+</code></pre>
+<h4 id="pathbasenamep-ext">path.basename(p[, ext])</h4>
+<p>&#x8FD4;&#x56DE;&#x8DEF;&#x5F84;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x4E0E;Unix <code>basename</code> &#x547D;&#x4EE4;&#x76F8;&#x4F3C;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.basename(<span class="hljs-string">&apos;/foo/bar/baz/asdf/quux.html&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;quux.html&apos;</span>
+
+path.basename(<span class="hljs-string">&apos;/foo/bar/baz/asdf/quux.html&apos;</span>, <span class="hljs-string">&apos;.html&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;quux&apos;</span>
+</code></pre>
+<h4 id="pathextnamep">path.extname(p)</h4>
+<p>&#x8FD4;&#x56DE;&#x8DEF;&#x5F84;&#x7684;&#x6269;&#x5C55;&#x540D;&#xFF0C;&#x5373;&#x4ECE;&#x8DEF;&#x5F84;&#x7684;&#x6700;&#x540E;&#x4E00;&#x90E8;&#x5206;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;<code>&apos;.&apos;</code>&#x5230;&#x672B;&#x5C3E;&#x4E4B;&#x95F4;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C;&#x8DEF;&#x5F84;&#x7684;&#x6700;&#x540E;&#x4E00;&#x90E8;&#x5206;&#x6CA1;&#x6709;<code>&apos;.&apos;</code>&#xFF0C;&#x6216;&#x8005;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x662F;<code>&apos;.&apos;</code>&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.extname(<span class="hljs-string">&apos;index.html&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;.html&apos;</span>
+
+path.extname(<span class="hljs-string">&apos;index.coffee.md&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;.md&apos;</span>
+
+path.extname(<span class="hljs-string">&apos;index.&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;.&apos;</span>
+
+path.extname(<span class="hljs-string">&apos;index&apos;</span>)
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;&apos;</span>
+</code></pre>
+<h4 id="pathsep">path.sep</h4>
+<p>&#x8FD4;&#x56DE;&#x7279;&#x5B9A;&#x5E73;&#x53F0;&#x7684;&#x6587;&#x4EF6;&#x5206;&#x9694;&#x7B26;&#x3002;<code>&apos;\\&apos;</code>&#x6216;<code>&apos;/&apos;</code>&#x3002;</p>
+<p>&#x4E00;&#x4E2A;*nix&#x4E0A;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-string">&apos;foo/bar/baz&apos;</span>.split(path.sep)
+<span class="hljs-comment">// returns</span>
+[<span class="hljs-string">&apos;foo&apos;</span>, <span class="hljs-string">&apos;bar&apos;</span>, <span class="hljs-string">&apos;baz&apos;</span>]
+</code></pre>
+<p>&#x4E00;&#x4E2A;Windows&#x4E0A;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-string">&apos;foo\\bar\\baz&apos;</span>.split(path.sep)
+<span class="hljs-comment">// returns</span>
+[<span class="hljs-string">&apos;foo&apos;</span>, <span class="hljs-string">&apos;bar&apos;</span>, <span class="hljs-string">&apos;baz&apos;</span>]
+</code></pre>
+<h4 id="pathdelimiter">path.delimiter</h4>
+<p>&#x7279;&#x5B9A;&#x5E73;&#x53F0;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;&#xFF0C;<code>&apos;;&apos;</code>&#x6216;<code>&apos;:&apos;</code>&#x3002;</p>
+<p>&#x4E00;&#x4E2A;*nix&#x4E0A;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(process.env.PATH)
+<span class="hljs-comment">// &apos;/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin&apos;</span>
+
+process.env.PATH.split(path.delimiter)
+<span class="hljs-comment">// returns</span>
+[<span class="hljs-string">&apos;/usr/bin&apos;</span>, <span class="hljs-string">&apos;/bin&apos;</span>, <span class="hljs-string">&apos;/usr/sbin&apos;</span>, <span class="hljs-string">&apos;/sbin&apos;</span>, <span class="hljs-string">&apos;/usr/local/bin&apos;</span>]
+</code></pre>
+<p>&#x4E00;&#x4E2A;Windows&#x4E0A;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>console.log(process.env.PATH)
+// &apos;C:\Windows\system32;C:\Windows;C:\Program Files\iojs\&apos;
+
+process.env.PATH.split(path.delimiter)
+// returns
+[&apos;C:\\Windows\\system32&apos;, &apos;C:\\Windows&apos;, &apos;C:\\Program Files\\iojs\\&apos;]
+</code></pre><h4 id="pathparsepathstring">path.parse(pathString)</h4>
+<p>&#x6839;&#x636E;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x5B57;&#x7B26;&#x4E32;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;*nix&#x4E0A;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.parse(<span class="hljs-string">&apos;/home/user/dir/file.txt&apos;</span>)
+<span class="hljs-comment">// returns</span>
+{
+    root : <span class="hljs-string">&quot;/&quot;</span>,
+    dir : <span class="hljs-string">&quot;/home/user/dir&quot;</span>,
+    base : <span class="hljs-string">&quot;file.txt&quot;</span>,
+    ext : <span class="hljs-string">&quot;.txt&quot;</span>,
+    name : <span class="hljs-string">&quot;file&quot;</span>
+}
+</code></pre>
+<p>&#x4E00;&#x4E2A;Windows&#x4E0A;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">path.parse(<span class="hljs-string">&apos;C:\\path\\dir\\index.html&apos;</span>)
+<span class="hljs-comment">// returns</span>
+{
+    root : <span class="hljs-string">&quot;C:\\&quot;</span>,
+    dir : <span class="hljs-string">&quot;C:\\path\\dir&quot;</span>,
+    base : <span class="hljs-string">&quot;index.html&quot;</span>,
+    ext : <span class="hljs-string">&quot;.html&quot;</span>,
+    name : <span class="hljs-string">&quot;index&quot;</span>
+}
+</code></pre>
+<h4 id="pathformatpathobject">path.format(pathObject)</h4>
+<p>&#x6839;&#x636E;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E0E;<code>path.parse</code>&#x76F8;&#x53CD;&#x3002;</p>
+<pre><code class="lang-js">path.format({
+    root : <span class="hljs-string">&quot;/&quot;</span>,
+    dir : <span class="hljs-string">&quot;/home/user/dir&quot;</span>,
+    base : <span class="hljs-string">&quot;file.txt&quot;</span>,
+    ext : <span class="hljs-string">&quot;.txt&quot;</span>,
+    name : <span class="hljs-string">&quot;file&quot;</span>
+})
+<span class="hljs-comment">// returns</span>
+<span class="hljs-string">&apos;/home/user/dir/file.txt&apos;</span>
+</code></pre>
+<h4 id="pathposix">path.posix</h4>
+<p>&#x63D0;&#x4F9B;&#x5BF9;&#x4E0A;&#x8FF0;&#x7684;&#x8DEF;&#x5F84;&#x65B9;&#x6CD5;&#x7684;&#x8BBF;&#x95EE;&#xFF0C;&#x4F46;&#x662F;&#x603B;&#x662F;&#x4EE5;&#x517C;&#x5BB9;posix&#x7684;&#x65B9;&#x5F0F;&#x4EA4;&#x4E92;&#xFF08;interact&#xFF09;&#x3002;</p>
+<h4 id="pathwin32">path.win32</h4>
+<p>&#x63D0;&#x4F9B;&#x5BF9;&#x4E0A;&#x8FF0;&#x7684;&#x8DEF;&#x5F84;&#x65B9;&#x6CD5;&#x7684;&#x8BBF;&#x95EE;&#xFF0C;&#x4F46;&#x662F;&#x603B;&#x662F;&#x4EE5;&#x517C;&#x5BB9;win32&#x7684;&#x65B9;&#x5F0F;&#x4EA4;&#x4E92;&#xFF08;interact&#xFF09;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="OS.html" class="navigation navigation-prev " aria-label="Previous page: OS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Process.html" class="navigation navigation-next " aria-label="Next page: Process">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Path","level":"1.19","depth":1,"next":{"title":"Process","level":"1.20","depth":1,"path":"Process.md","ref":"Process.md","articles":[]},"previous":{"title":"OS","level":"1.18","depth":1,"path":"OS.md","ref":"OS.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"Path.md","mtime":"2016-06-20T01:36:08.993Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

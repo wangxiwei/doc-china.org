@@ -1,0 +1,766 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>等式 · Learn-Javascript</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../numbers/" />
+    
+    
+    <link rel="prev" href="types.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">HOME</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="equality.html">
+            
+                <a href="equality.html">
+            
+                    
+                    等式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../numbers/">
+            
+                <a href="../numbers/">
+            
+                    
+                    数字
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../numbers/create.html">
+            
+                <a href="../numbers/create.html">
+            
+                    
+                    创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../numbers/operators.html">
+            
+                <a href="../numbers/operators.html">
+            
+                    
+                    基本运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../numbers/advanced.html">
+            
+                <a href="../numbers/advanced.html">
+            
+                    
+                    高级运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../strings/">
+            
+                <a href="../strings/">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../strings/create.html">
+            
+                <a href="../strings/create.html">
+            
+                    
+                    创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../strings/concat.html">
+            
+                <a href="../strings/concat.html">
+            
+                    
+                    连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../strings/length.html">
+            
+                <a href="../strings/length.html">
+            
+                    
+                    长度
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../conditional/">
+            
+                <a href="../conditional/">
+            
+                    
+                    条件语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../conditional/if.html">
+            
+                <a href="../conditional/if.html">
+            
+                    
+                    If
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../conditional/else.html">
+            
+                <a href="../conditional/else.html">
+            
+                    
+                    Else
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../conditional/comparators.html">
+            
+                <a href="../conditional/comparators.html">
+            
+                    
+                    比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../conditional/concatenate.html">
+            
+                <a href="../conditional/concatenate.html">
+            
+                    
+                    条件连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../arrays/">
+            
+                <a href="../arrays/">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../arrays/indices.html">
+            
+                <a href="../arrays/indices.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../arrays/length.html">
+            
+                <a href="../arrays/length.html">
+            
+                    
+                    长度
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../loops/">
+            
+                <a href="../loops/">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../loops/for.html">
+            
+                <a href="../loops/for.html">
+            
+                    
+                    For
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../loops/while.html">
+            
+                <a href="../loops/while.html">
+            
+                    
+                    While
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../loops/dowhile.html">
+            
+                <a href="../loops/dowhile.html">
+            
+                    
+                    Do...While
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../functions/">
+            
+                <a href="../functions/">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../functions/declare.html">
+            
+                <a href="../functions/declare.html">
+            
+                    
+                    声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../functions/higher_order.html">
+            
+                <a href="../functions/higher_order.html">
+            
+                    
+                    高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../objects/">
+            
+                <a href="../objects/">
+            
+                    
+                    对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../objects/creation.html">
+            
+                <a href="../objects/creation.html">
+            
+                    
+                    创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../objects/properties.html">
+            
+                <a href="../objects/properties.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../objects/mutable.html">
+            
+                <a href="../objects/mutable.html">
+            
+                    
+                    可变性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../objects/reference.html">
+            
+                <a href="../objects/reference.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../objects/prototype.html">
+            
+                <a href="../objects/prototype.html">
+            
+                    
+                    原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../objects/delete.html">
+            
+                <a href="../objects/delete.html">
+            
+                    
+                    销毁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../objects/enumeration.html">
+            
+                <a href="../objects/enumeration.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../objects/global_footprint.html">
+            
+                <a href="../objects/global_footprint.html">
+            
+                    
+                    全局化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >等式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B49;&#x5F0F;">&#x7B49;&#x5F0F;</h1>
+<p>&#x7A0B;&#x5E8F;&#x733F;&#x7ECF;&#x5E38;&#x9700;&#x8981;&#x5C06;&#x7B49;&#x4EF7;&#x7684;&#x503C;&#x5173;&#x8054;&#x8D77;&#x6765;&#x3002;&#x8FD9;&#x65F6;&#x9700;&#x8981;&#x7528;&#x5230;&#x7B49;&#x53F7;&#x3002;</p>
+<p>&#x6700;&#x57FA;&#x7840;&#x7684;&#x7B49;&#x6027;&#x8FD0;&#x7B97;&#x7B26;&#x662F; <code>==</code> &#x3002;&#x8FD9;&#x4E2A;&#x8FD0;&#x7B97;&#x7B26;&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x662F;&#x5426;&#x76F8;&#x7B49;&#xFF0C;&#x5373;&#x4F7F;&#x4E0D;&#x662F;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5047;&#x8BBE;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-number">42</span>;
+<span class="hljs-keyword">var</span> bar = <span class="hljs-number">42</span>;
+<span class="hljs-keyword">var</span> baz = <span class="hljs-string">&quot;42&quot;</span>;
+<span class="hljs-keyword">var</span> qux = <span class="hljs-string">&quot;life&quot;</span>;
+</code></pre>
+<p><code>foo == bar</code>  &#x5C06;&#x5224;&#x5B9A;&#x4E3A; <code>true</code> &#xFF0C;&#x800C; <code>baz == qux</code> &#x5C06;&#x5224;&#x5B9A;&#x4E3A;  <code>false</code>&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5C3D;&#x7BA1; <code>foo</code> &#x548C; <code>baz</code> &#x662F;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#xFF0C;<code>foo == baz</code>  <em>&#x4E5F;</em>&#x5C06;&#x5224;&#x5B9A;&#x4E3A; <code>true</code> &#x3002; <code>==</code> &#x7B49;&#x6027;&#x8FD0;&#x7B97;&#x7B26;&#x5728;&#x5224;&#x65AD;&#x7B49;&#x4EF7;&#x6027;&#x4E4B;&#x524D;&#x4F1A;&#x5C1D;&#x8BD5;&#x5F3A;&#x5236;&#x5C06;&#x64CD;&#x4F5C;&#x6570;&#x8F6C;&#x4E3A;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x4E0E; <code>===</code> &#x5168;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#x4E0D;&#x540C;&#x3002;</p>
+<p><code>===</code> &#x5168;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x662F;&#x5426;&#x7C7B;&#x578B;&#x548C;&#x503C; <em>&#x90FD;</em> &#x76F8;&#x7B49;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>foo === bar</code> &#x4ECD;&#x7136;&#x662F; <code>true</code>,  &#x800C; <code>foo === baz</code> &#x5C06;&#x4E3A; <code>false</code>. <code>baz === qux</code> &#x4ECD;&#x4E3A; <code>false</code>.</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="types.html" class="navigation navigation-prev " aria-label="Previous page: 数据类型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../numbers/" class="navigation navigation-next " aria-label="Next page: 数字">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"等式","level":"1.2.4","depth":2,"next":{"title":"数字","level":"1.3","depth":1,"path":"numbers/README.md","ref":"numbers/README.md","articles":[{"title":"创建","level":"1.3.1","depth":2,"path":"numbers/create.md","ref":"numbers/create.md","articles":[]},{"title":"基本运算符","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},{"title":"高级运算符","level":"1.3.3","depth":2,"path":"numbers/advanced.md","ref":"numbers/advanced.md","articles":[]}]},"previous":{"title":"数据类型","level":"1.2.3","depth":2,"path":"basics/types.md","ref":"basics/types.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","disqus","exercises"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"exercises":{},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Learn-Javascript","links":{"sidebar":{"HOME":"http://www.tester360.cn"}},"gitbook":"*","description":"Javascript 学习入门教程"},"file":{"path":"basics/equality.md","mtime":"2016-06-20T01:37:13.935Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-23T01:52:25.946Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

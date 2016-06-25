@@ -1,0 +1,2988 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>实例方法 · django-chinese-docs-1.8</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2_3_2_Accessing related objects.html" />
+    
+    
+    <link rel="prev" href="2_3.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1_First steps.html">
+            
+                <a href="1_First steps.html">
+            
+                    
+                    新手入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_1.html">
+            
+                <a href="1_1.html">
+            
+                    
+                    从零开始
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1_1_1_Django at a glance.html">
+            
+                <a href="1_1_1_Django at a glance.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="1_1_2_Quick install guide.html">
+            
+                <a href="1_1_2_Quick install guide.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1_2.html">
+            
+                <a href="1_2.html">
+            
+                    
+                    教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="1_2_1_Part 1 Models.html">
+            
+                <a href="1_2_1_Part 1 Models.html">
+            
+                    
+                    第1部分：模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="1_2_2_Part 2 The admin site.html">
+            
+                <a href="1_2_2_Part 2 The admin site.html">
+            
+                    
+                    第2部分：管理站点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="1_2_3_Part 3 Views and templates.html">
+            
+                <a href="1_2_3_Part 3 Views and templates.html">
+            
+                    
+                    第3部分：视图和模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="1_2_4_Part 4 Forms and generic views.html">
+            
+                <a href="1_2_4_Part 4 Forms and generic views.html">
+            
+                    
+                    第4部分：表单和通用视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="1_2_5_Part 5 Testing.html">
+            
+                <a href="1_2_5_Part 5 Testing.html">
+            
+                    
+                    第5部分：测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="1_2_6_Part 6 Static files.html">
+            
+                <a href="1_2_6_Part 6 Static files.html">
+            
+                    
+                    第6部分：静态文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1_3.html">
+            
+                <a href="1_3.html">
+            
+                    
+                    高级教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="1_3_1_How to write reusable apps.html">
+            
+                <a href="1_3_1_How to write reusable apps.html">
+            
+                    
+                    如何编写可重用的应用 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="1_3_2_Writing your first patch for Django_.html">
+            
+                <a href="1_3_2_Writing your first patch for Django_.html">
+            
+                    
+                    为Django编写首个补丁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2_The model layer.html">
+            
+                <a href="2_The model layer.html">
+            
+                    
+                    模型层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2_1.html">
+            
+                <a href="2_1.html">
+            
+                    
+                    模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="2_1_1_Model syntax.html">
+            
+                <a href="2_1_1_Model syntax.html">
+            
+                    
+                    模型语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" >
+            
+                <span>
+            
+                    
+                    字段类型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="2_1_3_Meta options.html">
+            
+                <a href="2_1_3_Meta options.html">
+            
+                    
+                    元选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="2_1_4_Model class.html">
+            
+                <a href="2_1_4_Model class.html">
+            
+                    
+                    模型类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2_2.html">
+            
+                <a href="2_2.html">
+            
+                    
+                    查询集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="2_2_1_Making queries.html">
+            
+                <a href="2_2_1_Making queries.html">
+            
+                    
+                    执行查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" >
+            
+                <span>
+            
+                    
+                    查询集方法参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="2_2_3_Lookup expressions.html">
+            
+                <a href="2_2_3_Lookup expressions.html">
+            
+                    
+                    查找表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2_3.html">
+            
+                <a href="2_3.html">
+            
+                    
+                    模型的实例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.3.1" data-path="2_3_1_Instance methods.html">
+            
+                <a href="2_3_1_Instance methods.html">
+            
+                    
+                    实例方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="2_3_2_Accessing related objects.html">
+            
+                <a href="2_3_2_Accessing related objects.html">
+            
+                    
+                    访问关联对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="2_4.html">
+            
+                <a href="2_4.html">
+            
+                    
+                    迁移
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" >
+            
+                <span>
+            
+                    
+                    迁移简介
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" >
+            
+                <span>
+            
+                    
+                    操作参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="2_4_3_SchemaEditor.html">
+            
+                <a href="2_4_3_SchemaEditor.html">
+            
+                    
+                    模式编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="2_4_4_Writing migrations.html">
+            
+                <a href="2_4_4_Writing migrations.html">
+            
+                    
+                    编写迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="2_5.html">
+            
+                <a href="2_5.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="2_5_1_Manager.html">
+            
+                <a href="2_5_1_Manager.html">
+            
+                    
+                    管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="2_5_2_Performing raw SQL queries.html">
+            
+                <a href="2_5_2_Performing raw SQL queries.html">
+            
+                    
+                    原始的SQL查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" >
+            
+                <span>
+            
+                    
+                    事务
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="2_5_4_Aggregation.html">
+            
+                <a href="2_5_4_Aggregation.html">
+            
+                    
+                    聚合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" >
+            
+                <span>
+            
+                    
+                    自定义字段
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="2_5_6_Multiple databases.html">
+            
+                <a href="2_5_6_Multiple databases.html">
+            
+                    
+                    多数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="2_5_7_Custom lookups.html">
+            
+                <a href="2_5_7_Custom lookups.html">
+            
+                    
+                    自定义查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" >
+            
+                <span>
+            
+                    
+                    查询表达式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="2_5_9_Conditional Expressions.html">
+            
+                <a href="2_5_9_Conditional Expressions.html">
+            
+                    
+                    条件表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.10" data-path="2_5_10_Database Functions.html">
+            
+                <a href="2_5_10_Database Functions.html">
+            
+                    
+                    数据库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="2_6.html">
+            
+                <a href="2_6.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" >
+            
+                <span>
+            
+                    
+                    支持的数据库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="2_6_2_Legacy databases.html">
+            
+                <a href="2_6_2_Legacy databases.html">
+            
+                    
+                    遗留的数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="2_6_3_Providing initial data.html">
+            
+                <a href="2_6_3_Providing initial data.html">
+            
+                    
+                    提供初始数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="2_6_4_Optimize database access.html">
+            
+                <a href="2_6_4_Optimize database access.html">
+            
+                    
+                    优化数据库访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" >
+            
+                <span>
+            
+                    
+                    PostgreSQL特色功能
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3_The view layer.html">
+            
+                <a href="3_The view layer.html">
+            
+                    
+                    视图层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3_1.html">
+            
+                <a href="3_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="3_1_1_URLconfs.html">
+            
+                <a href="3_1_1_URLconfs.html">
+            
+                    
+                    URL配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="3_1_2_View functions.html">
+            
+                <a href="3_1_2_View functions.html">
+            
+                    
+                    视图函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="3_1_3_Shortcuts.html">
+            
+                <a href="3_1_3_Shortcuts.html">
+            
+                    
+                    快捷函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="3_1_4_Decorators.html">
+            
+                <a href="3_1_4_Decorators.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3_2.html">
+            
+                <a href="3_2.html">
+            
+                    
+                    参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="3_2_1_Built-in Views.html">
+            
+                <a href="3_2_1_Built-in Views.html">
+            
+                    
+                    内建的视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" >
+            
+                <span>
+            
+                    
+                    请求/响应 对象
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="3_2_3_TemplateResponse objects.html">
+            
+                <a href="3_2_3_TemplateResponse objects.html">
+            
+                    
+                    TemplateResponse 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3_3.html">
+            
+                <a href="3_3.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="3_3_1_Overview.html">
+            
+                <a href="3_3_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="3_3_2_File objects.html">
+            
+                <a href="3_3_2_File objects.html">
+            
+                    
+                    File 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="3_3_3_Storage API.html">
+            
+                <a href="3_3_3_Storage API.html">
+            
+                    
+                    储存API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="3_3_4_Managing files.html">
+            
+                <a href="3_3_4_Managing files.html">
+            
+                    
+                    管理文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="3_3_5_Custom storage.html">
+            
+                <a href="3_3_5_Custom storage.html">
+            
+                    
+                    自定义存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3_4.html">
+            
+                <a href="3_4.html">
+            
+                    
+                    基于类的视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="3_4_1_Overview.html">
+            
+                <a href="3_4_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="3_4_2_Built-in display views.html">
+            
+                <a href="3_4_2_Built-in display views.html">
+            
+                    
+                    内建显示视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="3_4_3_Built-in editing views.html">
+            
+                <a href="3_4_3_Built-in editing views.html">
+            
+                    
+                    内建编辑视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" >
+            
+                <span>
+            
+                    
+                    使用Mixin
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="3_4_5_API reference.html">
+            
+                <a href="3_4_5_API reference.html">
+            
+                    
+                    API参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.6" data-path="3_4_6_Flattened index.html">
+            
+                <a href="3_4_6_Flattened index.html">
+            
+                    
+                    分类索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3_5.html">
+            
+                <a href="3_5.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="3_5_1_Generating CSV.html">
+            
+                <a href="3_5_1_Generating CSV.html">
+            
+                    
+                    生成 CSV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="3_5_2_Generating PDF.html">
+            
+                <a href="3_5_2_Generating PDF.html">
+            
+                    
+                    生成 PDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3_6.html">
+            
+                <a href="3_6.html">
+            
+                    
+                    中间件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="3_6_1_Overview.html">
+            
+                <a href="3_6_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="3_6_2_Built-in middleware classes.html">
+            
+                <a href="3_6_2_Built-in middleware classes.html">
+            
+                    
+                    内建的中间件类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4_The template layer.html">
+            
+                <a href="4_The template layer.html">
+            
+                    
+                    模板层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4_1.html">
+            
+                <a href="4_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4_2.html">
+            
+                <a href="4_2.html">
+            
+                    
+                    面向设计师
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="4_2_1_Language overview.html">
+            
+                <a href="4_2_1_Language overview.html">
+            
+                    
+                    语言概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" >
+            
+                <span>
+            
+                    
+                    内建标签和过滤器
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" >
+            
+                <span>
+            
+                    
+                    网页设计助手(已废弃)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="4_2_4_Humanization.html">
+            
+                <a href="4_2_4_Humanization.html">
+            
+                    
+                    人性化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4_3.html">
+            
+                <a href="4_3.html">
+            
+                    
+                    面向程序员
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" >
+            
+                <span>
+            
+                    
+                    模板API
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" >
+            
+                <span>
+            
+                    
+                    自定义标签和过滤器
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5_Forms.html">
+            
+                <a href="5_Forms.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5_1.html">
+            
+                <a href="5_1.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="5_1_1_Overview.html">
+            
+                <a href="5_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="5_1_2_Form API.html">
+            
+                <a href="5_1_2_Form API.html">
+            
+                    
+                    表单API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" >
+            
+                <span>
+            
+                    
+                    内建的字段
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="5_1_4_Built-in widgets.html">
+            
+                <a href="5_1_4_Built-in widgets.html">
+            
+                    
+                    内建的Widget
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5_2.html">
+            
+                <a href="5_2.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" >
+            
+                <span>
+            
+                    
+                    模型表单
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="5_2_2_Integrating media.html">
+            
+                <a href="5_2_2_Integrating media.html">
+            
+                    
+                    整合媒体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" >
+            
+                <span>
+            
+                    
+                    表单集
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" >
+            
+                <span>
+            
+                    
+                    自定义验证
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6_The development process.html">
+            
+                <a href="6_The development process.html">
+            
+                    
+                    开发过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6_1.html">
+            
+                <a href="6_1.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="6_1_1_Overview.html">
+            
+                <a href="6_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" >
+            
+                <span>
+            
+                    
+                    完整列表设置
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6_2.html">
+            
+                <a href="6_2.html">
+            
+                    
+                    应用程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6_3.html">
+            
+                <a href="6_3.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="6_3_Overview.html">
+            
+                <a href="6_3_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="6_4.html">
+            
+                <a href="6_4.html">
+            
+                    
+                    django-admin 和 manage.py
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="6_4_2_Adding custom commands.html">
+            
+                <a href="6_4_2_Adding custom commands.html">
+            
+                    
+                    添加自定义的命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="6_5.html">
+            
+                <a href="6_5.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="6_5_1_Introduction.html">
+            
+                <a href="6_5_1_Introduction.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" >
+            
+                <span>
+            
+                    
+                    编写并运行测试
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" >
+            
+                <span>
+            
+                    
+                    包含的测试工具
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.4" >
+            
+                <span>
+            
+                    
+                    高级主题
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="6_6.html">
+            
+                <a href="6_6.html">
+            
+                    
+                    部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.6.1" data-path="6_6_1_Overview.html">
+            
+                <a href="6_6_1_Overview.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2" data-path="6_6_2_WSGI servers.html">
+            
+                <a href="6_6_2_WSGI servers.html">
+            
+                    
+                    WSGI服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3" >
+            
+                <span>
+            
+                    
+                    FastCGI/SCGI/AJP (已废弃)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.4" data-path="6_6_4_Deploying static files.html">
+            
+                <a href="6_6_4_Deploying static files.html">
+            
+                    
+                    部署静态文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.5" data-path="6_6_5_Tracking code errors by email.html">
+            
+                <a href="6_6_5_Tracking code errors by email.html">
+            
+                    
+                    通过email追踪代码错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7_Admin.html">
+            
+                <a href="7_Admin.html">
+            
+                    
+                    Admin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" >
+            
+                <span>
+            
+                    
+                    管理站点
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7_2_Admin actions.html">
+            
+                <a href="7_2_Admin actions.html">
+            
+                    
+                    管理操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7_3_Admin documentation generator.html">
+            
+                <a href="7_3_Admin documentation generator.html">
+            
+                    
+                    管理文档生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8_Security.html">
+            
+                <a href="8_Security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8_1_Security overview_.html">
+            
+                <a href="8_1_Security overview_.html">
+            
+                    
+                    安全概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8_2_Disclosed security issues in Django.html">
+            
+                <a href="8_2_Disclosed security issues in Django.html">
+            
+                    
+                    说明Django中的安全问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="8_3_Clickjacking protection.html">
+            
+                <a href="8_3_Clickjacking protection.html">
+            
+                    
+                    点击劫持保护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" >
+            
+                <span>
+            
+                    
+                    伪造跨站请求保护
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="8_5_Cryptographic signing.html">
+            
+                <a href="8_5_Cryptographic signing.html">
+            
+                    
+                    加密签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9_Internationalization and localization.html">
+            
+                <a href="9_Internationalization and localization.html">
+            
+                    
+                    国际化和本地化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9_1_1_Overview.html">
+            
+                <a href="9_1_1_Overview.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" >
+            
+                <span>
+            
+                    
+                    国际化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" >
+            
+                <span>
+            
+                    
+                    本地化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="9_1_4_Localized Web UI formatting and form input.html">
+            
+                <a href="9_1_4_Localized Web UI formatting and form input.html">
+            
+                    
+                    本地化WEB UI格式化输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="9_2_“Local flavor”.html">
+            
+                <a href="9_2_“Local flavor”.html">
+            
+                    
+                    “本地特色”
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" >
+            
+                <span>
+            
+                    
+                    时区
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="13_Common Web application tools.html">
+            
+                <a href="13_Common Web application tools.html">
+            
+                    
+                    常见的网站应用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="13_1.html">
+            
+                <a href="13_1.html">
+            
+                    
+                    认证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="13_1_1_Overview.html">
+            
+                <a href="13_1_1_Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.2" data-path="13_1_2_Using the authentication system.html">
+            
+                <a href="13_1_2_Using the authentication system.html">
+            
+                    
+                    使用认证系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.3" data-path="13_1_3_Password management.html">
+            
+                <a href="13_1_3_Password management.html">
+            
+                    
+                    密码管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.4" >
+            
+                <span>
+            
+                    
+                    自定义认证
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.5" >
+            
+                <span>
+            
+                    
+                    API参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" >
+            
+                <span>
+            
+                    
+                    缓存
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="13_3_Logging.html">
+            
+                <a href="13_3_Logging.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" >
+            
+                <span>
+            
+                    
+                    发送邮件
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" >
+            
+                <span>
+            
+                    
+                    组织 feeds (RSS/Atom)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="13_6_Pagination.html">
+            
+                <a href="13_6_Pagination.html">
+            
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" >
+            
+                <span>
+            
+                    
+                    消息框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" >
+            
+                <span>
+            
+                    
+                    序列化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="13_9_1_Sessions.html">
+            
+                <a href="13_9_1_Sessions.html">
+            
+                    
+                    会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" >
+            
+                <span>
+            
+                    
+                    网站地图
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" >
+            
+                <span>
+            
+                    
+                    静态文件处理
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.12" data-path="13_12_Data validation.html">
+            
+                <a href="13_12_Data validation.html">
+            
+                    
+                    数据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="14_Other core functionalities.html">
+            
+                <a href="14_Other core functionalities.html">
+            
+                    
+                    其它核心功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="14_1_Conditional content processing.html">
+            
+                <a href="14_1_Conditional content processing.html">
+            
+                    
+                    按需内容处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" >
+            
+                <span>
+            
+                    
+                    内容类型和泛型关系
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" >
+            
+                <span>
+            
+                    
+                    数据浏览
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="14_4_1_Redirects.html">
+            
+                <a href="14_4_1_Redirects.html">
+            
+                    
+                    重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="14_5_Signals.html">
+            
+                <a href="14_5_Signals.html">
+            
+                    
+                    信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="14_6_System check framework.html">
+            
+                <a href="14_6_System check framework.html">
+            
+                    
+                    系统检查框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" >
+            
+                <span>
+            
+                    
+                    网站框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" >
+            
+                <span>
+            
+                    
+                    Django中的Unicode编码
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >实例方法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x53C2;&#x8003;">&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x53C2;&#x8003;</h1>
+<p>&#x8BE5;&#x6587;&#x6863;&#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;&#x6A21;&#x578B; &#x7684;API&#x3002;&#x5B83;&#x5EFA;&#x7ACB;&#x5728;&#x6A21;&#x578B; &#x548C;&#x6267;&#x884C;&#x67E5;&#x8BE2; &#x7684;&#x8D44;&#x6599;&#x4E4B;&#x4E0A;&#xFF0C; &#x6240;&#x4EE5;&#x5728;&#x9605;&#x8BFB;&#x8FD9;&#x7BC7;&#x6587;&#x6863;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x60F3;&#x8981;&#x5148;&#x9605;&#x8BFB;&#x5E76;&#x7406;&#x89E3;&#x90A3;&#x4E24;&#x7BC7;&#x6587;&#x6863;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x7528;&#x6267;&#x884C;&#x67E5;&#x8BE2;&#x4E2D;&#x6240;&#x5C55;&#x73B0;&#x7684; &#x535A;&#x5BA2;&#x5E94;&#x7528;&#x6A21;&#x578B; &#x6765;&#x8D2F;&#x7A7F;&#x8FD9;&#x7BC7;&#x53C2;&#x8003;&#x6587;&#x732E;&#x3002;</p>
+<h2 id="&#x521B;&#x5EFA;&#x5BF9;&#x8C61;">&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</h2>
+<p>&#x8981;&#x521B;&#x5EFA;&#x6A21;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x5B9E;&#x4F8B;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x50CF;&#x5176;&#x5B83;Python &#x7C7B;&#x4E00;&#x6837;&#x5B9E;&#x4F8B;&#x5316;&#x5B83;&#xFF1A;</p>
+<p><code>class Model(**kwargs)</code></p>
+<p>&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x5C31;&#x662F;&#x5728;&#x4F60;&#x7684;&#x6A21;&#x578B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x6BB5;&#x7684;&#x540D;&#x5B57;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x4E0D;&#x4F1A;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#xFF1B;&#x82E5;&#x8981;&#x4FDD;&#x5B58;&#xFF0C;&#x4F60;&#x9700;&#x8981;save() &#x4E00;&#x4E0B;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;</p>
+<p>&#x4E5F;&#x8BB8;&#x4F60;&#x4F1A;&#x60F3;&#x901A;&#x8FC7;&#x91CD;&#x5199; <code>__init__</code> &#x65B9;&#x6CD5;&#x6765;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x3002;&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8FD9;&#x4E48;&#x505A;&#x4E86;&#xFF0C;&#x5C0F;&#x5FC3;&#x4E0D;&#x8981;&#x6539;&#x53D8;&#x4E86;&#x8C03;&#x7528;&#x7B7E;&#x540D;&#x2014;&#x2014;&#x4EFB;&#x4F55;&#x6539;&#x53D8;&#x90FD;&#x53EF;&#x80FD;&#x963B;&#x788D;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x88AB;&#x4FDD;&#x5B58;&#x3002;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x4E4B;&#x4E00;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x91CD;&#x5199;<strong>init</strong>&#xFF1A;</p>
+<p>1. &#x5728;&#x6A21;&#x578B;&#x7C7B;&#x4E2D;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x7C7B;&#x65B9;&#x6CD5;&#xFF1A;</p>
+</blockquote>
+<pre><code>from django.db import models
+
+class Book(models.Model):
+    title = models.CharField(max_length=100)
+
+    @classmethod
+    def create(cls, title):
+        book = cls(title=title)
+        # do something with the book
+        return book
+
+book = Book.create(&quot;Pride and Prejudice&quot;)
+</code></pre><blockquote>
+<p>2. &#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF08;&#x63A8;&#x8350;&#xFF09;&#xFF1A;</p>
+</blockquote>
+<pre><code>class BookManager(models.Manager):
+    def create_book(self, title):
+        book = self.create(title=title)
+        # do something with the book
+        return book
+
+class Book(models.Model):
+    title = models.CharField(max_length=100)
+
+    objects = BookManager()
+
+book = Book.objects.create_book(&quot;Pride and Prejudice&quot;)
+</code></pre><h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x52A0;&#x8F7D;">&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x52A0;&#x8F7D;</h3>
+<p><code>classmethod Model.from_db(db, field_names, values)</code></p>
+<pre><code>New in Django 1.8.
+</code></pre><p><code>from_db()</code> &#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x52A0;&#x8F7D;&#x65F6;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x7684;&#x521B;&#x5EFA;&#x3002;</p>
+<p><code>db</code> &#x53C2;&#x6570;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x522B;&#x540D;&#xFF0C;<code>field_names</code> &#x5305;&#x542B;&#x6240;&#x6709;&#x52A0;&#x8F7D;&#x7684;&#x5B57;&#x6BB5;&#x7684;&#x540D;&#x79F0;&#xFF0C;<code>values</code> &#x5305;&#x542B;<code>field_names</code> &#x4E2D;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x52A0;&#x8F7D;&#x7684;&#x503C;&#x3002;<code>field_names</code> &#x4E0E;<code>values</code> &#x7684;&#x987A;&#x5E8F;&#x76F8;&#x540C;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>cls(**(zip(field_names, values)))</code> &#x6765;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;&#x6A21;&#x578B;&#x7684;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x90FD;&#x63D0;&#x4F9B;&#xFF0C;&#x4F1A;&#x4FDD;&#x8BC1;<code>values</code> &#x7684;&#x987A;&#x5E8F;&#x4E0E;<code>__init__()</code> &#x6240;&#x671F;&#x671B;&#x7684;&#x4E00;&#x81F4;&#x3002;&#x8FD9;&#x8868;&#x793A;&#x6B64;&#x65F6;&#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>cls(*values)</code> &#x521B;&#x5EFA;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>cls._deferred</code>&#x6765;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x63D0;&#x4F9B;&#x6240;&#x6709;&#x7684;&#x5B57;&#x6BB5; &#x2014;&#x2014; &#x5982;&#x679C;&#x4E3A; <code>False</code>&#xFF0C;&#x90A3;&#x4E48;&#x6240;&#x6709;&#x7684;&#x5B57;&#x6BB5;&#x90FD;&#x5DF2;&#x7ECF;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x52A0;&#x8F7D;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x521B;&#x5EFA;&#x65B0;&#x6A21;&#x578B;&#x4E4B;&#x524D;&#xFF0C;<code>from_db()</code> &#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x65B0;&#x5B9E;&#x4F8B;<code>_state</code> &#x5C5E;&#x6027;&#x4E2D;&#x7684;<code>adding</code> &#x548C; <code>db</code> &#x6807;&#x5FD7;&#x4F4D;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x4FDD;&#x5B58;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x52A0;&#x8F7D;&#x8FDB;&#x6765;&#x7684;&#x5B57;&#x6BB5;&#x539F;&#x59CB;&#x503C;&#xFF1A;</p>
+<pre><code>@classmethod
+def from_db(cls, db, field_names, values):
+    # default implementation of from_db() (could be replaced
+    # with super())
+    if cls._deferred:
+        instance = cls(**zip(field_names, values))
+    else:
+        instance = cls(*values)
+    instance._state.adding = False
+    instance._state.db = db
+    # customization to store the original field values on the instance
+    instance._loaded_values = zip(field_names, values)
+    return instance
+
+def save(self, *args, **kwargs):
+    # Check how the current values differ from ._loaded_values. For example,
+    # prevent changing the creator_id of the model. (This example doesn&apos;t
+    # support cases where &apos;creator_id&apos; is deferred).
+    if not self._state.adding and (
+            self.creator_id != self._loaded_values[&apos;creator_id&apos;]):
+        raise ValueError(&quot;Updating the value of creator isn&apos;t allowed&quot;)
+    super(...).save(*args, **kwargs)
+</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x6F14;&#x793A;<code>from_db()</code>&#x7684;&#x5B8C;&#x6574;&#x5B9E;&#x73B0;&#x3002;&#x5F53;&#x7136;&#x5728;&#x8FD9;&#x91CC;&#x7684;<code>from_db()</code>&#x4E2D;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x53EA;&#x7528;<code>super()</code> &#x8C03;&#x7528;&#x3002;</p>
+<h2 id="&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x66F4;&#x65B0;&#x5BF9;&#x8C61;">&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x66F4;&#x65B0;&#x5BF9;&#x8C61;</h2>
+<p><code>Model.refresh_from_db(using=None, fields=None, **kwargs)</code></p>
+<pre><code>New in Django 1.8.
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x6A21;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>refresh_from_db()</code> &#x65B9;&#x6CD5;&#x3002;&#x5F53;&#x4E0D;&#x5E26;&#x53C2;&#x6570;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5C06;&#x5B8C;&#x6210;&#x4EE5;&#x4E0B;&#x7684;&#x52A8;&#x4F5C;&#xFF1A;</p>
+<p>&#x6A21;&#x578B;&#x7684;&#x6240;&#x6709;&#x975E;&#x5EF6;&#x8FDF;&#x5B57;&#x6BB5;&#x90FD;&#x66F4;&#x65B0;&#x6210;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x5F53;&#x524D;&#x503C;&#x3002;
+&#x4E4B;&#x524D;&#x52A0;&#x8F7D;&#x7684;&#x5173;&#x8054;&#x5B9E;&#x4F8B;&#xFF0C;&#x5982;&#x679C;&#x5173;&#x8054;&#x7684;&#x503C;&#x4E0D;&#x518D;&#x5408;&#x6CD5;&#xFF0C;&#x5C06;&#x4ECE;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x7684;&#x5B9E;&#x4F8B;&#x4E2D;&#x5220;&#x9664;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x7684;&#x5B9E;&#x4F8B;&#x6709;&#x4E00;&#x4E2A;&#x5916;&#x952E;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6A21;&#x578B;<code>Author</code>&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x679C; <code>obj.author_id != obj.author.id</code>&#xFF0C;<code>obj.author</code> &#x5C06;&#x88AB;&#x6254;&#x6389;&#x5E76;&#x5728;&#x4E0B;&#x6B21;&#x8BBF;&#x95EE;&#x5B83;&#x65F6;&#x6839;&#x636E;<code>obj.author_id</code> &#x7684;&#x503C;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x3002;
+&#x6CE8;&#x610F;&#xFF0C;&#x53EA;&#x6709;&#x672C;&#x6A21;&#x578B;&#x7684;&#x5B57;&#x6BB5;&#x4F1A;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x3002;&#x5176;&#x5B83;&#x4F9D;&#x8D56;&#x6570;&#x636E;&#x5E93;&#x7684;&#x503C;&#x4E0D;&#x4F1A;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#xFF0C;&#x4F8B;&#x5982;&#x805A;&#x5408;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5E93;&#x4E0E;&#x5B9E;&#x4F8B;&#x52A0;&#x8F7D;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5E93;&#x76F8;&#x540C;&#xFF0C;&#x5982;&#x679C;&#x5B9E;&#x4F8B;&#x4E0D;&#x662F;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x52A0;&#x8F7D;&#x7684;&#x5219;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>using</code> &#x53C2;&#x6570;&#x6765;&#x5F3A;&#x5236;&#x6307;&#x5B9A;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x56DE;&#x4F7F;&#x7528;<code>fields</code> &#x53C2;&#x6570;&#x5F3A;&#x5236;&#x8BBE;&#x7F6E;&#x52A0;&#x8F7D;&#x7684;&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x8981;&#x6D4B;&#x8BD5;<code>update()</code> &#x8C03;&#x7528;&#x662F;&#x5426;&#x5F97;&#x5230;&#x9884;&#x671F;&#x7684;&#x66F4;&#x65B0;&#xFF0C;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x7C7B;&#x4F3C;&#x4E0B;&#x9762;&#x7684;&#x6D4B;&#x8BD5;&#xFF1A;</p>
+<pre><code>def test_update_result(self):
+    obj = MyModel.objects.create(val=1)
+    MyModel.objects.filter(pk=obj.pk).update(val=F(&apos;val&apos;) + 1)
+    # At this point obj.val is still 1, but the value in the database
+    # was updated to 2. The object&apos;s updated value needs to be reloaded
+    # from the database.
+    obj.refresh_from_db()
+    self.assertEqual(obj.val, 2)
+</code></pre><p>&#x6CE8;&#x610F;&#xFF0C;&#x5F53;&#x8BBF;&#x95EE;&#x5EF6;&#x8FDF;&#x7684;&#x5B57;&#x6BB5;&#x65F6;&#xFF0C;&#x5EF6;&#x8FDF;&#x5B57;&#x6BB5;&#x7684;&#x52A0;&#x8F7D;&#x4F1A;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x52A0;&#x8F7D;&#x3002;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x5B9E;&#x4F8B;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x5728;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x4E00;&#x4E2A;&#x5EF6;&#x8FDF;&#x5B57;&#x6BB5;&#x65F6;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x7684;&#x5B9E;&#x4F8B;&#x5B57;&#x6BB5;&#xFF1A;</p>
+<pre><code>class ExampleModel(models.Model):
+    def refresh_from_db(self, using=None, fields=None, **kwargs):
+        # fields contains the name of the deferred field to be
+        # loaded.
+        if fields is not None:
+            fields = set(fields)
+            deferred_fields = self.get_deferred_fields()
+            # If any deferred field is going to be loaded
+            if fields.intersection(deferred_fields):
+                # then load all of them
+                fields = fields.union(deferred_fields)
+        super(ExampleModel, self).refresh_from_db(using, fields, **kwargs)
+</code></pre><p><code>Model.get_deferred_fields()</code></p>
+<pre><code>New in Django 1.8.
+</code></pre><p>&#x4E00;&#x4E2A;&#x8F85;&#x52A9;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#xFF0C;&#x5305;&#x542B;&#x6A21;&#x578B;&#x5F53;&#x524D;&#x6240;&#x6709;&#x5EF6;&#x8FDF;&#x5B57;&#x6BB5;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x3002;</p>
+<h2 id="&#x9A8C;&#x8BC1;&#x5BF9;&#x8C61;">&#x9A8C;&#x8BC1;&#x5BF9;&#x8C61;</h2>
+<p>&#x9A8C;&#x8BC1;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x6D89;&#x53CA;&#x4E09;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ol>
+<li>&#x9A8C;&#x8BC1;&#x6A21;&#x578B;&#x7684;&#x5B57;&#x6BB5; &#x2014;&#x2014; <code>Model.clean_fields()</code></li>
+<li>&#x9A8C;&#x8BC1;&#x6A21;&#x578B;&#x7684;&#x5B8C;&#x6574;&#x6027; &#x2014;&#x2014; <code>Model.clean()</code></li>
+<li>&#x9A8C;&#x8BC1;&#x6A21;&#x578B;&#x7684;&#x552F;&#x4E00;&#x6027; &#x2014;&#x2014; <code>Model.validate_unique()</code></li>
+</ol>
+<p>&#x5F53;&#x4F60;&#x8C03;&#x7528;&#x6A21;&#x578B;&#x7684;<code>full_clean()</code> &#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x8FD9;&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x5C06;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x5F53;&#x4F60;&#x4F7F;&#x7528;<code>ModelForm</code>&#x65F6;&#xFF0C;<code>is_valid()</code> &#x5C06;&#x4E3A;&#x8868;&#x5355;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x6267;&#x884C;&#x8FD9;&#x4E9B;&#x9A8C;&#x8BC1;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x53C2;&#x89C1;<code>ModelForm</code> &#x6587;&#x6863;&#x3002; &#x5982;&#x679C;&#x4F60;&#x8BA1;&#x5212;&#x81EA;&#x5DF1;&#x5904;&#x7406;&#x9A8C;&#x8BC1;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x5DF2;&#x7ECF;&#x5C06;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#x7684;&#x5B57;&#x6BB5;&#x4ECE;<code>ModelForm</code> &#x4E2D;&#x53BB;&#x9664;&#x6389;&#xFF0C;&#x4F60;&#x53EA;&#x9700;&#x8C03;&#x7528;&#x6A21;&#x578B;&#x7684;<code>full_clean()</code> &#x65B9;&#x6CD5;&#x3002;</p>
+<p><code>Model.full_clean(exclude=None, validate_unique=True)</code></p>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x6309;&#x987A;&#x5E8F;&#x8C03;&#x7528;<code>Model.clean_fields()</code>&#x3001;<code>Model.clean()</code> &#x548C;<code>Model.validate_unique()</code>&#xFF08;&#x5982;&#x679C;<code>validate_unique</code> &#x4E3A;<code>True</code>&#xFF09;&#xFF0C;&#x5E76;&#x5F15;&#x53D1;&#x4E00;&#x4E2A;<code>ValidationError</code>&#xFF0C;&#x8BE5;&#x5F02;&#x5E38;&#x7684;<code>message_dict</code> &#x5C5E;&#x6027;&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x6B65;&#x9AA4;&#x7684;&#x6240;&#x6709;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x53EF;&#x9009;&#x7684;<code>exclude</code> &#x53C2;&#x6570;&#x7528;&#x6765;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x4ECE;&#x9A8C;&#x8BC1;&#x548C;&#x6E05;&#x9664;&#x4E2D;&#x6392;&#x9664;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x7684;&#x5217;&#x8868;&#x3002;<code>ModelForm</code> &#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x6765;&#x6392;&#x9664;&#x8868;&#x5355;&#x4E2D;&#x6CA1;&#x6709;&#x51FA;&#x73B0;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x4F7F;&#x5B83;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#xFF0C;&#x56E0;&#x4E3A;&#x7528;&#x6237;&#x65E0;&#x6CD5;&#x4FEE;&#x6B63;&#x8FD9;&#x4E9B;&#x5B57;&#x6BB5;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5F53;&#x4F60;&#x8C03;&#x7528;&#x6A21;&#x578B;&#x7684;<code>save()</code> &#x65B9;&#x6CD5;&#x65F6;&#xFF0C;<code>full_clean()</code>&#x4E0D;&#x4F1A; &#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4E00;&#x6B65;&#x5C31;&#x53EF;&#x4EE5;&#x4E3A;&#x4F60;&#x624B;&#x5DE5;&#x521B;&#x5EFA;&#x7684;&#x6A21;&#x578B;&#x8FD0;&#x884C;&#x9A8C;&#x8BC1;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x8C03;&#x7528;&#x5B83;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.core.exceptions import ValidationError
+try:
+    article.full_clean()
+except ValidationError as e:
+    # Do something based on the errors contained in e.message_dict.
+    # Display them to a user, or handle them programmatically.
+    pass
+</code></pre><p><code>full_clean()</code> &#x7B2C;&#x4E00;&#x6B65;&#x6267;&#x884C;&#x7684;&#x662F;&#x9A8C;&#x8BC1;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x3002;</p>
+<p><code>Model.clean_fields(exclude=None)</code></p>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5C06;&#x9A8C;&#x8BC1;&#x6A21;&#x578B;&#x7684;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x3002;&#x53EF;&#x9009;&#x7684;<code>exclude</code> &#x53C2;&#x6570;&#x8BA9;&#x4F60;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x5217;&#x8868;&#x6765;&#x4ECE;&#x9A8C;&#x8BC1;&#x4E2D;&#x6392;&#x9664;&#x3002;&#x5982;&#x679C;&#x6709;&#x5B57;&#x6BB5;&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#xFF0C;&#x5B83;&#x5C06;&#x5F15;&#x53D1;&#x4E00;&#x4E2A;<code>ValidationError</code>&#x3002;</p>
+<p><code>full_clean()</code> &#x7B2C;&#x4E8C;&#x6B65;&#x6267;&#x884C;&#x7684;&#x662F;&#x8C03;&#x7528;<code>Model.clean()</code>&#x3002;&#x5982;&#x8981;&#x5B9E;&#x73B0;&#x6A21;&#x578B;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x9A8C;&#x8BC1;&#xFF0C;&#x5E94;&#x8BE5;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><code>Model.clean()</code></p>
+<p>&#x5E94;&#x8BE5;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x6765;&#x63D0;&#x4F9B;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x9A8C;&#x8BC1;&#xFF0C;&#x4EE5;&#x53CA;&#x4FEE;&#x6539;&#x6A21;&#x578B;&#x7684;&#x5C5E;&#x6027;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x6765;&#x7ED9;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x81EA;&#x52A8;&#x63D0;&#x4F9B;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x7528;&#x4E8E;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#x9700;&#x8981;&#x4E00;&#x8D77;&#x9A8C;&#x8BC1;&#x7684;&#x60C5;&#x5F62;&#xFF1A;</p>
+<pre><code>import datetime
+from django.core.exceptions import ValidationError
+from django.db import models
+
+class Article(models.Model):
+    ...
+    def clean(self):
+        # Don&apos;t allow draft entries to have a pub_date.
+        if self.status == &apos;draft&apos; and self.pub_date is not None:
+            raise ValidationError(&apos;Draft entries may not have a publication date.&apos;)
+        # Set the pub_date for published items if it hasn&apos;t been set already.
+        if self.status == &apos;published&apos; and self.pub_date is None:
+            self.pub_date = datetime.date.today()
+</code></pre><p>&#x7136;&#x800C;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x548C;<code>Model.full_clean()</code> &#x7C7B;&#x4F3C;&#xFF0C;&#x8C03;&#x7528;&#x6A21;&#x578B;&#x7684;<code>save()</code> &#x65B9;&#x6CD5;&#x65F6;&#x4E0D;&#x4F1A;&#x5F15;&#x8D77;<code>clean()</code> &#x65B9;&#x6CD5;&#x7684;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;<code>Model.clean()</code> &#x5F15;&#x53D1;&#x7684;<code>ValidationError</code> &#x5F02;&#x5E38;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x5C06;&#x88AB;&#x4FDD;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x9519;&#x8BEF;&#x5B57;&#x5178;&#x952E;<code>NON_FIELD_ERRORS</code>&#x4E2D;&#x3002;&#x8FD9;&#x4E2A;&#x952E;&#x7528;&#x4E8E;&#x6574;&#x4E2A;&#x6A21;&#x578B;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x5B57;&#x6BB5;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;&#xFF1A;</p>
+<pre><code>from django.core.exceptions import ValidationError, NON_FIELD_ERRORS
+try:
+    article.full_clean()
+except ValidationError as e:
+    non_field_errors = e.message_dict[NON_FIELD_ERRORS]
+</code></pre><p>&#x82E5;&#x8981;&#x5F15;&#x53D1;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x5B57;&#x6BB5;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#x5B9E;&#x4F8B;&#x5316;<code>ValidationError</code>&#xFF0C;&#x5176;&#x4E2D;&#x5B57;&#x5178;&#x7684;&#x952E;&#x4E3A;&#x5B57;&#x6BB5;&#x7684;&#x540D;&#x79F0;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x66F4;&#x65B0;&#x524D;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x53EA;&#x5F15;&#x53D1;<code>pub_date</code> &#x5B57;&#x6BB5;&#x4E0A;&#x7684;&#x5F02;&#x5E38;&#xFF1A;</p>
+<pre><code>class Article(models.Model):
+    ...
+    def clean(self):
+        # Don&apos;t allow draft entries to have a pub_date.
+        if self.status == &apos;draft&apos; and self.pub_date is not None:
+            raise ValidationError({&apos;pub_date&apos;: &apos;Draft entries may not have a publication date.&apos;})
+        ...
+</code></pre><p>&#x6700;&#x540E;&#xFF0C;<code>full_clean()</code> &#x5C06;&#x68C0;&#x67E5;&#x6A21;&#x578B;&#x7684;&#x552F;&#x4E00;&#x6027;&#x7EA6;&#x675F;&#x3002;</p>
+<p><code>Model.validate_unique(exclude=None)</code></p>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x4E0E;<code>clean_fields()</code> &#x7C7B;&#x4F3C;&#xFF0C;&#x53EA;&#x662F;&#x9A8C;&#x8BC1;&#x7684;&#x662F;&#x6A21;&#x578B;&#x7684;&#x6240;&#x6709;&#x552F;&#x4E00;&#x6027;&#x7EA6;&#x675F;&#x800C;&#x4E0D;&#x662F;&#x5355;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x3002;&#x53EF;&#x9009;&#x7684;<code>exclude</code> &#x53C2;&#x6570;&#x5141;&#x8BB8;&#x4F60;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x7684;&#x5217;&#x8868;&#x6765;&#x4ECE;&#x9A8C;&#x8BC1;&#x4E2D;&#x6392;&#x9664;&#x3002;&#x5982;&#x679C;&#x6709;&#x5B57;&#x6BB5;&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#xFF0C;&#x5C06;&#x5F15;&#x53D1;&#x4E00;&#x4E2A; <code>ValidationError</code>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;<code>exclude</code> &#x53C2;&#x6570;&#x7ED9;<code>validate_unique()</code>&#xFF0C;&#x4EFB;&#x4F55;&#x6D89;&#x53CA;&#x5230;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;<code>unique_together</code> &#x7EA6;&#x675F;&#x5C06;&#x4E0D;&#x68C0;&#x67E5;&#x3002;</p>
+<h2 id="&#x5BF9;&#x8C61;&#x4FDD;&#x5B58;">&#x5BF9;&#x8C61;&#x4FDD;&#x5B58;</h2>
+<p>&#x5C06;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4FDD;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528; <code>save()</code>&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p><code>Model.save([force_insert=False, force_update=False, using=DEFAULT_DB_ALIAS, update_fields=None])</code>
+&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x4FDD;&#x5B58;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x91CD;&#x5199; <code>save()</code> &#x65B9;&#x6CD5;&#x3002;&#x8BF7;&#x770B; &#x91CD;&#x5199;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x65B9;&#x6CD5; &#x4E86;&#x89E3;&#x66F4;&#x591A;&#x7EC6;&#x8282;&#x3002;</p>
+<p>&#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x8FC7;&#x7A0B;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x7EC6;&#x8282;&#x7684;&#x5730;&#x65B9;&#x8981;&#x6CE8;&#x610F;&#xFF1B;&#x8BF7;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x3002;</p>
+<h3 id="&#x81EA;&#x589E;&#x7684;&#x4E3B;&#x952E;">&#x81EA;&#x589E;&#x7684;&#x4E3B;&#x952E;</h3>
+<p>&#x5982;&#x679C;&#x6A21;&#x578B;&#x5177;&#x6709;&#x4E00;&#x4E2A;<code>AutoField</code> &#x2014;&#x2014; &#x4E00;&#x4E2A;&#x81EA;&#x589E;&#x7684;&#x4E3B;&#x952E; &#x2014;&#x2014; &#x90A3;&#x4E48;&#x8BE5;&#x81EA;&#x589E;&#x7684;&#x503C;&#x5C06;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;<code>save()</code> &#x65F6;&#x8BA1;&#x7B97;&#x5E76;&#x4FDD;&#x5B58;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; b2 = Blog(name=&apos;Cheddar Talk&apos;, tagline=&apos;Thoughts on cheese.&apos;)
+&gt;&gt;&gt; b2.id     # Returns None, because b doesn&apos;t have an ID yet.
+&gt;&gt;&gt; b2.save()
+&gt;&gt;&gt; b2.id     # Returns the ID of your new object.
+</code></pre><p>&#x5728;&#x8C03;&#x7528;<code>save()</code> &#x4E4B;&#x524D;&#x65E0;&#x6CD5;&#x77E5;&#x9053;ID &#x7684;&#x503C;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x503C;&#x662F;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x5E93;&#x800C;&#x4E0D;&#x662F;Django &#x8BA1;&#x7B97;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x90FD;&#x6709;&#x4E00;&#x4E2A;<code>AutoField</code> &#x53EB;&#x505A;<code>id</code>&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x6A21;&#x578B;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684; <code>primary_key=True</code>&#x3002;&#x66F4;&#x591A;&#x7EC6;&#x8282;&#x53C2;&#x89C1;<code>AutoField</code> &#x7684;&#x6587;&#x6863;&#x3002;</p>
+<h4 id="pk-&#x5C5E;&#x6027;">pk &#x5C5E;&#x6027;</h4>
+<p><code>Model.pk</code></p>
+<p>&#x65E0;&#x8BBA;&#x4F60;&#x662F;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x8FD8;&#x662F;&#x8BA9;Django &#x4E3A;&#x4F60;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#xFF0C; &#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x90FD;&#x5C06;&#x5177;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x53EB;&#x505A;<code>pk</code>&#x3002;&#x5B83;&#x7684;&#x884C;&#x4E3A;&#x7C7B;&#x4F3C;&#x6A21;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x5C5E;&#x6027;&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x6A21;&#x578B;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#x5C5E;&#x6027;&#x7684;&#x522B;&#x540D;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x5E76;&#x8BBE;&#x7F6E;&#x5B83;&#x7684;&#x503C;&#xFF0C;&#x5C31;&#x548C;&#x5176;&#x5B83;&#x5C5E;&#x6027;&#x4E00;&#x6837;&#xFF0C;&#x5B83;&#x4F1A;&#x66F4;&#x65B0;&#x6A21;&#x578B;&#x4E2D;&#x6B63;&#x786E;&#x7684;&#x503C;&#x3002;</p>
+<h4 id="&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x81EA;&#x589E;&#x4E3B;&#x952E;&#x7684;&#x503C;">&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x81EA;&#x589E;&#x4E3B;&#x952E;&#x7684;&#x503C;</h4>
+<p>&#x5982;&#x679C;&#x6A21;&#x578B;&#x5177;&#x6709;&#x4E00;&#x4E2A;<code>AutoField</code>&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x60F3;&#x5728;&#x4FDD;&#x5B58;&#x65F6;&#x663E;&#x5F0F;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5BF9;&#x8C61;<code>ID</code>&#xFF0C;&#x4F60;&#x53EA;&#x9700;&#x8981;&#x5728;&#x4FDD;&#x5B58;&#x4E4B;&#x524D;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x5B83;&#x800C;&#x4E0D;&#x7528;&#x4F9D;&#x8D56;<code>ID</code> &#x81EA;&#x52A8;&#x5206;&#x914D;&#x7684;&#x503C;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; b3 = Blog(id=3, name=&apos;Cheddar Talk&apos;, tagline=&apos;Thoughts on cheese.&apos;)
+&gt;&gt;&gt; b3.id     # Returns 3.
+&gt;&gt;&gt; b3.save()
+&gt;&gt;&gt; b3.id     # Returns 3.
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x624B;&#x5DE5;&#x8D4B;&#x503C;&#x4E00;&#x4E2A;&#x81EA;&#x589E;&#x4E3B;&#x952E;&#x7684;&#x503C;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x4E3B;&#x952E;&#x503C;&#xFF01;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x4E3B;&#x952E;&#x503C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;Django &#x5C06;&#x5047;&#x8BBE;&#x4F60;&#x6B63;&#x5728;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x8BB0;&#x5F55;&#x800C;&#x4E0D;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8BB0;&#x5F55;&#x3002;</p>
+<p>&#x63A5;&#x7740;&#x4E0A;&#x9762;&#x7684;&apos;<code>Cheddar Talk</code>&apos; &#x535A;&#x5BA2;&#x793A;&#x4F8B;&#xFF0C;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5C06;&#x8986;&#x76D6;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4E4B;&#x524D;&#x7684;&#x8BB0;&#x5F55;&#xFF1A;</p>
+<pre><code>b4 = Blog(id=3, name=&apos;Not Cheddar&apos;, tagline=&apos;Anything but cheese.&apos;)
+b4.save()  # Overrides the previous blog with ID=3!
+</code></pre><p>&#x51FA;&#x73B0;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#x4E0B;&#x9762;&#x7684;<a href="http://python.usyiyi.cn/django/ref/models/instances.html#how-django-knows-to-update-vs-insert" target="_blank">Django &#x5982;&#x4F55;&#x77E5;&#x9053;&#x662F;UPDATE &#x8FD8;&#x662F;INSERT</a>&#x3002;</p>
+<p>&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x81EA;&#x589E;&#x4E3B;&#x952E;&#x7684;&#x503C;&#x5BF9;&#x4E8E;&#x6279;&#x91CF;&#x4FDD;&#x5B58;&#x5BF9;&#x8C61;&#x6700;&#x6709;&#x7528;&#xFF0C;&#x4F46;&#x4F60;&#x5FC5;&#x987B;&#x6709;&#x4FE1;&#x5FC3;&#x4E0D;&#x4F1A;&#x6709;&#x4E3B;&#x952E;&#x51B2;&#x7A81;&#x3002;</p>
+<h3 id="&#x5F53;&#x4F60;&#x4FDD;&#x5B58;&#x65F6;&#xFF0C;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#xFF1F;">&#x5F53;&#x4F60;&#x4FDD;&#x5B58;&#x65F6;&#xFF0C;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#xFF1F;</h3>
+<p>&#x5F53;&#x4F60;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;Django &#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<p>1. &#x53D1;&#x51FA;&#x4E00;&#x4E2A;<code>pre-save</code> &#x4FE1;&#x53F7;&#x3002; &#x53D1;&#x9001;&#x4E00;&#x4E2A;<code>django.db.models.signals.pre_save</code> &#x4FE1;&#x53F7;&#xFF0C;&#x4EE5;&#x5141;&#x8BB8;&#x76D1;&#x542C;&#x8BE5;&#x4FE1;&#x53F7;&#x7684;&#x51FD;&#x6570;&#x5B8C;&#x6210;&#x4E00;&#x4E9B;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x52A8;&#x4F5C;&#x3002;</p>
+<p>2. &#x9884;&#x5904;&#x7406;&#x6570;&#x636E;&#x3002; &#x5982;&#x679C;&#x9700;&#x8981;&#xFF0C;&#x5BF9;&#x5BF9;&#x8C61;&#x7684;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x5927;&#x90E8;&#x5206;&#x5B57;&#x6BB5;&#x4E0D;&#x9700;&#x8981;&#x9884;&#x5904;&#x7406; &#x2014;&#x2014; &#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;&#x5C06;&#x4FDD;&#x6301;&#x539F;&#x6837;&#x3002;&#x9884;&#x5904;&#x7406;&#x53EA;&#x7528;&#x4E8E;&#x5177;&#x6709;&#x7279;&#x6B8A;&#x884C;&#x4E3A;&#x7684;&#x5B57;&#x6BB5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x6A21;&#x578B;&#x5177;&#x6709;&#x4E00;&#x4E2A;<code>auto_now=True</code> &#x7684;<code>DateField</code>&#xFF0C;&#x90A3;&#x4E48;&#x9884;&#x5904;&#x7406;&#x9636;&#x6BB5;&#x5C06;&#x4FEE;&#x6539;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x4EE5;&#x786E;&#x4FDD;&#x8BE5;&#x65E5;&#x671F;&#x5B57;&#x6BB5;&#x5305;&#x542B;&#x5F53;&#x524D;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;&#xFF08;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x6863;&#x8FD8;&#x6CA1;&#x6709;&#x6240;&#x6709;&#x5177;&#x6709;&#x8FD9;&#x79CD;&#x201C;&#x7279;&#x6B8A;&#x884C;&#x4E3A;&#x201D;&#x5B57;&#x6BB5;&#x7684;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x3002;&#xFF09;</p>
+<p>3. &#x51C6;&#x5907;&#x6570;&#x636E;&#x5E93;&#x6570;&#x636E;&#x3002; &#x8981;&#x6C42;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x63D0;&#x4F9B;&#x7684;&#x5F53;&#x524D;&#x503C;&#x662F;&#x80FD;&#x591F;&#x5199;&#x5165;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x5927;&#x90E8;&#x5206;&#x5B57;&#x6BB5;&#x4E0D;&#x9700;&#x8981;&#x6570;&#x636E;&#x51C6;&#x5907;&#x3002;&#x7B80;&#x5355;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4F8B;&#x5982;&#x6574;&#x6570;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x662F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5199;&#x5165;&#x7684;Python &#x5BF9;&#x8C61;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x590D;&#x6742;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x901A;&#x5E38;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x6539;&#x52A8;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;<code>DateField</code> &#x5B57;&#x6BB5;&#x4F7F;&#x7528;Python &#x7684; <code>datetime</code> &#x5BF9;&#x8C61;&#x6765;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x3002;&#x6570;&#x636E;&#x5E93;&#x4FDD;&#x5B58;&#x7684;&#x4E0D;&#x662F;<code>datetime</code> &#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x8BE5;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x5FC5;&#x987B;&#x8F6C;&#x6362;&#x6210;ISO&#x517C;&#x5BB9;&#x7684;&#x65E5;&#x671F;&#x5B57;&#x7B26;&#x4E32;&#x624D;&#x80FD;&#x63D2;&#x5165;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;</p>
+<p>4. &#x63D2;&#x5165;&#x6570;&#x636E;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002; &#x5C06;&#x9884;&#x5904;&#x7406;&#x8FC7;&#x3001;&#x51C6;&#x5907;&#x597D;&#x7684;&#x6570;&#x636E;&#x7EC4;&#x7EC7;&#x6210;&#x4E00;&#x4E2A;SQL &#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x63D2;&#x5165;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>5. &#x53D1;&#x51FA;&#x4E00;&#x4E2A;post-save &#x4FE1;&#x53F7;&#x3002; &#x53D1;&#x9001;&#x4E00;&#x4E2A;<code>django.db.models.signals.post_save</code> &#x4FE1;&#x53F7;&#xFF0C;&#x4EE5;&#x5141;&#x8BB8;&#x76D1;&#x542C;&#x542C;&#x4FE1;&#x53F7;&#x7684;&#x51FD;&#x6570;&#x5B8C;&#x6210;&#x4E00;&#x4E9B;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x52A8;&#x4F5C;&#x3002;</p>
+<h3 id="django-&#x5982;&#x4F55;&#x77E5;&#x9053;&#x662F;update-&#x8FD8;&#x662F;insert">Django &#x5982;&#x4F55;&#x77E5;&#x9053;&#x662F;UPDATE &#x8FD8;&#x662F;INSERT</h3>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x6CE8;&#x610F;&#x5230;Django &#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;<code>save()</code> &#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x548C;&#x6539;&#x53D8;&#x5BF9;&#x8C61;&#x3002;Django &#x5BF9;<code>INSERT</code> &#x548C;<code>UPDATE</code> SQL &#x8BED;&#x53E5;&#x7684;&#x4F7F;&#x7528;&#x8FDB;&#x884C;&#x62BD;&#x8C61;&#x3002;&#x5F53;&#x4F60;&#x8C03;&#x7528;<code>save()</code> &#x65F6;&#xFF0C;Django &#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x7B97;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x5BF9;&#x8C61;&#x7684;&#x4E3B;&#x952E;&#x5C5E;&#x6027;&#x4E3A;&#x4E00;&#x4E2A;&#x6C42;&#x503C;&#x4E3A;<code>True</code> &#x7684;&#x503C;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x975E;<code>None</code> &#x503C;&#x6216;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF09;&#xFF0C;Django &#x5C06;&#x6267;&#x884C;<code>UPDATE</code>&#x3002;</li>
+<li>&#x5982;&#x679C;&#x5BF9;&#x8C61;&#x7684;&#x4E3B;&#x952E;&#x5C5E;&#x6027;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#x6216;&#x8005;<code>UPDATE</code> &#x6CA1;&#x6709;&#x66F4;&#x65B0;&#x4EFB;&#x4F55;&#x8BB0;&#x5F55;&#xFF0C;Django &#x5C06;&#x6267;&#x884C;<code>INSERT</code>&#x3002;</li>
+</ul>
+<p>&#x73B0;&#x5728;&#x5E94;&#x8BE5;&#x660E;&#x767D;&#x4E86;&#xFF0C;&#x5F53;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x4E3B;&#x952E;&#x7684;&#x503C;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x6CE8;&#x610F;&#x4E0D;&#x8981;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x4E3B;&#x952E;&#x503C;&#x3002;&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x7EC6;&#x5FAE;&#x5DEE;&#x522B;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x53C2;&#x89C1;&#x4E0A;&#x6587;&#x7684;&#x663E;&#x793A;&#x6307;&#x5B9A;&#x4E3B;&#x952E;&#x7684;&#x503C; &#x548C;&#x4E0B;&#x6587;&#x7684;&#x5F3A;&#x5236;&#x4F7F;&#x7528;<code>INSERT</code> &#x6216;<code>UPDATE</code>&#x3002;</p>
+<p>&#x5728;Django 1.5 &#x548C;&#x66F4;&#x65E9;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x5728;&#x8BBE;&#x7F6E;&#x4E3B;&#x952E;&#x7684;&#x503C;&#x65F6;&#xFF0C;Django &#x4F1A;&#x4F5C;&#x4E00;&#x4E2A; <code>SELECT</code>&#x3002;&#x5982;&#x679C;<code>SELECT</code> &#x627E;&#x5230;&#x4E00;&#x884C;&#xFF0C;&#x90A3;&#x4E48;Django &#x6267;&#x884C;<code>UPDATE</code>&#xFF0C;&#x5426;&#x5219;&#x6267;&#x884C;<code>INSERT</code>&#x3002;&#x65E7;&#x7684;&#x7B97;&#x6CD5;&#x5BFC;&#x81F4;<code>UPDATE</code> &#x60C5;&#x51B5;&#x4E0B;&#x591A;&#x4E00;&#x6B21;&#x67E5;&#x8BE2;&#x3002;&#x6709;&#x6781;&#x5C11;&#x6570;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x4E0D;&#x4F1A;&#x62A5;&#x544A;&#x6709;&#x4E00;&#x884C;&#x88AB;&#x66F4;&#x65B0;&#xFF0C;&#x5373;&#x4F7F;&#x6570;&#x636E;&#x5E93;&#x5305;&#x542B;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x4E3B;&#x952E;&#x503C;&#x3002;&#x6709;&#x4E2A;&#x4F8B;&#x5B50;&#x662F;PostgreSQL &#x7684;<code>ON UPDATE</code> &#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;NULL&#x3002;&#x5728;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x80FD;&#x8981;&#x901A;&#x8FC7;&#x5C06;<code>select_on_save</code> &#x9009;&#x9879;&#x8BBE;&#x7F6E;&#x4E3A;<code>True</code> &#x4EE5;&#x542F;&#x7528;&#x65E7;&#x7684;&#x7B97;&#x6CD5;&#x3002;</p>
+<h4 id="&#x5F3A;&#x5236;&#x4F7F;&#x7528;insert-&#x6216;update">&#x5F3A;&#x5236;&#x4F7F;&#x7528;INSERT &#x6216;UPDATE</h4>
+<p>&#x5728;&#x4E00;&#x4E9B;&#x5F88;&#x5C11;&#x89C1;&#x7684;&#x573A;&#x666F;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x5F3A;&#x5236;<code>save()</code> &#x65B9;&#x6CD5;&#x6267;&#x884C;SQL &#x7684; <code>INSERT</code> &#x800C;&#x4E0D;&#x80FD;&#x6267;&#x884C;<code>UPDATE</code>&#x3002;&#x6216;&#x8005;&#x76F8;&#x53CD;&#xFF1A;&#x66F4;&#x65B0;&#x4E00;&#x884C;&#x800C;&#x4E0D;&#x662F;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x65B0;&#x884C;&#x3002;&#x5728;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F20;&#x9012;<code>force_insert=True</code> &#x6216; <code>force_update=True</code> &#x53C2;&#x6570;&#x7ED9;<code>save()</code> &#x65B9;&#x6CD5;&#x3002;&#x663E;&#x7136;&#xFF0C;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x90FD;&#x4F20;&#x9012;&#x662F;&#x9519;&#x8BEF;&#x7684;&#xFF1A;&#x4F60;&#x4E0D;&#x53EF;&#x80FD;&#x540C;&#x65F6;&#x63D2;&#x5165;&#x548C;&#x66F4;&#x65B0;&#xFF01;</p>
+<p>&#x4F60;&#x5E94;&#x8BE5;&#x6781;&#x5C11;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x3002;Django &#x51E0;&#x4E4E;&#x59CB;&#x7EC8;&#x4F1A;&#x5B8C;&#x6210;&#x6B63;&#x786E;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x8986;&#x76D6;&#x5B83;&#x5C06;&#x5BFC;&#x81F4;&#x9519;&#x8BEF;&#x96BE;&#x4EE5;&#x8DDF;&#x8E2A;&#x3002;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x53EA;&#x7528;&#x4E8E;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>update_fields</code> &#x5C06;&#x5F3A;&#x5236;&#x4F7F;&#x7528;&#x7C7B;&#x4F3C;<code>force_update</code> &#x7684;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="&#x57FA;&#x4E8E;&#x5DF2;&#x5B58;&#x5728;&#x5B57;&#x6BB5;&#x503C;&#x7684;&#x5C5E;&#x6027;&#x66F4;&#x65B0;">&#x57FA;&#x4E8E;&#x5DF2;&#x5B58;&#x5728;&#x5B57;&#x6BB5;&#x503C;&#x7684;&#x5C5E;&#x6027;&#x66F4;&#x65B0;</h3>
+<p>&#x6709;&#x65F6;&#x5019;&#x4F60;&#x9700;&#x8981;&#x5728;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x4E0A;&#x6267;&#x884C;&#x7B80;&#x5355;&#x7684;&#x7B97;&#x6CD5;&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#x589E;&#x52A0;&#x6216;&#x8005;&#x51CF;&#x5C11;&#x5F53;&#x524D;&#x503C;&#x3002;&#x5B9E;&#x73B0;&#x8FD9;&#x70B9;&#x7684;&#x7B80;&#x5355;&#x65B9;&#x6CD5;&#x662F;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; product = Product.objects.get(name=&apos;Venezuelan Beaver Cheese&apos;)
+&gt;&gt;&gt; product.number_sold += 1
+&gt;&gt;&gt; product.save()
+</code></pre><p>&#x5982;&#x679C;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x8BFB;&#x53D6;&#x7684;&#x65E7;&#x7684;<code>number_sold</code> &#x503C;&#x4E3A;10&#xFF0C;&#x90A3;&#x4E48;&#x5199;&#x56DE;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x503C;&#x5C06;&#x4E3A;11&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x5C06;&#x66F4;&#x65B0;&#x57FA;&#x4E8E;&#x539F;&#x59CB;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x800C;&#x4E0D;&#x662F;&#x663E;&#x5F0F;&#x8D4B;&#x4E88;&#x4E00;&#x4E2A;&#x65B0;&#x503C;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;<a href="http://python.usyiyi.cn/django/ref/models/expressions.html#avoiding-race-conditions-using-f" target="_blank">&#x907F;&#x514D;&#x7ADE;&#x6001;&#x6761;&#x4EF6;</a>&#x800C;&#x4E14;&#x66F4;&#x5FEB;&#x3002;Django &#x63D0;&#x4F9B;<code>F &#x8868;&#x8FBE;&#x5F0F;</code> &#x7528;&#x4E8E;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x76F8;&#x5BF9;&#x66F4;&#x65B0;&#x3002;&#x5229;&#x7528;<code>F &#x8868;&#x8FBE;&#x5F0F;</code>&#xFF0C;&#x524D;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x6210;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; from django.db.models import F
+&gt;&gt;&gt; product = Product.objects.get(name=&apos;Venezuelan Beaver Cheese&apos;)
+&gt;&gt;&gt; product.number_sold = F(&apos;number_sold&apos;) + 1
+&gt;&gt;&gt; product.save()
+</code></pre><p>&#x66F4;&#x591A;&#x7EC6;&#x8282;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<code>F &#x8868;&#x8FBE;&#x5F0F;</code> &#x548C;&#x5B83;&#x4EEC;<a href="http://python.usyiyi.cn/django/topics/db/queries.html#topics-db-queries-update" target="_blank">&#x5728;&#x66F4;&#x65B0;&#x67E5;&#x8BE2;&#x4E2D;&#x7684;&#x7528;&#x6CD5;</a>&#x3002;</p>
+<h3 id="&#x6307;&#x5B9A;&#x8981;&#x4FDD;&#x5B58;&#x7684;&#x5B57;&#x6BB5;">&#x6307;&#x5B9A;&#x8981;&#x4FDD;&#x5B58;&#x7684;&#x5B57;&#x6BB5;</h3>
+<p>&#x5982;&#x679C;&#x4F20;&#x9012;&#x7ED9;<code>save()</code> &#x7684;<code>update_fields</code> &#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x5217;&#x8868;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x53EA;&#x6709;&#x8BE5;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x4F1A;&#x88AB;&#x66F4;&#x65B0;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x66F4;&#x65B0;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x51E0;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x3002;&#x4E0D;&#x8BA9;&#x6A21;&#x578B;&#x7684;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x90FD;&#x66F4;&#x65B0;&#x5C06;&#x4F1A;&#x5E26;&#x6765;&#x4E00;&#x4E9B;&#x8F7B;&#x5FAE;&#x7684;&#x6027;&#x80FD;&#x63D0;&#x5347;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>product.name = &apos;Name changed again&apos;
+product.save(update_fields=[&apos;name&apos;])
+</code></pre><p><code>update_fields</code> &#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x5305;&#x542B;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#x3002;&#x7A7A;&#x7684;<code>update_fields</code> &#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#x5C06;&#x4F1A;&#x5FFD;&#x7565;&#x4FDD;&#x5B58;&#x3002;&#x5982;&#x679C;&#x4E3A;<code>None</code> &#x503C;&#xFF0C;&#x5C06;&#x6267;&#x884C;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x4E0A;&#x7684;&#x66F4;&#x65B0;&#x3002;</p>
+<p>&#x6307;&#x5B9A;<code>update_fields</code> &#x5C06;&#x5F3A;&#x5236;&#x4F7F;&#x7528;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5F53;&#x4FDD;&#x5B58;&#x901A;&#x8FC7;&#x5EF6;&#x8FDF;&#x6A21;&#x578B;&#x52A0;&#x8F7D;&#xFF08;<code>only()</code> &#x6216;<code>defer()</code>&#xFF09;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#x7684;&#x6A21;&#x578B;&#x65F6;&#xFF0C;&#x53EA;&#x6709;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x52A0;&#x8F7D;&#x7684;&#x5B57;&#x6BB5;&#x624D;&#x4F1A;&#x5F97;&#x5230;&#x66F4;&#x65B0;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6709;&#x4E2A;&#x81EA;&#x52A8;&#x7684;<code>update_fields</code>&#x3002;&#x5982;&#x679C;&#x4F60;&#x8D4B;&#x503C;&#x6216;&#x8005;&#x6539;&#x53D8;&#x5EF6;&#x8FDF;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x5C06;&#x4F1A;&#x6DFB;&#x52A0;&#x5230;&#x66F4;&#x65B0;&#x7684;&#x5B57;&#x6BB5;&#x4E2D;&#x3002;</p>
+<h2 id="&#x5220;&#x9664;&#x5BF9;&#x8C61;">&#x5220;&#x9664;&#x5BF9;&#x8C61;</h2>
+<p><code>Model.delete([using=DEFAULT_DB_ALIAS])</code></p>
+<p>&#x53D1;&#x51FA;&#x4E00;&#x4E2A;SQL <code>DELETE</code> &#x64CD;&#x4F5C;&#x3002;&#x5B83;&#x53EA;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5220;&#x9664;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1B;&#x5176;Python &#x5B9E;&#x4F8B;&#x4ECD;&#x5C06;&#x5B58;&#x5728;&#x5E76;&#x6301;&#x6709;&#x5404;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x66F4;&#x591A;&#x7EC6;&#x8282;&#xFF0C;&#x5305;&#x62EC;&#x5982;&#x4F55;&#x6279;&#x91CF;&#x5220;&#x9664;&#x5BF9;&#x8C61;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<a href="http://python.usyiyi.cn/django/topics/db/queries.html#topics-db-queries-delete" target="_blank">&#x5220;&#x9664;&#x5BF9;&#x8C61;</a>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x81EA;&#x5B9A;&#x4E49;&#x5220;&#x9664;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8986;&#x76D6;<code>delete()</code> &#x65B9;&#x6CD5;&#x3002;&#x8BE6;&#x89C1;<a href="http://python.usyiyi.cn/django/topics/db/models.html#overriding-model-methods" target="_blank">&#x8986;&#x76D6;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x65B9;&#x6CD5;</a>&#x3002;</p>
+<h2 id="pickling-&#x5BF9;&#x8C61;">Pickling &#x5BF9;&#x8C61;</h2>
+<p>&#x5F53;&#x4F60;<code>pickle</code> &#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x662F;pickled&#x3002;&#x5F53;&#x4F60;unpickle &#x5B83;&#x65F6;&#xFF0C;&#x5B83;&#x5C06;&#x5305;&#x542B;pickle &#x65F6;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x5F53;&#x524D;&#x6570;&#x636E;&#x3002;</p>
+<blockquote>
+<p>&#x4F60;&#x4E0D;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x4E4B;&#x95F4;&#x5171;&#x4EAB;pickles</p>
+<p>&#x6A21;&#x578B;&#x7684;Pickles &#x53EA;&#x5BF9;&#x4E8E;&#x4EA7;&#x751F;&#x5B83;&#x4EEC;&#x7684;Django &#x7248;&#x672C;&#x6709;&#x6548;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;Django &#x7248;&#x672C;N pickle&#xFF0C;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;Django &#x7248;&#x672C;N+1 &#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x8FD9;&#x4E2A;pickle&#x3002;Pickles &#x4E0D;&#x5E94;&#x8BE5;&#x4F5C;&#x4E3A;&#x957F;&#x671F;&#x7684;&#x5F52;&#x6863;&#x7B56;&#x7565;&#x3002;</p>
+<p><code>New in Django 1.8.</code></p>
+<p>&#x56E0;&#x4E3A;pickle &#x517C;&#x5BB9;&#x6027;&#x7684;&#x9519;&#x8BEF;&#x5F88;&#x96BE;&#x8BCA;&#x65AD;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x6084;&#x65E0;&#x58F0;&#x606F;&#x635F;&#x574F;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5F53;&#x4F60;unpickle &#x6A21;&#x578B;&#x4F7F;&#x7528;&#x7684;Django &#x7248;&#x672C;&#x4E0E;pickle &#x65F6;&#x7684;&#x4E0D;&#x540C;&#x5C06;&#x5F15;&#x53D1;&#x4E00;&#x4E2A;<code>RuntimeWarning</code>&#x3002;</p>
+</blockquote>
+<h2 id="&#x5176;&#x5B83;&#x7684;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;">&#x5176;&#x5B83;&#x7684;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</h2>
+<p>&#x6709;&#x51E0;&#x4E2A;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x5177;&#x6709;&#x7279;&#x6B8A;&#x7684;&#x76EE;&#x7684;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;</p>
+<p>&#x5728;Python 3 &#x4E0A;&#xFF0C;&#x56E0;&#x4E3A;&#x6240;&#x6709;&#x7684;&#x5B57;&#x6BB5;&#x90FD;&#x539F;&#x751F;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;Unicode&#xFF0C;&#x53EA;&#x9700;&#x4F7F;&#x7528;<code>__str__()</code> &#x65B9;&#x6CD5;&#xFF08;<code>__unicode__()</code> &#x65B9;&#x6CD5;&#x88AB;&#x5E9F;&#x5F03;&#xFF09;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4E0E;Python 2 &#x517C;&#x5BB9;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>python_2_unicode_compatible()</code> &#x88C5;&#x9970;&#x4F60;&#x7684;&#x6A21;&#x578B;&#x7C7B;&#x3002;</p>
+</blockquote>
+<h3 id="unicode">__unicode__</h3>
+<p><code>Model.__unicode__()</code></p>
+<p><code>__unicode__()</code> &#x65B9;&#x6CD5;&#x5728;&#x6BCF;&#x5F53;&#x4F60;&#x5BF9;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x8C03;&#x7528;unicode() &#x65F6;&#x8C03;&#x7528;&#x3002;Django &#x5728;&#x8BB8;&#x591A;&#x5730;&#x65B9;&#x90FD;&#x4F7F;&#x7528;<code>unicode(obj)</code>&#xFF08;&#x6216;&#x8005;&#x76F8;&#x5173;&#x7684;&#x51FD;&#x6570; <code>str(obj)</code>&#xFF09;&#x3002;&#x6700;&#x660E;&#x663E;&#x7684;&#x662F;&#x5728;Django &#x7684;Admin &#x7AD9;&#x70B9;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x548C;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x63D2;&#x5165;&#x5BF9;&#x8C61;&#x7684;&#x503C;&#x7684;&#x65F6;&#x5019;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x59CB;&#x7EC8;&#x8BA9;<code>__unicode__()</code> &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x6A21;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x53CB;&#x597D;&#x7684;&#x3001;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+
+    def __unicode__(self):
+        return u&apos;%s %s&apos; % (self.first_name, self.last_name)
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x5B9A;&#x4E49;&#x4E86;&#x6A21;&#x578B;&#x7684;<code>__unicode__()</code> &#x65B9;&#x6CD5;&#x4E14;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;<code>__str__()</code> &#x65B9;&#x6CD5;&#xFF0C;Django &#x5C06;&#x81EA;&#x52A8;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A; <code>__str__()</code>&#xFF0C;&#x5B83;&#x8C03;&#x7528;<code>__unicode__()</code> &#x5E76;&#x8F6C;&#x6362;&#x7ED3;&#x679C;&#x4E3A;&#x4E00;&#x4E2A;UTF-8 &#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x5EFA;&#x8BAE;&#x7684;&#x5F00;&#x53D1;&#x5B9E;&#x8DF5;&#xFF1A;&#x53EA;&#x5B9A;&#x4E49;<code>__unicode__()</code> &#x5E76;&#x8BA9;Django &#x5728;&#x9700;&#x8981;&#x65F6;&#x8D1F;&#x8D23;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8F6C;&#x6362;&#x3002;</p>
+<h3 id="str">__str__</h3>
+<p><code>Model.__str__()</code></p>
+<p><code>__str__()</code> &#x65B9;&#x6CD5;&#x5728;&#x6BCF;&#x5F53;&#x4F60;&#x5BF9;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x8C03;&#x7528;<code>str()</code> &#x65F6;&#x8C03;&#x7528;&#x3002;&#x5728;Python 3 &#x4E2D;&#xFF0C;Django &#x5728;&#x8BB8;&#x591A;&#x5730;&#x65B9;&#x4F7F;&#x7528;<code>str(obj)</code>&#x3002; &#x6700;&#x660E;&#x663E;&#x7684;&#x662F;&#x5728;Django &#x7684;Admin &#x7AD9;&#x70B9;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x548C;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x63D2;&#x5165;&#x5BF9;&#x8C61;&#x7684;&#x503C;&#x7684;&#x65F6;&#x5019;&#x3002; &#x6240;&#x4EE5;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x59CB;&#x7EC8;&#x8BA9;<code>__str__()</code> &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x6A21;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x53CB;&#x597D;&#x7684;&#x3001;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return &apos;%s %s&apos; % (self.first_name, self.last_name)
+</code></pre><p>&#x5728;Python 2 &#x4E2D;&#xFF0C;Django &#x5185;&#x90E8;&#x5BF9;<code>__str__</code> &#x7684;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x4E3B;&#x8981;&#x5728;&#x968F;&#x5904;&#x53EF;&#x89C1;&#x7684;&#x6A21;&#x578B;&#x7684;<code>repr()</code> &#x8F93;&#x51FA;&#x4E2D;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x8C03;&#x8BD5;&#x65F6;&#x7684;&#x8F93;&#x51FA;&#xFF09;&#x3002;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x6709;&#x5408;&#x9002;&#x7684;<code>__unicode__()</code> &#x65B9;&#x6CD5;&#x5C31;&#x4E0D;&#x9700;&#x8981;<code>__str__()</code> &#x4E86;&#x3002;</p>
+<p>&#x524D;&#x9762;<code>__unicode__()</code> &#x7684;&#x793A;&#x4F8B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>__str__()</code> &#x8FD9;&#x6837;&#x7C7B;&#x4F3C;&#x5730;&#x7F16;&#x5199;&#xFF1A;</p>
+<pre><code>from django.db import models
+from django.utils.encoding import force_bytes
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+
+    def __str__(self):
+        # Note use of django.utils.encoding.force_bytes() here because
+        # first_name and last_name will be unicode strings.
+        return force_bytes(&apos;%s %s&apos; % (self.first_name, self.last_name))
+</code></pre><h3 id="eq">__eq__</h3>
+<p><code>Model.__eq__()</code></p>
+<p>&#x5B9A;&#x4E49;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x5177;&#x6709;&#x76F8;&#x540C;&#x4E3B;&#x952E;&#x7684;&#x76F8;&#x540C;&#x5B9E;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x662F;&#x76F8;&#x7B49;&#x7684;&#x3002;&#x5BF9;&#x4E8E;&#x4EE3;&#x7406;&#x6A21;&#x578B;&#xFF0C;&#x5B9E;&#x7C7B;&#x662F;&#x6A21;&#x578B;&#x7B2C;&#x4E00;&#x4E2A;&#x975E;&#x4EE3;&#x7406;&#x7236;&#x7C7B;&#xFF1B;&#x5BF9;&#x4E8E;&#x5176;&#x5B83;&#x6A21;&#x578B;&#xFF0C;&#x5B83;&#x7684;&#x5B9E;&#x7C7B;&#x5C31;&#x662F;&#x6A21;&#x578B;&#x7C7B;&#x81EA;&#x5DF1;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class MyModel(models.Model):
+    id = models.AutoField(primary_key=True)
+
+class MyProxyModel(MyModel):
+    class Meta:
+        proxy = True
+
+class MultitableInherited(MyModel):
+    pass
+
+MyModel(id=1) == MyModel(id=1)
+MyModel(id=1) == MyProxyModel(id=1)
+MyModel(id=1) != MultitableInherited(id=1)
+MyModel(id=1) != MyModel(id=2)
+</code></pre><pre><code>Changed in Django 1.7:
+
+&#x5728;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x53EA;&#x6709;&#x7C7B;&#x548C;&#x4E3B;&#x952E;&#x90FD;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x5B9E;&#x4F8B;&#x624D;&#x662F;&#x76F8;&#x7B49;&#x7684;&#x3002;
+</code></pre><h3 id="hash">__hash__</h3>
+<p><code>Model.__hash__()</code></p>
+<p><code>__hash__</code> &#x65B9;&#x6CD5;&#x57FA;&#x4E8E;&#x5B9E;&#x4F8B;&#x4E3B;&#x952E;&#x7684;&#x503C;&#x3002;&#x5B83;&#x7B49;&#x540C;&#x4E8E;hash(obj.pk)&#x3002;&#x5982;&#x679C;&#x5B9E;&#x4F8B;&#x7684;&#x4E3B;&#x952E;&#x8FD8;&#x6CA1;&#x6709;&#x503C;&#xFF0C;&#x5C06;&#x5F15;&#x53D1;&#x4E00;&#x4E2A;<code>TypeError</code>&#xFF08;&#x5426;&#x5219;&#xFF0C;<code>__hash__</code> &#x65B9;&#x6CD5;&#x5728;&#x5B9E;&#x4F8B;&#x4FDD;&#x5B58;&#x7684;&#x524D;&#x540E;&#x5C06;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x6539;&#x53D8;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x7684;<code>__hash__</code> &#x503C;&#x5728;Python &#x4E2D;&#x662F;&#x7981;&#x6B62;&#x7684;&#xFF09;&#x3002;</p>
+<pre><code>Changed in Django 1.7:
+
+&#x5728;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x4E3B;&#x952E;&#x6CA1;&#x6709;&#x503C;&#x7684;&#x5B9E;&#x4F8B;&#x662F;&#x53EF;&#x4EE5;&#x54C8;&#x5E0C;&#x7684;&#x3002;
+</code></pre><h3 id="getabsoluteurl">get_absolute_url</h3>
+<p><code>Model.get_absolute_url()</code></p>
+<p><code>get_absolute_url()</code> &#x65B9;&#x6CD5;&#x544A;&#x8BC9;Django &#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x5BF9;&#x8C61;&#x7684;&#x6807;&#x51C6;URL&#x3002;&#x5BF9;&#x4E8E;&#x8C03;&#x7528;&#x8005;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5E94;&#x8BE5;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;HTTP &#x5F15;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>def get_absolute_url(self):
+    return &quot;/people/%i/&quot; % self.id
+</code></pre><p>&#xFF08;&#x867D;&#x7136;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x6B63;&#x786E;&#x53C8;&#x7B80;&#x5355;&#xFF0C;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x7F16;&#x5199;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x79FB;&#x690D;&#x6027;&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x901A;&#x5E38;&#x4F7F;&#x7528;<code>reverse()</code> &#x51FD;&#x6570;&#x662F;&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#xFF09;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>def get_absolute_url(self):
+    from django.core.urlresolvers import reverse
+    return reverse(&apos;people.views.details&apos;, args=[str(self.id)])
+</code></pre><p>Django &#x4F7F;&#x7528;<code>get_absolute_url()</code> &#x7684;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x662F;&#x5728;Admin &#x5E94;&#x7528;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x5BF9;&#x8C61;&#x5B9A;&#x4E49;&#x8BE5;&#x65B9;&#x6CD5;&#xFF0C;&#x5BF9;&#x8C61;&#x7F16;&#x8F91;&#x9875;&#x9762;&#x5C06;&#x5177;&#x6709;&#x4E00;&#x4E2A;&#x201C;View on site&#x201D;&#x94FE;&#x63A5;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x4F60;&#x76F4;&#x63A5;&#x5BFC;&#x5165;&#x7531;<code>get_absolute_url()</code> &#x63D0;&#x4F9B;&#x7684;&#x5BF9;&#x8C61;&#x516C;&#x5F00;&#x89C6;&#x56FE;&#x3002;</p>
+<p>&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;Django &#x7684;&#x53E6;&#x5916;&#x4E00;&#x4E9B;&#x5C0F;&#x529F;&#x80FD;&#xFF0C;&#x4F8B;&#x5982;<a href="http://python.usyiyi.cn/django/ref/contrib/syndication.html" target="_blank">syndication feed &#x6846;&#x67B6;</a> &#x4E5F;&#x4F7F;&#x7528;<code>get_absolute_url()</code>&#x3002; &#x5982;&#x679C;&#x6A21;&#x578B;&#x7684;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x90FD;&#x5177;&#x6709;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;URL &#x662F;&#x5408;&#x7406;&#x7684;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x5B9A;&#x4E49;<code>get_absolute_url()</code>&#x3002;</p>
+<blockquote>
+<p>&#x8B66;&#x544A;</p>
+<p>&#x4F60;&#x5E94;&#x8BE5;&#x907F;&#x514D;&#x4ECE;&#x6CA1;&#x6709;&#x9A8C;&#x8BC1;&#x8FC7;&#x7684;&#x7528;&#x6237;&#x8F93;&#x5165;&#x6784;&#x5EFA;URL&#xFF0C;&#x4EE5;&#x51CF;&#x5C11;&#x6709;&#x5BB3;&#x7684;&#x94FE;&#x63A5;&#x548C;&#x91CD;&#x5B9A;&#x5411;&#xFF1A;</p>
+</blockquote>
+<pre><code>def get_absolute_url(self):
+    return &apos;/%s/&apos; % self.name
+</code></pre><blockquote>
+<p>&#x5982;&#x679C;<code>self.name</code> &#x4E3A;&apos;<code>/example.com</code>&apos;&#xFF0C;&#x5C06;&#x8FD4;&#x56DE; &apos;<code>//example.com/</code>&apos;&#xFF0C; &#x800C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x76F8;&#x5BF9;URL&#x800C;&#x4E0D;&#x662F;&#x671F;&#x671B;&#x7684;&apos;<code>/%2Fexample.com/</code>&apos;&#x3002;</p>
+</blockquote>
+<p>&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x4F7F;&#x7528;<code>get_absolute_url()</code> &#x800C;&#x4E0D;&#x662F;&#x786C;&#x7F16;&#x7801;&#x5BF9;&#x8C61;&#x7684;URL &#x662F;&#x5F88;&#x597D;&#x7684;&#x5B9E;&#x8DF5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x6A21;&#x677F;&#x4EE3;&#x7801;&#x5F88;&#x7CDF;&#x7CD5;&#xFF1A;</p>
+<pre><code>&lt;!-- BAD template code. Avoid! --&gt;
+&lt;a href=&quot;/people//&quot;&gt;&lt;/a&gt;
+</code></pre><p>&#x4E0B;&#x9762;&#x7684;&#x6A21;&#x677F;&#x4EE3;&#x7801;&#x8981;&#x597D;&#x591A;&#x4E86;&#xFF1A;</p>
+<pre><code>&lt;a href=&quot;&quot;&gt;&lt;/a&gt;
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x6539;&#x53D8;&#x4E86;&#x5BF9;&#x8C61;&#x7684;URL &#x7ED3;&#x6784;&#xFF0C;&#x5373;&#x4F7F;&#x662F;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x62FC;&#x5199;&#x9519;&#x8BEF;&#xFF0C;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x6BCF;&#x4E2A;&#x53EF;&#x80FD;&#x521B;&#x5EFA;&#x8BE5;URL &#x7684;&#x5730;&#x65B9;&#x3002;&#x5728;<code>get_absolute_url()</code> &#x4E2D;&#x5B9A;&#x4E49;&#x4E00;&#x6B21;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5176;&#x5B83;&#x4EE3;&#x7801;&#x8C03;&#x7528;&#x5B83;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;</p>
+<p><code>get_absolute_url()</code> &#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5FC5;&#x987B;&#x53EA;&#x5305;&#x542B;ASCII &#x5B57;&#x7B26;&#xFF08;URI &#x89C4;&#x8303;<a href="http://tools.ietf.org/html/rfc2396.html" target="_blank">RFC 2396</a> &#x7684;&#x8981;&#x6C42;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x5982;&#x9700;&#x8981;&#x5FC5;&#x987B;&#x8981;URL-encoded&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x548C;&#x6A21;&#x677F;&#x4E2D;&#x5BF9;<code>get_absolute_url()</code> &#x7684;&#x8C03;&#x7528;&#x5E94;&#x8BE5;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x800C;&#x4E0D;&#x7528;&#x505A;&#x8FDB;&#x4E00;&#x6B65;&#x5904;&#x7406;&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x4F7F;&#x7528;<code>django.utils.encoding.iri_to_uri()</code> &#x51FD;&#x6570;&#x6765;&#x5E2E;&#x52A9;&#x4F60;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6B63;&#x5728;&#x4F7F;&#x7528;ASCII &#x8303;&#x56F4;&#x4E4B;&#x5916;&#x7684;Unicode &#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+</blockquote>
+<h2 id="&#x989D;&#x5916;&#x7684;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;">&#x989D;&#x5916;&#x7684;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</h2>
+<p>&#x9664;&#x4E86;<code>save()</code>&#x3001;<code>delete()</code>&#x4E4B;&#x5916;&#xFF0C;&#x6A21;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x8FD8;&#x53EF;&#x80FD;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p><code>Model.get_FOO_display()</code></p>
+<p>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x5177;&#x6709;<code>choices</code> &#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x5C06;&#x5177;&#x6709;&#x4E00;&#x4E2A;<code>get_FOO_display()</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x4E2D;<code>FOO</code> &#x4E3A;&#x8BE5;&#x5B57;&#x6BB5;&#x7684;&#x540D;&#x79F0;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x8BE5;&#x5B57;&#x6BB5;&#x5BF9;&#x201C;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#x201D;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>from django.db import models
+
+class Person(models.Model):
+    SHIRT_SIZES = (
+        (&apos;S&apos;, &apos;Small&apos;),
+        (&apos;M&apos;, &apos;Medium&apos;),
+        (&apos;L&apos;, &apos;Large&apos;),
+    )
+    name = models.CharField(max_length=60)
+    shirt_size = models.CharField(max_length=2, choices=SHIRT_SIZES)
+&gt;&gt;&gt; p = Person(name=&quot;Fred Flintstone&quot;, shirt_size=&quot;L&quot;)
+&gt;&gt;&gt; p.save()
+&gt;&gt;&gt; p.shirt_size
+&apos;L&apos;
+&gt;&gt;&gt; p.get_shirt_size_display()
+&apos;Large&apos;
+</code></pre><p><code>Model.get_next_by_FOO(**kwargs)</code></p>
+<p><code>Model.get_previous_by_FOO(**kwargs)</code></p>
+<p>&#x5982;&#x679C;<code>DateField</code> &#x548C;<code>DateTimeField</code>&#x6CA1;&#x6709;&#x8BBE;&#x7F6E; <code>null=True</code>&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x5BF9;&#x8C61;&#x5C06;&#x5177;&#x6709;<code>get_next_by_FOO()</code> &#x548C;<code>get_previous_by_FOO()</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x4E2D;<code>FOO</code> &#x4E3A;&#x5B57;&#x6BB5;&#x7684;&#x540D;&#x79F0;&#x3002;&#x5B83;&#x6839;&#x636E;&#x65E5;&#x671F;&#x5B57;&#x6BB5;&#x8FD4;&#x56DE;&#x4E0B;&#x4E00;&#x4E2A;&#x548C;&#x4E0A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x9002;&#x65F6;&#x5F15;&#x53D1;&#x4E00;&#x4E2A;<code>DoesNotExist</code>&#x3002;</p>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x5C06;&#x4F7F;&#x7528;&#x6A21;&#x578B;&#x9ED8;&#x8BA4;&#x7684;&#x7BA1;&#x7406;&#x5668;&#x6765;&#x6267;&#x884C;&#x67E5;&#x8BE2;&#x3002;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7BA1;&#x7406;&#x5668;&#x6216;&#x8005;&#x4F60;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7B5B;&#x9009;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD8;&#x63A5;&#x53D7;&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x5E94;&#x8BE5;&#x7528;&#x5B57;&#x6BB5;&#x67E5;&#x8BE2; &#x4E2D;&#x63D0;&#x5230;&#x7684;&#x683C;&#x5F0F;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5BF9;&#x4E8E;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x65E5;&#x671F;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x8FD8;&#x5C06;&#x5229;&#x7528;&#x4E3B;&#x952E;&#x6765;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#x3002;&#x8FD9;&#x4FDD;&#x8BC1;&#x4E0D;&#x4F1A;&#x6709;&#x8BB0;&#x5F55;&#x9057;&#x6F0F;&#x6216;&#x91CD;&#x590D;&#x3002;&#x8FD9;&#x8FD8;&#x610F;&#x5473;&#x7740;&#x4F60;&#x4E0D;&#x53EF;&#x4EE5;&#x5728;&#x672A;&#x4FDD;&#x5B58;&#x7684;&#x5BF9;&#x8C61;&#x4E0A;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="&#x5176;&#x5B83;&#x5C5E;&#x6027;">&#x5176;&#x5B83;&#x5C5E;&#x6027;</h2>
+<h3 id="doesnotexist">DoesNotExist</h3>
+<p>exception <code>Model.DoesNotExist</code></p>
+<p>ORM &#x5728;&#x597D;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x4F1A;&#x5F15;&#x53D1;&#x8FD9;&#x4E2A;&#x5F02;&#x5E38;&#xFF0C;&#x4F8B;&#x5982;<code>QuerySet.get()</code> &#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#x627E;&#x4E0D;&#x5230;&#x5BF9;&#x8C61;&#x65F6;&#x3002;</p>
+<p>Django &#x4E3A;&#x6BCF;&#x4E2A;&#x7C7B;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;<code>DoesNotExist</code> &#x5F02;&#x5E38;&#x5C5E;&#x6027;&#x662F;&#x4E3A;&#x4E86;&#x533A;&#x522B;&#x627E;&#x4E0D;&#x5230;&#x7684;&#x5BF9;&#x8C61;&#x6240;&#x5C5E;&#x7684;&#x7C7B;&#xFF0C;&#x5E76;&#x8BA9;&#x4F60;&#x53EF;&#x4EE5;&#x5229;&#x7528;<code>try/except</code>&#x6355;&#x83B7;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x6A21;&#x578B;&#x7684;&#x7C7B;&#x3002;&#x8FD9;&#x4E2A;&#x5F02;&#x5E38;&#x662F;<code>django.core.exceptions.ObjectDoesNotExist</code> &#x7684;&#x5B50;&#x7C7B;&#x3002;</p>
+<blockquote>
+<p>&#x8BD1;&#x8005;&#xFF1A;<a href="http://python.usyiyi.cn/django/index.html" target="_blank">Django &#x6587;&#x6863;&#x534F;&#x4F5C;&#x7FFB;&#x8BD1;&#x5C0F;&#x7EC4;</a>&#xFF0C;&#x539F;&#x6587;&#xFF1A;<a href="https://docs.djangoproject.com/en/1.8/ref/models/instances/" target="_blank">Instance methods</a>&#x3002;</p>
+<p>&#x672C;&#x6587;&#x4EE5; <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank">CC BY-NC-SA 3.0</a> &#x534F;&#x8BAE;&#x53D1;&#x5E03;&#xFF0C;&#x8F6C;&#x8F7D;&#x8BF7;&#x4FDD;&#x7559;&#x4F5C;&#x8005;&#x7F72;&#x540D;&#x548C;&#x6587;&#x7AE0;&#x51FA;&#x5904;&#x3002;</p>
+<p><a href="http://python.usyiyi.cn/django/index.html" target="_blank">Django &#x6587;&#x6863;&#x534F;&#x4F5C;&#x7FFB;&#x8BD1;&#x5C0F;&#x7EC4;</a>&#x4EBA;&#x624B;&#x7D27;&#x7F3A;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x670B;&#x53CB;&#x53EF;&#x4EE5;&#x52A0;&#x5165;&#x6211;&#x4EEC;&#xFF0C;&#x5B8C;&#x5168;&#x516C;&#x76CA;&#x6027;&#x8D28;&#x3002;&#x4EA4;&#x6D41;&#x7FA4;&#xFF1A;467338606&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2_3.html" class="navigation navigation-prev " aria-label="Previous page: 模型的实例">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2_3_2_Accessing related objects.html" class="navigation navigation-next " aria-label="Next page: 访问关联对象">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"实例方法","level":"1.3.3.1","depth":3,"next":{"title":"访问关联对象","level":"1.3.3.2","depth":3,"path":"2_3_2_Accessing related objects.md","ref":"2_3_2_Accessing related objects.md","articles":[]},"previous":{"title":"模型的实例","level":"1.3.3","depth":2,"path":"2_3.md","ref":"2_3.md","articles":[{"title":"实例方法","level":"1.3.3.1","depth":3,"path":"2_3_1_Instance methods.md","ref":"2_3_1_Instance methods.md","articles":[]},{"title":"访问关联对象","level":"1.3.3.2","depth":3,"path":"2_3_2_Accessing related objects.md","ref":"2_3_2_Accessing related objects.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"django-chinese-docs-1.8","links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"django 学习入门教程"},"file":{"path":"2_3_1_Instance methods.md","mtime":"2016-06-20T01:36:35.246Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:31:29.550Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

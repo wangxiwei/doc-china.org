@@ -1,0 +1,718 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Assertion Testing · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Buffer.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Assertion Testing</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="assert">Assert</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x672C;&#x6A21;&#x5757;&#x88AB;&#x7528;&#x6765;&#x4E3A;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x7F16;&#x5199;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;
+<code>require(&apos;assert&apos;)</code>&#x6765;&#x4F7F;&#x7528;&#x5B83;&#x3002;</p>
+<h4 id="assertfailactual-expected-message-operator">assert.fail(actual, expected, message, operator)</h4>
+<p>&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x6253;&#x5370;&#x5B9E;&#x9645;&#x503C;<code>actual</code>&#x548C;&#x671F;&#x671B;&#x503C;<code>expected</code>&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x4F7F;&#x7528;&#x5206;&#x9694;&#x7B26;<code>operator</code>&#x9694;&#x5F00;&#x3002;</p>
+<h4 id="assertvalue-message-assertokvalue-message">assert(value[, message]), assert.ok(value[, message])</h4>
+<p>&#x6D4B;&#x8BD5;<code>value</code>&#x662F;&#x5426;&#x4E3A;&#x771F;&#xFF0C;&#x5B83;&#x7B49;&#x540C;&#x4E8E;<code>assert.equal(true, !!value, message);</code>&#x3002;</p>
+<h4 id="assertequalactual-expected-message">assert.equal(actual, expected[, message])</h4>
+<p>&#x5224;&#x7B49;<code>actual</code>&#x4E0E;<code>expected</code>&#x662F;&#x5426;&#x76F8;&#x7B49;&#xFF0C;&#x7B49;&#x540C;&#x4E8E;&#x4F7F;&#x7528;<code>==</code>&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;</p>
+<h4 id="assertnotequalactual-expected-message">assert.notEqual(actual, expected[, message])</h4>
+<p>&#x5224;&#x65AD;<code>actual</code>&#x4E0E;<code>expected</code>&#x662F;&#x5426;&#x4E0D;&#x76F8;&#x7B49;&#xFF0C;&#x7B49;&#x540C;&#x4E8E;&#x4F7F;&#x7528;<code>!=</code>&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;</p>
+<h4 id="assertdeepequalactual-expected-message">assert.deepEqual(actual, expected[, message])</h4>
+<p>&#x6DF1;&#x5EA6;&#x5224;&#x65AD;&#x76F8;&#x7B49;&#xFF0C;&#x901A;&#x8FC7;&#x6BD4;&#x8F83;<code>actual</code>&#x4E0E;<code>expected</code>&#x6240;&#x6709;&#x539F;&#x578B;&#xFF08;prototype&#xFF09;&#x4E4B;&#x5916;&#x7684;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x76F8;&#x7B49;&#xFF08;<code>==</code>)&#x6765;&#x5224;&#x65AD;&#x4E8C;&#x8005;&#x662F;&#x5426;&#x76F8;&#x7B49;&#x3002;</p>
+<h4 id="assertnotdeepequalactual-expected-message">assert.notDeepEqual(actual, expected[, message])</h4>
+<p>&#x6DF1;&#x5EA6;&#x5224;&#x65AD;&#x4E0D;&#x76F8;&#x7B49;&#xFF0C;&#x4E0E;<code>assert.deepEqual</code>&#x7684;&#x7ED3;&#x679C;&#x76F8;&#x53CD;&#x3002;</p>
+<h4 id="assertstrictequalactual-expected-message">assert.strictEqual(actual, expected[, message])</h4>
+<p>&#x5224;&#x65AD;<code>actual</code>&#x4E0E;<code>expected</code>&#x662F;&#x5426;&#x201C;&#x5168;&#x7B49;&#xFF08;<code>===</code>&#xFF09;&#x201D;&#x3002;</p>
+<h4 id="assertnotstrictequalactual-expected-message">assert.notStrictEqual(actual, expected[, message])</h4>
+<p>&#x5224;&#x65AD;<code>actual</code>&#x4E0E;<code>expected</code>&#x662F;&#x5426;&#x201C;&#x4E0D;&#x5168;&#x7B49;&#xFF08;<code>!==</code>&#xFF09;&#x201D;&#x3002;</p>
+<h4 id="assertdeepstrictequalactual-expected-message">assert.deepStrictEqual(actual, expected[, message])</h4>
+<p>&#x6DF1;&#x5EA6;&#x5224;&#x65AD;&#x5168;&#x7B49;&#xFF0C;&#x901A;&#x8FC7;&#x6BD4;&#x8F83;<code>actual</code>&#x4E0E;<code>expected</code>&#x6240;&#x6709;&#x539F;&#x578B;&#xFF08;prototype&#xFF09;&#x4E4B;&#x5916;&#x7684;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x5168;&#x7B49;&#xFF08;<code>===</code>&#xFF09;&#x6765;&#x5224;&#x65AD;&#x4E8C;&#x8005;&#x662F;&#x5426;&#x76F8;&#x7B49;&#x3002;</p>
+<h4 id="assertnotdeepstrictequalactual-expected-message">assert.notDeepStrictEqual(actual, expected[, message])</h4>
+<p>&#x6DF1;&#x5EA6;&#x5224;&#x65AD;&#x4E0D;&#x5168;&#x7B49;&#xFF0C;&#x4E0E;<code>assert.deepStrictEqual</code>&#x7ED3;&#x679C;&#x76F8;&#x53CD;&#x3002;</p>
+<h4 id="assertthrowsblock-error-message">assert.throws(block[, error][, message])</h4>
+<p>&#x671F;&#x671B;<code>block</code>&#x629B;&#x51FA;&#x4E00;&#x4E2A;<code>error</code>&#x3002;<code>error</code>&#x53EF;&#x4EE5;&#x662F;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x6216;&#x9A8C;&#x8BC1;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x9A8C;&#x8BC1;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-js">assert.throws(
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&quot;Wrong value&quot;</span>);
+  },
+  <span class="hljs-built_in">Error</span>
+);
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x9A8C;&#x8BC1;&#x9519;&#x8BEF;&#x4FE1;&#x606F;:</p>
+<pre><code class="lang-js">assert.throws(
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&quot;Wrong value&quot;</span>);
+  },
+  <span class="hljs-regexp">/value/</span>
+);
+</code></pre>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x9A8C;&#x8BC1;:</p>
+<pre><code class="lang-js">assert.throws(
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&quot;Wrong value&quot;</span>);
+  },
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-keyword">if</span> ( (err <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Error</span>) &amp;&amp; <span class="hljs-regexp">/value/</span>.test(err) ) {
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+  },
+  <span class="hljs-string">&quot;unexpected error&quot;</span>
+);
+</code></pre>
+<h4 id="assertdoesnotthrowblock-message">assert.doesNotThrow(block[, message])</h4>
+<p>&#x671F;&#x671B;<code>block</code>&#x4E0D;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x8BE6;&#x60C5;&#x89C1;<code>assert.throws</code>&#x3002;</p>
+<h4 id="assertiferrorvalue">assert.ifError(value)</h4>
+<p>&#x6D4B;&#x8BD5;<code>value</code>&#x662F;&#x5426;&#x4E3A;&#x5047;&#xFF0C;&#x5F53;<code>value</code>&#x4E3A;&#x771F;&#x65F6;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x901A;&#x5E38;&#x7528;&#x6765;&#x5224;&#x65AD;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;<code>error</code>&#x53C2;&#x6570;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Buffer.html" class="navigation navigation-next " aria-label="Next page: Buffer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Assertion Testing","level":"1.2","depth":1,"next":{"title":"Buffer","level":"1.3","depth":1,"path":"Buffer.md","ref":"Buffer.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"Assertion-Testing.md","mtime":"2016-06-20T01:36:08.915Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

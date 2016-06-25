@@ -1,0 +1,694 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Linux 操作系统 · PHP 开发者实践</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="webserver.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface/">
+            
+                <a href="../preface/">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../preface/why.html">
+            
+                <a href="../preface/why.html">
+            
+                    
+                    源起
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../preface/cross-the-gfw.html">
+            
+                <a href="../preface/cross-the-gfw.html">
+            
+                    
+                    科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    LA/NMP 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="operating-system.html">
+            
+                <a href="operating-system.html">
+            
+                    
+                    Linux 操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="webserver.html">
+            
+                <a href="webserver.html">
+            
+                    
+                    Web 服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="dbserver.html">
+            
+                <a href="dbserver.html">
+            
+                    
+                    数据库服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="php.html">
+            
+                <a href="php.html">
+            
+                    
+                    PHP 语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="website-architecture.html">
+            
+                <a href="website-architecture.html">
+            
+                    
+                    网站系统架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../2-development-environment/">
+            
+                <a href="../2-development-environment/">
+            
+                    
+                    一致性开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../2-development-environment/virtualization.html">
+            
+                <a href="../2-development-environment/virtualization.html">
+            
+                    
+                    虚拟化技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../2-development-environment/amp-packages.html">
+            
+                <a href="../2-development-environment/amp-packages.html">
+            
+                    
+                    集成环境安装包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../2-development-environment/editors.html">
+            
+                <a href="../2-development-environment/editors.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../3-development/">
+            
+                <a href="../3-development/">
+            
+                    
+                    设计 & 开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../3-development/rules.html">
+            
+                <a href="../3-development/rules.html">
+            
+                    
+                    开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../3-development/coding.html">
+            
+                <a href="../3-development/coding.html">
+            
+                    
+                    设计编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../3-development/testing.html">
+            
+                <a href="../3-development/testing.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../3-development/debugging.html">
+            
+                <a href="../3-development/debugging.html">
+            
+                    
+                    诊断与调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../3-development/security.html">
+            
+                <a href="../3-development/security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../3-development/documentation.html">
+            
+                <a href="../3-development/documentation.html">
+            
+                    
+                    文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../4-development-process/">
+            
+                <a href="../4-development-process/">
+            
+                    
+                    过程 & 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../4-development-process/life-cycle-model.html">
+            
+                <a href="../4-development-process/life-cycle-model.html">
+            
+                    
+                    开发过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../4-development-process/version-control.html">
+            
+                <a href="../4-development-process/version-control.html">
+            
+                    
+                    版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../4-development-process/ci.html">
+            
+                <a href="../4-development-process/ci.html">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../4-development-process/deployment.html">
+            
+                <a href="../4-development-process/deployment.html">
+            
+                    
+                    上线部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../5-php-internals/">
+            
+                <a href="../5-php-internals/">
+            
+                    
+                    PHP Internals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../5-php-internals/php-extension.html">
+            
+                <a href="../5-php-internals/php-extension.html">
+            
+                    
+                    PHP 扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../5-php-internals/php-vm.html">
+            
+                <a href="../5-php-internals/php-vm.html">
+            
+                    
+                    PHP 虚拟机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Linux 操作系统</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="linux-&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;">Linux &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</h1>
+<p>&#x5BF9;&#x4E8E; PHP &#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E2A;&#x4EBA;&#x800C;&#x8A00;&#xFF0C;&#x7528;&#x4EC0;&#x4E48;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5199;&#x4EE3;&#x7801;&#x5E76;&#x4E0D;&#x91CD;&#x8981;&#xFF0C;&#x91CD;&#x8981;&#x7684;&#x662F;&#x9002;&#x5408;&#xFF0C;&#x7528;&#x7740;&#x987A;&#x624B;&#x3001;&#x7528;&#x7740;&#x723D;&#x3002;&#x3002;&#x3002;</p>
+<blockquote>
+<p>@&#x4F7F;&#x7528; Windows &#x7684; PHP &#x5F00;&#x53D1;&#x540C;&#x5B66;&#x4EEC;&#xFF0C;&#x9274;&#x4E8E; Windows &#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF08;cmd.exe&#xFF09;&#x4E00;&#x5982;&#x65E2;&#x5F80;&#x3001;&#x6BEB;&#x65E0;&#x6539;&#x8FDB;&#x7684;&#x8868;&#x73B0;&#xFF0C;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#x5927;&#x5BB6;&#x4F7F;&#x7528; <a href="http://bliker.github.io/cmder/" target="_blank">Cmder</a> &#x66FF;&#x4EE3;&#x4E4B;&#x3002;&#x5728;&#x4E2D;&#x6587;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;Cmder &#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x540E;&#x60A8;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#x5728;&#x6B64; - <a href="https://github.com/Just1n/Posts/blob/master/Cmder%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93.md" target="_blank">Cmder &#x7B80;&#x5355;&#x4F7F;&#x7528;&#x5C0F;&#x7ED3;</a></p>
+</blockquote>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x6BD5;&#x7ADF;PHP &#x7A0B;&#x5E8F;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x90FD;&#x4F1A;&#x8FD0;&#x884C;&#x5728; Linux &#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x56E0;&#x6B64;&#x4E2A;&#x4EBA;&#x8BA4;&#x4E3A;&#x6BCF;&#x4E2A; PHP &#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x90FD;&#x5E94;&#x8BE5;&#x719F;&#x6089; Linux &#x7CFB;&#x7EDF;&#x5E38;&#x7528;&#x64CD;&#x4F5C;&#x4EE5;&#x53CA;&#x76F8;&#x5173; LA/NMP &#x73AF;&#x5883;&#x7684;&#x642D;&#x5EFA;&#x3001;&#x914D;&#x7F6E;&#x3002;</p>
+<h2 id="&#x5173;&#x4E8E;-linux-&#x53D1;&#x884C;&#x7248;">&#x5173;&#x4E8E; Linux &#x53D1;&#x884C;&#x7248;</h2>
+<p>&#x5173;&#x4E8E; Linux &#x53D1;&#x884C;&#x7248;&#x7684;&#x9009;&#x62E9;&#x95EE;&#x9898;&#xFF08;&#x597D;&#x5427;&#xFF0C;&#x53C8;&#x662F;&#x5751;&#x3002;&#x3002;&#x3002;&#xFF09;&#xFF0C;<a href="http://searchdatacenter.techtarget.com/feature/Compare-popular-Linux-distributions-for-servers" title="TechTarget: Compare popular Linux distributions for server (May 2014)" target="_blank">&#x4E0D;&#x8FC7;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x7528;&#x6237;&#x6570;&#x91CF;&#x6765;&#x8BB2;&#xFF0C; Redhat &#x7CFB;&#x3001;SUSE &#x7CFB; &#x4E0E; Ubuntu &#x7CFB;&#x5360;&#x4E86;&#x591A;&#x6570;</a> &#x3002;&#x76F8;&#x5BF9;&#x6BD4;&#x800C;&#x8A00;&#xFF0C;&#x4E2A;&#x4EBA;&#x66F4;&#x559C;&#x6B22; Redhat&#x7CFB;&#x7684; CentOS&#xFF08;&#x5173;&#x4E8E; Fedora, Redhat &#x548C; CentOS &#x4E09;&#x8005;&#x7684;&#x5173;&#x7CFB;&#x53EF;&#x4EE5; <a href="https://danielmiessler.com/study/fedora_redhat_centos/" title="The Difference Between Fedora, Redhat, and CentOS" target="_blank">&#x53C2;&#x8003;&#x8FD9;&#x91CC;</a> &#xFF09;&#xFF0C;&#x4E2A;&#x4EBA;&#x89C9;&#x5F97; CentOS &#x8DD1;&#x670D;&#x52A1;&#x5668;&#x76F8;&#x5BF9;&#x7A33;&#x5B9A;&#x4E9B;&#xFF08;&#x53D7;&#x9E1F;&#x54E5;&#x5F71;&#x54CD;&#x8F83;&#x6DF1;&#xFF09;&#x3001;&#x7CFB;&#x7EDF;&#x672C;&#x8EAB;&#x4E5F;&#x5E72;&#x51C0;&#x7B80;&#x5355;&#xFF0C;&#x7F3A;&#x70B9;&#x662F;&#x5F88;&#x591A;&#x5305;&#x5B98;&#x65B9;&#x6E90;&#x91CC;&#x9762;&#x6CA1;&#x6709;&#xFF0C;&#x5C31;&#x7B97;&#x662F; EPEL &#x91CC;&#x9762;&#x4E5F;&#x6CA1;&#x591A;&#x5C11;&#x4E1C;&#x897F;&#xFF0C;&#x56E0;&#x6B64;&#x5BF9;&#x4E8E; LA/NMP &#x5F00;&#x53D1;&#xFF0C;&#x8FD9;&#x91CC;&#x63A8;&#x8350;&#x4E0B; EPEL&#x6E90; + IUS &#x6E90;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x914D;&#x7F6E;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5; <a href="https://iuscommunity.org/pages/IUSClientUsageGuide.html#configuration" title="CentOS: IUS Client Configuration Guide" target="_blank">&#x53C2;&#x8003;&#x8FD9;&#x91CC;</a> &#x3002;</p>
+<h2 id="&#x4E00;&#x4E9B;-linux-&#x547D;&#x4EE4;&#x5DE5;&#x5177;">&#x4E00;&#x4E9B; Linux &#x547D;&#x4EE4;/&#x5DE5;&#x5177;</h2>
+<blockquote>
+<p><strong>&#x7C97;&#x4F53;&#x90E8;&#x5206;</strong> - &#x4E2A;&#x4EBA;&#x8BA4;&#x4E3A;&#x5E94;&#x8BE5;&#x591A;&#x52A0;&#x5173;&#x6CE8;&#x7684;</p>
+</blockquote>
+<ul>
+<li>Shell<ul>
+<li>echo, printf, <strong>test</strong>&#xFF08;&#x5199;shell&#x811A;&#x672C;&#x5224;&#x65AD;&#x6761;&#x4EF6; -n -z &#x50BB;&#x50BB;&#x5206;&#x4E0D;&#x6E05;&#x695A;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x9760; ta &#x4E86;&#xFF09;, sleep, sh, set</li>
+</ul>
+</li>
+<li>&#x7528;&#x6237;&#x73AF;&#x5883;<ul>
+<li>clear, env, export, history, passwd, su, sudo, exit, who</li>
+</ul>
+</li>
+<li>&#x5305;&#x7BA1;&#x7406;<ul>
+<li>yum, rpm or apt-get, dpkg</li>
+</ul>
+</li>
+<li>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;<ul>
+<li>pwd, cd, cp, ls, mkdir, mv, rm, ln</li>
+<li>file, du, df, mount, touch, cat</li>
+<li>chmod, chown, chgrp, chksum</li>
+</ul>
+</li>
+<li>&#x67E5;&#x627E;<ul>
+<li><strong>find</strong>, <strong>grep</strong>, whatis, whereis</li>
+</ul>
+</li>
+<li>&#x6587;&#x672C;&#x5904;&#x7406;<ul>
+<li><strong>awk</strong>, <strong>sed</strong>, cut, diff, sort, uniq, wc, <strong>xargs</strong></li>
+<li>head, <strong>tail</strong>&#xFF08;tail -f&#xFF09;, less</li>
+</ul>
+</li>
+<li>&#x8FDB;&#x7A0B;&#x76F8;&#x5173;<ul>
+<li>at, cron, <strong>crontab</strong>, kill, killall, pgrep, <strong>ps</strong>, time, nohup, <strong>screen</strong>&#xFF08;&#x8FDC;&#x7A0B;&#x4F1A;&#x8BDD;&#x7BA1;&#x7406;&#xFF09;, <strong>supervisord</strong>&#xFF08;&#x8FDB;&#x7A0B;&#x5B88;&#x62A4;&#x795E;&#xFF09;</li>
+</ul>
+</li>
+<li>&#x7F51;&#x7EDC;<ul>
+<li>dig, host, ifconfig, netstat, nslookup, ping, route, traceroute, <strong>iptables</strong>, wget, <strong>curl</strong></li>
+</ul>
+</li>
+<li>&#x538B;&#x7F29;<ul>
+<li><strong>tar</strong>, gzip, unzip</li>
+</ul>
+</li>
+<li>&#x8FDC;&#x7A0B;<ul>
+<li>ssh, scp, sftp, <strong>rsync</strong>&#xFF08;&#x6587;&#x4EF6;&#x540C;&#x6B65;&#xFF09;</li>
+</ul>
+</li>
+<li>&#x7CFB;&#x7EDF;&#x72B6;&#x51B5;<ul>
+<li>uname, free, df, du, top, <strong>htop</strong>(&#x6BD4; top &#x597D;&#x7528;&#x591A;&#x4E86;), iftop, iotop, iostat, isof<blockquote>
+<p><img src="../assets/linux_observability_tools.png" alt="**Linux Perf Observability Tools Map**">  </p>
+<p>&#x8BE5;&#x56FE;&#x5F88;&#x597D;&#x7684;&#x8BF4;&#x660E;&#x4E86; Linux &#x4E0B;&#x5404;&#x79CD;&#x6027;&#x80FD;&#x76D1;&#x6D4B;&#x5DE5;&#x5177; -- from <a href="http://www.brendangregg.com/perf.html" target="_blank">Linux perf Examples</a></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>&#x5176;&#x4ED6;<ul>
+<li><strong>man</strong> (&#x67E5;&#x9605;&#x547D;&#x4EE4;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;), alias, <strong>ab</strong>&#xFF08;&#x7B80;&#x5355;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;&#xFF09;, service, chkconfig, <strong>ulimit</strong>, <strong>sysctl</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x6269;&#x5C55;&#x9605;&#x8BFB;&#xFF1A;">&#x6269;&#x5C55;&#x9605;&#x8BFB;&#xFF1A;</h2>
+<ul>
+<li><a href="http://vbird.dic.ksu.edu.tw/" target="_blank"><strong>&#x9E1F;&#x54E5;&#x7684; Linux &#x79C1;&#x623F;&#x83DC;</strong></a> - &#x7B80;&#x4F53;&#x7248;&#xFF0C;&#x6B64;&#x9E1F;&#x54E5;&#x662F;&#x53F0;&#x6E7E;&#x7684; Linux &#x5927;&#x795E;&#x9E1F;&#x54E5;&#xFF0C;&#x4E0D;&#x662F; Laruence &#x9E1F;&#x54E5; :-) &#xFF0C;&#x559C;&#x6B22;&#x539F;&#x6C41;&#x539F;&#x5473;&#x7E41;&#x4F53;&#x7248;&#x7684; <a href="http://linux.vbird.org/" target="_blank">&#x8BF7;&#x770B;&#x8FD9;&#x91CC;</a> &#xFF08;&#x5F53;&#x5E74;&#x8FD8;&#x6CA1;&#x51FA;&#x4E66;&#x7684;&#x65F6;&#x5019;&#x5076;&#x5C31;&#x770B;&#x8FD9;&#x91CC;&#x4E86;&#xFF0C;&#x8FD8;&#x987A;&#x4FBF;&#x77E5;&#x9053;&#x4E86;&#x4E00;&#x4E9B;&#x9E1F;&#x54E5;&#x7684;&#x8F76;&#x4E8B;&#xFF0C;&#x6BD4;&#x5982;&#x98DE;&#x868A;&#x75C7;&#x3001;&#x670D;&#x5175;&#x5F79;&#x4E4B;&#x7C7B;&#x7684;&#x3002;&#x3002;&#x3002;&#xFF09;&#xFF0C;&#x4E0D;&#x559C;&#x6B22;&#x7535;&#x5B50;&#x7248;&#x7684;&#x4EA6;&#x53EF;&#x4EE5; <a href="http://book.douban.com/subject/4889838/" target="_blank">&#x652F;&#x6301;&#x7EB8;&#x8D28;&#x7248;</a></li>
+<li><a href="http://linuxtools-rst.readthedocs.org/zh_CN/latest/" target="_blank">Linux&#x5DE5;&#x5177;&#x5FEB;&#x901F;&#x6559;&#x7A0B;</a> - &#x8FD9;&#x672C;&#x4E66;&#x4E13;&#x6CE8;&#x4E8E;Linux&#x5DE5;&#x5177;&#x7684;&#x6700;&#x5E38;&#x7528;&#x7528;&#x6CD5;&#xFF0C;&#x4EE5;&#x4FBF;&#x8BFB;&#x8005;&#x80FD;&#x4EE5;&#x6700;&#x5FEB;&#x65F6;&#x95F4;&#x638C;&#x63E1;&#xFF0C;&#x5E76;&#x5728;&#x5DE5;&#x4F5C;&#x4E2D;&#x5E94;&#x7528;&#xFF1B;</li>
+<li><a href="http://coolshell.cn/articles/8883.html" target="_blank"><strong>&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#x7684; Linux &#x6280;&#x5DE7;</strong></a> - Coolshell &#x9648;&#x7693;&#x524D;&#x8F88;&#x7684;&#x4E00;&#x4E9B;&#x603B;&#x7ED3;&#xFF0C;&#x4ECE;&#x524D;&#x8F88;&#x535A;&#x5BA2;&#x4E0A;&#x5B66;&#x5230;&#x4E86;&#x592A;&#x591A;&#x4E1C;&#x897F;&#x3002;&#x3002;&#x3002; <a href="http://coolshell.cn/tag/linux" target="_blank">&#x9648;&#x7693;&#x524D;&#x8F88;&#x66F4;&#x591A;&#x5173;&#x4E8E; Linux &#x7684;&#x6587;&#x7AE0;</a></li>
+<li><a href="https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora" target="_blank"><strong>Redhat &#x7CFB;&#x8F6C; Ubuntu &#x7CFB;&#x5FEB;&#x901F;&#x4E0A;&#x624B;</strong></a> -&#x82F1;&#x6587;&#xFF0C; Ubuntu &#x4E3A;&#x4E86;&#x62A2;&#x7528;&#x6237;&#x4E5F;&#x662F;&#x62FC;&#x4E86; :-)</li>
+<li><a href="http://www.zhihu.com/question/20559538" target="_blank"><strong>&#x77E5;&#x4E4E;&#xFF1A; Linux &#x5751;&#x4E4B; - Linux &#x4E0B;&#x4E3A;&#x4F55;&#x8981;&#x5173;&#x95ED; SELinux&#xFF1F;</strong></a> - &#x4FDD;&#x6301; SELinux &#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x5404;&#x79CD;&#x8BE1;&#x5F02;&#x95EE;&#x9898;&#xFF0C;&#x9664;&#x975E;&#x8D35;&#x53F8;&#x5BF9;&#x5B89;&#x5168;&#x6027;&#x6709;&#x5F02;&#x5E38;&#x9AD8;&#x7684;&#x8981;&#x6C42;&#x4E14;&#x6709;&#x4E13;&#x4E1A;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#xFF0C;&#x4E2A;&#x4EBA;&#x8FD8;&#x662F;&#x5EFA;&#x8BAE;&#x88C5;&#x5B8C;&#x7CFB;&#x7EDF;&#x5C31;&#x76F4;&#x63A5;&#x5173;&#x95ED; SELinux&#x3002;</li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: LA/NMP 介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="webserver.html" class="navigation navigation-next " aria-label="Next page: Web 服务器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linux 操作系统","level":"1.3.1","depth":2,"next":{"title":"Web 服务器","level":"1.3.2","depth":2,"path":"1-lanmp/webserver.md","ref":"1-lanmp/webserver.md","articles":[]},"previous":{"title":"LA/NMP 介绍","level":"1.3","depth":1,"path":"1-lanmp/README.md","ref":"1-lanmp/README.md","articles":[{"title":"Linux 操作系统","level":"1.3.1","depth":2,"path":"1-lanmp/operating-system.md","ref":"1-lanmp/operating-system.md","articles":[]},{"title":"Web 服务器","level":"1.3.2","depth":2,"path":"1-lanmp/webserver.md","ref":"1-lanmp/webserver.md","articles":[]},{"title":"数据库服务器","level":"1.3.3","depth":2,"path":"1-lanmp/dbserver.md","ref":"1-lanmp/dbserver.md","articles":[]},{"title":"PHP 语言","level":"1.3.4","depth":2,"path":"1-lanmp/php.md","ref":"1-lanmp/php.md","articles":[]},{"title":"网站系统架构","level":"1.3.5","depth":2,"path":"1-lanmp/website-architecture.md","ref":"1-lanmp/website-architecture.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PHP 开发者实践","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"PHP 编程学习入门教程"},"file":{"path":"1-lanmp/operating-system.md","mtime":"2016-06-20T01:42:07.584Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:43:25.824Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

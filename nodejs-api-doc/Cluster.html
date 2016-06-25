@@ -1,0 +1,1090 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Cluster · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Console.html" />
+    
+    
+    <link rel="prev" href="Child_process.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Cluster</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cluster">Cluster</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x5355;&#x4E2A;&#x7684;<code>node.js</code>&#x5B9E;&#x4F8B;&#x8FD0;&#x884C;&#x5728;&#x5355;&#x7EBF;&#x7A0B;&#x4E0A;&#x3002;&#x4E3A;&#x4E86;&#x4EAB;&#x53D7;&#x591A;&#x6838;&#x7CFB;&#x7EDF;&#x7684;&#x4F18;&#x52BF;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x542F;&#x52A8;&#x4E00;&#x4E2A;<code>node.js</code>&#x96C6;&#x7FA4;&#x6765;&#x5904;&#x7406;&#x8D1F;&#x8F7D;&#x3002;</p>
+<p><code>cluster</code>&#x6A21;&#x5757;&#x5141;&#x8BB8;&#x4F60;&#x65B9;&#x4FBF;&#x5730;&#x521B;&#x5EFA;&#x5171;&#x4EAB;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x53E3;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> cluster = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cluster&apos;</span>);
+<span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+<span class="hljs-keyword">var</span> numCPUs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;os&apos;</span>).cpus().length;
+
+<span class="hljs-keyword">if</span> (cluster.isMaster) {
+  <span class="hljs-comment">// Fork workers.</span>
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; numCPUs; i++) {
+    cluster.fork();
+  }
+
+  cluster.on(<span class="hljs-string">&apos;exit&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">worker, code, signal</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;worker &apos;</span> + worker.process.pid + <span class="hljs-string">&apos; died&apos;</span>);
+  });
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-comment">// Workers can share any TCP connection</span>
+  <span class="hljs-comment">// In this case its a HTTP server</span>
+  http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+    res.writeHead(<span class="hljs-number">200</span>);
+    res.end(<span class="hljs-string">&quot;hello world\n&quot;</span>);
+  }).listen(<span class="hljs-number">8000</span>);
+}
+</code></pre>
+<p>&#x542F;&#x52A8;<code>node.js</code>&#x5C06;&#x4F1A;&#x5728;&#x5DE5;&#x4F5C;&#x7EBF;&#x7A0B;&#x4E2D;&#x5171;&#x4EAB;8000&#x7AEF;&#x53E3;&#xFF1A;</p>
+<pre><code class="lang-SHELL">% NODE_DEBUG=cluster iojs server.js
+23521,Master Worker 23524 online
+23521,Master Worker 23526 online
+23521,Master Worker 23523 online
+23521,Master Worker 23528 online
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x662F;&#x6700;&#x8FD1;&#x624D;&#x5F00;&#x53D1;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x80FD;&#x5728;&#x672A;&#x6765;&#x6709;&#x6240;&#x6539;&#x53D8;&#x3002;&#x8BF7;&#x8BD5;&#x7528;&#x5B83;&#x5E76;&#x63D0;&#x4F9B;&#x53CD;&#x9988;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5728;Windows&#x4E2D;&#xFF0C;&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#x5EFA;&#x7ACB;&#x547D;&#x540D;&#x7BA1;&#x9053;&#x670D;&#x52A1;&#x5668;&#x76EE;&#x524D;&#x662F;&#x4E0D;&#x53EF;&#x884C;&#x7684;&#x3002;</p>
+<h4 id="&#x5DE5;&#x4F5C;&#x539F;&#x7406;">&#x5DE5;&#x4F5C;&#x539F;&#x7406;</h4>
+<p>&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x901A;&#x8FC7;<code>child_process.fork</code>&#x65B9;&#x6CD5;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x4E0E;&#x7236;&#x8FDB;&#x7A0B;&#x901A;&#x8FC7;IPC&#x7BA1;&#x9053;&#x6C9F;&#x901A;&#x4EE5;&#x53CA;&#x76F8;&#x4E92;&#x4F20;&#x9012;&#x670D;&#x52A1;&#x5668;&#x53E5;&#x67C4;&#x3002;</p>
+<p>&#x96C6;&#x7FA4;&#x6A21;&#x5F0F;&#x652F;&#x6301;&#x4E24;&#x79CD;&#x5206;&#x914D;&#x4F20;&#x5165;&#x8FDE;&#x63A5;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x79CD;&#xFF08;&#x5E76;&#x4E14;&#x662F;&#x9664;&#x4E86;Windows&#x5E73;&#x53F0;&#x5916;&#x9ED8;&#x8BA4;&#x7684;&#x65B9;&#x5F0F;&#xFF09;&#x662F;&#x5FAA;&#x73AF;&#x5F0F;&#x3002;&#x4E3B;&#x8FDB;&#x7A0B;&#x76D1;&#x542C;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#xFF0C;&#x63A5;&#x53D7;&#x65B0;&#x8FDE;&#x63A5;&#xFF0C;&#x5E76;&#x4E14;&#x4EE5;&#x8F6E;&#x6D41;&#x7684;&#x65B9;&#x5F0F;&#x5206;&#x914D;&#x7ED9;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#xFF0C;&#x5E76;&#x4E14;&#x4EE5;&#x4E00;&#x4E9B;&#x5185;&#x5EFA;&#x673A;&#x5236;&#x6765;&#x907F;&#x514D;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x8FC7;&#x8F7D;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#xFF0C;&#x4E3B;&#x8FDB;&#x7A0B;&#x5EFA;&#x7ACB;&#x76D1;&#x542C;<code>socket</code>&#x5E76;&#x4E14;&#x5C06;&#x5B83;&#x53D1;&#x9001;&#x7ED9;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x76F4;&#x63A5;&#x63A5;&#x53D7;&#x4F20;&#x5165;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x5F0F;&#x7406;&#x8BBA;&#x4E0A;&#x6709;&#x6700;&#x597D;&#x7684;&#x6027;&#x80FD;&#x3002;&#x4F46;&#x662F;&#x5728;&#x5B9E;&#x8DF5;&#x4E2D;&#xFF0C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x8C03;&#x5EA6;&#x4E0D;&#x53EF;&#x9884;&#x6D4B;&#xFF0C;&#x5206;&#x914D;&#x5F80;&#x5F80;&#x5341;&#x5206;&#x4E0D;&#x5E73;&#x8861;&#x3002;&#x8D1F;&#x8F7D;&#x66FE;&#x88AB;&#x89C2;&#x5BDF;&#x5230;8&#x4E2A;&#x8FDB;&#x7A0B;&#x4E2D;&#xFF0C;&#x8D85;&#x8FC7;70%&#x7684;&#x8FDE;&#x63A5;&#x7ED3;&#x675F;&#x4E8E;&#x5176;&#x4E2D;&#x7684;2&#x4E2A;&#x8FDB;&#x7A0B;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;<code>server.listen()</code>&#x5C06;&#x5927;&#x90E8;&#x5206;&#x5DE5;&#x4F5C;&#x4EA4;&#x7ED9;&#x4E86;&#x4E3B;&#x8FDB;&#x7A0B;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;<code>node.js</code>&#x8FDB;&#x7A0B;&#x548C;&#x4E00;&#x4E2A;&#x96C6;&#x7FA4;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4F1A;&#x5728;&#x4E09;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x6709;&#x6240;&#x533A;&#x522B;&#xFF1A;</p>
+<ol>
+<li><p><code>server.listen({fd: 7})</code> &#x56E0;&#x4E3A;&#x6D88;&#x606F;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x4E86;&#x4E3B;&#x8FDB;&#x7A0B;&#xFF0C;&#x4E3B;&#x8FDB;&#x7A0B;&#x7684;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;<code>7</code>&#x4F1A;&#x88AB;&#x76D1;&#x542C;&#xFF0C;&#x5E76;&#x4E14;&#x53E5;&#x67C4;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x800C;&#x4E0D;&#x662F;&#x76D1;&#x542C;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x4E3A;<code>7</code>&#x7684;&#x4E1C;&#x897F;&#x3002;</p>
+</li>
+<li><p><code>server.listen(handle)</code> &#x660E;&#x786E;&#x5730;&#x76D1;&#x542C;&#x53E5;&#x67C4;&#xFF0C;&#x4F1A;&#x8BA9;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x7ED9;&#x5B9A;&#x7684;&#x53E5;&#x67C4;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E0E;&#x4E3B;&#x8FDB;&#x7A0B;&#x901A;&#x4FE1;&#x3002;&#x5982;&#x679C;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x6B64;&#x53E5;&#x67C4;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x5047;&#x8BBE;&#x4F60;&#x77E5;&#x9053;&#x4F60;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#x3002;</p>
+</li>
+<li><p><code>server.listen(0)</code> &#x901A;&#x5E38;&#xFF0C;&#x8FD9;&#x4F1A;&#x5BFC;&#x81F4;&#x670D;&#x52A1;&#x5668;&#x76D1;&#x542C;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x7AEF;&#x53E3;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5728;&#x96C6;&#x7FA4;&#x4E2D;&#xFF0C;&#x6BCF;&#x6B21;&#x8C03;&#x7528;<code>listen(0)</code>&#x65F6;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4F1A;&#x6536;&#x5230;&#x540C;&#x6837;&#x7684;&#x201C;&#x968F;&#x673A;&#x201D;&#x7AEF;&#x53E3;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x7AEF;&#x53E3;&#x53EA;&#x662F;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#x662F;&#x968F;&#x673A;&#x7684;&#xFF0C;&#x4F46;&#x5728;&#x4E4B;&#x540E;&#x662F;&#x53EF;&#x9884;&#x77E5;&#x7684;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x76D1;&#x542C;&#x7279;&#x5B9A;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x6839;&#x636E;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;PID&#x6765;&#x751F;&#x6210;&#x7AEF;&#x53E3;&#x53F7;&#x3002;</p>
+</li>
+</ol>
+<p>&#x7531;&#x4E8E;&#x5728;<code>node.js</code>&#x6216;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x95F4;&#x6CA1;&#x6709;&#x8DEF;&#x7531;&#x903B;&#x8F91;&#x4E5F;&#x6CA1;&#x6709;&#x5171;&#x4EAB;&#x7684;&#x72B6;&#x6001;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x4E3A;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x6210;&#x4F9D;&#x8D56;&#x592A;&#x91CD;&#x7684;&#x5185;&#x5B58;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#xFF0C;&#x5982;&#x8BBE;&#x8BA1;&#x4F1A;&#x8BDD;&#x548C;&#x767B;&#x9646;&#x65F6;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x90FD;&#x662F;&#x72EC;&#x7ACB;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4F60;&#x7A0B;&#x5E8F;&#x7684;&#x9700;&#x8981;&#x88AB;&#x6740;&#x6B7B;&#x6216;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x5E76;&#x4E14;&#x5E76;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x5176;&#x4ED6;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;&#x53EA;&#x8981;&#x6709;&#x6D3B;&#x8DC3;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#xFF0C;&#x90A3;&#x4E48;&#x670D;&#x52A1;&#x5668;&#x5C31;&#x4F1A;&#x7EE7;&#x7EED;&#x63A5;&#x6536;&#x8FDE;&#x63A5;&#x3002;&#x4F46;&#x662F;<code>node.js</code>&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x4E3A;&#x4F60;&#x7BA1;&#x7406;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6570;&#x3002;&#x6240;&#x4EE5;&#x6839;&#x636E;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x9700;&#x6C42;&#x6765;&#x7BA1;&#x7406;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6C60;&#x662F;&#x4F60;&#x7684;&#x8D23;&#x4EFB;&#x3002;</p>
+<h4 id="clusterschedulingpolicy">cluster.schedulingPolicy</h4>
+<p>&#x8C03;&#x5EA6;&#x7B56;&#x7565;&#xFF0C;&#x9009;&#x62E9;<code>cluster.SCHED_RR</code>&#x6765;&#x4F7F;&#x7528;&#x5FAA;&#x73AF;&#x5F0F;&#xFF0C;&#x6216;&#x9009;&#x62E9;<code>cluster.SCHED_NONE</code>&#x6765;&#x7531;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5904;&#x7406;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x8BBE;&#x5B9A;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x4F60;&#x7B2C;&#x4E00;&#x6B21;&#x542F;&#x52A8;&#x4E86;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6216;&#x8C03;&#x7528;<code>cluster.setupMaster()</code>&#x65B9;&#x6CD5;&#x540E;&#x5C31;&#x4E0D;&#x53EF;&#x518D;&#x66F4;&#x6539;&#x3002;</p>
+<p><code>SCHED_RR</code>&#x662F;&#x9664;&#x4E86;Windows&#x5916;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x4E00;&#x65E6;<code>libuv</code>&#x80FD;&#x591F;&#x6709;&#x6548;&#x5730;&#x5206;&#x914D;IOCP&#x53E5;&#x67C4;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x5DE8;&#x5927;&#x7684;&#x6027;&#x80FD;&#x635F;&#x5931;&#xFF0C;&#x90A3;&#x4E48;Windows&#x4E0B;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x4E5F;&#x4F1A;&#x53D8;&#x4E3A;&#x5B83;&#x3002;</p>
+<p><code>cluster.schedulingPolicy</code>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x73AF;&#x5883;&#x53D8;&#x91CF;<code>NODE_CLUSTER_SCHED_POLICY</code>&#x6765;&#x8BBE;&#x5B9A;&#x3002;&#x5408;&#x6CD5;&#x503C;&#x4E3A;<code>rr</code>&#x548C;<code>none</code>&#x3002;</p>
+<h4 id="clustersettings">cluster.settings</h4>
+<ul>
+<li><strong>Object</strong><ul>
+<li>execArgv Array &#x4F20;&#x9012;&#x7ED9;<code>node.js</code>&#x6267;&#x884C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;<code>process.execArgv</code>&#xFF09;</li>
+<li>exec String &#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;<code>process.argv[1]</code>&#xFF09;</li>
+<li>args Array &#x4F20;&#x9012;&#x7ED9;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;<code>process.argv.slice(2)</code>&#xFF09;</li>
+<li>silent Boolean &#x662F;&#x5426;&#x5C06;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;&#x8F93;&#x51FA;&#x4F20;&#x9012;&#x7ED9;&#x7236;&#x8FDB;&#x7A0B;&#x7684;<code>stdio</code>&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#xFF09;</li>
+<li>uid Number &#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x7684;ID</li>
+<li>gid Number &#x8BBE;&#x7F6E;&#x8FDB;&#x7A0B;&#x7EC4;&#x7684;ID</li>
+</ul>
+</li>
+</ul>
+<p>&#x5728;&#x8C03;&#x7528;<code>.setupMaster()</code>&#xFF08;&#x6216;<code>.fork()</code>&#xFF09;&#x65B9;&#x6CD5;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;<code>settings</code>&#x5BF9;&#x8C61;&#x4F1A;&#x5B58;&#x653E;&#x65B9;&#x6CD5;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;<code>.setupMaster()</code>&#x4EC5;&#x80FD;&#x88AB;&#x8C03;&#x7528;&#x4E00;&#x6B21;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x88AB;&#x8BBE;&#x7F6E;&#x540E;&#x4FBF;&#x4E0D;&#x53EF;&#x66F4;&#x6539;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x4E0D;&#x5E94;&#x7531;&#x4F60;&#x6765;&#x624B;&#x5DE5;&#x66F4;&#x6539;&#x6216;&#x8BBE;&#x7F6E;&#x3002;</p>
+<h4 id="clusterismaster">cluster.isMaster</h4>
+<ul>
+<li>Boolean</li>
+</ul>
+<p>&#x5982;&#x679C;&#x8FDB;&#x7A0B;&#x662F;&#x4E3B;&#x8FDB;&#x7A0B;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#x3002;&#x8FD9;&#x7531;<code>process.env.NODE_UNIQUE_ID</code>&#x51B3;&#x5B9A;&#x3002;&#x5982;&#x679C;<code>process.env.NODE_UNIQUE_ID</code>&#x4E3A;<code>undefined</code>&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x8FD4;&#x56DE;<code>true</code>&#x3002;</p>
+<h4 id="clusterisworker">cluster.isWorker</h4>
+<ul>
+<li>Boolean</li>
+</ul>
+<p>&#x5982;&#x679C;&#x8FDB;&#x7A0B;&#x4E0D;&#x662F;&#x4E3B;&#x8FDB;&#x7A0B;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#x3002;</p>
+<h4 id="event-fork">Event: &apos;fork&apos;</h4>
+<ul>
+<li>worker Worker object</li>
+</ul>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7531;<code>cluster</code>&#x6A21;&#x5757;&#x6240;&#x5F00;&#x542F;&#x65F6;&#x4F1A;&#x89E6;&#x53D1;<code>fork</code>&#x4E8B;&#x4EF6;&#x3002;&#x8FD9;&#x80FD;&#x88AB;&#x7528;&#x6765;&#x8BB0;&#x5F55;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6D3B;&#x52A8;&#x65E5;&#x5FD7;&#xFF0C;&#x6216;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8D85;&#x65F6;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> timeouts = [];
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">errorMsg</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&quot;Something must be wrong with the connection ...&quot;</span>);
+}
+
+cluster.on(<span class="hljs-string">&apos;fork&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">worker</span>) </span>{
+  timeouts[worker.id] = setTimeout(errorMsg, <span class="hljs-number">2000</span>);
+});
+cluster.on(<span class="hljs-string">&apos;listening&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">worker, address</span>) </span>{
+  clearTimeout(timeouts[worker.id]);
+});
+cluster.on(<span class="hljs-string">&apos;exit&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">worker, code, signal</span>) </span>{
+  clearTimeout(timeouts[worker.id]);
+  errorMsg();
+});
+</code></pre>
+<h4 id="event-online">Event: &apos;online&apos;</h4>
+<ul>
+<li>worker Worker object</li>
+</ul>
+<p>&#x5F53;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5DE5;&#x4F5C;&#x7EBF;&#x7A0B;&#x540E;&#xFF0C;&#x5DE5;&#x4F5C;&#x7EBF;&#x7A0B;&#x5FC5;&#x987B;&#x54CD;&#x5E94;&#x4E00;&#x4E2A;&#x5728;&#x7EBF;&#x4FE1;&#x606F;&#x3002;&#x5F53;&#x4E3B;&#x8FDB;&#x7A0B;&#x63A5;&#x6536;&#x5230;&#x5728;&#x7EBF;&#x4FE1;&#x606F;&#x540E;&#x5B83;&#x4F1A;&#x89E6;&#x53D1;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x3002;<code>fork</code>&#x548C;<code>online</code>&#x4E8B;&#x4EF6;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF1A;<code>fork</code>&#x662F;&#x4E3B;&#x8FDB;&#x7A0B;&#x521B;&#x5EFA;&#x4E86;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x540E;&#x89E6;&#x53D1;&#xFF0C;<code>online</code>&#x662F;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x5F00;&#x59CB;&#x8FD0;&#x884C;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<pre><code class="lang-js">cluster.on(<span class="hljs-string">&apos;online&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">worker</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Yay, the worker responded after it was forked&quot;</span>);
+});
+</code></pre>
+<h4 id="event-listening">Event: &apos;listening&apos;</h4>
+<ul>
+<li>worker Worker object</li>
+<li>address Object</li>
+</ul>
+<p>&#x5F53;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x8C03;&#x7528;<code>listen()</code>&#x65B9;&#x6CD5;&#x3002;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x89E6;&#x53D1;<code>listening</code>&#x4E8B;&#x4EF6;&#xFF0C;&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x4E3B;&#x8FDB;&#x7A0B;&#x4E5F;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;<code>listening</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;<code>worker</code>&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;<code>address</code>&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;<code>address</code>&#xFF0C;<code>port</code>&#x548C;<code>addressType</code>&#x3002;&#x5F53;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x76D1;&#x542C;&#x591A;&#x4E2A;&#x5730;&#x5740;&#x65F6;&#xFF0C;&#x8FD9;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</p>
+<pre><code>cluster.on(&apos;listening&apos;, function(worker, address) {
+  console.log(&quot;A worker is now connected to &quot; + address.address + &quot;:&quot; + address.port);
+});
+</code></pre><p><code>addressType</code>&#x662F;&#x4EE5;&#x4E0B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#xFF1A;</p>
+<ul>
+<li>4 (TCPv4)</li>
+<li>6 (TCPv6)</li>
+<li>-1 (unix domain socket)</li>
+<li>&quot;udp4&quot; &#x6216; &quot;udp6&quot; (UDP v4 &#x6216; v6)</li>
+</ul>
+<h4 id="event-disconnect">Event: &apos;disconnect&apos;</h4>
+<ul>
+<li>worker Worker object</li>
+</ul>
+<p>&#x5F53;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;IPC&#x4FE1;&#x9053;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x5F53;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4F18;&#x96C5;&#x5730;&#x9000;&#x51FA;&#xFF0C;&#x88AB;&#x6740;&#x6B7B;&#xFF0C;&#x6216;&#x624B;&#x5DE5;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#xFF08;&#x5982;&#x8C03;&#x7528;<code>worker.disconnect()</code>&#xFF09;&#x540E;&#x89E6;&#x53D1;&#x3002;</p>
+<p><code>disconnect</code>&#x548C;<code>exit</code>&#x4E8B;&#x4EF6;&#x4E4B;&#x95F4;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x5EF6;&#x8FDF;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x4E8B;&#x4EF6;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4FA6;&#x6D4B;&#x662F;&#x5426;&#x8FDB;&#x7A0B;&#x5728;&#x6E05;&#x7406;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x88AB;&#x963B;&#x585E;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x5426;&#x5B58;&#x5728;&#x957F;&#x8FDE;&#x63A5;&#x3002;</p>
+<pre><code class="lang-js">cluster.on(<span class="hljs-string">&apos;disconnect&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">worker</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;The worker #&apos;</span> + worker.id + <span class="hljs-string">&apos; has disconnected&apos;</span>);
+});
+</code></pre>
+<h4 id="event-exit">Event: &apos;exit&apos;</h4>
+<ul>
+<li>worker Worker object</li>
+<li>code Number &#x5982;&#x679C;&#x6B63;&#x5E38;&#x9000;&#x51FA;&#xFF0C;&#x5219;&#x4E3A;&#x9000;&#x51FA;&#x7801;</li>
+<li>signal String &#x5BFC;&#x81F4;&#x8FDB;&#x7A0B;&#x88AB;&#x6740;&#x6B7B;&#x7684;&#x4FE1;&#x53F7;&#x7684;&#x4FE1;&#x53F7;&#x540D;&#xFF08;&#x5982;&apos;SIGHUP&apos;&#xFF09;</li>
+</ul>
+<p>&#x5F53;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;<code>cluster</code>&#x6A21;&#x5757;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;<code>exit</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<p>&#x8FD9;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x901A;&#x8FC7;&#x518D;&#x6B21;&#x8C03;&#x7528;<code>.fork()</code>&#x65B9;&#x6CD5;&#x91CD;&#x542F;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<pre><code class="lang-js">cluster.on(<span class="hljs-string">&apos;exit&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">worker, code, signal</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;worker %d died (%s). restarting...&apos;</span>,
+    worker.process.pid, signal || code);
+  cluster.fork();
+});
+</code></pre>
+<p>&#x53C2;&#x9605;<code>child_process</code>&#x4E8B;&#x4EF6;&#xFF1A;<code>exit</code>&#x3002;</p>
+<h4 id="event-setup">Event: &apos;setup&apos;</h4>
+<ul>
+<li>settings Object</li>
+</ul>
+<p>&#x6BCF;&#x6B21;<code>.setupMaster()</code>&#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;<code>settings</code>&#x5BF9;&#x8C61;&#x4E0E;<code>.setupMaster()</code>&#x88AB;&#x8C03;&#x7528;&#x65F6;<code>cluster.settings</code>&#x5BF9;&#x8C61;&#x76F8;&#x540C;&#xFF0C;&#x5E76;&#x4E14;&#x4EC5;&#x4F9B;&#x67E5;&#x8BE2;&#xFF0C;&#x56E0;&#x4E3A;<code>.setupMaster()</code>&#x53EF;&#x80FD;&#x5728;&#x4E00;&#x6B21;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x91CC;&#x88AB;&#x8C03;&#x7528;&#x591A;&#x6B21;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4FDD;&#x6301;&#x7CBE;&#x786E;&#x5341;&#x5206;&#x91CD;&#x8981;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;<code>cluster.settings</code>&#x3002;</p>
+<h4 id="clustersetupmastersettings">cluster.setupMaster([settings])</h4>
+<ul>
+<li><strong>settings Object</strong><ul>
+<li>exec String &#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;<code>process.argv[1]</code>&#xFF09;</li>
+<li>args Array &#x4F20;&#x9012;&#x7ED9;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;<code>process.argv.slice(2)</code>&#xFF09;</li>
+<li>silent Boolean &#x662F;&#x5426;&#x5C06;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;&#x8F93;&#x51FA;&#x4F20;&#x9012;&#x7ED9;&#x7236;&#x8FDB;&#x7A0B;&#x7684;<code>stdio</code>(&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>)</li>
+</ul>
+</li>
+</ul>
+<p><code>setupMaster</code>&#x65B9;&#x6CD5;&#x88AB;&#x7528;&#x6765;&#x6539;&#x53D8;&#x9ED8;&#x8BA4;&#x7684;<code>fork</code>&#x884C;&#x4E3A;&#x3002;&#x4E00;&#x65E6;&#x88AB;&#x8C03;&#x7528;&#xFF0C;<code>settings</code>&#x53C2;&#x6570;&#x5C06;&#x88AB;&#x8868;&#x73B0;&#x4E3A;<code>cluster.settings</code>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ul>
+<li>&#x4EFB;&#x4F55;<code>settings</code>&#x7684;&#x6539;&#x53D8;&#x4EC5;&#x5F71;&#x54CD;&#x4E4B;&#x540E;&#x7684;<code>.fork()</code>&#x8C03;&#x7528;&#xFF0C;&#x800C;&#x4E0D;&#x5F71;&#x54CD;&#x5DF2;&#x7ECF;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;</li>
+<li>&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#x552F;&#x4E00;&#x4E0D;&#x540C;&#x901A;&#x8FC7;<code>.setupMaster()</code>&#x6765;&#x8BBE;&#x7F6E;&#x7684;&#x5C5E;&#x6027;&#x662F;&#x4F20;&#x9012;&#x7ED9;<code>.fork()</code>&#x65B9;&#x6CD5;&#x7684;<code>env</code>&#x53C2;&#x6570;</li>
+<li>&#x4E0A;&#x6587;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x4EC5;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x65F6;&#x88AB;&#x5E94;&#x7528;&#xFF0C;&#x4E4B;&#x540E;&#x7684;&#x8C03;&#x7528;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x5F53;&#x524D;<code>cluster.setupMaster()</code>&#x88AB;&#x8C03;&#x7528;&#x65F6;&#x7684;&#x503C;&#x3002;</li>
+</ul>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> cluster = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cluster&apos;</span>);
+cluster.setupMaster({
+  exec: <span class="hljs-string">&apos;worker.js&apos;</span>,
+  args: [<span class="hljs-string">&apos;--use&apos;</span>, <span class="hljs-string">&apos;https&apos;</span>],
+  silent: <span class="hljs-literal">true</span>
+});
+cluster.fork(); <span class="hljs-comment">// https worker</span>
+cluster.setupMaster({
+  args: [<span class="hljs-string">&apos;--use&apos;</span>, <span class="hljs-string">&apos;http&apos;</span>]
+});
+cluster.fork(); <span class="hljs-comment">// http worker</span>
+</code></pre>
+<p>&#x8FD9;&#x53EA;&#x80FD;&#x88AB;&#x4E3B;&#x8FDB;&#x7A0B;&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="clusterforkenv">cluster.fork([env])</h4>
+<ul>
+<li>env Object &#x5C06;&#x6DFB;&#x52A0;&#x5230;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x952E;&#x503C;&#x5BF9;</li>
+<li>return Worker object</li>
+</ul>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;</p>
+<p>&#x8FD9;&#x53EA;&#x80FD;&#x88AB;&#x4E3B;&#x8FDB;&#x7A0B;&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="clusterdisconnectcallback">cluster.disconnect([callback])</h4>
+<ul>
+<li>callback Function &#x5F53;&#x6240;&#x6709;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x53E5;&#x67C4;&#x5173;&#x95ED;&#x540E;&#x8C03;&#x7528;</li>
+</ul>
+<p>&#x5728;<code>cluster.workers</code>&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#x8C03;&#x7528;<code>.disconnect()</code>&#x3002;</p>
+<p>&#x5F53;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#xFF0C;&#x6240;&#x6709;&#x5185;&#x90E8;&#x7684;&#x53E5;&#x67C4;&#x90FD;&#x5C06;&#x5173;&#x95ED;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x4E8E;&#x7B49;&#x5F85;&#xFF0C;&#x5C06;&#x5141;&#x8BB8;&#x4E3B;&#x8FDB;&#x7A0B;&#x4F18;&#x96C5;&#x5730;&#x9000;&#x51FA;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x5C06;&#x4F1A;&#x5728;&#x7ED3;&#x675F;&#x65F6;&#x89E6;&#x53D1;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x8FD9;&#x53EA;&#x80FD;&#x88AB;&#x4E3B;&#x8FDB;&#x7A0B;&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="clusterworker">cluster.worker</h4>
+<ul>
+<li>Object</li>
+</ul>
+<p>&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x3002;&#x5BF9;&#x4E8E;&#x4E3B;&#x8FDB;&#x7A0B;&#x4E0D;&#x53EF;&#x7528;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> cluster = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cluster&apos;</span>);
+
+<span class="hljs-keyword">if</span> (cluster.isMaster) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;I am master&apos;</span>);
+  cluster.fork();
+  cluster.fork();
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (cluster.isWorker) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;I am worker #&apos;</span> + cluster.worker.id);
+}
+</code></pre>
+<h4 id="clusterworkers">cluster.workers</h4>
+<ul>
+<li>Object</li>
+</ul>
+<p>&#x4E00;&#x4E2A;&#x50A8;&#x5B58;&#x4E86;&#x6240;&#x6709;&#x6D3B;&#x8DC3;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x5BF9;&#x8C61;&#x7684;&#x54C8;&#x5E0C;&#x8868;&#xFF0C;&#x4EE5;<code>id</code>&#x5B57;&#x6BB5;&#x4E3A;&#x4E3B;&#x952E;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x904D;&#x5386;&#x6240;&#x6709;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x53D8;&#x5F97;&#x5BB9;&#x6613;&#x3002;&#x4EC5;&#x5728;&#x4E3B;&#x8FDB;&#x7A0B;&#x4E2D;&#x53EF;&#x7528;&#x3002;</p>
+<p>&#x5F53;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#x6216;&#x9000;&#x51FA;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x4ECE;<code>cluster.workers</code>&#x4E2D;&#x79FB;&#x9664;&#x3002;&#x8FD9;&#x4E2A;&#x4E24;&#x4E2A;&#x4E8B;&#x4EF6;&#x7684;&#x89E6;&#x53D1;&#x987A;&#x5E8F;&#x4E0D;&#x80FD;&#x88AB;&#x63D0;&#x524D;&#x51B3;&#x5B9A;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x80FD;&#x4FDD;&#x8BC1;&#x7684;&#x662F;&#xFF0C;&#x4ECE;<code>cluster.workers</code>&#x79FB;&#x9664;&#x4E00;&#x5B9A;&#x53D1;&#x751F;&#x5728;&#x8FD9;&#x4E24;&#x4E2A;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x4E4B;&#x540E;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Go through all workers</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">eachWorker</span>(<span class="hljs-params">callback</span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> id <span class="hljs-keyword">in</span> cluster.workers) {
+    callback(cluster.workers[id]);
+  }
+}
+eachWorker(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">worker</span>) </span>{
+  worker.send(<span class="hljs-string">&apos;big announcement to all workers&apos;</span>);
+});
+</code></pre>
+<p>&#x60F3;&#x8981;&#x8DE8;&#x8D8A;&#x901A;&#x4FE1;&#x4FE1;&#x9053;&#x6765;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;&#x5F15;&#x7528;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;&#x552F;&#x4E00;<code>id</code>&#x80FD;&#x7B80;&#x5355;&#x627E;&#x5230;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-js">socket.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">id</span>) </span>{
+  <span class="hljs-keyword">var</span> worker = cluster.workers[id];
+});
+</code></pre>
+<h4 id="class-worker">Class: Worker</h4>
+<p><code>Worker</code>&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6240;&#x6709;&#x7684;&#x516C;&#x5F00;&#x4FE1;&#x606F;&#x548C;&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x4E3B;&#x8FDB;&#x7A0B;&#x4E2D;&#x5B83;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>cluster.workers</code>&#x53D6;&#x5F97;&#x3002;&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#x5B83;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>cluster.worker</code>&#x53D6;&#x5F97;&#x3002;</p>
+<h4 id="workerid">worker.id</h4>
+<ul>
+<li>String</li>
+</ul>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x90FD;&#x88AB;&#x7ED9;&#x4E88;&#x4E00;&#x4E2A;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;id&#xFF0C;&#x8FD9;&#x4E2A;id&#x88AB;&#x5B58;&#x50A8;&#x5728;&#x6B64;<code>id</code>&#x5C5E;&#x6027;&#x4E2D;&#x3002;</p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6D3B;&#x8DC3;&#x65F6;&#xFF0C;&#x8FD9;&#x662F;&#x5B83;&#x88AB;&#x7D22;&#x5F15;&#x5728;<code>cluster.workers</code>&#x4E2D;&#x7684;&#x4E3B;&#x952E;&#x3002;</p>
+<h4 id="workerprocess">worker.process</h4>
+<ul>
+<li>ChildProcess object</li>
+</ul>
+<p>&#x6240;&#x6709;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x90FD;&#x901A;&#x8FC7;<code>child_process.fork()</code>&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x88AB;&#x4F5C;&#x4E3A;<code>.process</code>&#x5C5E;&#x6027;&#x5B58;&#x50A8;&#x3002;&#x5728;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#xFF0C;&#x5168;&#x5C40;&#x7684;<code>process</code>&#x88AB;&#x5B58;&#x50A8;&#x3002;</p>
+<p>&#x53C2;&#x9605;<code>Child Process module</code></p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x8FDB;&#x7A0B;&#x4E2D;<code>disconnect</code>&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x5E76;&#x4E14;<code>.suicide</code>&#x5C5E;&#x6027;&#x4E0D;&#x4E3A;<code>true</code>&#xFF0C;&#x90A3;&#x4E48;&#x8FDB;&#x7A0B;&#x4F1A;&#x8C03;&#x7528;<code>process.exit(0)</code>&#x3002;&#x8FD9;&#x9632;&#x6B62;&#x4E86;&#x610F;&#x5916;&#x7684;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#x3002;</p>
+<h4 id="workersuicide">worker.suicide</h4>
+<ul>
+<li>Boolean</li>
+</ul>
+<p>&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>.kill()</code>&#x6216;<code>.disconnect()</code>&#x8BBE;&#x7F6E;&#xFF0C;&#x5728;&#x8FD9;&#x4E4B;&#x524D;&#x4ED6;&#x4E3A;<code>undefined</code>&#x3002;</p>
+<p>&#x5E03;&#x5C14;&#x503C;<code>worker.suicide</code>&#x4F7F;&#x4F60;&#x53EF;&#x4EE5;&#x533A;&#x522B;&#x81EA;&#x53D1;&#x548C;&#x610F;&#x5916;&#x7684;&#x9000;&#x51FA;&#xFF0C;&#x4E3B;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x503C;&#x6765;&#x51B3;&#x5B9A;&#x4F7F;&#x7528;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-js">cluster.on(<span class="hljs-string">&apos;exit&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">worker, code, signal</span>) </span>{
+  <span class="hljs-keyword">if</span> (worker.suicide === <span class="hljs-literal">true</span>) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Oh, it was just suicide\&apos; &#x2013; no need to worry&apos;</span>).
+  }
+});
+
+<span class="hljs-comment">// kill worker</span>
+worker.kill();
+</code></pre>
+<h4 id="workersendmessage-sendhandle">worker.send(message[, sendHandle])</h4>
+<ul>
+<li>message Object</li>
+<li>sendHandle Handle object</li>
+</ul>
+<p>&#x7ED9;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6216;&#x4E3B;&#x8FDB;&#x7A0B;&#x53D1;&#x751F;&#x4E00;&#x4E2A;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x9009;&#x5F97;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x53E5;&#x67C4;&#x3002;</p>
+<p>&#x5728;&#x4E3B;&#x8FDB;&#x7A0B;&#x4E2D;&#x5B83;&#x5C06;&#x7ED9;&#x7279;&#x5B9A;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x4FE1;&#x606F;&#x3002;&#x5B83;&#x6307;&#x5411;<code>child.send()</code>&#x3002;</p>
+<p>&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#x5B83;&#x5C06;&#x7ED9;&#x4E3B;&#x8FDB;&#x7A0B;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x4FE1;&#x606F;&#x3002;&#x5B83;&#x6307;&#x5411;<code>process.send()</code>&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5C06;&#x6765;&#x81EA;&#x4E3B;&#x8FDB;&#x7A0B;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#x8FD4;&#x56DE;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (cluster.isMaster) {
+  <span class="hljs-keyword">var</span> worker = cluster.fork();
+  worker.send(<span class="hljs-string">&apos;hi there&apos;</span>);
+
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (cluster.isWorker) {
+  process.on(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>{
+    process.send(msg);
+  });
+}
+</code></pre>
+<h4 id="workerkillsignalsigterm">worker.kill([signal=&apos;SIGTERM&apos;])</h4>
+<ul>
+<li>signal String &#x4F20;&#x9012;&#x7ED9;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;&#x7ED3;&#x675F;&#x4FE1;&#x53F7;&#x540D;</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C06;&#x4F1A;&#x6740;&#x6B7B;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;&#x5728;&#x4E3B;&#x8FDB;&#x7A0B;&#x4E2D;&#xFF0C;&#x5B83;&#x901A;&#x8FC7;&#x65AD;&#x5F00;<code>worker.process</code>&#x505A;&#x5230;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x65E6;&#x65AD;&#x5F00;&#xFF0C;&#x4F7F;&#x7528;<code>signal</code>&#x6740;&#x6B7B;&#x8FDB;&#x7A0B;&#x3002;&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#xFF0C;&#x5B83;&#x901A;&#x8FC7;&#x65AD;&#x5F00;&#x4FE1;&#x9053;&#x505A;&#x5230;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x9000;&#x51FA;&#x7801;<code>0</code>&#x9000;&#x51FA;&#x3002;</p>
+<p>&#x4F1A;&#x5BFC;&#x81F4;<code>.suicide</code>&#x88AB;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5411;&#x540E;&#x517C;&#x4EFB;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x522B;&#x540D;&#x662F;<code>worker.destroy()</code>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#xFF0C;<code>process.kill()</code>&#x5B58;&#x5728;&#xFF0C;&#x4F46;&#x5B83;&#x4E0D;&#x662F;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;&#x662F;<code>process.kill(pid[, signal])</code>&#x3002;</p>
+<h4 id="workerdisconnect">worker.disconnect()</h4>
+<p>&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x5173;&#x95ED;&#x6240;&#x6709;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7B49;&#x5F85;&#x8FD9;&#x4E9B;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;<code>close</code>&#x4E8B;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x65AD;&#x5F00;IPC&#x4FE1;&#x9053;&#x3002;</p>
+<p>&#x5728;&#x4E3B;&#x8FDB;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x4FE1;&#x606F;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#xFF0C;&#x81F3;&#x4F7F;&#x5B83;&#x4EEC;&#x81EA;&#x884C;&#x8C03;&#x7528;<code>.disconnect()</code>&#x3002;</p>
+<p>&#x4F1A;&#x5BFC;&#x81F4;<code>.suicide</code>&#x88AB;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x5728;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x88AB;&#x5173;&#x95ED;&#x540E;&#xFF0C;&#x5B83;&#x5C06;&#x4E0D;&#x4F1A;&#x518D;&#x63A5;&#x53D7;&#x65B0;&#x8FDE;&#x63A5;&#xFF0C;&#x4F46;&#x662F;&#x8FDE;&#x63A5;&#x53EF;&#x80FD;&#x88AB;&#x5176;&#x4ED6;&#x6B63;&#x5728;&#x76D1;&#x542C;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x6240;&#x63A5;&#x6536;&#x3002;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x8FDE;&#x63A5;&#x5C06;&#x4F1A;&#x88AB;&#x5141;&#x8BB8;&#x5411;&#x5F80;&#x5E38;&#x4E00;&#x6837;&#x9000;&#x51FA;&#x3002;&#x5F53;&#x6CA1;&#x6709;&#x66F4;&#x591A;&#x7684;&#x8FDE;&#x63A5;&#x5B58;&#x5728;&#x65F6;&#xFF0C;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;IPC&#x4FE1;&#x9053;&#x4F1A;&#x5173;&#x95ED;&#x5E76;&#x4F7F;&#x4E4B;&#x4F18;&#x96C5;&#x5730;&#x9000;&#x51FA;&#xFF0C;&#x53C2;&#x9605;<code>server.close()</code>&#x3002;</p>
+<p>&#x4EE5;&#x4E0A;&#x8BF4;&#x660E;&#x4EC5;&#x5E94;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x8FDE;&#x63A5;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x5C06;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x7531;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x5173;&#x95ED;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x9000;&#x51FA;&#x524D;&#xFF0C;&#x4E0D;&#x4F1A;&#x7B49;&#x5230;&#x8FDE;&#x63A5;&#x9000;&#x51FA;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#xFF0C;<code>process.disconnect</code>&#x5B58;&#x5728;&#xFF0C;&#x4F46;&#x5B83;&#x4E0D;&#x662F;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;&#x662F;<code>child.disconnect()</code>&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x957F;&#x8FDE;&#x63A5;&#x53EF;&#x80FD;&#x4F1A;&#x963B;&#x585E;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7684;&#x9000;&#x51FA;&#xFF0C;&#x8FD9;&#x65F6;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x52A8;&#x4F5C;&#x4FE1;&#x606F;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x5E94;&#x7528;&#x6765;&#x6839;&#x636E;&#x4FE1;&#x606F;&#x6307;&#x5B9A;&#x7684;&#x52A8;&#x4F5C;&#x6765;&#x5173;&#x95ED;&#x5B83;&#x4EEC;&#x3002;&#x8D85;&#x65F6;&#x673A;&#x5236;&#x662F;&#x4E0A;&#x8FF0;&#x7684;&#x6709;&#x7528;&#x5B9E;&#x73B0;&#xFF0C;&#x5728;<code>disconnect</code>&#x4E8B;&#x4EF6;&#x5728;&#x6307;&#x5B9A;&#x65F6;&#x957F;&#x540E;&#x6CA1;&#x6709;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x6740;&#x6B7B;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (cluster.isMaster) {
+  <span class="hljs-keyword">var</span> worker = cluster.fork();
+  <span class="hljs-keyword">var</span> timeout;
+
+  worker.on(<span class="hljs-string">&apos;listening&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">address</span>) </span>{
+    worker.send(<span class="hljs-string">&apos;shutdown&apos;</span>);
+    worker.disconnect();
+    timeout = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      worker.kill();
+    }, <span class="hljs-number">2000</span>);
+  });
+
+  worker.on(<span class="hljs-string">&apos;disconnect&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    clearTimeout(timeout);
+  });
+
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (cluster.isWorker) {
+  <span class="hljs-keyword">var</span> net = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;net&apos;</span>);
+  <span class="hljs-keyword">var</span> server = net.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">socket</span>) </span>{
+    <span class="hljs-comment">// connections never end</span>
+  });
+
+  server.listen(<span class="hljs-number">8000</span>);
+
+  process.on(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>{
+    <span class="hljs-keyword">if</span>(msg === <span class="hljs-string">&apos;shutdown&apos;</span>) {
+      <span class="hljs-comment">// initiate graceful close of any connections to server</span>
+    }
+  });
+}
+</code></pre>
+<h4 id="workerisdead">worker.isDead()</h4>
+<p>&#x5982;&#x679C;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x5DF2;&#x7ECF;&#x88AB;&#x5173;&#x95ED;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#x3002;</p>
+<h4 id="workerisconnected">worker.isConnected()</h4>
+<p>&#x5982;&#x679C;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x901A;&#x8FC7;&#x5B83;&#x7684;IPC&#x4FE1;&#x9053;&#x8FDE;&#x63A5;&#x5230;&#x4E3B;&#x8FDB;&#x7A0B;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#x3002;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x5728;&#x88AB;&#x521B;&#x5EFA;&#x540E;&#x8FDE;&#x63A5;&#x5230;&#x5B83;&#x7684;&#x4E3B;&#x8FDB;&#x7A0B;&#x3002;&#x5728;<code>disconnect</code>&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x540E;&#x5B83;&#x4F1A;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#x3002;</p>
+<h4 id="event-message">Event: &apos;message&apos;</h4>
+<ul>
+<li>message Object</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x4E0E;<code>child_process.fork()</code>&#x6240;&#x63D0;&#x4F9B;&#x7684;&#x4E8B;&#x4EF6;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>process.on(&apos;message&apos;)</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x96C6;&#x7FA4;&#xFF0C;&#x4F7F;&#x7528;&#x6D88;&#x606F;&#x7CFB;&#x7EDF;&#x5728;&#x4E3B;&#x8FDB;&#x7A0B;&#x4E2D;&#x7EDF;&#x8BA1;&#x8BF7;&#x6C42;&#x7684;&#x6570;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> cluster = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cluster&apos;</span>);
+<span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+
+<span class="hljs-keyword">if</span> (cluster.isMaster) {
+
+  <span class="hljs-comment">// Keep track of http requests</span>
+  <span class="hljs-keyword">var</span> numReqs = <span class="hljs-number">0</span>;
+  setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;numReqs =&quot;</span>, numReqs);
+  }, <span class="hljs-number">1000</span>);
+
+  <span class="hljs-comment">// Count requestes</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">messageHandler</span>(<span class="hljs-params">msg</span>) </span>{
+    <span class="hljs-keyword">if</span> (msg.cmd &amp;&amp; msg.cmd == <span class="hljs-string">&apos;notifyRequest&apos;</span>) {
+      numReqs += <span class="hljs-number">1</span>;
+    }
+  }
+
+  <span class="hljs-comment">// Start workers and listen for messages containing notifyRequest</span>
+  <span class="hljs-keyword">var</span> numCPUs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;os&apos;</span>).cpus().length;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; numCPUs; i++) {
+    cluster.fork();
+  }
+
+  <span class="hljs-built_in">Object</span>.keys(cluster.workers).forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">id</span>) </span>{
+    cluster.workers[id].on(<span class="hljs-string">&apos;message&apos;</span>, messageHandler);
+  });
+
+} <span class="hljs-keyword">else</span> {
+
+  <span class="hljs-comment">// Worker processes have a http server.</span>
+  http.Server(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+    res.writeHead(<span class="hljs-number">200</span>);
+    res.end(<span class="hljs-string">&quot;hello world\n&quot;</span>);
+
+    <span class="hljs-comment">// notify master about the request</span>
+    process.send({ cmd: <span class="hljs-string">&apos;notifyRequest&apos;</span> });
+  }).listen(<span class="hljs-number">8000</span>);
+}
+</code></pre>
+<h4 id="event-online">Event: &apos;online&apos;</h4>
+<p>&#x4E0E;<code>cluster.on(&apos;online&apos;)</code>&#x4E8B;&#x4EF6;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x6307;&#x5411;&#x4E86;&#x7279;&#x5B9A;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-js">cluster.fork().on(<span class="hljs-string">&apos;online&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// Worker is online</span>
+});
+</code></pre>
+<p>&#x8FD9;&#x4E0D;&#x662F;&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#x89E6;&#x53D1;&#x7684;&#x3002;</p>
+<h4 id="event-listening">Event: &apos;listening&apos;</h4>
+<ul>
+<li>address Object</li>
+</ul>
+<p>&#x4E0E;<code>cluster.on(&apos;listening&apos;)</code>&#x4E8B;&#x4EF6;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x6307;&#x5411;&#x4E86;&#x7279;&#x5B9A;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-js">cluster.fork().on(<span class="hljs-string">&apos;listening&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">address</span>) </span>{
+  <span class="hljs-comment">// Worker is listening</span>
+});
+</code></pre>
+<p>&#x8FD9;&#x4E0D;&#x662F;&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#x89E6;&#x53D1;&#x7684;&#x3002;</p>
+<h4 id="event-disconnect">Event: &apos;disconnect&apos;</h4>
+<p>&#x4E0E;<code>cluster.on(&apos;disconnect&apos;)</code>&#x4E8B;&#x4EF6;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x6307;&#x5411;&#x4E86;&#x7279;&#x5B9A;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-js">cluster.fork().on(<span class="hljs-string">&apos;disconnect&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// Worker has disconnected</span>
+});
+</code></pre>
+<h4 id="event-exit">Event: &apos;exit&apos;</h4>
+<ul>
+<li>code Number &#x5982;&#x679C;&#x6B63;&#x5E38;&#x9000;&#x51FA;&#xFF0C;&#x5219;&#x4E3A;&#x9000;&#x51FA;&#x7801;</li>
+<li>signal String &#x5BFC;&#x81F4;&#x8FDB;&#x7A0B;&#x88AB;&#x6740;&#x6B7B;&#x7684;&#x4FE1;&#x53F7;&#x540D;&#xFF08;&#x5982;<code>&apos;SIGHUP&apos;</code>&#xFF09;</li>
+</ul>
+<p>&#x4E0E;<code>cluster.on(&apos;exit&apos;)</code>&#x4E8B;&#x4EF6;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x6307;&#x5411;&#x4E86;&#x7279;&#x5B9A;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> worker = cluster.fork();
+worker.on(<span class="hljs-string">&apos;exit&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">code, signal</span>) </span>{
+  <span class="hljs-keyword">if</span>( signal ) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;worker was killed by signal: &quot;</span>+signal);
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>( code !== <span class="hljs-number">0</span> ) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;worker exited with error code: &quot;</span>+code);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;worker success!&quot;</span>);
+  }
+});
+</code></pre>
+<h4 id="event-error">Event: &apos;error&apos;</h4>
+<p>&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x4E0E;<code>child_process.fork()</code>&#x6240;&#x63D0;&#x4F9B;&#x7684;&#x4E8B;&#x4EF6;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5728;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x4E2D;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>process.on(&apos;error&apos;)</code>&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Child_process.html" class="navigation navigation-prev " aria-label="Previous page: Child Processes">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Console.html" class="navigation navigation-next " aria-label="Next page: Console">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Cluster","level":"1.5","depth":1,"next":{"title":"Console","level":"1.6","depth":1,"path":"Console.md","ref":"Console.md","articles":[]},"previous":{"title":"Child Processes","level":"1.4","depth":1,"path":"Child_process.md","ref":"Child_process.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"Cluster.md","mtime":"2016-06-20T01:36:08.930Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

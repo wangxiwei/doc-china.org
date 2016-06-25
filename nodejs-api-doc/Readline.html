@@ -1,0 +1,867 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Readline · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="REPL.html" />
+    
+    
+    <link rel="prev" href="QueryStrings.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Readline</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="readline">Readline</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x901A;&#x8FC7;<code>require(&apos;readline&apos;)</code>&#x6765;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x3002;<code>Readline</code>&#x5141;&#x8BB8;&#x9010;&#x884C;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6D41;&#xFF08;&#x5982;<code>process.stdin</code>&#xFF09;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x4E00;&#x65E6;&#x4F60;&#x6267;&#x884C;&#x4E86;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4F60;&#x7684;<code>node.js</code>&#x7A0B;&#x5E8F;&#x5728;&#x4F60;&#x5173;&#x95ED;&#x6B64;&#x63A5;&#x53E3;&#x4E4B;&#x524D;&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x9000;&#x51FA;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x5982;&#x4F55;&#x8BA9;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x4F18;&#x96C5;&#x7684;&#x9000;&#x51FA;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readline = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;readline&apos;</span>);
+
+<span class="hljs-keyword">var</span> rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question(<span class="hljs-string">&quot;What do you think of node.js? &quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">answer</span>) </span>{
+  <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> Log the answer in a database</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Thank you for your valuable feedback:&quot;</span>, answer);
+
+  rl.close();
+});
+</code></pre>
+<h4 id="readlinecreateinterfaceoptions">readline.createInterface(options)</h4>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>readline</code>&#x63A5;&#x53E3;&#x5B9E;&#x4F8B;&#x3002;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;<code>options</code>&#x5BF9;&#x8C61;&#xFF0C;&#x63A5;&#x53D7;&#x4EE5;&#x4E0B;&#x503C;&#xFF1A;</p>
+<ul>
+<li><p>input - &#x9700;&#x8981;&#x76D1;&#x542C;&#x7684;&#x53EF;&#x8BFB;&#x6D41;&#xFF08;&#x5FC5;&#x9009;&#xFF09;&#x3002;</p>
+</li>
+<li><p>output - &#x5C06;&#x9010;&#x884C;&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x5199;&#x5165;&#x7684;&#x6D41;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x3002;</p>
+</li>
+<li><p>completer - &#x7528;&#x4E8E;Tab&#x81EA;&#x52A8;&#x8865;&#x5168;&#x7684;&#x53EF;&#x9009;&#x51FD;&#x6570;&#x3002;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#x7684;&#x4F7F;&#x7528;&#x4F8B;&#x5B50;&#x3002;</p>
+</li>
+<li><p>terminal - &#x5982;&#x679C;<code>input</code>&#x548C;<code>output</code>&#x6D41;&#x9700;&#x8981;&#x88AB;&#x50CF;&#x4E00;&#x4E2A;TTY&#x4E00;&#x6837;&#x5BF9;&#x5F85;&#xFF0C;&#x5E76;&#x4E14;&#x88AB;&#x7ECF;&#x7531;ANSI/VT100&#x8F6C;&#x4E49;&#x4EE3;&#x7801;&#x5199;&#x5165;&#xFF0C;&#x5C31;&#x4F20;&#x9012;<code>true</code>&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;&#x5728;&#x5B9E;&#x4F8B;&#x5316;&#x65F6;&#xFF0C;&#x68C0;&#x67E5;&#x51FA;&#x7684;<code>ouput</code>&#x6D41;&#x7684;<code>isTTY</code>&#x503C;&#x3002;</p>
+</li>
+<li><p>historySize - &#x4FDD;&#x7559;&#x7684;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x884C;&#x7684;&#x6700;&#x5927;&#x6570;&#x91CF;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>30</code>&#x3002;</p>
+</li>
+</ul>
+<p><code>completer</code>&#x51FD;&#x6570;&#x88AB;&#x7ED9;&#x4E88;&#x4E86;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x5F53;&#x524D;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6570;&#x7EC4;&#xFF1A;</p>
+<ol>
+<li><p>&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x5F53;&#x524D;&#x8F93;&#x5165;&#x8865;&#x5168;&#x7684;&#x6570;&#x7EC4;&#x3002;</p>
+</li>
+<li><p>&#x4E00;&#x4E2A;&#x88AB;&#x7528;&#x4E8E;&#x5339;&#x914D;&#x7684;&#x5B50;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+</li>
+</ol>
+<p>&#x6700;&#x7EC8;&#x5F62;&#x5F0F;&#x5982;&#xFF1A;<code>[[substr1, substr2, ...], originalsubstring]</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">completer</span>(<span class="hljs-params">line</span>) </span>{
+  <span class="hljs-keyword">var</span> completions = <span class="hljs-string">&apos;.help .error .exit .quit .q&apos;</span>.split(<span class="hljs-string">&apos; &apos;</span>)
+  <span class="hljs-keyword">var</span> hits = completions.filter(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">c</span>) </span>{ <span class="hljs-keyword">return</span> c.indexOf(line) == <span class="hljs-number">0</span> })
+  <span class="hljs-comment">// show all completions if none found</span>
+  <span class="hljs-keyword">return</span> [hits.length ? hits : completions, line]
+}
+</code></pre>
+<p><code>completer</code>&#x540C;&#x6837;&#x4E5F;&#x53EF;&#x4EE5;&#x4EE5;&#x540C;&#x6B65;&#x7684;&#x65B9;&#x5F0F;&#x8FD0;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">completer</span>(<span class="hljs-params">linePartial, callback</span>) </span>{
+  callback(<span class="hljs-literal">null</span>, [[<span class="hljs-string">&apos;123&apos;</span>], linePartial]);
+}
+</code></pre>
+<p><code>createInterface</code>&#x901A;&#x5E38;&#x4E0E;<code>process.stdin</code>&#x548C;<code>process.stdout</code>&#x642D;&#x914D;&#xFF0C;&#x7528;&#x6765;&#x63A5;&#x53D7;&#x7528;&#x6237;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readline = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;readline&apos;</span>);
+<span class="hljs-keyword">var</span> rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+</code></pre>
+<p>&#x4E00;&#x65E6;&#x4F60;&#x6709;&#x4E86;&#x4E00;&#x4E2A;<code>readline</code>&#x63A5;&#x53E3;&#xFF0C;&#x4F60;&#x901A;&#x5E38;&#x8981;&#x76D1;&#x542C;&#x4E00;&#x4E2A;<code>line</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x5B9E;&#x4F8B;&#x4E2D;&#xFF0C;<code>terminal</code>&#x4E3A;<code>true</code>&#x3002;&#x90A3;&#x4E48;<code>output</code>&#x6D41;&#x5C06;&#x4F1A;&#x5F97;&#x5230;&#x6700;&#x597D;&#x7684;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;<code>output.columns</code>&#x5C5E;&#x6027;&#xFF0C;&#x5E76;&#x4E14;&#x5728;<code>output</code>&#x7684;<code>columns</code>&#x53D8;&#x5316;&#x65F6;&#xFF08;&#x5F53;&#x5B83;&#x662F;&#x4E00;&#x4E2A;TTY&#x65F6;&#xFF0C;<code>process.stdout</code>&#x4F1A;&#x81EA;&#x52A8;&#x8FD9;&#x4E48;&#x505A;&#xFF09;&#xFF0C;&#x89E6;&#x53D1;&#x4E86;&#x4E00;&#x4E2A;<code>resize</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<h4 id="class-interface">Class: Interface</h4>
+<p>&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x4E86;&#x6709;<code>input</code>&#x548C;<code>output</code>&#x6D41;&#x7684;<code>readline</code>&#x63A5;&#x53E3;&#x3002;</p>
+<h4 id="rlsetpromptprompt">rl.setPrompt(prompt)</h4>
+<p>&#x8BBE;&#x7F6E;&#x63D0;&#x793A;&#x7B26;&#xFF0C;&#x4F8B;&#x5982;&#x5F53;&#x4F60;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x8FD0;&#x884C;<code>iojs</code>&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x4F60;&#x770B;&#x5230;&#x4E86;<code>&gt;</code>&#xFF0C;&#x8FD9;&#x5C31;&#x662F;<code>node.js</code>&#x7684;&#x63D0;&#x793A;&#x7B26;&#x3002;</p>
+<h4 id="rlpromptpreservecursor">rl.prompt([preserveCursor])</h4>
+<p>&#x4E3A;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x51C6;&#x5907;&#x597D;<code>readline</code>&#xFF0C;&#x5728;&#x65B0;&#x7684;&#x4E00;&#x884C;&#x653E;&#x7F6E;&#x5F53;&#x524D;&#x7684;<code>setPrompt</code>&#x9009;&#x9879;&#xFF0C;&#x7ED9;&#x4E88;&#x7528;&#x6237;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7528;&#x4E8E;&#x8F93;&#x5165;&#x7684;&#x5730;&#x65B9;&#x3002;&#x8BBE;&#x7F6E;<code>preserveCursor</code>&#x4E3A;<code>true</code>&#xFF0C;&#x6765;&#x9632;&#x6B62;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x88AB;&#x91CD;&#x7F6E;&#x4E3A;<code>0</code>&#x3002;</p>
+<p>&#x4ECD;&#x4F1A;&#x91CD;&#x7F6E;&#x88AB;<code>createInterface</code>&#x4F7F;&#x7528;&#x7684;<code>input</code>&#x6D41;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x88AB;&#x6682;&#x505C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5F53;&#x8C03;&#x7528;<code>createInterface</code>&#x65F6;<code>output</code>&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;<code>null</code>&#x6216;<code>undefined</code>&#xFF0C;&#x63D0;&#x793A;&#x7B26;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x5199;&#x5165;&#x3002;</p>
+<h4 id="rlquestionquery-callback">rl.question(query, callback)</h4>
+<p>&#x5E26;&#x7740;<code>query</code>&#x6765;&#x9884;&#x5148;&#x653E;&#x7F6E;&#x63D0;&#x793A;&#x7B26;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x7528;&#x6237;&#x5E94;&#x7B54;&#x65F6;&#x6267;&#x884C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x7ED9;&#x7528;&#x6237;&#x5C55;&#x793A;<code>query</code>&#xFF0C;&#x7136;&#x540E;&#x5728;&#x7528;&#x6237;&#x8F93;&#x5165;&#x4E86;&#x5E94;&#x7B54;&#x540E;&#x8C03;&#x7528;<code>callback</code>&#x3002;</p>
+<p>&#x4ECD;&#x4F1A;&#x91CD;&#x7F6E;&#x88AB;<code>createInterface</code>&#x4F7F;&#x7528;&#x7684;<code>input</code>&#x6D41;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x88AB;&#x6682;&#x505C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5F53;&#x8C03;&#x7528;<code>createInterface</code>&#x65F6;<code>output</code>&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;<code>null</code>&#x6216;<code>undefined</code>&#xFF0C;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x4F1A;&#x88AB;&#x5C55;&#x793A;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">interface.question(<span class="hljs-string">&apos;What is your favorite food?&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">answer</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Oh, so your favorite food is &apos;</span> + answer);
+});
+</code></pre>
+<h4 id="rlpause">rl.pause()</h4>
+<p>&#x6682;&#x505C;<code>readline</code>&#x7684;<code>input</code>&#x6D41;&#xFF0C;&#x5141;&#x8BB8;&#x5B83;&#x5728;&#x665A;&#x4E9B;&#x9700;&#x8981;&#x65F6;&#x6062;&#x590D;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5E26;&#x7740;&#x4E8B;&#x4EF6;&#x7684;&#x6D41;&#x4E0D;&#x4F1A;&#x7ACB;&#x523B;&#x88AB;&#x6682;&#x505C;&#x3002;&#x5728;&#x8C03;&#x7528;&#x4E86;<code>pause</code>&#x540E;&#xFF0C;&#x8BB8;&#x591A;&#x4E8B;&#x4EF6;&#x53EF;&#x80FD;&#x88AB;&#x89E6;&#x53D1;&#xFF0C;&#x5305;&#x62EC;<code>line</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<h4 id="rlresume">rl.resume()</h4>
+<p>&#x6062;&#x590D;<code>readline</code>&#x7684;<code>input</code>&#x6D41;&#x3002;</p>
+<h4 id="rlclose">rl.close()</h4>
+<p>&#x5173;&#x95ED;&#x5B9E;&#x4F8B;&#x63A5;&#x53E3;&#xFF0C;&#x653E;&#x5F03;&#x5BF9;<code>input</code>&#x548C;<code>output</code>&#x6D41;&#x7684;&#x63A7;&#x5236;&#x3002;<code>close</code>&#x4E8B;&#x4EF6;&#x4E5F;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="rlwritedata-key">rl.write(data[, key])</h4>
+<p>&#x5411;<code>output</code>&#x6D41;&#x5199;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x9664;&#x975E;&#x5F53;&#x8C03;&#x7528;<code>createInterface</code>&#x65F6;<code>output</code>&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;<code>null</code>&#x6216;<code>undefined</code>&#x3002;<code>key</code>&#x662F;&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x4E86;&#x952E;&#x5E8F;&#x5217;&#x7684;&#x5BF9;&#x8C61;&#xFF1B;&#x5728;&#x5F53;&#x7EC8;&#x7AEF;&#x4E3A;TTY&#x65F6;&#x53EF;&#x7528;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>input</code>&#x6D41;&#x88AB;&#x6682;&#x505C;&#xFF0C;&#x5B83;&#x4E5F;&#x4F1A;&#x88AB;&#x6062;&#x590D;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">rl.write(<span class="hljs-string">&apos;Delete me!&apos;</span>);
+<span class="hljs-comment">// Simulate ctrl+u to delete the line written previously</span>
+rl.write(<span class="hljs-literal">null</span>, {ctrl: <span class="hljs-literal">true</span>, name: <span class="hljs-string">&apos;u&apos;</span>});
+</code></pre>
+<h4 id="events">Events</h4>
+<h4 id="event-line">Event: &apos;line&apos;</h4>
+<ul>
+<li>function (line) {}</li>
+</ul>
+<p>&#x5F53;<code>input</code>&#x6D41;&#x6536;&#x5230;&#x4E00;&#x4E2A;<code>\n</code>&#x65F6;&#x89E6;&#x53D1;&#xFF0C;&#x901A;&#x5E38;&#x5728;&#x7528;&#x6237;&#x6572;&#x4E0B;&#x56DE;&#x8F66;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x597D;&#x94A9;&#x5B50;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">rl.on(<span class="hljs-string">&apos;line&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">cmd</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;You just typed: &apos;</span>+cmd);
+});
+</code></pre>
+<h4 id="event-pause">Event: &apos;pause&apos;</h4>
+<ul>
+<li>function () {}</li>
+</ul>
+<p>&#x5F53;<code>input</code>&#x6D41;&#x88AB;&#x6682;&#x505C;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x4E5F;&#x4F1A;&#x5728;<code>input</code>&#x6CA1;&#x6709;&#x88AB;&#x6682;&#x505C;&#x5E76;&#x4E14;&#x6536;&#x5230;&#x4E00;&#x4E2A;<code>SIGCONT</code>&#x4E8B;&#x4EF6;&#x65F6;&#x89E6;&#x53D1;&#xFF08;&#x53C2;&#x9605;<code>SIGTSTP</code>&#x4E8B;&#x4EF6;&#x548C;<code>SIGCONT</code>&#x4E8B;&#x4EF6;&#xFF09;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">rl.on(<span class="hljs-string">&apos;pause&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Readline paused.&apos;</span>);
+});
+</code></pre>
+<h4 id="event-resume">Event: &apos;resume&apos;</h4>
+<ul>
+<li>function () {}</li>
+</ul>
+<p>&#x5F53;<code>input</code>&#x6D41;&#x88AB;&#x6062;&#x590D;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">rl.on(<span class="hljs-string">&apos;resume&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Readline resumed.&apos;</span>);
+});
+</code></pre>
+<h4 id="event-close">Event: &apos;close&apos;</h4>
+<ul>
+<li>function () {}</li>
+</ul>
+<p>&#x5F53;<code>close()</code>&#x88AB;&#x8C03;&#x7528;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x4E5F;&#x4F1A;&#x5728;<code>input</code>&#x6D41;&#x6536;&#x5230;&#x5B83;&#x7684;<code>end</code>&#x4E8B;&#x4EF6;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5F53;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x63A5;&#x53E3;&#x5B9E;&#x4F8B;&#x9700;&#x8981;&#x8003;&#x8651;&#x201C;&#x88AB;&#x7ED3;&#x675F;&#x201D;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;<code>input</code>&#x6D41;&#x63A5;&#x6536;&#x5230;<code>^D</code>&#xFF08;&#x4E5F;&#x88AB;&#x8BA4;&#x4F5C;<code>EOT</code>&#xFF09;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x4E5F;&#x4F1A;&#x5728;&#x5982;&#x679C;&#x5F53;&#x524D;&#x6CA1;&#x6709;<code>SIGINT</code>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#xFF0C;&#x4E14;<code>input</code>&#x6D41;&#x63A5;&#x6536;&#x5230;<code>^C</code>&#xFF08;&#x4E5F;&#x88AB;&#x8BA4;&#x4F5C;<code>SIGINT</code>&#xFF09;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<h4 id="event-sigint">Event: &apos;SIGINT&apos;</h4>
+<ul>
+<li>function () {}</li>
+</ul>
+<p>&#x5F53;<code>input</code>&#x6D41;&#x63A5;&#x6536;&#x5230;<code>^C</code>&#xFF08;&#x4E5F;&#x88AB;&#x8BA4;&#x4F5C;<code>SIGINT</code>&#xFF09;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5982;&#x679C;&#x5F53;&#x524D;&#x6CA1;&#x6709;<code>SIGINT</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#xFF0C;<code>pause</code>&#x4E8B;&#x4EF6;&#x5C06;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">rl.on(<span class="hljs-string">&apos;SIGINT&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  rl.question(<span class="hljs-string">&apos;Are you sure you want to exit?&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">answer</span>) </span>{
+    <span class="hljs-keyword">if</span> (answer.match(<span class="hljs-regexp">/^y(es)?$/i</span>)) rl.pause();
+  });
+});
+</code></pre>
+<h4 id="event-sigtstp">Event: &apos;SIGTSTP&apos;</h4>
+<ul>
+<li>function () {}</li>
+</ul>
+<p>&#x5728;Windows&#x5E73;&#x53F0;&#x4E0B;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x5F53;<code>input</code>&#x6D41;&#x63A5;&#x6536;&#x5230;&#x4E00;&#x4E2A;<code>^Z</code>&#xFF08;&#x4E5F;&#x88AB;&#x8BA4;&#x4F5C;<code>SIGTSTP</code>&#xFF09;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x5982;&#x679C;&#x5F53;&#x524D;&#x6CA1;&#x6709;<code>SIGTSTP</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#xFF0C;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x5C06;&#x4F1A;&#x88AB;&#x9001;&#x81F3;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x3002;</p>
+<p>&#x5F53;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;<code>fg</code>&#x6062;&#x590D;&#xFF0C;<code>pause</code>&#x548C;<code>SIGCONT</code>&#x4E8B;&#x4EF6;&#x90FD;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6765;&#x6062;&#x590D;&#x6D41;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6D41;&#x5728;&#x7A0B;&#x5E8F;&#x88AB;&#x9001;&#x81F3;&#x540E;&#x53F0;&#x524D;&#x5C31;&#x88AB;&#x6682;&#x505C;&#xFF0C;<code>pause</code>&#x548C;<code>SIGCONT</code>&#x4E8B;&#x4EF6;&#x5C06;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">rl.on(<span class="hljs-string">&apos;SIGTSTP&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// This will override SIGTSTP and prevent the program from going to the</span>
+  <span class="hljs-comment">// background.</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Caught SIGTSTP.&apos;</span>);
+});
+</code></pre>
+<h4 id="event-sigcont">Event: &apos;SIGCONT&apos;</h4>
+<ul>
+<li>function () {}</li>
+</ul>
+<p>&#x5728;Windows&#x5E73;&#x53F0;&#x4E0B;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x5F53;<code>input</code>&#x6D41;&#x88AB;<code>^Z</code>&#xFF08;&#x4E5F;&#x88AB;&#x8BA4;&#x4F5C;<code>SIGTSTP</code>&#xFF09;&#x9001;&#x81F3;&#x540E;&#x53F0;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;<code>fg(1)</code>&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x4EC5;&#x5728;&#x7A0B;&#x5E8F;&#x88AB;&#x9001;&#x81F3;&#x540E;&#x53F0;&#x524D;&#x6D41;&#x6CA1;&#x6709;&#x88AB;&#x6682;&#x505C;&#x65F6;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">rl.on(<span class="hljs-string">&apos;SIGCONT&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// `prompt` will automatically resume the stream</span>
+  rl.prompt();
+});
+</code></pre>
+<h4 id="example-tiny-cli">Example: Tiny CLI</h4>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x4EE5;&#x4E0A;&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8FF7;&#x4F60;&#x7684;&#x63A7;&#x5236;&#x53F0;&#x63A5;&#x53E3;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> readline = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;readline&apos;</span>),
+    rl = readline.createInterface(process.stdin, process.stdout);
+
+rl.setPrompt(<span class="hljs-string">&apos;OHAI&gt; &apos;</span>);
+rl.prompt();
+
+rl.on(<span class="hljs-string">&apos;line&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">line</span>) </span>{
+  <span class="hljs-keyword">switch</span>(line.trim()) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;hello&apos;</span>:
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;world!&apos;</span>);
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">default</span>:
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Say what? I might have heard `&apos;</span> + line.trim() + <span class="hljs-string">&apos;`&apos;</span>);
+      <span class="hljs-keyword">break</span>;
+  }
+  rl.prompt();
+}).on(<span class="hljs-string">&apos;close&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Have a great day!&apos;</span>);
+  process.exit(<span class="hljs-number">0</span>);
+});
+</code></pre>
+<h4 id="readlinecursortostream-x-y">readline.cursorTo(stream, x, y)</h4>
+<p>&#x5728;&#x7ED9;&#x5B9A;&#x7684;TTY&#x6D41;&#x4E2D;&#xFF0C;&#x5C06;&#x5149;&#x6807;&#x79FB;&#x52A8;&#x5230;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x3002;</p>
+<h4 id="readlinemovecursorstream-dx-dy">readline.moveCursor(stream, dx, dy)</h4>
+<p>&#x5728;&#x7ED9;&#x5B9A;&#x7684;TTY&#x6D41;&#x4E2D;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#xFF0C;&#x5C06;&#x5149;&#x6807;&#x79FB;&#x52A8;&#x5230;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x3002;</p>
+<h4 id="readlineclearlinestream-dir">readline.clearLine(stream, dir)</h4>
+<p>&#x7528;&#x6307;&#x5B9A;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;&#x7ED9;&#x5B9A;&#x7684;TTY&#x6D41;&#x4E2D;&#xFF0C;&#x6E05;&#x9664;&#x5F53;&#x524D;&#x7684;&#x884C;&#x3002;<code>dir</code>&#x53EF;&#x4EE5;&#x662F;&#x4EE5;&#x4E0B;&#x503C;&#x4E4B;&#x4E00;&#xFF1A;</p>
+<ul>
+<li>-1 - &#x4ECE;&#x5149;&#x6807;&#x7684;&#x5DE6;&#x8FB9;</li>
+<li>1 - &#x4ECE;&#x5149;&#x6807;&#x7684;&#x53F3;&#x8FB9;</li>
+<li>0 - &#x6574;&#x884C;<h4 id="readlineclearscreendownstream">readline.clearScreenDown(stream)</h4>
+</li>
+</ul>
+<p>&#x4ECE;&#x5F53;&#x524D;&#x7684;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#xFF0C;&#x6E05;&#x9664;&#x5C4F;&#x5E55;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="QueryStrings.html" class="navigation navigation-prev " aria-label="Previous page: Query Strings">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="REPL.html" class="navigation navigation-next " aria-label="Next page: REPL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Readline","level":"1.23","depth":1,"next":{"title":"REPL","level":"1.24","depth":1,"path":"REPL.md","ref":"REPL.md","articles":[]},"previous":{"title":"Query Strings","level":"1.22","depth":1,"path":"QueryStrings.md","ref":"QueryStrings.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"Readline.md","mtime":"2016-06-20T01:36:09.008Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

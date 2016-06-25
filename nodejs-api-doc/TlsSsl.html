@@ -1,0 +1,1128 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>TLS/SSL · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="TTY.html" />
+    
+    
+    <link rel="prev" href="Timers.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >TLS/SSL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tls-ssl">TLS (SSL)</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x901A;&#x8FC7;<code>require(&apos;tls&apos;)</code>&#x6765;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x3002;</p>
+<p><code>tls</code>&#x6A21;&#x5757;&#x4F7F;&#x7528;OpenSSL&#x6765;&#x63D0;&#x4F9B;&#x4F20;&#x8F93;&#x5C42;&#x7684;&#x5B89;&#x5168; &#x548C;/&#x6216; &#x5B89;&#x5168;<code>socket</code>&#x5C42;&#xFF1A;&#x5DF2;&#x52A0;&#x5BC6;&#x7684;&#x6D41;&#x901A;&#x4FE1;&#x3002;</p>
+<p>TLS/SSL&#x662F;&#x4E00;&#x79CD;&#x516C;/&#x79C1;&#x94A5;&#x67B6;&#x6784;&#x3002;&#x6BCF;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x79C1;&#x94A5;&#x3002;&#x4E00;&#x4E2A;&#x79C1;&#x94A5;&#x901A;&#x8FC7;&#x50CF;&#x5982;&#x4E0B;&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#xFF1A;</p>
+<pre><code class="lang-SHELL">openssl genrsa -out ryans-key.pem 2048
+</code></pre>
+<p>&#x6240;&#x6709;&#x7684;&#x670D;&#x52A1;&#x5668;&#x548C;&#x90E8;&#x5206;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x8BC1;&#x4E66;&#x3002;&#x8BC1;&#x4E66;&#x662F;&#x88AB;CA&#x7B7E;&#x540D;&#x6216;&#x81EA;&#x7B7E;&#x540D;&#x7684;&#x516C;&#x94A5;&#x3002;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x8BC1;&#x4E66;&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x201C;&#x8BC1;&#x4E66;&#x7B7E;&#x7F72;&#x8BF7;&#x6C42;&#xFF08;Certificate Signing Request&#xFF09;&#x201D;&#xFF08;CSR&#xFF09;&#x6587;&#x4EF6;&#x3002;&#x901A;&#x8FC7;&#xFF1A;</p>
+<pre><code class="lang-SHELL">openssl req -new -sha256 -key ryans-key.pem -out ryans-csr.pem
+</code></pre>
+<p>&#x8981;&#x901A;&#x8FC7;CSR&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;&#xFF0C;&#x901A;&#x8FC7;&#xFF1A;</p>
+<pre><code class="lang-js">openssl x509 -req -<span class="hljs-keyword">in</span> ryans-csr.pem -signkey ryans-key.pem -out ryans-cert.pem
+</code></pre>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x628A;CSR&#x4EA4;&#x7ED9;&#x4E00;&#x4E2A;CA&#x8BF7;&#x6C42;&#x7B7E;&#x540D;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5B8C;&#x5168;&#x5411;&#x524D;&#x4FDD;&#x5BC6;&#xFF08;PFS&#xFF09;&#xFF0C;&#x9700;&#x8981;&#x4EA7;&#x751F;&#x4E00;&#x4E2A; &#x8FEA;&#x83F2;-&#x8D6B;&#x5C14;&#x66FC; &#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-SHELL">openssl dhparam -outform PEM -out dhparam.pem 2048
+</code></pre>
+<p>&#x521B;&#x5EFA;<code>.pfx</code>&#x6216;<code>.p12</code>&#xFF0C;&#x901A;&#x8FC7;&#xFF1A;</p>
+<pre><code class="lang-SHELL">openssl pkcs12 -export -in agent5-cert.pem -inkey agent5-key.pem \
+    -certfile ca-cert.pem -out agent5.pfx
+</code></pre>
+<ul>
+<li>in: &#x8BC1;&#x4E66;</li>
+<li>inkey: &#x79C1;&#x94A5;</li>
+<li>certfile: &#x5C06;&#x6240;&#x6709;<code>CA certs</code>&#x4E32;&#x8054;&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5C31;&#x50CF;<code>cat ca1-cert.pem ca2-cert.pem &gt; ca-cert.pem</code>&#x3002;</li>
+</ul>
+<h4 id="&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#x7684;&#x91CD;&#x65B0;&#x534F;&#x5546;&#x653B;&#x51FB;&#x7684;&#x51CF;&#x7F13;">&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#x7684;&#x91CD;&#x65B0;&#x534F;&#x5546;&#x653B;&#x51FB;&#x7684;&#x51CF;&#x7F13;</h4>
+<p>TLS&#x534F;&#x8BAE;&#x8BA9;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x534F;&#x5546;&#x67D0;&#x4E9B;&#x90E8;&#x5206;&#x7684;TLS&#x4F1A;&#x8BDD;&#x3002;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x4F1A;&#x8BDD;&#x91CD;&#x534F;&#x5546;&#x9700;&#x8981;&#x4E0D;&#x76F8;&#x79F0;&#x7684;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x8D44;&#x6E90;&#xFF0C;&#x8FD9;&#x5B83;&#x53EF;&#x80FD;&#x6210;&#x4E3A;&#x6F5C;&#x5728;&#x7684;DOS&#x653B;&#x51FB;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x51CF;&#x7F13;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x91CD;&#x65B0;&#x534F;&#x5546;&#x88AB;&#x9650;&#x5236;&#x5728;&#x4E86;&#x6BCF;10&#x5206;&#x949F;&#x6700;&#x591A;3&#x6B21;&#x3002;&#x5F53;&#x8D85;&#x8FC7;&#x9600;&#x503C;&#x65F6;&#xFF0C;<code>tls.TLSSocket</code>&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;&#x9600;&#x503C;&#x662F;&#x53EF;&#x4EE5;&#x8C03;&#x6574;&#x7684;&#xFF1A;</p>
+<ul>
+<li><p>tls.CLIENT_RENEG_LIMIT: &#x91CD;&#x65B0;&#x534F;&#x5546;&#x9650;&#x5236;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>3</code>&#x3002;</p>
+</li>
+<li><p>tls.CLIENT_RENEG_WINDOW: &#x91CD;&#x65B0;&#x534F;&#x5546;&#x7A97;&#x53E3;&#xFF08;&#x79D2;&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;10&#x5206;&#x949F;&#x3002;</p>
+</li>
+</ul>
+<p>&#x9664;&#x975E;&#x4F60;&#x77E5;&#x9053;&#x4F60;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x8981;&#x6539;&#x53D8;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x6D4B;&#x8BD5;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4F7F;&#x7528;<code>openssl s_client -connect address:port</code>&#x6765;&#x8FDE;&#x63A5;&#x5B83;&#xFF0C;&#x7136;&#x540E;&#x952E;&#x5165;<code>R&lt;CR&gt;</code>&#xFF08;&#x5B57;&#x6BCD;<code>R</code>&#x52A0;&#x56DE;&#x8F66;&#xFF09;&#x591A;&#x6B21;&#x3002;</p>
+<h4 id="npn-&#x548C;-sni">NPN &#x548C; SNI</h4>
+<p><code>NPN</code>&#xFF08;&#x4E0B;&#x4E2A;&#x534F;&#x8BAE;&#x534F;&#x5546;&#xFF09;&#x548C;SNI&#xFF08;&#x670D;&#x52A1;&#x5668;&#x540D;&#x79F0;&#x6307;&#x793A;&#xFF09;&#x90FD;&#x662F;TLS&#x63E1;&#x624B;&#x62D3;&#x5C55;&#xFF0C;&#x5B83;&#x4EEC;&#x5141;&#x8BB8;&#x4F60;&#xFF1A;</p>
+<ul>
+<li>NPN - &#x901A;&#x8FC7;&#x591A;&#x4E2A;&#x534F;&#x8BAE;&#xFF08;HTTP&#xFF0C;SPDY&#xFF09;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;TLS&#x670D;&#x52A1;&#x5668;&#x3002;</li>
+<li>SNI - &#x901A;&#x8FC7;&#x591A;&#x4E2A;&#x6709;&#x4E0D;&#x540C;&#x7684;SSL&#x8BC1;&#x4E66;&#x7684;&#x4E3B;&#x673A;&#x540D;&#x6765;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;TLS&#x670D;&#x52A1;&#x5668;&#x3002;</li>
+</ul>
+<h4 id="&#x5B8C;&#x5168;&#x5411;&#x524D;&#x4FDD;&#x5BC6;">&#x5B8C;&#x5168;&#x5411;&#x524D;&#x4FDD;&#x5BC6;</h4>
+<p>&#x672F;&#x8BED;&#x201C;&#x5411;&#x524D;&#x4FDD;&#x5BC6;&#x201D;&#x6216;&#x201C;&#x5B8C;&#x5168;&#x5411;&#x524D;&#x4FDD;&#x5BC6;&#x201D;&#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4E2A;&#x5BC6;&#x94A5;-&#x534F;&#x5546;&#xFF08;&#x5982;&#x5BC6;&#x94A5;-&#x4EA4;&#x6362;&#xFF09;&#x65B9;&#x6CD5;&#x7684;&#x7279;&#x6027;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5B83;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x5F53;&#xFF08;&#x4F60;&#x7684;&#xFF09;&#x670D;&#x52A1;&#x5668;&#x7684;&#x79C1;&#x94A5;&#x88AB;&#x7A83;&#x53D6;&#x4E86;&#xFF0C;&#x7A83;&#x53D6;&#x8005;&#x4E5F;&#x53EA;&#x80FD;&#x5728;&#x4ED6;&#x6210;&#x529F;&#x83B7;&#x5F97;&#x6240;&#x6709;&#x4F1A;&#x8BDD;&#x4EA7;&#x751F;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&#x65F6;&#xFF0C;&#x624D;&#x80FD;&#x89E3;&#x7801;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5B83;&#x901A;&#x8FC7;&#x5728;&#x6BCF;&#x6B21;&#x63E1;&#x624B;&#x4E2D;&#xFF08;&#x800C;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x4F1A;&#x8BDD;&#x90FD;&#x662F;&#x540C;&#x6837;&#x7684;&#x5BC6;&#x94A5;&#xFF09;&#x968F;&#x673A;&#x5730;&#x4EA7;&#x751F;&#x7528;&#x4E8E;&#x5BC6;&#x94A5;-&#x534F;&#x5546;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x5B9E;&#x73B0;&#x4E86;&#x8FD9;&#x4E2A;&#x6280;&#x672F;&#x7684;&#x65B9;&#x6CD5;&#x88AB;&#x79F0;&#x4F5C;&#x201C;ephemeral&#x201D;&#x3002;</p>
+<p>&#x76EE;&#x524D;&#x6709;&#x4E24;&#x79CD;&#x666E;&#x904D;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x5B8C;&#x5168;&#x5411;&#x524D;&#x4FDD;&#x5BC6;&#xFF1A;</p>
+<ul>
+<li>DHE - &#x4E00;&#x4E2A; &#x8FEA;&#x83F2;-&#x8D6B;&#x5C14;&#x66FC; &#x5BC6;&#x94A5;-&#x534F;&#x5546; &#x534F;&#x8BAE;&#x7684;<code>ephemeral</code>&#x7248;&#x672C;&#x3002;</li>
+<li>ECDHE - &#x4E00;&#x4E2A;&#x692D;&#x5706;&#x66F2;&#x7EBF; &#x8FEA;&#x83F2;-&#x8D6B;&#x5C14;&#x66FC; &#x5BC6;&#x94A5;-&#x534F;&#x5546; &#x534F;&#x8BAE;&#x7684;<code>ephemeral</code>&#x7248;&#x672C;&#x3002;</li>
+</ul>
+<p><code>ephemeral</code>&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x6709;&#x4E00;&#x4E9B;&#x6027;&#x80FD;&#x95EE;&#x9898;&#xFF0C;&#x56E0;&#x4E3A;&#x5BC6;&#x94A5;&#x7684;&#x751F;&#x6210;&#x662F;&#x6602;&#x8D35;&#x7684;&#x3002;</p>
+<h4 id="tlsgetciphers">tls.getCiphers()</h4>
+<p>&#x8FD4;&#x56DE;&#x652F;&#x6301;&#x7684;SSL&#x52A0;&#x5BC6;&#x5668;&#x7684;&#x540D;&#x5B57;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ciphers = tls.getCiphers();
+<span class="hljs-built_in">console</span>.log(ciphers); <span class="hljs-comment">// [&apos;AES128-SHA&apos;, &apos;AES256-SHA&apos;, ...]</span>
+</code></pre>
+<h4 id="tlscreateserveroptions-secureconnectionlistener">tls.createServer(options[, secureConnectionListener])</h4>
+<p>&#x521B;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>tls.Server</code>&#x5B9E;&#x4F8B;&#x3002;<code>connectionListener</code>&#x53C2;&#x6570;&#x88AB;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x4E3A;<code>secureConnection</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x3002;<code>options</code>&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF1A;</p>
+<ul>
+<li><p>pfx: &#x4E00;&#x4E2A;&#x5305;&#x542B;<code>PFX</code>&#x6216;<code>PKCS12</code>&#x683C;&#x5F0F;&#x7684;&#x79C1;&#x94A5;&#xFF0C;&#x52A0;&#x5BC6;&#x51ED;&#x8BC1;&#x548C;CA&#x8BC1;&#x4E66;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#x3002;</p>
+</li>
+<li><p>key: &#x4E00;&#x4E2A;&#x5E26;&#x7740;<code>PEM</code>&#x52A0;&#x5BC6;&#x79C1;&#x94A5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x53EF;&#x4EE5;&#x662F;&#x5BC6;&#x94A5;&#x6570;&#x7EC4;&#xFF09;&#xFF08;&#x5FC5;&#x9009;&#xFF09;&#x3002;</p>
+</li>
+<li><p>passphrase: &#x4E00;&#x4E2A;&#x79C1;&#x94A5;&#x6216;<code>pfx</code>&#x5BC6;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+</li>
+<li><p>cert: &#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;<code>PEM</code>&#x683C;&#x5F0F;&#x7684;&#x670D;&#x52A1;&#x5668;&#x8BC1;&#x4E66;&#x5BC6;&#x94A5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#xFF08;&#x53EF;&#x4EE5;&#x662F;<code>cert</code>&#x6570;&#x7EC4;&#xFF09;&#xFF08;&#x5FC5;&#x9009;&#xFF09;&#x3002;</p>
+</li>
+<li><p>ca: &#x4E00;&#x4E2A;<code>PEM</code>&#x683C;&#x5F0F;&#x7684;&#x53D7;&#x4FE1;&#x4EFB;&#x8BC1;&#x4E66;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#x6570;&#x7EC4;&#x3002;&#x5982;&#x679C;&#x5B83;&#x88AB;&#x5FFD;&#x7565;&#xFF0C;&#x5C06;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x4F17;&#x6240;&#x5468;&#x77E5;&#x7684;&#x201C;&#x6839;&#x201D;CA&#xFF0C;&#x50CF;<code>VeriSign</code>&#x3002;&#x8FD9;&#x4E9B;&#x88AB;&#x7528;&#x6765;&#x6388;&#x6743;&#x8FDE;&#x63A5;&#x3002;</p>
+</li>
+<li><p>crl : &#x4E00;&#x4E2A;<code>PEM</code>&#x7F16;&#x7801;&#x7684;&#x8BC1;&#x4E66;&#x64A4;&#x9500;&#x5217;&#x8868;&#xFF08;Certificate Revocation List&#xFF09;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x5217;&#x8868;&#x3002;</p>
+</li>
+<li><p>ciphers: &#x4E00;&#x4E2A;&#x63CF;&#x8FF0;&#x8981;&#x4F7F;&#x7528;&#x6216;&#x6392;&#x9664;&#x7684;&#x52A0;&#x5BC6;&#x5668;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x901A;&#x8FC7;<code>:</code>&#x5206;&#x5272;&#x3002;&#x9ED8;&#x8BA4;&#x7684;&#x52A0;&#x5BC6;&#x5668;&#x5957;&#x4EF6;&#x662F;&#xFF1A;</p>
+</li>
+</ul>
+<pre><code class="lang-SHELL">ECDHE-RSA-AES128-GCM-SHA256:
+ECDHE-ECDSA-AES128-GCM-SHA256:
+ECDHE-RSA-AES256-GCM-SHA384:
+ECDHE-ECDSA-AES256-GCM-SHA384:
+DHE-RSA-AES128-GCM-SHA256:
+ECDHE-RSA-AES128-SHA256:
+DHE-RSA-AES128-SHA256:
+ECDHE-RSA-AES256-SHA384:
+DHE-RSA-AES256-SHA384:
+ECDHE-RSA-AES256-SHA256:
+DHE-RSA-AES256-SHA256:
+HIGH:
+!aNULL:
+!eNULL:
+!EXPORT:
+!DES:
+!RC4:
+!MD5:
+!PSK:
+!SRP:
+!CAMELLIA
+</code></pre>
+<p>&#x9ED8;&#x8BA4;&#x7684;&#x52A0;&#x5BC6;&#x5668;&#x5957;&#x4EF6;&#x66F4;&#x503E;&#x5411;&#x4E8E;<code>Chrome&apos;s &apos;modern cryptography&apos; setting</code>&#x7684;GCM&#x52A0;&#x5BC6;&#x5668;&#xFF0C;&#x4E5F;&#x503E;&#x5411;&#x4E8E;PFC&#x7684;ECDHE&#x548C;DHE&#x52A0;&#x5BC6;&#x5668;&#xFF0C;&#x5B83;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x5411;&#x540E;&#x517C;&#x5BB9;&#x6027;&#x3002;</p>
+<p>&#x9274;&#x4E8E;<code>specific attacks affecting larger AES key sizes</code>&#xFF0C;&#x6240;&#x4EE5;&#x66F4;&#x503E;&#x5411;&#x4E8E;&#x4F7F;&#x7528;128&#x4F4D;&#x7684;AES&#x800C;&#x4E0D;&#x662F;192&#x548C;256&#x4F4D;&#x7684;AES&#x3002;</p>
+<p>&#x65E7;&#x7684;&#x4F9D;&#x8D56;&#x4E8E;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#x548C;&#x5F03;&#x7528;&#x7684;RC4&#x6216;&#x57FA;&#x4E8E;DES&#x7684;&#x52A0;&#x5BC6;&#x5668;&#xFF08;&#x50CF;IE6&#xFF09;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x5C06;&#x4E0D;&#x80FD;&#x5B8C;&#x6210;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x4E0B;&#x7684;&#x63E1;&#x624B;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5FC5;&#x987B;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;<code>TLS&#x63A8;&#x8350;&#x89C4;&#x8303;</code>&#x53EF;&#x80FD;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x517C;&#x5BB9;&#x7684;&#x52A0;&#x5BC6;&#x5668;&#x5957;&#x4EF6;&#x3002;&#x66F4;&#x591A;&#x683C;&#x5F0F;&#x7EC6;&#x8282;&#xFF0C;&#x53C2;&#x9605;<code>OpenSSL cipher list format documentation</code>&#x3002;</p>
+<ul>
+<li>ecdhCurve: &#x4E00;&#x4E2A;&#x63CF;&#x8FF0;&#x7528;&#x4E8E;<code>ECDH</code>&#x5BC6;&#x94A5;&#x534F;&#x5546;&#x7684;&#x5DF2;&#x547D;&#x540D;&#x7684;&#x692D;&#x5706;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x7981;&#x7528;<code>ECDH</code>&#xFF0C;&#x5C31;&#x8BBE;&#x7F6E;&#x4E3A;<code>false</code>&#x3002;</li>
+</ul>
+<p>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>prime256v1</code>&#xFF08;NIST P-256&#xFF09;&#x3002;&#x4F7F;&#x7528;<code>crypto.getCurves()</code>&#x6765;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x7684;&#x692D;&#x5706;&#x5217;&#x8868;&#x3002;&#x5728;&#x6700;&#x8FD1;&#x7684;&#x53D1;&#x884C;&#x7248;&#x4E2D;&#xFF0C;&#x8FD0;&#x884C;<code>openssl ecparam -list_curves</code>&#x547D;&#x4EE4;&#x4E5F;&#x4F1A;&#x5C55;&#x793A;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x692D;&#x5706;&#x7684;&#x540D;&#x5B57;&#x548C;&#x63CF;&#x8FF0;&#x3002;</p>
+<ul>
+<li><p>dhparam: &#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;&#x8FEA;&#x83F2;-&#x8D6B;&#x5C14;&#x66FC;&#x53C2;&#x6570;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#xFF0C;&#x8981;&#x6C42;&#x6709;&#x5B8C;&#x5168;&#x5411;&#x524D;&#x4FDD;&#x5BC6;&#x3002;&#x4F7F;&#x7528;<code>openssl dhparam</code>&#x6765;&#x521B;&#x5EFA;&#x5B83;&#x3002;&#x5B83;&#x7684;&#x5BC6;&#x94A5;&#x957F;&#x5EA6;&#x9700;&#x8981;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;1024&#x5B57;&#x8282;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;&#x5F3A;&#x529B;&#x63A8;&#x8350;&#x4F7F;&#x7528;2048&#x6216;&#x66F4;&#x591A;&#x4F4D;&#xFF0C;&#x6765;&#x83B7;&#x53D6;&#x66F4;&#x9AD8;&#x7684;&#x5B89;&#x5168;&#x6027;&#x3002;&#x5982;&#x679C;&#x53C2;&#x6570;&#x88AB;&#x5FFD;&#x7565;&#x6216;&#x4E0D;&#x5408;&#x6CD5;&#xFF0C;&#x5B83;&#x4F1A;&#x88AB;&#x9ED8;&#x9ED8;&#x4E22;&#x5F03;&#x5E76;&#x4E14;<code>DHE</code>&#x52A0;&#x5BC6;&#x5668;&#x5C06;&#x4E0D;&#x53EF;&#x7528;&#x3002;</p>
+</li>
+<li><p>handshakeTimeout: &#x5F53;SSL/TLS&#x63E1;&#x624B;&#x5728;&#x8FD9;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x6BEB;&#x79D2;&#x6570;&#x540E;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;&#x7EC8;&#x6B62;&#x8FD9;&#x4E2A;&#x94FE;&#x63A5;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;120&#x79D2;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5F53;&#x63E1;&#x624B;&#x8D85;&#x65F6;&#x65F6;&#xFF0C;<code>tls.Server</code>&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;<code>clientError</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<ul>
+<li><p>honorCipherOrder : &#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x52A0;&#x5BC6;&#x5668;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x4F7F;&#x7528;&#x670D;&#x52A1;&#x5668;&#x7684;&#x9996;&#x9009;&#x9879;&#x800C;&#x4E0D;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x9996;&#x9009;&#x9879;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>true</code>&#x3002;</p>
+</li>
+<li><p>requestCert: &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5C06;&#x4F1A;&#x5411;&#x8FDE;&#x63A5;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x4E00;&#x4E2A;&#x8BC1;&#x4E66;&#xFF0C;&#x5E76;&#x4E14;&#x8BD5;&#x56FE;&#x9A8C;&#x8BC1;&#x8FD9;&#x4E2A;&#x8BC1;&#x4E66;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>true</code>&#x3002;</p>
+</li>
+<li><p>rejectUnauthorized: &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x62D2;&#x7EDD;&#x6240;&#x6709;&#x6CA1;&#x6709;&#x5728;&#x63D0;&#x4F9B;&#x7684;CA&#x5217;&#x8868;&#x4E2D;&#x88AB;&#x6388;&#x6743;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x53EA;&#x6709;&#x5728;<code>requestCert</code>&#x4E3A;<code>true</code>&#x65F6;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x624D;&#x6709;&#x6548;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#x3002;</p>
+</li>
+<li><p>NPNProtocols: &#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x7684;<code>NPN</code>&#x534F;&#x8BAE;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x6570;&#x7EC4;&#xFF08;&#x534F;&#x8BAE;&#x5E94;&#x8BE5;&#x7531;&#x5B83;&#x4EEC;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x88AB;&#x6392;&#x5E8F;&#xFF09;&#x3002;</p>
+</li>
+<li><p>SNICallback(servername, cb): &#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x652F;&#x6301;<code>SNI TLS</code>&#x6269;&#x5C55;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;servername&#x548C;cb&#x3002;<code>SNICallback</code>&#x5FC5;&#x987B;&#x6267;&#x884C;<code>cb(null, ctx)</code>,<code>ctx</code>&#x662F;&#x4E00;&#x4E2A;<code>SecureContext</code>&#x5B9E;&#x4F8B;&#xFF08;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>tls.createSecureContext(...)</code>&#x6765;&#x83B7;&#x53D6;&#x5408;&#x9002;&#x7684;<code>SecureContext</code>&#xFF09;&#x3002;&#x5982;&#x679C;<code>SNICallback</code>&#x6CA1;&#x6709;&#x88AB;&#x63D0;&#x4F9B; - &#x9ED8;&#x8BA4;&#x7684;&#x6709;&#x9AD8;&#x5C42;&#x6B21;API&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x4F7F;&#x7528;&#xFF08;&#x53C2;&#x9605;&#x4E0B;&#x6587;&#xFF09;&#x3002;</p>
+</li>
+<li><p>sessionTimeout: &#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x5728;TLS&#x4F1A;&#x8BDD;&#x6807;&#x8BC6;&#x7B26;&#x548C;TLS&#x4F1A;&#x8BDD;&#x95E8;&#x7968;&#xFF08;tickets&#xFF09;&#x88AB;&#x670D;&#x52A1;&#x5668;&#x521B;&#x5EFA;&#x540E;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x3002;&#x66F4;&#x591A;&#x8BE6;&#x60C5;&#x53C2;&#x9605;<code>SSL_CTX_set_timeout</code>&#x3002;</p>
+</li>
+<li><p>ticketKeys: &#x4E00;&#x4E2A;&#x7531;16&#x5B57;&#x8282;&#x524D;&#x7F00;&#xFF0C;16&#x5B57;&#x8282;hmac&#x5BC6;&#x94A5;&#xFF0C;16&#x5B57;&#x8282;AEC&#x5BC6;&#x94A5;&#x7EC4;&#x6210;&#x7684;48&#x5B57;&#x8282;<code>buffer</code>&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x5728;&#x4E0D;&#x540C;&#x7684;<code>tls</code>&#x670D;&#x52A1;&#x5668;&#x5B9E;&#x4F8B;&#x4E0A;&#x63A5;&#x53D7;<code>tls</code>&#x4F1A;&#x8BDD;&#x95E8;&#x7968;&#x3002;</p>
+</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x4F1A;&#x5728;<code>cluster</code>&#x6A21;&#x5757;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x95F4;&#x81EA;&#x52A8;&#x5171;&#x4EAB;&#x3002;</p>
+<ul>
+<li><p>sessionIdContext: &#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;&#x4F1A;&#x8BDD;&#x6062;&#x590D;&#x6807;&#x8BC6;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C;<code>requestCert</code>&#x4E3A;<code>true</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x751F;&#x6210;&#x7684;MD5&#x54C8;&#x5E0C;&#x503C;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x5C31;&#x5C06;&#x4E0D;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+</li>
+<li><p>secureProtocol: &#x5C06;&#x8981;&#x4F7F;&#x7528;&#x7684;SSL&#x65B9;&#x6CD5;&#xFF0C;&#x4E3E;&#x4F8B;&#xFF0C;<code>SSLv3_method</code>&#x5C06;&#x5F3A;&#x5236;&#x4F7F;&#x7528;SSL v3&#x3002;&#x53EF;&#x7528;&#x7684;&#x503C;&#x53D6;&#x51B3;&#x4E8E;OpenSSL&#x7684;&#x5B89;&#x88C5;&#x548C;<code>SSL_METHODS</code>&#x5E38;&#x91CF;&#x4E2D;&#x88AB;&#x5B9A;&#x4E49;&#x7684;&#x503C;&#x3002;</p>
+</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x5E94;&#x7B54;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> tls = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;tls&apos;</span>);
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+
+<span class="hljs-keyword">var</span> options = {
+  key: fs.readFileSync(<span class="hljs-string">&apos;server-key.pem&apos;</span>),
+  cert: fs.readFileSync(<span class="hljs-string">&apos;server-cert.pem&apos;</span>),
+
+  <span class="hljs-comment">// This is necessary only if using the client certificate authentication.</span>
+  requestCert: <span class="hljs-literal">true</span>,
+
+  <span class="hljs-comment">// This is necessary only if the client uses the self-signed certificate.</span>
+  ca: [ fs.readFileSync(<span class="hljs-string">&apos;client-cert.pem&apos;</span>) ]
+};
+
+<span class="hljs-keyword">var</span> server = tls.createServer(options, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">socket</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;server connected&apos;</span>,
+              socket.authorized ? <span class="hljs-string">&apos;authorized&apos;</span> : <span class="hljs-string">&apos;unauthorized&apos;</span>);
+  socket.write(<span class="hljs-string">&quot;welcome!\n&quot;</span>);
+  socket.setEncoding(<span class="hljs-string">&apos;utf8&apos;</span>);
+  socket.pipe(socket);
+});
+server.listen(<span class="hljs-number">8000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;server bound&apos;</span>);
+});
+</code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> tls = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;tls&apos;</span>);
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+
+<span class="hljs-keyword">var</span> options = {
+  pfx: fs.readFileSync(<span class="hljs-string">&apos;server.pfx&apos;</span>),
+
+  <span class="hljs-comment">// This is necessary only if using the client certificate authentication.</span>
+  requestCert: <span class="hljs-literal">true</span>,
+
+};
+
+<span class="hljs-keyword">var</span> server = tls.createServer(options, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">socket</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;server connected&apos;</span>,
+              socket.authorized ? <span class="hljs-string">&apos;authorized&apos;</span> : <span class="hljs-string">&apos;unauthorized&apos;</span>);
+  socket.write(<span class="hljs-string">&quot;welcome!\n&quot;</span>);
+  socket.setEncoding(<span class="hljs-string">&apos;utf8&apos;</span>);
+  socket.pipe(socket);
+});
+server.listen(<span class="hljs-number">8000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;server bound&apos;</span>);
+});
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>openssl s_client</code>&#x6765;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-SHELL">openssl s_client -connect 127.0.0.1:8000
+</code></pre>
+<h4 id="tlsconnectoptions-callback">tls.connect(options[, callback])</h4>
+<h4 id="tlsconnectport-host-options-callback">tls.connect(port[, host][, options][, callback])</h4>
+<p>&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684; &#x7AEF;&#x53E3;&#x548C;&#x4E3B;&#x673A;&#xFF08;&#x65E7;API&#xFF09;&#x6216; <code>options.port</code>&#x548C;<code>options.host</code> &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x3002;&#x5982;&#x679C;&#x5FFD;&#x7565;&#x4E86;&#x4E3B;&#x673A;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>localhost</code>&#x3002;<code>options</code>&#x53EF;&#x662F;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ul>
+<li><p>host: &#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x8BE5;&#x8FDE;&#x63A5;&#x5230;&#x7684;&#x4E3B;&#x673A;&#x3002;</p>
+</li>
+<li><p>port: &#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x8BE5;&#x8FDE;&#x63A5;&#x5230;&#x7684;&#x7AEF;&#x53E3;&#x3002;</p>
+</li>
+<li><p>socket: &#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;<code>socket</code>&#x7684;&#x6765;&#x5EFA;&#x7ACB;&#x5B89;&#x5168;&#x8FDE;&#x63A5;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>socket</code>&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x88AB;&#x6307;&#x5B9A;&#xFF0C;<code>host</code>&#x548C;<code>port</code>&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+</li>
+<li><p>path: &#x521B;&#x5EFA;&#x5230;<code>path</code>&#x7684;unix <code>socket</code>&#x8FDE;&#x63A5;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x88AB;&#x6307;&#x5B9A;&#xFF0C;<code>host</code>&#x548C;<code>port</code>&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+</li>
+<li><p>pfx: &#x4E00;&#x4E2A;<code>PFX</code>&#x6216;<code>PKCS12</code>&#x683C;&#x5F0F;&#x7684;&#x5305;&#x542B;&#x4E86;&#x79C1;&#x94A5;&#xFF0C;&#x8BC1;&#x4E66;&#x548C;CA&#x8BC1;&#x4E66;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#x3002;</p>
+</li>
+<li><p>key: &#x4E00;&#x4E2A;<code>PEM</code>&#x683C;&#x5F0F;&#x7684;&#x5305;&#x542B;&#x4E86;&#x5BA2;&#x6237;&#x7AEF;&#x79C1;&#x94A5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#xFF08;&#x53EF;&#x4EE5;&#x662F;&#x5BC6;&#x94A5;&#x7684;&#x6570;&#x7EC4;&#xFF09;&#x3002;</p>
+</li>
+<li><p>passphrase: &#x79C1;&#x94A5;&#x6216;<code>pfx</code>&#x7684;&#x5BC6;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+</li>
+<li><p>cert: &#x4E00;&#x4E2A;<code>PEM</code>&#x683C;&#x5F0F;&#x7684;&#x5305;&#x542B;&#x4E86;&#x8BC1;&#x4E66;&#x5BC6;&#x94A5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#xFF08;&#x53EF;&#x4EE5;&#x662F;&#x5BC6;&#x94A5;&#x7684;&#x6570;&#x7EC4;&#xFF09;&#x3002;</p>
+</li>
+<li><p>ca: &#x4E00;&#x4E2A;<code>PEM</code>&#x683C;&#x5F0F;&#x7684;&#x53D7;&#x4FE1;&#x4EFB;&#x8BC1;&#x4E66;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#x6570;&#x7EC4;&#x3002;&#x5982;&#x679C;&#x5B83;&#x88AB;&#x5FFD;&#x7565;&#xFF0C;&#x5C06;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x4F17;&#x6240;&#x5468;&#x77E5;&#x7684;CA&#xFF0C;&#x50CF;<code>VeriSign</code>&#x3002;&#x8FD9;&#x4E9B;&#x88AB;&#x7528;&#x6765;&#x6388;&#x6743;&#x8FDE;&#x63A5;&#x3002;</p>
+</li>
+<li><p>ciphers: &#x4E00;&#x4E2A;&#x63CF;&#x8FF0;&#x4E86;&#x8981;&#x4F7F;&#x7528;&#x6216;&#x6392;&#x9664;&#x7684;&#x52A0;&#x5BC6;&#x5668;&#xFF0C;&#x7531;<code>:</code>&#x5206;&#x5272;&#x3002;&#x4F7F;&#x7528;&#x7684;&#x9ED8;&#x8BA4;&#x52A0;&#x5BC6;&#x5668;&#x5957;&#x4EF6;&#x4E0E;<code>tls.createServer</code>&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x6837;&#x3002;</p>
+</li>
+<li><p>rejectUnauthorized: &#x82E5;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#xFF0C;&#x4F1A;&#x6839;&#x636E;&#x63D0;&#x4F9B;&#x7684;CA&#x5217;&#x8868;&#x6765;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x8BC1;&#x4E66;&#x3002;&#x5F53;&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#x65F6;&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;<code>error</code>&#x4E8B;&#x4EF6;&#xFF1B;<code>err.code</code>&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;OpenSSL&#x9519;&#x8BEF;&#x7801;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>true</code>&#x3002;</p>
+</li>
+<li><p>NPNProtocols: &#x5305;&#x542B;&#x652F;&#x6301;&#x7684;NPN&#x534F;&#x8BAE;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#x6570;&#x7EC4;&#x3002;<code>buffer</code>&#x5FC5;&#x987B;&#x6709;&#x4EE5;&#x4E0B;&#x683C;&#x5F0F;&#xFF1A;<code>0x05hello0x05world</code>&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x662F;&#x4E0B;&#x4E00;&#x4E2A;&#x534F;&#x8BAE;&#x540D;&#x7684;&#x957F;&#x5EA6;&#xFF08;&#x4F20;&#x9012;&#x6570;&#x7EC4;&#x4F1A;&#x66F4;&#x7B80;&#x5355;&#xFF1A;<code>[&apos;hello&apos;, &apos;world&apos;]</code>&#xFF09;&#x3002;</p>
+</li>
+<li><p>servername: <code>SNI</code> TLS &#x6269;&#x5C55;&#x7684;&#x670D;&#x52A1;&#x5668;&#x540D;&#x3002;</p>
+</li>
+<li><p>checkServerIdentity(servername, cert): &#x4E3A;&#x6839;&#x636E;&#x8BC1;&#x4E66;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E3B;&#x673A;&#x540D;&#x68C0;&#x67E5;&#x63D0;&#x4F9B;&#x4E86;&#x8986;&#x76D6;&#x3002;&#x5FC5;&#x987B;&#x5728;&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#x65F6;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x9A8C;&#x8BC1;&#x901A;&#x8FC7;&#x65F6;&#x8FD4;&#x56DE;<code>undefined</code>&#x3002;</p>
+</li>
+<li><p>secureProtocol: &#x5C06;&#x8981;&#x4F7F;&#x7528;&#x7684;SSL&#x65B9;&#x6CD5;&#xFF0C;&#x4E3E;&#x4F8B;&#xFF0C;<code>SSLv3_method</code>&#x5C06;&#x5F3A;&#x5236;&#x4F7F;&#x7528;SSL v3&#x3002;&#x53EF;&#x7528;&#x7684;&#x503C;&#x53D6;&#x51B3;&#x4E8E;OpenSSL&#x7684;&#x5B89;&#x88C5;&#x548C;<code>SSL_METHODS</code>&#x5E38;&#x91CF;&#x4E2D;&#x88AB;&#x5B9A;&#x4E49;&#x7684;&#x503C;&#x3002;</p>
+</li>
+<li><p>session: &#x4E00;&#x4E2A;<code>Buffer</code>&#x5B9E;&#x4F8B;&#xFF0C;&#x5305;&#x542B;&#x4E86;TLS&#x4F1A;&#x8BDD;&#x3002;</p>
+</li>
+</ul>
+<p><code>callback</code>&#x53C2;&#x6570;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x4E3A;<code>secureConnect</code>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x3002;</p>
+<p><code>tls.connect()</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>tls.TLSSocket</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x4E2A;&#x4E0A;&#x8FF0;&#x5E94;&#x7B54;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> tls = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;tls&apos;</span>);
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+
+<span class="hljs-keyword">var</span> options = {
+  <span class="hljs-comment">// These are necessary only if using the client certificate authentication</span>
+  key: fs.readFileSync(<span class="hljs-string">&apos;client-key.pem&apos;</span>),
+  cert: fs.readFileSync(<span class="hljs-string">&apos;client-cert.pem&apos;</span>),
+
+  <span class="hljs-comment">// This is necessary only if the server uses the self-signed certificate</span>
+  ca: [ fs.readFileSync(<span class="hljs-string">&apos;server-cert.pem&apos;</span>) ]
+};
+
+<span class="hljs-keyword">var</span> socket = tls.connect(<span class="hljs-number">8000</span>, options, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;client connected&apos;</span>,
+              socket.authorized ? <span class="hljs-string">&apos;authorized&apos;</span> : <span class="hljs-string">&apos;unauthorized&apos;</span>);
+  process.stdin.pipe(socket);
+  process.stdin.resume();
+});
+socket.setEncoding(<span class="hljs-string">&apos;utf8&apos;</span>);
+socket.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(data);
+});
+socket.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  server.close();
+});
+</code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> tls = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;tls&apos;</span>);
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+
+<span class="hljs-keyword">var</span> options = {
+  pfx: fs.readFileSync(<span class="hljs-string">&apos;client.pfx&apos;</span>)
+};
+
+<span class="hljs-keyword">var</span> socket = tls.connect(<span class="hljs-number">8000</span>, options, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;client connected&apos;</span>,
+              socket.authorized ? <span class="hljs-string">&apos;authorized&apos;</span> : <span class="hljs-string">&apos;unauthorized&apos;</span>);
+  process.stdin.pipe(socket);
+  process.stdin.resume();
+});
+socket.setEncoding(<span class="hljs-string">&apos;utf8&apos;</span>);
+socket.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(data);
+});
+socket.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  server.close();
+});
+</code></pre>
+<h4 id="class-tlstlssocket">Class: tls.TLSSocket</h4>
+<p><code>net.Socket</code>&#x5B9E;&#x4F8B;&#x7684;&#x5305;&#x88C5;&#xFF0C;&#x66FF;&#x6362;&#x4E86;&#x5185;&#x90E8;<code>socket</code>&#x7684; &#x8BFB;/&#x5199;&#x4F8B;&#x7A0B;&#xFF0C;&#x6765;&#x63D0;&#x4F9B;&#x900F;&#x660E;&#x7684;&#x5BF9; &#x4F20;&#x5165;/&#x4F20;&#x51FA;&#x6570;&#x636E; &#x7684; &#x52A0;&#x5BC6;/&#x89E3;&#x5BC6;&#x3002;</p>
+<h4 id="new-tlstlssocketsocket-options">new tls.TLSSocket(socket, options)</h4>
+<p>&#x6839;&#x636E;&#x5DF2;&#x5B58;&#x5728;&#x7684;TCP<code>socket</code>&#xFF0C;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>TLSSocket</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<p><code>socket</code>&#x662F;&#x4E00;&#x4E2A;<code>net.Socket</code>&#x5B9E;&#x4F8B;&#x3002;</p>
+<p><code>options</code>&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ul>
+<li><p>secureContext: &#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x901A;&#x8FC7;<code>tls.createSecureContext( ... )</code>&#x5F97;&#x5230;&#x7684;TLS&#x5185;&#x5BB9;&#x5BF9;&#x8C61;&#x3002;</p>
+</li>
+<li><p>isServer: &#x5982;&#x679C;&#x4E3A;<code>true</code>&#xFF0C;TLS <code>socket</code>&#x5C06;&#x4F1A;&#x5728;&#x670D;&#x52A1;&#x5668;&#x6A21;&#x5F0F;&#xFF08;server-mode&#xFF09;&#x4E0B;&#x88AB;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+</li>
+<li><p>server: &#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;<code>net.Server</code>&#x5B9E;&#x4F8B;&#x3002;</p>
+</li>
+<li><p>requestCert: &#x53EF;&#x9009;&#xFF0C;&#x53C2;&#x9605;<code>tls.createSecurePair</code>&#x3002;</p>
+</li>
+<li><p>rejectUnauthorized: &#x53EF;&#x9009;&#xFF0C;&#x53C2;&#x9605;<code>tls.createSecurePair</code>&#x3002;</p>
+</li>
+<li><p>NPNProtocols: &#x53EF;&#x9009;&#xFF0C;&#x53C2;&#x9605;<code>tls.createServer</code>&#x3002;</p>
+</li>
+<li><p>SNICallback: &#x53EF;&#x9009;&#xFF0C;&#x53C2;&#x9605;<code>tls.createServer</code>&#x3002;</p>
+</li>
+<li><p>session: &#x53EF;&#x9009;&#xFF0C;&#x4E00;&#x4E2A;<code>Buffer</code>&#x5B9E;&#x4F8B;&#xFF0C;&#x5305;&#x542B;&#x4E86;TLS&#x4F1A;&#x8BDD;&#x3002;</p>
+</li>
+<li><p>requestOCSP: &#x53EF;&#x9009;&#xFF0C;&#x5982;&#x679C;&#x4E3A;<code>true</code>&#xFF0C;<code>OCSP</code>&#x72B6;&#x6001;&#x8BF7;&#x6C42;&#x6269;&#x5C55;&#x5C06;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x5BA2;&#x6237;&#x7AEF; hello&#xFF0C;&#x5E76;&#x4E14;<code>OCSPResponse</code>&#x4E8B;&#x4EF6;&#x5C06;&#x4F1A;&#x5728;&#x5EFA;&#x7ACB;&#x5B89;&#x5168;&#x901A;&#x4FE1;&#x524D;&#xFF0C;&#x4E8E;<code>socket</code>&#x4E0A;&#x89E6;&#x53D1;&#x3002;</p>
+</li>
+</ul>
+<h4 id="tlscreatesecurecontextdetails">tls.createSecureContext(details)</h4>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8BC1;&#x4E66;&#x5BF9;&#x8C61;&#xFF0C;<code>details</code>&#x6709;&#x53EF;&#x9009;&#x7684;&#x4EE5;&#x4E0B;&#x503C;&#xFF1A;</p>
+<ul>
+<li>pfx : &#x4E00;&#x4E2A;&#x542B;&#x6709;<code>PFX</code>&#x6216;<code>PKCS12</code>&#x7F16;&#x7801;&#x7684;&#x79C1;&#x94A5;&#xFF0C;&#x8BC1;&#x4E66;&#x548C;CA&#x8BC1;&#x4E66;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#x3002;</li>
+<li>key : &#x4E00;&#x4E2A;&#x542B;&#x6709;<code>PEM</code>&#x7F16;&#x7801;&#x7684;&#x79C1;&#x94A5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>passphrase : &#x4E00;&#x4E2A;&#x79C1;&#x94A5;&#x6216;<code>pfx</code>&#x5BC6;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>cert : &#x4E00;&#x4E2A;&#x542B;&#x6709;<code>PEM</code>&#x52A0;&#x5BC6;&#x8BC1;&#x4E66;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>ca : &#x4E00;&#x4E2A;&#x7528;&#x6765;&#x4FE1;&#x4EFB;&#x7684;<code>PEM</code>&#x52A0;&#x5BC6;CA&#x8BC1;&#x4E66;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x5217;&#x8868;&#x3002;</li>
+<li>crl : &#x4E00;&#x4E2A;<code>PEM</code>&#x52A0;&#x5BC6;<code>CRL</code>&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x5217;&#x8868;&#x3002;</li>
+<li>ciphers:  &#x4E00;&#x4E2A;&#x63CF;&#x8FF0;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x6216;&#x6392;&#x9664;&#x7684;&#x52A0;&#x5BC6;&#x5668;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x66F4;&#x591A;&#x52A0;&#x5BC6;&#x5668;&#x7684;&#x683C;&#x5F0F;&#x7EC6;&#x8282;&#x53C2;&#x9605;<code>http://www.openssl.org/docs/apps/ciphers.html#CIPHER_LIST_FORMAT</code>&#x3002;</li>
+<li>honorCipherOrder : &#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x52A0;&#x5BC6;&#x5668;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x4F7F;&#x7528;&#x670D;&#x52A1;&#x5668;&#x7684;&#x9996;&#x9009;&#x9879;&#x800C;&#x4E0D;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x9996;&#x9009;&#x9879;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>true</code>&#x3002;&#x66F4;&#x591A;&#x7EC6;&#x8282;&#x53C2;&#x9605;<code>tls</code>&#x6A21;&#x5757;&#x6587;&#x6863;&#x3002;</li>
+</ul>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;<code>ca</code>&#xFF0C;&#x90A3;&#x4E48;<code>node.js</code>&#x5C06;&#x4F1A;&#x4F7F;&#x7528;<code>http://mxr.mozilla.org/mozilla/source/security/nss/lib/ckfw/builtins/certdata.txt</code>&#x63D0;&#x4F9B;&#x7684;&#x9ED8;&#x8BA4;&#x516C;&#x5171;&#x53EF;&#x4FE1;&#x4EFB;CA&#x5217;&#x8868;&#x3002;</p>
+<h4 id="tlscreatesecurepaircontext-isserver-requestcert-rejectunauthorized">tls.createSecurePair([context][, isServer][, requestCert][, rejectUnauthorized])</h4>
+<p>&#x6839;&#x636E;&#x4E24;&#x4E2A;&#x6D41;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5B89;&#x5168;&#x5BF9;&#xFF08;secure pair&#xFF09;&#x5BF9;&#x8C61;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x7528;&#x6765;&#x8BFB;/&#x5199;&#x52A0;&#x5BC6;&#x6570;&#x636E;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x7528;&#x6765;&#x8BFB;/&#x5199;&#x660E;&#x6587;&#x6570;&#x636E;&#x3002;&#x901A;&#x5E38;&#x52A0;&#x5BC6;&#x7684;&#x6570;&#x636E;&#x662F;&#x4ECE;&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x6D41;&#x88AB;&#x5BFC;&#x6D41;&#x800C;&#x6765;&#xFF0C;&#x660E;&#x6587;&#x6570;&#x636E;&#x88AB;&#x7528;&#x6765;&#x4F5C;&#x4E3A;&#x521D;&#x59CB;&#x52A0;&#x5BC6;&#x6D41;&#x7684;&#x4E00;&#x4E2A;&#x66FF;&#x4EE3;&#x3002;</p>
+<ul>
+<li><p>credentials: &#x4E00;&#x4E2A;&#x901A;&#x8FC7;<code>tls.createSecureContext( ... )</code>&#x5F97;&#x5230;&#x7684;&#x5B89;&#x5168;&#x5185;&#x5BB9;&#x5BF9;&#x8C61;&#x3002;</p>
+</li>
+<li><p>isServer: &#x4E00;&#x4E2A;&#x8868;&#x660E;&#x4E86; &#x662F;&#x5426;&#x8FD9;&#x4E2A;<code>tls</code>&#x8FDE;&#x63A5;&#x5E94;&#x88AB;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x6216;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x6253;&#x5F00; &#x7684;&#x5E03;&#x5C14;&#x503C;&#x3002;</p>
+</li>
+<li><p>requestCert: &#x4E00;&#x4E2A;&#x8868;&#x660E;&#x4E86; &#x662F;&#x5426;&#x670D;&#x52A1;&#x5668;&#x5E94;&#x8BE5;&#x5411;&#x8FDE;&#x63A5;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x8BC1;&#x4E66; &#x7684;&#x5E03;&#x5C14;&#x503C;&#x3002;&#x53EA;&#x5E94;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x8FDE;&#x63A5;&#x3002;</p>
+</li>
+<li><p>rejectUnauthorized: &#x4E00;&#x4E2A;&#x8868;&#x660E;&#x4E86; &#x662F;&#x5426;&#x670D;&#x52A1;&#x5668;&#x5E94;&#x8BE5;&#x62D2;&#x7EDD;&#x5305;&#x542B;&#x4E0D;&#x53EF;&#x7528;&#x8BC1;&#x4E66;&#x7684;&#x5BA2;&#x6237;&#x7AEF; &#x7684;&#x5E03;&#x5C14;&#x503C;&#x3002;&#x53EA;&#x5E94;&#x7528;&#x4E8E;&#x542F;&#x7528;&#x4E86;<code>requestCert</code>&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+</li>
+</ul>
+<p><code>tls.createSecurePair()</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E26;&#x6709;<code>cleartext</code>&#x548C; <code>encrypted</code>&#x6D41; &#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;<code>cleartext</code>&#x548C;<code>tls.TLSSocket</code>&#x6709;&#x76F8;&#x540C;&#x7684;API&#x3002;</p>
+<h4 id="class-securepair">Class: SecurePair</h4>
+<p>&#x7531;<code>tls.createSecurePair</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<h4 id="event-secure">Event: &apos;secure&apos;</h4>
+<p>&#x5F53;<code>SecurePair</code>&#x6210;&#x529F;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x5B89;&#x5168;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;<code>SecurePair</code>&#x4F1A;&#x89E6;&#x53D1;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;</p>
+<p>&#x4E0E;&#x68C0;&#x67E5;&#x670D;&#x52A1;&#x5668;&#x7684;<code>secureConnection</code>&#x4E8B;&#x4EF6;&#x76F8;&#x4F3C;&#xFF0C;<code>pair.cleartext.authorized</code>&#x5FC5;&#x987B;&#x88AB;&#x68C0;&#x67E5;&#xFF0C;&#x6765;&#x786E;&#x8BA4;&#x8BC1;&#x4E66;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x4E86;&#x5408;&#x9002;&#x7684;&#x6388;&#x6743;&#x3002;</p>
+<h4 id="class-tlsserver">Class: tls.Server</h4>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;<code>net.Server</code>&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x5E76;&#x4E14;&#x4E0E;&#x5176;&#x6709;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x9664;&#x4E86;&#x53EA;&#x63A5;&#x53D7;&#x6E90;TCP&#x8FDE;&#x63A5;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x8FD8;&#x63A5;&#x53D7;&#x901A;&#x8FC7;TLS&#x6216;SSL&#x52A0;&#x5BC6;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<h4 id="event-secureconnection">Event: &apos;secureConnection&apos;</h4>
+<ul>
+<li>function (tlsSocket) {}</li>
+</ul>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x65B0;&#x8FDE;&#x63A5;&#x88AB;&#x6210;&#x529F;&#x63E1;&#x624B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#x3002;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;<code>tls.TLSSocket</code>&#x5B9E;&#x4F8B;&#x3002;&#x5B83;&#x62E5;&#x6709;&#x6240;&#x6709;&#x666E;&#x901A;&#x6D41;&#x62E5;&#x6709;&#x7684;&#x4E8B;&#x4EF6;&#x548C;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><code>socket.authorized</code>&#x662F;&#x4E00;&#x4E2A;&#x8868;&#x660E;&#x4E86; &#x5BA2;&#x6237;&#x7AEF;&#x662F;&#x5426;&#x901A;&#x8FC7;&#x63D0;&#x4F9B;&#x7684;&#x670D;&#x52A1;&#x5668;CA&#x6765;&#x8FDB;&#x884C;&#x4E86;&#x8BA4;&#x8BC1; &#x7684;&#x5E03;&#x5C14;&#x503C;&#x3002;&#x5982;&#x679C;<code>socket.authorized</code>&#x4E3A;<code>false</code>&#xFF0C;&#x90A3;&#x4E48;<code>socket.authorizationError</code>&#x5C06;&#x88AB;&#x8BBE;&#x7F6E;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x6388;&#x6743;&#x5931;&#x8D25;&#x7684;&#x539F;&#x56E0;&#x3002;&#x4E00;&#x4E2A;&#x4E0D;&#x660E;&#x663E;&#x7684;&#x4F46;&#x662F;&#x503C;&#x5F97;&#x63D0;&#x51FA;&#x7684;&#x70B9;&#xFF1A;&#x4F9D;&#x9760;TLS&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BBE;&#x5B9A;&#xFF0C;&#x672A;&#x6388;&#x6743;&#x7684;&#x8FDE;&#x63A5;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x63A5;&#x53D7;&#x3002;<code>socket.npnProtocol</code>&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;&#x88AB;&#x9009;&#x62E9;&#x7684;NPN&#x534F;&#x8BAE;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;<code>socket.servernam</code>&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;&#x901A;&#x8FC7;SNI&#x8BF7;&#x6C42;&#x7684;&#x670D;&#x52A1;&#x5668;&#x540D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h4 id="event-clienterror">Event: &apos;clientError&apos;</h4>
+<ul>
+<li>function (exception, tlsSocket) { }</li>
+</ul>
+<p>&#x5F53;&#x5B89;&#x5168;&#x8FDE;&#x63A5;&#x88AB;&#x5EFA;&#x7ACB;&#x4E4B;&#x524D;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x89E6;&#x53D1;&#x4E86;&#x4E00;&#x4E2A;<code>error</code>&#x4E8B;&#x4EF6; - &#x5B83;&#x4F1A;&#x88AB;&#x8F6C;&#x53D1;&#x5230;&#x8FD9;&#x91CC;&#x3002;</p>
+<p><code>tlsSocket</code>&#x662F;&#x9519;&#x8BEF;&#x6765;&#x81EA;&#x7684;<code>tls.TLSSocket</code>&#x3002;</p>
+<h4 id="event-newsession">Event: &apos;newSession&apos;</h4>
+<ul>
+<li>function (sessionId, sessionData, callback) { }</li>
+</ul>
+<p>&#x5728;TLS&#x4F1A;&#x8BDD;&#x521B;&#x5EFA;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x7528;&#x6765;&#x5728;&#x5916;&#x90E8;&#x5B58;&#x50A8;&#x4F1A;&#x8BDD;&#x3002;<code>callback</code>&#x5FC5;&#x987B;&#x6700;&#x7EC8;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x5426;&#x5219;&#x5B89;&#x5168;&#x8FDE;&#x63A5;&#x5C06;&#x4E0D;&#x4F1A;&#x6536;&#x5230;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x53EA;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x5B83;&#x88AB;&#x6DFB;&#x52A0;&#x4E4B;&#x540E;&#x5EFA;&#x7ACB;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+<h4 id="event-resumesession">Event: &apos;resumeSession&apos;</h4>
+<ul>
+<li>function (sessionId, callback) { }</li>
+</ul>
+<p>&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x60F3;&#x8981;&#x6062;&#x590D;&#x5148;&#x524D;&#x7684;TLS&#x4F1A;&#x8BDD;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x53EF;&#x80FD;&#x4F1A;&#x5728;&#x5916;&#x90E8;&#x901A;&#x8FC7;<code>sessionId</code>&#x6765;&#x5BFB;&#x627E;&#x4F1A;&#x8BDD;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x7ED3;&#x675F;&#x540E;&#x8C03;&#x7528;<code>callback(null, sessionData)</code>&#x3002;&#x5982;&#x679C;&#x4F1A;&#x8BDD;&#x4E0D;&#x80FD;&#x88AB;&#x6062;&#x590D;&#xFF08;&#x4F8B;&#x5982;&#x6CA1;&#x6709;&#x627E;&#x5230;&#xFF09;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x8C03;&#x7528;<code>callback(null, null)</code>&#x3002;&#x8C03;&#x7528;<code>callback(err)</code>&#x4F1A;&#x5173;&#x95ED;&#x5C06;&#x8981;&#x5230;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x5E76;&#x4E14;&#x9500;&#x6BC1;<code>socket</code>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x53EA;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x5B83;&#x88AB;&#x6DFB;&#x52A0;&#x4E4B;&#x540E;&#x5EFA;&#x7ACB;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+<h4 id="event-ocsprequest">Event: &apos;OCSPRequest&apos;</h4>
+<ul>
+<li>function (certificate, issuer, callback) { }</li>
+</ul>
+<p>&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x8BC1;&#x4E66;&#x72B6;&#x6001;&#x8BF7;&#x6C42;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x89E3;&#x91CA;&#x670D;&#x52A1;&#x5668;&#x5F53;&#x524D;&#x7684;&#x8BC1;&#x4E66;&#x6765;&#x83B7;&#x53D6;OCSP url&#x548C;&#x8BC1;&#x4E66;id&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x83B7;&#x53D6;&#x4E86;OCSP&#x54CD;&#x5E94;&#x540E;&#x6267;&#x884C;<code>callback(null, resp)</code>&#xFF0C;<code>resp</code>&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#x5B9E;&#x4F8B;&#x3002;<code>certificate</code>&#x548C;<code>issuer</code>&#x90FD;&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#xFF0C;&#x5373;&#x4E3B;&#x952E;&#x548C;&#x53D1;&#x8D77;&#x4EBA;&#x8BC1;&#x4E66;&#x7684;DER&#x4EE3;&#x8868;&#xFF08;DER-representations&#xFF09;&#x3002;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x83B7;&#x53D6;OCSP&#x8BC1;&#x4E66;id &#x548C; OCSP&#x672B;&#x7AEF;url&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;<code>callback(null, null)</code>&#x53EF;&#x4EE5;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x6CA1;&#x6709;OCSP&#x54CD;&#x5E94;&#x3002;</p>
+<p>&#x8C03;&#x7528;<code>callback(err)</code>&#xFF0C;&#x5C06;&#x4F1A;&#x5BFC;&#x81F4;&#x8C03;&#x7528;<code>socket.destroy(err)</code>&#x3002;</p>
+<p>&#x5178;&#x578B;&#x7684;&#x6D41;&#x7A0B;&#xFF1A;</p>
+<ol>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x5230;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x9001;&#x4E00;&#x4E2A;<code>OCSPRequest</code>&#x7ED9;&#x5B83;&#xFF08;&#x901A;&#x8FC7;<code>ClientHello</code>&#x4E2D;&#x6269;&#x5C55;&#x7684;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#xFF09;&#x3002;</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;<code>OCSPRequest</code>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#xFF08;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF09;&#x3002;</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x901A;&#x8FC7;&#x8BC1;&#x4E66;&#x6216;&#x53D1;&#x8D77;&#x4EBA;&#x6293;&#x53D6;OCSP url&#xFF0C;&#x7136;&#x540E;&#x5411;CA&#x53D1;&#x8D77;&#x4E00;&#x4E2A;OCSP&#x8BF7;&#x6C42;&#x3002;</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x4ECE;CA&#x6536;&#x5230;&#x4E00;&#x4E2A;<code>OCSPResponse</code>&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x5C06;&#x5176;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x9A8C;&#x8BC1;&#x54CD;&#x5E94;&#xFF0C;&#x7136;&#x540E;&#x9500;&#x6BC1;<code>socket</code>&#x6216;&#x8005;&#x8FDB;&#x884C;&#x63E1;&#x624B;&#x3002;</li>
+</ol>
+<p>&#x6CE8;&#x610F;&#xFF1A;<code>issuer</code>&#x53EF;&#x4EE5;&#x662F;<code>null</code>&#xFF0C;&#x5982;&#x679C;&#x8BC1;&#x4E66;&#x662F;&#x81EA;&#x7B7E;&#x540D;&#x7684;&#x6216;<code>issuer</code>&#x4E0D;&#x5728;&#x6839;&#x8BC1;&#x4E66;&#x5217;&#x8868;&#x4E4B;&#x5185;&#xFF08;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>ca</code>&#x53C2;&#x6570;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;<code>issuer</code>&#xFF09;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x53EA;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x5B83;&#x88AB;&#x6DFB;&#x52A0;&#x4E4B;&#x540E;&#x5EFA;&#x7ACB;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x5982;<code>asn1.js</code>&#x7684;<code>npm</code>&#x6A21;&#x5757;&#x6765;&#x89E3;&#x91CA;&#x8BC1;&#x4E66;&#x3002;</p>
+<h4 id="serverlistenport-hostname-callback">server.listen(port[, hostname][, callback])</h4>
+<p>&#x4ECE;&#x6307;&#x5B9A;&#x7684;&#x7AEF;&#x53E3;&#x548C;&#x4E3B;&#x673A;&#x540D;&#x63A5;&#x6536;&#x8FDE;&#x63A5;&#x3002;&#x5982;&#x679C;<code>hostname</code>&#x88AB;&#x5FFD;&#x7565;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x5728;&#x5F53;IPv6&#x53EF;&#x7528;&#x65F6;&#xFF0C;&#x63A5;&#x53D7;&#x4EFB;&#x610F;IPv6&#x5730;&#x5740;&#xFF08;<code>::</code>&#xFF09;&#x4E0A;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x5426;&#x5219;&#x4E3A;&#x4EFB;&#x610F;IPv4&#xFF08;<code>0.0.0.0</code>&#xFF09;&#x4E0A;&#x7684;&#x3002;&#x5C06;<code>port</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>0</code>&#x5219;&#x4F1A;&#x8D4B;&#x4E88;&#x5176;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x7AEF;&#x53E3;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x5F02;&#x6B65;&#x7684;&#x3002;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;<code>callback</code>&#x4F1A;&#x5728;&#x670D;&#x52A1;&#x5668;&#x88AB;&#x7ED1;&#x5B9A;&#x540E;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x9605;<code>net.Server</code>&#x3002;</p>
+<h4 id="serverclosecallback">server.close([callback])</h4>
+<p>&#x963B;&#x6B62;&#x670D;&#x52A1;&#x5668;&#x7EE7;&#x7EED;&#x63A5;&#x6536;&#x65B0;&#x8FDE;&#x63A5;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF0C;&#x5F53;&#x670D;&#x52A1;&#x5668;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;<code>close</code>&#x4E8B;&#x4EF6;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5C06;&#x6700;&#x7EC8;&#x88AB;&#x5173;&#x95ED;&#x3002;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6765;&#x76D1;&#x542C;<code>close</code>&#x4E8B;&#x4EF6;&#x3002;</p>
+<h4 id="serveraddress">server.address()</h4>
+<p>&#x8FD4;&#x56DE;&#x7ED1;&#x5B9A;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x7684;&#x534F;&#x8BAE;&#x65CF;&#x540D;&#x548C;&#x7AEF;&#x53E3;&#x901A;&#x8FC7;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x62A5;&#x544A;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x9605;<code>net.Server.address()</code>&#x3002;</p>
+<h4 id="serveraddcontexthostname-context">server.addContext(hostname, context)</h4>
+<p>&#x6DFB;&#x52A0;&#x5B89;&#x5168;&#x5185;&#x5BB9;&#xFF0C;&#x5B83;&#x5C06;&#x4F1A;&#x5728;&#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x7684;SNI&#x4E3B;&#x673A;&#x540D;&#x88AB;&#x4F20;&#x9012;&#x7684;&#x4E3B;&#x673A;&#x540D;&#x5339;&#x914D;&#xFF08;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;&#xFF09;&#x65F6;&#x4F7F;&#x7528;&#x3002;<code>context</code>&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x5BC6;&#x94A5;&#xFF0C;&#x8BC1;&#x4E66;&#xFF0C;CA &#x548C;/&#x6216; &#x5176;&#x4ED6;&#x4EFB;&#x4F55;<code>tls.createSecureContext</code>&#x7684;<code>options</code>&#x53C2;&#x6570;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<h4 id="servermaxconnections">server.maxConnections</h4>
+<p>&#x5F53;&#x670D;&#x52A1;&#x5668;&#x8FDE;&#x63A5;&#x6570;&#x53D8;&#x591A;&#x65F6;&#xFF0C;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x503C;&#x6765;&#x62D2;&#x7EDD;&#x8FDE;&#x63A5;&#x3002;</p>
+<h4 id="serverconnections">server.connections</h4>
+<p>&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x5F53;&#x524D;&#x8FDE;&#x63A5;&#x6570;&#x3002;</p>
+<h4 id="class-cryptostream">Class: CryptoStream</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;&#x3002; &#x4F7F;&#x7528;<code>tls.TLSSocket</code>&#x66FF;&#x4EE3;&#x3002;</p>
+</blockquote>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x52A0;&#x5BC6;&#x6D41;&#x3002;</p>
+<h4 id="cryptostreambyteswritten">cryptoStream.bytesWritten</h4>
+<p>&#x4E00;&#x4E2A;&#x5E95;&#x5C42;<code>socket</code>&#x7684;<code>bytesWritten</code>&#x5B58;&#x53D6;&#x5668;&#x7684;&#x4EE3;&#x7406;&#xFF0C;&#x5B83;&#x4F1A;&#x8FD4;&#x56DE;&#x5199;&#x5165;<code>socket</code>&#x7684;&#x603B;&#x5B57;&#x8282;&#x6570;&#xFF0C;&#x5305;&#x62EC;TLS&#x5F00;&#x9500;&#x3002;</p>
+<h4 id="class-tlstlssocket">Class: tls.TLSSocket</h4>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;<code>net.Socket</code>&#x7684;&#x5305;&#x88C5;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x505A;&#x4E86;&#x900F;&#x660E;&#x7684;&#x52A0;&#x5BC6;&#xFF0C;&#x5E76;&#x4E14;&#x8981;&#x6C42;TLS&#x534F;&#x5546;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5B9E;&#x4F8B;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x53CC;&#x5DE5;&#x6D41;&#x63A5;&#x53E3;&#x3002;&#x5B83;&#x6709;&#x6240;&#x6709;&#x666E;&#x901A;&#x6D41;&#x6240;&#x62E5;&#x6709;&#x7684;&#x4E8B;&#x4EF6;&#x548C;&#x65B9;&#x6CD5;&#x3002;</p>
+<h4 id="event-secureconnect">Event: &apos;secureConnect&apos;</h4>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x65B0;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x63E1;&#x624B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x3002;&#x65E0;&#x8BBA;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BC1;&#x4E66;&#x88AB;&#x6388;&#x6743;&#x4E0E;&#x5426;&#xFF0C;&#x8FD9;&#x4E2A;&#x76D1;&#x542C;&#x5668;&#x90FD;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x6D4B;&#x8BD5;<code>tlsSocket.authorized</code>&#x6765; &#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x8BC1;&#x4E66;&#x662F;&#x5426;&#x88AB;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;CA&#x6240;&#x7B7E;&#x540D; &#x53D6;&#x51B3;&#x4E8E;&#x7528;&#x6237;&#x3002;&#x5982;&#x679C;<code>tlsSocket.authorized === false</code>&#x90A3;&#x4E48;&#x9519;&#x8BEF;&#x53EF;&#x4EE5;&#x4ECE;<code>tlsSocket.authorizationError</code>&#x91CC;&#x88AB;&#x53D1;&#x73B0;&#x3002;&#x5982;&#x679C;<code>NPN</code>&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>tlsSocket.npnProtocol</code>&#x6765;&#x68C0;&#x67E5;&#x5DF2;&#x534F;&#x5546;&#x534F;&#x8BAE;&#x3002;</p>
+<h4 id="event-ocspresponse">Event: &apos;OCSPResponse&apos;</h4>
+<ul>
+<li>function (response) { }</li>
+</ul>
+<p>&#x5982;&#x679C;<code>requestOCSP</code>&#x9009;&#x9879;&#x88AB;&#x8BBE;&#x7F6E;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x4F1A;&#x89E6;&#x53D1;&#x3002;<code>response</code>&#x662F;&#x4E00;&#x4E2A;<code>buffer</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x7684;OCSP&#x54CD;&#x5E94;&#x3002;</p>
+<p>&#x4E60;&#x60EF;&#x4E0A;&#xFF0C;<code>response</code>&#x662F;&#x4E00;&#x4E2A;&#x6765;&#x81EA;&#x670D;&#x52A1;&#x5668;&#x7684;CA&#xFF08;&#x5305;&#x542B;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BC1;&#x4E66;&#x64A4;&#x9500;&#x72B6;&#x6001;&#xFF09;&#x7684;&#x5DF2;&#x7B7E;&#x540D;&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="tlssocketencrypted">tlsSocket.encrypted</h4>
+<p>&#x9759;&#x6001;&#x5E03;&#x5C14;&#x53D8;&#x91CF;&#xFF0C;&#x603B;&#x662F;<code>true</code>&#x3002;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x7528;&#x6765;&#x533A;&#x5206;TLS <code>socket</code>&#x548C;&#x666E;&#x901A;&#x7684;<code>socket</code>&#x3002;</p>
+<h4 id="tlssocketauthorized">tlsSocket.authorized</h4>
+<p>&#x5982;&#x679C;&#x5BF9;&#x7B49;&#xFF08;peer&#xFF09;&#x8BC1;&#x4E66;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;CA&#x88AB;&#x7B7E;&#x540D;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x503C;&#x4E3A;<code>true</code>&#x3002;&#x5426;&#x5219;&#x4E3A;<code>false</code>&#x3002;</p>
+<h4 id="tlssocketauthorizationerror">tlsSocket.authorizationError</h4>
+<p>&#x5BF9;&#x7B49;&#xFF08;peer&#xFF09;&#x7684;&#x8BC1;&#x4E66;&#x6CA1;&#x6709;&#x88AB;&#x9A8C;&#x8BC1;&#x7684;&#x539F;&#x56E0;&#x3002;&#x8FD9;&#x4E2A;&#x503C;&#x53EA;&#x5728;<code>tlsSocket.authorized === false</code>&#x65F6;&#x53EF;&#x7528;&#x3002;</p>
+<h4 id="tlssocketgetpeercertificate-detailed-">tlsSocket.getPeerCertificate([ detailed ])</h4>
+<p>&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x4E86;&#x5BF9;&#x7B49;&#x8BC1;&#x4E66;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x6709;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x4E0E;&#x8BC1;&#x4E66;&#x7684;&#x5C5E;&#x6027;&#x4E00;&#x81F4;&#x3002;&#x5982;&#x679C;<code>detailed</code>&#x53C2;&#x6570;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#xFF0C;<code>issuer</code>&#x5C5E;&#x6027;&#x7684;&#x5B8C;&#x6574;&#x94FE;&#x90FD;&#x4F1A;&#x88AB;&#x8FD4;&#x56DE;&#xFF0C;&#x5982;&#x679C;&#x4E3A;<code>false</code>&#xFF0C;&#x53EA;&#x8FD4;&#x56DE;&#x4E0D;&#x5305;&#x542B;<code>issuer</code>&#x5C5E;&#x6027;&#x7684;&#x9876;&#x7AEF;&#x7684;&#x8BC1;&#x4E66;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">{ subject:
+   { C: <span class="hljs-string">&apos;UK&apos;</span>,
+     ST: <span class="hljs-string">&apos;Acknack Ltd&apos;</span>,
+     L: <span class="hljs-string">&apos;Rhys Jones&apos;</span>,
+     O: <span class="hljs-string">&apos;node.js&apos;</span>,
+     OU: <span class="hljs-string">&apos;Test TLS Certificate&apos;</span>,
+     CN: <span class="hljs-string">&apos;localhost&apos;</span> },
+  issuerInfo:
+   { C: <span class="hljs-string">&apos;UK&apos;</span>,
+     ST: <span class="hljs-string">&apos;Acknack Ltd&apos;</span>,
+     L: <span class="hljs-string">&apos;Rhys Jones&apos;</span>,
+     O: <span class="hljs-string">&apos;node.js&apos;</span>,
+     OU: <span class="hljs-string">&apos;Test TLS Certificate&apos;</span>,
+     CN: <span class="hljs-string">&apos;localhost&apos;</span> },
+  issuer:
+   { ... another certificate ... },
+  raw: <span class="xml"><span class="hljs-tag">&lt; <span class="hljs-attr">RAW</span> <span class="hljs-attr">DER</span> <span class="hljs-attr">buffer</span> &gt;</span>,
+  valid_from: &apos;Nov 11 09:52:22 2009 GMT&apos;,
+  valid_to: &apos;Nov  6 09:52:22 2029 GMT&apos;,
+  fingerprint: &apos;2A:7A:C2:DD:E5:F9:CC:53:72:35:99:7A:02:5A:71:38:52:EC:8A:DF&apos;,
+  serialNumber: &apos;B9B0D332A1AA5635&apos; }
+</span></code></pre>
+<p>&#x5982;&#x679C;<code>peer</code>&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x8BC1;&#x4E66;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;<code>null</code>&#x6216;&#x7A7A;&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="tlssocketgetcipher">tlsSocket.getCipher()</h4>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x4E86;&#x5F53;&#x524D;&#x8FDE;&#x63A5;&#x7684;&#x52A0;&#x5BC6;&#x5668;&#x540D;&#x548C;SSL/TLS&#x534F;&#x8BAE;&#x7248;&#x672C;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; <code>{ name: &apos;AES256-SHA&apos;, version: &apos;TLSv1/SSLv3&apos; }</code></p>
+<p>&#x53C2;&#x9605;<code>http://www.openssl.org/docs/ssl/ssl.html#DEALING_WITH_CIPHERS</code>&#x4E2D;<code>SSL_CIPHER_get_name()</code>&#x548C;<code>SSL_CIPHER_get_version()</code>&#x3002;</p>
+<h4 id="tlssocketrenegotiateoptions-callback">tlsSocket.renegotiate(options, callback)</h4>
+<p>&#x521D;&#x59CB;&#x5316;TLS&#x91CD;&#x65B0;&#x534F;&#x5546;&#x8FC7;&#x7A0B;&#x3002;<code>optios</code>&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF1A;<code>rejectUnauthorized</code>&#xFF0C;<code>requestCert</code>&#xFF08;&#x8BE6;&#x60C5;&#x53C2;&#x9605;<code>tls.createServer</code>&#xFF09;&#x3002;&#x4E00;&#x65E6;&#x91CD;&#x534F;&#x5546;&#x6210;&#x529F;&#xFF0C;<code>callback(err)</code>&#x4F1A;&#x5E26;&#x7740;<code>err</code>&#x4E3A;<code>null</code>&#x6267;&#x884C;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x8BF7;&#x6C42;&#x5BF9;&#x7B49;&#xFF08;peer&#xFF09;&#x8BC1;&#x4E66;&#x5728;&#x5B89;&#x5168;&#x8FDE;&#x63A5;&#x5EFA;&#x7ACB;&#x4E4B;&#x540E;&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x4E2A;&#x6CE8;&#x610F;&#x70B9;&#xFF1A;&#x5F53;&#x4F5C;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;<code>socekt</code>&#x5728;<code>handshakeTimeout</code>&#x8D85;&#x65F6;&#x540E;&#xFF0C;&#x4F1A;&#x5E26;&#x7740;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x88AB;&#x9500;&#x6BC1;&#x3002;</p>
+<h4 id="tlssocketsetmaxsendfragmentsize">tlsSocket.setMaxSendFragment(size)</h4>
+<p>&#x8BBE;&#x7F6E;TLS&#x788E;&#x7247;&#x5927;&#x5C0F;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF08;&#x9ED8;&#x8BA4;&#x6700;&#x5927;&#x503C;&#x4E3A;<code>16384</code>&#xFF0C;&#x6700;&#x5C0F;&#x503C;&#x4E3A;<code>512</code>&#xFF09;&#x3002;&#x82E5;&#x8BBE;&#x7F6E;&#x6210;&#x529F;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<p>&#x66F4;&#x5C0F;&#x7684;&#x788E;&#x7247;&#x5927;&#x5C0F;&#x6765;&#x51CF;&#x5C11;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x7F13;&#x51B2;&#x5EF6;&#x8FDF;&#xFF1A;&#x5927;&#x7684;&#x788E;&#x7247;&#x901A;&#x8FC7;TLS&#x5C42;&#x7F13;&#x51B2;&#xFF0C;&#x76F4;&#x5230;&#x6536;&#x5230;&#x5168;&#x90E8;&#x7684;&#x788E;&#x7247;&#x5E76;&#x4E14;&#x5B83;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x88AB;&#x9A8C;&#x8BC1;&#xFF1B;&#x5927;&#x788E;&#x7247;&#x53EF;&#x80FD;&#x4F1A;&#x8DE8;&#x8D8A;&#x591A;&#x6B21;&#x901A;&#x4FE1;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x62A5;&#x6587;&#x4E22;&#x5931;&#x548C;&#x91CD;&#x65B0;&#x6392;&#x5E8F;&#x6240;&#x5EF6;&#x8FDF;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x66F4;&#x5C0F;&#x7684;&#x788E;&#x7247;&#x589E;&#x52A0;&#x4E86;&#x989D;&#x5916;&#x7684;TLS&#x6846;&#x67B6;&#x5B57;&#x8282;&#x548C;CPU&#x5F00;&#x9500;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x51CF;&#x5C11;&#x603B;&#x4F53;&#x7684;&#x670D;&#x52A1;&#x5668;&#x8D1F;&#x8F7D;&#x3002;</p>
+<h4 id="tlssocketgetsession">tlsSocket.getSession()</h4>
+<p>&#x8FD4;&#x56DE;<code>ASN.1</code>&#x7F16;&#x7801;&#x7684;TLS&#x4F1A;&#x8BDD;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x88AB;&#x534F;&#x5546;&#xFF0C;&#x8FD4;&#x56DE;<code>undefined</code>&#x3002;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x5728;&#x91CD;&#x65B0;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF0C;&#x52A0;&#x901F;&#x63E1;&#x624B;&#x7684;&#x5EFA;&#x7ACB;&#x3002;</p>
+<h4 id="tlssocketgettlsticket">tlsSocket.getTLSTicket()</h4>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x4EC5;&#x5728;&#x5BA2;&#x6237;&#x7AEF;TLS <code>socket</code>&#x4E2D;&#x5DE5;&#x4F5C;&#x3002;&#x4EC5;&#x5728;&#x8C03;&#x8BD5;&#x65F6;&#x6709;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x4F1A;&#x8BDD;&#x91CD;&#x65B0;&#x4F7F;&#x7528;&#x4E86;&#x7ED9;<code>tls.connect</code>&#x63D0;&#x4F9B;&#x7684;<code>session</code>&#x9009;&#x9879;&#x3002;</p>
+<p>&#x8FD4;&#x56DE;TLS&#x4F1A;&#x8BDD;&#x95E8;&#x7968;&#xFF08;ticket&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x88AB;&#x534F;&#x5546;&#xFF0C;&#x8FD4;&#x56DE;<code>undefined</code>&#x3002;</p>
+<h4 id="tlssocketaddress">tlsSocket.address()</h4>
+<p>&#x8FD4;&#x56DE;&#x7ED1;&#x5B9A;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x534F;&#x8BAE;&#x65CF;&#x540D;&#x548C;&#x7AEF;&#x53E3;&#x7531;&#x5E95;&#x5C42;&#x7CFB;&#x7EDF;&#x62A5;&#x544A;&#x3002;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<code>{ port: 12346, family: &apos;IPv4&apos;, address: &apos;127.0.0.1&apos; }</code>&#x3002;</p>
+<h4 id="tlssocketremoteaddress">tlsSocket.remoteAddress</h4>
+<p>&#x4EE3;&#x8868;&#x4E86;&#x8FDC;&#x7A0B;IP&#x5730;&#x5740;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4F8B;&#x5B50;&#xFF1A;<code>&apos;74.125.127.100&apos;</code>&#x6216;<code>&apos;2001:4860:a005::68&apos;</code>&#x3002;</p>
+<h4 id="tlssocketremotefamily">tlsSocket.remoteFamily</h4>
+<p>&#x4EE3;&#x8868;&#x4E86;&#x8FDC;&#x7A0B;IP&#x534F;&#x8BAE;&#x65CF;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;<code>&apos;IPv4&apos;</code>&#x6216;<code>&apos;IPv6&apos;</code>&#x3002;</p>
+<h4 id="tlssocketremoteport">tlsSocket.remotePort</h4>
+<p>&#x4EE3;&#x8868;&#x4E86;&#x8FDC;&#x7A0B;&#x7AEF;&#x53E3;&#x6570;&#x5B57;&#x3002;&#x4F8B;&#x5B50;&#xFF1A;<code>443</code>&#x3002;</p>
+<h4 id="tlssocketlocaladdress">tlsSocket.localAddress</h4>
+<p>&#x4EE3;&#x8868;&#x4E86;&#x672C;&#x5730;IP&#x5730;&#x5740;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h4 id="tlssocketlocalport">tlsSocket.localPort</h4>
+<p>&#x4EE3;&#x8868;&#x4E86;&#x672C;&#x5730;&#x7AEF;&#x53E3;&#x7684;&#x6570;&#x5B57;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Timers.html" class="navigation navigation-prev " aria-label="Previous page: Timers">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="TTY.html" class="navigation navigation-next " aria-label="Next page: TTY">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"TLS/SSL","level":"1.28","depth":1,"next":{"title":"TTY","level":"1.29","depth":1,"path":"TTY.md","ref":"TTY.md","articles":[]},"previous":{"title":"Timers","level":"1.27","depth":1,"path":"Timers.md","ref":"Timers.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"TlsSsl.md","mtime":"2016-06-20T01:36:09.040Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

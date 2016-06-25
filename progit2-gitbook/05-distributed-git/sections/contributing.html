@@ -1,0 +1,2492 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>向一个项目贡献 · Pro Git 2 中文版</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="maintaining.html" />
+    
+    
+    <link rel="prev" href="distributed-workflows.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../01-introduction/1-introduction.html">
+            
+                <a href="../../01-introduction/1-introduction.html">
+            
+                    
+                    起步
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../01-introduction/sections/about-version-control.html">
+            
+                <a href="../../01-introduction/sections/about-version-control.html">
+            
+                    
+                    关于版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../01-introduction/sections/history.html">
+            
+                <a href="../../01-introduction/sections/history.html">
+            
+                    
+                    Git 简史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../01-introduction/sections/basics.html">
+            
+                <a href="../../01-introduction/sections/basics.html">
+            
+                    
+                    Git 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../01-introduction/sections/command-line.html">
+            
+                <a href="../../01-introduction/sections/command-line.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../01-introduction/sections/installing.html">
+            
+                <a href="../../01-introduction/sections/installing.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../01-introduction/sections/first-time-setup.html">
+            
+                <a href="../../01-introduction/sections/first-time-setup.html">
+            
+                    
+                    初次运行 Git 前的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../01-introduction/sections/help.html">
+            
+                <a href="../../01-introduction/sections/help.html">
+            
+                    
+                    获取帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../01-introduction/sections/summary.html">
+            
+                <a href="../../01-introduction/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../02-git-basics/1-git-basics.html">
+            
+                <a href="../../02-git-basics/1-git-basics.html">
+            
+                    
+                    Git 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../02-git-basics/sections/getting-a-repository.html">
+            
+                <a href="../../02-git-basics/sections/getting-a-repository.html">
+            
+                    
+                    获取 Git 仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../02-git-basics/sections/recording-changes.html">
+            
+                <a href="../../02-git-basics/sections/recording-changes.html">
+            
+                    
+                    记录每次更新到仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../02-git-basics/sections/viewing-history.html">
+            
+                <a href="../../02-git-basics/sections/viewing-history.html">
+            
+                    
+                    查看提交历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../02-git-basics/sections/undoing.html">
+            
+                <a href="../../02-git-basics/sections/undoing.html">
+            
+                    
+                    撤消操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../02-git-basics/sections/remotes.html">
+            
+                <a href="../../02-git-basics/sections/remotes.html">
+            
+                    
+                    远程仓库的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../02-git-basics/sections/tagging.html">
+            
+                <a href="../../02-git-basics/sections/tagging.html">
+            
+                    
+                    打标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../02-git-basics/sections/aliases.html">
+            
+                <a href="../../02-git-basics/sections/aliases.html">
+            
+                    
+                    Git 别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../02-git-basics/sections/summary.html">
+            
+                <a href="../../02-git-basics/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../03-git-branching/1-git-branching.html">
+            
+                <a href="../../03-git-branching/1-git-branching.html">
+            
+                    
+                    Git 分支
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../03-git-branching/sections/nutshell.html">
+            
+                <a href="../../03-git-branching/sections/nutshell.html">
+            
+                    
+                    分支简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../03-git-branching/sections/basic-branching-and-merging.html">
+            
+                <a href="../../03-git-branching/sections/basic-branching-and-merging.html">
+            
+                    
+                    分支的新建与合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../03-git-branching/sections/branch-management.html">
+            
+                <a href="../../03-git-branching/sections/branch-management.html">
+            
+                    
+                    分支管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../03-git-branching/sections/workflows.html">
+            
+                <a href="../../03-git-branching/sections/workflows.html">
+            
+                    
+                    分支开发工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../03-git-branching/sections/remote-branches.html">
+            
+                <a href="../../03-git-branching/sections/remote-branches.html">
+            
+                    
+                    远程分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../03-git-branching/sections/rebasing.html">
+            
+                <a href="../../03-git-branching/sections/rebasing.html">
+            
+                    
+                    变基
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../03-git-branching/sections/summary.html">
+            
+                <a href="../../03-git-branching/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../04-git-server/1-git-server.html">
+            
+                <a href="../../04-git-server/1-git-server.html">
+            
+                    
+                    服务器上的 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../04-git-server/sections/protocols.html">
+            
+                <a href="../../04-git-server/sections/protocols.html">
+            
+                    
+                    协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../04-git-server/sections/git-on-a-server.html">
+            
+                <a href="../../04-git-server/sections/git-on-a-server.html">
+            
+                    
+                    在服务器上搭建 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../04-git-server/sections/generating-ssh-key.html">
+            
+                <a href="../../04-git-server/sections/generating-ssh-key.html">
+            
+                    
+                    生成 SSH 公钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../04-git-server/sections/setting-up-server.html">
+            
+                <a href="../../04-git-server/sections/setting-up-server.html">
+            
+                    
+                    配置服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../04-git-server/sections/git-daemon.html">
+            
+                <a href="../../04-git-server/sections/git-daemon.html">
+            
+                    
+                    Git 守护进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../04-git-server/sections/smart-http.html">
+            
+                <a href="../../04-git-server/sections/smart-http.html">
+            
+                    
+                    Smart HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../04-git-server/sections/gitweb.html">
+            
+                <a href="../../04-git-server/sections/gitweb.html">
+            
+                    
+                    GitWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../04-git-server/sections/gitlab.html">
+            
+                <a href="../../04-git-server/sections/gitlab.html">
+            
+                    
+                    GitLab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../../04-git-server/sections/hosted.html">
+            
+                <a href="../../04-git-server/sections/hosted.html">
+            
+                    
+                    第三方托管的选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../../04-git-server/sections/summary.html">
+            
+                <a href="../../04-git-server/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../1-distributed-git.html">
+            
+                <a href="../1-distributed-git.html">
+            
+                    
+                    分布式 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="distributed-workflows.html">
+            
+                <a href="distributed-workflows.html">
+            
+                    
+                    分布式工作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="contributing.html">
+            
+                <a href="contributing.html">
+            
+                    
+                    向一个项目贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="maintaining.html">
+            
+                <a href="maintaining.html">
+            
+                    
+                    维护项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../06-github/1-github.html">
+            
+                <a href="../../06-github/1-github.html">
+            
+                    
+                    Github
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../06-github/sections/1-setting-up-account.html">
+            
+                <a href="../../06-github/sections/1-setting-up-account.html">
+            
+                    
+                    账户的创建和配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../06-github/sections/2-contributing.html">
+            
+                <a href="../../06-github/sections/2-contributing.html">
+            
+                    
+                    对项目做出贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../06-github/sections/3-maintaining.html">
+            
+                <a href="../../06-github/sections/3-maintaining.html">
+            
+                    
+                    维护项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../06-github/sections/4-managing-organization.html">
+            
+                <a href="../../06-github/sections/4-managing-organization.html">
+            
+                    
+                    管理组织
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../06-github/sections/5-scripting.html">
+            
+                <a href="../../06-github/sections/5-scripting.html">
+            
+                    
+                    脚本 GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../06-github/sections/6-summary.html">
+            
+                <a href="../../06-github/sections/6-summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../07-git-tools/1-git-tools.html">
+            
+                <a href="../../07-git-tools/1-git-tools.html">
+            
+                    
+                    Git 工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../07-git-tools/sections/revision-selection.html">
+            
+                <a href="../../07-git-tools/sections/revision-selection.html">
+            
+                    
+                    选择修订版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../07-git-tools/sections/interactive-staging.html">
+            
+                <a href="../../07-git-tools/sections/interactive-staging.html">
+            
+                    
+                    交互式暂存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../07-git-tools/sections/stashing-cleaning.html">
+            
+                <a href="../../07-git-tools/sections/stashing-cleaning.html">
+            
+                    
+                    储藏与清理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../07-git-tools/sections/signing.html">
+            
+                <a href="../../07-git-tools/sections/signing.html">
+            
+                    
+                    签署工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../07-git-tools/sections/searching.html">
+            
+                <a href="../../07-git-tools/sections/searching.html">
+            
+                    
+                    搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../07-git-tools/sections/rewriting-history.html">
+            
+                <a href="../../07-git-tools/sections/rewriting-history.html">
+            
+                    
+                    重写历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../07-git-tools/sections/reset.html">
+            
+                <a href="../../07-git-tools/sections/reset.html">
+            
+                    
+                    重置揭密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../../07-git-tools/sections/advanced-merging.html">
+            
+                <a href="../../07-git-tools/sections/advanced-merging.html">
+            
+                    
+                    高级合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../../07-git-tools/sections/rerere.html">
+            
+                <a href="../../07-git-tools/sections/rerere.html">
+            
+                    
+                    Rerere
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../../07-git-tools/sections/debugging.html">
+            
+                <a href="../../07-git-tools/sections/debugging.html">
+            
+                    
+                    使用 Git 调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../../07-git-tools/sections/submodules.html">
+            
+                <a href="../../07-git-tools/sections/submodules.html">
+            
+                    
+                    子模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../../07-git-tools/sections/bundling.html">
+            
+                <a href="../../07-git-tools/sections/bundling.html">
+            
+                    
+                    打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../../07-git-tools/sections/replace.html">
+            
+                <a href="../../07-git-tools/sections/replace.html">
+            
+                    
+                    替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../../07-git-tools/sections/credentials.html">
+            
+                <a href="../../07-git-tools/sections/credentials.html">
+            
+                    
+                    凭证存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../../07-git-tools/sections/summary.html">
+            
+                <a href="../../07-git-tools/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../08-customizing-git/1-customizing-git.html">
+            
+                <a href="../../08-customizing-git/1-customizing-git.html">
+            
+                    
+                    自定义 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../08-customizing-git/sections/config.html">
+            
+                <a href="../../08-customizing-git/sections/config.html">
+            
+                    
+                    配置 Gits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../08-customizing-git/sections/attributes.html">
+            
+                <a href="../../08-customizing-git/sections/attributes.html">
+            
+                    
+                    Git 属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../08-customizing-git/sections/hooks.html">
+            
+                <a href="../../08-customizing-git/sections/hooks.html">
+            
+                    
+                    Git 钩子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../08-customizing-git/sections/policy.html">
+            
+                <a href="../../08-customizing-git/sections/policy.html">
+            
+                    
+                    使用强制策略的一个例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../08-customizing-git/sections/summary.html">
+            
+                <a href="../../08-customizing-git/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../09-git-and-other-scms/1-git-and-other-scms.html">
+            
+                <a href="../../09-git-and-other-scms/1-git-and-other-scms.html">
+            
+                    
+                    Git 与其他系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../09-git-and-other-scms/sections/git-client.html">
+            
+                <a href="../../09-git-and-other-scms/sections/git-client.html">
+            
+                    
+                    作为客户端的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../09-git-and-other-scms/sections/git-migrate.html">
+            
+                <a href="../../09-git-and-other-scms/sections/git-migrate.html">
+            
+                    
+                    迁移到 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../09-git-and-other-scms/sections/summary.html">
+            
+                <a href="../../09-git-and-other-scms/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../10-git-internals/1-git-internals.html">
+            
+                <a href="../../10-git-internals/1-git-internals.html">
+            
+                    
+                    Git 内部原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../10-git-internals/sections/plumbing-porcelain.html">
+            
+                <a href="../../10-git-internals/sections/plumbing-porcelain.html">
+            
+                    
+                    底层命令和高层命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../10-git-internals/sections/objects.html">
+            
+                <a href="../../10-git-internals/sections/objects.html">
+            
+                    
+                    Git 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../10-git-internals/sections/refs.html">
+            
+                <a href="../../10-git-internals/sections/refs.html">
+            
+                    
+                    Git 引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../../10-git-internals/sections/packfiles.html">
+            
+                <a href="../../10-git-internals/sections/packfiles.html">
+            
+                    
+                    包文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../../10-git-internals/sections/refspec.html">
+            
+                <a href="../../10-git-internals/sections/refspec.html">
+            
+                    
+                    引用规格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../../10-git-internals/sections/transfer-protocols.html">
+            
+                <a href="../../10-git-internals/sections/transfer-protocols.html">
+            
+                    
+                    传输协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../../10-git-internals/sections/maintenance.html">
+            
+                <a href="../../10-git-internals/sections/maintenance.html">
+            
+                    
+                    维护与数据恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../../10-git-internals/sections/environment.html">
+            
+                <a href="../../10-git-internals/sections/environment.html">
+            
+                    
+                    环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../../10-git-internals/sections/summary.html">
+            
+                <a href="../../10-git-internals/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../A-git-in-other-environments/1-git-other-environments.html">
+            
+                <a href="../../A-git-in-other-environments/1-git-other-environments.html">
+            
+                    
+                    附录A：其它环境中的 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../A-git-in-other-environments/sections/guis.html">
+            
+                <a href="../../A-git-in-other-environments/sections/guis.html">
+            
+                    
+                    图形界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../A-git-in-other-environments/sections/visualstudio.html">
+            
+                <a href="../../A-git-in-other-environments/sections/visualstudio.html">
+            
+                    
+                    Visual Studio 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../A-git-in-other-environments/sections/eclipse.html">
+            
+                <a href="../../A-git-in-other-environments/sections/eclipse.html">
+            
+                    
+                    Eclipse 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../../A-git-in-other-environments/sections/bash.html">
+            
+                <a href="../../A-git-in-other-environments/sections/bash.html">
+            
+                    
+                    Bash 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../../A-git-in-other-environments/sections/zsh.html">
+            
+                <a href="../../A-git-in-other-environments/sections/zsh.html">
+            
+                    
+                    Zsh 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../../A-git-in-other-environments/sections/powershell.html">
+            
+                <a href="../../A-git-in-other-environments/sections/powershell.html">
+            
+                    
+                    Powershell 中的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../../A-git-in-other-environments/sections/summary.html">
+            
+                <a href="../../A-git-in-other-environments/sections/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../B-embedding-git/1-embedding-git.html">
+            
+                <a href="../../B-embedding-git/1-embedding-git.html">
+            
+                    
+                    附录B：将 Git 嵌入你的应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../B-embedding-git/sections/command-line.html">
+            
+                <a href="../../B-embedding-git/sections/command-line.html">
+            
+                    
+                    命令行 Git 方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../B-embedding-git/sections/libgit2.html">
+            
+                <a href="../../B-embedding-git/sections/libgit2.html">
+            
+                    
+                    Libgit2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../../B-embedding-git/sections/jgit.html">
+            
+                <a href="../../B-embedding-git/sections/jgit.html">
+            
+                    
+                    JGit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../C-git-commands/1-git-commands.html">
+            
+                <a href="../../C-git-commands/1-git-commands.html">
+            
+                    
+                    附录C：Git 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../contributors.html">
+            
+                <a href="../../contributors.html">
+            
+                    
+                    原书贡献者
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >向一个项目贡献</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect2">
+<h3 id="_contributing_project">&#x5411;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x8D21;&#x732E;</h3>
+<div class="paragraph">
+<p>
+&#x63CF;&#x8FF0;&#x5982;&#x4F55;&#x5411;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x8D21;&#x732E;&#x7684;&#x4E3B;&#x8981;&#x56F0;&#x96BE;&#x5728;&#x4E8E;&#x5B8C;&#x6210;&#x8D21;&#x732E;&#x6709;&#x5F88;&#x591A;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x3002;
+&#x56E0;&#x4E3A; Git &#x975E;&#x5E38;&#x7075;&#x6D3B;&#xFF0C;&#x4EBA;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x4E00;&#x8D77;&#x5DE5;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x63CF;&#x8FF0;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x8D21;&#x732E;&#x5E76;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x51C6;&#x786E; - &#x6BCF;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x90FD;&#x6709;&#x4E00;&#x70B9;&#x513F;&#x4E0D;&#x540C;&#x3002;
+&#x5F71;&#x54CD;&#x56E0;&#x7D20;&#x5305;&#x62EC;&#x6D3B;&#x8DC3;&#x8D21;&#x732E;&#x8005;&#x7684;&#x6570;&#x91CF;&#x3001;&#x9009;&#x62E9;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x3001;&#x63D0;&#x4EA4;&#x6743;&#x9650;&#x4E0E;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x7684;&#x5916;&#x90E8;&#x8D21;&#x732E;&#x65B9;&#x6CD5;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x5F71;&#x54CD;&#x56E0;&#x7D20;&#x662F;&#x6D3B;&#x8DC3;&#x8D21;&#x732E;&#x8005;&#x7684;&#x6570;&#x91CF; - &#x79EF;&#x6781;&#x5730;&#x5411;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x8D21;&#x732E;&#x4EE3;&#x7801;&#x7684;&#x7528;&#x6237;&#x6570;&#x91CF;&#x4EE5;&#x53CA;&#x4ED6;&#x4EEC;&#x7684;&#x8D21;&#x732E;&#x9891;&#x7387;&#x3002;
+&#x5728;&#x8BB8;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x4E24;&#x4E09;&#x4E2A;&#x5F00;&#x53D1;&#x8005;&#x4E00;&#x5929;&#x63D0;&#x4EA4;&#x51E0;&#x6B21;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0D;&#x6D3B;&#x8DC3;&#x7684;&#x9879;&#x76EE;&#x53EF;&#x80FD;&#x66F4;&#x5C11;&#x3002;
+&#x5BF9;&#x4E8E;&#x5927;&#x4E00;&#x4E9B;&#x7684;&#x516C;&#x53F8;&#x6216;&#x9879;&#x76EE;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x7684;&#x6570;&#x91CF;&#x53EF;&#x80FD;&#x4F1A;&#x662F;&#x4E0A;&#x5343;&#xFF0C;&#x6BCF;&#x5929;&#x90FD;&#x6709;&#x6210;&#x767E;&#x4E0A;&#x5343;&#x6B21;&#x63D0;&#x4EA4;&#x3002;
+&#x8FD9;&#x5F88;&#x91CD;&#x8981;&#xFF0C;&#x56E0;&#x4E3A;&#x968F;&#x7740;&#x5F00;&#x53D1;&#x8005;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#xFF0C;&#x5728;&#x786E;&#x4FDD;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x80FD;&#x5E72;&#x51C0;&#x5730;&#x5E94;&#x7528;&#x6216;&#x8F7B;&#x677E;&#x5730;&#x5408;&#x5E76;&#x65F6;&#x4F1A;&#x9047;&#x5230;&#x66F4;&#x591A;&#x95EE;&#x9898;&#x3002;
+&#x63D0;&#x4EA4;&#x7684;&#x6539;&#x52A8;&#x53EF;&#x80FD;&#x8868;&#x73B0;&#x4E3A;&#x8FC7;&#x65F6;&#x7684;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x5728;&#x4F60;&#x6B63;&#x5728;&#x505A;&#x6539;&#x52A8;&#x6216;&#x8005;&#x7B49;&#x5F85;&#x6539;&#x52A8;&#x88AB;&#x6279;&#x51C6;&#x5E94;&#x7528;&#x65F6;&#x88AB;&#x5408;&#x5E76;&#x5165;&#x7684;&#x5DE5;&#x4F5C;&#x4E25;&#x91CD;&#x635F;&#x574F;&#x3002;
+&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x4EE3;&#x7801;&#x59CB;&#x7EC8;&#x662F;&#x6700;&#x65B0;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x63D0;&#x4EA4;&#x59CB;&#x7EC8;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF1F;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E0B;&#x4E00;&#x4E2A;&#x5F71;&#x54CD;&#x56E0;&#x7D20;&#x662F;&#x9879;&#x76EE;&#x4F7F;&#x7528;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x3002;
+&#x5B83;&#x662F;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x5417;&#xFF0C;&#x5373;&#x6BCF;&#x4E00;&#x4E2A;&#x5F00;&#x53D1;&#x8005;&#x90FD;&#x5BF9;&#x4E3B;&#x7EBF;&#x4EE3;&#x7801;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5199;&#x5165;&#x6743;&#x9650;&#xFF1F;
+&#x9879;&#x76EE;&#x662F;&#x5426;&#x6709;&#x4E00;&#x4E2A;&#x68C0;&#x67E5;&#x6240;&#x6709;&#x8865;&#x4E01;&#x7684;&#x7EF4;&#x62A4;&#x8005;&#x6216;&#x6574;&#x5408;&#x8005;&#xFF1F;
+&#x662F;&#x5426;&#x6240;&#x6709;&#x7684;&#x8865;&#x4E01;&#x662F;&#x540C;&#x884C;&#x8BC4;&#x5BA1;&#x540E;&#x6279;&#x51C6;&#x7684;&#xFF1F;
+&#x4F60;&#x662F;&#x5426;&#x53C2;&#x4E0E;&#x4E86;&#x90A3;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF1F;
+&#x662F;&#x5426;&#x5B58;&#x5728;&#x526F;&#x5B98;&#x7CFB;&#x7EDF;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x5148;&#x5C06;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#x63D0;&#x4EA4;&#x5230;&#x4E0A;&#x9762;&#xFF1F;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E0B;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x662F;&#x63D0;&#x4EA4;&#x6743;&#x9650;&#x3002;
+&#x662F;&#x5426;&#x6709;&#x9879;&#x76EE;&#x7684;&#x5199;&#x6743;&#x9650;&#x4F1A;&#x4F7F;&#x5411;&#x9879;&#x76EE;&#x8D21;&#x732E;&#x6240;&#x9700;&#x7684;&#x6D41;&#x7A0B;&#x6709;&#x6781;&#x5927;&#x7684;&#x4E0D;&#x540C;&#x3002;
+&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5199;&#x6743;&#x9650;&#xFF0C;&#x9879;&#x76EE;&#x4F1A;&#x9009;&#x62E9;&#x4F55;&#x79CD;&#x65B9;&#x5F0F;&#x63A5;&#x53D7;&#x8D21;&#x732E;&#x7684;&#x5DE5;&#x4F5C;&#xFF1F;
+&#x662F;&#x5426;&#x751A;&#x81F3;&#x6709;&#x4E00;&#x4E2A;&#x5982;&#x4F55;&#x8D21;&#x732E;&#x7684;&#x89C4;&#x8303;&#xFF1F;
+&#x4F60;&#x4E00;&#x6B21;&#x8D21;&#x732E;&#x591A;&#x5C11;&#x5DE5;&#x4F5C;&#xFF1F;
+&#x4F60;&#x591A;&#x4E45;&#x8D21;&#x732E;&#x4E00;&#x6B21;&#xFF1F;</p>
+</div>
+<div class="paragraph">
+<p>&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x90FD;&#x4F1A;&#x5F71;&#x54CD;&#x5B9E;&#x9645;&#x5982;&#x4F55;&#x5411;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x8D21;&#x732E;&#xFF0C;&#x4EE5;&#x53CA;&#x5BF9;&#x4F60;&#x6765;&#x8BF4;&#x54EA;&#x4E9B;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x66F4;&#x9002;&#x5408;&#x6216;&#x8005;&#x53EF;&#x7528;&#x3002;
+&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x7531;&#x6D45;&#x5165;&#x6DF1;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x7CFB;&#x5217;&#x7528;&#x4F8B;&#x6765;&#x8BB2;&#x8FF0;&#x5176;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x65B9;&#x9762;&#xFF1B;&#x4ECE;&#x8FD9;&#x4E9B;&#x4F8B;&#x5B50;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x5EFA;&#x7ACB;&#x5B9E;&#x9645;&#x4E2D;&#x4F60;&#x9700;&#x8981;&#x7684;&#x7279;&#x5B9A;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x3002;</p>
+</div>
+<div class="sect3">
+<h4 id="_commit_guidelines">&#x63D0;&#x4EA4;&#x51C6;&#x5219;</h4>
+<div class="paragraph">
+<p>&#x5728;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x67E5;&#x770B;&#x7279;&#x5B9A;&#x7684;&#x7528;&#x4F8B;&#x524D;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x5173;&#x4E8E;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x7684;&#x5FEB;&#x901F;&#x8BF4;&#x660E;&#x3002;
+&#x6709;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x521B;&#x5EFA;&#x63D0;&#x4EA4;&#x7684;&#x51C6;&#x5219;&#x5E76;&#x4E14;&#x575A;&#x6301;&#x4F7F;&#x7528;&#x4F1A;&#x8BA9;&#x4E0E; Git &#x5DE5;&#x4F5C;&#x548C;&#x4E0E;&#x5176;&#x4ED6;&#x4EBA;&#x534F;&#x4F5C;&#x66F4;&#x5BB9;&#x6613;&#x3002;
+Git &#x9879;&#x76EE;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#xFF0C;&#x5176;&#x4E2D;&#x5217;&#x4E3E;&#x4E86;&#x5173;&#x4E8E;&#x521B;&#x5EFA;&#x63D0;&#x4EA4;&#x5230;&#x63D0;&#x4EA4;&#x8865;&#x4E01;&#x7684;&#x82E5;&#x5E72;&#x597D;&#x7684;&#x63D0;&#x793A; - &#x53EF;&#x4EE5;&#x5728; Git &#x6E90;&#x4EE3;&#x7801;&#x4E2D;&#x7684; <code>Documentation/SubmittingPatches</code> &#x6587;&#x4EF6;&#x4E2D;&#x9605;&#x8BFB;&#x5B83;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>
+&#x9996;&#x5148;&#xFF0C;&#x4F60;&#x4E0D;&#x4F1A;&#x60F3;&#x8981;&#x628A;&#x7A7A;&#x767D;&#x9519;&#x8BEF;&#xFF08;&#x6839;&#x636E; git help diff &#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x7ED3;&#x5408;&#x4E0B;&#x9762;&#x7ED9;&#x51FA;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x7A7A;&#x767D;&#x9519;&#x8BEF;&#x662F;&#x6307;&#x884C;&#x5C3E;&#x7684;&#x7A7A;&#x683C;&#x3001;Tab &#x5236;&#x8868;&#x7B26;&#xFF0C;&#x548C;&#x884C;&#x9996;&#x7A7A;&#x683C;&#x540E;&#x8DDF; Tab &#x5236;&#x8868;&#x7B26;&#x7684;&#x884C;&#x4E3A;&#xFF09;&#x63D0;&#x4EA4;&#x4E0A;&#x53BB;&#x3002;
+Git &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x68C0;&#x67E5;&#x8FD9;&#x70B9; - &#x5728;&#x63D0;&#x4EA4;&#x524D;&#xFF0C;&#x8FD0;&#x884C; <code>git diff --check</code>&#xFF0C;&#x5B83;&#x5C06;&#x4F1A;&#x627E;&#x5230;&#x53EF;&#x80FD;&#x7684;&#x7A7A;&#x767D;&#x9519;&#x8BEF;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x4E3A;&#x4F60;&#x5217;&#x51FA;&#x6765;&#x3002;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/git-diff-check.png" alt="`git diff --check` &#x7684;&#x8F93;&#x51FA;&#x3002;">
+</div>
+<div class="title">Figure 1. <code>git diff --check</code> &#x7684;&#x8F93;&#x51FA;</div>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x5728;&#x63D0;&#x4EA4;&#x524D;&#x8FD0;&#x884C;&#x90A3;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x63D0;&#x4EA4;&#x4E2D;&#x662F;&#x5426;&#x5305;&#x542B;&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x5176;&#x4ED6;&#x5F00;&#x53D1;&#x8005;&#x607C;&#x6012;&#x7684;&#x7A7A;&#x767D;&#x95EE;&#x9898;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x5C1D;&#x8BD5;&#x8BA9;&#x6BCF;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x4E0A;&#x7684;&#x72EC;&#x7ACB;&#x53D8;&#x66F4;&#x96C6;&#x3002;
+&#x5982;&#x679C;&#x53EF;&#x4EE5;&#xFF0C;&#x5C1D;&#x8BD5;&#x8BA9;&#x6539;&#x52A8;&#x53EF;&#x4EE5;&#x7406;&#x89E3; - &#x4E0D;&#x8981;&#x5728;&#x6574;&#x4E2A;&#x5468;&#x672B;&#x7F16;&#x7801;&#x89E3;&#x51B3;&#x4E94;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5468;&#x4E00;&#x65F6;&#x5C06;&#x5B83;&#x4EEC;&#x63D0;&#x4EA4;&#x4E3A;&#x4E00;&#x4E2A;&#x5DE8;&#x5927;&#x7684;&#x63D0;&#x4EA4;&#x3002;
+&#x5373;&#x4F7F;&#x5728;&#x5468;&#x672B;&#x671F;&#x95F4;&#x4F60;&#x65E0;&#x6CD5;&#x63D0;&#x4EA4;&#xFF0C;&#x5728;&#x5468;&#x4E00;&#x65F6;&#x4F7F;&#x7528;&#x6682;&#x5B58;&#x533A;&#x57DF;&#x5C06;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#x6700;&#x5C11;&#x62C6;&#x5206;&#x4E3A;&#x6BCF;&#x4E2A;&#x95EE;&#x9898;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#xFF0C;&#x5E76;&#x4E14;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x9644;&#x5E26;&#x4E00;&#x4E2A;&#x6709;&#x7528;&#x7684;&#x4FE1;&#x606F;&#x3002;
+&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E9B;&#x6539;&#x52A8;&#x4FEE;&#x6539;&#x4E86;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528; <code>git add --patch</code> &#x6765;&#x90E8;&#x5206;&#x6682;&#x5B58;&#x6587;&#x4EF6;&#xFF08;&#x5728; <a href="#_interactive_staging">[_interactive_staging]</a> &#x4E2D;&#x6709;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#xFF09;&#x3002;
+&#x4E0D;&#x7BA1;&#x4F60;&#x505A;&#x4E00;&#x4E2A;&#x6216;&#x4E94;&#x4E2A;&#x63D0;&#x4EA4;&#xFF0C;&#x53EA;&#x8981;&#x6240;&#x6709;&#x7684;&#x6539;&#x52A8;&#x662F;&#x5728;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x6DFB;&#x52A0;&#x7684;&#xFF0C;&#x9879;&#x76EE;&#x5206;&#x652F;&#x672B;&#x7AEF;&#x7684;&#x5FEB;&#x7167;&#x5C31;&#x662F;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x4F7F;&#x540C;&#x4E8B;&#x5F00;&#x53D1;&#x8005;&#x5FC5;&#x987B;&#x5BA1;&#x67E5;&#x4F60;&#x7684;&#x6539;&#x52A8;&#x65F6;&#x5C3D;&#x91CF;&#x8BA9;&#x4E8B;&#x60C5;&#x5BB9;&#x6613;&#x4E9B;&#x3002;
+&#x5F53;&#x4F60;&#x4E4B;&#x540E;&#x9700;&#x8981;&#x65F6;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4E5F;&#x4F1A;&#x4F7F;&#x62C9;&#x51FA;&#x6216;&#x8FD8;&#x539F;&#x4E00;&#x4E2A;&#x53D8;&#x66F4;&#x96C6;&#x66F4;&#x5BB9;&#x6613;&#x4E9B;&#x3002;
+<a href="#_rewriting_history">[_rewriting_history]</a> &#x63CF;&#x8FF0;&#x4E86;&#x91CD;&#x5199;&#x5386;&#x53F2;&#x4E0E;&#x4EA4;&#x4E92;&#x5F0F;&#x6682;&#x5B58;&#x6587;&#x4EF6;&#x7684;&#x82E5;&#x5E72;&#x6709;&#x7528;&#x7684; Git &#x6280;&#x5DE7; - &#x5728;&#x5C06;&#x5DE5;&#x4F5C;&#x53D1;&#x9001;&#x7ED9;&#x5176;&#x4ED6;&#x4EBA;&#x524D;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x5DE5;&#x5177;&#x6765;&#x5E2E;&#x52A9;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5E72;&#x51C0;&#x53C8;&#x6613;&#x61C2;&#x7684;&#x5386;&#x53F2;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x6700;&#x540E;&#x4E00;&#x4EF6;&#x8981;&#x7262;&#x8BB0;&#x7684;&#x4E8B;&#x662F;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x3002;
+&#x6709;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x4F18;&#x8D28;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x7684;&#x4E60;&#x60EF;&#x4F1A;&#x4F7F; Git &#x7684;&#x4F7F;&#x7528;&#x4E0E;&#x534F;&#x4F5C;&#x5BB9;&#x6613;&#x7684;&#x591A;&#x3002;
+&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4FE1;&#x606F;&#x5E94;&#x5F53;&#x4EE5;&#x5C11;&#x4E8E; 50 &#x4E2A;&#x5B57;&#x7B26;&#xFF08;25&#x4E2A;&#x6C49;&#x5B57;&#xFF09;&#x7684;&#x5355;&#x884C;&#x5F00;&#x59CB;&#x4E14;&#x7B80;&#x8981;&#x5730;&#x63CF;&#x8FF0;&#x53D8;&#x66F4;&#xFF0C;&#x63A5;&#x7740;&#x662F;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x884C;&#xFF0C;&#x518D;&#x63A5;&#x7740;&#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x89E3;&#x91CA;&#x3002;
+Git &#x9879;&#x76EE;&#x8981;&#x6C42;&#x4E00;&#x4E2A;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x89E3;&#x91CA;&#xFF0C;&#x5305;&#x62EC;&#x505A;&#x6539;&#x52A8;&#x7684;&#x52A8;&#x673A;&#x548C;&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x4E0E;&#x4E4B;&#x524D;&#x884C;&#x4E3A;&#x7684;&#x5BF9;&#x6BD4; - &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x503C;&#x5F97;&#x9075;&#x5FAA;&#x7684;&#x597D;&#x89C4;&#x5219;&#x3002;
+&#x5728;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x4E2D;&#x4F7F;&#x7528;&#x73B0;&#x5728;&#x65F6;&#x6001;&#x7948;&#x4F7F;&#x8BED;&#x6C14;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x597D;&#x60F3;&#x6CD5;&#x3002;
+&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x3002;
+&#x4F7F;&#x7528; <code>Add tests for.&apos;&apos; &#x800C;&#x4E0D;&#x662F; </code>I added tests for&apos;&apos; &#x6216; ``Adding tests for,&apos;&apos;&#x3002;
+&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4EFD;&#x6700;&#x521D;&#x7531; Tim Pope &#x5199;&#x7684;&#x6A21;&#x677F;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-text" data-lang="text">&#x4FEE;&#x6539;&#x7684;&#x6458;&#x8981;&#xFF08;50 &#x4E2A;&#x5B57;&#x7B26;&#x6216;&#x66F4;&#x5C11;&#xFF09;
+
+&#x5982;&#x679C;&#x5FC5;&#x8981;&#x7684;&#x8BDD;&#xFF0C;&#x52A0;&#x5165;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x89E3;&#x91CA;&#x6587;&#x5B57;&#x3002;&#x5728;
+&#x5927;&#x6982; 72 &#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x65F6;&#x5019;&#x6362;&#x884C;&#x3002;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x5F62;&#x4E0B;&#xFF0C;
+&#x7B2C;&#x4E00;&#x884C;&#x88AB;&#x5F53;&#x4F5C;&#x4E00;&#x5C01;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x5269;&#x4E0B;&#x7684;
+&#x6587;&#x672C;&#x4F5C;&#x4E3A;&#x6B63;&#x6587;&#x3002;&#x5206;&#x9694;&#x6458;&#x8981;&#x4E0E;&#x6B63;&#x6587;&#x7684;&#x7A7A;&#x884C;&#x662F;
+&#x5FC5;&#x987B;&#x7684;&#xFF08;&#x9664;&#x975E;&#x4F60;&#x5B8C;&#x5168;&#x7701;&#x7565;&#x6B63;&#x6587;&#xFF09;&#xFF1B;&#x5982;&#x679C;&#x4F60;&#x5C06;
+&#x4E24;&#x8005;&#x6DF7;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x90A3;&#x4E48;&#x7C7B;&#x4F3C;&#x53D8;&#x57FA;&#x7B49;&#x5DE5;&#x5177;&#x65E0;&#x6CD5;
+&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;
+
+&#x7A7A;&#x884C;&#x63A5;&#x7740;&#x66F4;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x6BB5;&#x843D;&#x3002;
+
+  - &#x53E5;&#x53F7;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;
+
+  - &#x9879;&#x76EE;&#x7B26;&#x53F7;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5178;&#x578B;&#x7684;&#x8FDE;&#x5B57;&#x7B26;&#x6216;&#x661F;&#x53F7;
+    &#x524D;&#x9762;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#xFF0C;&#x4E4B;&#x95F4;&#x7528;&#x7A7A;&#x884C;&#x9694;&#x5F00;&#xFF0C;
+    &#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x4F9D;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x60EF;&#x4F8B;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x4F60;&#x6240;&#x6709;&#x7684;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x770B;&#x8D77;&#x6765;&#x90FD;&#x50CF;&#x8FD9;&#x6837;&#xFF0C;&#x5BF9;&#x4F60;&#x4E0E;&#x8DDF;&#x4F60;&#x5DE5;&#x4F5C;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x5176;&#x4ED6;&#x5F00;&#x53D1;&#x8005;&#x6765;&#x8BF4;&#x4E8B;&#x60C5;&#x4F1A;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x3002;
+Git &#x9879;&#x76EE;&#x6709;&#x4E00;&#x4E2A;&#x826F;&#x597D;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x63D0;&#x4EA4;&#x4FE1;&#x606F; - &#x5C1D;&#x8BD5;&#x5728;&#x90A3;&#x513F;&#x8FD0;&#x884C; <code>git log --no-merges</code> &#x6765;&#x770B;&#x770B;&#x6F02;&#x4EAE;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x9879;&#x76EE;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x50CF;&#x4EC0;&#x4E48;&#x6837;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4EE5;&#x53CA;&#x8D2F;&#x7A7F;&#x672C;&#x4E66;&#x5927;&#x90E8;&#x5206;&#xFF0C;&#x51FA;&#x4E8E;&#x7B80;&#x6D01;&#x6027;&#x7684;&#x539F;&#x56E0;&#x672C;&#x4E66;&#x4E0D;&#x4F1A;&#x6709;&#x50CF;&#x8FD9;&#x6837;&#x6F02;&#x4EAE;&#x683C;&#x5F0F;&#x7684;&#x4FE1;&#x606F;&#xFF1B;&#x76F8;&#x53CD;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528; <code>-m</code> &#x9009;&#x9879;&#x7684; <code>git commit</code>&#x3002;
+&#x7167;&#x6211;&#x4EEC;&#x8BF4;&#x7684;&#x505A;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7167;&#x6211;&#x4EEC;&#x505A;&#x7684;&#x505A;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_private_team">&#x79C1;&#x6709;&#x5C0F;&#x578B;&#x56E2;&#x961F;</h4>
+<div class="paragraph">
+<p>
+&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x7684;&#x6700;&#x7B80;&#x5355;&#x7684;&#x914D;&#x7F6E;&#x662F;&#x6709;&#x4E00;&#x4E24;&#x4E2A;&#x5176;&#x4ED6;&#x5F00;&#x53D1;&#x8005;&#x7684;&#x79C1;&#x6709;&#x9879;&#x76EE;&#x3002;
+``&#x79C1;&#x6709;&apos;&apos; &#x5728;&#x8FD9;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x95ED;&#x6E90; - &#x4E0D;&#x53EF;&#x4EE5;&#x4ECE;&#x5916;&#x9762;&#x7684;&#x4E16;&#x754C;&#x4E2D;&#x8BBF;&#x95EE;&#x5230;&#x3002;
+&#x4F60;&#x548C;&#x5176;&#x4ED6;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x90FD;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x63A8;&#x9001;&#x6743;&#x9650;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x4F7F;&#x7528; Subversion &#x6216;&#x5176;&#x4ED6;&#x96C6;&#x4E2D;&#x5F0F;&#x7684;&#x7CFB;&#x7EDF;&#x65F6;&#x4F1A;&#x4F7F;&#x7528;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x3002;
+&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x50CF;&#x79BB;&#x7EBF;&#x63D0;&#x4EA4;&#x3001;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x5730;&#x65B0;&#x5EFA;&#x5206;&#x652F;&#x4E0E;&#x5408;&#x5E76;&#x5206;&#x652F;&#x7B49;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;&#xFF0C;&#x4F46;&#x662F;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x53EF;&#x4EE5;&#x662F;&#x5F88;&#x7B80;&#x5355;&#x7684;&#xFF1B;&#x4E3B;&#x8981;&#x7684;&#x533A;&#x522B;&#x662F;&#x5408;&#x5E76;&#x53D1;&#x751F;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x8FD9;&#x8FB9;&#x800C;&#x4E0D;&#x662F;&#x5728;&#x63D0;&#x4EA4;&#x65F6;&#x53D1;&#x751F;&#x5728;&#x670D;&#x52A1;&#x5668;&#x90A3;&#x8FB9;&#x3002;
+&#x8BA9;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x5F53;&#x4E24;&#x4E2A;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x4E00;&#x4E2A;&#x5171;&#x4EAB;&#x4ED3;&#x5E93;&#x4E2D;&#x4E00;&#x8D77;&#x5DE5;&#x4F5C;&#x65F6;&#x4F1A;&#x662F;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x3002;
+&#x7B2C;&#x4E00;&#x4E2A;&#x5F00;&#x53D1;&#x8005;&#xFF0C;John&#xFF0C;&#x514B;&#x9686;&#x4E86;&#x4ED3;&#x5E93;&#xFF0C;&#x505A;&#x4E86;&#x6539;&#x52A8;&#xFF0C;&#x7136;&#x540E;&#x672C;&#x5730;&#x63D0;&#x4EA4;&#x3002;
+&#xFF08;&#x4E3A;&#x4E86;&#x7F29;&#x77ED;&#x8FD9;&#x4E9B;&#x4F8B;&#x5B50;&#x957F;&#x5EA6;&#xFF0C;&#x534F;&#x8BAE;&#x4FE1;&#x606F;&#x5DF2;&#x88AB;&#x66FF;&#x6362;&#x4E3A; <code>&#x2026;&#x200B;</code>&#x3002;&#xFF09;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console"># John&apos;s Machine
+$ git clone john@githost:simplegit.git
+Initialized empty Git repository in /home/john/simplegit/.git/
+...
+$ cd simplegit/
+$ vim lib/simplegit.rb
+$ git commit -am &apos;removed invalid default value&apos;
+[master 738ee87] removed invalid default value
+ 1 files changed, 1 insertions(+), 1 deletions(-)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x7B2C;&#x4E8C;&#x4E2A;&#x5F00;&#x53D1;&#x8005;&#xFF0C;Jessica&#xFF0C;&#x505A;&#x4E86;&#x540C;&#x6837;&#x7684;&#x4E8B;&#x60C5; - &#x514B;&#x9686;&#x4ED3;&#x5E93;&#x5E76;&#x63D0;&#x4EA4;&#x4E86;&#x4E00;&#x4E2A;&#x6539;&#x52A8;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console"># Jessica&apos;s Machine
+$ git clone jessica@githost:simplegit.git
+Initialized empty Git repository in /home/jessica/simplegit/.git/
+...
+$ cd simplegit/
+$ vim TODO
+$ git commit -am &apos;add reset task&apos;
+[master fbff5bc] add reset task
+ 1 files changed, 1 insertions(+), 0 deletions(-)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#xFF0C;Jessica &#x628A;&#x5979;&#x7684;&#x5DE5;&#x4F5C;&#x63A8;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console"># Jessica&apos;s Machine
+$ git push origin master
+...
+To jessica@githost:simplegit.git
+   1edee6b..fbff5bc  master -&gt; master</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>John &#x4E5F;&#x5C1D;&#x8BD5;&#x63A8;&#x9001;&#x4ED6;&#x7684;&#x6539;&#x52A8;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console"># John&apos;s Machine
+$ git push origin master
+To john@githost:simplegit.git
+ ! [rejected]        master -&gt; master (non-fast forward)
+error: failed to push some refs to &apos;john@githost:simplegit.git&apos;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4E0D;&#x5141;&#x8BB8; John &#x63A8;&#x9001;&#x662F;&#x56E0;&#x4E3A;&#x5728;&#x540C;&#x4E00;&#x65F6;&#x95F4; Jessica &#x5DF2;&#x7ECF;&#x63A8;&#x9001;&#x4E86;&#x3002;
+&#x5982;&#x679C;&#x4E4B;&#x524D;&#x4E60;&#x60EF;&#x4E8E;&#x7528; Subversion &#x90A3;&#x4E48;&#x7406;&#x89E3;&#x8FD9;&#x70B9;&#x7279;&#x522B;&#x91CD;&#x8981;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x4F1A;&#x6CE8;&#x610F;&#x5230;&#x4E24;&#x4E2A;&#x5F00;&#x53D1;&#x8005;&#x5E76;&#x6CA1;&#x6709;&#x7F16;&#x8F91;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x3002;
+&#x5C3D;&#x7BA1; Subversion &#x4F1A;&#x5BF9;&#x7F16;&#x8F91;&#x7684;&#x4E0D;&#x540C;&#x6587;&#x4EF6;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x81EA;&#x52A8;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x5408;&#x5E76;&#xFF0C;&#x4F46; Git &#x8981;&#x6C42;&#x4F60;&#x5728;&#x672C;&#x5730;&#x5408;&#x5E76;&#x63D0;&#x4EA4;&#x3002;
+John &#x5FC5;&#x987B;&#x6293;&#x53D6; Jessica &#x7684;&#x6539;&#x52A8;&#x5E76;&#x5408;&#x5E76;&#x5B83;&#x4EEC;&#xFF0C;&#x624D;&#x80FD;&#x88AB;&#x5141;&#x8BB8;&#x63A8;&#x9001;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git fetch origin
+...
+From john@githost:simplegit
+ + 049d078...fbff5bc master     -&gt; origin/master</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;John &#x7684;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/small-team-1.png" alt="John &#x7684;&#x5206;&#x53C9;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 2. John &#x7684;&#x5206;&#x53C9;&#x5386;&#x53F2;</div>
+</div>
+<div class="paragraph">
+<p>John &#x6709;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x6307;&#x5411; Jessica &#x63A8;&#x9001;&#x4E0A;&#x53BB;&#x7684;&#x6539;&#x52A8;&#xFF0C;&#x4F46;&#x662F;&#x4ED6;&#x5FC5;&#x987B;&#x5C06;&#x5B83;&#x4EEC;&#x5408;&#x5E76;&#x5165;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x4F5C;&#x4E2D;&#x4E4B;&#x540E;&#x624D;&#x80FD;&#x88AB;&#x5141;&#x8BB8;&#x63A8;&#x9001;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git merge origin/master
+Merge made by recursive.
+ TODO |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5408;&#x5E76;&#x8FDB;&#x884C;&#x5730;&#x5F88;&#x987A;&#x5229; - John &#x7684;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x73B0;&#x5728;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/small-team-2.png" alt="&#x5408;&#x5E76;&#x4E86; `origin/master` &#x4E4B;&#x540E; John &#x7684;&#x4ED3;&#x5E93;&#x3002;">
+</div>
+<div class="title">Figure 3. &#x5408;&#x5E76;&#x4E86; <code>origin/master</code> &#x4E4B;&#x540E; John &#x7684;&#x4ED3;&#x5E93;</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#xFF0C;John &#x53EF;&#x4EE5;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#xFF0C;&#x786E;&#x4FDD;&#x5B83;&#x4F9D;&#x7136;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x4ED6;&#x53EF;&#x4EE5;&#x628A;&#x5408;&#x5E76;&#x7684;&#x65B0;&#x5DE5;&#x4F5C;&#x63A8;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git push origin master
+...
+To john@githost:simplegit.git
+   fbff5bc..72bbc59  master -&gt; master</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6700;&#x7EC8;&#xFF0C;John &#x7684;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/small-team-3.png" alt="&#x63A8;&#x9001;&#x5230; `origin` &#x670D;&#x52A1;&#x5668;&#x540E; John &#x7684;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 4. &#x63A8;&#x9001;&#x5230; <code>origin</code> &#x670D;&#x52A1;&#x5668;&#x540E; John &#x7684;&#x5386;&#x53F2;</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x6B64;&#x671F;&#x95F4;&#xFF0C;Jessica &#x5728;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x5206;&#x652F;&#x4E0A;&#x5DE5;&#x4F5C;&#x3002;
+&#x5979;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x79F0;&#x4F5C; <code>issue54</code> &#x7684;&#x7279;&#x6027;&#x5206;&#x652F;&#x5E76;&#x4E14;&#x5728;&#x90A3;&#x4E2A;&#x5206;&#x652F;&#x4E0A;&#x505A;&#x4E86;&#x4E09;&#x6B21;&#x63D0;&#x4EA4;&#x3002;
+&#x5979;&#x8FD8;&#x6CA1;&#x6709;&#x6293;&#x53D6; John &#x7684;&#x6539;&#x52A8;&#xFF0C;&#x6240;&#x4EE5;&#x5979;&#x7684;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/small-team-4.png" alt="Jessica &#x7684;&#x7279;&#x6027;&#x5206;&#x652F;&#x3002;">
+</div>
+<div class="title">Figure 5. Jessica &#x7684;&#x7279;&#x6027;&#x5206;&#x652F;</div>
+</div>
+<div class="paragraph">
+<p>Jessica &#x60F3;&#x8981;&#x4E0E; John &#x540C;&#x6B65;&#xFF0C;&#x6240;&#x4EE5;&#x5979;&#x8FDB;&#x884C;&#x4E86;&#x6293;&#x53D6;&#x64CD;&#x4F5C;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console"># Jessica&apos;s Machine
+$ git fetch origin
+...
+From jessica@githost:simplegit
+   fbff5bc..72bbc59  master     -&gt; origin/master</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x90A3;&#x4F1A;&#x540C;&#x65F6;&#x62C9;&#x53D6; John &#x63A8;&#x9001;&#x7684;&#x5DE5;&#x4F5C;&#x3002;
+Jessica &#x7684;&#x5386;&#x53F2;&#x73B0;&#x5728;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/small-team-5.png" alt="&#x6293;&#x53D6; John &#x7684;&#x6539;&#x52A8;&#x540E; Jessica &#x7684;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 6. &#x6293;&#x53D6; John &#x7684;&#x6539;&#x52A8;&#x540E; Jessica &#x7684;&#x5386;&#x53F2;</div>
+</div>
+<div class="paragraph">
+<p>Jessica &#x8BA4;&#x4E3A;&#x5979;&#x7684;&#x7279;&#x6027;&#x5206;&#x652F;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x597D;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x5979;&#x60F3;&#x8981;&#x77E5;&#x9053;&#x5FC5;&#x987B;&#x5408;&#x5E76;&#x4EC0;&#x4E48;&#x8FDB;&#x5165;&#x5979;&#x7684;&#x5DE5;&#x4F5C;&#x624D;&#x80FD;&#x63A8;&#x9001;&#x3002;
+&#x5979;&#x8FD0;&#x884C; <code>git log</code> &#x6765;&#x627E;&#x51FA;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git log --no-merges issue54..origin/master
+commit 738ee872852dfaa9d6634e0dea7a324040193016
+Author: John Smith &lt;jsmith@example.com&gt;
+Date:   Fri May 29 16:01:27 2009 -0700
+
+   removed invalid default value</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>issue54..origin/master</code> &#x8BED;&#x6CD5;&#x662F;&#x4E00;&#x4E2A;&#x65E5;&#x5FD7;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x8981;&#x6C42; Git &#x53EA;&#x663E;&#x793A;&#x6240;&#x6709;&#x5728;&#x540E;&#x9762;&#x5206;&#x652F;&#xFF08;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#x662F; <code>origin/master</code>&#xFF09;&#x4F46;&#x4E0D;&#x5728;&#x524D;&#x9762;&#x5206;&#x652F;&#xFF08;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#x662F; <code>issue54</code>&#xFF09;&#x7684;&#x63D0;&#x4EA4;&#x7684;&#x5217;&#x8868;&#x3002;
+&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5728; <a href="#_commit_ranges">[_commit_ranges]</a> &#x4E2D;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x8FD9;&#x4E2A;&#x8BED;&#x6CD5;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x76EE;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4ECE;&#x8F93;&#x51FA;&#x4E2D;&#x770B;&#x5230;&#x6709;&#x4E00;&#x4E2A; John &#x751F;&#x6210;&#x7684;&#x4F46;&#x662F; Jessica &#x8FD8;&#x6CA1;&#x6709;&#x5408;&#x5E76;&#x5165;&#x7684;&#x63D0;&#x4EA4;&#x3002;
+&#x5982;&#x679C;&#x5979;&#x5408;&#x5E76; <code>origin/master</code>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5C06;&#x4F1A;&#x4FEE;&#x6539;&#x5979;&#x7684;&#x672C;&#x5730;&#x5DE5;&#x4F5C;&#x7684;&#x90A3;&#x4E2A;&#x5355;&#x4E2A;&#x63D0;&#x4EA4;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#xFF0C;Jessica &#x53EF;&#x4EE5;&#x5408;&#x5E76;&#x5979;&#x7684;&#x7279;&#x6027;&#x5DE5;&#x4F5C;&#x5230;&#x5979;&#x7684; master &#x5206;&#x652F;&#xFF0C;&#x5408;&#x5E76; John &#x7684;&#x5DE5;&#x4F5C;&#xFF08;<code>origin/master</code>&#xFF09;&#x8FDB;&#x5165;&#x5979;&#x7684; <code>master</code> &#x5206;&#x652F;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6B21;&#x63A8;&#x9001;&#x56DE;&#x670D;&#x52A1;&#x5668;&#x3002;
+&#x9996;&#x5148;&#xFF0C;&#x4E3A;&#x4E86;&#x6574;&#x5408;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x5DE5;&#x4F5C;&#x5979;&#x5207;&#x6362;&#x56DE;&#x5979;&#x7684; master &#x5206;&#x652F;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git checkout master
+Switched to branch &apos;master&apos;
+Your branch is behind &apos;origin/master&apos; by 2 commits, and can be fast-forwarded.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5979;&#x65E2;&#x53EF;&#x4EE5;&#x5148;&#x5408;&#x5E76; <code>origin/master</code> &#x4E5F;&#x53EF;&#x4EE5;&#x5148;&#x5408;&#x5E76; <code>issue54</code> - &#x5B83;&#x4EEC;&#x90FD;&#x662F;&#x4E0A;&#x6E38;&#xFF0C;&#x6240;&#x4EE5;&#x987A;&#x5E8F;&#x5E76;&#x6CA1;&#x6709;&#x5173;&#x7CFB;&#x3002;
+&#x4E0D;&#x8BBA;&#x5979;&#x9009;&#x62E9;&#x7684;&#x987A;&#x5E8F;&#x662F;&#x4EC0;&#x4E48;&#x6700;&#x7EC8;&#x7684;&#x7ED3;&#x679C;&#x5FEB;&#x7167;&#x662F;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x7684;&#xFF1B;&#x53EA;&#x662F;&#x5386;&#x53F2;&#x4F1A;&#x6709;&#x4E00;&#x70B9;&#x8F7B;&#x5FAE;&#x7684;&#x533A;&#x522B;&#x3002;
+&#x5979;&#x9009;&#x62E9;&#x5148;&#x5408;&#x5E76;&#x5165; <code>issue54</code>&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git merge issue54
+Updating fbff5bc..4af4298
+Fast forward
+ README           |    1 +
+ lib/simplegit.rb |    6 +++++-
+ 2 files changed, 6 insertions(+), 1 deletions(-)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x95EE;&#x9898;&#xFF1B;&#x5982;&#x4F60;&#x6240;&#x89C1;&#x5B83;&#x662F;&#x4E00;&#x6B21;&#x7B80;&#x5355;&#x7684;&#x5FEB;&#x8FDB;&#x3002;
+&#x73B0;&#x5728; Jessica &#x5408;&#x5E76;&#x5165; John &#x7684;&#x5DE5;&#x4F5C;&#xFF08;<code>origin/master</code>&#xFF09;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git merge origin/master
+Auto-merging lib/simplegit.rb
+Merge made by recursive.
+ lib/simplegit.rb |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x90FD;&#x5E72;&#x51C0;&#x5730;&#x5408;&#x5E76;&#x4E86;&#xFF0C;Jessica &#x7684;&#x5386;&#x53F2;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/small-team-6.png" alt="&#x5408;&#x5E76;&#x4E86; John &#x7684;&#x6539;&#x52A8;&#x540E; Jessica &#x7684;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 7. &#x5408;&#x5E76;&#x4E86; John &#x7684;&#x6539;&#x52A8;&#x540E; Jessica &#x7684;&#x5386;&#x53F2;</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728; <code>origin/master</code> &#x662F;&#x53EF;&#x4EE5;&#x4ECE; Jessica &#x7684; <code>master</code> &#x5206;&#x652F;&#x5230;&#x8FBE;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5979;&#x5E94;&#x8BE5;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x5730;&#x63A8;&#x9001;&#xFF08;&#x5047;&#x8BBE;&#x540C;&#x4E00;&#x65F6;&#x95F4; John &#x5E76;&#x6CA1;&#x6709;&#x518D;&#x6B21;&#x63A8;&#x9001;&#xFF09;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git push origin master
+...
+To jessica@githost:simplegit.git
+   72bbc59..8059c15  master -&gt; master</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x5F00;&#x53D1;&#x8005;&#x90FD;&#x63D0;&#x4EA4;&#x4E86;&#x51E0;&#x6B21;&#x5E76;&#x6210;&#x529F;&#x5730;&#x5408;&#x5E76;&#x4E86;&#x5176;&#x4ED6;&#x4EBA;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/small-team-7.png" alt="&#x63A8;&#x9001;&#x6240;&#x6709;&#x7684;&#x6539;&#x52A8;&#x56DE;&#x670D;&#x52A1;&#x5668;&#x540E; Jessica &#x7684;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 8. &#x63A8;&#x9001;&#x6240;&#x6709;&#x7684;&#x6539;&#x52A8;&#x56DE;&#x670D;&#x52A1;&#x5668;&#x540E; Jessica &#x7684;&#x5386;&#x53F2;</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x3002;
+&#x4F60;&#x901A;&#x5E38;&#x5728;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x5206;&#x652F;&#x5DE5;&#x4F5C;&#x4E00;&#x4F1A;&#x513F;&#xFF0C;&#x5F53;&#x5B83;&#x51C6;&#x5907;&#x597D;&#x6574;&#x5408;&#x65F6;&#x5408;&#x5E76;&#x56DE;&#x4F60;&#x7684; master &#x5206;&#x652F;&#x3002;
+&#x5F53;&#x60F3;&#x8981;&#x5171;&#x4EAB;&#x5DE5;&#x4F5C;&#x65F6;&#xFF0C;&#x5C06;&#x5176;&#x5408;&#x5E76;&#x56DE;&#x4F60;&#x81EA;&#x5DF1;&#x7684; master &#x5206;&#x652F;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x6539;&#x52A8;&#x7684;&#x8BDD;&#x7136;&#x540E;&#x6293;&#x53D6;&#x5E76;&#x5408;&#x5E76; <code>origin/master</code>&#xFF0C;&#x6700;&#x7EC8;&#x63A8;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684; <code>master</code> &#x5206;&#x652F;&#x3002;
+&#x901A;&#x5E38;&#x987A;&#x5E8F;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/small-team-flow.png" alt="&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x591A;&#x4EBA; Git &#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x7684;&#x901A;&#x5E38;&#x4E8B;&#x4EF6;&#x987A;&#x5E8F;&#x3002;">
+</div>
+<div class="title">Figure 9. &#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x591A;&#x4EBA; Git &#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x7684;&#x901A;&#x5E38;&#x4E8B;&#x4EF6;&#x987A;&#x5E8F;</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__">&#x79C1;&#x6709;&#x7BA1;&#x7406;&#x56E2;&#x961F;</h4>
+<div class="paragraph">
+<p>
+&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x60C5;&#x5F62;&#x4E2D;&#xFF0C;&#x4F60;&#x4F1A;&#x770B;&#x5230;&#x5927;&#x578B;&#x79C1;&#x6709;&#x56E2;&#x961F;&#x4E2D;&#x8D21;&#x732E;&#x8005;&#x7684;&#x89D2;&#x8272;&#x3002;
+&#x5728;&#x4F60;&#x5C06;&#x5B66;&#x4E60;&#x5230;&#x7684;&#x8FD9;&#x79CD;&#x5DE5;&#x4F5C;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x5C0F;&#x7EC4;&#x57FA;&#x4E8E;&#x7279;&#x6027;&#x8FDB;&#x884C;&#x534F;&#x4F5C;&#xFF0C;&#x8FD9;&#x4E9B;&#x56E2;&#x961F;&#x7684;&#x8D21;&#x732E;&#x5C06;&#x4F1A;&#x7531;&#x5176;&#x4ED6;&#x4EBA;&#x6574;&#x5408;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x5047;&#x8BBE; John &#x4E0E; Jessica &#x5728;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x4E0A;&#x5DE5;&#x4F5C;&#xFF0C;&#x540C;&#x65F6; Jessica &#x4E0E; Josie &#x5728;&#x7B2C;&#x4E8C;&#x4E2A;&#x7279;&#x6027;&#x4E0A;&#x5DE5;&#x4F5C;&#x3002;
+&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x516C;&#x53F8;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x79CD;&#x6574;&#x5408;-&#x7BA1;&#x7406;&#x8005;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF0C;&#x72EC;&#x7ACB;&#x5C0F;&#x7EC4;&#x7684;&#x5DE5;&#x4F5C;&#x53EA;&#x80FD;&#x88AB;&#x7279;&#x5B9A;&#x7684;&#x5DE5;&#x7A0B;&#x5E08;&#x6574;&#x5408;&#xFF0C;&#x4E3B;&#x4ED3;&#x5E93;&#x7684; <code>master</code> &#x5206;&#x652F;&#x53EA;&#x80FD;&#x88AB;&#x90A3;&#x4E9B;&#x5DE5;&#x7A0B;&#x5E08;&#x66F4;&#x65B0;&#x3002;
+&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5DE5;&#x4F5C;&#x90FD;&#x662F;&#x5728;&#x57FA;&#x4E8E;&#x56E2;&#x961F;&#x7684;&#x5206;&#x652F;&#x4E0A;&#x5B8C;&#x6210;&#x7684;&#x5E76;&#x4E14;&#x7A0D;&#x540E;&#x4F1A;&#x88AB;&#x6574;&#x5408;&#x8005;&#x62C9;&#x5230;&#x4E00;&#x8D77;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x56E0;&#x4E3A; Jessica &#x5728;&#x4E24;&#x4E2A;&#x7279;&#x6027;&#x4E0A;&#x5DE5;&#x4F5C;&#xFF0C;&#x5E76;&#x4E14;&#x5E73;&#x884C;&#x5730;&#x4E0E;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x534F;&#x4F5C;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x8DDF;&#x968F;&#x5979;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x3002;
+&#x5047;&#x8BBE;&#x5979;&#x5DF2;&#x7ECF;&#x514B;&#x9686;&#x4E86;&#x4ED3;&#x5E93;&#xFF0C;&#x9996;&#x5148;&#x51B3;&#x5B9A;&#x5728; <code>featureA</code> &#x4E0A;&#x5DE5;&#x4F5C;&#x3002;
+&#x5979;&#x4E3A;&#x90A3;&#x4E2A;&#x7279;&#x6027;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x5206;&#x652F;&#x7136;&#x540E;&#x5728;&#x90A3;&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x5DE5;&#x4F5C;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console"># Jessica&apos;s Machine
+$ git checkout -b featureA
+Switched to a new branch &apos;featureA&apos;
+$ vim lib/simplegit.rb
+$ git commit -am &apos;add limit to log function&apos;
+[featureA 3300904] add limit to log function
+ 1 files changed, 1 insertions(+), 1 deletions(-)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x5979;&#x9700;&#x8981;&#x5C06;&#x5DE5;&#x4F5C;&#x5171;&#x4EAB;&#x7ED9; John&#xFF0C;&#x6240;&#x4EE5;&#x5979;&#x63A8;&#x9001;&#x4E86; <code>featureA</code> &#x5206;&#x652F;&#x7684;&#x63D0;&#x4EA4;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x3002;
+Jessica &#x6CA1;&#x6709; <code>master</code> &#x5206;&#x652F;&#x7684;&#x63A8;&#x9001;&#x6743;&#x9650; - &#x53EA;&#x6709;&#x6574;&#x5408;&#x8005;&#x6709; - &#x6240;&#x4EE5;&#x4E3A;&#x4E86;&#x4E0E; John &#x534F;&#x4F5C;&#x5FC5;&#x987B;&#x63A8;&#x9001;&#x53E6;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git push -u origin featureA
+...
+To jessica@githost:simplegit.git
+ * [new branch]      featureA -&gt; featureA</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Jessica &#x5411; John &#x53D1;&#x90AE;&#x4EF6;&#x544A;&#x8BC9;&#x4ED6;&#x5DF2;&#x7ECF;&#x63A8;&#x9001;&#x4E86;&#x4E00;&#x4E9B;&#x5DE5;&#x4F5C;&#x5230; <code>featureA</code> &#x5206;&#x652F;&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x770B;&#x4E00;&#x770B;&#x3002;
+&#x5F53;&#x5979;&#x7B49;&#x5F85; John &#x7684;&#x53CD;&#x9988;&#x65F6;&#xFF0C;Jessica &#x51B3;&#x5B9A;&#x4E0E; Josie &#x5F00;&#x59CB;&#x5728; <code>featureB</code> &#x4E0A;&#x5DE5;&#x4F5C;&#x3002;
+&#x4E3A;&#x4E86;&#x5F00;&#x59CB;&#x5DE5;&#x4F5C;&#xFF0C;&#x5979;&#x57FA;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x7684; <code>master</code> &#x5206;&#x652F;&#x5F00;&#x59CB;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x5206;&#x652F;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console"># Jessica&apos;s Machine
+$ git fetch origin
+$ git checkout -b featureB origin/master
+Switched to a new branch &apos;featureB&apos;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#xFF0C;Jessica &#x5728; <code>featureB</code> &#x5206;&#x652F;&#x4E0A;&#x521B;&#x5EFA;&#x4E86;&#x51E0;&#x6B21;&#x63D0;&#x4EA4;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ vim lib/simplegit.rb
+$ git commit -am &apos;made the ls-tree function recursive&apos;
+[featureB e5b0fdc] made the ls-tree function recursive
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+$ vim lib/simplegit.rb
+$ git commit -am &apos;add ls-files&apos;
+[featureB 8512791] add ls-files
+ 1 files changed, 5 insertions(+), 0 deletions(-)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Jessica &#x7684;&#x4ED3;&#x5E93;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/managed-team-1.png" alt="Jessica &#x7684;&#x521D;&#x59CB;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 10. Jessica &#x7684;&#x521D;&#x59CB;&#x63D0;&#x4EA4;&#x5386;&#x53F2;</div>
+</div>
+<div class="paragraph">
+<p>&#x5979;&#x51C6;&#x5907;&#x597D;&#x63A8;&#x9001;&#x5DE5;&#x4F5C;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x5C01;&#x6765;&#x81EA; Josie &#x7684;&#x90AE;&#x4EF6;&#x544A;&#x77E5;&#x4E00;&#x4E9B;&#x521D;&#x59CB;&#x5DE5;&#x4F5C;&#x5DF2;&#x7ECF;&#x88AB;&#x63A8;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684; <code>featureBee</code> &#x4E0A;&#x4E86;&#x3002;
+Jessica &#x5728;&#x80FD;&#x63A8;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x524D;&#x9996;&#x5148;&#x9700;&#x8981;&#x5C06;&#x90A3;&#x4E9B;&#x6539;&#x52A8;&#x4E0E;&#x5979;&#x81EA;&#x5DF1;&#x7684;&#x5408;&#x5E76;&#x3002;
+&#x7136;&#x540E;&#x5979;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>git fetch</code> &#x6293;&#x53D6; Josie &#x7684;&#x6539;&#x52A8;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git fetch origin
+...
+From jessica@githost:simplegit
+ * [new branch]      featureBee -&gt; origin/featureBee</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Jessica &#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>git merge</code> &#x5C06;&#x5176;&#x5408;&#x5E76;&#x5230;&#x5979;&#x505A;&#x7684;&#x5DE5;&#x4F5C;&#x4E2D;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git merge origin/featureBee
+Auto-merging lib/simplegit.rb
+Merge made by recursive.
+ lib/simplegit.rb |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6709;&#x70B9;&#x513F;&#x95EE;&#x9898; - &#x5979;&#x9700;&#x8981;&#x5C06;&#x5728; <code>featureB</code> &#x5206;&#x652F;&#x4E0A;&#x5408;&#x5E76;&#x7684;&#x5DE5;&#x4F5C;&#x63A8;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684; <code>featureBee</code> &#x5206;&#x652F;&#x3002;
+&#x5979;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x672C;&#x5730;&#x5206;&#x652F;&#x52A0;&#x4E0A;&#x5192;&#x53F7;&#xFF08;:&#xFF09;&#x52A0;&#x4E0A;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x7ED9; <code>git push</code> &#x547D;&#x4EE4;&#x6765;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git push -u origin featureB:featureBee
+...
+To jessica@githost:simplegit.git
+   fba9af8..cd685d1  featureB -&gt; featureBee</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x79F0;&#x4F5C;&#x4E00;&#x4E2A; <em>&#x5F15;&#x7528;&#x89C4;&#x683C;</em>&#x3002;
+&#x67E5;&#x770B; <a href="#_refspec">[_refspec]</a> &#x4E86;&#x89E3;&#x5173;&#x4E8E; Git &#x5F15;&#x7528;&#x89C4;&#x683C;&#x4E0E;&#x901A;&#x8FC7;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x505A;&#x7684;&#x4E0D;&#x540C;&#x7684;&#x4E8B;&#x60C5;&#x7684;&#x8BE6;&#x7EC6;&#x8BA8;&#x8BBA;&#x3002;
+&#x4E5F;&#x8981;&#x6CE8;&#x610F; <code>-u</code> &#x6807;&#x8BB0;&#xFF1B;&#x8FD9;&#x662F; <code>--set-upstream</code> &#x7684;&#x7B80;&#x5199;&#xFF0C;&#x8BE5;&#x6807;&#x8BB0;&#x4F1A;&#x4E3A;&#x4E4B;&#x540E;&#x8F7B;&#x677E;&#x5730;&#x63A8;&#x9001;&#x4E0E;&#x62C9;&#x53D6;&#x914D;&#x7F6E;&#x5206;&#x652F;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x7D27;&#x63A5;&#x7740;&#xFF0C;John &#x53D1;&#x90AE;&#x4EF6;&#x7ED9; Jessica &#x8BF4;&#x4ED6;&#x5DF2;&#x7ECF;&#x63A8;&#x9001;&#x4E86;&#x4E00;&#x4E9B;&#x6539;&#x52A8;&#x5230; <code>featureA</code> &#x5206;&#x652F;&#x5E76;&#x8981;&#x6C42;&#x5979;&#x53BB;&#x9A8C;&#x8BC1;&#x5B83;&#x4EEC;&#x3002;
+&#x5979;&#x8FD0;&#x884C;&#x4E00;&#x4E2A; <code>git fetch</code> &#x6765;&#x62C9;&#x53D6;&#x4E0B;&#x90A3;&#x4E9B;&#x6539;&#x52A8;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git fetch origin
+...
+From jessica@githost:simplegit
+   3300904..aad881d  featureA   -&gt; origin/featureA</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x7136;&#x540E;&#xFF0C;&#x901A;&#x8FC7; <code>git log</code> &#x5979;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x54EA;&#x4E9B;&#x53D1;&#x751F;&#x4E86;&#x6539;&#x53D8;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git log featureA..origin/featureA
+commit aad881d154acdaeb2b6b18ea0e827ed8a6d671e6
+Author: John Smith &lt;jsmith@example.com&gt;
+Date:   Fri May 29 19:57:33 2009 -0700
+
+    changed log output to 30 from 25</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6700;&#x7EC8;&#xFF0C;&#x5979;&#x5408;&#x5E76; John &#x7684;&#x5DE5;&#x4F5C;&#x5230;&#x5979;&#x81EA;&#x5DF1;&#x7684; <code>featureA</code> &#x5206;&#x652F;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git checkout featureA
+Switched to branch &apos;featureA&apos;
+$ git merge origin/featureA
+Updating 3300904..aad881d
+Fast forward
+ lib/simplegit.rb |   10 +++++++++-
+1 files changed, 9 insertions(+), 1 deletions(-)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Jessica &#x60F3;&#x8981;&#x8F7B;&#x5FAE;&#x8C03;&#x6574;&#x4E00;&#x4E9B;&#x4E1C;&#x897F;&#xFF0C;&#x6240;&#x4EE5;&#x5979;&#x518D;&#x6B21;&#x63D0;&#x4EA4;&#x7136;&#x540E;&#x5C06;&#x5176;&#x63A8;&#x9001;&#x56DE;&#x670D;&#x52A1;&#x5668;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git commit -am &apos;small tweak&apos;
+[featureA 774b3ed] small tweak
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+$ git push
+...
+To jessica@githost:simplegit.git
+   3300904..774b3ed  featureA -&gt; featureA</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Jessica &#x7684;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x73B0;&#x5728;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/managed-team-2.png" alt="&#x5728;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x5206;&#x652F;&#x63D0;&#x4EA4;&#x540E; Jessica &#x7684;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 11. &#x5728;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x5206;&#x652F;&#x63D0;&#x4EA4;&#x540E; Jessica &#x7684;&#x5386;&#x53F2;</div>
+</div>
+<div class="paragraph">
+<p>Jessica&#x3001;Josie &#x4E0E; John &#x901A;&#x77E5;&#x6574;&#x5408;&#x8005;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684; <code>featureA</code> &#x4E0E; <code>featureBee</code> &#x5206;&#x652F;&#x51C6;&#x5907;&#x597D;&#x6574;&#x5408;&#x5230;&#x4E3B;&#x7EBF;&#x4E2D;&#x4E86;&#x3002;
+&#x5728;&#x6574;&#x5408;&#x8005;&#x5408;&#x5E76;&#x8FD9;&#x4E9B;&#x5206;&#x652F;&#x5230;&#x4E3B;&#x7EBF;&#x540E;&#xFF0C;&#x4E00;&#x6B21;&#x6293;&#x53D6;&#x4F1A;&#x62FF;&#x4E0B;&#x6765;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5408;&#x5E76;&#x63D0;&#x4EA4;&#xFF0C;&#x4F7F;&#x5386;&#x53F2;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/managed-team-3.png" alt="&#x5408;&#x5E76;&#x4E86; Jessica &#x7684;&#x4E24;&#x4E2A;&#x7279;&#x6027;&#x5206;&#x652F;&#x540E;&#x5979;&#x7684;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 12. &#x5408;&#x5E76;&#x4E86; Jessica &#x7684;&#x4E24;&#x4E2A;&#x7279;&#x6027;&#x5206;&#x652F;&#x540E;&#x5979;&#x7684;&#x5386;&#x53F2;</div>
+</div>
+<div class="paragraph">
+<p>&#x8BB8;&#x591A;&#x56E2;&#x961F;&#x5207;&#x6362;&#x5230; Git &#x662F;&#x56E0;&#x4E3A;&#x8FD9;&#x4E00;&#x5141;&#x8BB8;&#x591A;&#x4E2A;&#x56E2;&#x961F;&#x5E76;&#x884C;&#x5DE5;&#x4F5C;&#x3001;&#x5E76;&#x5728;&#x4E4B;&#x540E;&#x5408;&#x5E76;&#x4E0D;&#x540C;&#x5DE5;&#x4F5C;&#x7684;&#x80FD;&#x529B;&#x3002;
+&#x56E2;&#x961F;&#x4E2D;&#x66F4;&#x5C0F;&#x4E00;&#x4E9B;&#x7684;&#x5B50;&#x5C0F;&#x7EC4;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x534F;&#x4F5C;&#x800C;&#x4E0D;&#x5FC5;&#x5F71;&#x54CD;&#x6216;&#x59A8;&#x788D;&#x6574;&#x4E2A;&#x56E2;&#x961F;&#x7684;&#x80FD;&#x529B;&#x662F; Git &#x7684;&#x4E00;&#x4E2A;&#x5DE8;&#x5927;&#x4F18;&#x52BF;&#x3002;
+&#x5728;&#x8FD9;&#x513F;&#x770B;&#x5230;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x987A;&#x5E8F;&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/managed-team-flow.png" alt="&#x8FD9;&#x79CD;&#x7BA1;&#x7406;&#x56E2;&#x961F;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x7684;&#x57FA;&#x672C;&#x987A;&#x5E8F;&#x3002;">
+</div>
+<div class="title">Figure 13. &#x8FD9;&#x79CD;&#x7BA1;&#x7406;&#x56E2;&#x961F;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x7684;&#x57FA;&#x672C;&#x987A;&#x5E8F;</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_public_project">&#x6D3E;&#x751F;&#x7684;&#x516C;&#x5F00;&#x9879;&#x76EE;</h4>
+<div class="paragraph">
+<p>
+&#x5411;&#x516C;&#x5F00;&#x9879;&#x76EE;&#x505A;&#x8D21;&#x732E;&#x6709;&#x4E00;&#x70B9;&#x513F;&#x4E0D;&#x540C;&#x3002;
+&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x76F4;&#x63A5;&#x66F4;&#x65B0;&#x9879;&#x76EE;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x7528;&#x5176;&#x4ED6;&#x529E;&#x6CD5;&#x5C06;&#x5DE5;&#x4F5C;&#x7ED9;&#x7EF4;&#x62A4;&#x8005;&#x3002;
+&#x7B2C;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x63CF;&#x8FF0;&#x5728;&#x652F;&#x6301;&#x7B80;&#x5355;&#x6D3E;&#x751F;&#x7684; Git &#x6258;&#x7BA1;&#x4E0A;&#x4F7F;&#x7528;&#x6D3E;&#x751F;&#x6765;&#x505A;&#x8D21;&#x732E;&#x3002;
+&#x8BB8;&#x591A;&#x6258;&#x7BA1;&#x7AD9;&#x70B9;&#x652F;&#x6301;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#xFF08;&#x5305;&#x62EC; GitHub&#x3001;BitBucket&#x3001;Google Code&#x3001;repo.or.cz &#x7B49;&#x7B49;&#xFF09;&#xFF0C;&#x8BB8;&#x591A;&#x9879;&#x76EE;&#x7EF4;&#x62A4;&#x8005;&#x671F;&#x671B;&#x8FD9;&#x79CD;&#x98CE;&#x683C;&#x7684;&#x8D21;&#x732E;&#x3002;
+&#x4E0B;&#x4E00;&#x8282;&#x4F1A;&#x8BA8;&#x8BBA;&#x504F;&#x597D;&#x901A;&#x8FC7;&#x90AE;&#x4EF6;&#x63A5;&#x53D7;&#x8D21;&#x732E;&#x8865;&#x4E01;&#x7684;&#x9879;&#x76EE;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x9996;&#x5148;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x514B;&#x9686;&#x4E3B;&#x4ED3;&#x5E93;&#xFF0C;&#x4E3A;&#x8BA1;&#x5212;&#x8D21;&#x732E;&#x7684;&#x8865;&#x4E01;&#x6216;&#x8865;&#x4E01;&#x5E8F;&#x5217;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x5206;&#x652F;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x90A3;&#x513F;&#x505A;&#x5DE5;&#x4F5C;&#x3002;
+&#x987A;&#x5E8F;&#x770B;&#x8D77;&#x6765;&#x57FA;&#x672C;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git clone (url)
+$ cd project
+$ git checkout -b featureA
+# (work)
+$ git commit
+# (work)
+$ git commit</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x60F3;&#x8981;&#x4F7F;&#x7528; <code>rebase -i</code> &#x6765;&#x5C06;&#x5DE5;&#x4F5C;&#x538B;&#x7F29;&#x6210;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x63D0;&#x4EA4;&#xFF0C;&#x6216;&#x8005;&#x91CD;&#x6392;&#x63D0;&#x4EA4;&#x4E2D;&#x7684;&#x5DE5;&#x4F5C;&#x4F7F;&#x8865;&#x4E01;&#x66F4;&#x5BB9;&#x6613;&#x88AB;&#x7EF4;&#x62A4;&#x8005;&#x5BA1;&#x6838; - &#x67E5;&#x770B; <a href="#_rewriting_history">[_rewriting_history]</a> &#x4E86;&#x89E3;&#x5173;&#x4E8E;&#x4EA4;&#x4E92;&#x5F0F;&#x53D8;&#x57FA;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>&#x5F53;&#x4F60;&#x7684;&#x5206;&#x652F;&#x5DE5;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#x51C6;&#x5907;&#x5C06;&#x5176;&#x8D21;&#x732E;&#x56DE;&#x7EF4;&#x62A4;&#x8005;&#xFF0C;&#x53BB;&#x539F;&#x59CB;&#x9879;&#x76EE;&#x4E2D;&#x7136;&#x540E;&#x70B9;&#x51FB; <code>`Fork&apos;&apos; &#x6309;&#x94AE;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4EFD;&#x81EA;&#x5DF1;&#x7684;&#x53EF;&#x5199;&#x7684;&#x9879;&#x76EE;&#x6D3E;&#x751F;&#x4ED3;&#x5E93;&#x3002;
+&#x7136;&#x540E;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x8FD9;&#x4E2A;&#x65B0;&#x4ED3;&#x5E93; URL &#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#x79F0;&#x4F5C; `myfork</code>&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git remote add myfork (url)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x7136;&#x540E;&#x9700;&#x8981;&#x63A8;&#x9001;&#x5DE5;&#x4F5C;&#x5230;&#x4E0A;&#x9762;&#x3002;
+&#x76F8;&#x5BF9;&#x4E8E;&#x5408;&#x5E76;&#x5230;&#x4E3B;&#x5206;&#x652F;&#x518D;&#x63A8;&#x9001;&#x4E0A;&#x53BB;&#xFF0C;&#x63A8;&#x9001;&#x4F60;&#x6B63;&#x5728;&#x5DE5;&#x4F5C;&#x7684;&#x7279;&#x6027;&#x5206;&#x652F;&#x5230;&#x4ED3;&#x5E93;&#x4E0A;&#x66F4;&#x7B80;&#x5355;&#x3002;
+&#x539F;&#x56E0;&#x662F;&#x5DE5;&#x4F5C;&#x5982;&#x679C;&#x4E0D;&#x88AB;&#x63A5;&#x53D7;&#x6216;&#x8005;&#x662F;&#x88AB;&#x62E3;&#x9009;&#x7684;&#xFF0C;&#x5C31;&#x4E0D;&#x5FC5;&#x56DE;&#x9000;&#x4F60;&#x7684; master &#x5206;&#x652F;&#x3002;
+&#x5982;&#x679C;&#x7EF4;&#x62A4;&#x8005;&#x5408;&#x5E76;&#x3001;&#x53D8;&#x57FA;&#x6216;&#x62E3;&#x9009;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E0D;&#x7BA1;&#x600E;&#x6837;&#x4F60;&#x6700;&#x7EC8;&#x4F1A;&#x901A;&#x8FC7;&#x62C9;&#x53D6;&#x4ED6;&#x4EEC;&#x7684;&#x4ED3;&#x5E93;&#x627E;&#x56DE;&#x6765;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git push -u myfork featureA</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>
+&#x5F53;&#x5DE5;&#x4F5C;&#x5DF2;&#x7ECF;&#x88AB;&#x63A8;&#x9001;&#x5230;&#x4F60;&#x7684;&#x6D3E;&#x751F;&#x540E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x901A;&#x77E5;&#x7EF4;&#x62A4;&#x8005;&#x3002;
+&#x8FD9;&#x901A;&#x5E38;&#x88AB;&#x79F0;&#x4F5C;&#x4E00;&#x4E2A;&#x62C9;&#x53D6;&#x8BF7;&#x6C42;&#xFF08;pull request&#xFF09;&#xFF0C;&#x4F60;&#x65E2;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7F51;&#x7AD9;&#x751F;&#x6210;&#x5B83; - GitHub &#x6709;&#x5B83;&#x81EA;&#x5DF1;&#x7684; Pull Request &#x673A;&#x5236;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5728; <a href="#_github">[_github]</a> &#x4ECB;&#x7ECD; - &#x4E5F;&#x53EF;&#x4EE5;&#x8FD0;&#x884C; <code>git request-pull</code> &#x547D;&#x4EE4;&#x7136;&#x540E;&#x624B;&#x52A8;&#x5730;&#x5C06;&#x8F93;&#x51FA;&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7ED9;&#x9879;&#x76EE;&#x7684;&#x7EF4;&#x62A4;&#x8005;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><code>request-pull</code> &#x547D;&#x4EE4;&#x63A5;&#x53D7;&#x7279;&#x6027;&#x5206;&#x652F;&#x62C9;&#x5165;&#x7684;&#x57FA;&#x7840;&#x5206;&#x652F;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x62C9;&#x5165;&#x7684; Git &#x4ED3;&#x5E93; URL&#xFF0C;&#x8F93;&#x51FA;&#x8BF7;&#x6C42;&#x62C9;&#x5165;&#x7684;&#x6240;&#x6709;&#x4FEE;&#x6539;&#x7684;&#x603B;&#x7ED3;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;Jessica &#x60F3;&#x8981;&#x53D1;&#x9001;&#x7ED9; John &#x4E00;&#x4E2A;&#x62C9;&#x53D6;&#x8BF7;&#x6C42;&#xFF0C;&#x5979;&#x5DF2;&#x7ECF;&#x5728;&#x521A;&#x521A;&#x63A8;&#x9001;&#x7684;&#x5206;&#x652F;&#x4E0A;&#x505A;&#x4E86;&#x4E24;&#x6B21;&#x63D0;&#x4EA4;&#x3002;&#x5979;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git request-pull origin/master myfork
+The following changes since commit 1edee6b1d61823a2de3b09c160d7080b8d1b3a40:
+  John Smith (1):
+        added a new function
+
+are available in the git repository at:
+
+  git://githost/simplegit.git featureA
+
+Jessica Smith (2):
+      add limit to log function
+      change log output to 30 from 25
+
+ lib/simplegit.rb |   10 +++++++++-
+ 1 files changed, 9 insertions(+), 1 deletions(-)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x4E2A;&#x8F93;&#x51FA;&#x53EF;&#x4EE5;&#x88AB;&#x53D1;&#x9001;&#x7ED9;&#x7EF4;&#x62A4;&#x8005; - &#x5B83;&#x544A;&#x8BC9;&#x4ED6;&#x4EEC;&#x5DE5;&#x4F5C;&#x662F;&#x4ECE;&#x54EA;&#x4E2A;&#x5206;&#x652F;&#x5F00;&#x59CB;&#x3001;&#x5F52;&#x7EB3;&#x7684;&#x63D0;&#x4EA4;&#x4E0E;&#x4ECE;&#x54EA;&#x91CC;&#x62C9;&#x5165;&#x8FD9;&#x4E9B;&#x5DE5;&#x4F5C;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x4E00;&#x4E2A;&#x4F60;&#x4E0D;&#x662F;&#x7EF4;&#x62A4;&#x8005;&#x7684;&#x9879;&#x76EE;&#x4E0A;&#xFF0C;&#x901A;&#x5E38;&#x6709;&#x4E00;&#x4E2A;&#x603B;&#x662F;&#x8DDF;&#x8E2A; <code>origin/master</code> &#x7684; <code>master</code> &#x5206;&#x652F;&#x4F1A;&#x5F88;&#x65B9;&#x4FBF;&#xFF0C;&#x5728;&#x7279;&#x6027;&#x5206;&#x652F;&#x4E0A;&#x505A;&#x5DE5;&#x4F5C;&#x662F;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x5B83;&#x4EEC;&#x88AB;&#x62D2;&#x7EDD;&#x65F6;&#x4F60;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x4E22;&#x5F03;&#x3002;
+&#x5982;&#x679C;&#x540C;&#x4E00;&#x65F6;&#x95F4;&#x4E3B;&#x4ED3;&#x5E93;&#x79FB;&#x52A8;&#x4E86;&#x7136;&#x540E;&#x4F60;&#x7684;&#x63D0;&#x4EA4;&#x4E0D;&#x518D;&#x80FD;&#x5E72;&#x51C0;&#x5730;&#x5E94;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x4F7F;&#x5DE5;&#x4F5C;&#x4E3B;&#x9898;&#x72EC;&#x7ACB;&#x4E8E;&#x7279;&#x6027;&#x5206;&#x652F;&#x4E5F;&#x4F1A;&#x4F7F;&#x4F60;&#x53D8;&#x57FA;&#xFF08;rebase&#xFF09;&#x5DE5;&#x4F5C;&#x65F6;&#x66F4;&#x5BB9;&#x6613;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x60F3;&#x8981;&#x63D0;&#x4F9B;&#x7B2C;&#x4E8C;&#x4E2A;&#x7279;&#x6027;&#x5DE5;&#x4F5C;&#x5230;&#x9879;&#x76EE;&#xFF0C;&#x4E0D;&#x8981;&#x7EE7;&#x7EED;&#x5728;&#x521A;&#x521A;&#x63A8;&#x9001;&#x7684;&#x7279;&#x6027;&#x5206;&#x652F;&#x4E0A;&#x5DE5;&#x4F5C; - &#x4ECE;&#x4E3B;&#x4ED3;&#x5E93;&#x7684; <code>master</code> &#x5206;&#x652F;&#x91CD;&#x65B0;&#x5F00;&#x59CB;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git checkout -b featureB origin/master
+# (work)
+$ git commit
+$ git push myfork featureB
+# (email maintainer)
+$ git fetch origin</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x90FD;&#x4FDD;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x8D2E;&#x85CF;&#x5E93;&#x4E2D; - &#x7C7B;&#x4F3C;&#x4E8E;&#x8865;&#x4E01;&#x961F;&#x5217; - &#x53EF;&#x4EE5;&#x91CD;&#x5199;&#x3001;&#x53D8;&#x57FA;&#x4E0E;&#x4FEE;&#x6539;&#x800C;&#x4E0D;&#x4F1A;&#x8BA9;&#x7279;&#x6027;&#x4E92;&#x76F8;&#x5E72;&#x6D89;&#x6216;&#x4E92;&#x76F8;&#x4F9D;&#x8D56;&#xFF0C;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/public-small-1.png" alt="`featureB` &#x7684;&#x521D;&#x59CB;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 14. <code>featureB</code> &#x7684;&#x521D;&#x59CB;&#x63D0;&#x4EA4;&#x5386;&#x53F2;</div>
+</div>
+<div class="paragraph">
+<p>&#x5047;&#x8BBE;&#x9879;&#x76EE;&#x7EF4;&#x62A4;&#x8005;&#x5DF2;&#x7ECF;&#x62C9;&#x53D6;&#x4E86;&#x4E00;&#x4E32;&#x5176;&#x4ED6;&#x8865;&#x4E01;&#xFF0C;&#x7136;&#x540E;&#x5C1D;&#x8BD5;&#x62C9;&#x53D6;&#x4F60;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x5E72;&#x51C0;&#x5730;&#x5408;&#x5E76;&#x3002;
+&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x53D8;&#x57FA;&#x90A3;&#x4E2A;&#x5206;&#x652F;&#x5230; <code>origin/master</code> &#x7684;&#x9876;&#x90E8;&#xFF0C;&#x4E3A;&#x7EF4;&#x62A4;&#x8005;&#x89E3;&#x51B3;&#x51B2;&#x7A81;&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x65B0;&#x63D0;&#x4EA4;&#x4F60;&#x7684;&#x6539;&#x52A8;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git checkout featureA
+$ git rebase origin/master
+$ git push -f myfork featureA</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8FD9;&#x6837;&#x4F1A;&#x91CD;&#x5199;&#x4F60;&#x7684;&#x5386;&#x53F2;&#xFF0C;&#x73B0;&#x5728;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F; <a href="#psp_b"><code>featureA</code> &#x5DE5;&#x4F5C;&#x4E4B;&#x540E;&#x7684;&#x63D0;&#x4EA4;&#x5386;&#x53F2;</a></p>
+</div>
+<div id="psp_b" class="imageblock">
+<div class="content">
+<img src="../images/public-small-2.png" alt="`featureA` &#x5DE5;&#x4F5C;&#x4E4B;&#x540E;&#x7684;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 15. <code>featureA</code> &#x5DE5;&#x4F5C;&#x4E4B;&#x540E;&#x7684;&#x63D0;&#x4EA4;&#x5386;&#x53F2;</div>
+</div>
+<div class="paragraph">
+<p>&#x56E0;&#x4E3A;&#x4F60;&#x5C06;&#x5206;&#x652F;&#x53D8;&#x57FA;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x5FC5;&#x987B;&#x4E3A;&#x63A8;&#x9001;&#x547D;&#x4EE4;&#x6307;&#x5B9A; <code>-f</code> &#x9009;&#x9879;&#xFF0C;&#x8FD9;&#x6837;&#x624D;&#x80FD;&#x5C06;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6709;&#x4E00;&#x4E2A;&#x4E0D;&#x662F;&#x5B83;&#x7684;&#x540E;&#x4EE3;&#x7684;&#x63D0;&#x4EA4;&#x7684; <code>featureA</code> &#x5206;&#x652F;&#x66FF;&#x6362;&#x6389;&#x3002;
+&#x4E00;&#x4E2A;&#x66FF;&#x4EE3;&#x7684;&#x9009;&#x9879;&#x662F;&#x63A8;&#x9001;&#x8FD9;&#x4E2A;&#x65B0;&#x5DE5;&#x4F5C;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x5206;&#x652F;&#xFF08;&#x53EF;&#x80FD;&#x79F0;&#x4F5C; <code>featureAv2</code>&#xFF09;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x4E2A;&#x66F4;&#x6709;&#x53EF;&#x80FD;&#x7684;&#x60C5;&#x51B5;&#xFF1A;&#x7EF4;&#x62A4;&#x8005;&#x770B;&#x5230;&#x4E86;&#x4F60;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x5206;&#x652F;&#x4E0A;&#x7684;&#x5DE5;&#x4F5C;&#x5E76;&#x4E14;&#x5F88;&#x559C;&#x6B22;&#x5176;&#x4E2D;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x4F46;&#x662F;&#x60F3;&#x8981;&#x4F60;&#x4FEE;&#x6539;&#x4E00;&#x4E0B;&#x5B9E;&#x73B0;&#x7684;&#x7EC6;&#x8282;&#x3002;
+&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x8FD9;&#x6B21;&#x673A;&#x4F1A;&#x5C06;&#x5DE5;&#x4F5C;&#x57FA;&#x4E8E;&#x9879;&#x76EE;&#x73B0;&#x5728;&#x7684; <code>master</code> &#x5206;&#x652F;&#x3002;
+&#x4F60;&#x4ECE;&#x73B0;&#x5728;&#x7684; <code>origin/master</code> &#x5206;&#x652F;&#x5F00;&#x59CB;&#x4E00;&#x4E2A;&#x65B0;&#x5206;&#x652F;&#xFF0C;&#x5728;&#x90A3;&#x513F;&#x538B;&#x7F29; <code>featureB</code> &#x7684;&#x6539;&#x52A8;&#xFF0C;&#x89E3;&#x51B3;&#x4EFB;&#x4F55;&#x51B2;&#x7A81;&#xFF0C;&#x6539;&#x53D8;&#x5B9E;&#x73B0;&#xFF0C;&#x7136;&#x540E;&#x63A8;&#x9001;&#x5B83;&#x4E3A;&#x4E00;&#x4E2A;&#x65B0;&#x5206;&#x652F;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git checkout -b featureBv2 origin/master
+$ git merge --no-commit --squash featureB
+# (change implementation)
+$ git commit
+$ git push myfork featureBv2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>--squash</code> &#x9009;&#x9879;&#x63A5;&#x53D7;&#x88AB;&#x5408;&#x5E76;&#x7684;&#x5206;&#x652F;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x5DE5;&#x4F5C;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x538B;&#x7F29;&#x81F3;&#x4E00;&#x4E2A;&#x53D8;&#x66F4;&#x96C6;&#xFF0C;&#x4F7F;&#x4ED3;&#x5E93;&#x53D8;&#x6210;&#x4E00;&#x4E2A;&#x771F;&#x6B63;&#x7684;&#x5408;&#x5E76;&#x53D1;&#x751F;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x771F;&#x7684;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5408;&#x5E76;&#x63D0;&#x4EA4;&#x3002;
+&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x7684;&#x672A;&#x6765;&#x7684;&#x63D0;&#x4EA4;&#x5C06;&#x4F1A;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#xFF0C;&#x5E76;&#x5141;&#x8BB8;&#x4F60;&#x5F15;&#x5165;&#x53E6;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x6240;&#x6709;&#x6539;&#x52A8;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x65B0;&#x63D0;&#x4EA4;&#x524D;&#x505A;&#x66F4;&#x591A;&#x7684;&#x6539;&#x52A8;&#x3002;
+&#x540C;&#x6837; <code>--no-commit</code> &#x9009;&#x9879;&#x5728;&#x9ED8;&#x8BA4;&#x5408;&#x5E76;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5EF6;&#x8FDF;&#x751F;&#x6210;&#x5408;&#x5E76;&#x63D0;&#x4EA4;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x73B0;&#x5728;&#x4F60;&#x53EF;&#x4EE5;&#x7ED9;&#x7EF4;&#x62A4;&#x8005;&#x53D1;&#x9001;&#x4E00;&#x6761;&#x6D88;&#x606F;&#xFF0C;&#x8868;&#x793A;&#x4F60;&#x5DF2;&#x7ECF;&#x505A;&#x4E86;&#x8981;&#x6C42;&#x7684;&#x4FEE;&#x6539;&#x7136;&#x540E;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x4F60;&#x7684; <code>featureBv2</code> &#x5206;&#x652F;&#x4E0A;&#x627E;&#x5230;&#x90A3;&#x4E9B;&#x6539;&#x52A8;&#x3002;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/public-small-3.png" alt="`featureBv2` &#x5DE5;&#x4F5C;&#x4E4B;&#x540E;&#x7684;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x3002;">
+</div>
+<div class="title">Figure 16. <code>featureBv2</code> &#x5DE5;&#x4F5C;&#x4E4B;&#x540E;&#x7684;&#x63D0;&#x4EA4;&#x5386;&#x53F2;</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_project_over_email">&#x901A;&#x8FC7;&#x90AE;&#x4EF6;&#x7684;&#x516C;&#x5F00;&#x9879;&#x76EE;</h4>
+<div class="paragraph">
+<p>
+&#x8BB8;&#x591A;&#x9879;&#x76EE;&#x5EFA;&#x7ACB;&#x4E86;&#x63A5;&#x53D7;&#x8865;&#x4E01;&#x7684;&#x6D41;&#x7A0B; - &#x9700;&#x8981;&#x68C0;&#x67E5;&#x6BCF;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x7279;&#x5B9A;&#x89C4;&#x5219;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x6709;&#x533A;&#x522B;&#x3002;
+&#x56E0;&#x4E3A;&#x6709;&#x51E0;&#x4E2A;&#x5386;&#x53F2;&#x60A0;&#x4E45;&#x7684;&#x3001;&#x5927;&#x578B;&#x7684;&#x9879;&#x76EE;&#x4F1A;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5F00;&#x53D1;&#x8005;&#x7684;&#x90AE;&#x4EF6;&#x5217;&#x8868;&#x63A5;&#x53D7;&#x8865;&#x4E01;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x6F14;&#x793A;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x4E0E;&#x4E4B;&#x524D;&#x7684;&#x7528;&#x4F8B;&#x662F;&#x7C7B;&#x4F3C;&#x7684; - &#x4F60;&#x4E3A;&#x5DE5;&#x4F5C;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x8865;&#x4E01;&#x5E8F;&#x5217;&#x521B;&#x5EFA;&#x7279;&#x6027;&#x5206;&#x652F;&#x3002;
+&#x533A;&#x522B;&#x662F;&#x5982;&#x4F55;&#x63D0;&#x4EA4;&#x5B83;&#x4EEC;&#x5230;&#x9879;&#x76EE;&#x4E2D;&#x3002;
+&#x751F;&#x6210;&#x6BCF;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x5E8F;&#x5217;&#x7684;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7248;&#x672C;&#x7136;&#x540E;&#x90AE;&#x5BC4;&#x5B83;&#x4EEC;&#x5230;&#x5F00;&#x53D1;&#x8005;&#x90AE;&#x4EF6;&#x5217;&#x8868;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6D3E;&#x751F;&#x9879;&#x76EE;&#x7136;&#x540E;&#x63A8;&#x9001;&#x5230;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x53EF;&#x5199;&#x7248;&#x672C;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git checkout -b topicA
+# (work)
+$ git commit
+# (work)
+$ git commit</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>
+&#x73B0;&#x5728;&#x6709;&#x4E24;&#x4E2A;&#x63D0;&#x4EA4;&#x8981;&#x53D1;&#x9001;&#x5230;&#x90AE;&#x4EF6;&#x5217;&#x8868;&#x3002;
+&#x4F7F;&#x7528; <code>git format-patch</code> &#x6765;&#x751F;&#x6210;&#x53EF;&#x4EE5;&#x90AE;&#x5BC4;&#x5230;&#x5217;&#x8868;&#x7684; mbox &#x683C;&#x5F0F;&#x7684;&#x6587;&#x4EF6; - &#x5B83;&#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x5C01;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#xFF0C;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x4F5C;&#x4E3A;&#x4E3B;&#x9898;&#xFF0C;&#x5269;&#x4F59;&#x4FE1;&#x606F;&#x4E0E;&#x63D0;&#x4EA4;&#x5F15;&#x5165;&#x7684;&#x8865;&#x4E01;&#x4F5C;&#x4E3A;&#x6B63;&#x6587;&#x3002;
+&#x5B83;&#x6709;&#x4E00;&#x4E2A;&#x597D;&#x5904;&#x662F;&#x662F;&#x4F7F;&#x7528; <code>format-patch</code> &#x751F;&#x6210;&#x7684;&#x4E00;&#x5C01;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x5E94;&#x7528;&#x7684;&#x63D0;&#x4EA4;&#x6B63;&#x786E;&#x5730;&#x4FDD;&#x7559;&#x4E86;&#x6240;&#x6709;&#x7684;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git format-patch -M origin/master
+0001-add-limit-to-log-function.patch
+0002-changed-log-output-to-30-from-25.patch</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>format-patch</code> &#x547D;&#x4EE4;&#x6253;&#x5370;&#x51FA;&#x5B83;&#x521B;&#x5EFA;&#x7684;&#x8865;&#x4E01;&#x6587;&#x4EF6;&#x540D;&#x5B57;&#x3002;
+<code>-M</code> &#x5F00;&#x5173;&#x544A;&#x8BC9; Git &#x67E5;&#x627E;&#x91CD;&#x547D;&#x540D;&#x3002;
+&#x6587;&#x4EF6;&#x6700;&#x540E;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ cat 0001-add-limit-to-log-function.patch
+From 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001
+From: Jessica Smith &lt;jessica@example.com&gt;
+Date: Sun, 6 Apr 2008 10:17:23 -0700
+Subject: [PATCH 1/2] add limit to log function
+
+Limit log functionality to the first 20
+
+---
+ lib/simplegit.rb |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/lib/simplegit.rb b/lib/simplegit.rb
+index 76f47bc..f9815f1 100644
+--- a/lib/simplegit.rb
++++ b/lib/simplegit.rb
+@@ -14,7 +14,7 @@ class SimpleGit
+   end
+
+   def log(treeish = &apos;master&apos;)
+-    command(&quot;git log #{treeish}&quot;)
++    command(&quot;git log -n 20 #{treeish}&quot;)
+   end
+
+   def ls_tree(treeish = &apos;master&apos;)
+--
+2.1.0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x7F16;&#x8F91;&#x8FD9;&#x4E9B;&#x8865;&#x4E01;&#x6587;&#x4EF6;&#x4E3A;&#x90AE;&#x4EF6;&#x5217;&#x8868;&#x6DFB;&#x52A0;&#x66F4;&#x591A;&#x4E0D;&#x60F3;&#x8981;&#x5728;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x4E2D;&#x663E;&#x793A;&#x51FA;&#x6765;&#x7684;&#x4FE1;&#x606F;&#x3002;
+&#x5982;&#x679C;&#x5728; <code>---</code> &#x884C;&#x4E0E;&#x8865;&#x4E01;&#x5F00;&#x5934;&#xFF08;<code>diff --git</code> &#x884C;&#xFF09;&#x4E4B;&#x95F4;&#x6DFB;&#x52A0;&#x6587;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x5F00;&#x53D1;&#x8005;&#x5C31;&#x53EF;&#x4EE5;&#x9605;&#x8BFB;&#x5B83;&#xFF1B;&#x4F46;&#x662F;&#x5E94;&#x7528;&#x8865;&#x4E01;&#x65F6;&#x4F1A;&#x6392;&#x9664;&#x5B83;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E3A;&#x4E86;&#x5C06;&#x5176;&#x90AE;&#x5BC4;&#x5230;&#x90AE;&#x4EF6;&#x5217;&#x8868;&#xFF0C;&#x4F60;&#x65E2;&#x53EF;&#x4EE5;&#x5C06;&#x6587;&#x4EF6;&#x7C98;&#x8D34;&#x8FDB;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x7A0B;&#x5E8F;&#x53D1;&#x9001;&#x5B83;&#x3002;
+&#x7C98;&#x8D34;&#x6587;&#x672C;&#x7ECF;&#x5E38;&#x4F1A;&#x53D1;&#x751F;&#x683C;&#x5F0F;&#x5316;&#x95EE;&#x9898;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x90A3;&#x4E9B;&#x4E0D;&#x4F1A;&#x5408;&#x9002;&#x5730;&#x4FDD;&#x7559;&#x6362;&#x884C;&#x7B26;&#x4E0E;&#x5176;&#x4ED6;&#x7A7A;&#x767D;&#x7684; <code>`&#x66F4;&#x806A;&#x660E;&#x7684;&apos;&apos; &#x5BA2;&#x6237;&#x7AEF;&#x3002;
+&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;Git &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x5E2E;&#x52A9;&#x4F60;&#x901A;&#x8FC7; IMAP &#x53D1;&#x9001;&#x6B63;&#x786E;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x8865;&#x4E01;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x5BF9;&#x4F60;&#x66F4;&#x5BB9;&#x6613;&#x4E9B;&#x3002;
+&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x901A;&#x8FC7; Gmail &#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x8865;&#x4E01;&#xFF0C;&#x5B83;&#x6B63;&#x597D;&#x662F;&#x6211;&#x4EEC;&#x6240;&#x77E5;&#x6700;&#x597D;&#x7684;&#x90AE;&#x4EF6;&#x4EE3;&#x7406;&#xFF1B;&#x53EF;&#x4EE5;&#x5728;&#x4E4B;&#x524D;&#x63D0;&#x5230;&#x7684; Git &#x6E90;&#x4EE3;&#x7801;&#x4E2D;&#x7684; `Documentation/SubmittingPatches</code> &#x6587;&#x4EF6;&#x7684;&#x6700;&#x4E0B;&#x9762;&#x4E86;&#x89E3;&#x4E00;&#x7CFB;&#x5217;&#x90AE;&#x4EF6;&#x7A0B;&#x5E8F;&#x7684;&#x8BE6;&#x7EC6;&#x6307;&#x4EE4;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>
+&#x9996;&#x5148;&#xFF0C;&#x9700;&#x8981;&#x5728; <code>~/.gitconfig</code> &#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E; imap &#x533A;&#x5757;&#x3002;
+&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x7CFB;&#x5217;&#x7684; <code>git config</code> &#x547D;&#x4EE4;&#x6765;&#x5206;&#x522B;&#x8BBE;&#x7F6E;&#x6BCF;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x624B;&#x52A8;&#x6DFB;&#x52A0;&#x5B83;&#x4EEC;&#xFF0C;&#x4E0D;&#x7BA1;&#x600E;&#x6837;&#x6700;&#x540E;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5E94;&#x8BE5;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ini" data-lang="ini">[imap]
+  folder = &quot;[Gmail]/Drafts&quot;
+  host = imaps://imap.gmail.com
+  user = user@gmail.com
+  pass = p4ssw0rd
+  port = 993
+  sslverify = false</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C; IMAP &#x670D;&#x52A1;&#x5668;&#x4E0D;&#x4F7F;&#x7528; SSL&#xFF0C;&#x6700;&#x540E;&#x4E24;&#x884C;&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#xFF0C;host &#x7684;&#x503C;&#x4F1A;&#x662F; <code>imap://</code> &#x800C;&#x4E0D;&#x662F; <code>imaps://</code>&#x3002;
+&#x5F53;&#x90A3;&#x4E9B;&#x8BBE;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>git imap-send</code> &#x5C06;&#x8865;&#x4E01;&#x5E8F;&#x5217;&#x653E;&#x5728;&#x7279;&#x5B9A; IMAP &#x670D;&#x52A1;&#x5668;&#x7684; Drafts &#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ cat *.patch |git imap-send
+Resolving imap.gmail.com... ok
+Connecting to [74.125.142.109]:993... ok
+Logging in...
+sending 2 messages
+100% (2/2) done</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x5230; Drafts &#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x4FEE;&#x6539;&#x6536;&#x4EF6;&#x4EBA;&#x5B57;&#x6BB5;&#x4E3A;&#x60F3;&#x8981;&#x53D1;&#x9001;&#x8865;&#x4E01;&#x7684;&#x90AE;&#x4EF6;&#x5217;&#x8868;&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x6284;&#x9001;&#x7ED9;&#x7EF4;&#x62A4;&#x8005;&#x6216;&#x8D1F;&#x8D23;&#x90A3;&#x4E2A;&#x90E8;&#x5206;&#x7684;&#x4EBA;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x9001;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x4E2A; SMTP &#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x8865;&#x4E01;&#x3002;
+&#x540C;&#x4E4B;&#x524D;&#x4E00;&#x6837;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x7CFB;&#x5217;&#x7684; <code>git config</code> &#x547D;&#x4EE4;&#x6765;&#x5206;&#x522B;&#x8BBE;&#x7F6E;&#x9009;&#x9879;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x5730;&#x5C06;&#x5B83;&#x4EEC;&#x6DFB;&#x52A0;&#x5230;&#x4F60;&#x7684; <code>~/.gitconfig</code> &#x6587;&#x4EF6;&#x7684; sendmail &#x533A;&#x5757;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ini" data-lang="ini">[sendemail]
+  smtpencryption = tls
+  smtpserver = smtp.gmail.com
+  smtpuser = user@gmail.com
+  smtpserverport = 587</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5F53;&#x8FD9;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>git send-email</code> &#x53D1;&#x9001;&#x4F60;&#x7684;&#x8865;&#x4E01;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">$ git send-email *.patch
+0001-added-limit-to-log-function.patch
+0002-changed-log-output-to-30-from-25.patch
+Who should the emails appear to be from? [Jessica Smith &lt;jessica@example.com&gt;]
+Emails will be sent from: Jessica Smith &lt;jessica@example.com&gt;
+Who should the emails be sent to? jessica@example.com
+Message-ID to be used as In-Reply-To for the first email? y</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x7136;&#x540E;&#xFF0C;&#x5BF9;&#x4E8E;&#x6B63;&#x5728;&#x53D1;&#x9001;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x8865;&#x4E01;&#xFF0C;Git &#x4F1A;&#x5410;&#x51FA;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x4E32;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-text" data-lang="text">(mbox) Adding cc: Jessica Smith &lt;jessica@example.com&gt; from
+  \line &apos;From: Jessica Smith &lt;jessica@example.com&gt;&apos;
+OK. Log says:
+Sendmail: /usr/sbin/sendmail -i jessica@example.com
+From: Jessica Smith &lt;jessica@example.com&gt;
+To: jessica@example.com
+Subject: [PATCH 1/2] added limit to log function
+Date: Sat, 30 May 2009 13:29:15 -0700
+Message-Id: &lt;1243715356-61726-1-git-send-email-jessica@example.com&gt;
+X-Mailer: git-send-email 1.6.2.rc1.20.g8c5b.dirty
+In-Reply-To: &lt;y&gt;
+References: &lt;y&gt;
+
+Result: OK</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="___2">&#x603B;&#x7ED3;</h4>
+<div class="paragraph">
+<p>&#x8FD9;&#x4E2A;&#x90E8;&#x5206;&#x4ECB;&#x7ECD;&#x4E86;&#x5904;&#x7406;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x7684;&#x51E0;&#x4E2A;&#x8FE5;&#x7136;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684; Git &#x9879;&#x76EE;&#x7684;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF0C;&#x4ECB;&#x7ECD;&#x4E86;&#x5E2E;&#x52A9;&#x7BA1;&#x7406;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x7684;&#x4E00;&#x4E9B;&#x65B0;&#x5DE5;&#x5177;&#x3002;
+&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x4F60;&#x4F1A;&#x4E86;&#x89E3;&#x5230;&#x5982;&#x4F55;&#x5728;&#x8D21;&#x732E;&#x7684;&#x53E6;&#x4E00;&#x9762;&#x5DE5;&#x4F5C;&#xFF1A;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A; Git &#x9879;&#x76EE;&#x3002;
+&#x4F60;&#x5C06;&#x4F1A;&#x5B66;&#x4E60;&#x5982;&#x4F55;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x4EC1;&#x6148;&#x7684;&#x72EC;&#x88C1;&#x8005;&#x6216;&#x6574;&#x5408;&#x7BA1;&#x7406;&#x8005;&#x3002;</p>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="distributed-workflows.html" class="navigation navigation-prev " aria-label="Previous page: 分布式工作流程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="maintaining.html" class="navigation navigation-next " aria-label="Next page: 维护项目">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"向一个项目贡献","level":"1.6.2","depth":2,"next":{"title":"维护项目","level":"1.6.3","depth":2,"path":"05-distributed-git/sections/maintaining.adoc","ref":"05-distributed-git/sections/maintaining.adoc","articles":[]},"previous":{"title":"分布式工作流程","level":"1.6.1","depth":2,"path":"05-distributed-git/sections/distributed-workflows.adoc","ref":"05-distributed-git/sections/distributed-workflows.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Pro Git 2 中文版","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"git 学习入门教程"},"file":{"path":"05-distributed-git/sections/contributing.adoc","mtime":"2016-06-20T01:42:18.134Z","type":"asciidoc"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:43:49.119Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

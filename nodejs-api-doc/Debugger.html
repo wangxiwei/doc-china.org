@@ -1,0 +1,791 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Debugger · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="DNS.html" />
+    
+    
+    <link rel="prev" href="Crypto.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Debugger</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="debugger">Debugger</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>V8&#x81EA;&#x5E26;&#x4E86;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#x8C03;&#x8BD5;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;&#x5916;&#x90E8;&#x901A;&#x8FC7;TCP&#x534F;&#x8BAE;&#x8BBF;&#x95EE;&#x3002;<code>node.js</code>&#x4E3A;&#x8FD9;&#x4E2A;&#x8C03;&#x8BD5;&#x5668;&#x5185;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x8981;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x8BDD;&#xFF0C;&#x4F7F;&#x7528;<code>debug</code>&#x53C2;&#x6570;&#x542F;&#x52A8;<code>node.js</code>&#xFF1B;&#x4F1A;&#x51FA;&#x73B0;&#x63D0;&#x793A;&#x7B26;&#xFF1A;</p>
+<pre><code class="lang-SHELL">% iojs debug myscript.js
+&lt; debugger listening on port 5858
+connecting... ok
+break in /home/indutny/Code/git/indutny/myscript.js:1
+  1 x = 5;
+  2 setTimeout(function () {
+  3   debugger;
+debug&gt;
+</code></pre>
+<p><code>node.js</code>&#x7684;&#x8C03;&#x8BD5;&#x5668;&#x5BA2;&#x6237;&#x7AEF;&#x5E76;&#x672A;&#x652F;&#x6301;&#x6240;&#x6709;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x4F46;&#x662F;&#x7B80;&#x5355;&#x7684;&#x6B65;&#x8FDB;&#x548C;&#x8C03;&#x8BD5;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;&#x901A;&#x8FC7;&#x5728;&#x6E90;&#x4EE3;&#x7801;&#x5C31;&#x653E;&#x7F6E;<code>debugger;</code>&#x8BED;&#x53E5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x542F;&#x7528;&#x4E00;&#x4E2A;&#x65AD;&#x70B9;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x8BBE;&#x53C8;&#x4E00;&#x4E2A;&#x8FD9;&#x6837;&#x7684;<code>myscript.js</code>&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// myscript.js</span>
+x = <span class="hljs-number">5</span>;
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">debugger</span>;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;world&quot;</span>);
+}, <span class="hljs-number">1000</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;hello&quot;</span>);
+</code></pre>
+<p>&#x90A3;&#x4E48;&#x4E00;&#x65E6;&#x4F60;&#x6253;&#x5F00;&#x8C03;&#x8BD5;&#x5668;&#xFF0C;&#x5B83;&#x4F1A;&#x5728;&#x7B2C;&#x56DB;&#x884C;&#x4E2D;&#x65AD;&#x3002;</p>
+<pre><code class="lang-SHELL">% iojs debug myscript.js
+&lt; debugger listening on port 5858
+connecting... ok
+break in /home/indutny/Code/git/indutny/myscript.js:1
+  1 x = 5;
+  2 setTimeout(function () {
+  3   debugger;
+debug&gt; cont
+&lt; hello
+break in /home/indutny/Code/git/indutny/myscript.js:3
+  1 x = 5;
+  2 setTimeout(function () {
+  3   debugger;
+  4   console.log(&quot;world&quot;);
+  5 }, 1000);
+debug&gt; next
+break in /home/indutny/Code/git/indutny/myscript.js:4
+  2 setTimeout(function () {
+  3   debugger;
+  4   console.log(&quot;world&quot;);
+  5 }, 1000);
+  6 console.log(&quot;hello&quot;);
+debug&gt; repl
+Press Ctrl + C to leave debug repl
+&gt; x
+5
+&gt; 2+2
+4
+debug&gt; next
+&lt; world
+break in /home/indutny/Code/git/indutny/myscript.js:5
+  3   debugger;
+  4   console.log(&quot;world&quot;);
+  5 }, 1000);
+  6 console.log(&quot;hello&quot;);
+  7
+debug&gt; quit
+%
+</code></pre>
+<p><code>repl</code>&#x547D;&#x4EE4;&#x5141;&#x8BB8;&#x4F60;&#x8FDC;&#x7A0B;&#x5730;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x3002;<code>next</code>&#x547D;&#x4EE4;&#x6B65;&#x8FDB;&#x5230;&#x4E0B;&#x4E00;&#x884C;&#x3002;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x7684;&#x53EF;&#x7528;&#x547D;&#x4EE4;&#xFF0C;&#x8F93;&#x5165;<code>help</code>&#x67E5;&#x770B;&#x5B83;&#x4EEC;&#x3002;</p>
+<h4 id="watchers">Watchers</h4>
+<p>&#x5728;&#x8C03;&#x8BD5;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x76D1;&#x89C6;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;&#x5728;&#x6BCF;&#x4E2A;&#x65AD;&#x70B9;&#xFF0C;&#x76D1;&#x89C6;&#x5668;&#x5217;&#x8868;&#x4E0A;&#x7684;&#x6BCF;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x4F1A;&#x88AB;&#x5728;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x65AD;&#x70B9;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x524D;&#x5C55;&#x793A;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5F00;&#x59CB;&#x76D1;&#x89C6;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x8F93;&#x5165;<code>watch(&quot;my_expression&quot;)</code>&#x3002;<code>watchers</code>&#x6253;&#x5370;&#x53EF;&#x7528;&#x7684;&#x76D1;&#x89C6;&#x5668;&#x3002;&#x4E3A;&#x4E86;&#x79FB;&#x9664;&#x4E00;&#x4E2A;&#x76D1;&#x89C6;&#x5668;&#xFF0C;&#x8F93;&#x5165;<code>unwatch(&quot;my_expression&quot;)</code>&#x3002;</p>
+<h4 id="&#x547D;&#x4EE4;&#x53C2;&#x8003;">&#x547D;&#x4EE4;&#x53C2;&#x8003;</h4>
+<p><strong>Stepping</strong></p>
+<ul>
+<li>cont, c - &#x7EE7;&#x7EED;&#x6267;&#x884C;</li>
+<li>next, n - &#x4E0B;&#x4E00;&#x6B65;</li>
+<li>step, s - &#x4ECB;&#x5165;&#xFF08;Step in&#xFF09;</li>
+<li>out, o - &#x79BB;&#x5F00;&#xFF08;Step out&#xFF09;</li>
+<li>pause - &#x6682;&#x505C;&#x4EE3;&#x7801;&#x6267;&#x884C;&#xFF08;&#x7C7B;&#x4F3C;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x4E2D;&#x7684;&#x6682;&#x505C;&#x6309;&#x94AE;&#xFF09;</li>
+</ul>
+<p><strong>Breakpoints</strong></p>
+<ul>
+<li>setBreakpoint(), sb() - &#x5728;&#x5F53;&#x524D;&#x884C;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x65AD;&#x70B9;</li>
+<li>setBreakpoint(line), sb(line) -  &#x5728;&#x6307;&#x5B9A;&#x884C;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x65AD;&#x70B9;</li>
+<li>setBreakpoint(&apos;fn()&apos;), sb(...) - &#x5728;&#x51FD;&#x6570;&#x4F53;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x8BED;&#x53E5;&#x4E0A;&#x8BBE;&#x7F6E;&#x65AD;&#x70B9;</li>
+<li>setBreakpoint(&apos;script.js&apos;, 1), sb(...) - &#x5728;<code>script.js</code>&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x8BBE;&#x7F6E;&#x65AD;&#x70B9;</li>
+<li>clearBreakpoint(&apos;script.js&apos;, 1), cb(...) - &#x6E05;&#x9664;<code>script.js</code>&#x7B2C;&#x4E00;&#x884C;&#x7684;&#x65AD;&#x70B9;</li>
+</ul>
+<p>&#x540C;&#x6837;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x8FD8;&#x672A;&#x8F7D;&#x5165;&#x7684;&#x6587;&#x4EF6;&#xFF08;&#x6A21;&#x5757;&#xFF09;&#x4E2D;&#x8BBE;&#x7F6E;&#x65AD;&#x70B9;&#xFF1A;</p>
+<pre><code class="lang-SHELL">% ./iojs debug test/fixtures/break-in-module/main.js
+&lt; debugger listening on port 5858
+connecting to port 5858... ok
+break in test/fixtures/break-in-module/main.js:1
+  1 var mod = require(&apos;./mod.js&apos;);
+  2 mod.hello();
+  3 mod.hello();
+debug&gt; setBreakpoint(&apos;mod.js&apos;, 23)
+Warning: script &apos;mod.js&apos; was not loaded yet.
+  1 var mod = require(&apos;./mod.js&apos;);
+  2 mod.hello();
+  3 mod.hello();
+debug&gt; c
+break in test/fixtures/break-in-module/mod.js:23
+ 21
+ 22 exports.hello = function() {
+ 23   return &apos;hello from module&apos;;
+ 24 };
+ 25
+debug&gt;
+</code></pre>
+<p><strong>Info</strong></p>
+<ul>
+<li>backtrace, bt - &#x6253;&#x5370;&#x5F53;&#x524D;&#x6267;&#x884C;&#x6846;&#x67B6;&#x7684;&#x56DE;&#x6EAF;</li>
+<li>list(5) - &#x5217;&#x51FA;&#x811A;&#x672C;&#x6E90;&#x4EE3;&#x7801;&#x7684;5&#x884C;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;&#x524D;5&#x884C;&#x548C;&#x540E;5&#x884C;&#xFF09;</li>
+<li>watch(expr) - &#x4E3A;&#x76D1;&#x89C6;&#x5217;&#x8868;&#x6DFB;&#x52A0;&#x8868;&#x8FBE;&#x5F0F;</li>
+<li>unwatch(expr) - &#x4ECE;&#x76D1;&#x89C6;&#x5217;&#x8868;&#x4E2D;&#x79FB;&#x9664;&#x8868;&#x8FBE;&#x5F0F;</li>
+<li>watchers - &#x5217;&#x51FA;&#x6240;&#x6709;&#x7684;&#x76D1;&#x89C6;&#x5668;&#x548C;&#x5B83;&#x4EEC;&#x7684;&#x503C;&#xFF08;&#x4F1A;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x65AD;&#x70B9;&#x81EA;&#x52A8;&#x5217;&#x51FA;&#xFF09;</li>
+<li>repl - &#x5728;&#x6240;&#x8C03;&#x8BD5;&#x7684;&#x811A;&#x672C;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x6253;&#x5F00;&#x8C03;&#x8BD5;&#x5668;&#x7684;<code>repl</code></li>
+</ul>
+<p><strong>Execution control</strong></p>
+<ul>
+<li>run - &#x8FD0;&#x884C;&#x811A;&#x672C;&#xFF08;&#x5728;&#x8C03;&#x8BD5;&#x5668;&#x5F00;&#x59CB;&#x65F6;&#x81EA;&#x52A8;&#x8FD0;&#x884C;&#xFF09;</li>
+<li>restart - &#x91CD;&#x542F;&#x811A;&#x672C;</li>
+<li>kill - &#x7ED3;&#x675F;&#x811A;&#x672C;</li>
+</ul>
+<p><strong>Various</strong></p>
+<ul>
+<li>scripts - &#x5217;&#x51FA;&#x6240;&#x6709;&#x8F7D;&#x5165;&#x7684;&#x811A;&#x672C;</li>
+<li>version - &#x5C55;&#x793A;V8&#x7248;&#x672C;</li>
+</ul>
+<h4 id="&#x9AD8;&#x7EA7;&#x4F7F;&#x7528;">&#x9AD8;&#x7EA7;&#x4F7F;&#x7528;</h4>
+<p>V8&#x8C03;&#x8BD5;&#x5668;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; &#x4F7F;&#x7528;<code>--debug</code>&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x6253;&#x5F00;<code>node.js</code> &#x6216; &#x5411;&#x4E00;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;&#x7684;<code>node.js</code>&#x8FDB;&#x7A0B;&#x53D1;&#x9001;<code>SIGUSR1</code>&#x4FE1;&#x53F7; &#x6765;&#x542F;&#x7528;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E86;&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x5C31;&#x53EF;&#x4EE5;&#x88AB;&#x8FDE;&#x63A5;&#x5230;<code>node.js</code>&#x8C03;&#x8BD5;&#x5668;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;pid&#x6216;URI&#x6765;&#x8FDE;&#x63A5;&#xFF0C;&#x8BED;&#x6CD5;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>iojs debug -p <pid> - &#x901A;&#x8FC7;pid&#x8FDE;&#x63A5;&#x8FDB;&#x7A0B;</pid></li>
+<li>iojs debug <uri> - &#x901A;&#x8FC7;URI&#xFF08;&#x5982;<code>localhost:5858</code>&#xFF09;&#x8FDE;&#x63A5;&#x8FDB;&#x7A0B;</uri></li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Crypto.html" class="navigation navigation-prev " aria-label="Previous page: Crypto">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="DNS.html" class="navigation navigation-next " aria-label="Next page: DNS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Debugger","level":"1.8","depth":1,"next":{"title":"DNS","level":"1.9","depth":1,"path":"DNS.md","ref":"DNS.md","articles":[]},"previous":{"title":"Crypto","level":"1.7","depth":1,"path":"Crypto.md","ref":"Crypto.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"Debugger.md","mtime":"2016-06-20T01:36:08.946Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

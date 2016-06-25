@@ -1,0 +1,1257 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>第 5 章: 代码组合（compose） · JavaScript 函数式编程</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch5.html" />
+    
+    
+    <link rel="prev" href="ch4.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    第 1 章: 我们在做什么？
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="ch1.html">
+            
+                <a href="ch1.html#介绍">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="ch1.html">
+            
+                <a href="ch1.html#一个简单例子">
+            
+                    
+                    一个简单例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    第 2 章: 一等公民的函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="ch2.html">
+            
+                <a href="ch2.html#快速概览">
+            
+                    
+                    快速概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="ch2.html">
+            
+                <a href="ch2.html#为何钟爱一等公民">
+            
+                    
+                    为何钟爱一等公民
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    第 3 章: 纯函数的好处
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="ch3.html">
+            
+                <a href="ch3.html#再次强调“纯”">
+            
+                    
+                    再次强调“纯”
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="ch3.html">
+            
+                <a href="ch3.html#副作用可能包括">
+            
+                    
+                    副作用可能包括...
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="ch3.html">
+            
+                <a href="ch3.html#八年级数学">
+            
+                    
+                    八年级数学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="ch3.html">
+            
+                <a href="ch3.html#追求“纯”的理由">
+            
+                    
+                    追求“纯”的理由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="ch3.html">
+            
+                <a href="ch3.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    第 4 章: 柯里化（curry）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="ch4.html">
+            
+                <a href="ch4.html#不可或缺的-curry">
+            
+                    
+                    不可或缺的 curry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="ch4.html">
+            
+                <a href="ch4.html#不仅仅是双关语咖喱">
+            
+                    
+                    不仅仅是双关语／咖喱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="ch4.html">
+            
+                <a href="ch4.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    第 5 章: 代码组合（compose）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="ch5.html">
+            
+                <a href="ch5.html#函数饲养">
+            
+                    
+                    函数饲养
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="ch5.html">
+            
+                <a href="ch5.html#pointfree">
+            
+                    
+                    pointfree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="ch5.html">
+            
+                <a href="ch5.html#debug">
+            
+                    
+                    debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="ch5.html">
+            
+                <a href="ch5.html#范畴学">
+            
+                    
+                    范畴学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="ch5.html">
+            
+                <a href="ch5.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    第 6章: 示例应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="ch6.html">
+            
+                <a href="ch6.html#声明式代码">
+            
+                    
+                    声明式代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="ch6.html">
+            
+                <a href="ch6.html#一个函数式的-flickr">
+            
+                    
+                    一个函数式的 flickr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="ch6.html">
+            
+                <a href="ch6.html#有原则的重构">
+            
+                    
+                    有原则的重构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="ch6.html">
+            
+                <a href="ch6.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    第 7 章: Hindley-Milner 类型签名
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="ch7.html">
+            
+                <a href="ch7.html#初识类型">
+            
+                    
+                    初识类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="ch7.html">
+            
+                <a href="ch7.html#神秘的传奇故事">
+            
+                    
+                    神秘的传奇故事
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="ch7.html">
+            
+                <a href="ch7.html#缩小可能性范围">
+            
+                    
+                    缩小可能性范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="ch7.html">
+            
+                <a href="ch7.html#自由定理">
+            
+                    
+                    自由定理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="ch7.html">
+            
+                <a href="ch7.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    第 8 章: 特百惠
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="ch8.html">
+            
+                <a href="ch8.html#强大的容器">
+            
+                    
+                    强大的容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="ch8.html">
+            
+                <a href="ch8.html#第一个-functor">
+            
+                    
+                    第一个 functor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="ch8.html">
+            
+                <a href="ch8.html#薛定谔的-maybe">
+            
+                    
+                    薛定谔的 Maybe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="ch8.html">
+            
+                <a href="ch8.html#“纯”错误处理">
+            
+                    
+                    “纯”错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="ch8.html">
+            
+                <a href="ch8.html#王老先生有作用">
+            
+                    
+                    王老先生有作用...
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="ch8.html">
+            
+                <a href="ch8.html#异步任务">
+            
+                    
+                    异步任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="ch8.html">
+            
+                <a href="ch8.html#一点理论">
+            
+                    
+                    一点理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="ch8.html">
+            
+                <a href="ch8.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    第 9 章: Monad
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="ch9.html">
+            
+                <a href="ch9.html#pointed-functor">
+            
+                    
+                    pointed functor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="ch9.html">
+            
+                <a href="ch9.html#混合比喻">
+            
+                    
+                    混合比喻
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="ch9.html">
+            
+                <a href="ch9.html#chain-函数">
+            
+                    
+                    chain 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="ch9.html">
+            
+                <a href="ch9.html#理论">
+            
+                    
+                    理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="ch9.html">
+            
+                <a href="ch9.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    第 10 章: Applicative Functor
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="ch10.html">
+            
+                <a href="ch10.html#应用-applicative-functor">
+            
+                    
+                    应用 applicative functor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="ch10.html">
+            
+                <a href="ch10.html#瓶中之船">
+            
+                    
+                    瓶中之船
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="ch10.html">
+            
+                <a href="ch10.html#协调于激励">
+            
+                    
+                    协调于激励
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="ch10.html">
+            
+                <a href="ch10.html#lift">
+            
+                    
+                    lift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="ch10.html">
+            
+                <a href="ch10.html#免费开瓶器">
+            
+                    
+                    免费开瓶器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="ch10.html">
+            
+                <a href="ch10.html#定律">
+            
+                    
+                    定律
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="ch10.html">
+            
+                <a href="ch10.html#总结">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第 5 章: 代码组合（compose）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;-5-&#x7AE0;-&#x4EE3;&#x7801;&#x7EC4;&#x5408;&#xFF08;compose&#xFF09;">&#x7B2C; 5 &#x7AE0;: &#x4EE3;&#x7801;&#x7EC4;&#x5408;&#xFF08;compose&#xFF09;</h1>
+<h2 id="&#x51FD;&#x6570;&#x9972;&#x517B;">&#x51FD;&#x6570;&#x9972;&#x517B;</h2>
+<p>&#x8FD9;&#x5C31;&#x662F; <code>&#x7EC4;&#x5408;</code>&#xFF08;compose&#xFF0C;&#x4EE5;&#x4E0B;&#x5C06;&#x79F0;&#x4E4B;&#x4E3A;&#x7EC4;&#x5408;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> compose = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">f,g</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>) </span>{
+    <span class="hljs-keyword">return</span> f(g(x));
+  };
+};
+</code></pre>
+<p><code>f</code> &#x548C; <code>g</code> &#x90FD;&#x662F;&#x51FD;&#x6570;&#xFF0C;<code>x</code> &#x662F;&#x5728;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x901A;&#x8FC7;&#x201C;&#x7BA1;&#x9053;&#x201D;&#x4F20;&#x8F93;&#x7684;&#x503C;&#x3002;</p>
+<p><code>&#x7EC4;&#x5408;</code>&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x5728;&#x9972;&#x517B;&#x51FD;&#x6570;&#x3002;&#x4F60;&#x5C31;&#x662F;&#x9972;&#x517B;&#x5458;&#xFF0C;&#x9009;&#x62E9;&#x4E24;&#x4E2A;&#x6709;&#x7279;&#x70B9;&#x53C8;&#x906D;&#x4F60;&#x559C;&#x6B22;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8BA9;&#x5B83;&#x4EEC;&#x7ED3;&#x5408;&#xFF0C;&#x4EA7;&#x4E0B;&#x4E00;&#x4E2A;&#x5D2D;&#x65B0;&#x7684;&#x51FD;&#x6570;&#x3002;&#x7EC4;&#x5408;&#x7684;&#x7528;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> toUpperCase = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>) </span>{ <span class="hljs-keyword">return</span> x.toUpperCase(); };
+<span class="hljs-keyword">var</span> exclaim = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>) </span>{ <span class="hljs-keyword">return</span> x + <span class="hljs-string">&apos;!&apos;</span>; };
+<span class="hljs-keyword">var</span> shout = compose(exclaim, toUpperCase);
+
+shout(<span class="hljs-string">&quot;send in the clowns&quot;</span>);
+<span class="hljs-comment">//=&gt; &quot;SEND IN THE CLOWNS!&quot;</span>
+</code></pre>
+<p>&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x7EC4;&#x5408;&#x4E4B;&#x540E;&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x51FD;&#x6570;&#x662F;&#x5B8C;&#x5168;&#x8BB2;&#x5F97;&#x901A;&#x7684;&#xFF1A;&#x7EC4;&#x5408;&#x67D0;&#x79CD;&#x7C7B;&#x578B;&#xFF08;&#x672C;&#x4F8B;&#x4E2D;&#x662F;&#x51FD;&#x6570;&#xFF09;&#x7684;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x672C;&#x5C31;&#x8BE5;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x65B0;&#x5143;&#x7D20;&#x3002;&#x628A;&#x4E24;&#x4E2A;&#x4E50;&#x9AD8;&#x79EF;&#x6728;&#x7EC4;&#x5408;&#x8D77;&#x6765;&#x7EDD;&#x4E0D;&#x53EF;&#x80FD;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x6797;&#x80AF;&#x79EF;&#x6728;&#x3002;&#x6240;&#x4EE5;&#x8FD9;&#x662F;&#x6709;&#x9053;&#x7406;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x9002;&#x5F53;&#x7684;&#x65F6;&#x5019;&#x63A2;&#x8BA8;&#x8FD9;&#x65B9;&#x9762;&#x7684;&#x4E00;&#x4E9B;&#x5E95;&#x5C42;&#x7406;&#x8BBA;&#x3002;</p>
+<p>&#x5728; <code>compose</code> &#x7684;&#x5B9A;&#x4E49;&#x4E2D;&#xFF0C;<code>g</code> &#x5C06;&#x5148;&#x4E8E; <code>f</code> &#x6267;&#x884C;&#xFF0C;&#x56E0;&#x6B64;&#x5C31;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x4ECE;&#x53F3;&#x5230;&#x5DE6;&#x7684;&#x6570;&#x636E;&#x6D41;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#x8FDC;&#x8FDC;&#x9AD8;&#x4E8E;&#x5D4C;&#x5957;&#x4E00;&#x5927;&#x5806;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7EC4;&#x5408;&#xFF0C;<code>shout</code> &#x51FD;&#x6570;&#x5C06;&#x4F1A;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> shout = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>)</span>{
+  <span class="hljs-keyword">return</span> exclaim(toUpperCase(x));
+};
+</code></pre>
+<p>&#x8BA9;&#x4EE3;&#x7801;&#x4ECE;&#x53F3;&#x5411;&#x5DE6;&#x8FD0;&#x884C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7531;&#x5185;&#x800C;&#x5916;&#x8FD0;&#x884C;&#xFF0C;&#x6211;&#x89C9;&#x5F97;&#x53EF;&#x4EE5;&#x79F0;&#x4E4B;&#x4E3A;&#x201C;&#x5DE6;&#x503E;&#x201D;&#xFF08;&#x5401;&#x2014;&#x2014;&#xFF09;&#x3002;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x987A;&#x5E8F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> head = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>) </span>{ <span class="hljs-keyword">return</span> x[<span class="hljs-number">0</span>]; };
+<span class="hljs-keyword">var</span> reverse = reduce(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">acc, x</span>)</span>{ <span class="hljs-keyword">return</span> [x].concat(acc); }, []);
+<span class="hljs-keyword">var</span> last = compose(head, reverse);
+
+last([<span class="hljs-string">&apos;jumpkick&apos;</span>, <span class="hljs-string">&apos;roundhouse&apos;</span>, <span class="hljs-string">&apos;uppercut&apos;</span>]);
+<span class="hljs-comment">//=&gt; &apos;uppercut&apos;</span>
+</code></pre>
+<p><code>reverse</code> &#x53CD;&#x8F6C;&#x5217;&#x8868;&#xFF0C;<code>head</code> &#x53D6;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF1B;&#x6240;&#x4EE5;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x5F97;&#x5230;&#x4E86;&#x4E00;&#x4E2A; <code>last</code> &#x51FD;&#x6570;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x5373;&#x53D6;&#x5217;&#x8868;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF09;&#xFF0C;&#x867D;&#x7136;&#x5B83;&#x6027;&#x80FD;&#x4E0D;&#x9AD8;&#x3002;&#x8FD9;&#x4E2A;&#x7EC4;&#x5408;&#x4E2D;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x5E94;&#x8BE5;&#x662F;&#x663E;&#x800C;&#x6613;&#x89C1;&#x7684;&#x3002;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4ECE;&#x5DE6;&#x5411;&#x53F3;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x4F46;&#x662F;&#x4ECE;&#x53F3;&#x5411;&#x5DE6;&#x6267;&#x884C;&#x66F4;&#x52A0;&#x80FD;&#x591F;&#x53CD;&#x6620;&#x6570;&#x5B66;&#x4E0A;&#x7684;&#x542B;&#x4E49;&#x2014;&#x2014;&#x662F;&#x7684;&#xFF0C;&#x7EC4;&#x5408;&#x7684;&#x6982;&#x5FF5;&#x76F4;&#x63A5;&#x6765;&#x81EA;&#x4E8E;&#x6570;&#x5B66;&#x8BFE;&#x672C;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x73B0;&#x5728;&#x662F;&#x65F6;&#x5019;&#x53BB;&#x770B;&#x770B;&#x6240;&#x6709;&#x7684;&#x7EC4;&#x5408;&#x90FD;&#x6709;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x4E86;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x7ED3;&#x5408;&#x5F8B;&#xFF08;associativity&#xFF09;</span>
+<span class="hljs-keyword">var</span> associative = compose(f, compose(g, h)) == compose(compose(f, g), h);
+<span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x5C31;&#x662F;&#x7ED3;&#x5408;&#x5F8B;&#xFF0C;&#x7B26;&#x5408;&#x7ED3;&#x5408;&#x5F8B;&#x610F;&#x5473;&#x7740;&#x4E0D;&#x7BA1;&#x4F60;&#x662F;&#x628A; <code>g</code> &#x548C; <code>h</code> &#x5206;&#x5230;&#x4E00;&#x7EC4;&#xFF0C;&#x8FD8;&#x662F;&#x628A; <code>f</code> &#x548C; <code>g</code> &#x5206;&#x5230;&#x4E00;&#x7EC4;&#x90FD;&#x4E0D;&#x91CD;&#x8981;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x53D8;&#x4E3A;&#x5927;&#x5199;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x5199;&#xFF1A;</p>
+<pre><code class="lang-js">compose(toUpperCase, compose(head, reverse));
+
+<span class="hljs-comment">// &#x6216;&#x8005;</span>
+compose(compose(toUpperCase, head), reverse);
+</code></pre>
+<p>&#x56E0;&#x4E3A;&#x5982;&#x4F55;&#x4E3A; <code>compose</code> &#x7684;&#x8C03;&#x7528;&#x5206;&#x7EC4;&#x4E0D;&#x91CD;&#x8981;&#xFF0C;&#x6240;&#x4EE5;&#x7ED3;&#x679C;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x8FD9;&#x4E5F;&#x8BA9;&#x6211;&#x4EEC;&#x6709;&#x80FD;&#x529B;&#x5199;&#x4E00;&#x4E2A;&#x53EF;&#x53D8;&#x7684;&#x7EC4;&#x5408;&#xFF08;variadic compose&#xFF09;&#xFF0C;&#x7528;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x524D;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x8981;&#x5199;&#x4E24;&#x4E2A;&#x7EC4;&#x5408;&#x624D;&#x884C;&#xFF0C;&#x4F46;&#x65E2;&#x7136;&#x7EC4;&#x5408;&#x662F;&#x7B26;&#x5408;&#x7ED3;&#x5408;&#x5F8B;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x53EA;&#x5199;&#x4E00;&#x4E2A;&#xFF0C;</span>
+<span class="hljs-comment">// &#x800C;&#x4E14;&#x60F3;&#x4F20;&#x7ED9;&#x5B83;&#x591A;&#x5C11;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x4F20;&#x7ED9;&#x5B83;&#x591A;&#x5C11;&#x4E2A;&#xFF0C;&#x7136;&#x540E;&#x8BA9;&#x5B83;&#x81EA;&#x5DF1;&#x51B3;&#x5B9A;&#x5982;&#x4F55;&#x5206;&#x7EC4;&#x3002;</span>
+
+<span class="hljs-keyword">var</span> lastUpper = compose(toUpperCase, head, reverse);
+
+lastUpper([<span class="hljs-string">&apos;jumpkick&apos;</span>, <span class="hljs-string">&apos;roundhouse&apos;</span>, <span class="hljs-string">&apos;uppercut&apos;</span>]);
+<span class="hljs-comment">//=&gt; &apos;UPPERCUT&apos;</span>
+
+
+<span class="hljs-keyword">var</span> loudLastUpper = compose(exclaim, toUpperCase, head, reverse)
+
+loudLastUpper([<span class="hljs-string">&apos;jumpkick&apos;</span>, <span class="hljs-string">&apos;roundhouse&apos;</span>, <span class="hljs-string">&apos;uppercut&apos;</span>]);
+<span class="hljs-comment">//=&gt; &apos;UPPERCUT!&apos;</span>
+</code></pre>
+<p>&#x8FD0;&#x7528;&#x7ED3;&#x5408;&#x5F8B;&#x80FD;&#x4E3A;&#x6211;&#x4EEC;&#x5E26;&#x6765;&#x5F3A;&#x5927;&#x7684;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x8FD8;&#x6709;&#x5BF9;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x610F;&#x5916;&#x7684;&#x90A3;&#x79CD;&#x5E73;&#x548C;&#x5FC3;&#x6001;&#x3002;&#x81F3;&#x4E8E;&#x7A0D;&#x5FAE;&#x590D;&#x6742;&#x4E9B;&#x7684;&#x53EF;&#x53D8;&#x7EC4;&#x5408;&#xFF0C;&#x4E5F;&#x90FD;&#x5305;&#x542B;&#x5728;&#x672C;&#x4E66;&#x7684; <code>support</code> &#x5E93;&#x91CC;&#x4E86;&#xFF0C;&#x800C;&#x4E14;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x7C7B;&#x4F3C; <a href="https://lodash.com/" target="_blank">lodash</a>&#x3001;<a href="http://underscorejs.org/" target="_blank">underscore</a> &#x4EE5;&#x53CA; <a href="http://ramdajs.com/" target="_blank">ramda</a> &#x8FD9;&#x6837;&#x7684;&#x7C7B;&#x5E93;&#x4E2D;&#x627E;&#x5230;&#x5B83;&#x4EEC;&#x7684;&#x5E38;&#x89C4;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x7ED3;&#x5408;&#x5F8B;&#x7684;&#x4E00;&#x5927;&#x597D;&#x5904;&#x662F;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5206;&#x7EC4;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x62C6;&#x5F00;&#x6765;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x4EE5;&#x5B83;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x7EC4;&#x5408;&#x65B9;&#x5F0F;&#x6253;&#x5305;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x91CD;&#x6784;&#x91CD;&#x6784;&#x524D;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> loudLastUpper = compose(exclaim, toUpperCase, head, reverse);
+
+<span class="hljs-comment">// &#x6216;</span>
+<span class="hljs-keyword">var</span> last = compose(head, reverse);
+<span class="hljs-keyword">var</span> loudLastUpper = compose(exclaim, toUpperCase, last);
+
+<span class="hljs-comment">// &#x6216;</span>
+<span class="hljs-keyword">var</span> last = compose(head, reverse);
+<span class="hljs-keyword">var</span> angry = compose(exclaim, toUpperCase);
+<span class="hljs-keyword">var</span> loudLastUpper = compose(angry, last);
+
+<span class="hljs-comment">// &#x66F4;&#x591A;&#x53D8;&#x79CD;...</span>
+</code></pre>
+<p>&#x5173;&#x4E8E;&#x5982;&#x4F55;&#x7EC4;&#x5408;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x6807;&#x51C6;&#x7684;&#x7B54;&#x6848;&#x2014;&#x2014;&#x6211;&#x4EEC;&#x53EA;&#x662F;&#x4EE5;&#x81EA;&#x5DF1;&#x559C;&#x6B22;&#x7684;&#x65B9;&#x5F0F;&#x642D;&#x4E50;&#x9AD8;&#x79EF;&#x6728;&#x7F62;&#x4E86;&#x3002;&#x901A;&#x5E38;&#x6765;&#x8BF4;&#xFF0C;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x662F;&#x8BA9;&#x7EC4;&#x5408;&#x53EF;&#x91CD;&#x7528;&#xFF0C;&#x5C31;&#x50CF; <code>last</code> &#x548C; <code>angry</code> &#x90A3;&#x6837;&#x3002;&#x5982;&#x679C;&#x719F;&#x6089; Fowler &#x7684;&#x300A;<a href="http://martinfowler.com/books/refactoring.html" target="_blank">&#x91CD;&#x6784;</a>&#x300B;&#x4E00;&#x4E66;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x8BA4;&#x8BC6;&#x5230;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x53EB;&#x505A; &#x201C;<a href="http://refactoring.com/catalog/extractMethod.html" target="_blank">extract method</a>&#x201D;&#x2014;&#x2014;&#x53EA;&#x4E0D;&#x8FC7;&#x4E0D;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<h2 id="pointfree">pointfree</h2>
+<p>pointfree &#x6A21;&#x5F0F;&#x6307;&#x7684;&#x662F;&#xFF0C;&#x6C38;&#x8FDC;&#x4E0D;&#x5FC5;&#x8BF4;&#x51FA;&#x4F60;&#x7684;&#x6570;&#x636E;&#x3002;&#x54B3;&#x54B3;&#x5BF9;&#x4E0D;&#x8D77;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x6B64;&#x5904;&#x539F;&#x6587;&#x662F;&#x201C;Pointfree style means never having to say your data&#x201D;&#xFF0C;&#x6E90;&#x81EA; 1970 &#x5E74;&#x7684;&#x7535;&#x5F71; <em>Love Story</em> &#x91CC;&#x7684;&#x4E00;&#x53E5;&#x8457;&#x540D;&#x53F0;&#x8BCD;&#x201C;Love means never having to say you&apos;re sorry&#x201D;&#x3002;&#x7D27;&#x63A5;&#x7740;&#x4F5C;&#x8005;&#x53C8;&#x8BF4;&#x4E86;&#x4E00;&#x53E5;&#x201C;Excuse me&#x201D;&#xFF0C;&#x5927;&#x6982;&#x662F;&#x4E00;&#x79CD;&#x5E7D;&#x9ED8;&#xFF09;&#x3002;&#x5B83;&#x7684;&#x610F;&#x601D;&#x662F;&#x8BF4;&#xFF0C;&#x51FD;&#x6570;&#x65E0;&#x987B;&#x63D0;&#x53CA;&#x5C06;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x662F;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x3002;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#x7684;&#x51FD;&#x6570;&#x3001;&#x67EF;&#x91CC;&#x5316;&#xFF08;curry&#xFF09;&#x4EE5;&#x53CA;&#x7EC4;&#x5408;&#x534F;&#x4F5C;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x6709;&#x52A9;&#x4E8E;&#x5B9E;&#x73B0;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x975E; pointfree&#xFF0C;&#x56E0;&#x4E3A;&#x63D0;&#x5230;&#x4E86;&#x6570;&#x636E;&#xFF1A;word</span>
+<span class="hljs-keyword">var</span> snakeCase = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">word</span>) </span>{
+  <span class="hljs-keyword">return</span> word.toLowerCase().replace(<span class="hljs-regexp">/\s+/ig</span>, <span class="hljs-string">&apos;_&apos;</span>);
+};
+
+<span class="hljs-comment">// pointfree</span>
+<span class="hljs-keyword">var</span> snakeCase = compose(replace(<span class="hljs-regexp">/\s+/ig</span>, <span class="hljs-string">&apos;_&apos;</span>), toLowerCase);
+</code></pre>
+<p>&#x770B;&#x5230; <code>replace</code> &#x662F;&#x5982;&#x4F55;&#x88AB;&#x5C40;&#x90E8;&#x8C03;&#x7528;&#x7684;&#x4E86;&#x4E48;&#xFF1F;&#x8FD9;&#x91CC;&#x6240;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x7BA1;&#x9053;&#x628A;&#x6570;&#x636E;&#x5728;&#x63A5;&#x53D7;&#x5355;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#x95F4;&#x4F20;&#x9012;&#x3002;&#x5229;&#x7528; curry&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x505A;&#x5230;&#x8BA9;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x90FD;&#x5148;&#x63A5;&#x6536;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#xFF0C;&#x6700;&#x540E;&#x518D;&#x628A;&#x6570;&#x636E;&#x4F20;&#x9012;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x90A3;&#x91CC;&#x53BB;&#x3002;&#x53E6;&#x5916;&#x6CE8;&#x610F;&#x5728; pointfree &#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x4E0D;&#x9700;&#x8981; <code>word</code> &#x53C2;&#x6570;&#x5C31;&#x80FD;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1B;&#x800C;&#x5728;&#x975E; pointfree &#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x6709; <code>word</code> &#x624D;&#x80FD;&#x8FDB;&#x884C;&#x8FDB;&#x884C;&#x4E00;&#x5207;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x518D;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x975E; pointfree&#xFF0C;&#x56E0;&#x4E3A;&#x63D0;&#x5230;&#x4E86;&#x6570;&#x636E;&#xFF1A;name</span>
+<span class="hljs-keyword">var</span> initials = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name</span>) </span>{
+  <span class="hljs-keyword">return</span> name.split(<span class="hljs-string">&apos; &apos;</span>).map(compose(toUpperCase, head)).join(<span class="hljs-string">&apos;. &apos;</span>);
+};
+
+<span class="hljs-comment">// pointfree</span>
+<span class="hljs-keyword">var</span> initials = compose(join(<span class="hljs-string">&apos;. &apos;</span>), map(compose(toUpperCase, head)), split(<span class="hljs-string">&apos; &apos;</span>));
+
+initials(<span class="hljs-string">&quot;hunter stockton thompson&quot;</span>);
+<span class="hljs-comment">// &apos;H. S. T&apos;</span>
+</code></pre>
+<p>&#x53E6;&#x5916;&#xFF0C;pointfree &#x6A21;&#x5F0F;&#x80FD;&#x591F;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x51CF;&#x5C11;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x547D;&#x540D;&#xFF0C;&#x8BA9;&#x4EE3;&#x7801;&#x4FDD;&#x6301;&#x7B80;&#x6D01;&#x548C;&#x901A;&#x7528;&#x3002;&#x5BF9;&#x51FD;&#x6570;&#x5F0F;&#x4EE3;&#x7801;&#x6765;&#x8BF4;&#xFF0C;pointfree &#x662F;&#x975E;&#x5E38;&#x597D;&#x7684;&#x77F3;&#x854A;&#x8BD5;&#x9A8C;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x80FD;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x5426;&#x662F;&#x63A5;&#x53D7;&#x8F93;&#x5165;&#x8FD4;&#x56DE;&#x8F93;&#x51FA;&#x7684;&#x5C0F;&#x51FD;&#x6570;&#x3002;&#x6BD4;&#x5982;&#xFF0C;while &#x5FAA;&#x73AF;&#x662F;&#x4E0D;&#x80FD;&#x7EC4;&#x5408;&#x7684;&#x3002;&#x4E0D;&#x8FC7;&#x4F60;&#x4E5F;&#x8981;&#x8B66;&#x60D5;&#xFF0C;pointfree &#x5C31;&#x50CF;&#x662F;&#x4E00;&#x628A;&#x53CC;&#x5203;&#x5251;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x4E5F;&#x80FD;&#x6DF7;&#x6DC6;&#x89C6;&#x542C;&#x3002;&#x5E76;&#x975E;&#x6240;&#x6709;&#x7684;&#x51FD;&#x6570;&#x5F0F;&#x4EE3;&#x7801;&#x90FD;&#x662F; pointfree &#x7684;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x6CA1;&#x5173;&#x7CFB;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x7528;&#x666E;&#x901A;&#x51FD;&#x6570;&#x3002;</p>
+<h2 id="debug">debug</h2>
+<p>&#x7EC4;&#x5408;&#x7684;&#x4E00;&#x4E2A;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x662F;&#xFF0C;&#x5728;&#x6CA1;&#x6709;&#x5C40;&#x90E8;&#x8C03;&#x7528;&#x4E4B;&#x524D;&#xFF0C;&#x5C31;&#x7EC4;&#x5408;&#x7C7B;&#x4F3C; <code>map</code> &#x8FD9;&#x6837;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x9519;&#x8BEF;&#x505A;&#x6CD5;&#xFF1A;&#x6211;&#x4EEC;&#x4F20;&#x7ED9;&#x4E86; `angry` &#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x6839;&#x672C;&#x4E0D;&#x77E5;&#x9053;&#x6700;&#x540E;&#x4F20;&#x7ED9; `map` &#x7684;&#x662F;&#x4EC0;&#x4E48;&#x4E1C;&#x897F;&#x3002;</span>
+<span class="hljs-keyword">var</span> latin = compose(map, angry, reverse);
+
+latin([<span class="hljs-string">&quot;frog&quot;</span>, <span class="hljs-string">&quot;eyes&quot;</span>]);
+<span class="hljs-comment">// error</span>
+
+
+<span class="hljs-comment">// &#x6B63;&#x786E;&#x505A;&#x6CD5;&#xFF1A;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x90FD;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x53C2;&#x6570;&#x3002;</span>
+<span class="hljs-keyword">var</span> latin = compose(map(angry), reverse);
+
+latin([<span class="hljs-string">&quot;frog&quot;</span>, <span class="hljs-string">&quot;eyes&quot;</span>]);
+<span class="hljs-comment">// [&quot;EYES!&quot;, &quot;FROG!&quot;])</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x5728; debug &#x7EC4;&#x5408;&#x7684;&#x65F6;&#x5019;&#x9047;&#x5230;&#x4E86;&#x56F0;&#x96BE;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x5B9E;&#x7528;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x7EAF;&#x7684; <code>trace</code> &#x51FD;&#x6570;&#x6765;&#x8FFD;&#x8E2A;&#x4EE3;&#x7801;&#x7684;&#x6267;&#x884C;&#x60C5;&#x51B5;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> trace = curry(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">tag, x</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(tag, x);
+  <span class="hljs-keyword">return</span> x;
+});
+
+<span class="hljs-keyword">var</span> dasherize = compose(join(<span class="hljs-string">&apos;-&apos;</span>), toLower, split(<span class="hljs-string">&apos; &apos;</span>), replace(<span class="hljs-regexp">/\s{2,}/ig</span>, <span class="hljs-string">&apos; &apos;</span>));
+
+dasherize(<span class="hljs-string">&apos;The world is a vampire&apos;</span>);
+<span class="hljs-comment">// TypeError: Cannot read property &apos;apply&apos; of undefined</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x62A5;&#x9519;&#x4E86;&#xFF0C;&#x6765; <code>trace</code> &#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> dasherize = compose(join(<span class="hljs-string">&apos;-&apos;</span>), toLower, trace(<span class="hljs-string">&quot;after split&quot;</span>), split(<span class="hljs-string">&apos; &apos;</span>), replace(<span class="hljs-regexp">/\s{2,}/ig</span>, <span class="hljs-string">&apos; &apos;</span>));
+<span class="hljs-comment">// after split [ &apos;The&apos;, &apos;world&apos;, &apos;is&apos;, &apos;a&apos;, &apos;vampire&apos; ]</span>
+</code></pre>
+<p>&#x554A;&#xFF01;<code>toLower</code> &#x7684;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5148;&#x7528; <code>map</code> &#x8C03;&#x7528;&#x4E00;&#x4E0B;&#x5B83;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> dasherize = compose(join(<span class="hljs-string">&apos;-&apos;</span>), map(toLower), split(<span class="hljs-string">&apos; &apos;</span>), replace(<span class="hljs-regexp">/\s{2,}/ig</span>, <span class="hljs-string">&apos; &apos;</span>));
+
+dasherize(<span class="hljs-string">&apos;The world is a vampire&apos;</span>);
+
+<span class="hljs-comment">// &apos;the-world-is-a-vampire&apos;</span>
+</code></pre>
+<p><code>trace</code> &#x51FD;&#x6570;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5728;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x70B9;&#x89C2;&#x5BDF;&#x6570;&#x636E;&#x4EE5;&#x4FBF; debug&#x3002;&#x50CF; haskell &#x548C; purescript &#x4E4B;&#x7C7B;&#x7684;&#x8BED;&#x8A00;&#x51FA;&#x4E8E;&#x5F00;&#x53D1;&#x7684;&#x65B9;&#x4FBF;&#xFF0C;&#x4E5F;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x7C7B;&#x4F3C;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x7EC4;&#x5408;&#x5C06;&#x6210;&#x4E3A;&#x6211;&#x4EEC;&#x6784;&#x9020;&#x7A0B;&#x5E8F;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x800C;&#x4E14;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x5B83;&#x80CC;&#x540E;&#x662F;&#x6709;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#x7406;&#x8BBA;&#x505A;&#x652F;&#x6491;&#x7684;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x7814;&#x7A76;&#x7814;&#x7A76;&#x8FD9;&#x4E2A;&#x7406;&#x8BBA;&#x3002;</p>
+<h2 id="&#x8303;&#x7574;&#x5B66;">&#x8303;&#x7574;&#x5B66;</h2>
+<p>&#x8303;&#x7574;&#x5B66;&#xFF08;category theory&#xFF09;&#x662F;&#x6570;&#x5B66;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x5206;&#x652F;&#xFF0C;&#x80FD;&#x591F;&#x5F62;&#x5F0F;&#x5316;&#x8BF8;&#x5982;&#x96C6;&#x5408;&#x8BBA;&#xFF08;set theory&#xFF09;&#x3001;&#x7C7B;&#x578B;&#x8BBA;&#xFF08;type theory&#xFF09;&#x3001;&#x7FA4;&#x8BBA;&#xFF08;group theory&#xFF09;&#x4EE5;&#x53CA;&#x903B;&#x8F91;&#x5B66;&#xFF08;logic&#xFF09;&#x7B49;&#x6570;&#x5B66;&#x5206;&#x652F;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x6982;&#x5FF5;&#x3002;&#x8303;&#x7574;&#x5B66;&#x4E3B;&#x8981;&#x5904;&#x7406;&#x5BF9;&#x8C61;&#xFF08;object&#xFF09;&#x3001;&#x6001;&#x5C04;&#xFF08;morphism&#xFF09;&#x548C;&#x53D8;&#x5316;&#x5F0F;&#xFF08;transformation&#xFF09;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x6982;&#x5FF5;&#x8DDF;&#x7F16;&#x7A0B;&#x7684;&#x8054;&#x7CFB;&#x975E;&#x5E38;&#x7D27;&#x5BC6;&#x3002;&#x4E0B;&#x56FE;&#x662F;&#x4E00;&#x4E9B;&#x76F8;&#x540C;&#x7684;&#x6982;&#x5FF5;&#x5206;&#x522B;&#x5728;&#x4E0D;&#x540C;&#x7406;&#x8BBA;&#x4E0B;&#x7684;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<p><img src="images/cat_theory.png"></p>
+<p>&#x62B1;&#x6B49;&#xFF0C;&#x6211;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8981;&#x5413;&#x552C;&#x4F60;&#x7684;&#x610F;&#x601D;&#x3002;&#x6211;&#x5E76;&#x4E0D;&#x5047;&#x8BBE;&#x4F60;&#x5BF9;&#x8FD9;&#x4E9B;&#x6982;&#x5FF5;&#x90FD;&#x4E86;&#x5982;&#x6307;&#x638C;&#xFF0C;&#x6211;&#x53EA;&#x662F;&#x60F3;&#x8BA9;&#x4F60;&#x660E;&#x767D;&#x8FD9;&#x91CC;&#x9762;&#x6709;&#x591A;&#x5C11;&#x91CD;&#x590D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x8BA9;&#x4F60;&#x77E5;&#x9053;&#x4E3A;&#x4F55;&#x8303;&#x7574;&#x5B66;&#x8981;&#x7EDF;&#x4E00;&#x8FD9;&#x4E9B;&#x6982;&#x5FF5;&#x3002;</p>
+<p>&#x5728;&#x8303;&#x7574;&#x5B66;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x6982;&#x5FF5;&#x53EB;&#x505A;...&#x8303;&#x7574;&#x3002;&#x6709;&#x7740;&#x4EE5;&#x4E0B;&#x8FD9;&#x4E9B;&#x7EC4;&#x4EF6;&#xFF08;component&#xFF09;&#x7684;&#x641C;&#x96C6;&#xFF08;collection&#xFF09;&#x5C31;&#x6784;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x8303;&#x7574;&#xFF1A;</p>
+<ul>
+<li>&#x5BF9;&#x8C61;&#x7684;&#x641C;&#x96C6;</li>
+<li>&#x6001;&#x5C04;&#x7684;&#x641C;&#x96C6;</li>
+<li>&#x6001;&#x5C04;&#x7684;&#x7EC4;&#x5408;</li>
+<li>identity &#x8FD9;&#x4E2A;&#x72EC;&#x7279;&#x7684;&#x6001;&#x5C04;</li>
+</ul>
+<p>&#x8303;&#x7574;&#x5B66;&#x62BD;&#x8C61;&#x5230;&#x8DB3;&#x4EE5;&#x6A21;&#x62DF;&#x4EFB;&#x4F55;&#x4E8B;&#x7269;&#xFF0C;&#x4E0D;&#x8FC7;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x6700;&#x5173;&#x5FC3;&#x7684;&#x8FD8;&#x662F;&#x7C7B;&#x578B;&#x548C;&#x51FD;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x628A;&#x8303;&#x7574;&#x5B66;&#x8FD0;&#x7528;&#x5230;&#x5B83;&#x4EEC;&#x8EAB;&#x4E0A;&#x770B;&#x770B;&#x3002;</p>
+<p><strong>&#x5BF9;&#x8C61;&#x7684;&#x641C;&#x96C6;</strong></p>
+<p>&#x5BF9;&#x8C61;&#x5C31;&#x662F;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4F8B;&#x5982; <code>String</code>&#x3001;<code>Boolean</code>&#x3001;<code>Number</code> &#x548C; <code>Object</code> &#x7B49;&#x7B49;&#x3002;&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x628A;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x89C6;&#x4F5C;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x7684;&#x503C;&#x7684;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#xFF08;set&#xFF09;&#x3002;&#x50CF; <code>Boolean</code> &#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F; <code>[true, false]</code> &#x7684;&#x96C6;&#x5408;&#xFF0C;<code>Number</code> &#x53EF;&#x4EE5;&#x662F;&#x6240;&#x6709;&#x5B9E;&#x6570;&#x7684;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x3002;&#x628A;&#x7C7B;&#x578B;&#x5F53;&#x4F5C;&#x96C6;&#x5408;&#x5BF9;&#x5F85;&#x662F;&#x6709;&#x597D;&#x5904;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x96C6;&#x5408;&#x8BBA;&#xFF08;set theory&#xFF09;&#x5904;&#x7406;&#x7C7B;&#x578B;&#x3002;</p>
+<p><strong>&#x6001;&#x5C04;&#x7684;&#x641C;&#x96C6;</strong></p>
+<p>&#x6001;&#x5C04;&#x662F;&#x6807;&#x51C6;&#x7684;&#x3001;&#x666E;&#x901A;&#x7684;&#x7EAF;&#x51FD;&#x6570;&#x3002;</p>
+<p><strong>&#x6001;&#x5C04;&#x7684;&#x7EC4;&#x5408;</strong></p>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x731C;&#x5230;&#x4E86;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x672C;&#x7AE0;&#x4ECB;&#x7ECD;&#x7684;&#x65B0;&#x73A9;&#x610F;&#x513F;&#x2014;&#x2014;<code>&#x7EC4;&#x5408;</code>&#x3002;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8BA8;&#x8BBA;&#x8FC7; <code>compose</code> &#x51FD;&#x6570;&#x662F;&#x7B26;&#x5408;&#x7ED3;&#x5408;&#x5F8B;&#x7684;&#xFF0C;&#x8FD9;&#x5E76;&#x975E;&#x5DE7;&#x5408;&#xFF0C;&#x7ED3;&#x5408;&#x5F8B;&#x662F;&#x5728;&#x8303;&#x7574;&#x5B66;&#x4E2D;&#x5BF9;&#x4EFB;&#x4F55;&#x7EC4;&#x5408;&#x90FD;&#x9002;&#x7528;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x3002;</p>
+<p>&#x8FD9;&#x5F20;&#x56FE;&#x5C55;&#x793A;&#x4E86;&#x4EC0;&#x4E48;&#x662F;&#x7EC4;&#x5408;&#xFF1A;</p>
+<p><img src="images/cat_comp1.png">
+<img src="images/cat_comp2.png"></p>
+<p>&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> g = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>)</span>{ <span class="hljs-keyword">return</span> x.length; };
+<span class="hljs-keyword">var</span> f = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>)</span>{ <span class="hljs-keyword">return</span> x === <span class="hljs-number">4</span>; };
+<span class="hljs-keyword">var</span> isFourLetterWord = compose(f, g);
+</code></pre>
+<p><strong>identity &#x8FD9;&#x4E2A;&#x72EC;&#x7279;&#x7684;&#x6001;&#x5C04;</strong></p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; <code>id</code> &#x7684;&#x5B9E;&#x7528;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x968F;&#x4FBF;&#x4EC0;&#x4E48;&#x8F93;&#x5165;&#x7136;&#x540E;&#x539F;&#x5C01;&#x4E0D;&#x52A8;&#x5730;&#x8FD4;&#x56DE;&#x5B83;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> id = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>)</span>{ <span class="hljs-keyword">return</span> x; };
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x95EE;&#x201C;&#x8FD9;&#x5230;&#x5E95;&#x54EA;&#x91CC;&#x6709;&#x7528;&#x4E86;&#xFF1F;&#x201D;&#x3002;&#x522B;&#x6025;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5728;&#x968F;&#x540E;&#x7684;&#x7AE0;&#x8282;&#x4E2D;&#x62D3;&#x5C55;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#xFF0C;&#x6682;&#x65F6;&#x5148;&#x628A;&#x5B83;&#x5F53;&#x4F5C;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x66FF;&#x4EE3;&#x7ED9;&#x5B9A;&#x503C;&#x7684;&#x51FD;&#x6570;&#x2014;&#x2014;&#x4E00;&#x4E2A;&#x5047;&#x88C5;&#x81EA;&#x5DF1;&#x662F;&#x666E;&#x901A;&#x6570;&#x636E;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p><code>id</code> &#x51FD;&#x6570;&#x8DDF;&#x7EC4;&#x5408;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x7B80;&#x76F4;&#x5B8C;&#x7F8E;&#x3002;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x5BF9;&#x6240;&#x6709;&#x7684;&#x4E00;&#x5143;&#x51FD;&#x6570;&#xFF08;unary function&#xFF09;&#xFF08;&#x4E00;&#x5143;&#x51FD;&#x6570;&#xFF1A;&#x53EA;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#xFF09; <code>f</code> &#x90FD;&#x6210;&#x7ACB;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// identity</span>
+compose(id, f) == compose(f, id) == f;
+<span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x563F;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x5B9E;&#x6570;&#x7684;&#x5355;&#x4F4D;&#x5143;&#xFF08;identity property&#xFF09;&#x561B;&#xFF01;&#x5982;&#x679C;&#x8FD9;&#x8FD8;&#x4E0D;&#x591F;&#x6E05;&#x695A;&#x76F4;&#x767D;&#xFF0C;&#x522B;&#x7740;&#x6025;&#xFF0C;&#x6162;&#x6162;&#x7406;&#x89E3;&#x5B83;&#x7684;&#x65E0;&#x7528;&#x6027;&#x3002;&#x5F88;&#x5FEB;&#x6211;&#x4EEC;&#x5C31;&#x4F1A;&#x5230;&#x5904;&#x4F7F;&#x7528; <code>id</code> &#x4E86;&#xFF0C;&#x4E0D;&#x8FC7;&#x6682;&#x65F6;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x628A;&#x5F53;&#x4F5C;&#x4E00;&#x4E2A;&#x66FF;&#x4EE3;&#x7ED9;&#x5B9A;&#x503C;&#x7684;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x5BF9;&#x5199; pointfree &#x7684;&#x4EE3;&#x7801;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</p>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x4EE5;&#x4E0A;&#x5C31;&#x662F;&#x7C7B;&#x578B;&#x548C;&#x51FD;&#x6570;&#x7684;&#x8303;&#x7574;&#x3002;&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x4F60;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x542C;&#x8BF4;&#x8FD9;&#x4E9B;&#x6982;&#x5FF5;&#xFF0C;&#x6211;&#x4F30;&#x8BA1;&#x4F60;&#x8FD8;&#x662F;&#x6709;&#x4E9B;&#x8FF7;&#x7CCA;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x8303;&#x7574;&#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x6709;&#x7528;&#x3002;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x672C;&#x4E66;&#x5168;&#x4E66;&#x90FD;&#x5728;&#x501F;&#x52A9;&#x8FD9;&#x4E9B;&#x77E5;&#x8BC6;&#x7F16;&#x5199;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x3002;&#x81F3;&#x4E8E;&#x73B0;&#x5728;&#xFF0C;&#x5C31;&#x5728;&#x672C;&#x7AE0;&#xFF0C;&#x672C;&#x884C;&#x6587;&#x5B57;&#x4E2D;&#xFF0C;&#x4F60;&#x81F3;&#x5C11;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x5B83;&#x5411;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x6709;&#x5173;&#x7EC4;&#x5408;&#x7684;&#x77E5;&#x8BC6;&#x2014;&#x2014;&#x6BD4;&#x5982;&#x7ED3;&#x5408;&#x5F8B;&#x548C;&#x5355;&#x4F4D;&#x5F8B;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x7C7B;&#x578B;&#x548C;&#x51FD;&#x6570;&#xFF0C;&#x8FD8;&#x6709;&#x4EC0;&#x4E48;&#x8303;&#x7574;&#x5462;&#xFF1F;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6709;&#x5411;&#x56FE;&#xFF08;directed graph&#xFF09;&#xFF0C;&#x4EE5;&#x8282;&#x70B9;&#x4E3A;&#x5BF9;&#x8C61;&#xFF0C;&#x4EE5;&#x8FB9;&#x4E3A;&#x6001;&#x5C04;&#xFF0C;&#x4EE5;&#x8DEF;&#x5F84;&#x8FDE;&#x63A5;&#x4E3A;&#x7EC4;&#x5408;&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5B9E;&#x6570;&#x7C7B;&#x578B;&#xFF08;Number&#xFF09;&#xFF0C;&#x4EE5;&#x6240;&#x6709;&#x7684;&#x5B9E;&#x6570;&#x5BF9;&#x8C61;&#xFF0C;&#x4EE5; <code>&gt;=</code> &#x4E3A;&#x6001;&#x5C04;&#xFF08;&#x5B9E;&#x9645;&#x4E0A;&#x4EFB;&#x4F55;&#x504F;&#x5E8F;&#xFF08;partial order&#xFF09;&#x6216;&#x5168;&#x5E8F;&#xFF08;total order&#xFF09;&#x90FD;&#x53EF;&#x4EE5;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x8303;&#x7574;&#xFF09;&#x3002;&#x8303;&#x7574;&#x7684;&#x603B;&#x6570;&#x662F;&#x65E0;&#x9650;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x8FBE;&#x5230;&#x672C;&#x4E66;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x4E0A;&#x9762;&#x5B9A;&#x4E49;&#x7684;&#x8303;&#x7574;&#x5C31;&#x597D;&#x4E86;&#x3002;&#x81F3;&#x6B64;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5927;&#x81F4;&#x6D4F;&#x89C8;&#x4E86;&#x4E00;&#x4E9B;&#x8868;&#x9762;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x7EE7;&#x7EED;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x4E86;&#x3002;</p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>&#x7EC4;&#x5408;&#x50CF;&#x4E00;&#x7CFB;&#x5217;&#x7BA1;&#x9053;&#x90A3;&#x6837;&#x628A;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;&#x8054;&#x7CFB;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x6570;&#x636E;&#x5C31;&#x53EF;&#x4EE5;&#x4E5F;&#x5FC5;&#x987B;&#x5728;&#x5176;&#x4E2D;&#x6D41;&#x52A8;&#x2014;&#x2014;&#x6BD5;&#x7ADF;&#x7EAF;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x8F93;&#x5165;&#x5BF9;&#x8F93;&#x51FA;&#xFF0C;&#x6240;&#x4EE5;&#x6253;&#x7834;&#x8FD9;&#x4E2A;&#x94FE;&#x6761;&#x5C31;&#x662F;&#x4E0D;&#x5C0A;&#x91CD;&#x8F93;&#x51FA;&#xFF0C;&#x5C31;&#x4F1A;&#x8BA9;&#x6211;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x4E00;&#x65E0;&#x662F;&#x5904;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x8BA4;&#x4E3A;&#x7EC4;&#x5408;&#x662F;&#x9AD8;&#x4E8E;&#x5176;&#x4ED6;&#x6240;&#x6709;&#x539F;&#x5219;&#x7684;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x7EC4;&#x5408;&#x8BA9;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x7B80;&#x5355;&#x800C;&#x5BCC;&#x6709;&#x53EF;&#x8BFB;&#x6027;&#x3002;&#x53E6;&#x5916;&#x8303;&#x7574;&#x5B66;&#x5C06;&#x5728;&#x5E94;&#x7528;&#x67B6;&#x6784;&#x3001;&#x6A21;&#x62DF;&#x526F;&#x4F5C;&#x7528;&#x548C;&#x4FDD;&#x8BC1;&#x6B63;&#x786E;&#x6027;&#x65B9;&#x9762;&#x626E;&#x6F14;&#x91CD;&#x8981;&#x89D2;&#x8272;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x77E5;&#x8BC6;&#x53BB;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x5B9E;&#x9645;&#x7684;&#x7EC3;&#x4E60;&#x4E86;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x793A;&#x4F8B;&#x5E94;&#x7528;&#x3002;</p>
+<p><a href="ch6.html">&#x7B2C; 6 &#x7AE0;: &#x793A;&#x4F8B;&#x5E94;&#x7528;</a></p>
+<h2 id="&#x7EC3;&#x4E60;">&#x7EC3;&#x4E60;</h2>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;../../support&apos;</span>);
+<span class="hljs-keyword">var</span> _ = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;ramda&apos;</span>);
+<span class="hljs-keyword">var</span> accounting = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;accounting&apos;</span>);
+
+<span class="hljs-comment">// &#x793A;&#x4F8B;&#x6570;&#x636E;</span>
+<span class="hljs-keyword">var</span> CARS = [
+    {name: <span class="hljs-string">&quot;Ferrari FF&quot;</span>, horsepower: <span class="hljs-number">660</span>, dollar_value: <span class="hljs-number">700000</span>, in_stock: <span class="hljs-literal">true</span>},
+    {name: <span class="hljs-string">&quot;Spyker C12 Zagato&quot;</span>, horsepower: <span class="hljs-number">650</span>, dollar_value: <span class="hljs-number">648000</span>, in_stock: <span class="hljs-literal">false</span>},
+    {name: <span class="hljs-string">&quot;Jaguar XKR-S&quot;</span>, horsepower: <span class="hljs-number">550</span>, dollar_value: <span class="hljs-number">132000</span>, in_stock: <span class="hljs-literal">false</span>},
+    {name: <span class="hljs-string">&quot;Audi R8&quot;</span>, horsepower: <span class="hljs-number">525</span>, dollar_value: <span class="hljs-number">114200</span>, in_stock: <span class="hljs-literal">false</span>},
+    {name: <span class="hljs-string">&quot;Aston Martin One-77&quot;</span>, horsepower: <span class="hljs-number">750</span>, dollar_value: <span class="hljs-number">1850000</span>, in_stock: <span class="hljs-literal">true</span>},
+    {name: <span class="hljs-string">&quot;Pagani Huayra&quot;</span>, horsepower: <span class="hljs-number">700</span>, dollar_value: <span class="hljs-number">1300000</span>, in_stock: <span class="hljs-literal">false</span>}
+  ];
+
+<span class="hljs-comment">// &#x7EC3;&#x4E60; 1:</span>
+<span class="hljs-comment">// ============</span>
+<span class="hljs-comment">// &#x4F7F;&#x7528; _.compose() &#x91CD;&#x5199;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;&#x63D0;&#x793A;&#xFF1A;_.prop() &#x662F; curry &#x51FD;&#x6570;</span>
+<span class="hljs-keyword">var</span> isLastInStock = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cars</span>) </span>{
+  <span class="hljs-keyword">var</span> last_car = _.last(cars);
+  <span class="hljs-keyword">return</span> _.prop(<span class="hljs-string">&apos;in_stock&apos;</span>, last_car);
+};
+
+<span class="hljs-comment">// &#x7EC3;&#x4E60; 2:</span>
+<span class="hljs-comment">// ============</span>
+<span class="hljs-comment">// &#x4F7F;&#x7528; _.compose()&#x3001;_.prop() &#x548C; _.head() &#x83B7;&#x53D6;&#x7B2C;&#x4E00;&#x4E2A; car &#x7684; name</span>
+<span class="hljs-keyword">var</span> nameOfFirstCar = <span class="hljs-literal">undefined</span>;
+
+
+<span class="hljs-comment">// &#x7EC3;&#x4E60; 3:</span>
+<span class="hljs-comment">// ============</span>
+<span class="hljs-comment">// &#x4F7F;&#x7528;&#x5E2E;&#x52A9;&#x51FD;&#x6570; _average &#x91CD;&#x6784; averageDollarValue &#x4F7F;&#x4E4B;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x7EC4;&#x5408;</span>
+<span class="hljs-keyword">var</span> _average = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">xs</span>) </span>{ <span class="hljs-keyword">return</span> reduce(add, <span class="hljs-number">0</span>, xs) / xs.length; }; <span class="hljs-comment">// &lt;- &#x65E0;&#x987B;&#x6539;&#x52A8;</span>
+
+<span class="hljs-keyword">var</span> averageDollarValue = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cars</span>) </span>{
+  <span class="hljs-keyword">var</span> dollar_values = map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">c</span>) </span>{ <span class="hljs-keyword">return</span> c.dollar_value; }, cars);
+  <span class="hljs-keyword">return</span> _average(dollar_values);
+};
+
+
+<span class="hljs-comment">// &#x7EC3;&#x4E60; 4:</span>
+<span class="hljs-comment">// ============</span>
+<span class="hljs-comment">// &#x4F7F;&#x7528; compose &#x5199;&#x4E00;&#x4E2A; sanitizeNames() &#x51FD;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E0B;&#x5212;&#x7EBF;&#x8FDE;&#x63A5;&#x7684;&#x5C0F;&#x5199;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;&#x4F8B;&#x5982;&#xFF1A;sanitizeNames([&quot;Hello World&quot;]) //=&gt; [&quot;hello_world&quot;]&#x3002;</span>
+
+<span class="hljs-keyword">var</span> _underscore = replace(<span class="hljs-regexp">/\W+/g</span>, <span class="hljs-string">&apos;_&apos;</span>); <span class="hljs-comment">//&lt;-- &#x65E0;&#x987B;&#x6539;&#x52A8;&#xFF0C;&#x5E76;&#x5728; sanitizeNames &#x4E2D;&#x4F7F;&#x7528;&#x5B83;</span>
+
+<span class="hljs-keyword">var</span> sanitizeNames = <span class="hljs-literal">undefined</span>;
+
+
+<span class="hljs-comment">// &#x5F69;&#x86CB; 1:</span>
+<span class="hljs-comment">// ============</span>
+<span class="hljs-comment">// &#x4F7F;&#x7528; compose &#x91CD;&#x6784; availablePrices</span>
+
+<span class="hljs-keyword">var</span> availablePrices = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cars</span>) </span>{
+  <span class="hljs-keyword">var</span> available_cars = _.filter(_.prop(<span class="hljs-string">&apos;in_stock&apos;</span>), cars);
+  <span class="hljs-keyword">return</span> available_cars.map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>)</span>{
+    <span class="hljs-keyword">return</span> accounting.formatMoney(x.dollar_value);
+  }).join(<span class="hljs-string">&apos;, &apos;</span>);
+};
+
+
+<span class="hljs-comment">// &#x5F69;&#x86CB; 2:</span>
+<span class="hljs-comment">// ============</span>
+<span class="hljs-comment">// &#x91CD;&#x6784;&#x4F7F;&#x4E4B;&#x6210;&#x4E3A; pointfree &#x51FD;&#x6570;&#x3002;&#x63D0;&#x793A;&#xFF1A;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; _.flip()</span>
+
+<span class="hljs-keyword">var</span> fastestCar = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cars</span>) </span>{
+  <span class="hljs-keyword">var</span> sorted = _.sortBy(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">car</span>)</span>{ <span class="hljs-keyword">return</span> car.horsepower }, cars);
+  <span class="hljs-keyword">var</span> fastest = _.last(sorted);
+  <span class="hljs-keyword">return</span> fastest.name + <span class="hljs-string">&apos; is the fastest&apos;</span>;
+};
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch4.html#总结" class="navigation navigation-prev " aria-label="Previous page: 总结">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch5.html#函数饲养" class="navigation navigation-next " aria-label="Next page: 函数饲养">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第 5 章: 代码组合（compose）","level":"1.6","depth":1,"next":{"title":"函数饲养","level":"1.6.1","depth":2,"anchor":"#函数饲养","path":"ch5.md","ref":"ch5.md#函数饲养","articles":[]},"previous":{"title":"总结","level":"1.5.3","depth":2,"anchor":"#总结","path":"ch4.md","ref":"ch4.md#总结","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 函数式编程","links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"JavaScript 函数式编程"},"file":{"path":"ch5.md","mtime":"2016-06-20T01:40:23.910Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:39:47.208Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

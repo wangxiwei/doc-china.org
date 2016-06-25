@@ -1,0 +1,694 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>TTY · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="UdpDatagramSockets.html" />
+    
+    
+    <link rel="prev" href="TlsSsl.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >TTY</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tty">TTY</h1>
+<h3 id="stability-2---stable">Stability: 2 - Stable</h3>
+<p><code>tty</code>&#x6A21;&#x5757;&#x4E3B;&#x8981;&#x63D0;&#x4F9B;&#x4E86;<code>tty.ReadStream</code>&#x548C;<code>tty.WriteStream</code>&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x3002;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x3002;</p>
+<p>&#x5F53;<code>node.js</code>&#x68C0;&#x6D4B;&#x5230;&#x5B83;&#x8FD0;&#x884C;&#x4E8E;TTY&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;<code>process.stdin</code>&#x5C06;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;<code>tty.ReadStream</code>&#x5B9E;&#x4F8B;&#xFF0C;<code>process.stdout</code>&#x5C06;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;<code>tty.WriteStream</code>&#x5B9E;&#x4F8B;&#x3002;&#x6D4B;&#x8BD5;<code>node.js</code>&#x662F;&#x5426;&#x8FD0;&#x884C;&#x5728;TTY&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x529E;&#x6CD5;&#x662F;&#x68C0;&#x67E5;<code>process.stdout.isTTY</code>&#xFF1A;</p>
+<pre><code class="lang-SHELL">$ iojs -p -e &quot;Boolean(process.stdout.isTTY)&quot;
+true
+$ iojs -p -e &quot;Boolean(process.stdout.isTTY)&quot; | cat
+false
+</code></pre>
+<h4 id="ttyisattyfd">tty.isatty(fd)</h4>
+<p>&#x5982;&#x679C;<code>fd</code>&#x5173;&#x8054;&#x4E86;&#x7EC8;&#x7AEF;&#xFF0C;&#x5C31;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x53CD;&#x4E4B;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<h4 id="ttysetrawmodemode">tty.setRawMode(mode)</h4>
+<p>&#x5DF2;&#x5F03;&#x7528;&#x3002;&#x4F7F;&#x7528;<code>tty.ReadStream#setRawMode()</code>&#xFF08;&#x5982;<code>process.stdin.setRawMode()</code>&#xFF09;&#x4EE3;&#x66FF;&#x3002;</p>
+<h4 id="class-readstream">Class: ReadStream</h4>
+<p>&#x4E00;&#x4E2A;<code>net.Socket</code>&#x5B50;&#x7C7B;&#xFF0C;&#x4EE3;&#x8868;&#x4E86;&#x4E00;&#x4E2A;TTY&#x4E2D;&#x7684;&#x53EF;&#x8BFB;&#x90E8;&#x5206;&#x3002;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5728;&#x4EFB;&#x4F55;<code>node.js</code>&#x7A0B;&#x5E8F;&#xFF08;&#x4EC5;&#x5F53;<code>isatty(0)</code>&#x4E3A;<code>true</code>&#x65F6;&#xFF09;&#x4E2D;&#xFF0C;<code>process.stdin</code>&#x5C06;&#x662F;&#x4EC5;&#x6709;&#x7684;<code>tty.ReadStream</code>&#x5B9E;&#x4F8B;&#x3002;</p>
+<h4 id="rsisraw">rs.isRaw</h4>
+<p>&#x4E00;&#x4E2A;&#x88AB;&#x521D;&#x59CB;&#x5316;&#x4E3A;<code>false</code>&#x7684;&#x5E03;&#x5C14;&#x503C;&#x3002;&#x5B83;&#x4EE3;&#x8868;&#x4E86;<code>tty.ReadStream</code>&#x5B9E;&#x4F8B;&#x7684;&#x201C;&#x539F;&#x59CB;&#x201D;&#x72B6;&#x6001;&#x3002;</p>
+<h4 id="rssetrawmodemode">rs.setRawMode(mode)</h4>
+<p><code>mode</code>&#x5FC5;&#x987B;&#x4E3A;<code>true</code>&#x6216;<code>false</code>&#x3002;&#x5B83;&#x8BBE;&#x5B9A;<code>tty.ReadStream</code>&#x7684;&#x5C5E;&#x6027;&#x8868;&#x73B0;&#x5F97;&#x50CF;&#x539F;&#x59CB;&#x8BBE;&#x5907;&#x6216;&#x9ED8;&#x8BA4;&#x503C;&#x3002;<code>isRaw</code>&#x5C06;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x7ED3;&#x679C;&#x6A21;&#x5F0F;&#xFF08;resulting mode&#xFF09;&#x3002;</p>
+<h4 id="class-writestream">Class: WriteStream</h4>
+<p>&#x4E00;&#x4E2A;<code>net.Socket</code>&#x5B50;&#x7C7B;&#xFF0C;&#x4EE3;&#x8868;&#x4E86;&#x4E00;&#x4E2A;TTY&#x4E2D;&#x7684;&#x53EF;&#x5199;&#x90E8;&#x5206;&#x3002;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5728;&#x4EFB;&#x4F55;<code>node.js</code>&#x7A0B;&#x5E8F;&#xFF08;&#x4EC5;&#x5F53;<code>isatty(1)</code>&#x4E3A;<code>true</code>&#x65F6;&#xFF09;&#x4E2D;&#xFF0C;<code>process.stdout</code>&#x5C06;&#x662F;&#x4EC5;&#x6709;&#x7684;<code>tty.WriteStream</code>&#x5B9E;&#x4F8B;&#x3002;</p>
+<h4 id="wscolumns">ws.columns</h4>
+<p>&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x4E86;TTY&#x5F53;&#x524D;&#x62E5;&#x6709;&#x5217;&#x6570;&#x7684;&#x6570;&#x5B57;&#x3002;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x4F1A;&#x901A;&#x8FC7;<code>resize</code>&#x4E8B;&#x4EF6;&#x88AB;&#x66F4;&#x65B0;&#x3002;</p>
+<h4 id="wsrows">ws.rows</h4>
+<p>&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x4E86;TTY&#x5F53;&#x524D;&#x62E5;&#x6709;&#x884C;&#x6570;&#x7684;&#x6570;&#x5B57;&#x3002;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x4F1A;&#x901A;&#x8FC7;<code>resize</code>&#x4E8B;&#x4EF6;&#x88AB;&#x66F4;&#x65B0;&#x3002;</p>
+<h4 id="event-resize">Event: &apos;resize&apos;</h4>
+<ul>
+<li>function () {}</li>
+</ul>
+<p>&#x5F53;&#x5217;&#x5C5E;&#x6027;&#x6216;&#x884C;&#x5C5E;&#x6027;&#x88AB;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;<code>refreshSize()</code>&#x88AB;&#x89E6;&#x53D1;&#x3002;</p>
+<pre><code class="lang-js">process.stdout.on(<span class="hljs-string">&apos;resize&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;screen size has changed!&apos;</span>);
+  <span class="hljs-built_in">console</span>.log(process.stdout.columns + <span class="hljs-string">&apos;x&apos;</span> + process.stdout.rows);
+});
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="TlsSsl.html" class="navigation navigation-prev " aria-label="Previous page: TLS/SSL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="UdpDatagramSockets.html" class="navigation navigation-next " aria-label="Next page: UDP/Datagram">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"TTY","level":"1.29","depth":1,"next":{"title":"UDP/Datagram","level":"1.30","depth":1,"path":"UdpDatagramSockets.md","ref":"UdpDatagramSockets.md","articles":[]},"previous":{"title":"TLS/SSL","level":"1.28","depth":1,"path":"TlsSsl.md","ref":"TlsSsl.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"TTY.md","mtime":"2016-06-20T01:36:09.024Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

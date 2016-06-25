@@ -1,0 +1,1001 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>Crypto · Node.js API 中文文档</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Debugger.html" />
+    
+    
+    <link rel="prev" href="Console.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Assertion-Testing.html">
+            
+                <a href="Assertion-Testing.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Buffer.html">
+            
+                <a href="Buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Child_process.html">
+            
+                <a href="Child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cluster.html">
+            
+                <a href="Cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="Crypto.html">
+            
+                <a href="Crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Debugger.html">
+            
+                <a href="Debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Errors.html">
+            
+                <a href="Errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Events.html">
+            
+                <a href="Events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FileSystem.html">
+            
+                <a href="FileSystem.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Globals.html">
+            
+                <a href="Globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Modules.html">
+            
+                <a href="Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Net.html">
+            
+                <a href="Net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="OS.html">
+            
+                <a href="OS.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Path.html">
+            
+                <a href="Path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Punycode.html">
+            
+                <a href="Punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="QueryStrings.html">
+            
+                <a href="QueryStrings.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Readline.html">
+            
+                <a href="Readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Stream.html">
+            
+                <a href="Stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="StringDecoder.html">
+            
+                <a href="StringDecoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Timers.html">
+            
+                <a href="Timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="TlsSsl.html">
+            
+                <a href="TlsSsl.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="UdpDatagramSockets.html">
+            
+                <a href="UdpDatagramSockets.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="Utilities.html">
+            
+                <a href="Utilities.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="VM.html">
+            
+                <a href="VM.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Crypto</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="crypto">Crypto</h1>
+<h3 id="&#x7A33;&#x5B9A;&#x5EA6;-2---&#x7A33;&#x5B9A;">&#x7A33;&#x5B9A;&#x5EA6;: 2 - &#x7A33;&#x5B9A;</h3>
+<p>&#x4F7F;&#x7528;<code>require(&apos;crypto&apos;)</code>&#x6765;&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x3002;</p>
+<p><code>crypto</code>&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5C01;&#x88C5;&#x5B89;&#x5168;&#x8BC1;&#x4E66;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x6765;&#x4F5C;&#x4E3A;&#x5B89;&#x5168;HTTPS&#x7F51;&#x7EDC;&#x548C;HTTP&#x94FE;&#x63A5;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x5B83;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;OpenSSL <code>hash</code>&#xFF0C;<code>hamc</code>&#xFF0C;<code>cipher</code>&#xFF0C;<code>decipher</code>&#xFF0C;<code>sign</code>&#x548C;<code>vierify</code>&#x65B9;&#x6CD5;&#x7684;&#x5305;&#x88C5;&#x96C6;&#x5408;&#x3002;</p>
+<h4 id="cryptosetengineengine-flags">crypto.setEngine(engine[, flags])</h4>
+<p>&#x52A0;&#x8F7D;&#x548C;&#x8BBE;&#x7F6E; &#x4E00;&#x4E9B;/&#x6240;&#x6709; OpenSSL&#x529F;&#x80FD;&#x5F15;&#x64CE;&#xFF08;&#x7531;&#x6807;&#x8BB0;&#x9009;&#x62E9;&#xFF09;&#x3002;</p>
+<p>&#x5F15;&#x64CE;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;id&#x6216; &#x5F15;&#x64CE;&#x5171;&#x4EAB;&#x5E93;&#x7684;&#x8DEF;&#x5F84; &#x6765;&#x9009;&#x62E9;&#x3002;</p>
+<p><code>flags</code>&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x4E00;&#x4E2A;<code>ENGINE_METHOD_ALL</code>&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x53EF;&#x4EE5;&#x9009;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x4EE5;&#x4E0B;&#x7684;&#x6807;&#x8BB0;&#xFF08;&#x5728;&#x5E38;&#x91CF;&#x6A21;&#x5757;&#x4E2D;&#x5B9A;&#x4E49;&#xFF09;&#x3002;</p>
+<ul>
+<li>ENGINE_METHOD_RSA</li>
+<li>ENGINE_METHOD_DSA</li>
+<li>ENGINE_METHOD_DH</li>
+<li>ENGINE_METHOD_RAND</li>
+<li>ENGINE_METHOD_ECDH</li>
+<li>ENGINE_METHOD_ECDSA</li>
+<li>ENGINE_METHOD_CIPHERS</li>
+<li>ENGINE_METHOD_DIGESTS</li>
+<li>ENGINE_METHOD_STORE</li>
+<li>ENGINE_METHOD_PKEY_METH</li>
+<li>ENGINE_METHOD_PKEY_ASN1_METH</li>
+<li>ENGINE_METHOD_ALL</li>
+<li>ENGINE_METHOD_NONE</li>
+</ul>
+<h4 id="cryptogetciphers">crypto.getCiphers()</h4>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x652F;&#x6301;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x7684;&#x540D;&#x5B57;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ciphers = crypto.getCiphers();
+<span class="hljs-built_in">console</span>.log(ciphers); <span class="hljs-comment">// [&apos;aes-128-cbc&apos;, &apos;aes-128-ccm&apos;, ...]</span>
+</code></pre>
+<h4 id="cryptogethashes">crypto.getHashes()</h4>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x652F;&#x6301;&#x7684;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#x7684;&#x540D;&#x5B57;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> hashes = crypto.getHashes();
+<span class="hljs-built_in">console</span>.log(hashes); <span class="hljs-comment">// [&apos;sha&apos;, &apos;sha1&apos;, &apos;sha1WithRSAEncryption&apos;, ...]</span>
+</code></pre>
+<h4 id="cryptogetcurves">crypto.getCurves()</h4>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x652F;&#x6301;&#x7684;&#x692D;&#x5706;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x7684;&#x540D;&#x5B57;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> curves = crypto.getCurves();
+<span class="hljs-built_in">console</span>.log(curves); <span class="hljs-comment">// [&apos;secp256k1&apos;, &apos;secp384r1&apos;, ...]</span>
+</code></pre>
+<h4 id="cryptocreatecredentialsdetails">crypto.createCredentials(details)</h4>
+<blockquote>
+<p>&#x7A33;&#x5B9A;&#x5EA6;: 0 - &#x5F03;&#x7528;&#x3002;&#x4F7F;&#x7528;<code>tls.createSecureContext</code>&#x4EE3;&#x66FF;&#x3002;</p>
+</blockquote>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x52A0;&#x5BC6;&#x51ED;&#x8BC1;&#x5BF9;&#x8C61;&#xFF0C;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x5E26;&#x952E;&#x5B57;&#x5178;<code>details</code>&#xFF1A;</p>
+<ul>
+<li>pfx : &#x4E00;&#x4E2A;&#x5E26;&#x7740;<code>PFX</code>&#x6216;<code>PKCS12</code>&#x52A0;&#x5BC6;&#x7684;&#x79C1;&#x94A5;&#xFF0C;&#x52A0;&#x5BC6;&#x51ED;&#x8BC1;&#x548C;CA&#x8BC1;&#x4E66;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#x3002;</li>
+<li>key : &#x4E00;&#x4E2A;&#x5E26;&#x7740;<code>PEM</code>&#x52A0;&#x5BC6;&#x79C1;&#x94A5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>passphrase : &#x4E00;&#x4E2A;&#x79C1;&#x94A5;&#x6216;<code>pfx</code>&#x5BC6;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>cert : &#x4E00;&#x4E2A;&#x5E26;&#x7740;<code>PEM</code>&#x52A0;&#x5BC6;&#x51ED;&#x8BC1;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>ca : &#x4E00;&#x4E2A;&#x7528;&#x6765;&#x4FE1;&#x4EFB;&#x7684;<code>PEM</code>&#x52A0;&#x5BC6;CA&#x8BC1;&#x4E66;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x5217;&#x8868;&#x3002;</li>
+<li>crl : &#x4E00;&#x4E2A;<code>PEM</code>&#x52A0;&#x5BC6;<code>CRL</code>&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x5217;&#x8868;&#x3002;</li>
+<li>ciphers: &#x4E00;&#x4E2A;&#x63CF;&#x8FF0;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x6216;&#x6392;&#x9664;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x66F4;&#x591A;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x7684;&#x683C;&#x5F0F;&#x7EC6;&#x8282;&#x53C2;&#x9605;<code>http://www.openssl.org/docs/apps/ciphers.html#CIPHER_LIST_FORMAT</code></li>
+</ul>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;<code>ca</code>&#xFF0C;&#x90A3;&#x4E48;<code>node.js</code>&#x5C06;&#x4F1A;&#x4F7F;&#x7528;<code>http://mxr.mozilla.org/mozilla/source/security/nss/lib/ckfw/builtins/certdata.txt.</code>&#x63D0;&#x4F9B;&#x7684;&#x9ED8;&#x8BA4;&#x516C;&#x5171;&#x53EF;&#x4FE1;&#x4EFB;<code>CA</code>&#x5217;&#x8868;&#x3002;</p>
+<h4 id="cryptocreatehashalgorithm">crypto.createHash(algorithm)</h4>
+<p>&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x5BF9;&#x8C61;&#xFF0C;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7B97;&#x6CD5;&#x7684;&#x52A0;&#x5BC6;&#x54C8;&#x5E0C;&#x7528;&#x6765;&#x751F;&#x6210;&#x54C8;&#x5E0C;&#x6458;&#x8981;&#x3002;</p>
+<p><code>algorithm</code>&#x4F9D;&#x8D56;&#x4E8E;&#x5E73;&#x53F0;&#x4E0A;&#x7684;OpenSSL&#x7248;&#x672C;&#x6240;&#x652F;&#x6301;&#x7684;&#x7B97;&#x6CD5;&#x3002;&#x4F8B;&#x5982;<code>&apos;sha1&apos;</code>&#xFF0C;<code>&apos;md5&apos;</code>&#xFF0C;<code>&apos;sha256&apos;</code>&#xFF0C;<code>&apos;sha512&apos;</code>&#x7B49;&#x7B49;&#x3002;<code>openssl list-message-digest-algorithms</code>&#x547D;&#x4EE4;&#x4F1A;&#x5C55;&#x793A;&#x53EF;&#x7528;&#x7684;&#x6458;&#x8981;&#x7B97;&#x6CD5;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x8BA1;&#x7B97;&#x51FA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;sha1&#x6458;&#x8981;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> filename = process.argv[<span class="hljs-number">2</span>];
+<span class="hljs-keyword">var</span> crypto = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;crypto&apos;</span>);
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+
+<span class="hljs-keyword">var</span> shasum = crypto.createHash(<span class="hljs-string">&apos;sha1&apos;</span>);
+
+<span class="hljs-keyword">var</span> s = fs.ReadStream(filename);
+s.on(<span class="hljs-string">&apos;data&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{
+  shasum.update(d);
+});
+
+s.on(<span class="hljs-string">&apos;end&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> d = shasum.digest(<span class="hljs-string">&apos;hex&apos;</span>);
+  <span class="hljs-built_in">console</span>.log(d + <span class="hljs-string">&apos;  &apos;</span> + filename);
+});
+</code></pre>
+<h4 id="class-hash">Class: Hash</h4>
+<p>&#x8FD9;&#x4E2A;&#x7C7B;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x54C8;&#x5E0C;&#x6458;&#x8981;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x540C;&#x65F6;&#x53EF;&#x8BFB;&#x4E0E;&#x53EF;&#x5199;&#x7684;&#x6D41;&#x3002;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x7528;&#x6765;&#x8BA1;&#x7B97;&#x54C8;&#x5E0C;&#x3002;&#x4E00;&#x65E6;&#x5F53;&#x6D41;&#x7684;&#x53EF;&#x5199;&#x7AEF;&#x7EC8;&#x6B62;&#xFF0C;&#x4F7F;&#x7528;<code>read()</code>&#x6765;&#x83B7;&#x53D6;&#x8BA1;&#x7B97;&#x6240;&#x5F97;&#x54C8;&#x5E0C;&#x6458;&#x8981;&#x3002;&#x9057;&#x7559;&#x7684;<code>update</code>&#x548C;<code>digest</code>&#x65B9;&#x6CD5;&#x540C;&#x6837;&#x88AB;&#x652F;&#x6301;&#x3002;</p>
+<p>&#x901A;&#x8FC7;<code>crypto.createHash</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<h4 id="hashupdatedata-inputencoding">hash.update(data[, input_encoding])</h4>
+<p>&#x4F7F;&#x7528;&#x7ED9;&#x5B9A;&#x7684;<code>data</code>&#x66F4;&#x65B0;&#x54C8;&#x5E0C;&#x5185;&#x5BB9;&#xFF0C;&#x901A;&#x8FC7;<code>input_encoding</code>&#x6307;&#x5B9A;&#x7684;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;utf8&apos;</code>&#xFF0C;<code>&apos;ascii&apos;</code>&#x6216;<code>&apos;binary&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x5E76;&#x4E14;&#x8F93;&#x5165;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4F1A;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x4E3A;<code>&apos;binary&apos;</code>&#x3002;&#x5982;&#x679C;<code>data</code>&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#x90A3;&#x4E48;<code>input_encoding</code>&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+<p>&#x5B83;&#x662F;&#x6D41;&#x5F0F;&#x6570;&#x636E;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x88AB;&#x8C03;&#x7528;&#x591A;&#x6B21;&#x3002;</p>
+<h4 id="hashdigestencoding">hash.digest([encoding])</h4>
+<p>&#x8BA1;&#x7B97;&#x6240;&#x6709;&#x7684;&#x88AB;&#x4F20;&#x9012;&#x7684;&#x6570;&#x636E;&#x7684;&#x6458;&#x8981;&#x3002;<code>encoding</code>&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x4E2A;<code>buffer</code>&#x88AB;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5F53;&#x8C03;&#x7528;&#x4E86;<code>digest()</code>&#x65B9;&#x6CD5;&#x4E4B;&#x540E;&#xFF0C;&#x54C8;&#x5E0C;&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x518D;&#x88AB;&#x4F7F;&#x7528;&#x4E86;&#x3002;</p>
+<h4 id="cryptocreatehmacalgorithm-key">crypto.createHmac(algorithm, key)</h4>
+<p>&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;hmac&#x5BF9;&#x8C61;&#xFF0C;&#x5373;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x7684;&#x7B97;&#x6CD5;&#x548C;&#x5BC6;&#x94A5;&#x751F;&#x6210;&#x7684;&#x52A0;&#x5BC6;&#x56FE;&#x8C31;&#xFF08;cryptographic&#xFF09;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x65E2;&#x53EF;&#x8BFB;&#x53C8;&#x53EF;&#x5199;&#x7684;&#x6D41;&#x3002;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x88AB;&#x7528;&#x6765;&#x8BA1;&#x7B97;hamc&#x3002;&#x4E00;&#x65E6;&#x5F53;&#x6D41;&#x7684;&#x53EF;&#x5199;&#x7AEF;&#x7EC8;&#x6B62;&#xFF0C;&#x4F7F;&#x7528;<code>read()</code>&#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x8BA1;&#x7B97;&#x6240;&#x5F97;&#x6458;&#x8981;&#x503C;&#x3002;&#x9057;&#x7559;&#x7684;<code>update</code>&#x548C;<code>digest</code>&#x65B9;&#x6CD5;&#x540C;&#x6837;&#x88AB;&#x652F;&#x6301;&#x3002;</p>
+<p><code>algorithm</code>&#x4F9D;&#x8D56;&#x4E8E;&#x5E73;&#x53F0;&#x4E0A;&#x7684;OpenSSL&#x7248;&#x672C;&#x6240;&#x652F;&#x6301;&#x7684;&#x7B97;&#x6CD5;&#x3002;&#x53C2;&#x9605;&#x4E0A;&#x6587;<code>createHash</code>&#x3002;<code>key</code>&#x662F;&#x8981;&#x4F7F;&#x7528;&#x7684;hmac&#x5BC6;&#x94A5;&#x3002;</p>
+<h4 id="class-hmac">Class: Hmac</h4>
+<p>&#x7528;&#x4E8E;&#x521B;&#x5EFA;hmac&#x52A0;&#x5BC6;&#x56FE;&#x8C31;&#xFF08;cryptographic&#xFF09;&#x7684;&#x7C7B;&#x3002;</p>
+<p>&#x901A;&#x8FC7;<code>crypto.createHmac</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<h4 id="hmacupdatedata">hmac.update(data)</h4>
+<p>&#x53EA;&#x7528;&#x6307;&#x5B9A;&#x7684;<code>data</code>&#x66F4;&#x65B0;hmac&#x5185;&#x5BB9;&#x3002;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x6D41;&#x5F0F;&#x6570;&#x636E;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x88AB;&#x8C03;&#x7528;&#x591A;&#x6B21;&#x3002;</p>
+<h4 id="hmacdigestencoding">hmac.digest([encoding])</h4>
+<p>&#x8BA1;&#x7B97;&#x6240;&#x6709;&#x7684;&#x88AB;&#x4F20;&#x9012;&#x7684;&#x6570;&#x636E;&#x7684;hmac&#x6458;&#x8981;&#x3002;<code>encoding</code>&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x4E2A;<code>buffer</code>&#x88AB;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5F53;&#x8C03;&#x7528;&#x4E86;<code>digest()</code>&#x65B9;&#x6CD5;&#x4E4B;&#x540E;&#xFF0C;hmac&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x518D;&#x88AB;&#x4F7F;&#x7528;&#x4E86;&#x3002;</p>
+<h4 id="cryptocreatecipheralgorithm-password">crypto.createCipher(algorithm, password)</h4>
+<p>&#x521B;&#x5EFA;&#x548C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>cipher</code>&#x5BF9;&#x8C61;&#xFF0C;&#x6307;&#x5B9A;&#x6307;&#x5B9A;&#x7684;&#x7B97;&#x6CD5;&#x548C;&#x5BC6;&#x7801;&#x3002;</p>
+<p>&#x7B97;&#x6CD5;&#x4F9D;&#x8D56;&#x4E8E;OpenSSL&#xFF0C;&#x5982;&#x679C;<code>&apos;aes192&apos;</code>&#xFF0C;&#x7B49;&#x7B49;&#x3002;&#x5728;&#x6700;&#x8FD1;&#x7684;&#x53D1;&#x884C;&#x7248;&#x4E2D;&#xFF0C;<code>openssl list-cipher-algorithms</code>&#x547D;&#x4EE4;&#x4F1A;&#x5C55;&#x793A;&#x53EF;&#x7528;&#x7684;<code>cipher</code>&#x7B97;&#x6CD5;&#x3002;&#x5BC6;&#x7801;&#x88AB;&#x7528;&#x6765;&#x83B7;&#x53D6;&#x5BC6;&#x94A5;&#x548C;IV&#xFF0C;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;<code>&apos;binary&apos;</code>&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x65E2;&#x53EF;&#x8BFB;&#x53C8;&#x53EF;&#x5199;&#x7684;&#x6D41;&#x3002;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x88AB;&#x7528;&#x6765;&#x8BA1;&#x7B97;&#x54C8;&#x5E0C;&#x3002;&#x4E00;&#x65E6;&#x5F53;&#x6D41;&#x7684;&#x53EF;&#x5199;&#x7AEF;&#x7EC8;&#x6B62;&#xFF0C;&#x4F7F;&#x7528;<code>read()</code>&#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x901A;&#x8FC7;<code>cipher</code>&#x8BA1;&#x7B97;&#x6240;&#x5F97;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x9057;&#x7559;&#x7684;<code>update</code>&#x548C;<code>digest</code>&#x65B9;&#x6CD5;&#x540C;&#x6837;&#x88AB;&#x652F;&#x6301;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;<code>createCipher</code>&#x901A;&#x8FC7; &#x65E0;&#x76D0;<code>MD5</code>&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#x6240;&#x5F97;&#x7684;&#x6458;&#x8981; &#x6765;&#x8C03;&#x7528; <code>OpenSSL&#x51FD;&#x6570;</code>EVP_BytesToKey` &#x6765;&#x6D3E;&#x751F;&#x5BC6;&#x94A5;&#x3002;&#x65E0;&#x76D0;&#x610F;&#x5473;&#x5141;&#x8BB8;&#x5B57;&#x5178;&#x653B;&#x51FB;&#xFF0C;&#x5373;&#x540C;&#x6837;&#x7684;&#x5BC6;&#x7801;&#x7ECF;&#x5E38;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x540C;&#x6837;&#x7684;&#x5BC6;&#x94A5;&#x3002;&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#x5E76;&#x4E14;&#x65E0;&#x52A0;&#x5BC6;&#x56FE;&#x8C31;&#x5B89;&#x5168;&#xFF08;non-cryptographically secure&#xFF09;&#x4EE5;&#x4E3A;&#x7740;&#x5141;&#x8BB8;&#x5BC6;&#x7801;&#x88AB;&#x5FEB;&#x901F;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p>OpenSSL&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;<code>pbkdf2</code>&#x66FF;&#x4EE3;<code>EVP_BytesToKey</code>&#xFF0C;&#x63A8;&#x8350;&#x4F60;&#x901A;&#x8FC7;<code>crypto.pbkdf2</code>&#x7136;&#x540E;&#x8C03;&#x7528;<code>createCipheriv()</code>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>cipher</code>&#x6D41;&#x6765;&#x6D3E;&#x751F;&#x4E00;&#x4E2A;&#x5BC6;&#x94A5;&#x548C;iv&#x3002;</p>
+<h4 id="cryptocreatecipherivalgorithm-key-iv">crypto.createCipheriv(algorithm, key, iv)</h4>
+<p>&#x521B;&#x5EFA;&#x548C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>cipher</code>&#x5BF9;&#x8C61;&#xFF0C;&#x6307;&#x5B9A;&#x6307;&#x5B9A;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x5BC6;&#x94A5;&#x548C;iv&#x3002;</p>
+<p><code>algorithm</code>&#x53C2;&#x6570;&#x4E0E;<code>createCipher()</code>&#x76F8;&#x540C;&#x3002;<code>key</code>&#x662F;&#x88AB;&#x7B97;&#x6CD5;&#x4F7F;&#x7528;&#x7684;&#x6E90;&#x5BC6;&#x94A5;&#xFF08;raw key&#xFF09;&#x3002;iv&#x662F;&#x521D;&#x59CB;&#x5316;&#x77E2;&#x91CF;&#xFF08;initialization vector&#xFF09;&#x3002;</p>
+<p><code>key</code>&#x548C;<code>iv</code>&#x5FC5;&#x987B;&#x662F;<code>&apos;binary&apos;</code>&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#x3002;</p>
+<h4 id="class-cipher">Class: Cipher</h4>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x7531;<code>crypto.createCipher</code>&#x548C;<code>crypto.createCipheriv</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x65E2;&#x53EF;&#x8BFB;&#x53C8;&#x53EF;&#x5199;&#x7684;&#x6D41;&#x3002;&#x5199;&#x5165;&#x7684;&#x6587;&#x672C;&#x6570;&#x636E;&#x88AB;&#x7528;&#x6765;&#x5728;&#x53EF;&#x8BFB;&#x7AEF;&#x751F;&#x4EA7;&#x88AB;&#x52A0;&#x5BC6;&#x7684;&#x6570;&#x636E;&#x3002;&#x9057;&#x7559;&#x7684;<code>update</code>&#x548C;<code>final</code>&#x65B9;&#x6CD5;&#x540C;&#x6837;&#x88AB;&#x652F;&#x6301;&#x3002;</p>
+<h4 id="cipherupdatedata-inputencoding-outputencoding">cipher.update(data[, input_encoding][, output_encoding])</h4>
+<p>&#x901A;&#x8FC7;<code>data</code>&#x66F4;&#x65B0;<code>cipher</code>&#xFF0C;<code>input_encoding</code>&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;utf8&apos;</code>&#xFF0C;<code>&apos;ascii&apos;</code>&#x6216;<code>&apos;binary&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x5E0C;&#x671B;&#x63A5;&#x53D7;&#x5230;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;&#x5982;&#x679C;&#x6570;&#x636E;&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#xFF0C;&#x90A3;&#x4E48;<code>input_encoding</code>&#x5C06;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+<p><code>output_encoding</code>&#x6307;&#x5B9A;&#x4E86;&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x7684;&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;base64&apos;</code>&#x6216;<code>&apos;hex&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x4E2A;<code>buffer</code>&#x4F1A;&#x88AB;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x52A0;&#x5BC6;&#x5185;&#x5BB9;&#xFF0C;&#x5E76;&#x4E14;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x6D41;&#x5F0F;&#x6570;&#x636E;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x88AB;&#x8C03;&#x7528;&#x591A;&#x6B21;&#x3002;</p>
+<h4 id="cipherfinaloutputencoding">cipher.final([output_encoding])</h4>
+<p>&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x7684;&#x5269;&#x4F59;&#x7684;&#x52A0;&#x5BC6;&#x5185;&#x5BB9;&#xFF0C;<code>output_encoding</code>&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;base64&apos;</code>&#x6216;<code>&apos;hex&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x4E2A;<code>buffer</code>&#x4F1A;&#x88AB;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5F53;&#x8C03;&#x7528;&#x4E86;<code>final()</code>&#x65B9;&#x6CD5;&#x4E4B;&#x540E;&#xFF0C;cipher&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x518D;&#x88AB;&#x4F7F;&#x7528;&#x4E86;&#x3002;</p>
+<h4 id="ciphersetautopaddingautopaddingtrue">cipher.setAutoPadding(auto_padding=true)</h4>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x7981;&#x7528;&#x81EA;&#x52A8;&#x586B;&#x5145;&#x8F93;&#x5165;&#x6570;&#x636E;&#x81F3;&#x5757;&#x5927;&#x5C0F;&#x3002;&#x5982;&#x679C;<code>auto_padding</code>&#x4E3A;<code>false</code>&#xFF0C;&#x90A3;&#x4E48;&#x6574;&#x4E2A;&#x8F93;&#x5165;&#x6570;&#x636E;&#x7684;&#x957F;&#x5EA6;&#x5FC5;&#x987B;<code>cipher</code>&#x7684;&#x5757;&#x5927;&#x5C0F;&#x7684;&#x6574;&#x6570;&#x500D;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x5931;&#x8D25;&#x3002;&#x8FD9;&#x5BF9;&#x975E;&#x6807;&#x51C6;&#x586B;&#x5145;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x5982;&#x4F7F;&#x7528;0x0&#x66FF;&#x4EE3;PKCS&#x586B;&#x5145;&#x3002;&#x4F60;&#x5FC5;&#x987B;&#x5728;<code>cipher.final</code>&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x5B83;&#x3002;</p>
+<h4 id="ciphergetauthtag">cipher.getAuthTag()</h4>
+<p>&#x5BF9;&#x4E8E;&#x5DF2;&#x8BA4;&#x8BC1;&#x52A0;&#x5BC6;&#x6A21;&#x5F0F;&#xFF08;&#x5F53;&#x524D;&#x652F;&#x6301;&#xFF1A;GCM&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4ECE;&#x7ED9;&#x5B9A;&#x6570;&#x636E;&#x8BA1;&#x7B97;&#x6240;&#x5F97;&#x7684;&#x4EE3;&#x8868;&#x4E86;&#x8BA4;&#x8BC1;&#x6807;&#x7B7E;&#x7684;<code>Buffer</code>&#x3002;&#x5FC5;&#x987B;&#x5728;<code>final</code>&#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x540E;&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="ciphersetaadbuffer">cipher.setAAD(buffer)</h4>
+<p>&#x5BF9;&#x4E8E;&#x5DF2;&#x8BA4;&#x8BC1;&#x52A0;&#x5BC6;&#x6A21;&#x5F0F;&#xFF08;&#x5F53;&#x524D;&#x652F;&#x6301;&#xFF1A;GCM&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x88AB;&#x7528;&#x4E8E;&#x989D;&#x5916;&#x5DF2;&#x8BA4;&#x8BC1;&#x6570;&#x636E;&#xFF08;AAD&#xFF09;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x7684;&#x503C;&#x3002;</p>
+<h4 id="cryptocreatedecipheralgorithm-password">crypto.createDecipher(algorithm, password)</h4>
+<p>&#x4F7F;&#x7528;&#x7ED9;&#x5B9A;&#x7B97;&#x6CD5;&#x548C;&#x5BC6;&#x94A5;&#xFF0C;&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x89E3;&#x5BC6;&#x5668;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x662F;&#x4E0A;&#x6587;<code>createCipher()</code>&#x7684;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x3002;</p>
+<h4 id="cryptocreatedecipherivalgorithm-key-iv">crypto.createDecipheriv(algorithm, key, iv)</h4>
+<p>&#x4F7F;&#x7528;&#x7ED9;&#x5B9A;&#x7B97;&#x6CD5;&#xFF0C;&#x5BC6;&#x94A5;&#x548C;iv&#xFF0C;&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x89E3;&#x5BC6;&#x5668;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x662F;&#x4E0A;&#x6587;<code>createCipheriv()</code>&#x7684;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x3002;</p>
+<h4 id="class-decipher">Class: Decipher</h4>
+<p>&#x89E3;&#x5BC6;&#x6570;&#x636E;&#x7C7B;&#x3002;</p>
+<p>&#x901A;&#x8FC7;<code>crypto.createDecipher</code>&#x548C;<code>crypto.createDecipheriv</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x65E2;&#x53EF;&#x8BFB;&#x53C8;&#x53EF;&#x5199;&#x7684;&#x6D41;&#x3002;&#x5199;&#x5165;&#x7684;&#x88AB;&#x52A0;&#x5BC6;&#x7684;&#x6570;&#x636E;&#x88AB;&#x7528;&#x6765;&#x5728;&#x53EF;&#x8BFB;&#x7AEF;&#x751F;&#x4EA7;&#x6587;&#x672C;&#x6570;&#x636E;&#x3002;&#x9057;&#x7559;&#x7684;<code>update</code>&#x548C;<code>final</code>&#x65B9;&#x6CD5;&#x540C;&#x6837;&#x88AB;&#x652F;&#x6301;&#x3002;</p>
+<h4 id="decipherupdatedata-inputencoding-outputencoding">decipher.update(data[, input_encoding][, output_encoding])</h4>
+<p>&#x901A;&#x8FC7;<code>data</code>&#x66F4;&#x65B0;<code>decipher</code>&#xFF0C;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;base64&apos;</code>&#x6216;<code>&apos;hex&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x5E0C;&#x671B;&#x63A5;&#x53D7;&#x5230;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;&#x5982;&#x679C;&#x6570;&#x636E;&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#xFF0C;&#x90A3;&#x4E48;<code>input_encoding</code>&#x5C06;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+<p><code>output_encoding</code>&#x6307;&#x5B9A;&#x4E86;&#x89E3;&#x5BC6;&#x6570;&#x636E;&#x7684;&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;ascii&apos;</code>&#x6216;<code>&apos;utf8&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x4E2A;<code>buffer</code>&#x4F1A;&#x88AB;&#x8FD4;&#x56DE;&#x3002;</p>
+<h4 id="decipherfinaloutputencoding">decipher.final([output_encoding])</h4>
+<p>&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x7684;&#x5269;&#x4F59;&#x7684;&#x6587;&#x672C;&#x6570;&#x636E;&#xFF0C;<code>output_encoding</code>&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;ascii&apos;</code>&#x6216;<code>&apos;utf8&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x4E2A;<code>buffer</code>&#x4F1A;&#x88AB;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5F53;&#x8C03;&#x7528;&#x4E86;<code>final()</code>&#x65B9;&#x6CD5;&#x4E4B;&#x540E;&#xFF0C;decipher&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x518D;&#x88AB;&#x4F7F;&#x7528;&#x4E86;&#x3002;</p>
+<h4 id="deciphersetautopaddingautopaddingtrue">decipher.setAutoPadding(auto_padding=true)</h4>
+<p>&#x5982;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5757;&#x586B;&#x5145;&#x963B;&#x6B62;<code>decipher.final</code>&#x68C0;&#x67E5;&#x548C;&#x5220;&#x9664;&#x5B83;&#x6765;&#x52A0;&#x5BC6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7981;&#x7528;&#x81EA;&#x52A8;&#x586B;&#x5145;&#x3002;&#x90A3;&#x4E48;&#x6574;&#x4E2A;&#x8F93;&#x5165;&#x6570;&#x636E;&#x7684;&#x957F;&#x5EA6;&#x5FC5;&#x987B;<code>cipher</code>&#x7684;&#x5757;&#x5927;&#x5C0F;&#x7684;&#x6574;&#x6570;&#x500D;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x5931;&#x8D25;&#x3002;&#x4F60;&#x5FC5;&#x987B;&#x5728;&#x5C06;&#x6570;&#x636E;&#x5BFC;&#x6D41;&#x81F3;<code>decipher.update</code>&#x524D;&#x8C03;&#x7528;&#x5B83;&#x3002;</p>
+<h4 id="deciphersetauthtagbuffer">decipher.setAuthTag(buffer)</h4>
+<p>&#x5BF9;&#x4E8E;&#x5DF2;&#x8BA4;&#x8BC1;&#x52A0;&#x5BC6;&#x6A21;&#x5F0F;&#xFF08;&#x5F53;&#x524D;&#x652F;&#x6301;&#xFF1A;GCM&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x88AB;&#x4F20;&#x9012;&#xFF0C;&#x7528;&#x6765;&#x63A5;&#x53D7;&#x8BA4;&#x8BC1;&#x6807;&#x7B7E;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x6807;&#x7B7E;&#x6216;&#x5BC6;&#x6587;&#x88AB;&#x5E72;&#x6270;&#xFF0C;&#x6700;&#x7EC8;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<h4 id="deciphersetaadbuffer">decipher.setAAD(buffer)</h4>
+<p>&#x5BF9;&#x4E8E;&#x5DF2;&#x8BA4;&#x8BC1;&#x52A0;&#x5BC6;&#x6A21;&#x5F0F;&#xFF08;&#x5F53;&#x524D;&#x652F;&#x6301;&#xFF1A;GCM&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x88AB;&#x7528;&#x4E8E;&#x989D;&#x5916;&#x5DF2;&#x8BA4;&#x8BC1;&#x6570;&#x636E;&#xFF08;AAD&#xFF09;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x7684;&#x503C;&#x3002;</p>
+<h4 id="cryptocreatesignalgorithm">crypto.createSign(algorithm)</h4>
+<p>&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x7C7B;&#x3002;&#x5728;&#x6700;&#x8FD1;&#x7684;OpenSSL&#x53D1;&#x884C;&#x7248;&#x4E2D;&#xFF0C;<code>openssl list-public-key-algorithms</code>&#x4F1A;&#x5217;&#x51FA;&#x6240;&#x6709;&#x652F;&#x6301;&#x7684;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x7B97;&#x6CD5;&#x3002;&#x4F8B;&#x5982;<code>&apos;RSA-SHA256&apos;</code>&#x3002;</p>
+<h4 id="class-sign">Class: Sign</h4>
+<p>&#x7528;&#x4E8E;&#x751F;&#x6210;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x7684;&#x7C7B;&#x3002;</p>
+<p>&#x901A;&#x8FC7;<code>crypto.createSign</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<p><code>Sign</code>&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x5199;&#x6D41;&#x3002;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x7528;&#x6765;&#x751F;&#x6210;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x3002;&#x4E00;&#x65E6;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x88AB;&#x5199;&#x5165;&#xFF0C;<code>sign</code>&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x3002;&#x9057;&#x7559;&#x7684;<code>update</code>&#x65B9;&#x6CD5;&#x4E5F;&#x652F;&#x6301;&#x3002;</p>
+<h4 id="signupdatedata">sign.update(data)</h4>
+<p>&#x4F7F;&#x7528;<code>data</code>&#x66F4;&#x65B0;<code>sign</code>&#x5BF9;&#x8C61;&#x3002;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x6D41;&#x5F0F;&#x7684;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x88AB;&#x8C03;&#x7528;&#x591A;&#x6B21;&#x3002;</p>
+<h4 id="signsignprivatekey-outputformat">sign.sign(private_key[, output_format])</h4>
+<p>&#x6839;&#x636E;&#x6240;&#x6709;&#x901A;&#x8FC7;<code>update</code>&#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x7684;&#x6570;&#x636E;&#x8BA1;&#x7B97;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x3002;</p>
+<p><code>private_key</code>&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6216;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5982;&#x679C;<code>private_key</code>&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x88AB;&#x5F53;&#x505A;&#x6CA1;&#x6709;&#x5BC6;&#x7801;&#x7684;&#x5BC6;&#x94A5;&#x3002;</p>
+<p><strong>private_key</strong>:</p>
+<ul>
+<li>key : &#x5305;&#x542B;<code>PEM</code>&#x7F16;&#x7801;&#x79C1;&#x94A5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>passphrase : &#x4E00;&#x4E2A;&#x79C1;&#x94A5;&#x5BC6;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+</ul>
+<p>&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x7F16;&#x7801;&#x7531;<code>output_format</code>&#x51B3;&#x5B9A;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5728;&#x8C03;&#x7528;&#x4E86;<code>sign()</code>&#x540E;&#xFF0C;<code>sign</code>&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x518D;&#x4F7F;&#x7528;&#x4E86;&#x3002;</p>
+<h4 id="cryptocreateverifyalgorithm">crypto.createVerify(algorithm)</h4>
+<p>&#x4F7F;&#x7528;&#x7ED9;&#x5B9A;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9A8C;&#x8BC1;&#x5668;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;<code>sign</code>&#x5BF9;&#x8C61;&#x7684;&#x955C;&#x50CF;&#x3002;</p>
+<h4 id="class-verify">Class: Verify</h4>
+<p>&#x7528;&#x6765;&#x9A8C;&#x8BC1;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x7684;&#x7C7B;&#x3002;</p>
+<p>&#x7531;<code>crypto.createVerify</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<p><code>Verify</code>&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x5199;&#x6D41;&#x3002;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x7528;&#x6765;&#x9A8C;&#x8BC1;&#x63D0;&#x4F9B;&#x7684;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x3002;&#x4E00;&#x65E6;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x88AB;&#x5199;&#x5165;&#xFF0C;<code>verify</code>&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;<code>true</code>&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x7684;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x6709;&#x6548;&#x3002;&#x9057;&#x7559;&#x7684;<code>update</code>&#x65B9;&#x6CD5;&#x4E5F;&#x652F;&#x6301;&#x3002;</p>
+<h4 id="verifierupdatedata">verifier.update(data)</h4>
+<p>&#x4F7F;&#x7528;<code>data</code>&#x66F4;&#x65B0;<code>verifier</code>&#x5BF9;&#x8C61;&#x3002;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x6D41;&#x5F0F;&#x7684;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x88AB;&#x8C03;&#x7528;&#x591A;&#x6B21;&#x3002;</p>
+<h4 id="verifierverifyobject-signature-signatureformat">verifier.verify(object, signature[, signature_format])</h4>
+<p>&#x901A;&#x8FC7;&#x4F7F;&#x7528;<code>object</code>&#x548C;<code>signature</code>&#x9A8C;&#x8BC1;&#x88AB;&#x7B7E;&#x540D;&#x7684;&#x6570;&#x636E;&#x3002;<code>object</code>&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;PEM&#x7F16;&#x7801;&#x5BF9;&#x8C61;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x662F;RSA&#x516C;&#x94A5;&#xFF0C;DSA&#x516C;&#x94A5;&#x6216;X.509&#x8BC1;&#x4E66;&#x3002;<code>signature</code>&#x662F;&#x5148;&#x524D;&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#x7684;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#xFF0C;<code>signature_format</code>&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x5E0C;&#x671B;&#x6536;&#x5230;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x662F;<code>true</code>&#x6216;<code>false</code>&#x6839;&#x636E;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x5BF9;&#x4E8E;&#x6570;&#x636E;&#x548C;&#x516C;&#x94A5;&#x7684;&#x6709;&#x6548;&#x6027;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5728;&#x8C03;&#x7528;&#x4E86;<code>verify()</code>&#x540E;&#xFF0C;<code>verifier</code>&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x518D;&#x4F7F;&#x7528;&#x4E86;&#x3002;</p>
+<h4 id="cryptocreatediffiehellmanprimelength-generator">crypto.createDiffieHellman(prime_length[, generator])</h4>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x5BC6;&#x94A5;&#x4EA4;&#x6362;&#x5BF9;&#x8C61;&#xFF08;Diffie-Hellman key exchange object&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x6839;&#x636E;<code>prime_length</code>&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x8D28;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x6570;&#x5B57;&#x751F;&#x6210;&#x5668;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x5C06;&#x4F7F;&#x7528;<code>2</code>&#x3002;</p>
+<h4 id="cryptocreatediffiehellmanprime-primeencoding-generator-generatorencoding">crypto.createDiffieHellman(prime[, prime_encoding][, generator][, generator_encoding])</h4>
+<p>&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x7684;&#x8D28;&#x6570;&#xFF0C;&#x548C;&#x53EF;&#x9009;&#x7684;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x5BC6;&#x94A5;&#x4EA4;&#x6362;&#x5BF9;&#x8C61;&#xFF08;Diffie-Hellman key exchange object&#xFF09;&#x3002;<code>generator</code>&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>Buffer</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x5C06;&#x4F7F;&#x7528;<code>2</code>&#x3002;<code>prime_encoding</code>&#x548C;<code>generator_encoding</code>&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;<code>prime_encoding</code>&#xFF0C;&#x90A3;&#x4E48;&#x5E0C;&#x671B;<code>prime</code>&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;<code>generator_encoding</code>&#xFF0C;&#x90A3;&#x4E48;&#x5E0C;&#x671B;<code>generator</code>&#x662F;&#x4E00;&#x4E2A;<code>Buffer</code>&#x3002;</p>
+<h4 id="class-diffiehellman">Class: DiffieHellman</h4>
+<p>&#x53EB;&#x6765;&#x521B;&#x5EFA;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x5BC6;&#x94A5;&#x4EA4;&#x6362;&#x7684;&#x7C7B;&#x3002;</p>
+<p>&#x901A;&#x8FC7;<code>crypto.createDiffieHellman</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<h4 id="diffiehellmanverifyerror">diffieHellman.verifyError</h4>
+<p>&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x8B66;&#x544A;&#x548C;/&#x6216;&#x9519;&#x8BEF;&#x7684;&#x4F4D;&#x57DF;&#xFF0C;&#x4F5C;&#x4E3A;&#x68C0;&#x67E5;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x5408;&#x6CD5;&#x5C5E;&#x6027;&#xFF08;&#x88AB;&#x5E38;&#x91CF;&#x6A21;&#x5757;&#x5B9A;&#x4E49;&#xFF09;&#xFF1A;</p>
+<ul>
+<li>DH_CHECK_P_NOT_SAFE_PRIME</li>
+<li>DH_CHECK_P_NOT_PRIME</li>
+<li>DH_UNABLE_TO_CHECK_GENERATOR</li>
+<li>DH_NOT_SUITABLE_GENERATOR</li>
+</ul>
+<h4 id="diffiehellmangeneratekeysencoding">diffieHellman.generateKeys([encoding])</h4>
+<p>&#x751F;&#x6210;&#x4E00;&#x4E2A; &#x79C1;&#x548C;&#x516C; &#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC; &#x5BC6;&#x94A5;&#x503C;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x7684;&#x516C;&#x94A5;&#x3002;&#x8FD9;&#x4E2A;&#x5BC6;&#x94A5;&#x53EF;&#x4EE5;&#x88AB;&#x8F6C;&#x79FB;&#x7ED9;&#x7B2C;&#x4E09;&#x65B9;&#x3002;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="diffiehellmancomputesecretotherpublickey-inputencoding-outputencoding">diffieHellman.computeSecret(other_public_key[, input_encoding][, output_encoding])</h4>
+<p>&#x4F7F;&#x7528;<code>other_public_key</code>&#x4F5C;&#x4E3A;&#x7B2C;&#x4E09;&#x65B9;&#x5BC6;&#x94A5;&#x6765;&#x8BA1;&#x7B97;&#x5171;&#x4EAB;&#x79D8;&#x5BC6;&#xFF08;shared secret&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x3002;&#x63D0;&#x4F9B;&#x7684;&#x5BC6;&#x94A5;&#x4F1A;&#x4EE5;<code>input_encoding</code>&#x6765;&#x89E3;&#x8BFB;&#xFF0C;&#x5E76;&#x4E14;&#x79D8;&#x5BC6;&#x4EE5;<code>output_encoding</code>&#x6765;&#x7F16;&#x7801;&#x3002;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;<code>output_encoding</code>&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="diffiehellmangetprimeencoding">diffieHellman.getPrime([encoding])</h4>
+<p>&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x8D28;&#x6570;&#xFF0C;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="diffiehellmangetgeneratorencoding">diffieHellman.getGenerator([encoding])</h4>
+<p>&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="diffiehellmangetpublickeyencoding">diffieHellman.getPublicKey([encoding])</h4>
+<p>&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x516C;&#x94A5;&#xFF0C;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="diffiehellmangetprivatekeyencoding">diffieHellman.getPrivateKey([encoding])</h4>
+<p>&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x79C1;&#x94A5;&#xFF0C;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="diffiehellmansetpublickeypublickey-encoding">diffieHellman.setPublicKey(public_key[, encoding])</h4>
+<p>&#x8BBE;&#x7F6E;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x516C;&#x94A5;&#xFF0C;&#x5BC6;&#x94A5;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x671F;&#x671B;&#x63A5;&#x6536;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="diffiehellmansetprivatekeyprivatekey-encoding">diffieHellman.setPrivateKey(private_key[, encoding])</h4>
+<p>&#x8BBE;&#x7F6E;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x79C1;&#x94A5;&#xFF0C;&#x5BC6;&#x94A5;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x671F;&#x671B;&#x63A5;&#x6536;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="cryptogetdiffiehellmangroupname">crypto.getDiffieHellman(group_name)</h4>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x5BC6;&#x94A5;&#x4EA4;&#x6362;&#x5BF9;&#x8C61;&#x3002;&#x652F;&#x6301;&#x7684;&#x7FA4;&#x7EC4;&#x6709;&#xFF1A;&apos;modp1&apos;, &apos;modp2&apos;, &apos;modp5&apos; (&#x7531;RFC 2412&#x5B9A;&#x4E49;) &#x548C; &apos;modp14&apos;, &apos;modp15&apos;, &apos;modp16&apos;, &apos;modp17&apos;, &apos;modp18&apos; (&#x7531;RFC 3526&#x5B9A;&#x4E49;)&#x3002;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x6A21;&#x4EFF;<code>crypto.createDiffieHellman()</code>&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x501F;&#x53E3;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x5141;&#x8BB8;&#x4EA4;&#x6362;&#x5BC6;&#x94A5;&#xFF08;&#x5982;&#x901A;&#x8FC7;<code>diffieHellman.setPublicKey()</code>&#xFF09;&#x3002;&#x6267;&#x884C;&#x8FD9;&#x5957;&#x6D41;&#x7A0B;&#x7684;&#x597D;&#x5904;&#x662F;&#x53CC;&#x65B9;&#x4E0D;&#x9700;&#x8981;&#x4E8B;&#x5148;&#x751F;&#x6210;&#x6216;&#x4EA4;&#x6362;&#x7EC4;&#x4F59;&#x6570;&#xFF0C;&#x8282;&#x7701;&#x4E86;&#x5904;&#x7406;&#x548C;&#x901A;&#x4FE1;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF08;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x5171;&#x4EAB;&#x79D8;&#x5BC6;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> crypto = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;crypto&apos;</span>);
+<span class="hljs-keyword">var</span> alice = crypto.getDiffieHellman(<span class="hljs-string">&apos;modp5&apos;</span>);
+<span class="hljs-keyword">var</span> bob = crypto.getDiffieHellman(<span class="hljs-string">&apos;modp5&apos;</span>);
+
+alice.generateKeys();
+bob.generateKeys();
+
+<span class="hljs-keyword">var</span> alice_secret = alice.computeSecret(bob.getPublicKey(), <span class="hljs-literal">null</span>, <span class="hljs-string">&apos;hex&apos;</span>);
+<span class="hljs-keyword">var</span> bob_secret = bob.computeSecret(alice.getPublicKey(), <span class="hljs-literal">null</span>, <span class="hljs-string">&apos;hex&apos;</span>);
+
+<span class="hljs-comment">/* alice_secret and bob_secret should be the same */</span>
+<span class="hljs-built_in">console</span>.log(alice_secret == bob_secret);
+</code></pre>
+<h4 id="cryptocreateecdhcurvename">crypto.createECDH(curve_name)</h4>
+<p>&#x4F7F;&#x7528;&#x7531;<code>curve_name</code>&#x6307;&#x5B9A;&#x7684;&#x9884;&#x5B9A;&#x4E49;&#x692D;&#x5706;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#xFF08;EC&#xFF09;&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x5BC6;&#x94A5;&#x4EA4;&#x6362;&#x5BF9;&#x8C61;&#x3002;&#x4F7F;&#x7528;<code>getCurves()</code>&#x6765;&#x83B7;&#x53D6;&#x53EF;&#x7528;&#x7684;&#x692D;&#x5706;&#x540D;&#x5217;&#x8868;&#x3002;&#x5728;&#x6700;&#x8FD1;&#x7684;&#x53D1;&#x884C;&#x7248;&#x4E2D;&#xFF0C;<code>openssl ecparam -list_curves</code>&#x547D;&#x4EE4;&#x4E5F;&#x4F1A;&#x5C55;&#x793A;&#x53EF;&#x7528;&#x7684;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x7684;&#x540D;&#x5B57;&#x548C;&#x7B80;&#x8FF0;&#x3002;</p>
+<h4 id="class-ecdh">Class: ECDH</h4>
+<p>&#x7528;&#x4E8E;EC&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x5BC6;&#x94A5;&#x4EA4;&#x6362;&#x7684;&#x7C7B;&#x3002;</p>
+<p>&#x7531;<code>crypto.createECDH</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<h4 id="ecdhgeneratekeysencoding-format">ECDH.generateKeys([encoding[, format]])</h4>
+<p>&#x751F;&#x6210;&#x4E00;&#x4E2A; &#x79C1;/&#x516C; EC&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x5BC6;&#x94A5;&#x503C;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x548C;&#x7F16;&#x7801;&#x7684;&#x516C;&#x94A5;&#x3002;&#x8FD9;&#x4E2A;&#x5BC6;&#x94A5;&#x53EF;&#x4EE5;&#x88AB;&#x8F6C;&#x79FB;&#x7ED9;&#x7B2C;&#x4E09;&#x65B9;&#x3002;</p>
+<p><code>format</code>&#x6307;&#x5B9A;&#x70B9;&#x7684;&#x7F16;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;<code>&apos;compressed&apos;</code>&#xFF0C;<code>&apos;uncompressed&apos;</code>&#x6216;<code>&apos;hybrid&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#xFF0C;&#x90A3;&#x4E48;&#x70B9;&#x5C06;&#x662F;<code>&apos;uncompressed&apos;</code>&#x683C;&#x5F0F;&#x3002;</p>
+<p>&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="ecdhcomputesecretotherpublickey-inputencoding-outputencoding">ECDH.computeSecret(other_public_key[, input_encoding][, output_encoding])</h4>
+<p>&#x4F7F;&#x7528;<code>other_public_key</code>&#x4F5C;&#x4E3A;&#x7B2C;&#x4E09;&#x65B9;&#x5BC6;&#x94A5;&#x6765;&#x8BA1;&#x7B97;&#x5171;&#x4EAB;&#x79D8;&#x5BC6;&#xFF08;shared secret&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x3002;&#x63D0;&#x4F9B;&#x7684;&#x5BC6;&#x94A5;&#x4F1A;&#x4EE5;<code>input_encoding</code>&#x6765;&#x89E3;&#x8BFB;&#xFF0C;&#x5E76;&#x4E14;&#x79D8;&#x5BC6;&#x4EE5;<code>output_encoding</code>&#x6765;&#x7F16;&#x7801;&#x3002;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;<code>output_encoding</code>&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="ecdhgetpublickeyencoding-format">ECDH.getPublicKey([encoding[, format]])</h4>
+<p>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x548C;&#x683C;&#x5F0F;&#x7684;EC&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x516C;&#x94A5;&#x3002;</p>
+<p><code>format</code>&#x6307;&#x5B9A;&#x70B9;&#x7684;&#x7F16;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;<code>&apos;compressed&apos;</code>&#xFF0C;<code>&apos;uncompressed&apos;</code>&#x6216;<code>&apos;hybrid&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#xFF0C;&#x90A3;&#x4E48;&#x70B9;&#x5C06;&#x662F;<code>&apos;uncompressed&apos;</code>&#x683C;&#x5F0F;&#x3002;</p>
+<p>&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="ecdhgetprivatekeyencoding">ECDH.getPrivateKey([encoding])</h4>
+<p>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x7684;EC&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x79C1;&#x94A5;&#xFF0C;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="ecdhsetpublickeypublickey-encoding">ECDH.setPublicKey(public_key[, encoding])</h4>
+<p>&#x8BBE;&#x7F6E;EC&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x516C;&#x94A5;&#x3002;&#x5BC6;&#x94A5;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x671F;&#x671B;&#x63A5;&#x6536;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<h4 id="ecdhsetprivatekeyprivatekey-encoding">ECDH.setPrivateKey(private_key[, encoding])</h4>
+<p>&#x8BBE;&#x7F6E;EC&#x8FEA;&#x83F2;&#xFF0D;&#x8D6B;&#x5C14;&#x66FC;&#x79C1;&#x94A5;&#x3002;&#x5BC6;&#x94A5;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x662F;<code>&apos;binary&apos;</code>&#xFF0C;<code>&apos;hex&apos;</code>&#x6216;<code>&apos;base64&apos;</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x671F;&#x671B;&#x63A5;&#x6536;&#x4E00;&#x4E2A;<code>buffer</code>&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF08;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x5171;&#x4EAB;&#x79D8;&#x5BC6;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> crypto = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;crypto&apos;</span>);
+<span class="hljs-keyword">var</span> alice = crypto.createECDH(<span class="hljs-string">&apos;secp256k1&apos;</span>);
+<span class="hljs-keyword">var</span> bob = crypto.createECDH(<span class="hljs-string">&apos;secp256k1&apos;</span>);
+
+alice.generateKeys();
+bob.generateKeys();
+
+<span class="hljs-keyword">var</span> alice_secret = alice.computeSecret(bob.getPublicKey(), <span class="hljs-literal">null</span>, <span class="hljs-string">&apos;hex&apos;</span>);
+<span class="hljs-keyword">var</span> bob_secret = bob.computeSecret(alice.getPublicKey(), <span class="hljs-literal">null</span>, <span class="hljs-string">&apos;hex&apos;</span>);
+
+<span class="hljs-comment">/* alice_secret and bob_secret should be the same */</span>
+<span class="hljs-built_in">console</span>.log(alice_secret == bob_secret);
+</code></pre>
+<h4 id="cryptopbkdf2password-salt-iterations-keylen-digest-callback">crypto.pbkdf2(password, salt, iterations, keylen[, digest], callback)</h4>
+<p>&#x5F02;&#x6B65;PBKDF2&#x51FD;&#x6570;&#x3002;&#x63D0;&#x4F9B;&#x88AB;&#x9009;&#x62E9;&#x7684;HAMC&#x6458;&#x8981;&#x51FD;&#x6570;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;SHA1&#xFF09;&#x6765;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x957F;&#x5EA6;&#x7684;&#x5BC6;&#x7801;&#x5BC6;&#x94A5;&#xFF0C;&#x76D0;&#x548C;&#x8FED;&#x4EE3;&#x6570;&#x3002;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6709;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#xFF08;<code>err</code>&#xFF0C;<code>derivedKey</code>&#xFF09;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js">crypto.pbkdf2(<span class="hljs-string">&apos;secret&apos;</span>, <span class="hljs-string">&apos;salt&apos;</span>, <span class="hljs-number">4096</span>, <span class="hljs-number">512</span>, <span class="hljs-string">&apos;sha256&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, key</span>) </span>{
+  <span class="hljs-keyword">if</span> (err)
+    <span class="hljs-keyword">throw</span> err;
+  <span class="hljs-built_in">console</span>.log(key.toString(<span class="hljs-string">&apos;hex&apos;</span>));  <span class="hljs-comment">// &apos;c5e478d...1469e50&apos;</span>
+});
+</code></pre>
+<p>&#x53EF;&#x7528;&#x901A;&#x8FC7;<code>crypto.getHashes()</code>&#x83B7;&#x53D6;&#x652F;&#x6301;&#x7684;&#x6458;&#x8981;&#x51FD;&#x6570;&#x5217;&#x8868;&#x3002;</p>
+<h4 id="cryptopbkdf2syncpassword-salt-iterations-keylen-digest">crypto.pbkdf2Sync(password, salt, iterations, keylen[, digest])</h4>
+<p>&#x540C;&#x6B65;PBKDF2&#x51FD;&#x6570;&#x3002;&#x8FD4;&#x56DE;<code>derivedKey</code>&#x6216;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#x3002;</p>
+<h4 id="cryptorandombytessize-callback">crypto.randomBytes(size[, callback])</h4>
+<p>&#x751F;&#x6210;&#x6709;&#x5BC6;&#x7801;&#x56FE;&#x8C31;&#x4E00;&#x822C;&#x5065;&#x58EE;&#x7684;&#x4F2A;&#x968F;&#x673A;&#x6570;&#x636E;&#xFF0C;&#x7528;&#x5904;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// async</span>
+crypto.randomBytes(<span class="hljs-number">256</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ex, buf</span>) </span>{
+  <span class="hljs-keyword">if</span> (ex) <span class="hljs-keyword">throw</span> ex;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Have %d bytes of random data: %s&apos;</span>, buf.length, buf);
+});
+
+<span class="hljs-comment">// sync</span>
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">var</span> buf = crypto.randomBytes(<span class="hljs-number">256</span>);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Have %d bytes of random data: %s&apos;</span>, buf.length, buf);
+} <span class="hljs-keyword">catch</span> (ex) {
+  <span class="hljs-comment">// handle error</span>
+  <span class="hljs-comment">// most likely, entropy sources are drained</span>
+}
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x71B5;&#x4E0D;&#x8DB3;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4F1A;&#x963B;&#x585E;&#x3002;&#x5C3D;&#x7BA1;&#x5B83;&#x4ECE;&#x4E0D;&#x8BDD;&#x8D39;&#x8D85;&#x8FC7;&#x51E0;&#x6BEB;&#x79D2;&#x3002;&#x552F;&#x4E00;&#x53EF;&#x4EE5;&#x60F3;&#x5230;&#x7684;&#x963B;&#x585E;&#x662F;&#x60C5;&#x51B5;&#x662F;&#xFF0C;&#x5F53;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x7684;&#x71B5;&#x8FD8;&#x662F;&#x5F88;&#x4F4E;&#x65F6;&#xFF0C;&#x5728;&#x5176;&#x4E4B;&#x540E;&#x542F;&#x52A8;&#x3002;</p>
+<h4 id="class-certificate">Class: Certificate</h4>
+<p>&#x8FD9;&#x4E2A;&#x7C7B;&#x7528;&#x6765;&#x5904;&#x7406;&#x5DF2;&#x7B7E;&#x540D;&#x516C;&#x94A5; &amp; &#x6311;&#x6218;&#xFF08;challenges&#xFF09;&#x3002;&#x6700;&#x5E38;&#x7528;&#x7684;&#x662F;&#x5B83;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x5904;&#x7406;<code>&lt;keygen&gt;</code>&#x5143;&#x7D20;&#x7684;&#x51FD;&#x6570;&#x3002;<code>http://www.openssl.org/docs/apps/spkac.html</code>&#x3002;</p>
+<p>&#x901A;&#x8FC7;<code>crypto.Certificate</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<h4 id="certificateverifyspkacspkac">Certificate.verifySpkac(spkac)</h4>
+<p>&#x8FD4;&#x56DE;<code>ture</code>&#x6216;<code>false</code>&#xFF0C;&#x4F9D;&#x8D56;&#x4E8E;SPKAC&#x7684;&#x6709;&#x6548;&#x6027;&#x3002;</p>
+<h4 id="certificateexportchallengespkac">Certificate.exportChallenge(spkac)</h4>
+<p>&#x5BFC;&#x51FA;&#x7F16;&#x7801;&#x597D;&#x7684;&#x516C;&#x94A5;&#x4ECE;&#x6307;&#x5B9A;&#x7684;SPKAC&#x3002;</p>
+<h4 id="certificateexportpublickeyspkac">Certificate.exportPublicKey(spkac)</h4>
+<p>&#x5BFC;&#x51FA;&#x7F16;&#x7801;&#x597D;&#x7684;&#x6311;&#x6218;&#xFF08;challenge&#xFF09;&#x4ECE;&#x6307;&#x5B9A;&#x7684;SPKAC&#x3002;</p>
+<h4 id="cryptopublicencryptpublickey-buffer">crypto.publicEncrypt(public_key, buffer)</h4>
+<p>&#x4F7F;&#x7528;<code>public_key</code>&#x52A0;&#x5BC6;<code>buffer</code>&#x3002;&#x76EE;&#x524D;&#x53EA;&#x652F;&#x6301;RSA&#x3002;</p>
+<p><code>public_key</code>&#x53EF;&#x662F;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6216;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C;<code>public_key</code>&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B83;&#x4F1A;&#x88AB;&#x89C6;&#x4F5C;&#x6CA1;&#x6709;&#x5BC6;&#x7801;&#x7684;&#x5BC6;&#x94A5;&#x5E76;&#x4E14;&#x5C06;&#x4F7F;&#x7528;<code>RSA_PKCS1_OAEP_PADDING</code>&#x3002;&#x56E0;&#x4E3A;<code>RSA</code>&#x516C;&#x94A5;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4ECE;&#x4F60;&#x4F20;&#x9012;&#x7ED9;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x5BC6;&#x94A5;&#x6765;&#x83B7;&#x53D6;&#x3002;</p>
+<p><strong>public_key</strong>:</p>
+<ul>
+<li>key : &#x4E00;&#x4E2A;&#x5305;&#x542B;PEM&#x52A0;&#x5BC6;&#x7684;&#x79C1;&#x94A5;&#x5B57;&#x7B26;&#x4E32;</li>
+<li>passphrase : &#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x79C1;&#x94A5;&#x5BC6;&#x7801;&#x5B57;&#x7B26;&#x4E32;</li>
+<li><strong>padding</strong> : &#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x586B;&#x5145;&#x503C;&#xFF0C;&#x4EE5;&#x4E0B;&#x503C;&#x4E4B;&#x4E00;&#xFF1A;<ul>
+<li>constants.RSA_NO_PADDING</li>
+<li>constants.RSA_PKCS1_PADDING</li>
+<li>constants.RSA_PKCS1_OAEP_PADDING</li>
+</ul>
+</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x6240;&#x6709;&#x7684;&#x586B;&#x5145;&#x503C;&#x90FD;&#x88AB;&#x5E38;&#x91CF;&#x6A21;&#x5757;&#x6240;&#x5B9A;&#x4E49;&#x3002;</p>
+<h4 id="cryptopublicdecryptpublickey-buffer">crypto.publicDecrypt(public_key, buffer)</h4>
+<p>&#x8BE6;&#x60C5;&#x53C2;&#x9605;&#x4E0A;&#x6587;&#x3002;&#x4E0E;<code>crypto.publicEncrypt</code>&#x6709;&#x76F8;&#x540C;API&#x3002;&#x9ED8;&#x8BA4;&#x586B;&#x5145;&#x503C;&#x662F;<code>RSA_PKCS1_PADDING</code>&#x3002;</p>
+<h4 id="cryptoprivatedecryptprivatekey-buffer">crypto.privateDecrypt(private_key, buffer)</h4>
+<p>&#x4F7F;&#x7528;<code>private_key</code>&#x89E3;&#x5BC6;<code>buffer</code>&#x3002;</p>
+<p><code>private_key</code>&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6216;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C;<code>private_key</code>&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B83;&#x4F1A;&#x5F53;&#x505A;&#x6CA1;&#x6709;&#x5BC6;&#x7801;&#x7684;&#x5BC6;&#x94A5;&#xFF0C;&#x5E76;&#x4E14;&#x4F7F;&#x7528;<code>RSA_PKCS1_OAEP_PADDING</code>&#x3002;</p>
+<p><strong>public_key</strong>:</p>
+<ul>
+<li>key : &#x4E00;&#x4E2A;&#x5305;&#x542B;PEM&#x52A0;&#x5BC6;&#x7684;&#x79C1;&#x94A5;&#x5B57;&#x7B26;&#x4E32;</li>
+<li>passphrase : &#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x79C1;&#x94A5;&#x5BC6;&#x7801;&#x5B57;&#x7B26;&#x4E32;</li>
+<li><strong>padding</strong> : &#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x586B;&#x5145;&#x503C;&#xFF0C;&#x4EE5;&#x4E0B;&#x503C;&#x4E4B;&#x4E00;&#xFF1A;<ul>
+<li>constants.RSA_NO_PADDING</li>
+<li>constants.RSA_PKCS1_PADDING</li>
+<li>constants.RSA_PKCS1_OAEP_PADDING</li>
+</ul>
+</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x6240;&#x6709;&#x7684;&#x586B;&#x5145;&#x503C;&#x90FD;&#x88AB;&#x5E38;&#x91CF;&#x6A21;&#x5757;&#x6240;&#x5B9A;&#x4E49;&#x3002;</p>
+<h4 id="cryptoprivateencryptprivatekey-buffer">crypto.privateEncrypt(private_key, buffer)</h4>
+<p>&#x8BE6;&#x60C5;&#x53C2;&#x9605;&#x4E0A;&#x6587;&#x3002;&#x4E0E;<code>crypto.privateDecrypt</code>&#x6709;&#x76F8;&#x540C;API&#x3002;&#x9ED8;&#x8BA4;&#x586B;&#x5145;&#x503C;&#x662F;<code>RSA_PKCS1_PADDING</code>&#x3002;</p>
+<h4 id="cryptodefaultencoding">crypto.DEFAULT_ENCODING</h4>
+<p>&#x9ED8;&#x8BA4;&#x7F16;&#x7801;&#x662F;&#x7528;&#x4E8E;&#x63A5;&#x53D7;&#x5B57;&#x7B26;&#x4E32;&#x6216;<code>buffer</code>&#x7684;&#x51FD;&#x6570;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F;<code>&apos;buffer&apos;</code>&#xFF0C;&#x6240;&#x4EE5;&#x9ED8;&#x8BA4;&#x662F;&#x4F7F;&#x7528;<code>Buffer</code>&#x5BF9;&#x8C61;&#x7684;&#x3002;&#x8FD9;&#x88AB;&#x7528;&#x6765;&#x4E0E;&#x65E7;&#x7684;&#x4EE5;<code>&apos;binary&apos;</code>&#x4E3A;&#x9ED8;&#x8BA4;&#x7F16;&#x7801;&#x7684;&#x7A0B;&#x5E8F;&#x66F4;&#x597D;&#x5730;&#x517C;&#x5BB9;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x65B0;&#x7684;&#x7A0B;&#x5E8F;&#x4ECD;&#x53EF;&#x80FD;&#x671F;&#x671B;&#x4F7F;&#x7528;<code>buffer</code>&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x5C06;&#x5B83;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x63AA;&#x65BD;&#x3002;</p>
+<h4 id="&#x8FD1;&#x671F;&#x7684;api&#x6539;&#x53D8;">&#x8FD1;&#x671F;&#x7684;API&#x6539;&#x53D8;</h4>
+<p><code>Crypto</code>&#x6A21;&#x5757;&#x5728;&#x8FD8;&#x6CA1;&#x6709;&#x7EDF;&#x4E00;&#x7684;&#x6D41;API&#x6982;&#x5FF5;&#xFF0C;&#x4EE5;&#x53CA;&#x6CA1;&#x6709;<code>Buffer</code>&#x5BF9;&#x8C61;&#x6765;&#x5904;&#x7406;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x524D;&#x5C31;&#x52A0;&#x5165;&#x4E86;<code>Node.js</code>&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#xFF0C;&#x5B83;&#x7684;&#x6D41;&#x7C7B;&#x6CA1;&#x6709;&#x5176;&#x4ED6;<code>node.js</code>&#x7C7B;&#x7684;&#x5178;&#x578B;&#x7C7B;&#xFF0C;&#x800C;&#x4E14;&#x5F88;&#x591A;&#x65B9;&#x6CD5;&#x9ED8;&#x8BA4;&#x63A5;&#x53D7;&#x548C;&#x8FD4;&#x56DE;&#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x800C;&#x4E0D;&#x662F;<code>Buffer</code>&#x3002;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x5C06;&#x88AB;&#x6539;&#x6210;&#x9ED8;&#x8BA4;&#x63A5;&#x53D7;&#x548C;&#x8FD4;&#x56DE;<code>Buffer</code>&#x3002;</p>
+<p>&#x8FD9;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x4F46;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x6765;&#x8BF4;&#x662F;&#x5DE8;&#x5927;&#x7684;&#x6539;&#x53D8;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x73B0;&#x5728;&#x5BF9;<code>Sign</code>&#x7C7B;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4F20;&#x9012;<code>Verify</code>&#x7C7B;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x4E0D;&#x68C0;&#x67E5;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x4EE5;&#x524D;&#x5B83;&#x5C06;&#x4F1A;&#x7EE7;&#x7EED;&#x5DE5;&#x4F5C;&#x3002;&#x5728;&#x4F60;&#x66FE;&#x7ECF;&#x5F97;&#x5230;&#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;<code>Buffer</code>&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x90A3;&#x4E9B;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x4EE5;&#xFF0C;&#x4F46;&#x4F7F;&#x7528;<code>Buffer</code>&#x4E0D;&#x80FD;&#x5DE5;&#x4F5C;&#x7684;&#x6570;&#x636E;&#xFF08;&#x5982;&#x8FDE;&#x63A5;&#x5B83;&#x4EEC;&#xFF0C;&#x5B58;&#x50A8;&#x8FDB;&#x6570;&#x636E;&#x5E93;&#x7B49;&#xFF09;&#x3002;&#x6216;&#x8005;&#x5BF9;<code>crypto</code>&#x51FD;&#x6570;&#x4E0D;&#x4F20;&#x9012;&#x7F16;&#x7801;&#x53C2;&#x6570;&#x6765;&#x4F20;&#x9012;&#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x90A3;&#x4E48;&#x4EE5;&#x540E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x4F60;&#x60F3;&#x8981;&#x6307;&#x5B9A;&#x7684;&#x7F16;&#x7801;&#x3002;&#x5982;&#x679C;&#x8981;&#x5C06;&#x9ED8;&#x8BA4;&#x7684;&#x4F7F;&#x7528;&#x98CE;&#x683C;&#xFF0C;&#x8F6C;&#x6362;&#x4E3A;&#x65E7;&#x98CE;&#x683C;&#x7684;&#x8BDD;&#xFF0C;&#x5C06;<code>crypto.DEFAULT_ENCODING</code>&#x57DF;&#x8BBE;&#x7F6E;&#x4E3A;<code>&apos;binary&apos;</code>&#x3002;&#x6CE8;&#x610F;&#x65B0;&#x7684;&#x7A0B;&#x5E8F;&#x4ECD;&#x53EF;&#x80FD;&#x671F;&#x671B;&#x63A5;&#x53D7;<code>buffer</code>&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4EC5;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x63AA;&#x65BD;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Console.html" class="navigation navigation-prev " aria-label="Previous page: Console">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Debugger.html" class="navigation navigation-next " aria-label="Next page: Debugger">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Crypto","level":"1.7","depth":1,"next":{"title":"Debugger","level":"1.8","depth":1,"path":"Debugger.md","ref":"Debugger.md","articles":[]},"previous":{"title":"Console","level":"1.6","depth":1,"path":"Console.md","ref":"Console.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Node.js API 中文文档","language":["zh-cn","en"],"links":{"sidebar":{"首页":"http://www.tester360.cn"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"Crypto.md","mtime":"2016-06-20T01:36:08.930Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:41:00.856Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

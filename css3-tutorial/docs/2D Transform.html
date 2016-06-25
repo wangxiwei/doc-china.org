@@ -1,0 +1,425 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn,en" >
+    <head>
+        <title>2D · css3-tutorial</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3D Transform.html" />
+    
+    
+    <link rel="prev" href="Text Effect.html" />
+    
+
+    <!-- tester360.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7d789811683659f2ce2723c13b6f88ef";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.tester360.cn" target="_blank" class="custom-link">��ҳ</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Introduction.html">
+            
+                <a href="Introduction.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Animation.html">
+            
+                <a href="Animation.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Border.html">
+            
+                <a href="Border.html">
+            
+                    
+                    边框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Background.html">
+            
+                <a href="Background.html">
+            
+                    
+                    背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Font.html">
+            
+                <a href="Font.html">
+            
+                    
+                    字体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Multiple Columns.html">
+            
+                <a href="Multiple Columns.html">
+            
+                    
+                    多列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="User Interface.html">
+            
+                <a href="User Interface.html">
+            
+                    
+                    UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Transitions Effect.html">
+            
+                <a href="Transitions Effect.html">
+            
+                    
+                    过渡效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Text Effect.html">
+            
+                <a href="Text Effect.html">
+            
+                    
+                    文本效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="2D Transform.html">
+            
+                <a href="2D Transform.html">
+            
+                    
+                    2D
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="3D Transform.html">
+            
+                <a href="3D Transform.html">
+            
+                    
+                    3D
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2D</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="2d-&#x8F6C;&#x6362;">2D &#x8F6C;&#x6362;</h1>
+<p>CSS3 2D&#x8F6C;&#x6362;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x659C;&#x62C9;(skew)&#xFF0C;&#x7F29;&#x653E;(scale)&#xFF0C;&#x65CB;&#x8F6C;(rotate)&#x4EE5;&#x53CA;&#x4F4D;&#x79FB;(translate)&#x5143;&#x7D20;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> Internet Explorer 10, Firefox, &#x548C; Opera&#x652F;&#x6301;transform &#x5C5E;&#x6027;&#x3002;Chrome &#x548C; Safari &#x8981;&#x6C42;&#x524D;&#x7F00; -webkit- &#x7248;&#x672C;&#x3002;
+Internet Explorer 9 &#x8981;&#x6C42;&#x524D;&#x7F00; -ms- &#x7248;&#x672C;.</p>
+<p>&#x5E38;&#x7528; 2D &#x53D8;&#x6362;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li>translate()</li>
+<li>rotate()</li>
+<li>scale()</li>
+<li>skew()</li>
+<li>matrix()</li>
+</ul>
+<h2 id="translate">translate()</h2>
+<p>translate()&#x65B9;&#x6CD5;&#xFF0C;&#x6839;&#x636E;&#x5DE6;(X&#x8F74;)&#x548C;&#x9876;&#x90E8;(Y&#x8F74;)&#x4F4D;&#x7F6E;&#x7ED9;&#x5B9A;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4ECE;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x4F4D;&#x7F6E;&#x79FB;&#x52A8;</p>
+<pre><code>.translate {
+    transform: translate(50px, 100px);
+    -ms-transform: translate(50px, 100px); /* IE 9 */
+    -webkit-transform: translate(50px, 100px); /* Safari and Chrome */
+}
+</code></pre><h2 id="rotate">rotate()</h2>
+<p>rotate()&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x5EA6;&#x6570;&#x6CBF;&#x7740;&#x5143;&#x7D20;&#x4E2D;&#x5FC3;&#x987A;&#x65F6;&#x9488;&#x65CB;&#x8F6C;&#x7684;&#x5143;&#x7D20;&#x3002;&#x8D1F;&#x503C;&#x662F;&#x5141;&#x8BB8;&#x7684;&#xFF0C;&#x8FD9;&#x6837;&#x662F;&#x5143;&#x7D20;&#x9006;&#x65F6;&#x9488;&#x65CB;&#x8F6C;&#x3002;</p>
+<pre><code>.rotate
+{
+    transform:rotate(30deg);
+    -ms-transform:rotate(30deg); /* IE 9 */
+    -webkit-transform:rotate(30deg); /* Safari and Chrome */
+}
+</code></pre><h2 id="scale">scale()</h2>
+<p>scale()&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x5143;&#x7D20;&#x589E;&#x52A0;&#x6216;&#x51CF;&#x5C11;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x5BBD;&#x5EA6;&#xFF08;X&#x8F74;&#xFF09;&#x548C;&#x9AD8;&#x5EA6;&#xFF08;Y&#x8F74;&#xFF09;&#x7684;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code>.scale
+{
+    transform: scale(2,4);
+    -ms-transform: scale(2,4); /* IE 9 */
+    -webkit-transform: scale(2,4); /* Safari and Chrome */
+}
+</code></pre><h2 id="skew">skew()</h2>
+<p>skew()&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x5143;&#x7D20;&#x4F1A;&#x6839;&#x636E;&#x6A2A;&#x5411;&#xFF08;X&#x8F74;&#xFF09;&#x548C;&#x5782;&#x76F4;&#xFF08;Y&#x8F74;&#xFF09;&#x7EBF;&#x53C2;&#x6570;&#x7ED9;&#x5B9A;&#x89D2;&#x5EA6;&#xFF1A;</p>
+<pre><code>.skew
+{
+    transform:skew(30deg,20deg);
+    -ms-transform:skew(30deg,20deg); /* IE 9 */
+    -webkit-transform:skew(30deg,20deg); /* Safari and Chrome */
+}
+</code></pre><p>skewX(30deg) &#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/skewx.jpg" alt=""></p>
+<p>skewY(10deg) &#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/skewy.jpg" alt=""></p>
+<p>skew(30deg, 10deg) &#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/skew.jpg" alt=""></p>
+<h2 id="matrix">matrix()</h2>
+<p>matrix()&#x65B9;&#x6CD5;&#x548C;2D&#x53D8;&#x6362;&#x65B9;&#x6CD5;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x3002;</p>
+<p>matrix &#x65B9;&#x6CD5;&#x6709;&#x516D;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5305;&#x542B;&#x65CB;&#x8F6C;&#xFF0C;&#x7F29;&#x653E;&#xFF0C;&#x79FB;&#x52A8;&#xFF08;&#x5E73;&#x79FB;&#xFF09;&#x548C;&#x503E;&#x659C;&#x529F;&#x80FD;&#x3002;</p>
+<pre><code>.matrix
+{
+    transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+    -ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* IE 9 */
+    -webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Safari and Chrome */
+}
+</code></pre><h2 id="&#x6E90;&#x7801;">&#x6E90;&#x7801;</h2>
+<p>&#x672C;&#x6587;&#x4E2D;&#x6240;&#x7528;&#x4F8B;&#x5B50;&#x6E90;&#x7801;&#x53C2;&#x89C1;
+<a href="https://github.com/waylau/css3-tutorial" target="_blank">https://github.com/waylau/css3-tutorial</a> &#x4E2D; <code>samples</code> &#x76EE;&#x5F55;&#x4E0B;&#x7684; 2d_transform.html</p>
+<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/" target="_blank">http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Text Effect.html" class="navigation navigation-prev " aria-label="Previous page: 文本效果">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3D Transform.html" class="navigation navigation-next " aria-label="Next page: 3D">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2D","level":"1.11","depth":1,"next":{"title":"3D","level":"1.12","depth":1,"path":"docs/3D Transform.md","ref":"docs/3D Transform.md","articles":[]},"previous":{"title":"文本效果","level":"1.10","depth":1,"path":"docs/Text Effect.md","ref":"docs/Text Effect.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","baidu","sitemap","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"css3-tutorial","language":["zh-cn","en"],"links":{"sidebar":{"��ҳ":"http://www.tester360.cn"}},"gitbook":"*","description":"css3 ѧϰ���Ž̳�"},"file":{"path":"docs/2D Transform.md","mtime":"2016-06-20T01:37:38.031Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:31:01.114Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+
