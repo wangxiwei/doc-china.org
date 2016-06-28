@@ -1,0 +1,660 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>处理alert/confirm/prompt · webdriver实用指南ruby版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../25/wait.html" />
+    
+    
+    <link rel="prev" href="../23/js.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01/start_browser.html">
+            
+                <a href="../01/start_browser.html">
+            
+                    
+                    启动浏览器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02/close_browser.html">
+            
+                <a href="../02/close_browser.html">
+            
+                    
+                    关闭浏览器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../03/maximize_browser.html">
+            
+                <a href="../03/maximize_browser.html">
+            
+                    
+                    浏览器最大化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04/resize_browser.html">
+            
+                <a href="../04/resize_browser.html">
+            
+                    
+                    设置浏览器大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05/get.html">
+            
+                <a href="../05/get.html">
+            
+                    
+                    访问链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06/title_and_url.html">
+            
+                <a href="../06/title_and_url.html">
+            
+                    
+                    打印当前页面的title及url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../07/forword_and_back.html">
+            
+                <a href="../07/forword_and_back.html">
+            
+                    
+                    前进和后退
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../08/simple_locate.html">
+            
+                <a href="../08/simple_locate.html">
+            
+                    
+                    简单的对象定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../09/find_elements.html">
+            
+                <a href="../09/find_elements.html">
+            
+                    
+                    定位一组对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../10/level_locate.html">
+            
+                <a href="../10/level_locate.html">
+            
+                    
+                    层级定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../11/operate_element.html">
+            
+                <a href="../11/operate_element.html">
+            
+                    
+                    操作测试对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../12/send_keys.html">
+            
+                <a href="../12/send_keys.html">
+            
+                    
+                    send keys模拟按键输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../13/button_group.html">
+            
+                <a href="../13/button_group.html">
+            
+                    
+                    处理button group
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../14/button_dropdown.html">
+            
+                <a href="../14/button_dropdown.html">
+            
+                    
+                    处理button dropdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../15/navs.html">
+            
+                <a href="../15/navs.html">
+            
+                    
+                    处理navs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../16/breadcrumb.html">
+            
+                <a href="../16/breadcrumb.html">
+            
+                    
+                    处理面包屑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../18/modal.html">
+            
+                <a href="../18/modal.html">
+            
+                    
+                    处理对话框新式的模态窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../19/attribute.html">
+            
+                <a href="../19/attribute.html">
+            
+                    
+                    获取测试对象的属性及内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../20/css.html">
+            
+                <a href="../20/css.html">
+            
+                    
+                    获取测试对象的css属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../21/status.html">
+            
+                <a href="../21/status.html">
+            
+                    
+                    获取测试对象的状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../22/form.html">
+            
+                <a href="../22/form.html">
+            
+                    
+                    处理表单元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../23/js.html">
+            
+                <a href="../23/js.html">
+            
+                    
+                    执行js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="alert.html">
+            
+                <a href="alert.html">
+            
+                    
+                    处理alert/confirm/prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../25/wait.html">
+            
+                <a href="../25/wait.html">
+            
+                    
+                    wait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="../26/frame.html">
+            
+                <a href="../26/frame.html">
+            
+                    
+                    定位frame中的元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="../27/action.html">
+            
+                <a href="../27/action.html">
+            
+                    
+                    action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../28/upload_file.html">
+            
+                <a href="../28/upload_file.html">
+            
+                    
+                    上传文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="../29/download.html">
+            
+                <a href="../29/download.html">
+            
+                    
+                    下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="../30/timeout.html">
+            
+                <a href="../30/timeout.html">
+            
+                    
+                    超时设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="../31/remote.html">
+            
+                <a href="../31/remote.html">
+            
+                    
+                    Remote Webdriver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="../32/cookie.html">
+            
+                <a href="../32/cookie.html">
+            
+                    
+                    cookie与自动登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >处理alert/confirm/prompt</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5904;&#x7406;alertconfirmprompt">&#x5904;&#x7406;alert/confirm/prompt</h1>
+<h2 id="&#x573A;&#x666F;">&#x573A;&#x666F;</h2>
+<p>webdriver&#x4E2D;&#x5904;&#x7406;&#x539F;&#x751F;&#x7684;js alert confirm &#x4EE5;&#x53CA;prompt&#x662F;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x3002;&#x5177;&#x4F53;&#x601D;&#x8DEF;&#x662F;&#x4F7F;&#x7528;switch_to.alert()&#x65B9;&#x6CD5;&#x5B9A;&#x4F4D;&#x5230;alert/confirm/prompt&#x3002;&#x7136;&#x540E;&#x4F7F;&#x7528;text/accept/dismiss/send_keys&#x6309;&#x9700;&#x8FDB;&#x884C;&#x64CD;&#x505A;</p>
+<ul>
+<li>text&#x3002;&#x8FD4;&#x56DE;alert/confirm/prompt&#x4E2D;&#x7684;&#x6587;&#x5B57;&#x4FE1;&#x606F;</li>
+<li>accept&#x3002;&#x70B9;&#x51FB;&#x786E;&#x8BA4;&#x6309;&#x94AE;</li>
+<li>dismiss&#x3002;&#x70B9;&#x51FB;&#x53D6;&#x6D88;&#x6309;&#x94AE;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;</li>
+<li>send_keys&#x3002;&#x5411;prompt&#x4E2D;&#x8F93;&#x5165;&#x6587;&#x5B57;</li>
+</ul>
+<h2 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h2>
+<p>&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x7B80;&#x5355;&#x7684;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x53BB;&#x5904;&#x7406;&#x539F;&#x751F;&#x7684;alert</p>
+<h3 id="alerthtml">alert.html</h3>
+<pre><code>  &lt;html&gt;
+    &lt;head&gt;
+      &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;
+      &lt;title&gt;alert&lt;/title&gt;        
+      &lt;script type=&quot;text/javascript&quot; async=&quot;&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+      &lt;link href=&quot;http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css&quot; rel=&quot;stylesheet&quot; /&gt;        
+      &lt;script type=&quot;text/javascript&quot;&gt;
+        $(document).ready(function(){
+          $(&apos;#tooltip&apos;).tooltip({&quot;placement&quot;: &quot;right&quot;});
+          $(&apos;#tooltip&apos;).click(function(){
+              alert(&apos;watir-webdriver better than selenium-webdriver&apos;)
+          });
+        });
+      &lt;/script&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+      &lt;div class=&quot;row-fluid&quot;&gt;
+        &lt;div class=&quot;span6 well&quot;&gt;        
+          &lt;h3&gt;alert&lt;/h3&gt;
+          &lt;a id=&quot;tooltip&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;watir-webdriver better than selenium-webdriver&quot;&gt;hover to see tooltip&lt;/a&gt;
+        &lt;/div&gt;        
+      &lt;/div&gt;        
+    &lt;/body&gt;
+    &lt;script src=&quot;http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/html&gt;
+</code></pre><h3 id="alertrb">alert.rb</h3>
+<pre><code>  #encoding: utf-8
+  require &apos;selenium-webdriver&apos;
+
+  dr = Selenium::WebDriver.for :chrome
+  file_path = &apos;file:///&apos; + File.expand_path(File.join(&apos;.&apos;, &apos;alert.html&apos;))
+  dr.get file_path
+
+  # &#x70B9;&#x51FB;&#x94FE;&#x63A5;&#x5F39;&#x51FA;alert
+  dr.find_element(:id, &apos;tooltip&apos;).click()
+
+  alert = dr.switch_to.alert
+  alert.accept()
+
+  sleep(1)
+  dr.quit()
+</code></pre>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../23/js.html" class="navigation navigation-prev " aria-label="Previous page: 执行js">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../25/wait.html" class="navigation navigation-next " aria-label="Next page: wait">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"处理alert/confirm/prompt","level":"1.24","depth":1,"next":{"title":"wait","level":"1.25","depth":1,"path":"25/wait.md","ref":"25/wait.md","articles":[]},"previous":{"title":"执行js","level":"1.23","depth":1,"path":"23/js.md","ref":"23/js.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"webdriver实用指南ruby版本","links":{"sidebar":{"Home":"/"}},"gitbook":"*","description":"乙醇老师的webdriver实用指南ruby版本"},"file":{"path":"24/alert.md","mtime":"2016-06-28T06:07:10.120Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-28T07:12:41.497Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

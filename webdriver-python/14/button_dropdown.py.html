@@ -1,0 +1,691 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>处理button dropdown · webdriver实用指南python版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../15/navs.py.html" />
+    
+    
+    <link rel="prev" href="../13/button_group.py.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00/init.py.html">
+            
+                <a href="../00/init.py.html">
+            
+                    
+                    安装开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01/start_browser.py.html">
+            
+                <a href="../01/start_browser.py.html">
+            
+                    
+                    启动浏览器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02/close_browser.py.html">
+            
+                <a href="../02/close_browser.py.html">
+            
+                    
+                    关闭浏览器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03/maximize_browser.py.html">
+            
+                <a href="../03/maximize_browser.py.html">
+            
+                    
+                    浏览器最大化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../04/resize_browser.py.html">
+            
+                <a href="../04/resize_browser.py.html">
+            
+                    
+                    设置浏览器大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05/get.py.html">
+            
+                <a href="../05/get.py.html">
+            
+                    
+                    访问链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06/title_and_url.py.html">
+            
+                <a href="../06/title_and_url.py.html">
+            
+                    
+                    打印当前页面的title及url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07/forword_and_back.py.html">
+            
+                <a href="../07/forword_and_back.py.html">
+            
+                    
+                    前进和后退
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../08/simple_locate.py.html">
+            
+                <a href="../08/simple_locate.py.html">
+            
+                    
+                    简单的对象定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../09/find_elements.py.html">
+            
+                <a href="../09/find_elements.py.html">
+            
+                    
+                    定位一组对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../10/level_locate.py.html">
+            
+                <a href="../10/level_locate.py.html">
+            
+                    
+                    层级定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../11/operate_element.py.html">
+            
+                <a href="../11/operate_element.py.html">
+            
+                    
+                    操作测试对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../12/send_keys.py.html">
+            
+                <a href="../12/send_keys.py.html">
+            
+                    
+                    send keys模拟按键输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../13/button_group.py.html">
+            
+                <a href="../13/button_group.py.html">
+            
+                    
+                    处理button group
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="button_dropdown.py.html">
+            
+                <a href="button_dropdown.py.html">
+            
+                    
+                    处理button dropdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../15/navs.py.html">
+            
+                <a href="../15/navs.py.html">
+            
+                    
+                    处理navs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../16/breadcrumb.py.html">
+            
+                <a href="../16/breadcrumb.py.html">
+            
+                    
+                    处理面包屑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../18/modal.py.html">
+            
+                <a href="../18/modal.py.html">
+            
+                    
+                    处理对话框新式的模态窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../19/attribute.py.html">
+            
+                <a href="../19/attribute.py.html">
+            
+                    
+                    获取测试对象的属性及内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../20/css.py.html">
+            
+                <a href="../20/css.py.html">
+            
+                    
+                    获取测试对象的css属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../21/status.py.html">
+            
+                <a href="../21/status.py.html">
+            
+                    
+                    获取测试对象的状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../22/form.py.html">
+            
+                <a href="../22/form.py.html">
+            
+                    
+                    处理表单元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../23/js.py.html">
+            
+                <a href="../23/js.py.html">
+            
+                    
+                    执行js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../24/alert.py.html">
+            
+                <a href="../24/alert.py.html">
+            
+                    
+                    处理alert/confirm/prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="../25/wait.py.html">
+            
+                <a href="../25/wait.py.html">
+            
+                    
+                    wait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="../26/frame.py.html">
+            
+                <a href="../26/frame.py.html">
+            
+                    
+                    定位frame中的元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../27/action.py.html">
+            
+                <a href="../27/action.py.html">
+            
+                    
+                    action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="../28/upload_file.py.html">
+            
+                <a href="../28/upload_file.py.html">
+            
+                    
+                    上传文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="../29/download.py.html">
+            
+                <a href="../29/download.py.html">
+            
+                    
+                    下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="../30/timeout.py.html">
+            
+                <a href="../30/timeout.py.html">
+            
+                    
+                    超时设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="../31/remote.html">
+            
+                <a href="../31/remote.html">
+            
+                    
+                    Remote Webdriver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="../32/cookie.py.html">
+            
+                <a href="../32/cookie.py.html">
+            
+                    
+                    cookie与自动登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >处理button dropdown</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5904;&#x7406;button-dropdown">&#x5904;&#x7406;button dropdown</h1>
+<h2 id="&#x573A;&#x666F;">&#x573A;&#x666F;</h2>
+<p>button dropdown&#x5C31;&#x662F;&#x628A;&#x6309;&#x94AE;&#x548C;&#x4E0B;&#x62C9;&#x83DC;&#x5355;&#x5F04;&#x5230;&#x4E86;&#x4E00;&#x8D77;&#x3002;&#x5904;&#x7406;&#x8FD9;&#x79CD;&#x5BF9;&#x8C61;&#x7684;&#x601D;&#x8DEF;&#x4E00;&#x822C;&#x662F;&#x5148;&#x70B9;&#x51FB;&#x8FD9;&#x4E2A;&#x6309;&#x94AE;&#xFF0C;&#x7B49;&#x5F85;&#x4E0B;&#x62C9;&#x83DC;&#x5355;&#x663E;&#x793A;&#x51FA;&#x6765;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x5C42;&#x7EA7;&#x5B9A;&#x4F4D;&#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x4E0B;&#x62C9;&#x83DC;&#x5355;&#x4E2D;&#x7684;&#x5177;&#x4F53;&#x9879;&#x3002;</p>
+<h2 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h2>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x627E;&#x5230;watir-webdriver&#x8FD9;&#x4E2A;&#x83DC;&#x5355;&#x9879;&#x3002;&#x5176;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x662F;&#x5148;&#x70B9;&#x51FB;info&#x6309;&#x94AE;&#xFF0C;&#x7136;&#x540E;&#x7B49;&#x5230;&#x4E0B;&#x62C9;&#x83DC;&#x5355;&#x51FA;&#x73B0;&#x540E;&#x5B9A;&#x4F4D;&#x4E0B;&#x62C9;&#x83DC;&#x5355;&#x7684;ul&#x5143;&#x7D20;&#xFF0C;&#x518D;&#x5B9A;&#x4F4D;ul&#x5143;&#x7D20;&#x4E2D;link text&#x4E3A;watir-webdriver&#x7684;link&#xFF0C;&#x5E76;&#x70B9;&#x51FB;&#x4E4B;&#x3002;</p>
+<h3 id="buttondropdownhtml">button_dropdown.html</h3>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;
+        &lt;title&gt;button dropdown&lt;/title&gt;        
+        &lt;script type=&quot;text/javascript&quot; async=&quot;&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+        &lt;link href=&quot;http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css&quot; rel=&quot;stylesheet&quot; /&gt;        
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            $(document).ready(
+                function(){
+                    $(&apos;.dropdown-menu&apos;).find(&apos;a&apos;).first().click(function(){ alert(&apos;watir-webdriver is better than selenium-webdriver&apos;); });
+                }
+            );
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h3&gt;button dropdown&lt;/h3&gt;
+        &lt;div class=&quot;row-fluid&quot;&gt;
+            &lt;div class=&quot;span3&quot;&gt;        
+                &lt;div class=&quot;well&quot;&gt;
+                    &lt;div class=&quot;btn-group&quot;&gt;
+                        &lt;a class=&quot;btn dropdown-toggle btn-info&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;
+                            Info
+                            &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;watir-webdriver&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;better than&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;selenium-webdriver&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;            
+            &lt;/div&gt;        
+        &lt;/div&gt;        
+    &lt;/body&gt;
+    &lt;script src=&quot;http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+</code></pre><h3 id="buttondropdownpy">button_dropdown.py</h3>
+<pre><code>#coding=utf-8
+
+from selenium import  webdriver
+from selenium.webdriver.support.ui import  WebDriverWait
+from time import  sleep
+import  os
+
+if &apos;HTTP_PROXY&apos; in os.environ: del os.environ[&apos;HTTP_PROXY&apos;]
+
+dr = webdriver.Chrome()
+file_path = &apos;file:///&apos; + os.path.abspath(&apos;button_dropdown.html&apos;)
+dr.get(file_path)
+
+sleep(1)
+
+#&#x70B9;&#x51FB;&#x4E0B;&#x62C9;&#x83DC;&#x5355;
+dr.find_element_by_link_text(&apos;Info&apos;).click()
+
+#&#x627E;&#x5230;dropdown-menu&#x7236;&#x5143;&#x7D20;
+WebDriverWait(dr,10).until(lambda the_driver: the_driver.find_element_by_class_name(&apos;dropdown-menu&apos;).is_displayed())
+
+#&#x627E;&#x5230;better than
+menu = dr.find_element_by_class_name(&apos;dropdown-menu&apos;).find_element_by_link_text(&apos;better than&apos;)
+
+menu.click()
+
+sleep(3)
+
+dr.quit()
+</code></pre>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../13/button_group.py.html" class="navigation navigation-prev " aria-label="Previous page: 处理button group">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../15/navs.py.html" class="navigation navigation-next " aria-label="Next page: 处理navs">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"处理button dropdown","level":"1.16","depth":1,"next":{"title":"处理navs","level":"1.17","depth":1,"path":"15/navs.py.md","ref":"15/navs.py.md","articles":[]},"previous":{"title":"处理button group","level":"1.15","depth":1,"path":"13/button_group.py.md","ref":"13/button_group.py.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu":{"token":"7d789811683659f2ce2723c13b6f88ef"},"sitemap":{"hostname":"http://selenium.tester360.cn/"},"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"webdriver实用指南python版本","links":{"sidebar":{"Home":"/"}},"gitbook":"*","description":"乙醇老师的webdriver实用指南python版本"},"file":{"path":"14/button_dropdown.py.md","mtime":"2016-06-28T06:07:09.780Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-28T07:07:13.820Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

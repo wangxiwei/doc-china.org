@@ -1,0 +1,653 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Remote Webdriver · webdriver实用指南java版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../32/cookie.java.html" />
+    
+    
+    <link rel="prev" href="../30/timeout.java.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01/start_browser.java.html">
+            
+                <a href="../01/start_browser.java.html">
+            
+                    
+                    启动浏览器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02/close_browser.java.html">
+            
+                <a href="../02/close_browser.java.html">
+            
+                    
+                    关闭浏览器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../03/maximize_browser.java.html">
+            
+                <a href="../03/maximize_browser.java.html">
+            
+                    
+                    浏览器最大化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04/resize_browser.java.html">
+            
+                <a href="../04/resize_browser.java.html">
+            
+                    
+                    设置浏览器大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05/get.java.html">
+            
+                <a href="../05/get.java.html">
+            
+                    
+                    访问链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06/title_and_url.java.html">
+            
+                <a href="../06/title_and_url.java.html">
+            
+                    
+                    打印当前页面的title及url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../07/forword_and_back.java.html">
+            
+                <a href="../07/forword_and_back.java.html">
+            
+                    
+                    前进和后退
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../08/simple_locate.java.html">
+            
+                <a href="../08/simple_locate.java.html">
+            
+                    
+                    简单的对象定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../09/find_elements.java.html">
+            
+                <a href="../09/find_elements.java.html">
+            
+                    
+                    定位一组对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../10/level_locate.java.html">
+            
+                <a href="../10/level_locate.java.html">
+            
+                    
+                    层级定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../11/operate_element.java.html">
+            
+                <a href="../11/operate_element.java.html">
+            
+                    
+                    操作测试对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../12/send_keys.java.html">
+            
+                <a href="../12/send_keys.java.html">
+            
+                    
+                    send keys模拟按键输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../13/button_group.java.html">
+            
+                <a href="../13/button_group.java.html">
+            
+                    
+                    处理button group
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../14/button_dropdown.java.html">
+            
+                <a href="../14/button_dropdown.java.html">
+            
+                    
+                    处理button dropdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../15/navs.java.html">
+            
+                <a href="../15/navs.java.html">
+            
+                    
+                    处理navs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../16/breadcrumb.java.html">
+            
+                <a href="../16/breadcrumb.java.html">
+            
+                    
+                    处理面包屑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../18/modal.java.html">
+            
+                <a href="../18/modal.java.html">
+            
+                    
+                    处理对话框新式的模态窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../19/attribute.java.html">
+            
+                <a href="../19/attribute.java.html">
+            
+                    
+                    获取测试对象的属性及内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../20/css.java.html">
+            
+                <a href="../20/css.java.html">
+            
+                    
+                    获取测试对象的css属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../21/status.java.html">
+            
+                <a href="../21/status.java.html">
+            
+                    
+                    获取测试对象的状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../22/form.java.html">
+            
+                <a href="../22/form.java.html">
+            
+                    
+                    处理表单元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../23/js.java.html">
+            
+                <a href="../23/js.java.html">
+            
+                    
+                    执行js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../24/alert.java.html">
+            
+                <a href="../24/alert.java.html">
+            
+                    
+                    处理alert/confirm/prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../25/wait.java.html">
+            
+                <a href="../25/wait.java.html">
+            
+                    
+                    wait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="../26/frame.java.html">
+            
+                <a href="../26/frame.java.html">
+            
+                    
+                    定位frame中的元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="../27/action.java.html">
+            
+                <a href="../27/action.java.html">
+            
+                    
+                    action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../28/upload_file.java.html">
+            
+                <a href="../28/upload_file.java.html">
+            
+                    
+                    上传文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="../29/download.java.html">
+            
+                <a href="../29/download.java.html">
+            
+                    
+                    下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="../30/timeout.java.html">
+            
+                <a href="../30/timeout.java.html">
+            
+                    
+                    超时设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.31" data-path="remote.html">
+            
+                <a href="remote.html">
+            
+                    
+                    Remote Webdriver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="../32/cookie.java.html">
+            
+                <a href="../32/cookie.java.html">
+            
+                    
+                    cookie与自动登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Remote Webdriver</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="remote-webdriver">Remote Webdriver</h1>
+<h2 id="&#x573A;&#x666F;">&#x573A;&#x666F;</h2>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;remote webdriver&#x7406;&#x89E3;&#x6210;&#x5728;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x4E0A;&#x8FD0;&#x884C;webdriver&#x811A;&#x672C;&#x3002;</p>
+<p>&#x60F3;&#x50CF;&#x4E00;&#x4E0B;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x4F60;&#x548C;&#x4F60;&#x7684;&#x540C;&#x4E8B;&#x4E24;&#x4EBA;&#x4E00;&#x8D77;&#x5F00;&#x53D1;&#x4E00;&#x6BB5;webdriver&#x811A;&#x672C;&#xFF0C;&#x7136;&#x540E;&#x4F60;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x7684;&#x73AF;&#x5883;&#x53BB;&#x8FD0;&#x884C;&#x8FD9;&#x6BB5;&#x811A;&#x672C;&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5728;&#x516C;&#x5171;&#x7684;&#x73AF;&#x5883;&#x8FD0;&#x884C;&#xFF1F;&#x90A3;&#x662F;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x4EBA;&#x7684;&#x5F00;&#x53D1;&#x673A;&#x5668;&#x662F;&#x6709;&#x5DEE;&#x5F02;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x7528;&#x540C;&#x4E00;&#x53F0;&#x6D4B;&#x8BD5;&#x673A;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x73AF;&#x5883;&#x5DEE;&#x5F02;&#x7684;&#x56E0;&#x7D20;&#x5C31;&#x53EF;&#x4EE5;&#x57FA;&#x672C;&#x6392;&#x9664;&#x3002;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x7ECF;&#x5E38;&#x542C;&#x5230;&#x5F00;&#x53D1;&#x8BF4;&#x8FD9;&#x6837;&#x7684;&#x8BDD;:&quot;&#x8FD9;&#x4E2A;bug&#x5728;&#x6211;&#x7684;&#x73AF;&#x5883;&#x4E0A;&#x662F;&#x597D;&#x7684;&#x554A;&#xFF01;&quot;&#x3002;&#x56E0;&#x4E3A;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x4E0D;&#x540C;&#x800C;&#x9020;&#x6210;&#x7684;bug&#x6BD4;&#x6BD4;&#x7686;&#x662F;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7EDF;&#x4E00;&#x7684;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x6765;&#x6D88;&#x9664;&#x5DEE;&#x5F02;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x6837;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;remote webdriver&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x811A;&#x672C;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;remote webdriver&#xFF0C;&#x5728;&#x6D4B;&#x8BD5;&#x673A;&#x5668;&#x4E0A;&#x6267;&#x884C;&#x6211;&#x4EEC;&#x7684;&#x6D4B;&#x8BD5;&#x3002;</p>
+<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
+<p>Remote Webdriver&#x7684;&#x5B89;&#x88C5;&#x5F88;&#x7B80;&#x5355;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x4E0B;&#x8F7D;<a href="http://code.google.com/p/selenium/downloads/list" target="_blank">selenium-server-standalone-LAST-VERSION.jar</a>&#x3002;</p>
+<p>&#x7136;&#x540E;&#x8FD0;&#x884C;<code>java -jar selenium-server-standalone.jar</code>&#x547D;&#x4EE4;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x9519;&#x8BEF;&#x51FA;&#x73B0;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x53F0;&#x673A;&#x5668;&#x5DF2;&#x7ECF;&#x88AB;&#x914D;&#x7F6E;&#x6210;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x4E86;&#xFF0C;&#x4EE5;&#x540E;webdriver&#x5C31;&#x4F1A;&#x5728;&#x8FD9;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#x542F;&#x52A8;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x6267;&#x884C;&#x811A;&#x672C;&#x3002;</p>
+<h2 id="&#x542F;&#x52A8;driver">&#x542F;&#x52A8;driver</h2>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x542F;&#x52A8;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x4E0A;&#x7684;driver&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x8FD9;&#x4F1A;&#x6253;&#x5F00;localhost&#x4E5F;&#x5C31;&#x662F;&#x672C;&#x673A;&#x4E0A;&#x7684;firefox&#x6D4F;&#x89C8;&#x5668;</p>
+<pre><code>    driver = Selenium::WebDriver.for(:remote)
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x7684;remote webdriver&#x4E0D;&#x5728;&#x672C;&#x5730;&#x8FD0;&#x884C;&#xFF0C;&#x800C;&#x4E14;&#x4F60;&#x53C8;&#x60F3;&#x6307;&#x5B9A;&#x9664;firefox&#x4EE5;&#x5916;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x90A3;&#x4E48;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;</p>
+<pre><code>    driver = Selenium::WebDriver.for(:remote, :url =&gt; &quot;http://myserver:4444/wd/hub&quot;, :desired_capabilities =&gt; :chrome)
+</code></pre><p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;myserver&#x53EF;&#x4EE5;&#x662F;192.168.x.x&#x4E4B;&#x7C7B;&#x7684;ip&#x5730;&#x5740;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x914D;&#x7F6E;<code>Selenium::WebDriver::Remote::Capabilities</code>&#x6765;&#x5B9E;&#x73B0;&#x66F4;&#x52A0;&#x5B9A;&#x5236;&#x5316;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x914D;&#x7F6E;&#xFF0C;&#x8FD9;&#x4E2A;&#x8D85;&#x51FA;&#x672C;&#x6587;&#x8303;&#x56F4;&#xFF0C;&#x4E0D;&#x505A;&#x63CF;&#x8FF0;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;watir-webdriver&#x542F;&#x52A8;driver">&#x4F7F;&#x7528;watir-webdriver&#x542F;&#x52A8;driver</h2>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x8BA9;watir-webdriver&#x4E5F;&#x4F7F;&#x7528;remote webdriver&#x6A21;&#x5F0F;</p>
+<pre><code>    browser = Watir::Browser.new(:remote, {desired_capabilities: :chrome, url: &quot;http://myserver:4444/wd/hub&quot;})
+</code></pre><h2 id="java&#x7248;&#x672C;">java&#x7248;&#x672C;</h2>
+<pre><code>    // We could use any driver for our tests...
+    DesiredCapabilities capabilities = new DesiredCapabilities();
+
+    // ... but only if it supports javascript
+    capabilities.setJavascriptEnabled(true);
+
+    // Get a handle to the driver. This will throw an exception
+    // if a matching driver cannot be located
+    WebDriver driver = new RemoteWebDriver(capabilities);
+
+    // Query the driver to find out more information
+    Capabilities actualCapabilities = ((RemoteWebDriver) driver).getCapabilities();
+
+    // And now use it
+    driver.get(&quot;http://www.google.com&quot;);
+</code></pre><p>&#x6CE8;&#x610F;&#xFF0C;java&#x7248;&#x672C;&#x7684;&#x4EE3;&#x7801;&#x6211;&#x6CA1;&#x6709;&#x65F6;&#x95F4;&#x53BB;&#x8C03;&#x8BD5;&#xFF0C;&#x8FD9;&#x91CC;&#x53EA;&#x662F;&#x628A;wiki&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x51FA;&#x6765;&#x800C;&#x5DF2;&#x3002;&#x53E6;&#x5916;remote server&#x5728;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x622A;&#x56FE;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x83B7;&#x5F97;&#x622A;&#x56FE;&#x7684;&#x4EE3;&#x7801;</p>
+<pre><code>    public String extractScreenShot(WebDriverException e) {
+        Throwable cause = e.getCause();
+        if (cause instanceof ScreenshotException) {
+            return ((ScreenshotException) cause).getBase64EncodedScreenshot();
+        }
+        return null;
+    }
+</code></pre><h2 id="python&#x7248;&#x672C;">python&#x7248;&#x672C;</h2>
+<pre><code>    c = webdriver.DesiredCapabilities.CHROME
+    driver = webdriver.Remote(command_executor=&apos;http://127.0.0.1:4444/wd/hub&apos;, desired_capabilities=c)
+</code></pre><p>&#x6CE8;&#x610F;&#xFF0C;python binding&#x7684;wiki&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x542F;&#x52A8;remote webdriver&#x7684;&#x4EE3;&#x7801;&#x8DDF;&#x6211;&#x4E0A;&#x9762;&#x7ED9;&#x51FA;&#x7684;&#x4E0D;&#x592A;&#x76F8;&#x540C;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x7684;selenium&#x7248;&#x672C;&#x8F83;&#x4F4E;(30)&#xFF0C;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x8BD5;&#x8BD5;<a href="http://code.google.com/p/selenium/wiki/PythonBindings" target="_blank">wiki</a>&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../30/timeout.java.html" class="navigation navigation-prev " aria-label="Previous page: 超时设置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../32/cookie.java.html" class="navigation navigation-next " aria-label="Next page: cookie与自动登陆">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Remote Webdriver","level":"1.31","depth":1,"next":{"title":"cookie与自动登陆","level":"1.32","depth":1,"path":"32/cookie.java.md","ref":"32/cookie.java.md","articles":[]},"previous":{"title":"超时设置","level":"1.30","depth":1,"path":"30/timeout.java.md","ref":"30/timeout.java.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","-fontsettings","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"wwwtester360cn"},"highlight":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"webdriver实用指南java版本","links":{"sidebar":{"Home":"/"}},"gitbook":"*","description":"乙醇老师的webdriver实用指南java版本"},"file":{"path":"31/remote.md","mtime":"2016-06-28T06:07:10.278Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-28T07:12:04.245Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+
