@@ -1,0 +1,556 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <title>Node.js基础 · nodejs实战</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="npm.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+           <!-- baidu tongji-->
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?627126cddcd63947fdd8f5b3c73ab19e";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        <!-- baidu tongji-->
+
+            <!-- GA -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-79861528-2', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <!-- GA -->
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="/" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../npm-package/">
+            
+                <a href="../npm-package/">
+            
+                    
+                    开发NPM模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../npm-package/validator.html">
+            
+                <a href="../npm-package/validator.html">
+            
+                    
+                    开发node-validator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../npm-package/test.html">
+            
+                <a href="../npm-package/test.html">
+            
+                    
+                    编写测试用例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../npm-package/manage.html">
+            
+                <a href="../npm-package/manage.html">
+            
+                    
+                    管理NPM模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../cli/">
+            
+                <a href="../cli/">
+            
+                    
+                    开发命令行工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../cli/request.html">
+            
+                <a href="../cli/request.html">
+            
+                    
+                    调用接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../cli/output.html">
+            
+                <a href="../cli/output.html">
+            
+                    
+                    美化输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../cli/finish.html">
+            
+                <a href="../cli/finish.html">
+            
+                    
+                    完善工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../express/">
+            
+                <a href="../express/">
+            
+                    
+                    Express站点开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../express/express.html">
+            
+                <a href="../express/express.html">
+            
+                    
+                    使用Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../express/develop.html">
+            
+                <a href="../express/develop.html">
+            
+                    
+                    开发Express应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../express/deploy.html">
+            
+                <a href="../express/deploy.html">
+            
+                    
+                    服务器部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="npm.html">
+            
+                <a href="npm.html">
+            
+                    
+                    NPM基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="reference.html">
+            
+                <a href="reference.html">
+            
+                    
+                    参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="update.html">
+            
+                <a href="update.html">
+            
+                    
+                    更新说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Node.js基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="nodejs&#x57FA;&#x7840;">Node.js&#x57FA;&#x7840;</h1>
+<p>&#x5982;&#x679C;&#x4F60;&#x5DF2;&#x7ECF;&#x6709;Node.js&#x7684;&#x7F16;&#x7A0B;&#x57FA;&#x7840;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7;&#x6B64;&#x7AE0;&#x8282;&#xFF0C;&#x4F46;&#x4E5F;&#x4E0D;&#x59A8;&#x5C06;&#x5176;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x53C2;&#x8003;&#x3002;</p>
+<h2 id="nodejs&#x7248;&#x672C;&#x7684;hello-world">Node.js&#x7248;&#x672C;&#x7684;Hello World</h2>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Hello World&apos;</span>);
+</code></pre>
+<ul>
+<li>&#x8FD0;&#x884C;Node.js</li>
+</ul>
+<pre><code class="lang-sh">node test.js
+</code></pre>
+<h2 id="nodejs&#x7684;&#x7248;&#x672C;&#x7BA1;&#x7406;">Node.js&#x7684;&#x7248;&#x672C;&#x7BA1;&#x7406;</h2>
+<p>&#x5C31;&#x73B0;&#x9636;&#x6BB5;&#x6765;&#x770B;&#xFF0C;Node.js&#x5728;&#x7A33;&#x5B9A;&#x7248;&#x4E0E;&#x6700;&#x65B0;&#x7248;&#x672C;&#x4E4B;&#x95F4;&#x8FD8;&#x662F;&#x5B58;&#x5728;&#x4E0D;&#x5C11;&#x5DEE;&#x5F02;&#x7684;&#x3002;&#x9020;&#x6210;&#x8FD9;&#x4E9B;&#x5DEE;&#x5F02;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x8BF8;&#x5982;V8&#x7684;&#x7248;&#x672C;&#xFF0C;&#x8BF8;&#x5982;&#x5BF9;ES6&#x7279;&#x6027;&#x7684;&#x5B9E;&#x73B0;&#x7B49;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5207;&#x6362;Node.js&#x7684;&#x7248;&#x672C;&#x53EF;&#x80FD;&#x662F;&#x7ECF;&#x5E38;&#x4F1A;&#x505A;&#x7684;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#x3002;</p>
+<p>Node.js&#x7684;&#x7248;&#x672C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<a href="https://github.com/creationix/nvm" target="_blank">NVM</a>&#x4EE5;&#x53CA;<a href="https://github.com/tj/n" target="_blank">N</a>&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x3002;&#x8FD9;&#x4E24;&#x8005;&#x6211;&#x90FD;&#x66FE;&#x7ECF;&#x7528;&#x8FC7;&#xFF0C;&#x76F8;&#x6BD4;&#x800C;&#x8A00;&#xFF0C;&#x524D;&#x8005;&#x53EF;&#x80FD;&#x505A;&#x7684;&#x66F4;&#x4E3A;&#x7684;&#x5B8C;&#x5584;&#x3001;&#x6613;&#x7528;&#x3002;&#x5F53;&#x7136;&#x4F60;&#x4E5F;&#x4E0D;&#x59A8;&#x5C06;&#x4E24;&#x8005;&#x90FD;&#x5C1D;&#x8BD5;&#x4E00;&#x4E0B;&#xFF0C;&#x9009;&#x62E9;&#x66F4;&#x4E3A;&#x9002;&#x5408;&#x81EA;&#x5DF1;&#x7684;&#x3002;</p>
+<h2 id="&#x6A21;&#x5757;&#x7CFB;&#x7EDF;">&#x6A21;&#x5757;&#x7CFB;&#x7EDF;</h2>
+<p>Node.js&#x5B9E;&#x73B0;&#x7684;&#x662F;<a href="http://wiki.commonjs.org/wiki/Introduction" target="_blank">CommonJS&#x89C4;&#x8303;</a>&#xFF1A;</p>
+<ul>
+<li>&#x4F7F;&#x7528;<code>global</code>&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x5BF9;&#x8C61;</li>
+</ul>
+<pre><code class="lang-js">global.test = <span class="hljs-literal">true</span>;
+</code></pre>
+<ul>
+<li>&#x4F7F;&#x7528;<code>require</code>&#x5F15;&#x5165;&#x6A21;&#x5757;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+</code></pre>
+<ul>
+<li>&#x4F7F;&#x7528;<code>module.exports</code>&#x8F93;&#x51FA;&#x6A21;&#x5757;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Hello Node.js&apos;</span>);
+};
+</code></pre>
+<ul>
+<li>&#x4F7F;&#x7528;<code>exports</code>&#x8F93;&#x51FA;&#x591A;&#x4E2A;&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x5BF9;&#x8C61;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-js">exports.foo = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{};
+exports.bar = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{};
+</code></pre>
+<h2 id="&#x6700;&#x7B80;&#x5355;&#x7684;nodejs&#x670D;&#x52A1;&#x5668;">&#x6700;&#x7B80;&#x5355;&#x7684;Node.js&#x670D;&#x52A1;&#x5668;</h2>
+<p>&#x4F7F;&#x7528;Node.js&#x7684;<code>http</code>&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6700;&#x7B80;&#x6613;&#x7684;HTTP&#x670D;&#x52A1;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+
+http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+    res.send(<span class="hljs-string">&apos;Hello&apos;</span>);
+    res.end();
+}).listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<p>&#x968F;&#x540E;&#x8BBF;&#x95EE;&#x6D4F;&#x89C8;&#x5668;&#xFF1A;<code>localhost:3000</code> &#x4FBF;&#x53EF;&#x770B;&#x5230;&quot;Hello&quot;&#x5B57;&#x6837;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 附录">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="npm.html" class="navigation navigation-next " aria-label="Next page: NPM基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Node.js基础","level":"1.5.1","depth":2,"next":{"title":"NPM基础","level":"1.5.2","depth":2,"path":"appendix/npm.md","ref":"appendix/npm.md","articles":[]},"previous":{"title":"附录","level":"1.5","depth":1,"path":"appendix/README.md","ref":"appendix/README.md","articles":[{"title":"Node.js基础","level":"1.5.1","depth":2,"path":"appendix/basic.md","ref":"appendix/basic.md","articles":[]},{"title":"NPM基础","level":"1.5.2","depth":2,"path":"appendix/npm.md","ref":"appendix/npm.md","articles":[]},{"title":"参考","level":"1.5.3","depth":2,"path":"appendix/reference.md","ref":"appendix/reference.md","articles":[]},{"title":"更新说明","level":"1.5.4","depth":2,"path":"appendix/update.md","ref":"appendix/update.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"nodejs实战","language":"zh","links":{"sidebar":{"首页":"/"}},"gitbook":"*","description":"nodejs 学习入门教程"},"file":{"path":"appendix/basic.md","mtime":"2016-06-20T01:38:57.145Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-07-05T02:00:32.958Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
