@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://www.tester360.cn/sitemap.xml
+Sitemap: http://www.doc-china.org/sitemap.xml
