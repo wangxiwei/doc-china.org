@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled">
+
+<head>
+    <meta charset='utf-8'>
+    <link crossorigin="anonymous" href="css/github.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/normalize.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/site.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/system-fonts.css" media="all" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    <title>awesome-mysql-cn: MySQL 资源大全中文版，分析工具、备份、性能测试、配置、部署、GUI 等</title>
+    <meta name="description" content="awesome-mysql-cn - MySQL 资源大全中文版，分析工具、备份、性能测试、配置、部署、GUI 等">
+</head>
+
+<body>
+    <div role="main">
+        <div class="container new-discussion-timeline experiment-repo-nav">
+            <div class="repository-content">
+                <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+                    <h3>
+                        awesome MySQL
+                    </h3>
+                    <article class="markdown-body entry-content" itemprop="text">
+                        <h1><a id="user-content-mysql-资源大全中文版" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#mysql-资源大全中文版" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MySQL 资源大全中文版</h1>
+                        <p>我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。<a href="http://shlomi-noach.github.io/awesome-mysql/">awesome-mysql</a> 就是 shlomi-noach 发起维护的 MySQL 资源列表，内容包括：分析工具、备份、性能测试、配置、部署、GUI 等。</p>
+                        <p>Awesome 系列虽然挺全，但基本只对收录的资源做了极为简要的介绍，如果有更详细的中文介绍，对相应开发者的帮助会更大。这也是我们发起这个开源项目的初衷。</p>
+                        <hr>
+                        <h3><a id="user-content-我们要做什么" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#我们要做什么" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>我们要做什么？</h3>
+                        <ul>
+                            <li>基于 awesome-sysadmin 资源列表，我们将对各个资源项进行编译整理。</li>
+                            <li>
+                                整理后的内容，将收录在<a href="http://hao.jobbole.com/">伯乐在线资源频道</a>。可参考已整理的内容：
+
+                                <ul>
+                                    <li>《<a href="http://hao.jobbole.com/logstash/">Logstash：日志文件管理工具</a>》</li>
+                                    <li>《<a href="http://hao.jobbole.com/mycli-mysql/">MyCli：支持自动补全和语法高亮的 MySQL 客户端</a>》</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <hr>
+                        <h3><a id="user-content-如何参与本项目" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#如何参与本项目" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>如何参与本项目？</h3>
+                        <p>从下面的目录来看，本项目的工作量小不了，所以非常期待能有更多程序员一起来参与。</p>
+                        <p>不过加入前，有几个小要求：</p>
+                        <ul>
+                            <li>英文还不错，能读懂英文并用自己的话复述；</li>
+                            <li>有 MySQL 相关实践经验；</li>
+                        </ul>
+                        <p>如有兴趣，请加 QQ：50872495。加 Q 时请注明「MySQL大全」</p>
+                        <hr>
+                        <h3><a id="user-content-本项目的参与者" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#本项目的参与者" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>本项目的参与者</h3>
+                        <ul>
+                            <li><p>维护者：<a href="https://github.com/tangyouhua">tangyouhua</a></p></li>
+                            <li><p>贡献者：<a href="http://www.jobbole.com/members/wx2793649263">夏了夏天</a>、You</p></li>
+                        </ul>
+                        <p>注：名单不分排名，不定期补充更新</p>
+                        <hr>
+                        <h3><a id="user-content-奖励计划" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#奖励计划" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>奖励计划</h3>
+                        <p>虽然奖励可能并不是你加入的主要原因，但还是有必要提一下：</p>
+                        <ul>
+                            <li>整理超过 20 个资源后，可在伯乐在线上开通打赏；</li>
+                            <li>每整理 20 个资源，有机会获得技术书籍或各种有意思的创意、极客产品；</li>
+                            <li><a href="http://hao.jobbole.com/rewards/">奖励详情</a></li>
+                        </ul>
+                        <hr>
+                        <h3><a id="user-content-目录" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#目录" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>目录</h3>
+                        <ul>
+                            <li>  分析工具</li>
+                            <li>  备份</li>
+                            <li>  性能测试</li>
+                            <li>  聊天应用</li>
+                            <li>  配置</li>
+                            <li>  连接器</li>
+                            <li>  部署</li>
+                            <li>  开发</li>
+                            <li>  GUI</li>
+                            <li>  HA</li>
+                            <li>  代理</li>
+                            <li>  复制</li>
+                            <li>  模式</li>
+                            <li>  服务器</li>
+                            <li>  分片</li>
+                            <li>  工具包</li>
+                        </ul>
+                        <p>资源</p>
+                        <ul>
+                            <li>  文档</li>
+                            <li>  电子书</li>
+                            <li>  媒体</li>
+                            <li>  简讯</li>
+                        </ul>
+                        <h2><a id="user-content-分析工具" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#分析工具" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>分析工具</h2>
+                        <p>性能，结构和数据分析工具</p>
+                        <ul>
+                            <li>  <a href="https://github.com/box/Anemometer">Anemometer</a> - 一个 SQL 慢查询监控器。</li>
+                            <li>  <a href="https://github.com/jeremycole/innodb_ruby">innodb-ruby</a> - 一个对 InooDB 格式文件的解析器，用于 Ruby 语言。</li>
+                            <li>  <a href="https://github.com/innotop/innotop">innotop</a> - 一个具备多种特性和可扩展性的 MySQL 版 'top' 工具。</li>
+                            <li>  <a href="https://github.com/sjmudd/pstop">pstop</a> - 一个针对 MySQL 的类 top 程序，用于收集，汇总以及展示来自 performance_schema 的信息。</li>
+                            <li>  <a href="https://github.com/spilgames/mysql-statsd/">mysql-statsd</a> - 一个收集 MySQL 信息的 Python 守护进程，并通过 StatsD 发送到 Graphite。</li>
+                        </ul>
+                        <h2><a id="user-content-备份" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#备份" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>备份</h2>
+                        <p>备份/存储/恢复 工具</p>
+                        <ul>
+                            <li>  <a href="https://launchpad.net/mydumper">MyDumper</a> - 逻辑的，并行的 MySQL 备份/转储工具。</li>
+                            <li>  <a href="http://www.mysqldumper.net/">MySQLDumper</a> - 基于 web 的开源备份工具-对于共享虚拟主机非常有用。</li>
+                            <li>  <a href="https://github.com/cytopia/mysqldump-secure">mysqldump-secure</a> - 将加密，压缩，日志，黑名单和 Nagios 监控一体化的 mysqldump 安全脚本。</li>
+                            <li>  <a href="http://www.percona.com/doc/percona-xtrabackup">Percona Xtrabackup</a> - 针对 MySQL 的一个开源热备份实用程序——在服务器的备份期间不会锁定你的数据库。</li>
+                        </ul>
+                        <h2><a id="user-content-性能测试" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#性能测试" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>性能测试</h2>
+                        <p><em>给你的服务器进行压测的工具</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/tmcallaghan/iibench-mysql">iibench-mysql</a> -基于 Java 的 MySQL/Percona/MariaDB 索引进行插入性能测试工具。</li>
+                            <li>  <a href="https://github.com/akopytov/sysbench">Sysbench</a> - 一个模块化，跨平台以及多线程的性能测试工具。</li>
+                        </ul>
+                        <h2><a id="user-content-聊天应用" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#聊天应用" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>聊天应用</h2>
+                        <p><em>集成进聊天室的脚本</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/samlambert/hubot-mysql-chatops">Hubot MySQL ChatOps</a></li>
+                        </ul>
+                        <h2><a id="user-content-配置" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#配置" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>配置</h2>
+                        <p><em>MySQL 配置实例及指导</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/morgo/mysql-compatibility-config">mysql-compatibility-config</a> - 使 MySQL 配置起来更像新的（或先前）的 MySQL 版本。</li>
+                        </ul>
+                        <h2><a id="user-content-连接器" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#连接器" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>连接器</h2>
+                        <p><em>多种编程语言的 MySQL 连接器</em></p>
+                        <ul>
+                            <li>  <a href="https://dev.mysql.com/downloads/connector/python/">Connector/Python</a> - 一个对于 Python 平台和开发的标准化数据库驱动程序。</li>
+                            <li>  <a href="https://github.com/go-sql-driver/mysql">go-sql-driver</a> - 一个 Go 语言的轻量级、极速的 MySQL 驱动程序。</li>
+                            <li>  <a href="http://libattachsql.org/">libAttachSQL</a> - libAttachSQL 是 MySQL 服务器的一个轻量级，非阻塞的 C 语言 API。</li>
+                            <li>  <a href="https://mariadb.com/kb/en/mariadb/mariadb-java-client/">MariaDB Java Client</a> - 针对 Java 应用且经过 LGPL 许可的 MariaDB 客户端库。</li>
+                            <li>  <a href="http://sourceforge.net/projects/mysql-python/">MySQL-Python</a> - 一个 Python 语言的 MySQL 数据库连接器。</li>
+                            <li>  <a href="https://dev.mysql.com/downloads/connector/php-mysqlnd/">PHP mysqlnd</a> - 针对 MySQL 的 MySQL 本地驱动，弃用过时的 libmysql 基础驱动。</li>
+                        </ul>
+                        <h2><a id="user-content-开发" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#开发" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>开发</h2>
+                        <p><em>支持 MySQL 相关开发的工具</em></p>
+                        <ul>
+                            <li>  <a href="http://flywaydb.org/getstarted/">Flywaydb</a> - 数据库迁移;任意情况下轻松可靠地演变你的数据库版本。</li>
+                            <li>  <a href="http://www.liquibase.org/">Liquibase</a> - 对你的数据库进行源代码控制。</li>
+                            <li>  <a href="https://github.com/outbrain/propagator">Propagator</a> - 集中模式和数据部署在一个多维拓扑上。</li>
+                        </ul>
+                        <h2><a id="user-content-gui" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#gui" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GUI</h2>
+                        <p><em>前端和应用的 GUI</em></p>
+                        <ul>
+                            <li>  <a href="http://www.adminer.org/">Adminer</a> - 一个 PHP 编写的数据库管理工具。</li>
+                            <li>  <a href="http://www.heidisql.com/">HeidiSQL</a> - Windows 下的 MySQL 图形化管理工具。</li>
+                            <li>  <a href="http://dev.mysql.com/downloads/workbench/">MySQL Workbench</a> - 提供给数据库管理员和开发人员进行数据库设计和建模的集成工具环境;SQL 开发;数据库管理。</li>
+                            <li>  <a href="http://www.phpmyadmin.net/home_page/">phpMyAdmin</a> - 一个 PHP 写成的开源软件，意图对 web 上的 MySQL 进行管理。</li>
+                            <li>  <a href="https://github.com/sequelpro/sequelpro">SequelPro</a> - 一个 mac 下运行 MySQL 的数据库管理应用程序。</li>
+                            <li>  <a href="http://hao.jobbole.com/mycli-mysql/">mycli</a> - 一个带自动补全和语法高亮的终端版 MySQL 客户端</li>
+                        </ul>
+                        <h2><a id="user-content-ha" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#ha" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HA</h2>
+                        <p><em>高可用解决方案</em></p>
+                        <ul>
+                            <li>  <a href="http://galeracluster.com/products/">Galera Cluster</a> - 一个基于同步复制的多主机集群方案。</li>
+                            <li>  <a href="http://code.google.com/p/mysql-master-ha/">MHA</a> - 针对 MySQL 的优秀高可用管理器及工具</li>
+                            <li>  <a href="https://www.mysql.com/products/enterprise/fabric.html">MySQL Fabric</a> - 一个用于管理 MySQL 服务器场（Server Farms）的可扩展框架。</li>
+                            <li>  <a href="https://github.com/percona/percona-pacemaker-agents/">Percona Replication Manager</a> - 针对 MySQL 的异步复制管理代理。支持以文件和 GTID 为基础的复制，使用 booth 实现的地理分布式集群。</li>
+                        </ul>
+                        <h2><a id="user-content-代理" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#代理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>代理</h2>
+                        <p><em>MySQL 代理</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/mariadb-corporation/MaxScale">MaxScale</a> - 开源，以数据库为中心的代理。</li>
+                            <li>  <a href="https://github.com/siddontang/mixer">Mixer</a> - Go 实现的一个 MySQL 代理，目的为 MySQL 分片提供一个简单的解决方案。</li>
+                            <li>  <a href="https://launchpad.net/mysql-proxy">MySQL Proxy</a> - 一个处于你的客户端和 MySQL 服务端之间的简单程序，它可以检测、分析或者改变它们的通信。</li>
+                            <li>  <a href="https://github.com/renecannao/proxysql">ProxySQL</a> - 高性能的 MySQL 代理。</li>
+                        </ul>
+                        <h2><a id="user-content-复制" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#复制" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>复制</h2>
+                        <p><em>复制相关的软件</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/outbrain/orchestrator">orchestrator</a> - 对 MySQL 复制拓扑管理并可视化的工具。</li>
+                            <li>  <a href="http://code.google.com/p/tungsten-replicator/">Tungsten Replicator</a> - MySQL 的一个高性能、开源、数据复制引擎。</li>
+                        </ul>
+                        <h2><a id="user-content-模式" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#模式" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>模式</h2>
+                        <p><em>附加模式</em></p>
+                        <ul>
+                            <li>  <a href="http://code.google.com/p/common-schema/">common_schema</a> - MySQL DBA 的框架， 提供一个具有函数库、视图库和查询脚本的解释器。</li>
+                            <li>  <a href="https://github.com/MarkLeith/mysql-sys">sys</a> - 一个视图、函数和过程的集合，以帮助 MySQL 管理人员更加深入理解 MySQL 数据库的使用。</li>
+                        </ul>
+                        <h2><a id="user-content-服务器" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#服务器" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>服务器</h2>
+                        <p><em>MySQL server flavors</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/MariaDB/server">MariaDB</a> - MySQL server 的一个由社区开发的分支。</li>
+                            <li>  <a href="https://github.com/mysql/mysql-server">MySQL Server &amp; MySQL Cluster</a> - Oracle 官方的 MySQL server 和 MySQL 集群分布。</li>
+                            <li>  <a href="https://launchpad.net/percona-server">Percona Server</a> - 一个加强版的 MySQL 替代品</li>
+                            <li>  <a href="https://github.com/webscalesql/webscalesql-5.6">WebScaleSQL</a> - WebScaleSQL，5.6 版本，基于 MySQL 5.6 社区版本。</li>
+                        </ul>
+                        <h2><a id="user-content-分片" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#分片" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>分片</h2>
+                        <p><em>分片解决方案/框架</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/youtube/vitess">vitess</a> - 对于大规模的 web 服务，vitess 提供服务和工具以便于 MySQL 数据库的缩放。</li>
+                            <li>  <a href="https://github.com/tumblr/jetpants">jetpants</a> - 一个自动化套件，用于管理大规模分片集群，由 Tumblr 开发。</li>
+                        </ul>
+                        <h2><a id="user-content-工具包" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#工具包" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>工具包</h2>
+                        <p><em>工具包，通用脚本</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/siddontang/go-mysql">go-mysql</a> - 一个纯 go 的库，用于处理 MySQL 的网络协议和复制。</li>
+                            <li>  <a href="https://dev.mysql.com/downloads/utilities/">MySQL Utilities</a> - 一个命令行实用程序的集合，Python 语言编写，用于维护和管理单一或多层的 MySQL。</li>
+                            <li>  <a href="http://www.percona.com/software/percona-toolkit">Percona Toolkit</a> - 一个先进的命令行工具集，用于执行对于 MySQL 服务器和系统过于困难或复杂的任务。</li>
+                            <li>  <a href="http://code.openark.org/forge/openark-kit">openark kit</a> - 一组实用的工具，解决日常的维护工作，包括一些复杂的或需徒手操作的，用 Python 语言编写。</li>
+                            <li>  <a href="https://twindb.com/undrop-tool-for-innodb/">UnDROP</a> - 一个用来恢复删除或损坏的 InnoDB 表中数据的工具。</li>
+                        </ul>
+                        <h1><a id="user-content-资源" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#资源" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>资源</h1>
+                        <p><em>在这个阶段，“资源”不包括网站，博客，幻灯片，演示视频等。这些资源列表的大小令人恐惧。</em></p>
+                        <h2><a id="user-content-会议" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#会议" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>会议</h2>
+                        <p><em>围绕 MySQL 进行公开，经常性的大会。</em></p>
+                        <ul>
+                            <li>  <a href="https://fosdem.org/">FOSDEM</a> - 一个软件开发人员见面、交流思想与协作的活动。每年在 Brussels 举行。提供 “MySQL &amp; friends” 开发工作室。</li>
+                            <li>  <a href="https://www.oracle.com/openworld/mysql/index.html">MySQL Central</a> - Oracle 年度 MySQL 大会，是 Oracle Open World 的一部分。</li>
+                            <li>  <a href="http://www.percona.com/live/conferences">Percona Live</a> - MySQL 和 OpenStack 的重要会议。</li>
+                            <li>  <a href="https://www.socallinuxexpo.org/">SCALE</a> - 一个每年在南加州举办，由社区组织的 Linux 和 开源软件大会。由当地 MySQL社区组织并以MySQL社区日的名义举办。</li>
+                        </ul>
+                        <h2><a id="user-content-电子书" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#电子书" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>电子书</h2>
+                        <p><em>MySQL 电子书以及相关材料。</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/XD-DENG/SQL-exercise">SQL-exercise</a> - 包含几个 SQL 练习，包括模式描述，用 SQL 语句去建立模式，SQL 的问题及解决方案。以 wikibook SQL 练习为基础。</li>
+                        </ul>
+                        <h2><a id="user-content-媒体" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#媒体" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>媒体</h2>
+                        <p><em>公开，持续的视频和音频转播。这不包括会议演讲那令人恐惧的资源列表大小。</em></p>
+                        <ul>
+                            <li>  <a href="http://dbhangops.github.io/">DBHangOps</a> - 两周一次由各种各样的 MySQL 社区人员参加的 google 聚集大会，大会的日常就是谈论一切关于 MySQL 的东西。</li>
+                            <li>  <a href="http://www.oursql.com/">OurSQL Podcast</a> - MySQL 数据库社区播客。</li>
+                        </ul>
+                        <h2><a id="user-content-新闻周刊" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#新闻周刊" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>新闻周刊</h2>
+                        <p>__顾名思义，新闻周刊<em>需要一个 email 地址。下面列出周刊只需要一个 email 地址。</em></p>
+                        <ul>
+                            <li>  <a href="http://mysqlnewsletter.com/">Weekly MySQL News</a> - 非官方的 MySQL新闻摘要，包含关于MySQL的各类信息。</li>
+                        </ul>
+                        <h3 id="user-content-weibo-weixin"><a id="user-content-微信公众号" class="anchor" href="https://github.com/wangxiwei/awesome-mysql-cn#微信公众号" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>微信公众号</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    数据库开发者：专注分享数据库相关内容，包括：各种主流 DB 的最佳实践、数据库基础知识、性能优化、数据安全等。
+                                    <br><a href="./wangxiwei_awesome-mysql-cn_ MySQL 资源大全中文版，分析工具、备份、性能测试、配置、部署、GUI 等_files/687474703a2f2f7777342e73696e61696d672e636e2f736d616c6c2f36333931383631316777316570623263356d6b306a6a323034363034366d79362e6a7067" target="_blank"><img src="./wangxiwei_awesome-mysql-cn_ MySQL 资源大全中文版，分析工具、备份、性能测试、配置、部署、GUI 等_files/687474703a2f2f7777342e73696e61696d672e636e2f736d616c6c2f36333931383631316777316570623263356d6b306a6a323034363034366d79362e6a7067" width="150" height="150" data-canonical-src="http://ww4.sinaimg.cn/small/63918611gw1epb2c5mk0jj2046046my6.jpg" style="max-width:100%;"></a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Linux爱好者：专注分享 Linux/Unix 相关内容，包括：工具资源、使用技巧、课程、书籍等。
+                                    <br><a href="./wangxiwei_awesome-mysql-cn_ MySQL 资源大全中文版，分析工具、备份、性能测试、配置、部署、GUI 等_files/687474703a2f2f7777342e73696e61696d672e636e2f736d616c6c2f3633393138363131677731657062326361383870666a3230343630343633796d2e6a7067" target="_blank"><img src="./wangxiwei_awesome-mysql-cn_ MySQL 资源大全中文版，分析工具、备份、性能测试、配置、部署、GUI 等_files/687474703a2f2f7777342e73696e61696d672e636e2f736d616c6c2f3633393138363131677731657062326361383870666a3230343630343633796d2e6a7067" width="150" height="150" data-canonical-src="http://ww4.sinaimg.cn/small/63918611gw1epb2ca88pfj20460463ym.jpg" style="max-width:100%;"></a>
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

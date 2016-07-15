@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled">
+
+<head>
+    <meta charset='utf-8'>
+    <link crossorigin="anonymous" href="css/github.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/normalize.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/site.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/system-fonts.css" media="all" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    <title>awesome-sysadmin-cn: 系统管理员资源大全中文版，备份/克隆软件、云计算/云存储、协作软件、配置管理、日志管理、监控、项目管理等</title>
+    <meta name="description" content="awesome-sysadmin-cn - 系统管理员资源大全中文版，备份/克隆软件、云计算/云存储、协作软件、配置管理、日志管理、监控、项目管理等">
+</head>
+
+<body>
+    <div role="main">
+        <div class="container new-discussion-timeline experiment-repo-nav">
+            <div class="repository-content">
+                <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+                    <h3>
+                        awesome sysadmin
+                    </h3>
+                    <article class="markdown-body entry-content" itemprop="text">
+                        <h1><a id="user-content-系统管理员资源大全中文版" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#系统管理员资源大全中文版" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>系统管理员资源大全中文版</h1>
+                        <p>我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。<a href="https://github.com/kahun/awesome-sysadmin">awesome-sysadmin</a> 就是 kahun 发起维护的 系统管理员 资源列表，内容包括：备份/克隆软件、云计算/云存储、协作软件、配置管理、日志管理、监控、项目管理</p>
+                        <p>Awesome 系列虽然挺全，但基本只对收录的资源做了极为简要的介绍，如果有更详细的中文介绍，对相应开发者的帮助会更大。这也是我们发起这个开源项目的初衷。</p>
+                        <hr>
+                        <h3><a id="user-content-我们要做什么" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#我们要做什么" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>我们要做什么？</h3>
+                        <ul>
+                            <li>基于 awesome-sysadmin 资源列表，我们将对各个资源项进行编译整理。</li>
+                            <li>
+                                整理后的内容，将收录在<a href="http://hao.jobbole.com/">伯乐在线资源频道</a>。可参考已整理的内容：
+
+                                <ul>
+                                    <li>《<a href="http://hao.jobbole.com/logstash/">Logstash：日志文件管理工具</a>》</li>
+                                    <li>《<a href="http://hao.jobbole.com/mycli-mysql/">MyCli：支持自动补全和语法高亮的 MySQL 客户端</a>》</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <hr>
+                        <h3><a id="user-content-如何参与本项目" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#如何参与本项目" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>如何参与本项目？</h3>
+                        <p>从下面的目录来看，本项目的工作量小不了，所以非常期待能有更多程序员一起来参与。</p>
+                        <p>不过加入前，有几个小要求：</p>
+                        <ul>
+                            <li>英文还不错，能读懂英文并用自己的话复述；</li>
+                            <li>有 系统管理员/运维 相关实践经验；</li>
+                        </ul>
+                        <p>如有兴趣，请加 QQ：50872495。加 Q 时请注明「系统管理员大全」</p>
+                        <hr>
+                        <h3><a id="user-content-本项目的参与者" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#本项目的参与者" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>本项目的参与者</h3>
+                        <ul>
+                            <li><p>维护者：<a href="https://github.com/tangyouhua">tangyouhua</a></p></li>
+                            <li><p>贡献者：<a href="http://www.jobbole.com/members/cucr/">cucr</a>、You</p></li>
+                        </ul>
+                        <p>注：名单不分排名，不定期补充更新</p>
+                        <hr>
+                        <h3><a id="user-content-奖励计划" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#奖励计划" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>奖励计划</h3>
+                        <p>虽然奖励可能并不是你加入的主要原因，但还是有必要提一下：</p>
+                        <ul>
+                            <li>整理超过 20 个资源后，可在伯乐在线上开通打赏；</li>
+                            <li>每整理 20 个资源，有机会获得技术书籍或各种有意思的创意、极客产品；</li>
+                            <li><a href="http://hao.jobbole.com/rewards/">奖励详情</a></li>
+                        </ul>
+                        <hr>
+                        <h2><a id="user-content-备份" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#备份" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>备份</h2>
+                        <p>备份软件</p>
+                        <ul>
+                            <li>  <a href="http://www.amanda.org/">Amanda</a>&nbsp;-客户端-服务器模型备份工具</li>
+                            <li>  <a href="http://www.bacula.org/">Bacula</a>&nbsp;-&nbsp;另一个客户端-服务器模型备份工具</li>
+                            <li>  <a href="https://labs.riseup.net/code/projects/backupninja">Backupninja</a>&nbsp;-轻量级，可扩展的元数据备份系统</li>
+                            <li>  <a href="http://backuppc.sourceforge.net/">Backuppc</a>&nbsp;-客户端-服务器模型备份工具和文件共享方案。</li>
+                            <li>  <a href="http://burp.grke.org/">Burp</a>&nbsp;-网络备份和还原程序</li>
+                            <li>  <a href="http://duplicity.nongnu.org/">Duplicity</a>&nbsp;-使用rsync算法加密的带宽-效率备份</li>
+                            <li>  <a href="https://github.com/axkibe/lsyncd">Lsyncd</a>&nbsp;-监控一个本地目录树的变化,然后产生一个进程去同步变化。默认使用rsync。</li>
+                            <li>  <a href="http://www.rsnapshot.org/">Rsnapshot</a>&nbsp;-文件系统快照工具</li>
+                            <li>  <a href="http://safekeep.sourceforge.net/">SafeKeep</a>&nbsp;-使用rdiff-backup，集中的，基于pull的备份</li>
+                            <li>  <a href="https://www.tarsnap.com/">TarSnap</a>&nbsp;-&nbsp;具有一个开源客户端的安全备份服务</li>
+                            <li>  <a href="http://www.urbackup.org/">UrBackup</a>&nbsp;-另一个客户端-服务器备份系统</li>
+                            <li>  <a href="https://github.com/dojo4/drebs">DREBS</a>&nbsp;-&nbsp;AWS EBS支持策略的备份脚本</li>
+                        </ul>
+                        <h2><a id="user-content-克隆" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#克隆" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>克隆</h2>
+                        <p>克隆软件</p>
+                        <ul>
+                            <li>  <a href="http://clonezilla.org/">Clonezilla</a>&nbsp;-分区和磁盘镜像/克隆程序</li>
+                            <li>  <a href="http://www.fogproject.org/">Fog</a>&nbsp;-&nbsp;另一个计算机克隆解决方案</li>
+                            <li>  <a href="http://redobackup.org/">Redo Backup</a>&nbsp;-简单的备份，恢复和还原</li>
+                        </ul>
+                        <h2><a id="user-content-云计算" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#云计算" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>云计算</h2>
+                        <ul>
+                            <li>  AppScale - 兼容Google App引擎的开源云计算软件.</li>
+                            <li>  <a href="http://archipelproject.org/">Archipel</a>&nbsp;-使用Libvirt管理和监视虚拟机</li>
+                            <li>  <a href="http://cloudstack.apache.org/">CloudStack</a>&nbsp;-创建，管理和部署基础云服务的云计算软件</li>
+                            <li>  <a href="http://www.cobblerd.org/">Cobbler</a>&nbsp;-Cobbler是一个Linux安装服务器，允许快速地构建网络安装环境</li>
+                            <li>  <a href="https://www.eucalyptus.com/">Eucalyptus</a>&nbsp;-兼容AWS的开源私有云软件</li>
+                            <li>  <a href="http://mesos.apache.org/">Mesos</a>&nbsp;-开发和运行能效高的分布式系统。</li>
+                            <li>  <a href="http://opennebula.org/">OpenNebula</a>&nbsp;-一个用于系统管理员和研发运维的用户驱动的云管理平台</li>
+                            <li>  <a href="https://www.openstack.org/">OpenStack</a>&nbsp;-构建私有和开放云的开源软件</li>
+                            <li>  <a href="http://theforeman.org/">The Foreman</a>&nbsp;-Foreman是一个用于物理和虚拟服务器的全生命周期管理工具.FOSS.</li>
+                        </ul>
+                        <h2><a id="user-content-云业务流程" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#云业务流程" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>云业务流程</h2>
+                        <ul>
+                            <li>  <a href="http://docs.cloudfoundry.org/bosh/">BOSH</a>&nbsp;-IaaS业务流程平台，最初用于部署和管理云计算平台PaaS,但也用于通用的分布式系统。</li>
+                            <li>  <a href="http://www.getcloudify.org/">Cloudify</a>&nbsp;-使用Python和YAML编写的开源TOSCA-based云业务流程软件平台。</li>
+                            <li>  <a href="https://juju.ubuntu.com/">Juju</a>&nbsp;-云业务流程工具用于管理服务，比如charms，YAML配置和部署脚本集</li>
+                            <li>  <a href="http://puppetlabs.com/mcollective">MCollective</a>&nbsp;-来自Puppet实验室的管理服务器业务流程和开发的Ruby框架</li>
+                            <li>  <a href="http://andrewchilds.github.io/overcast/">Overcast</a>&nbsp;-在不同的云提供商上部署VMs，并在任何或所有（VM）上通过SSH并行运行命令行和脚本</li>
+                            <li>  <a href="http://rundeck.org/">Rundeck</a>&nbsp;-&nbsp;简单的业务流程工具</li>
+                            <li>  <a href="http://www.saltstack.com/">Salt</a>&nbsp;-Python编写</li>
+                        </ul>
+                        <h2><a id="user-content-云存储" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#云存储" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>云存储</h2>
+                        <ul>
+                            <li>  <a href="http://git-annex.branchable.com/assistant/">git-annex assistant</a>&nbsp;-在你的每一个OSX和Linux电脑，Android设备，可移动驱动，NAS电器和云服务上一个同步文件夹</li>
+                            <li>  <a href="https://owncloud.org/">ownCloud</a>&nbsp;-提供你的文件的统一访问，通过web，你的电脑和你的移动设备</li>
+                            <li>  <a href="http://seafile.com/">Seafile</a>&nbsp;-另一个开源的云存储解决方案</li>
+                            <li>  <a href="http://sparkleshare.org/">SparkleShare</a>&nbsp;-提供云存储和文件同步服务。它默认使用Git作为存储后端</li>
+                            <li>  <a href="http://docs.openstack.org/developer/swift/">Swift</a>&nbsp;-一个高可用，分布式，最终一致的对象/大数据存储</li>
+                            <li>  <a href="http://syncthing.net/">Syncthing</a>&nbsp;-一个用于私有，加密和身份认证数据的开源系统</li>
+                        </ul>
+                        <h2><a id="user-content-代码审查" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#代码审查" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>代码审查</h2>
+                        <p>基于Web的协作式代码审查系统</p>
+                        <ul>
+                            <li>  <a href="https://code.google.com/p/gerrit/">Gerrit</a>&nbsp;-基于Git版本控制，它促进软件开发人员审查源代码修改和批准或拒绝这些变更。</li>
+                            <li>  <a href="https://www.reviewboard.org/">Review Board</a>&nbsp;-&nbsp;基于MIT License的可用自由软件</li>
+                        </ul>
+                        <h2><a id="user-content-协作软件" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#协作软件" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>协作软件</h2>
+                        <p>协作软件和群件套件</p>
+                        <ul>
+                            <li>  <a href="http://www.citadel.org/">Citadel/UX</a>&nbsp;-协同套件（消息和群件）继承于Citadel家族程序</li>
+                            <li>  <a href="http://www.egroupware.org/">EGroupware</a>&nbsp;-PHP编写的群件软件</li>
+                            <li>  <a href="http://www.horde.org/apps/groupware">Horde Groupware</a>&nbsp;-基于PHP的协作软件套件，包括邮件，日历，wiki，时间跟踪和文件管理</li>
+                            <li>  <a href="https://www.kolab.org/">Kolab</a>&nbsp;-&nbsp;另一个群件套件</li>
+                            <li>  <a href="https://www.sogo.nu/">SOGo</a>&nbsp;-&nbsp;协作软件服务器，专注简单性和可伸缩性</li>
+                            <li>  <a href="https://www.zimbra.com/community/">Zimbra</a>&nbsp;-协作软件套件，包括邮件服务和web客户端</li>
+                        </ul>
+                        <h2><a id="user-content-配置管理数据库" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#配置管理数据库" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>配置管理数据库</h2>
+                        <p>配置管理数据库（CMDB）软件</p>
+                        <ul>
+                            <li>  <a href="http://www.i-doit.org/">i-doit</a>&nbsp;-&nbsp;开源的IT文档管理和CMDB</li>
+                            <li>  <a href="http://www.combodo.com/-Overview-.html">iTop</a>&nbsp;-一个完全开源的，ITIL,基于web的服务管理工具</li>
+                            <li>  <a href="https://github.com/allegro/ralph">Ralph</a>&nbsp;-用于大型数据中心或较小本地网络的资产管理，DICM和CMDB系统</li>
+                            <li>  <a href="https://github.com/clusto/clusto">Clusto</a>&nbsp;-帮助跟踪你的库存，在哪，如何连接，同时提供一个和基础架构元素交互的抽象接口</li>
+                        </ul>
+                        <h2><a id="user-content-配置管理" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#配置管理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>配置管理</h2>
+                        <p>配置管理工具</p>
+                        <ul>
+                            <li>  <a href="http://www.ansibleworks.com/">Ansible</a>&nbsp;-Python编写的，通过SSH管理节点</li>
+                            <li>  <a href="http://cfengine.com/">CFEngine</a>&nbsp;-轻量级代理系统。通过申明语言配置状态。</li>
+                            <li>  <a href="http://www.opscode.com/chef/">Chef</a>&nbsp;-Rbuy和Erlang编写，使用纯RubyDSL</li>
+                            <li>  <a href="http://www.fabfile.org/">Fabric</a>&nbsp;-&nbsp;Python库和cli工具，为应用程序部署或系统管理任务简化使用SSH。</li>
+                            <li>  <a href="http://palletops.com/">Pallet</a>&nbsp;-通过Clojure DSL进行架构定义，配置和管理</li>
+                            <li>  <a href="http://puppetlabs.com/">Puppet</a>&nbsp;-&nbsp;Ruby编写，使用Puppet声明语言或Rbuy DSL</li>
+                            <li>  <a href="http://www.saltstack.com/">Salt</a>&nbsp;-&nbsp;Python编写</li>
+                            <li>  <a href="http://steve.org.uk/Software/slaughter/">Slaughter</a>&nbsp;-&nbsp;Perl编写</li>
+                        </ul>
+                        <h2><a id="user-content-持续继承和持续部署" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#持续继承和持续部署" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>持续继承和持续部署</h2>
+                        <p>持续集成/部署软件</p>
+                        <ul>
+                            <li>  <a href="http://buildbot.net/">Buildbot</a>&nbsp;-&nbsp;基于Python的持续集成工具</li>
+                            <li>  <a href="https://github.com/drone/drone">Drone</a>&nbsp;-&nbsp;构建在Docker，使用YAML文件配置的的持续集成服务器</li>
+                            <li>  <a href="https://www.gitlab.com/gitlab-ci/">GitLab CI</a>&nbsp;-基于rbuy。他们也提供GitLab用于管理git存储库</li>
+                            <li>  <a href="http://www.go.cd/">Go</a>&nbsp;-&nbsp;开源的持续交付服务器</li>
+                            <li>  <a href="http://jenkins-ci.org/">Jenkins</a>&nbsp;-&nbsp;一个可扩展的开源持续集成服务器</li>
+                            <li>  <a href="http://rubyhitsquad.com/Vlad_the_Deployer.html">Vlad the Deployer</a>&nbsp;-自动化部署</li>
+                        </ul>
+                        <h2><a id="user-content-分布式文件系统" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#分布式文件系统" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>分布式文件系统</h2>
+                        <p>网络分布式文件系统</p>
+                        <ul>
+                            <li>  <a href="http://ceph.com/">Ceph</a>&nbsp;-分布式对象存储和文件系统</li>
+                            <li>  <a href="http://www.drbd.org/">DRBD</a>&nbsp;-分布式块设备复制</li>
+                            <li><p><a href="http://leo-project.net/">LeoFS</a>&nbsp;-非结构化对象/数据存储和高可用性,分布,最终一致的存储系统。</p></li>
+                            <li><p><a href="http://www.gluster.org/">GlusterFS</a>&nbsp;-&nbsp;可扩展，网络附加存储文件系统。</p></li>
+                            <li>  <a href="http://hadoop.apache.org/">HDFS</a>&nbsp;-&nbsp;Java编写的，用于Hadoop框架的分布式、可伸缩、可移植文件系统</li>
+                            <li>  <a href="http://lustre.opensfs.org/">Lustre</a>&nbsp;-一种并行分布式文件系统,一般用于大规模集群计算。</li>
+                            <li>  <a href="http://www.moosefs.org/">MooseFS</a>&nbsp;-&nbsp;容错、网络分布式文件系统。</li>
+                            <li><p><a href="http://mogilefs.org/">MogileFS</a>&nbsp;-应用程序级别、网络分布式文件系统。</p></li>
+                            <li><p><a href="http://www.openafs.org/">OpenAFS</a>&nbsp;-只读副本和多操作系统支持的分布式网络文件系统</p></li>
+                            <li><p><a href="https://tahoe-lafs.org/trac/tahoe-lafs">TahoeLAFS</a>&nbsp;-安全、分散、容错、点对点分布式数据存储和分布式文件系统。</p></li>
+                            <li>  <a href="http://www.xtreemfs.org/">XtreemFS</a>&nbsp;-XtreemFS是一个用于存储需求的容错式分布式文件系统。</li>
+                        </ul>
+                        <h2><a id="user-content-dns" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#dns" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DNS</h2>
+                        <p>DNS服务器</p>
+                        <ul>
+                            <li>  <a href="https://www.isc.org/downloads/bind/">Bind</a>&nbsp;-最广泛使用的域名服务软件</li>
+                            <li>  <a href="http://cr.yp.to/djbdns.html">djbdns</a>&nbsp;-DNS应用集合，包括tinydns</li>
+                            <li>  <a href="https://wiki.openstack.org/wiki/Designate">Designate</a>&nbsp;-&nbsp;DNS REST API,支持多种DNS服务器的后端</li>
+                            <li>  <a href="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</a>&nbsp;-为小规模网络提供DNS,DHCP和TFTP服务的轻量级服务</li>
+                            <li>  <a href="https://www.knot-dns.cz/">Knot</a>&nbsp;-&nbsp;高性能，权威的DNS服务器</li>
+                            <li>  <a href="http://www.nlnetlabs.nl/projects/nsd/">NSD</a>&nbsp;-&nbsp;权威的、高性能的、简单的域名服务器。</li>
+                            <li>  <a href="https://www.powerdns.com/">PowerDNS</a>&nbsp;-具有各种数据存储后端和负载平衡功能的DNS服务器。</li>
+                            <li>  <a href="http://unbound.net/">Unbound</a>&nbsp;-&nbsp;验证、递归和缓存DNS解析器。</li>
+                            <li>  <a href="http://yadifa.eu/">Yadifa</a>&nbsp;-&nbsp;具有DNSSEC兼容的轻量级的权威域名服务器，支持.eu的顶级域名。</li>
+                        </ul>
+                        <h2><a id="user-content-主机控制面板" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#主机控制面板" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>主机控制面板</h2>
+                        <p>Web主机控制面板</p>
+                        <ul>
+                            <li>  <a href="http://ajenti.org/">Ajenti</a>&nbsp;-Linux和BSD控制面板</li>
+                            <li>  <a href="http://feathur.com/">Feathur</a>&nbsp;-&nbsp;VPS供应和管理软件</li>
+                            <li>  <a href="http://www.ispconfig.org/">ISPConfig</a>&nbsp;-Linux主机控制面板</li>
+                            <li>  <a href="http://www.vestacp.com/">VestaCP</a>&nbsp;-用于Linux和Nginx的主机面板</li>
+                            <li>  <a href="http://www.virtualmin.com/">Virtualmin</a>&nbsp;-基于webmin的Linux控制面板</li>
+                            <li>  <a href="http://www.zpanelcp.com/">ZPanel</a>&nbsp;-Linux BSD和Windows控制面板</li>
+                        </ul>
+                        <h2><a id="user-content-imappop3" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#imappop3" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IMAP/POP3</h2>
+                        <p>IMAP/POP3邮件服务器</p>
+                        <ul>
+                            <li>  <a href="http://www.courier-mta.org/imap/">Courier IMAP/POP3</a>&nbsp;-快速，可伸缩，企业级IMAP和POP3服务器</li>
+                            <li>  <a href="http://cyrusimap.org/">Cyrus IMAP/POP3</a>&nbsp;-运行在密封服务器上,普通用户不允许登录。</li>
+                            <li>  <a href="http://www.dovecot.org/">Dovecot</a>&nbsp;-主要考虑安全而编写的IMAP和POP3服务器</li>
+                            <li>  <a href="http://www.eudora.com/products/unsupported/qpopper/">Qpopper</a>&nbsp;-&nbsp;一个古老且流行的POP3服务器实现</li>
+                        </ul>
+                        <h2><a id="user-content-it资产管理" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#it资产管理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IT资产管理</h2>
+                        <p>IT资产管理软件</p>
+                        <ul>
+                            <li>  <a href="http://www.glpi-project.org/spip.php?lang=en">GLPI</a>&nbsp;-带有额外管理接口的信息资源管理器</li>
+                            <li>  <a href="http://www.ocsinventory-ng.org/en/">OCS Inventory NG</a>&nbsp;-允许用户清算IT资产</li>
+                            <li>  <a href="http://racktables.org/">RackTables</a>&nbsp;-数据中心和服务器房间资产，比如将硬件资产,网络地址,在货架空间,网络配置文档化。</li>
+                            <li>  <a href="https://github.com/allegro/ralph">Ralph</a>&nbsp;-&nbsp;针对大型数据中心系统以及小型局域网网络的资产管理、DCIM和CMDB。</li>
+                            <li>  <a href="http://snipeitapp.com/">Snipe IT</a>&nbsp;-资产和许可证管理软件</li>
+                        </ul>
+                        <h2><a id="user-content-ldap" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#ldap" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>LDAP</h2>
+                        <p>LDAP服务器</p>
+                        <ul>
+                            <li>  <a href="http://port389.org/">389 Directory Server</a>&nbsp;-&nbsp;通过Red Hat部署</li>
+                            <li>  <a href="http://directory.apache.org/">Apache Directory Server</a>&nbsp;-用Java编写的Apache软件基金会项目</li>
+                            <li>  <a href="http://www.fusiondirectory.org/">Fusion Directory</a>&nbsp;-基于OpenLDAP改善服务和公司目录的管理</li>
+                            <li>  <a href="http://opendj.forgerock.org/">OpenDJ</a>&nbsp;-&nbsp;OpenDS分支</li>
+                            <li>  <a href="https://opends.java.net/">OpenDS</a>&nbsp;-另一个用Java编写的目录服务器</li>
+                            <li>  <a href="http://openldap.org/">OpenLDAP</a>&nbsp;-由OpenLDAP项目开发</li>
+                        </ul>
+                        <h2><a id="user-content-日志管理" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#日志管理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>日志管理</h2>
+                        <p>日志管理工具：收集，解析，可视化</p>
+                        <ul>
+                            <li>  <a href="http://www.elasticsearch.org/">Elasticsearch</a>&nbsp;-&nbsp;一个基于Lucene的文档存储，主要用于日志索引、存储和分析。</li>
+                            <li>  <a href="http://www.fluentd.org/">Fluentd</a>&nbsp;-&nbsp;日志收集和发出</li>
+                            <li>  <a href="https://flume.apache.org/">Flume</a>&nbsp;-分布式日志收集和聚合系统</li>
+                            <li>  <a href="http://graylog2.org/">Graylog2</a>&nbsp;-具有报警选项的可插入日志和事件分析服务器</li>
+                            <li>  <a href="http://hekad.readthedocs.org/en/latest/">Heka</a>&nbsp;-流处理系统，可用于日志聚合</li>
+                            <li>  <a href="http://www.elasticsearch.org/overview/kibana/">Kibana</a>&nbsp;-&nbsp;可视化日志和时间戳数据</li>
+                            <li>  <a href="http://hao.jobbole.com/logstash/">Logstash</a>&nbsp;-管理事件和日志的工具</li>
+                            <li>
+                                <a href="http://www.octopussy.pm/">Octopussy</a>&nbsp;-日志管理解决方案（可视化/报警/报告）
+                                log
+                                ## 监控
+                            </li>
+                        </ul>
+                        <p>监控软件</p>
+                        <ul>
+                            <li>  <a href="http://www.cacti.net/">Cacti</a>&nbsp;-基于Web的网络监控和图形工具</li>
+                            <li>  <a href="http://cabotapp.com/">Cabot</a>&nbsp;-&nbsp;监控和报警，类似PagerDuty</li>
+                            <li>  <a href="http://mathias-kettner.com/check_mk.html">check_mk</a>&nbsp;-Nagios的扩展集合</li>
+                            <li>  <a href="https://github.com/afaqurk/linux-dash">Dash</a>&nbsp;-一个用于GNU/Linux机器的低开销web仪表板监控。</li>
+                            <li>  <a href="https://www.icinga.org/">Icinga</a>&nbsp;-&nbsp;Nagios分支</li>
+                            <li>  <a href="https://github.com/librenms/librenms/">LibreNMS</a>&nbsp;-&nbsp;Observium分支</li>
+                            <li>  <a href="http://mmonit.com/monit/#home">Monit</a>&nbsp;-&nbsp;管理和监控Unix系统的小型开源工具</li>
+                            <li>  <a href="http://munin-monitoring.org/">Munin</a>&nbsp;-网络资源监控工具</li>
+                            <li>  <a href="http://www.naemon.org/">Naemon</a>&nbsp;-基于Nagios4内核的网络监控工具，具有性能加强和新功能</li>
+                            <li>  <a href="http://www.nagios.org/">Nagios</a>&nbsp;-计算机系统，网络和基础架构监控软件</li>
+                            <li>  <a href="http://www.observium.org/">Observium</a>&nbsp;-服务器和网络设备的SNMP监控，运行在linux</li>
+                            <li>  <a href="http://omdistro.org/">OMD</a>&nbsp;-开放的监控分布</li>
+                            <li>  <a href="http://www.opsview.com/solutions/core">Opsview</a>&nbsp;-基于Nagios4，Opsview核心，用于小型IT和测试环境</li>
+                            <li>  <a href="http://riemann.io/">Riemann</a>&nbsp;-灵活和快速的事件处理器，允许负责时间和度量分析</li>
+                            <li>  <a href="http://sensuapp.org/">Sensu</a>&nbsp;-开源的监控框架</li>
+                            <li>  <a href="https://getsentry.com/">Sentry</a>&nbsp;-&nbsp;应用监控，事件记录和聚合</li>
+                            <li>  <a href="http://www.shinken-monitoring.org/">Shinken</a>&nbsp;-&nbsp;另一个监控框架</li>
+                            <li>  <a href="http://www.thruk.org/">Thruk</a>&nbsp;-&nbsp;多后台监控的web接口，支持Naemon，Nagios，Icinga和Shinken</li>
+                            <li>  <a href="http://www.xymon.com/">Xymon</a>&nbsp;-灵感来自Big Brother的网络监控</li>
+                            <li>  <a href="http://www.zabbix.com/">Zabbix</a>&nbsp;- Enterprise-class software for monitoring of networks and applications.</li>
+                            <li>  <a href="http://www.zabbix.com/">Zabbix</a>&nbsp;-&nbsp;监控网络和应用的企业级软件</li>
+                            <li>  <a href="http://community.zenoss.org/">Zenoss</a>&nbsp;-基于Zope的应用，服务器和网络管理平台</li>
+                        </ul>
+                        <h2><a id="user-content-度量和度量收集" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#度量和度量收集" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>度量和度量收集</h2>
+                        <p>度量收集和显示软件</p>
+                        <ul>
+                            <li>  <a href="http://collectd.org/">Collectd</a>&nbsp;-系统统计收集守护进程</li>
+                            <li>  <a href="http://collectl.sourceforge.net/">Collectl</a>&nbsp;-高精度系统性能指标收集工具。</li>
+                            <li>  <a href="http://dashing.io/">Dashing</a>&nbsp;-Ruby gem,允许快速统计仪表板的开发。基于HTML5，允许在数据中心或会议室进行大屏幕显示。</li>
+                            <li>  <a href="https://github.com/BrightcoveOS/Diamond">Diamond</a>&nbsp;-基于Python的统计收集守护进程</li>
+                            <li>  <a href="http://ganglia.sourceforge.net/">Ganglia</a>&nbsp;-&nbsp;基于RRD用于网格和/或集群的服务器的高性能、可伸缩监控设备。兼容Graphite，使用一个单一的收集进程。</li>
+                            <li>  <a href="http://grafana.org/">Grafana</a>&nbsp;-一个Graphite或InfluxDB仪表盘和图形编辑器</li>
+                            <li>  开源的可伸缩绘图服务器</li>
+                            <li>  <a href="http://influxdb.com/">InfluxDB</a>&nbsp;-开源的分布式时间序列数据库，没有外部依赖。</li>
+                            <li>  <a href="https://code.google.com/p/kairosdb/">KairosDB</a>&nbsp;-快速分布式可扩展的时间序列数据库,OpenTSDB 1. x的分支。</li>
+                            <li>  <a href="http://opentsdb.net/">OpenTSDB</a>&nbsp;-存储和服务大量的时间序列数据，不丢失粒度。</li>
+                            <li>  <a href="http://oss.oetiker.ch/rrdtool/">RRDtool</a>&nbsp;-&nbsp;开源企业标准，用于时间序列数据的高性能数据记录和绘图系统</li>
+                            <li>  <a href="https://github.com/etsy/statsd/">Statsd</a>&nbsp;-应用统计监听</li>
+                        </ul>
+                        <h2><a id="user-content-网络配置管理" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#网络配置管理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>网络配置管理</h2>
+                        <p>网络配置管理工具</p>
+                        <ul>
+                            <li>  <a href="http://www.gestioip.net/">GestióIP</a>&nbsp;-一个自动的基于web的IPV4/IPV6地址管理工具</li>
+                            <li>  <a href="http://www.shrubbery.net/rancid/">RANCID</a>&nbsp;-监控网络设备配置和维护历史变更</li>
+                            <li>  <a href="http://www.rconfig.com/">rConfig</a>&nbsp;-另一个网络配置管理工具</li>
+                        </ul>
+                        <h2><a id="user-content-时事通讯" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#时事通讯" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>时事通讯</h2>
+                        <p>时事通讯软件</p>
+                        <ul>
+                            <li>  <a href="http://dadamailproject.com/">DadaMail</a>&nbsp;-Perl编写的邮件列表管理器</li>
+                            <li>  <a href="http://www.phplist.com/">phpList</a>&nbsp;-PHP编写的时事通讯管理器</li>
+                        </ul>
+                        <h2><a id="user-content-nosql" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#nosql" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOSQL</h2>
+                        <p>NOSQL数据库</p>
+                        <ul>
+                            <li>
+                                列族
+
+                                <ul>
+                                    <li>  <a href="http://hbase.apache.org/">Apache HBase</a>&nbsp;-&nbsp;Hadoop数据库，一个分布式的大数据存储</li>
+                                    <li>  <a href="http://cassandra.apache.org/">Cassandra</a>&nbsp;-分布式数据库管理系统，设计用于处理大量数据跨多个服务器。</li>
+                                    <li>  <a href="http://hypertable.org/">Hypertable</a>&nbsp;-基于c++的bigtable DBMS,节省通信，可独立或在Hadoop类似的分布式FS上运行。</li>
+                                </ul>
+                            </li>
+                            <li>
+                                文档存储
+
+                                <ul>
+                                    <li>  <a href="http://couchdb.apache.org/">CouchDB</a>&nbsp;-易于使用,多主机复制的面向文档的数据库系统。</li>
+                                    <li>  <a href="http://www.elasticsearch.org/">ElasticSearch</a>&nbsp;-&nbsp;基于Java的数据库,受欢迎的日志聚合,和电子邮件归档项目。</li>
+                                    <li>  <a href="http://www.mongodb.org/">MongoDB</a>&nbsp;-&nbsp;另一个面向文档的数据库系统</li>
+                                    <li>  <a href="http://ravendb.net/">RavenDB</a>&nbsp;-&nbsp;具有ACID/事物功能的基于文档的数据库</li>
+                                    <li>  <a href="http://www.rethinkdb.com/">RethinkDB</a>&nbsp;-开源分布式文档存储数据库，关注JSON</li>
+                                </ul>
+                            </li>
+                            <li>
+                                图
+
+                                <ul>
+                                    <li>  <a href="https://github.com/twitter/flockdb">FlockDB</a>&nbsp;-Twitter分布式，容错图数据库</li>
+                                    <li>  <a href="http://www.neo4j.org/">Neo4j</a>&nbsp;-&nbsp;开源图数据库</li>
+                                </ul>
+                            </li>
+                            <li>
+                                键值
+
+                                <ul>
+                                    <li>  <a href="https://code.google.com/p/leveldb/">LevelDB</a>&nbsp;-Google高性能键值数据库</li>
+                                    <li>  <a href="http://redis.io/">Redis</a>&nbsp;-&nbsp;支持网络，基于内存，键值，亦可持久化数据库</li>
+                                    <li>  <a href="http://basho.com/riak/">Riak</a>&nbsp;-另一个容错的键值NoSQL数据库</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>NoSQL服务器比较:&nbsp;<a href="http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis">http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis</a></p>
+                        <h2><a id="user-content-打包" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#打包" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>打包</h2>
+                        <ul>
+                            <li>  <a href="https://github.com/jordansissel/fpm">fpm</a>&nbsp;-&nbsp;万能的多格式包创建器</li>
+                            <li>  <a href="https://github.com/opscode/omnibus-ruby">omnibus-ruby</a>&nbsp;-&nbsp;全栈，跨发行版的包管理软件（Ruby）</li>
+                            <li>  <a href="http://packman.readthedocs.org/">packman</a>&nbsp;-全栈，跨发行版的包管理软件（Python）</li>
+                            <li>  <a href="https://github.com/dgoodwin/tito">tito</a>&nbsp;-&nbsp;为git项目构建RPM</li>
+                        </ul>
+                        <h2><a id="user-content-队列" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#队列" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>队列</h2>
+                        <ul>
+                            <li>  <a href="http://kr.github.io/beanstalkd/">BeanstalkD</a>&nbsp;- A simple, fast work queue.</li>
+                            <li>  <a href="http://kr.github.io/beanstalkd/">BeanstalkD</a>&nbsp;-&nbsp;一个简单快速的工作队列</li>
+                            <li>  <a href="http://gearman.org/">Gearman</a>&nbsp;-快速的多语言队列或任务处理平台</li>
+                            <li>  <a href="http://nsq.io/">NSQ</a>&nbsp;-&nbsp;实时分发的消息平台</li>
+                            <li>  <a href="http://www.rabbitmq.com/">RabbitMQ</a>&nbsp;-健壮的，全功能，跨发行版的队列系统</li>
+                            <li>  <a href="http://zeromq.org/">ZeroMQ</a>&nbsp;-轻量级队列系统</li>
+                        </ul>
+                        <h2><a id="user-content-rdbms" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#rdbms" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>RDBMS</h2>
+                        <p>关系数据库管理系统</p>
+                        <ul>
+                            <li>  <a href="http://www.firebirdsql.org/">Firebird</a>&nbsp;-&nbsp;真正的全球开源数据库</li>
+                            <li>  <a href="http://galeracluster.com/">Galera</a>&nbsp;-Galera MySQL集群是一个易于使用的高可用性解决方案，具有很高的系统正常运行时间,没有数据丢失,为未来的增长提供可伸缩性。</li>
+                            <li>  <a href="https://mariadb.org/">MariaDB</a>&nbsp;-MySQL的社区开发分支</li>
+                            <li>  <a href="http://dev.mysql.com/">MySQL</a>&nbsp;-&nbsp;非常流行的RDBMS服务器</li>
+                            <li>  <a href="http://www.percona.com/software">Percona Server</a>&nbsp;-增强的，可替换MySQL</li>
+                            <li>  <a href="http://www.postgresql.org/">PostgreSQL</a>&nbsp;-&nbsp;对象关系数据库管理系统（ORDBMS)</li>
+                            <li>  <a href="http://www.postgres-xl.org/">PostgreSQL-XL</a>&nbsp;-&nbsp;基于PostgreSQL的可伸缩开源数据库集群</li>
+                            <li>  <a href="http://sqlite.org/">SQLite</a>&nbsp;-自包容，弱服务器，零配置，支持事务的SQL DBS实现库</li>
+                        </ul>
+                        <h2><a id="user-content-安全" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#安全" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>安全</h2>
+                        <p>安全工具</p>
+                        <ul>
+                            <li>  <a href="http://denyhosts.sourceforge.net/">Denyhosts</a>&nbsp;-阻止SSH字典攻击和暴力攻击</li>
+                            <li>  <a href="http://www.fail2ban.org/wiki/index.php/Main_Page">Fail2Ban</a>&nbsp;-&nbsp;扫描日志文件，并对具有恶意行为显示的IP采取措施</li>
+                            <li>  <a href="https://spamassassin.apache.org/">SpamAssassin</a>&nbsp;-一个强大的和受欢迎的垃圾邮件过滤器，它采用多种检测技术。</li>
+                        </ul>
+                        <h2><a id="user-content-服务发现" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#服务发现" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>服务发现</h2>
+                        <ul>
+                            <li>  <a href="http://www.consul.io/">Consul</a>&nbsp;-&nbsp;Consule是伊戈尔服务发现，监控和配置的工具</li>
+                            <li>  <a href="https://github.com/ha/doozerd">Doozerd</a>&nbsp;-&nbsp;Doozer是一个高可用，完全一致的存储，用于少量非常重要的数据</li>
+                            <li>  <a href="http://zookeeper.apache.org/">ZooKeeper</a>&nbsp;-&nbsp;ZooKeeper是一个集中的服务，用于维护配置信息，命名，提供分布式同步和组服务</li>
+                        </ul>
+                        <h2><a id="user-content-smtp" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#smtp" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SMTP</h2>
+                        <p>SMTP服务器</p>
+                        <ul>
+                            <li>  <a href="http://www.exim.org/">Exim</a>&nbsp;-由剑桥大学开发的消息传输代理（MTA)</li>
+                            <li>  <a href="http://haraka.github.io/">Haraka</a>&nbsp;-&nbsp;用JavaScirpt编写的高性能，可插入的SMTP服务器</li>
+                            <li>  <a href="http://mailcatcher.me/">MailCatcher</a>&nbsp;-Ruby gem部署一个简单的SMTP MTA网关，接收所有邮件并在web接口显示。对调试和开发有用。</li>
+                            <li>  <a href="https://github.com/m242/maildrop">Maildrop</a>&nbsp;-开源的一次性邮件服务器，对开发也很有用</li>
+                            <li>  <a href="https://opensmtpd.org/">OpenSMTPD</a>&nbsp;-从OpenBSD项目实现的安全的SMTP服务器</li>
+                            <li>  <a href="http://www.postfix.org/">Postfix</a>&nbsp;-&nbsp;快速，易于管理和安全的Sendmail替代品</li>
+                            <li>  <a href="http://cr.yp.to/qmail.html">Qmail</a>&nbsp;-&nbsp;安全的Sendmail替代品</li>
+                            <li>  <a href="http://www.sendmail.com/sm/open_source/">Sendmail</a>&nbsp;-消息传输代理（MTA)</li>
+                        </ul>
+                        <h2><a id="user-content-软件容器" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#软件容器" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>软件容器</h2>
+                        <p>操作系统级别的虚拟化</p>
+                        <ul>
+                            <li>  <a href="https://bitnami.com/">Bitnami</a>&nbsp;-为web应用，开发栈和虚拟设备生产开源软件安装器或软件包</li>
+                            <li>  <a href="http://www.docker.com/">Docker</a>&nbsp;-&nbsp;给开发者和系统管理员构建，发布和运行分布式应用程序的开放平台</li>
+                            <li>  <a href="http://openvz.org/">OpenVZ</a>&nbsp;-Linux平台基于容器的虚拟化</li>
+                        </ul>
+                        <h2><a id="user-content-ssh" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#ssh" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SSH</h2>
+                        <p>SSH工具</p>
+                        <ul>
+                            <li>  <a href="http://www.harding.motd.ca/autossh/">autossh</a>&nbsp;-网络中断后自动复位ssh会话。</li>
+                            <li>  <a href="http://sourceforge.net/projects/clusterssh/">Cluster SSH</a>&nbsp;-通过一个图形化控制台控制多个xterm窗口。</li>
+                            <li>  <a href="http://www.netfort.gr.jp/~dancer/software/dsh.html.en">DSH</a>&nbsp;-Dancer的shell/分布式shell-从一个命令行包装执行多个远程shell命令。</li>
+                            <li>  <a href="http://mosh.mit.edu/">Mosh</a>&nbsp;-&nbsp;移动shell</li>
+                            <li>  <a href="http://code.google.com/p/parallel-ssh/">parallel-ssh</a>&nbsp;-提供并行的OpenSSH版本和相关工具</li>
+                            <li>  <a href="http://code.google.com/p/sshpt/">SSH Power Tool</a>&nbsp;-不使用pre-shared钥匙的情况下对多个服务器同时执行命令和上传文件</li>
+                        </ul>
+                        <h2><a id="user-content-统计" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#统计" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>统计</h2>
+                        <p>分析软件</p>
+                        <ul>
+                            <li>  <a href="http://www.analog.cx/">Analog</a>&nbsp;-&nbsp;世界上最流行的日志分析工具</li>
+                            <li>  <a href="http://goaccess.io/">GoAccess</a>&nbsp;-在终端运行的开源的实时web日志分析和交互视图</li>
+                            <li>  <a href="http://piwik.org/">Piwik</a>&nbsp;-免费和开源的web分析应用</li>
+                            <li>  <a href="http://www.webalizer.org/">Webalizer</a>&nbsp;- F快速免费的web服务器日志文件分析程序</li>
+                        </ul>
+                        <h2><a id="user-content-工单系统" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#工单系统" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>工单系统</h2>
+                        <p>基于web的工单系统</p>
+                        <ul>
+                            <li>  <a href="http://www.bugzilla.org/">Bugzilla</a>&nbsp;-由Mozilla项目开发和使用过的通用缺陷跟踪和测试工具</li>
+                            <li>  <a href="http://www.cerberusweb.com/">Cerb</a>&nbsp;-&nbsp;基于商业开源许可的基于组的邮件管理项目</li>
+                            <li>  <a href="http://flyspray.org/">Flyspray</a>&nbsp;-&nbsp;使用PHP编写的缺陷跟踪系统</li>
+                            <li>  <a href="http://www.mantisbt.org/">MantisBT</a>&nbsp;-另一个基于web的缺陷跟踪系统</li>
+                            <li>  <a href="http://osticket.com/">osTicket</a>&nbsp;-开源的技术支持工单系统</li>
+                            <li>  <a href="http://www.otrs.com/">Otrs</a>&nbsp;-免费和开源故障通知单系统软件包,公司,组织,或其他实体可以使用它来基于询问分配工单并跟踪进一步的沟通。</li>
+                            <li>  <a href="http://www.bestpractical.com/rt/">Request Tracker</a>&nbsp;-使用Perl编写的工单跟踪系统</li>
+                            <li>  <a href="http://www.thebuggenie.com/">TheBugGenie</a>&nbsp;-开源的工单系统，具有非常完备的用户权限分配</li>
+                        </ul>
+                        <h2><a id="user-content-故障排除" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#故障排除" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>故障排除</h2>
+                        <p>故障排除工具</p>
+                        <ul>
+                            <li>  <a href="http://mitmproxy.org/">mitmproxy</a>&nbsp;-ython工具，用于拦截,查看和修改网络流量。在排除某些问题是非常重要的。</li>
+                            <li>  <a href="http://www.sysdig.org/">Sysdig</a>&nbsp;-从一个运行的linux实例上捕获系统状态和活动，之后保存，过滤和分析</li>
+                            <li>  <a href="http://www.wireshark.org/">Wireshark</a>&nbsp;-世界上著名的网络协议分析工具</li>
+                        </ul>
+                        <h2><a id="user-content-项目管理" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#项目管理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>项目管理</h2>
+                        <p>基于web的项目管理和缺陷跟踪系统</p>
+                        <ul>
+                            <li>  <a href="https://www.chiliproject.org/">ChiliProject</a>&nbsp;-&nbsp;Redmine分支</li>
+                            <li>  <a href="https://github.com/takezoe/gitbucket">GitBucket</a>&nbsp;用Scala编写的GitHub的克隆，单独jar安装</li>
+                            <li>  <a href="https://www.gitlab.com/">GitLab</a>&nbsp;-用Rbuy编写的GitHub的克隆</li>
+                            <li>  <a href="http://gogs.io/">Gogs</a>&nbsp;-用Go编写</li>
+                            <li>  <a href="https://www.openproject.org/">OpenProject</a>&nbsp;-开源的项目协作项目</li>
+                            <li>  <a href="http://phabricator.org/">Phabricator</a>&nbsp;PHP编写</li>
+                            <li>  <a href="http://www.redmine.org/">Redmine</a>&nbsp;-&nbsp;基于rails在rbuy编写</li>
+                            <li>  <a href="http://www.thebuggenie.com/">The Bug Genie</a>&nbsp;-PHP编写</li>
+                            <li>  <a href="http://trac.edgewall.org/">Trac</a>&nbsp;-python编写</li>
+                        </ul>
+                        <h2><a id="user-content-版本控制" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#版本控制" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>版本控制</h2>
+                        <p>软件版本和版本控制</p>
+                        <ul>
+                            <li>  <a href="http://www.fossil-scm.org/">Fossil</a>&nbsp;-分布式版本控制，内建wiki和缺陷跟踪</li>
+                            <li>  <a href="http://git-scm.com/">Git</a>&nbsp;-速度很快的分布式版本控制和源代码管理</li>
+                            <li>  <a href="http://bazaar.canonical.com/">GNU Bazaar</a>&nbsp;-由Cannoicalzi赞助的分布式版本控制系统</li>
+                            <li>  <a href="http://mercurial.selenic.com/">Mercurial</a>&nbsp;-另一个版本控制</li>
+                            <li>  <a href="http://subversion.apache.org/">Subversion</a>&nbsp;-客户端-服务器版本控制系统</li>
+                        </ul>
+                        <h2><a id="user-content-虚拟化" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#虚拟化" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>虚拟化</h2>
+                        <p>虚拟化软件</p>
+                        <ul>
+                            <li>  <a href="https://code.google.com/p/ganeti/">Ganeti</a>&nbsp;-在KVM和Xen上构建的集群虚拟服务器管理软件</li>
+                            <li>  <a href="http://www.linux-kvm.org/">KVM</a>&nbsp;-Linux内核虚拟化架构</li>
+                            <li>  <a href="http://www.ovirt.org/">oVirt</a>&nbsp;-管理虚拟机，存储和虚拟网络</li>
+                            <li>  <a href="http://www.packer.io/">Packer</a>&nbsp;-&nbsp;从单个源配置为多个平台创建相同的机器镜像</li>
+                            <li>  <a href="https://www.vagrantup.com/">Vagrant</a>&nbsp;-&nbsp;创建完整开发环境的工具</li>
+                            <li>  <a href="https://www.virtualbox.org/">VirtualBox</a>&nbsp;-来自Oracle公司的虚拟化产品</li>
+                            <li>  <a href="http://www.xenproject.org/">Xen</a>&nbsp;-用于32/64位Intel/AMD(IA 64）和PowerPC 970架构的虚拟机监控器</li>
+                        </ul>
+                        <h2><a id="user-content-vpn" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#vpn" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>VPN</h2>
+                        <p>VPN软件</p>
+                        <ul>
+                            <li>  <a href="https://community.openvpn.net/">OpenVPN</a>&nbsp;-使用一个定制的安全密钥交换协议,利用SSL / TLS。</li>
+                            <li>  <a href="http://pritunl.com/">Pritunl</a>&nbsp;-基于OpenVPN的方案，易于设置</li>
+                            <li>  <a href="https://www.softether.org/">SoftEther</a>&nbsp;-&nbsp;具有高级特性的多协议VPN软件</li>
+                            <li>  <a href="https://github.com/apenwarr/sshuttle">sshuttle</a>&nbsp;-穷人的VPN</li>
+                            <li>  <a href="http://www.strongswan.org/">strongSwan</a>&nbsp;-&nbsp;Linux下完整的IPsec实现</li>
+                            <li>  <a href="http://www.tinc-vpn.org/">tinc</a>&nbsp;-分布式点对点VPN</li>
+                        </ul>
+                        <h2><a id="user-content-xmpp" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#xmpp" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>XMPP</h2>
+                        <p>XMPP服务器</p>
+                        <ul>
+                            <li>  <a href="http://www.ejabberd.im/">ejabberd</a>&nbsp;-用Erlang/OTP编写的XMPP短信服务器</li>
+                            <li>  <a href="http://www.lightwitch.org/metronome">Metronome IM</a>&nbsp;-Prosody IM分支</li>
+                            <li>  <a href="https://www.erlang-solutions.com/products/mongooseim-massively-scalable-ejabberd-platform">MongooseIM</a>&nbsp;-ejabberd分支</li>
+                            <li>  <a href="http://www.igniterealtime.org/projects/openfire/">Openfire</a>&nbsp;-实时协作（RTC）服务器</li>
+                            <li>  <a href="http://prosody.im/">Prosody IM</a>&nbsp;-Lua编写的XMPP服务器</li>
+                            <li>  <a href="https://projects.tigase.org/projects/tigase-server">Tigase</a>&nbsp;-java实现的XMPP服务器</li>
+                        </ul>
+                        <h2><a id="user-content-webmails" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#webmails" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Webmails</h2>
+                        <p>Webmail应用</p>
+                        <ul>
+                            <li>  <a href="https://www.mailpile.is/">Mailpile</a>&nbsp;- A modern, fast web-mail client with user-friendly encryption and privacy features.</li>
+                            <li>  <a href="https://www.mailpile.is/">Mailpile</a>&nbsp;-&nbsp;一个先进，快速的web-mail客户端，具有用户友好的加密的私有个性</li>
+                            <li>  <a href="http://roundcube.net/">Roundcube</a>&nbsp;- Browser-based IMAP client with an application-like user interface.</li>
+                            <li>  <a href="http://roundcube.net/">Roundcube</a>&nbsp;-&nbsp;基于浏览器的IMAP客户端，具有应用类似的用户界面</li>
+                        </ul>
+                        <h2><a id="user-content-web" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#web" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web</h2>
+                        <p>Web服务器</p>
+                        <ul>
+                            <li>  <a href="http://httpd.apache.org/">Apache</a>&nbsp;-最流行的web服务器</li>
+                            <li>  <a href="http://cherokee-project.com/">Cherokee</a>&nbsp;-轻量级，高性能的web服务器/反向代理</li>
+                            <li>  <a href="http://www.lighttpd.net/">Lighttpd</a>&nbsp;-&nbsp;speed-critical环境下更优化的web服务器</li>
+                            <li>  <a href="http://nginx.org/">Nginx</a>&nbsp;-反向代理，负载均衡器，HTTP缓存和web服务器</li>
+                            <li>  <a href="https://github.com/unbit/uwsgi/">uWSGI</a>&nbsp;-uWSGI项目，目标在开发一个构建主机服务的全栈</li>
+                        </ul>
+                        <p>Web性能</p>
+                        <ul>
+                            <li>  <a href="http://www.haproxy.org/">HAProxy</a>&nbsp;-&nbsp;负载均衡，SSL卸载和性能优化，压缩和通用web路由</li>
+                            <li>  <a href="https://www.varnish-cache.org/">Varnish</a>&nbsp;-基于HTTP的web应用加速器，关注内存优化和压缩</li>
+                        </ul>
+                        <h2><a id="user-content-wikis" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#wikis" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Wikis</h2>
+                        <p>Wiki软件</p>
+                        <ul>
+                            <li>  <a href="https://www.dokuwiki.org/dokuwiki">DokuWiki</a>&nbsp;-使用简单和高度通用的wiki,这并不需要一个数据库。</li>
+                            <li>  <a href="https://github.com/gollum/gollum">Gollum</a>&nbsp;-&nbsp;一个简单,Git-powered wiki，具有不错的API和本地前端。</li>
+                            <li>  <a href="http://ikiwiki.info/">ikiwiki</a>&nbsp;-一个wiki编译器</li>
+                            <li>  <a href="http://www.mediawiki.org/wiki/MediaWiki">Mediawiki</a>&nbsp;-加强Wikipedia</li>
+                            <li>
+                                <a href="http://moinmo.in/">MoinMoin</a>&nbsp;-一个高级的易用的扩展性强的Wiki引擎，具有大量的社区用户<a href="http://tiddlywiki.com/">TiddlyWiki</a>&nbsp;-&nbsp;JavaScript的完整交互wiki
+
+                                <ul>
+                                    <li>  <a href="https://github.com/minad/olelo">Ōlelo Wiki</a>&nbsp;-&nbsp;在Git存储上保存页面的wiki</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h1><a id="user-content-资源" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#资源" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>资源</h1>
+                        <p>各种资源，比如书籍，网站和文章，用于提升技能和知识</p>
+                        <h2><a id="user-content-博客" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#博客" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>博客</h2>
+                        <ul>
+                            <li>  <a href="http://codeascraft.com/">Code as Craft</a>&nbsp;-&nbsp;Etsy的运维博客，大量的技术博客</li>
+                            <li>  <a href="http://blog.devopsguys.com/">DevOpsGuys</a>&nbsp;-&nbsp;Devops顾问，运维博客</li>
+                            <li>  <a href="http://developer.rackspace.com/blog/">Rackspace Developers</a>&nbsp;-具有大量Devops主题的博客</li>
+                        </ul>
+                        <h2><a id="user-content-书籍" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#书籍" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>书籍</h2>
+                        <p>Sysadmin相关书籍</p>
+                        <ul>
+                            <li>  <a href="http://linuxcommand.org/tlcl.php">The Linux Command Line</a>&nbsp;-&nbsp;William Shotts的书，关于Linux命令行</li>
+                            <li>  <a href="http://itrevolution.com/books/phoenix-project-devops-book/">The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win</a>&nbsp;-DevOps技术如何修复发生在IT组织的问题</li>
+                            <li>  <a href="http://everythingsysadmin.com/books.html">The Practice of System and Network Administration</a>&nbsp;-&nbsp;第一和第二版本描述系统和网络管理的最佳实践,独立于特定平台或技术。</li>
+                            <li>  <a href="http://www.itpi.org/the-visible-ops-handbook-review.html">The Visible Ops Handbook: Implementing ITIL in 4 Practical and Auditable Steps</a>&nbsp;-一个方法论,旨在启动实施控制和过程改进。</li>
+                            <li>  <a href="http://www.admin.com/">UNIX and Linux System Administration Handbook</a>&nbsp;-&nbsp;从使用的角度走进系统管理</li>
+                        </ul>
+                        <h2><a id="user-content-编辑器" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#编辑器" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>编辑器</h2>
+                        <p>开源的代码编辑器</p>
+                        <ul>
+                            <li>  <a href="https://atom.io/">Atom</a>&nbsp;-来自Github的文本编辑器</li>
+                            <li>  <a href="http://brackets.io/">Brackets</a>&nbsp;-&nbsp;用于web设计和前端开发的开源代码编辑器</li>
+                            <li>  <a href="http://eclipse.org/">Eclipse</a>&nbsp;-&nbsp;用Java编写的IDE，具有可扩展的插件系统</li>
+                            <li>  <a href="http://www.geany.org/">Geany</a>&nbsp;-GTK2文本编辑器</li>
+                            <li>  <a href="http://www.gnu.org/software/emacs/">GNU Emacs</a>&nbsp;-一个可扩展，自定义的文本编辑器</li>
+                            <li>  <a href="http://pad.haroopress.com/">Haroopad</a>&nbsp;-Markdown编辑器，具有实时预览</li>
+                            <li>  <a href="http://icecoder.net/">ICEcoder</a>&nbsp;-非常棒的代码编辑器，内建常见的web语言</li>
+                            <li>  <a href="https://github.com/jdleesmiller/jotgit">jotgit</a>&nbsp;-Git支持的实时协作代码编辑</li>
+                            <li>  <a href="http://www.lighttable.com/">Light Table</a>&nbsp;-&nbsp;下一代代码编辑器</li>
+                            <li>  <a href="http://limetext.org/">Lime</a>&nbsp;-旨在提供一个Sublime Text的开源替代方案</li>
+                            <li>  <a href="https://github.com/textmate/textmate/">TextMate</a>&nbsp;-OS X下的图形文本编辑器</li>
+                            <li>  <a href="http://www.vim.org/">Vim</a>&nbsp;-一个高可配置的文本编辑器，用于高效编辑</li>
+                        </ul>
+                        <h2><a id="user-content-时事通讯-1" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#时事通讯-1" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>时事通讯</h2>
+                        <ul>
+                            <li>  <a href="http://serversforhackers.com/">Servers for Hackers</a>&nbsp;-&nbsp;程序员的时事通讯，发现他们需要知道的服务器相关内容。</li>
+                        </ul>
+                        <h2><a id="user-content-存储" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#存储" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>存储</h2>
+                        <p>软件包存储</p>
+                        <ul>
+                            <li>  <a href="http://www.dotdeb.org/">Dotdeb</a>&nbsp;-&nbsp;Debian下LAMP更新包的存储</li>
+                            <li>  <a href="http://rpms.famillecollet.com/">Remi</a>&nbsp;-&nbsp;RHEL/Centos/Fedora下LAMP更新包的存储</li>
+                        </ul>
+                        <h2><a id="user-content-网站" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#网站" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>网站</h2>
+                        <p>有用的系统管理员相关的网站</p>
+                        <ul>
+                            <li>  <a href="http://www.opsschool.org/">Ops School</a>&nbsp;-&nbsp;全面的计划,将帮助你成为一名运维工程师。</li>
+                            <li>  <a href="https://www.digitalocean.com/community/tutorials">Digital Ocean Tutorials</a>&nbsp;-&nbsp;一个非常庞大资源，获得基本的应用程序，工具,甚至是系统管理主题。</li>
+                        </ul>
+                        <h3 id="user-content-weibo-weixin"><a id="user-content-微信公众号" class="anchor" href="https://github.com/wangxiwei/awesome-sysadmin-cn#微信公众号" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>微信公众号</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Linux爱好者：专注分享 Linux/Unix 相关内容，包括：工具资源、使用技巧、课程、书籍等。
+                                    <br><a href="./wangxiwei_awesome-sysadmin-cn_ 系统管理员资源大全中文版，备份_克隆软件、云计算_云存储、协作软件、配置管理、日志管理、监控、项目管理等_files/687474703a2f2f7777342e73696e61696d672e636e2f736d616c6c2f3633393138363131677731657062326361383870666a3230343630343633796d2e6a7067" target="_blank"><img src="./wangxiwei_awesome-sysadmin-cn_ 系统管理员资源大全中文版，备份_克隆软件、云计算_云存储、协作软件、配置管理、日志管理、监控、项目管理等_files/687474703a2f2f7777342e73696e61696d672e636e2f736d616c6c2f3633393138363131677731657062326361383870666a3230343630343633796d2e6a7067" width="150" height="150" data-canonical-src="http://ww4.sinaimg.cn/small/63918611gw1epb2ca88pfj20460463ym.jpg" style="max-width:100%;"></a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    数据库开发者：专注分享数据库相关内容，包括：各种主流 DB 的最佳实践、数据库基础知识、性能优化、数据安全等。
+                                    <br><a href="./wangxiwei_awesome-sysadmin-cn_ 系统管理员资源大全中文版，备份_克隆软件、云计算_云存储、协作软件、配置管理、日志管理、监控、项目管理等_files/687474703a2f2f7777342e73696e61696d672e636e2f736d616c6c2f36333931383631316777316570623263356d6b306a6a323034363034366d79362e6a7067" target="_blank"><img src="./wangxiwei_awesome-sysadmin-cn_ 系统管理员资源大全中文版，备份_克隆软件、云计算_云存储、协作软件、配置管理、日志管理、监控、项目管理等_files/687474703a2f2f7777342e73696e61696d672e636e2f736d616c6c2f36333931383631316777316570623263356d6b306a6a323034363034366d79362e6a7067" width="150" height="150" data-canonical-src="http://ww4.sinaimg.cn/small/63918611gw1epb2c5mk0jj2046046my6.jpg" style="max-width:100%;"></a>
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

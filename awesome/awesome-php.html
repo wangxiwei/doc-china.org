@@ -1,0 +1,791 @@
+﻿<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled">
+
+<head>
+    <meta charset='utf-8'>
+    <link crossorigin="anonymous" href="css/github.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/normalize.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/site.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/system-fonts.css" media="all" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    <title>awesome-php-cn: PHP资源大全中文版，库、框架、模板、安全、代码分析、日志、第三方库、配置工具、Web 工具等</title>
+    <meta name="description" content="awesome-php-cn - PHP资源大全中文版，库、框架、模板、安全、代码分析、日志、第三方库、配置工具、Web 工具等">
+</head>
+
+<body>
+    <div role="main">
+        <div class="container new-discussion-timeline experiment-repo-nav">
+            <div class="repository-content">
+                <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+                    <h3>
+                        awesome PHP
+                    </h3>
+                    <article class="markdown-body entry-content" itemprop="text">
+                        <h1><a id="user-content-php-资源大全中文版" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#php-资源大全中文版" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP 资源大全中文版</h1>
+                        <p>我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。<a href="https://github.com/ziadoz/awesome-php">awesome-php</a> 就是 ziadoz 发起维护的 PHP 资源列表，内容包括：库、框架、模板、安全、代码分析、日志、第三方库、配置工具、Web 工具、书籍、电子书、经典博文等。</p>
+                        <p>Awesome 系列虽然挺全，但基本只对收录的资源做了极为简要的介绍，如果有更详细的中文介绍，对相应开发者的帮助会更大。这也是我们发起这个开源项目的初衷。</p>
+                        <hr>
+                        <h3><a id="user-content-我们要做什么" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#我们要做什么" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>我们要做什么？</h3>
+                        <ul>
+                            <li>基于 awesome-php 资源列表，我们将对各个资源项进行编译整理。</li>
+                            <li>
+                                整理后的内容，将收录在<a href="http://hao.jobbole.com/">伯乐在线资源频道</a>。可参考已整理的内容：
+
+                                <ul>
+                                    <li>《<a href="http://hao.jobbole.com/snappy-php/">Snappy：压缩工具的 PHP 扩展</a>》</li>
+                                    <li>《<a href="http://hao.jobbole.com/phy-yaf/">phy-yaf：一个用C语言编写的php框架</a>》</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <hr>
+                        <h3><a id="user-content-如何参与本项目" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#如何参与本项目" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>如何参与本项目？</h3>
+                        <p>从下面的目录来看，本项目的工作量小不了，所以非常期待能有更多程序员一起来参与。</p>
+                        <p>不过加入前，有几个小要求：</p>
+                        <ul>
+                            <li>英文还不错，能读懂英文并用自己的话复述；</li>
+                            <li>有 PHP 开发经验；</li>
+                        </ul>
+                        <p>如有兴趣，请加 QQ：50872495。加 Q 时请注明「PHP大全」</p>
+                        <hr>
+                        <h3><a id="user-content-本项目的参与者" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#本项目的参与者" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>本项目的参与者</h3>
+                        <ul>
+                            <li><p>维护者：<a href="https://github.com/tangyouhua">tangyouhua</a></p></li>
+                            <li><p>贡献者：<a href="http://www.jobbole.com/members/cucr">cucr</a>、You</p></li>
+                        </ul>
+                        <p>注：名单不分排名，不定期补充更新</p>
+                        <hr>
+                        <h3><a id="user-content-奖励计划" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#奖励计划" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>奖励计划</h3>
+                        <p>虽然奖励可能并不是你加入的主要原因，但还是有必要提一下：</p>
+                        <ul>
+                            <li>整理超过 20 个资源后，可在伯乐在线上开通打赏；</li>
+                            <li>每整理 20 个资源，有机会获得技术书籍或各种有意思的创意、极客产品；</li>
+                            <li><a href="http://hao.jobbole.com/rewards/">奖励详情</a></li>
+                        </ul>
+                        <hr>
+                        <h2><a id="user-content-依赖管理" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#依赖管理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>依赖管理</h2>
+                        <p><em>依赖和包管理库</em></p>
+                        <ul>
+                            <li>  <a href="http://getcomposer.org/">Composer</a>/<a href="http://packagist.org/">Packagist</a>：一个包和依赖管理器</li>
+                            <li>  <a href="https://github.com/composer/installers">Composer Installers</a>：一个多框架Composer库安装器</li>
+                            <li>  <a href="https://github.com/FriendsOfPHP/pickle">Pickle</a>：一个PHP扩展安装器</li>
+                        </ul>
+                        <h2><a id="user-content-其他的依赖管理" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#其他的依赖管理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>其他的依赖管理</h2>
+                        <p><em>其他的相关依赖管理</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/composer/satis">Satis</a>：一个静态Composer存储库生成器</li>
+                            <li>  <a href="https://github.com/bamarni/composition">Composition</a>：一个在运行时检查Composer环境的库</li>
+                            <li>  <a href="https://github.com/herrera-io/php-version">Version</a>：语义版本的解析和比较库</li>
+                            <li>  <a href="https://github.com/ralphschindler/Namespacer">NameSpacer</a>&nbsp;-转化下划线到命名空间的库</li>
+                            <li>  <a href="https://github.com/goatherd/patch-installer">Patch Installer</a>&nbsp;-使用Composer安装补丁的库</li>
+                            <li>  <a href="https://github.com/silpion/composer-checker">Composer Checker</a>&nbsp;-校验Composer配置的工具</li>
+                        </ul>
+                        <h2><a id="user-content-框架" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#框架" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>框架</h2>
+                        <p><em>Web开发框架</em></p>
+                        <ul>
+                            <li>  <a href="http://symfony.com/">Symfony2</a>&nbsp;-一个独立组件组成的框架</li>
+                            <li>  <a href="http://framework.zend.com/">Zend Framework 2</a>&nbsp;-另一个由独立组件组成的框架</li>
+                            <li>  <a href="http://laravel.com/">Laravel 4</a>&nbsp;-另一个PHP框架</li>
+                            <li>  <a href="http://auraphp.com/">Aura PHP</a>&nbsp;-独立组件的框架</li>
+                            <li>  <a href="https://github.com/yiisoft/yii2/">Yii2</a>&nbsp;-&nbsp;另一个PHP框架</li>
+                            <li>  <a href="http://nette.org/">Nette</a>&nbsp;-&nbsp;另一个由个体组件组成的框架</li>
+                            <li>  <a href="http://www.ppi.io/">PPI Framework 2</a>&nbsp;-一个互操作性框架</li>
+                            <li>  <a href="http://phalconphp.com/en/">Phalcon</a>&nbsp;-通过C扩展实现的框架</li>
+                        </ul>
+                        <h2><a id="user-content-其他框架" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#其他框架" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>其他框架</h2>
+                        <p><em>其他Web开发框架</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/symfony-cmf/symfony-cmf">Symfony CMF</a>&nbsp;-&nbsp;创建自定义CMS的内容管理框架</li>
+                            <li>  <a href="http://rad.knplabs.com/">Knp RAD Bundle</a>&nbsp;-Symfony 2的快速应用程序（RAD）包</li>
+                        </ul>
+                        <h2><a id="user-content-框架组件" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#框架组件" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>框架组件</h2>
+                        <p><em>来自web开发框架的独立组件</em></p>
+                        <ul>
+                            <li>  <a href="http://symfony.com/doc/master/components/index.html">Symfony2 Components</a>&nbsp;-Symfony2组件</li>
+                            <li>  <a href="https://packages.zendframework.com/">Zend Framework 2 Components</a>&nbsp;-ZF2组件</li>
+                            <li>  <a href="http://auraphp.github.com/">Aura Components</a>&nbsp;-PHP5.4组件包</li>
+                            <li>  <a href="http://hoa-project.net/En/">Hoa Project</a>&nbsp;-另一个PHP组件包</li>
+                        </ul>
+                        <h2><a id="user-content-微型框架" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#微型框架" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>微型框架</h2>
+                        <p><em>微型框架和路由</em></p>
+                        <ul>
+                            <li>  <a href="http://silex.sensiolabs.org/">Silex</a>&nbsp;-&nbsp;基于Symfony2组件的微型框架</li>
+                            <li>  <a href="http://www.slimframework.com/">Slim</a>&nbsp;-&nbsp;另一个简单的微型框架</li>
+                            <li>  <a href="http://bulletphp.com/">Bullet PHP</a>&nbsp;-用于构建REST APIs的微型框架</li>
+                            <li>  <a href="https://github.com/nikic/FastRoute">Fast Route</a>&nbsp;-&nbsp;快速路由库</li>
+                            <li>  <a href="https://github.com/c9s/Pux">Pux</a>&nbsp;-另一个快速路由库</li>
+                        </ul>
+                        <h2><a id="user-content-其他微型框架" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#其他微型框架" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>其他微型框架</h2>
+                        <p><em>其他相关的微型框架和路由</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/fabpot/Silex-Skeleton">Silex Skeleton</a>&nbsp;-Silex的项目架构</li>
+                            <li>  <a href="https://github.com/silexphp/Silex-WebProfiler">Silex Web Profiler</a>&nbsp;-Silex web调试工具条</li>
+                            <li>  <a href="https://github.com/stackphp">Stack</a>&nbsp;-&nbsp;Silex/Symfony的可堆叠中间件库</li>
+                            <li>  <a href="https://github.com/codeguy/Slim-Skeleton">Slim Skeleton</a>&nbsp;-Slim架构</li>
+                            <li>  <a href="https://github.com/codeguy/Slim-Views">Slim View</a>&nbsp;-Slim的自定义视图集合</li>
+                            <li>  <a href="https://github.com/codeguy/Slim-Middleware">Slim Middleware</a>&nbsp;-Slim的自定义中间件集合</li>
+                        </ul>
+                        <h2><a id="user-content-模板" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#模板" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>模板</h2>
+                        <p><em>模板化和词法分析的库和工具</em></p>
+                        <ul>
+                            <li>  <a href="http://twig.sensiolabs.org/">Twig</a>&nbsp;-一个全面的模板语言</li>
+                            <li>  <a href="https://github.com/asm89/twig-cache-extension">Twig Cache Extension</a>&nbsp;-一个用于Twig的模板片段缓存库</li>
+                            <li>  <a href="https://github.com/bobthecow/mustache.php">Mustache</a>&nbsp;-一个Mustache模板语言的PHP实现</li>
+                            <li>  <a href="https://github.com/weierophinney/phly_mustache">Phly Mustache</a>&nbsp;-另一个Mustache模板语言的PHP实现</li>
+                            <li>  <a href="https://github.com/arnaud-lb/MtHaml">MtHaml</a>&nbsp;-&nbsp;一个HAML&nbsp;模板语言的PHP实现</li>
+                            <li>  <a href="http://phptal.org/">PHPTAL</a>&nbsp;-一个&nbsp;<a href="http://en.wikipedia.org/wiki/Template_Attribute_Language">TAL</a>&nbsp;模板语言的PHP实现</li>
+                            <li>  <a href="http://platesphp.com/">Plates</a>&nbsp;-一个原生PHP模板库</li>
+                            <li>  <a href="https://github.com/pyrocms/lex">Lex</a>&nbsp;-一个轻量级模板解析器</li>
+                        </ul>
+                        <h2><a id="user-content-静态站点生成器" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#静态站点生成器" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>静态站点生成器</h2>
+                        <p><em>预处理工具来生成web页面的内容。</em></p>
+                        <ul>
+                            <li>  <a href="http://sculpin.io/">Sculpin</a>&nbsp;-转换Markdown和Twig为静态HTML的工具</li>
+                            <li>  <a href="http://phrozn.info/">Phrozn</a>&nbsp;-&nbsp;另一个转换Textile，Markdown和Twig为HTML的工具</li>
+                        </ul>
+                        <h2><a id="user-content-http" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#http" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTTP</h2>
+                        <p><em>用于HTTP和网站爬取的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/guzzle/guzzle">Guzzle</a>&nbsp;-一个全面的HTTP客户端</li>
+                            <li>  <a href="https://github.com/kriswallsmith/Buzz">Buzz</a>&nbsp;-另一个HTTP客户端</li>
+                            <li>  <a href="https://github.com/rmccue/Requests">Requests</a>&nbsp;-一个简单的HTTP库</li>
+                            <li>  <a href="https://github.com/nategood/httpful">HTTPFul</a>&nbsp;-一个链式HTTP库</li>
+                            <li>  <a href="https://github.com/fabpot/Goutte">Goutte</a>&nbsp;-一个简单的web爬取器</li>
+                            <li>  <a href="http://php-vcr.github.io/">PHP VCR</a>&nbsp;-录制和重放HTTP请求的库</li>
+                        </ul>
+                        <h2><a id="user-content-url" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#url" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URL</h2>
+                        <p><em>解析URL的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/jwage/purl">Purl</a>&nbsp;-一个URL处理库</li>
+                            <li>  <a href="https://github.com/jeremykendall/php-domain-parser">PHP Domain Parser</a>&nbsp;-一个本地前缀解析库</li>
+                        </ul>
+                        <h2><a id="user-content-email" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#email" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Email</h2>
+                        <p><em>发送和解析邮件的库</em></p>
+                        <ul>
+                            <li>  <a href="http://swiftmailer.org/">SwiftMailer</a>&nbsp;-&nbsp;一个邮件解决方案</li>
+                            <li>  <a href="https://github.com/PHPMailer/PHPMailer">PHPMailer</a>&nbsp;-&nbsp;另一个邮件解决方案</li>
+                            <li>  <a href="https://github.com/tedivm/Fetch">Fetch</a>&nbsp;-一个IMAP库</li>
+                            <li>  <a href="https://github.com/willdurand/EmailReplyParser">Email Reply Parser</a>&nbsp;-一个邮件回复解析库</li>
+                            <li>  <a href="https://github.com/henrikbjorn/Stampie">Stampie</a>&nbsp;-邮件服务库，不如&nbsp;<a href="http://sendgrid.com/">SendGrid</a>,&nbsp;<a href="http://postmarkapp.com/">PostMark</a>,&nbsp;<a href="http://www.mailgun.com/">MailGun</a>&nbsp;和&nbsp;<a href="http://www.mandrill.com/">Mandrill</a>.</li>
+                            <li>  <a href="https://github.com/tijsverkoyen/CssToInlineStyles">CssToInlineStyles</a>&nbsp;-一个在邮件模板内联CSS的库</li>
+                        </ul>
+                        <h2><a id="user-content-文件" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#文件" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>文件</h2>
+                        <p><em>文件处理和MIME类型检测库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/KnpLabs/Gaufrette">Gaufrette</a>&nbsp;-一个文件系统抽象层</li>
+                            <li>  <a href="https://github.com/FrenkyNet/Flysystem">Flysystem</a>&nbsp;-&nbsp;另一个文件系统抽象层</li>
+                            <li>  <a href="https://github.com/dflydev/dflydev-canal">Canal</a>&nbsp;-一个检测互联网媒体类型的库</li>
+                            <li>  <a href="https://github.com/dflydev/dflydev-apache-mime-types">Apache MIME Types</a>&nbsp;-一个解析Apache MIME类型的库</li>
+                            <li>  <a href="https://github.com/versionable/Ferret">Ferret</a>&nbsp;-&nbsp;一个MIME检测库</li>
+                            <li>  <a href="https://github.com/hoaproject/Mime">Hoa Mime</a>&nbsp;-另一个MIME检测库</li>
+                            <li>  <a href="https://github.com/henrikbjorn/Lurker">Lurker</a>&nbsp;-一个资源跟踪库</li>
+                            <li>  <a href="https://github.com/herrera-io/php-file-locator">PHP File Locator</a>&nbsp;-一个在大型项目定位文件的库</li>
+                            <li>  <a href="https://github.com/alchemy-fr/PHP-FFmpeg/">PHP FFmpeg</a>&nbsp;-一个用于<a href="http://www.ffmpeg.org/">FFmpeg</a>&nbsp;视频包装的库.</li>
+                            <li>  <a href="https://github.com/nyamsprod/Bakame.csv">CSV</a>&nbsp;-&nbsp;一个CSV数据处理库</li>
+                        </ul>
+                        <h2><a id="user-content-streams流" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#streams流" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Streams&nbsp;流</h2>
+                        <p><em>处理流的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/fzaninotto/Streamer">Streamer</a>&nbsp;-&nbsp;一个面向对象的流包装库</li>
+                        </ul>
+                        <h2><a id="user-content-dependency-injection依赖注入" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#dependency-injection依赖注入" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependency Injection依赖注入</h2>
+                        <p><em>实现依赖注入设计模式的库</em></p>
+                        <ul>
+                            <li>  <a href="http://pimple.sensiolabs.org/">Pimple</a>&nbsp;-&nbsp;一个小的依赖注入容器</li>
+                            <li>  <a href="https://github.com/rdlowrey/Auryn">Auryn</a>&nbsp;-&nbsp;另一个依赖注入容器</li>
+                            <li>  <a href="https://github.com/orno/di">Orno Di</a>&nbsp;-另一个可伸缩的依赖注入容器</li>
+                            <li>  <a href="http://mnapoli.github.com/PHP-DI/">PHP DI</a>&nbsp;-一个使用注释实现的依赖注入</li>
+                            <li>  <a href="https://github.com/jeremeamia/acclimate">Acclimate</a>&nbsp;-一个依赖注入容器和服务定位的通用接口</li>
+                        </ul>
+                        <h2><a id="user-content-imagery图像" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#imagery图像" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Imagery&nbsp;图像</h2>
+                        <p><em>处理图像的库</em></p>
+                        <ul>
+                            <li>  <a href="http://imagine.readthedocs.org/en/latest/index.html">Imagine</a>&nbsp;-一个图像处理库</li>
+                            <li>  <a href="https://github.com/Sybio/ImageWorkshop">PHP Image Workshop</a>&nbsp;-另一个图像处理库</li>
+                            <li>  <a href="https://github.com/Intervention/image">Intervention Image</a>&nbsp;-另一个图像处理库</li>
+                            <li>  <a href="https://github.com/Sybio/GifFrameExtractor">GIF Frame Extractor</a>&nbsp;-一个提取GIF动画帧信息的库</li>
+                            <li>  <a href="https://github.com/Sybio/GifCreator">GIF Creator</a>&nbsp;-&nbsp;一个通过多张图片创建GIF动画的库</li>
+                            <li>  <a href="https://github.com/nmcteam/image-with-text">Image With Text</a>&nbsp;-一个在图像中嵌入文本的库</li>
+                            <li>  <a href="https://github.com/php-loep/color-extractor">Color Extractor</a>&nbsp;-一个从图像中提取颜色的库</li>
+                        </ul>
+                        <h2><a id="user-content-testing测试" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#testing测试" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Testing&nbsp;测试</h2>
+                        <p><em>测试代码和生成测试数据的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/sebastianbergmann/phpunit">PHPUnit</a>&nbsp;-一个单元测试框架</li>
+                            <li>  <a href="https://github.com/sebastianbergmann/dbunit">DBUnit</a>&nbsp;-PHPUnit的数据库测试库</li>
+                            <li>  <a href="https://github.com/brianium/paratest">ParaTest</a>&nbsp;-&nbsp;PHPUnit的并行测试库</li>
+                            <li>  <a href="https://github.com/phpspec/phpspec">PHPSpec</a>&nbsp;-基于功能点设计的单元测试库</li>
+                            <li>  <a href="https://github.com/Codeception/Codeception">Codeception</a>&nbsp;-一个全栈测试框架</li>
+                            <li>  <a href="https://github.com/Codeception/AspectMock">AspectMock</a>&nbsp;-&nbsp;&nbsp;PHPUnit/ Codeception 模拟框架。</li>
+                            <li>  <a href="https://github.com/atoum/atoum">Atoum</a>&nbsp;-一个简单的测试库</li>
+                            <li>  <a href="https://github.com/padraic/mockery">Mockery</a>&nbsp;-一个用测试的模拟对象库</li>
+                            <li>  <a href="https://github.com/mlively/Phake">Phake</a>&nbsp;-另一个用测试的模拟对象库</li>
+                            <li>  <a href="https://github.com/phpspec/prophecy">Prophecy</a>&nbsp;-一个可选度很高的模拟框架</li>
+                            <li>  <a href="https://github.com/fzaninotto/Faker">Faker</a>&nbsp;-一个伪数据生成库</li>
+                            <li>  <a href="https://github.com/mauris/samsui">Samsui</a>&nbsp;-&nbsp;另一个伪数据生成库</li>
+                            <li>  <a href="https://github.com/nelmio/alice">Alice</a>&nbsp;-富有表现力的一代库</li>
+                            <li>  <a href="http://behat.org/">Behat</a>&nbsp;-一个行为驱动开发（BDD）测试框架</li>
+                            <li>  <a href="https://github.com/danielstjules/pho">Pho</a>&nbsp;-一个行为驱动开发测试框架</li>
+                            <li>  <a href="http://mink.behat.org/">Mink</a>&nbsp;-Web验收测试</li>
+                            <li>  <a href="https://github.com/InterNations/http-mock">HTTP Mock</a>&nbsp;-&nbsp;一个在单元测试模拟HTTP请求的库</li>
+                            <li>  <a href="https://github.com/mikey179/vfsStream">VFS Stream</a>&nbsp;-一个用于测试的虚拟文件系统流的包装器</li>
+                            <li>  <a href="https://github.com/adlawson/vfs.php">VFS</a>&nbsp;-另一个用于测试虚拟文件系统</li>
+                            <li>  <a href="http://locust.io/">Locust</a>&nbsp;-一个用Python编写的现代加载测试库</li>
+                        </ul>
+                        <h2><a id="user-content-continuous-integration持续集成" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#continuous-integration持续集成" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Continuous Integration&nbsp;持续集成</h2>
+                        <p><em>持续集成的库和应用</em></p>
+                        <ul>
+                            <li>  <a href="https://travis-ci.org/">Travis CI</a>&nbsp;-&nbsp;一个持续集成平台</li>
+                            <li>  <a href="http://www.phptesting.org/">PHPCI</a>&nbsp;-一个PHP的开源持续集成平台</li>
+                            <li>  <a href="http://sismo.sensiolabs.org/">Sismo</a>&nbsp;-&nbsp;一个持续测试服务库</li>
+                            <li>  <a href="http://jenkins-ci.org/">Jenkins</a>一个&nbsp;<a href="http://jenkins-php.org/index.html">PHP 支持</a>的持续集成平台</li>
+                            <li>  <a href="https://github.com/jolicode/JoliCi">JoliCi</a>&nbsp;-&nbsp;一个用PHP编写的由Docker支持的持续集成客户端</li>
+                        </ul>
+                        <h2><a id="user-content-documentation文档" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#documentation文档" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Documentation&nbsp;文档</h2>
+                        <p><em>生成项目文档的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/fabpot/Sami">Sami</a>&nbsp;-一个API文档生成器</li>
+                            <li>  <a href="https://github.com/apigen/apigen">APIGen</a>&nbsp;-另一个API文档生成器</li>
+                            <li>  <a href="https://github.com/phpDocumentor/phpDocumentor2">PHP Documentor 2</a>&nbsp;-一个API文档生成器</li>
+                            <li>  <a href="http://phpdox.de/">phpDox</a>&nbsp;-&nbsp;一个PHP项目的文档生成器（不限于API文档）</li>
+                        </ul>
+                        <h2><a id="user-content-security安全" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#security安全" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Security&nbsp;安全</h2>
+                        <p><em>生成安全的随机数，加密数据，扫描漏洞的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/ezyang/htmlpurifier">HTML Purifier</a>&nbsp;-一个兼容标准的HTML过滤器</li>
+                            <li>  <a href="https://github.com/ircmaxell/RandomLib">RandomLib</a>&nbsp;-一个生成随机数和字符串的库</li>
+                            <li>  <a href="https://github.com/pixeloution/true-random">True Random</a>&nbsp;-使用&nbsp;<a href="http://www.random.org/">www.random.org</a>生成随机数的库</li>
+                            <li>  <a href="https://github.com/padraic/SecurityMultiTool">SecurityMultiTool</a>&nbsp;-一个PHP安全库</li>
+                            <li>  <a href="http://phpseclib.sourceforge.net/">PHPSecLib</a>&nbsp;-一个纯PHP安全通信库</li>
+                            <li>  <a href="https://github.com/timoh6/TCrypto">TCrypto</a>&nbsp;-一个简单的键值加密存储库</li>
+                            <li>  <a href="https://github.com/PHPIDS/PHPIDS">PHP IDS</a>&nbsp;-&nbsp;一个结构化的PHP安全层</li>
+                            <li>  <a href="https://github.com/Herzult/php-ssh">PHP SSH</a>&nbsp;-一个试验的面向对象的SSH包装库</li>
+                            <li>  <a href="https://github.com/psecio/iniscan">IniScan</a>&nbsp;-一个扫描PHP INI文件安全的库</li>
+                            <li>  <a href="https://security.sensiolabs.org/">SensioLabs Security Check</a>&nbsp;-一个为检查Composer依赖提供安全建议的web工具</li>
+                            <li>  <a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project">Zed</a>&nbsp;-&nbsp;一个集成的web应用渗透测试工具</li>
+                        </ul>
+                        <h2><a id="user-content-passwords密码" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#passwords密码" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Passwords&nbsp;密码</h2>
+                        <p><em>处理和存储密码的库和工具</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/ircmaxell/password_compat">Password Compat</a>&nbsp;-一个新的PHP5.5密码函数的兼容库</li>
+                            <li>  <a href="http://www.openwall.com/phpass/">phpass</a>&nbsp;-&nbsp;一个便携式的密码哈希框架</li>
+                            <li>  <a href="https://github.com/ircmaxell/PHP-PasswordLib">PHP Password Lib</a>&nbsp;-一个生成和校验密码的库</li>
+                            <li>  <a href="https://github.com/ircmaxell/password-policy">Password Policy</a>&nbsp;-&nbsp;一个PHP和JavaScript的密码策略库</li>
+                            <li>  <a href="https://github.com/jeremykendall/password-validator">Password Validator</a>&nbsp;-&nbsp;校验和升级密码哈希的库</li>
+                            <li>  <a href="https://github.com/bjeavons/zxcvbn-php">Zxcvbn PHP</a>&nbsp;-一个基于Zxcvbn JS的现实的PHP密码强度估计库</li>
+                        </ul>
+                        <h2><a id="user-content-code-analysis代码分析" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#code-analysis代码分析" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Code Analysis&nbsp;代码分析</h2>
+                        <p><em>分析，解析和处理代码库的库的工具</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/nikic/PHP-Parser">PHP Parser</a>&nbsp;-一个PHP编写的PHP解析器</li>
+                            <li>  <a href="https://github.com/ircmaxell/PHPPHP">PHPPHP</a>&nbsp;-&nbsp;一个PHP实现的PHP虚拟机</li>
+                            <li>  <a href="https://github.com/fieryprophet/php-sandbox">PHPSandbox</a>&nbsp;-一个PHP沙盒环境</li>
+                            <li>  <a href="https://github.com/jakubledl/dissect">Dissect</a>&nbsp;-一个词法和语法分析的工具集合</li>
+                            <li>  <a href="http://phpmd.org/">PHP Mess Detector</a>&nbsp;-一个扫描代码缺陷,次优代码，未使用的参数等等的库。</li>
+                            <li>  <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a>&nbsp;-一个检测PHP、CSS和JS代码标准冲突的库</li>
+                            <li>  <a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a>&nbsp;-&nbsp;一个检测复制和粘贴代码的库</li>
+                            <li>  <a href="https://github.com/scrutinizer-ci/php-analyzer">PHP Analyser</a>&nbsp;-一个分析PHP代码查找缺陷和错误的库</li>
+                            <li>  <a href="https://github.com/fabpot/PHP-CS-Fixer">PHP CS Fixer</a>&nbsp;-&nbsp;一个编码标准库</li>
+                            <li>  <a href="https://github.com/schmittjoh/php-manipulator">PHP Manipulator</a>&nbsp;-一个分析和修改PHP源代码的库</li>
+                            <li>  <a href="https://github.com/Halleck45/PhpMetrics">PHP Metrics</a>&nbsp;-一个静态测量库</li>
+                            <li>  <a href="https://github.com/QafooLabs/php-refactoring-browser">PHP Refactoring Browser</a>&nbsp;-一个重构PHP代码的命令行工具集</li>
+                            <li>  <a href="https://github.com/devster/ubench">UBench</a>&nbsp;-&nbsp;一个简单的微型基准检测库</li>
+                            <li>  <a href="https://github.com/polyfractal/athletic">Athletic</a>&nbsp;-一个基于注释的基准检测库</li>
+                            <li>  <a href="https://github.com/Trismegiste/Mondrian">Mondrian</a>&nbsp;-&nbsp;使用使用图论的代码分析工具</li>
+                            <li>  <a href="https://scrutinizer-ci.com/">Scrutinizer</a>&nbsp;-一个审查PHP代码的web工具</li>
+                            <li>  <a href="https://github.com/sebastianbergmann/phploc">PHPLOC</a>&nbsp;-一个快速测量PHP项目大小的工具</li>
+                            <li>  <a href="https://github.com/phacility/xhprof">xHprof</a>&nbsp;-另一个PHP分析工具</li>
+                            <li>  <a href="https://github.com/jbrooksuk/phpcheckstyle">PHPCheckstyle</a>&nbsp;-一个帮助遵守特定的编码惯例的工具。</li>
+                        </ul>
+                        <h2><a id="user-content-debugging调试" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#debugging调试" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Debugging&nbsp;调试</h2>
+                        <p><em>调试代码的库和工具</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/xdebug/xdebug">xDebug</a>&nbsp;-一个调试和分析PHP的工具</li>
+                            <li>  <a href="http://phpdebugbar.com/">PHP Debug Bar</a>&nbsp;-&nbsp;一个调试工具栏</li>
+                            <li>  <a href="https://github.com/Seldaek/php-console">PHP Console</a>&nbsp;-一个web调试控制台</li>
+                            <li>  <a href="https://github.com/barbushin/php-console">Barbushin PHP Console</a>&nbsp;-另一个使用Google Chrome的web调试控制台</li>
+                            <li>  <a href="http://phpdbg.com/">PHPDBG</a>&nbsp;-&nbsp;一个交互的PHP调试器</li>
+                            <li>  <a href="https://github.com/nette/tracy">Tracy</a>&nbsp;-一个简单的错误检测，写日志和时间测量库</li>
+                        </ul>
+                        <h2><a id="user-content-build-tools构建工具" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#build-tools构建工具" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Build Tools&nbsp;构建工具</h2>
+                        <p><em>项目构建和自动化工具</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/herrera-io/php-go">Go</a>&nbsp;-一个简单的PHP构建工具</li>
+                            <li>  <a href="https://github.com/CHH/bob">Bob</a>&nbsp;-&nbsp;一个简单的项目自动化工具</li>
+                            <li>  <a href="https://github.com/jaz303/phake">Phake</a>&nbsp;-一个PHP克隆库</li>
+                            <li>  <a href="https://github.com/kherge/Box">Box</a>&nbsp;-&nbsp;一个构建PHAR文件的工具</li>
+                            <li>  <a href="http://www.phing.info/">Phing</a>&nbsp;-一个灵感来自于Apache Ant的PHP项目构建系统</li>
+                        </ul>
+                        <h2><a id="user-content-task-runners任务运行器" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#task-runners任务运行器" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Task Runners&nbsp;任务运行器</h2>
+                        <p><em>自动运行任务的库</em></p>
+                        <ul>
+                            <li>  <a href="http://taskphp.github.io/">Task</a>&nbsp;-一个灵感来源于Grunt和Gulp的纯PHP任务运行器</li>
+                            <li>  <a href="https://github.com/Codegyre/Robo">Robo</a>&nbsp;-一个面向对象配置的PHP任务运行器</li>
+                            <li>  <a href="http://bldr.io/">Bldr</a>&nbsp;-一个构建在Symfony组件上的PHP任务运行器</li>
+                        </ul>
+                        <h2><a id="user-content-navigation导航" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#navigation导航" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Navigation导航</h2>
+                        <p><em>构建导航结构的工具</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/KnpLabs/KnpMenu">KnpMenu</a>&nbsp;-&nbsp;一个菜单库</li>
+                            <li>  <a href="https://github.com/tackk/cartographer">Cartographer</a>&nbsp;-一个站点地图生成库</li>
+                        </ul>
+                        <h2><a id="user-content-asset-management资源管理" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#asset-management资源管理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Asset Management&nbsp;资源管理</h2>
+                        <p><em>管理，压缩和最小化web站点资源的工具</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/kriswallsmith/assetic">Assetic</a>&nbsp;-&nbsp;一个资源管理的管道库</li>
+                            <li>  <a href="https://github.com/CHH/pipe">Pipe</a>&nbsp;-另一个资源管理的管道库</li>
+                            <li>  <a href="https://github.com/meenie/munee">Munee</a>&nbsp;-一个资源优化库</li>
+                            <li>  <a href="https://github.com/tedivm/JShrink">JShrink</a>&nbsp;-一个JavaScript最小化库</li>
+                            <li>  <a href="https://github.com/webmozart/puli">Puli</a>&nbsp;-&nbsp;一个检测资源绝对路径的库</li>
+                        </ul>
+                        <h2><a id="user-content-geolocation地理位置" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#geolocation地理位置" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Geolocation&nbsp;地理位置</h2>
+                        <p><em>为地理编码地址和使用纬度经度的库。</em></p>
+                        <ul>
+                            <li>  <a href="http://geocoder-php.org/">GeoCoder</a>&nbsp;-一个地理编码库</li>
+                            <li>  <a href="https://github.com/php-loep/Geotools">GeoTools</a>&nbsp;-一个地理工具相关的库</li>
+                            <li>  <a href="https://github.com/mjaschen/phpgeo">PHPGeo</a>&nbsp;-一个简单的地理库</li>
+                            <li>  <a href="https://github.com/jmikola/geojson">GeoJSON</a>&nbsp;-一个地理JSON的实现</li>
+                        </ul>
+                        <h2><a id="user-content-date-and-time日期和时间" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#date-and-time日期和时间" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Date and Time&nbsp;日期和时间</h2>
+                        <p><em>处理日期和时间的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/briannesbitt/Carbon">Carbon</a>&nbsp;-&nbsp;一个简单的日期时间API扩展</li>
+                            <li>  <a href="https://github.com/jasonlewis/expressive-date">ExpressiveDate</a>&nbsp;-另一个日期时间API扩展</li>
+                            <li>  <a href="http://yohan.giarel.li/CalendR">CalendR</a>&nbsp;-&nbsp;一个日历管理库</li>
+                        </ul>
+                        <h2><a id="user-content-event事件" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#event事件" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Event&nbsp;事件</h2>
+                        <p><em>时间驱动或非阻塞事件循环实现的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/reactphp/react">React</a>&nbsp;-一个事件驱动的非阻塞I/O库</li>
+                            <li>  <a href="https://github.com/asm89/Rx.PHP">Rx.PHP</a>&nbsp;-&nbsp;一个reactive扩展库</li>
+                            <li>  <a href="https://github.com/cboden/Ratchet">Ratchet</a>&nbsp;-&nbsp;一个web套接字库</li>
+                            <li>  <a href="https://github.com/hoaproject/Websocket">Hoa WebSocket</a>&nbsp;-另一个web套接字库</li>
+                            <li>  <a href="https://github.com/hoaproject/Eventsource">Hoa EventSource</a>&nbsp;-一个事件源库</li>
+                            <li>  <a href="https://github.com/igorw/evenement">Evenement</a>&nbsp;-一个事件分发库</li>
+                            <li>  <a href="https://github.com/fuelphp/event">FuelPHP Event</a>&nbsp;-另一个事件分发库</li>
+                        </ul>
+                        <h2><a id="user-content-logging日志" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#logging日志" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Logging&nbsp;日志</h2>
+                        <p><em>生成和处理日志文件的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/Seldaek/monolog">Monolog</a>&nbsp;-&nbsp;一个全面的日志工具</li>
+                            <li>  <a href="https://github.com/katzgrau/KLogger">KLogger</a>&nbsp;-一个易用的PSR-3兼容的日志类</li>
+                        </ul>
+                        <h2><a id="user-content-e-commerce电子商务" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#e-commerce电子商务" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>E-commerce&nbsp;电子商务</h2>
+                        <p><em>处理支付和构建在线电子商务商店的库和应用</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/adrianmacneil/omnipay">OmniPay</a>&nbsp;-一个框架混合了多网关支付处理的库</li>
+                            <li>  <a href="https://github.com/payum/payum">Payum</a>&nbsp;-&nbsp;一个支付抽象库</li>
+                            <li>  <a href="http://www.sylius.org/">Sylius</a>&nbsp;-&nbsp;一个开源的电子商务解决方案</li>
+                            <li>  <a href="http://thelia.net/v2/">Thelia</a>&nbsp;-另一个开源的电子商务解决方案</li>
+                            <li>  <a href="https://github.com/mathiasverraes/money">Money</a>&nbsp;-&nbsp;一个Fowler金钱模式的PHP实现</li>
+                            <li>  <a href="https://github.com/sebastianbergmann/money">Sebastian Money</a>&nbsp;-另一个处理货币值的库</li>
+                            <li>  <a href="https://github.com/florianv/swap">Swap</a>&nbsp;-一个汇率库</li>
+                        </ul>
+                        <h2><a id="user-content-pdf" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#pdf" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PDF</h2>
+                        <p><em>处理PDF文件的库和软件</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/KnpLabs/snappy">Snappy</a>&nbsp;-一个PDF和图像生成器库</li>
+                            <li>  <a href="https://github.com/antialize/wkhtmltopdf">WKHTMLToPDF</a>&nbsp;-一个将HTML转换为PDF的工具</li>
+                        </ul>
+                        <h2><a id="user-content-database数据库" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#database数据库" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Database&nbsp;数据库</h2>
+                        <p><em>使用对象关系映射（ORM）或数据映射技术的数据库交互库</em></p>
+                        <ul>
+                            <li>  <a href="http://www.doctrine-project.org/">Doctrine</a>&nbsp;-一个全面的DBAL和ORM</li>
+                            <li>  <a href="https://github.com/l3pp4rd/DoctrineExtensions">Doctrine Extensions</a>&nbsp;-一个Doctrine行为扩展的集合</li>
+                            <li>  <a href="http://www.propelorm.org/">Propel</a>&nbsp;-&nbsp;一个快速的ORM，迁移库和查询构架器</li>
+                            <li>  <a href="https://github.com/illuminate/database">Eloquent</a>&nbsp;-Laravel 4 ORM</li>
+                            <li>  <a href="https://github.com/etrepat/baum">Baum</a>&nbsp;-一个Eloquent的嵌套集实现</li>
+                            <li>  <a href="https://github.com/vlucas/spot2">Spot2</a>&nbsp;-一个MySQL的ORM映射器</li>
+                            <li>  <a href="http://redbeanphp.com/">RedBean</a>&nbsp;-一个轻量级，低配置的ORM</li>
+                            <li>  <a href="https://github.com/chanmix51/Pomm">Pomm</a>&nbsp;-一个PostgreSQL对象模型管理器</li>
+                            <li>  <a href="https://github.com/Ocramius/ProxyManager">ProxyManager</a>&nbsp;-一个为数据映射生成代理对象的工具集</li>
+                        </ul>
+                        <h2><a id="user-content-migrations迁移" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#migrations迁移" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Migrations&nbsp;迁移</h2>
+                        <p>帮助管理数据库模式和迁移的库</p>
+                        <ul>
+                            <li>  <a href="https://github.com/davedevelopment/phpmig">PHPMig</a>&nbsp;-另一个迁移管理库</li>
+                            <li>  <a href="https://github.com/robmorgan/phinx">Phinx</a>&nbsp;-&nbsp;另一个数据库迁移管理库</li>
+                            <li>  <a href="https://github.com/icomefromthenet/Migrations">Migrations</a>&nbsp;-一个迁移管理库</li>
+                            <li>  <a href="http://docs.doctrine-project.org/projects/doctrine-migrations/en/latest/toc.html">Doctrine Migrations</a>&nbsp;-一个Doctrine迁移库</li>
+                        </ul>
+                        <h2><a id="user-content-nosql" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#nosql" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NoSQL</h2>
+                        <p><em>处理NoSQL后端的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/alexbilbie/MongoQB">MongoQB</a>&nbsp;-一个MongoDB查询构建库</li>
+                            <li>  <a href="https://github.com/thephpleague/monga">Monga</a>&nbsp;-一个MongoDB抽象库</li>
+                            <li>  <a href="https://github.com/nrk/predis">Predis</a>&nbsp;-&nbsp;一个功能完整的Redis库</li>
+                        </ul>
+                        <h2><a id="user-content-queue队列" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#queue队列" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Queue&nbsp;队列</h2>
+                        <p><em>处理事件和任务队列的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/pda/pheanstalk">Pheanstalk</a>&nbsp;-一个Beanstalkd&nbsp;客户端库</li>
+                            <li>  <a href="https://github.com/videlalvaro/php-amqplib">PHP AMQP</a>&nbsp;-一个纯PHP AMQP库</li>
+                            <li>  <a href="https://github.com/videlalvaro/Thumper">Thumper</a>&nbsp;-&nbsp;一个RabbitMQ模式库</li>
+                            <li>  <a href="https://github.com/bernardphp/bernard">Bernard</a>&nbsp;-一个多后端抽象库</li>
+                        </ul>
+                        <h2><a id="user-content-search搜索" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#search搜索" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Search&nbsp;搜索</h2>
+                        <p><em>在数据上索引和执行查询的库和软件</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/elasticsearch/elasticsearch-php">ElasticSearch PHP</a>&nbsp;-ElasticSearch的官方客户端库</li>
+                            <li>  <a href="https://github.com/ruflin/Elastica">Elastica</a>&nbsp;-ElasticSearch的客户端库</li>
+                            <li>  <a href="http://www.solarium-project.org/">Solarium</a>&nbsp;-Solr的客户端库</li>
+                            <li>  <a href="http://foolcode.github.io/SphinxQL-Query-Builder/">SphinxQL query builder</a>&nbsp;-Sphinx搜索引擎的的查询库</li>
+                        </ul>
+                        <h2><a id="user-content-command-line命令行" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#command-line命令行" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Command Line&nbsp;命令行</h2>
+                        <p><em>构建命令行工具的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/d11wtq/boris">Boris</a>&nbsp;-&nbsp;一个微型PHP REPL</li>
+                            <li>  <a href="https://github.com/bobthecow/psysh">PsySH</a>&nbsp;-&nbsp;另一个微型PHP REPL</li>
+                            <li>  <a href="https://github.com/mcrumm/pecan">Pecan</a>&nbsp;-一个事件驱动和非阻塞内核</li>
+                            <li>  <a href="https://github.com/ulrichsg/getopt-php">GetOpt</a>&nbsp;-&nbsp;一个命令行选择解析器</li>
+                            <li>  <a href="https://github.com/CHH/optparse">OptParse</a>&nbsp;-另一个命令行选择解析器</li>
+                            <li>  <a href="https://github.com/nategood/commando">Commando</a>&nbsp;-另一个简单的命令行选择解析器</li>
+                            <li>  <a href="https://github.com/c9s/php-GetOptionKit">GetOptionKit</a>&nbsp;-另一个命令行选择解析器</li>
+                            <li>  <a href="https://github.com/mtdowling/cron-expression">Cron Expression</a>&nbsp;-计算cron运行日期的库</li>
+                            <li>  <a href="https://github.com/MrRio/shellwrap">ShellWrap</a>&nbsp;-一个简单的命令行包装库</li>
+                            <li>  <a href="https://github.com/hoaproject/Console">Hoa Console</a>&nbsp;-另一个命令行库</li>
+                            <li>  <a href="https://github.com/php-loep/shunt">Shunt</a>&nbsp;-&nbsp;一个在多台远程机器上并行运行命令行的库</li>
+                            <li>  <a href="https://github.com/Cilex/Cilex">Cilex</a>&nbsp;-一个构建命令行工具的微型框架</li>
+                        </ul>
+                        <h2><a id="user-content-authentication身份验证" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#authentication身份验证" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Authentication&nbsp;身份验证</h2>
+                        <p><em>实现身份验证的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/cartalyst/sentry">Sentry</a>&nbsp;-一个混合的身份验证和授权的框架库</li>
+                            <li>  <a href="http://docs.cartalyst.com/sentry-social-2/introduction">Sentry Social</a>&nbsp;-一个社交网络身份验证库</li>
+                            <li>  <a href="https://github.com/opauth/opauth">Opauth</a>&nbsp;-一个多渠道的身份验证框架</li>
+                            <li>  <a href="https://github.com/php-loep/oauth2-server">OAuth2</a>&nbsp;-一个OAuth2身份验证服务，资源服务器和客户端库</li>
+                            <li>  <a href="http://bshaffer.github.io/oauth2-server-php-docs/">OAuth2 Server</a>&nbsp;-另一个OAuth2服务器实现</li>
+                            <li>  <a href="https://github.com/Lusitanian/PHPoAuthLib">PHP oAuthLib</a>&nbsp;-另一个OAuth库</li>
+                            <li>  <a href="https://github.com/ruudk/twitteroauth">TwitterOAuth</a>&nbsp;-一个Twitter OAuth库</li>
+                            <li>  <a href="https://github.com/lyrixx/twitter-sdk">TwitterSDK</a>&nbsp;-一个完全测试的Twitter SDK</li>
+                            <li>  <a href="https://github.com/dflydev/dflydev-hawk">Hawk</a>&nbsp;-一个Hawk HTTP身份认证库</li>
+                            <li>  <a href="https://github.com/hybridauth/hybridauth">HybridAuth</a>&nbsp;-一个开源的社交登陆库</li>
+                        </ul>
+                        <h2><a id="user-content-markup标记" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#markup标记" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Markup&nbsp;标记</h2>
+                        <p><em>处理标记的库</em></p>
+                        <ul>
+                            <li>  <a href="http://milesj.me/code/php/decoda">Decoda</a>&nbsp;-一个轻量级标记解析库</li>
+                            <li>  <a href="https://github.com/michelf/php-markdown">PHP Markdown</a>&nbsp;-一个Markdown解析器</li>
+                            <li>  <a href="https://github.com/thephpleague/commonmark">CommonMark PHP</a>&nbsp;-一个对&nbsp;<a href="https://jgm.github.io/stmd/spec.html">CommonMark spec</a>全支持的Markdown解析器</li>
+                            <li>  <a href="https://github.com/dflydev/dflydev-markdown">Dflydev Markdown</a>&nbsp;-另一个Markdown解析器</li>
+                            <li>  <a href="https://github.com/erusev/parsedown">Parsedown</a>&nbsp;-另一个Markdown解析器</li>
+                            <li>  <a href="https://github.com/kzykhys/Ciconia">Ciconia</a>&nbsp;-&nbsp;另一个支持Github Markdown风格的Markdown解析器</li>
+                            <li>  <a href="https://github.com/cebe/markdown">Cebe Markdown</a>&nbsp;-一个快速的可扩展的Markdown解析器</li>
+                            <li>  <a href="https://github.com/Masterminds/html5-php">HTML5 PHP</a>&nbsp;-&nbsp;一个HTML5解析和序列化库</li>
+                        </ul>
+                        <h2><a id="user-content-strings字符串" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#strings字符串" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Strings&nbsp;字符串</h2>
+                        <p><em>解析和处理字符串的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/sensiolabs/ansi-to-html">ANSI to HTML5</a>&nbsp;-ANSI到HTML5的转化库</li>
+                            <li>  <a href="https://github.com/nicolas-grekas/Patchwork-UTF8">Patchwork UTF-8</a>&nbsp;-一个处理UTF-8字符串的便携库</li>
+                            <li>  <a href="https://github.com/hoaproject/String">Hoa String</a>&nbsp;-另一个UTF-8字符串库</li>
+                            <li>  <a href="https://github.com/danielstjules/Stringy">Stringy</a>&nbsp;-一个多字节支持的字符串处理库</li>
+                            <li>  <a href="https://github.com/mikeemoo/ColorJizz-PHP">Color Jizz</a>&nbsp;-处理和转换颜色的库</li>
+                            <li>  <a href="https://github.com/ramsey/uuid">UUID</a>&nbsp;-&nbsp;生成UUIDs的库</li>
+                            <li>  <a href="https://github.com/cocur/slugify">Slugify</a>&nbsp;-转换字符串到slug的库</li>
+                            <li>  <a href="https://github.com/jbroadway/urlify">Urlify</a>&nbsp;-&nbsp;一个Django的 URLify.jsPHP通道</li>
+                            <li>  <a href="https://github.com/kzykhys/Text">Text</a>&nbsp;-&nbsp;一个文本处理库</li>
+                            <li>  <a href="https://github.com/jdorn/sql-formatter/">SQL Formatter</a>&nbsp;-一个格式化SQL语句的库</li>
+                            <li>  <a href="https://github.com/tobie/ua-parser/tree/master/php">UA Parser</a>&nbsp;-&nbsp;一个解析用户代理字符串的库</li>
+                        </ul>
+                        <h2><a id="user-content-numbers数字" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#numbers数字" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Numbers&nbsp;数字</h2>
+                        <p><em>处理数字的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/powder96/numbers.php">Numbers PHP</a>&nbsp;-处理数字的库</li>
+                            <li>  <a href="https://github.com/moontoast/math">Math</a>&nbsp;-处理大数字的库</li>
+                            <li>  <a href="https://github.com/gabrielelana/byte-units">ByteUnits</a>&nbsp;-&nbsp;在二进制和度量系统中解析,格式化和转换字节单元的库</li>
+                            <li>  <a href="https://github.com/triplepoint/php-units-of-measure">PHP Units of Measure</a>&nbsp;-一个计量单位转换的库</li>
+                            <li>  <a href="https://github.com/Crisu83/php-conversion">PHP Conversion</a>&nbsp;-&nbsp;另一个计量单位转换的库</li>
+                            <li>  <a href="https://github.com/giggsey/libphonenumber-for-php">LibPhoneNumber for PHP</a>&nbsp;-Google电话号码处理的PHP实现库</li>
+                        </ul>
+                        <h2><a id="user-content-filtering-and-validation过滤和验证" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#filtering-and-validation过滤和验证" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Filtering and Validation&nbsp;过滤和验证</h2>
+                        <p><em>过滤和验证数据的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/ircmaxell/filterus">Filterus</a>&nbsp;-&nbsp;一个简单的PHP过滤库</li>
+                            <li>  <a href="https://github.com/Respect/Validation">Respect Validate</a>&nbsp;-一个简单的验证库</li>
+                            <li>  <a href="https://github.com/vlucas/valitron">Valitron</a>&nbsp;-另一个验证库</li>
+                            <li>  <a href="https://github.com/codeguy/Upload">Upload</a>&nbsp;-&nbsp;一个处理文件上传和验证的库</li>
+                            <li>  <a href="https://github.com/rdohms/DMS-Filter">DMS Filter</a>&nbsp;-&nbsp;一个注释过滤库</li>
+                            <li>  <a href="https://github.com/romaricdrigon/MetaYaml">MetaYaml</a>&nbsp;-一个支持YAML,JSON和XML的模式验证库</li>
+                            <li>  <a href="https://github.com/ronanguilloux/IsoCodes">ISO-codes</a>&nbsp;-验证各种ISO和ZIP编码的库(IBAN, SWIFT/BIC, BBAN, VAT, SSN, UKNIN)</li>
+                        </ul>
+                        <h2><a id="user-content-rest和api" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#rest和api" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>&nbsp;REST和API</h2>
+                        <p><em>开发REST-ful API的库和web工具</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/zfcampus/zf-apigility-skeleton">Apigility</a>&nbsp;-一个使用Zend Framework 2构建的API构建器</li>
+                            <li>  <a href="https://github.com/willdurand/Hateoas">Hateoas</a>&nbsp;-一个HOATEOAS REST web服务库</li>
+                            <li>  <a href="https://github.com/blongden/hal">HAL</a>&nbsp;-一个超文本应用语言（HAL)构建库</li>
+                            <li>  <a href="https://github.com/willdurand/Negotiation">Negotiation</a>&nbsp;-一个内容协商库</li>
+                            <li>  <a href="https://github.com/leedavis81/drest">Drest</a>&nbsp;-一个将Doctrine实体暴露为REST资源节点的库</li>
+                            <li>  <a href="https://github.com/Luracast/Restler">Restler</a>&nbsp;-一个将PHP方法暴露为RESTful web API的轻量级框架</li>
+                        </ul>
+                        <h2><a id="user-content-caching缓存" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#caching缓存" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Caching&nbsp;缓存</h2>
+                        <p><em>缓存数据的库</em></p>
+                        <ul>
+                            <li>  <a href="http://www.php.net/manual/en/book.apc.php">Alternative PHP Cache (APC)</a>&nbsp;-&nbsp;打开PHP伪代码缓存</li>
+                            <li>  <a href="https://github.com/doctrine/cache">Cache</a>&nbsp;-一个缓存库（Doctrine部分）</li>
+                            <li>  <a href="https://github.com/tedivm/Stash">Stash</a>&nbsp;-另一个缓存库</li>
+                        </ul>
+                        <h2><a id="user-content-数据结构和存储" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#数据结构和存储" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>数据结构和存储</h2>
+                        <p><em>实现数据结构和存储技术的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/morrisonlevi/Ardent">Ardent</a>&nbsp;-一个数据结构库</li>
+                            <li>  <a href="https://github.com/schmittjoh/php-collection">PHP Collections</a>&nbsp;-&nbsp;一个简单的集合库</li>
+                            <li>  <a href="https://github.com/schmittjoh/serializer">Serializer</a>&nbsp;-一个序列化和反序列化数据的库</li>
+                            <li>  <a href="https://github.com/herrera-io/php-object-storage">PHP Object Storage</a>&nbsp;-一个对象存储库</li>
+                            <li>  <a href="https://github.com/php-loep/fractal">Fractal</a>&nbsp;-一个转换复杂数据结构到JSON输出的库</li>
+                            <li>  <a href="http://github.com/Wisembly/Totem">Totem</a>&nbsp;-一个管理和穿件数据交换集的库</li>
+                            <li>  <a href="https://github.com/TimeToogo/Pinq">PINQ</a>&nbsp;-一个PHP实时Linq库</li>
+                            <li>  <a href="https://github.com/netresearch/jsonmapper">JsonMapper</a>&nbsp;-一个将内嵌JSON结构映射为PHP类的库</li>
+                        </ul>
+                        <h2><a id="user-content-notifications通知" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#notifications通知" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Notifications&nbsp;通知</h2>
+                        <p><em>处理通知软件的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/filp/nod">Nod</a>&nbsp;-一个通知库（Growl等）</li>
+                            <li>  <a href="https://github.com/wrep/notificato">Notificato</a>&nbsp;-&nbsp;一个处理推送通知的库</li>
+                            <li>  <a href="https://github.com/Ph3nol/NotificationPusher">Notification Pusher</a>&nbsp;-一个设备推送通知的独立库</li>
+                            <li>  <a href="https://github.com/namshi/notificator">Notificator</a>&nbsp;-一个轻量级的通知库</li>
+                        </ul>
+                        <h2><a id="user-content-deployment部署" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#deployment部署" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deployment&nbsp;部署</h2>
+                        <p><em>项目部署库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/tamagokun/pomander">Pomander</a>&nbsp;-一个PHP应用部署工具</li>
+                            <li>  <a href="https://github.com/Anahkiasen/rocketeer">Rocketeer</a>&nbsp;-PHP世界里的一个快速简单的部署器</li>
+                            <li>  <a href="https://github.com/laravel/envoy">Envoy</a>&nbsp;-一个用PHP运行SSH任务的工具</li>
+                            <li>  <a href="https://github.com/aerialls/Plum">Plum</a>&nbsp;-&nbsp;一个部署库</li>
+                        </ul>
+                        <h2><a id="user-content-国际化和本地化" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#国际化和本地化" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>国际化和本地化</h2>
+                        <p><em>国际化（I18n）和本地化（L10n）</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/auraphp/Aura.Intl">Aura.Intl</a></li>
+                        </ul>
+                        <h2><a id="user-content-第三方api" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#第三方api" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>第三方API</h2>
+                        <p><em>访问第三方API的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/aws/aws-sdk-php">Amazon Web Service SDK</a>&nbsp;-&nbsp;PHP AWS SDK官方库</li>
+                            <li>  <a href="https://github.com/gwkunze/S3StreamWrapper">S3 Stream Wrapper</a>&nbsp;-Amazon S3流包装库</li>
+                            <li>  <a href="https://github.com/stripe/stripe-php">Stripe</a>&nbsp;-Stripe官方PHP库</li>
+                            <li>  <a href="http://campaignmonitor.github.com/createsend-php/">Campaign Monitor</a>&nbsp;-Campaign Monitor官方PHP库</li>
+                            <li>  <a href="https://github.com/toin0u/DigitalOcean">Digital Ocean</a>&nbsp;-Digital Ocean API 接口库</li>
+                            <li>  <a href="https://github.com/dsyph3r/github-api3-php">Github</a>&nbsp;-&nbsp;Github API交互库</li>
+                            <li>  <a href="https://github.com/KnpLabs/php-github-api">PHP Github API</a>&nbsp;-另一个Github API交互库</li>
+                            <li>  <a href="https://github.com/widop/twitter-oauth">Twitter OAuth</a>&nbsp;-Twitter OAuth工作流交互库</li>
+                            <li>  <a href="https://github.com/widop/twitter-rest">Twitter REST</a>&nbsp;-&nbsp;Twitter REST API交互库</li>
+                            <li>  <a href="https://github.com/dropbox/dropbox-sdk-php">Dropbox SDK</a>&nbsp;- The official PHP Dropbox SDK library.</li>
+                            <li>  <a href="https://github.com/dropbox/dropbox-sdk-php">Dropbox SDK</a>&nbsp;-&nbsp;Dropbox SDK官方PHP库</li>
+                            <li>  <a href="https://github.com/twilio/twilio-php">Twilio</a>&nbsp;- The official Twilio PHP REST API.</li>
+                            <li>  <a href="https://github.com/twilio/twilio-php">Twilio</a>&nbsp;-&nbsp;Twilio官方PHP REST API</li>
+                            <li>  <a href="https://github.com/mailgun/mailgun-php">Mailgun</a>&nbsp;The official Mailgun PHP API.</li>
+                            <li>  <a href="https://github.com/mailgun/mailgun-php">Mailgun</a>&nbsp;Mailgun官方PHP REST API</li>
+                        </ul>
+                        <h2><a id="user-content-extensions扩展" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#extensions扩展" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extensions&nbsp;扩展</h2>
+                        <p><em>帮组构建PHP扩展的库</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/phalcon/zephir">Zephir</a>&nbsp;-用于开发PHP扩展，且介于PHP和C++之间的编译语言</li>
+                            <li>  <a href="http://www.php-cpp.com/">PHP CPP</a>&nbsp;-一个开发PHP扩展的C++库</li>
+                        </ul>
+                        <h2><a id="user-content-miscellaneous杂项" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#miscellaneous杂项" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Miscellaneous&nbsp;杂项</h2>
+                        <p><em>不在上面分类中的有用库和工具</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/kriswallsmith/spork">Spork</a>&nbsp;-一个处理forking的库</li>
+                            <li>  <a href="https://github.com/Seldaek/jsonlint">JSON Lint</a>&nbsp;-&nbsp;一个JSON lint工具</li>
+                            <li>  <a href="https://github.com/willdurand/JsonpCallbackValidator">JSONPCallbackValidator</a>&nbsp;-验证JSONP回调的库</li>
+                            <li>  <a href="https://github.com/whiteoctober/Pagerfanta">Pagerfanta</a>&nbsp;-一个分页库</li>
+                            <li>  <a href="https://github.com/bobthecow/Ruler">Ruler</a>&nbsp;-&nbsp;一个简单的无状态的生产环境规则引擎。</li>
+                            <li>  <a href="https://github.com/beberlei/litecqrs-php">LiteCQRS</a>&nbsp;-一个CQRS(命令查询责任分离)库</li>
+                            <li>  <a href="https://github.com/EvanDotPro/Sslurp">Sslurp</a>&nbsp;-&nbsp;一个使得SSL处理减少的库</li>
+                            <li>  <a href="https://github.com/schmittjoh/php-option">PHP Option</a>一个可选的类型库</li>
+                            <li>  <a href="https://github.com/beberlei/metrics">Metrics</a>&nbsp;-一个简单的度量API库</li>
+                            <li>  <a href="https://github.com/evert/sabre-vobject">Sabre VObject</a>&nbsp;-&nbsp;一个解析VCard和iCalendar对象的库</li>
+                            <li>  <a href="https://github.com/doctrine/annotations">Annotations</a>&nbsp;-一个注释库（Doctrine部分）</li>
+                            <li>  <a href="https://github.com/filp/whoops">Whoops</a>&nbsp;-一个不错的错误处理库</li>
+                            <li>  <a href="http://yohan.giarel.li/Finite">Finite</a>&nbsp;-一个简单的PHP有限状态机</li>
+                            <li>  <a href="https://github.com/raulfraile/Ladybug">LadyBug</a>&nbsp;-一个dumper库</li>
+                            <li>  <a href="https://github.com/lstrojny/Procrastinator">Procrastinator</a>&nbsp;-运行耗时任务的库</li>
+                            <li>  <a href="https://github.com/igorw/compose">Compose</a>&nbsp;-一个功能组合库</li>
+                            <li>  <a href="https://github.com/jeremeamia/super_closure">SuperClosure</a>&nbsp;-一个允许闭包序列化的库</li>
+                            <li>  <a href="https://github.com/kakawait/Jumper">Jumper</a>&nbsp;-&nbsp;一个远程服务执行库</li>
+                            <li>  <a href="http://anahkiasen.github.io/underscore-php/">Underscore</a>&nbsp;-一个Undersccore JS库的PHP实现</li>
+                            <li>  <a href="https://github.com/eymengunay/php-passbook">PHP PassBook</a>&nbsp;-一个iOS PassBook PHP库</li>
+                            <li>  <a href="https://github.com/Kitano/php-expression">PHP Expression</a>&nbsp;-一个PHP表达式语言</li>
+                            <li>  <a href="https://github.com/liip/RMT">RMT</a>&nbsp;-&nbsp;一个编写版本和发布软件的库</li>
+                            <li>  <a href="https://github.com/herrera-io/php-wise">Wise</a>&nbsp;-&nbsp;一个配置管理器</li>
+                            <li>  <a href="https://github.com/euskadi31/Opengraph">Opengraph</a>&nbsp;-一个开放图库</li>
+                            <li>  <a href="https://github.com/felixgirault/essence">Essence</a>&nbsp;-一个提取web媒体的库</li>
+                            <li>  <a href="https://github.com/mpratt/Embera">Embera</a>&nbsp;-一个Oembed消费库</li>
+                            <li>  <a href="https://github.com/alexandresalome/graphviz">Graphviz</a>&nbsp;-一个图形库</li>
+                            <li>  <a href="https://github.com/ircmaxell/monad-php">Monad PHP</a>&nbsp;一个简单Monad库</li>
+                            <li>  <a href="https://github.com/selvinortiz/flux">Flux</a>&nbsp;-一个正则表达式构建库</li>
+                            <li>  <a href="http://antecedent.github.io/patchwork/">Patchwork</a>&nbsp;-&nbsp;一个重新定义用户的函数库</li>
+                            <li>  <a href="https://github.com/igorw/galapagos">Galapagos</a>&nbsp;-语言转换进化</li>
+                            <li>  <a href="https://github.com/domnikl/DesignPatternsPHP">Design Patterns PHP</a>&nbsp;-一个使用PHP实现的设计模式存储库</li>
+                            <li>  <a href="https://github.com/phpcr/phpcr">PHPCR</a>&nbsp;-&nbsp;一个Java内容存储库（JCR)的PHP实现</li>
+                            <li>  <a href="https://github.com/lstrojny/functional-php">Functional PHP</a>&nbsp;-&nbsp;一个函数式编程库</li>
+                            <li>  <a href="https://github.com/mtdowling/ClassPreloader">ClassPreloader</a>&nbsp;-&nbsp;一个优化自动加载的库</li>
+                            <li>  <a href="https://github.com/phine/lib-country">Lib Country</a>&nbsp;-一个国家和地区数据的库</li>
+                            <li>  <a href="https://github.com/phine/lib-accessor">Lib Accessor</a>&nbsp;-一个简化访问的库</li>
+                            <li>  <a href="http://dunkels.com/adam/phpstack/">PHPStack</a>&nbsp;-一个PHP编写的TCP/IP栈概念</li>
+                            <li>  <a href="https://github.com/willdurand/nmap">Nmap</a>&nbsp;-一个Nmap PHP包装器</li>
+                            <li>  <a href="https://github.com/dantleech/code-mover">Code Mover</a>&nbsp;-一个移动代码的库</li>
+                            <li>  <a href="https://github.com/nikic/iter">Iter</a>&nbsp;-一个使用生成器提供迭代原语的库</li>
+                            <li>  <a href="https://github.com/igorw/lambda-php">Lambda PHP</a>&nbsp;-一个PHP中的Lambda 计算解析器</li>
+                            <li>  <a href="https://github.com/umpirsky/country-list">Country List</a>&nbsp;-&nbsp;所有带有名称和ISO 3166-1编码的国家列表</li>
+                            <li>  <a href="https://github.com/ronanguilloux/php-gpio">PHP-GPIO</a>&nbsp;-&nbsp;用于Raspberry PI的GPIO pin的库</li>
+                            <li>  <a href="https://github.com/koriym/print_o">print_o</a>&nbsp;-&nbsp;一个对象图的可视化器</li>
+                            <li>  <a href="https://github.com/fuelphp/alias">Alias</a>&nbsp;-一个类别名库</li>
+                        </ul>
+                        <h1><a id="user-content-software软件" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#software软件" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Software&nbsp;软件</h1>
+                        <p><em>创建一个开发环境的软件</em></p>
+                        <h2><a id="user-content-php安装" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#php安装" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP安装</h2>
+                        <p><em>在你的电脑上帮助安装和管理PHP的工具</em></p>
+                        <ul>
+                            <li>  <a href="http://mxcl.github.com/homebrew/">HomeBrew</a>&nbsp;-一个OSX包管理器</li>
+                            <li>  <a href="https://github.com/josegonzalez/homebrew-php">HomeBrew PHP</a>&nbsp;-一个HomeBrew的PHP通道</li>
+                            <li>  <a href="http://php-osx.liip.ch/">PHP OSX</a>&nbsp;-&nbsp;一个OSX下的PHP安装器</li>
+                            <li>  <a href="https://github.com/c9s/phpbrew">PHP Brew</a>&nbsp;-一个PHP版本管理和安装器</li>
+                            <li>  <a href="https://github.com/CHH/phpenv">PHP Env</a>&nbsp;-&nbsp;另一个PHP版本管理器</li>
+                            <li>  <a href="https://github.com/jubianchi/phpswitch">PHP Switch</a>&nbsp;-&nbsp;另一个PHP版本管理器</li>
+                            <li>  <a href="https://github.com/CHH/php-build">PHP Build</a>&nbsp;-&nbsp;另一个PHP版本安装器</li>
+                            <li>  <a href="http://virtphp.org/">VirtPHP</a>&nbsp;-&nbsp;一个创建和管理独立PHP环境的工具</li>
+                        </ul>
+                        <h2><a id="user-content-development-environment开发环境" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#development-environment开发环境" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Development Environment&nbsp;开发环境</h2>
+                        <p><em>创建沙盒开发环境的软件和工具</em></p>
+                        <ul>
+                            <li>  <a href="http://www.vagrantup.com/">Vagrant</a>&nbsp;-一个便携的开发环境工具</li>
+                            <li>  <a href="http://www.ansibleworks.com/">Ansible</a>&nbsp;-&nbsp;一个非常简单的编制框架</li>
+                            <li>  <a href="http://puppetlabs.com/">Puppet</a>&nbsp;-一个服务器自动化框架和应用</li>
+                            <li>  <a href="https://puphpet.com/">PuPHPet</a>&nbsp;-一个构建PHP开发虚拟机的web工具</li>
+                            <li>  <a href="http://getprotobox.com/">Protobox</a>&nbsp;-另一个构建PHP开发虚拟机的web工具</li>
+                            <li>  <a href="http://phansible.com/">Phansible</a>&nbsp;-&nbsp;一个用Ansible构建PHP开发虚拟机的web工具</li>
+                        </ul>
+                        <h2><a id="user-content-virtual-machines虚拟机" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#virtual-machines虚拟机" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Virtual Machines&nbsp;虚拟机</h2>
+                        <p><em>相关的PHP虚拟机</em></p>
+                        <ul>
+                            <li>  <a href="https://github.com/facebook/hiphop-php">HipHop PHP</a>&nbsp;-Facebook出品的PHP虚拟机，运行时和JIT</li>
+                            <li>  <a href="http://hippyvm.com/">HippyVM</a>&nbsp;-另一个PHP虚拟机</li>
+                            <li>  <a href="http://hacklang.org/">Hack</a>&nbsp;-&nbsp;一个PHP进行无缝操作的&nbsp;<a href="https://github.com/facebook/hiphop-php">HHVM</a>编程语言</li>
+                        </ul>
+                        <h2><a id="user-content-ide集成开发环境" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#ide集成开发环境" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IDE&nbsp;集成开发环境</h2>
+                        <p><em>支持PHP的集成开发环境</em></p>
+                        <ul>
+                            <li>  <a href="https://netbeans.org/">Netbeans</a>&nbsp;-一个支持PHP和HTML5的IDE</li>
+                            <li>  <a href="https://www.eclipse.org/downloads/">Eclipse for PHP Developers</a>&nbsp;-一个基于Eclipse平台的PHP IDE</li>
+                            <li>  <a href="http://www.jetbrains.com/phpstorm/">PhpStorm</a>&nbsp;-一个商业PHP IDE</li>
+                        </ul>
+                        <h2><a id="user-content-web-applicationsweb应用" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#web-applicationsweb应用" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web Applications&nbsp;Web应用</h2>
+                        <p><em>基于Web的应用和工具</em></p>
+                        <ul>
+                            <li>  <a href="http://3v4l.org/">3V4L</a>一个在线的PHP shell</li>
+                            <li>  <a href="http://dbv.vizuina.com/">DBV</a>&nbsp;-一个数据库版本控制应用</li>
+                            <li>  <a href="https://github.com/CoderKungfu/php-queue">PHP Queue</a>&nbsp;-一个管理后端队列的应用</li>
+                            <li>  <a href="http://composer.borreli.com/">Composer as a Service</a>&nbsp;-&nbsp;作为一个zip文件下载Composer包的工具</li>
+                            <li>  <a href="https://github.com/sj26/mailcatcher">MailCatcher</a>&nbsp;-&nbsp;一个抓取和查看邮件的web工具</li>
+                        </ul>
+                        <h1><a id="user-content-resources资源" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#resources资源" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Resources&nbsp;资源</h1>
+                        <p>各种提高你的PHP开发技能和知识的资源，比如书籍，网站，文章</p>
+                        <h2><a id="user-content-php网站" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#php网站" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP网站</h2>
+                        <p><em>PHP相关的有用网站</em></p>
+                        <ul>
+                            <li>  <a href="http://www.phptherightway.com/">PHP The Right Way</a>&nbsp;-一个PHP最佳实践的快速指引手册</li>
+                            <li>  <a href="http://phpbestpractices.org/">PHP Best Practices</a>&nbsp;-&nbsp;一个PHP最佳实践指南</li>
+                            <li>  <a href="http://phpweekly.info/archive/">PHP Weekly</a>&nbsp;-&nbsp;一个PHP新闻周刊</li>
+                            <li>  <a href="http://phpsecurity.readthedocs.org/en/latest/index.html">PHP Security</a>&nbsp;-&nbsp;一个PHP安全指南</li>
+                            <li>  <a href="http://www.php-fig.org/">PHP FIG</a>&nbsp;-&nbsp;PHP框架交互组</li>
+                            <li>  <a href="http://php.ug/">PHP UG</a>&nbsp;-一个帮助用户定位最近的PHP用户组（UG)的网站</li>
+                            <li>  <a href="http://7php.com/">Seven PHP</a>&nbsp;-一个PHP社区成员采访的网站</li>
+                            <li>  <a href="http://nomadphp.com/">Nomad PHP</a>&nbsp;-一个在线PHP学习资源</li>
+                            <li>  <a href="http://phpmentoring.org/">PHP Mentoring</a>&nbsp;-点对点PHP导师组织</li>
+                        </ul>
+                        <h2><a id="user-content-other-websites其他网站" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#other-websites其他网站" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Other Websites&nbsp;其他网站</h2>
+                        <p><em>web开发相关的有用网站</em></p>
+                        <ul>
+                            <li>  <a href="https://www.owasp.org/index.php/Main_Page">The Open Web Application Security Project (OWASP)</a>&nbsp;-一个开放软件安全社区</li>
+                            <li>  <a href="http://websec.io/">WebSec IO</a>&nbsp;-&nbsp;一个web安全社区资源</li>
+                            <li>  <a href="http://webadvent.org/">Web Advent</a>&nbsp;-一个web开发人员日历</li>
+                            <li>  <a href="http://semver.org/">Semantic Versioning</a>&nbsp;-一个解析语义版本的网站</li>
+                            <li>  <a href="https://www.atlassian.com/git">Atlassian Git Tutorials</a>&nbsp;-一个Git教程系列</li>
+                            <li>  <a href="http://hginit.com/">Hg Init</a>&nbsp;-一个Mercurial教程系列</li>
+                            <li>  <a href="http://serversforhackers.com/">Servers for Hackers</a>&nbsp;-&nbsp;一个关于服务器管理的新闻通讯</li>
+                        </ul>
+                        <h2><a id="user-content-php-书籍" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#php-书籍" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP 书籍</h2>
+                        <p><em>PHP相关的非常好的书籍</em></p>
+                        <ul>
+                            <li>  <a href="http://www.scalingphpbook.com/">Scaling PHP Applications</a>&nbsp;-&nbsp;一本Steve Corona关于扩展PHP应用程序的电子书</li>
+                            <li>  <a href="https://leanpub.com/grumpy-testing">The Grumpy Programmer's Guide to Building Testable PHP Applications</a>&nbsp;-一本Chris Hartjes关于构建PHP应用程序测试的书</li>
+                            <li>  <a href="https://leanpub.com/grumpy-phpunit">Grumpy PHPUnit</a>&nbsp;-一本Chris Hartjes关于使用PHPUnit进行单元测试的书</li>
+                            <li>  <a href="http://www.brandonsavage.net/">Mastering Object-Orientated PHP</a>&nbsp;-&nbsp;一本Brandon Savage关于PHP面向对象的书</li>
+                            <li>  <a href="https://leanpub.com/signalingphp">Signaling PHP</a>&nbsp;-一本Cal Evans关于在CLI脚本捕获PCNTL 信号的书</li>
+                            <li>  <a href="https://leanpub.com/securingphp-coreconcepts">Securing PHP: Core Concepts</a>&nbsp;-一本Chris Cornutt关于PHP常见安全条款和实践的书</li>
+                            <li>  <a href="https://leanpub.com/mlaphp">Modernising Legacy Applications in PHP</a>&nbsp;-一本Paul M.Jones关于遗留PHP应用进行现代化的书</li>
+                        </ul>
+                        <h2><a id="user-content-其他书籍" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#其他书籍" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>其他书籍</h2>
+                        <p><em>与一般计算和web开发相关的书</em></p>
+                        <ul>
+                            <li>  <a href="http://linuxcommand.org/tlcl.php">The Linux Command Line</a>&nbsp;-William Shotts关于Linux命令行的一本书</li>
+                            <li>  <a href="http://computationbook.com/">Understanding Computation</a>&nbsp;-Tom Stuart关于计算理论的一本书</li>
+                            <li>  <a href="http://www.amazon.ca/The-Tangled-Web-Securing-Applications/dp/1593273886">The Tangled Web — Securing Web Applications</a>&nbsp;- Michal Zalewski关于web应用安全的一本书</li>
+                            <li>  <a href="http://www.elasticsearch.org/guide/">Elasticsearch: The Definitive Guide</a>&nbsp;-Clinton Cormley和Zachary Tong编写的与Elasticsearch工作的一本指南</li>
+                            <li>  <a href="http://eloquentjavascript.net/">Eloquent JavaScript</a>&nbsp;-Marijin Haverbeke关于JavaScript编程的一本书</li>
+                            <li>  <a href="https://leanpub.com/vagrantcookbook">Vagrant Cookbook</a>-Erika Heidi关于创建 Vagrant环境的一本书</li>
+                            <li>  <a href="http://git-scm.com/book/en/v2">Pro Git</a>&nbsp;-Scott Chacon和Ben Straub关于Git的一本书</li>
+                        </ul>
+                        <h2><a id="user-content-php视频" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#php视频" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP视频</h2>
+                        <p><em>PHP相关的非常不错的视频</em></p>
+                        <ul>
+                            <li>  <a href="http://www.infoq.com/presentations/php-history">Taking PHP Seriously</a>&nbsp;-&nbsp;来自Facebook Keith Adams 讲述PHP优势</li>
+                            <li>  <a href="http://phptownhall.com/">PHP Town Hall</a>&nbsp;-&nbsp;一个随意的Ben Edmunds和Phil Sturgeon的PHP播客</li>
+                            <li>  <a href="http://www.youtube.com/playlist?list=PLM-218uGSX3DQ3KsB5NJnuOqPqc5CW2kW">Programming with Anthony</a>&nbsp;&nbsp;Anthony Ferrara的视频系列</li>
+                        </ul>
+                        <h2><a id="user-content-php阅读" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#php阅读" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP阅读</h2>
+                        <p><em>PHP相关的阅读资料</em></p>
+                        <ul>
+                            <li>  <a href="http://fabien.potencier.org/article/50/create-your-own-framework-on-top-of-the-symfony2-components-part-1">Create Your Own PHP Framework</a>&nbsp;-&nbsp;一部Fabien Potencier的关于如何创建你自己的PHP框架的系列文章</li>
+                            <li>  <a href="http://blog.ircmaxell.com/2012/12/seven-ways-to-screw-up-bcrypt.html">Seven Ways to Screw Up BCrypt</a>&nbsp;-&nbsp;一篇关于纠正BCrypt实现的文章</li>
+                            <li>  <a href="http://blog.ircmaxell.com/2013/02/preventing-csrf-attacks.html">Preventing CSRF Attacks</a>&nbsp;-一篇组织CSRF攻击的文章</li>
+                            <li>  <a href="http://blog.ircmaxell.com/2013/08/dont-worry-about-breach.html">Don't Worry About BREACH</a>&nbsp;-&nbsp;一篇关于BREACH攻击和CSRF令牌的文章</li>
+                            <li>  <a href="http://fabien.potencier.org/article/17/on-php-5-3-lambda-functions-and-closures">On PHP 5.3, Lamda Functions and Closures</a>&nbsp;-一篇关于lambda函数和闭包的文章</li>
+                            <li>  <a href="http://seancoates.com/blogs/use-env">Use Env</a>&nbsp;-&nbsp;一篇关于使用unix环境帮助的文章</li>
+                            <li>  <a href="http://daylerees.com/composer-primer">Composer Primer</a>&nbsp;-&nbsp;Composer初级</li>
+                            <li>  <a href="https://igor.io/2013/01/07/composer-versioning.html">Composer Versioning</a>&nbsp;-一篇关于Composer版本的文章</li>
+                            <li>  <a href="https://igor.io/2013/02/07/composer-stability-flags.html">Composer Stability Flags</a>&nbsp;-一篇关于Composer稳定性标志的文章</li>
+                            <li>  <a href="http://blog.astrumfutura.com/2012/04/php-innocent-villagefolk-or-a-pillagin-pirate/">Innocent Villagefolk or a Pillagin’ Pirate?</a>&nbsp;-一篇关于PHP从其他语言获取想法的文章</li>
+                            <li>  <a href="http://blog.astrumfutura.com/2013/03/predicting-random-numbers-in-php-its-easier-than-you-think/">Predicting Random Numbers in PHP</a>&nbsp;-一篇关于生成随机数的文章</li>
+                            <li>  <a href="http://blog.astrumfutura.com/2013/04/20-point-list-for-preventing-cross-site-scripting-in-php/">A 20 Point List for Preventing XSS in PHP</a>&nbsp;-一篇关于组织XSS的文章</li>
+                            <li>  <a href="http://blog.ircmaxell.com/2012/04/php-sucks-but-i-like-it.html">PHP Sucks! But I Like It!</a>&nbsp;-一篇关于PHP利弊的文章</li>
+                            <li>  <a href="http://fabien.potencier.org/article/64/php-is-much-better-than-you-think">PHP Is Much Better Than You Think</a>&nbsp;-一篇关于PHP语言和生态圈的文章</li>
+                        </ul>
+                        <h2><a id="user-content-php-internals-readingphp内核阅读" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#php-internals-readingphp内核阅读" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP Internals Reading&nbsp;PHP内核阅读</h2>
+                        <p><em>阅读PHP内核或性能相关的资料</em></p>
+                        <ul>
+                            <li>  <a href="https://wiki.php.net/rfc">PHP RFCs</a>&nbsp;-&nbsp;PHP RFCs主页（请求注解）</li>
+                            <li>  <a href="http://www.phpinternalsbook.com/">PHP Internals Book</a>&nbsp;-&nbsp;一本由三名核心开发编写的关于PHP内核的在线书</li>
+                            <li>  <a href="http://fabien.potencier.org/article/8/print-vs-echo-which-one-is-faster">Print vs Echo, Which One is Faster?</a>&nbsp;-一篇关于打印和echo性能的文章</li>
+                            <li>  <a href="http://fabien.potencier.org/article/48/the-php-ternary-operator-fast-or-not">The PHP Ternary Operator. Fast or Not?</a>&nbsp;-一篇关于三元操作性能的文章</li>
+                            <li>  <a href="http://nikic.github.com/2012/01/09/Disproving-the-Single-Quotes-Performance-Myth.html">Disproving the Single Quotes Myth</a>&nbsp;-一篇关于单，双引号字符串性能的文章</li>
+                            <li>  <a href="http://blog.golemon.com/2007/01/youre-being-lied-to.html">You're Being Lied To</a>&nbsp;-&nbsp;一篇关于内核ZVALs的文章</li>
+                            <li>  <a href="http://blog.golemon.com/2006/06/how-long-is-piece-of-string.html">How Long is a Piece of String</a>&nbsp;-一篇关于字符串原理的文章</li>
+                            <li>  <a href="http://blog.golemon.com/2008/01/understanding-opcodes.html">Understanding OpCodes</a>&nbsp;-一篇关于伪代码的文章</li>
+                            <li>  <a href="http://stackoverflow.com/questions/10057671/how-foreach-actually-works/14854568#14854568">How Foreach Works</a>&nbsp;-StackOverflow 关于foreach回答的详情</li>
+                            <li>  <a href="http://nikic.github.com/2011/11/11/PHP-Internals-When-does-foreach-copy.html">When Does Foreach Copy?</a>&nbsp;-一篇关于foreach原理的文章</li>
+                            <li>  <a href="http://nikic.github.com/2011/12/12/How-big-are-PHP-arrays-really-Hint-BIG.html">How Big Are PHP Arrays (And Values) Really?</a>&nbsp;-&nbsp;一篇关于数组原理的文章</li>
+                            <li>  <a href="https://gist.github.com/nikic/5015323">Why Objects (Usually) Use Less Memory Than Arrays</a>&nbsp;-一篇关于对象和数组原理的文章</li>
+                            <li>  <a href="https://gist.github.com/nikic/6699370">PHP Evaluation Order</a>&nbsp;-一篇关于PHP评估顺序的文章</li>
+                            <li>  开发人员的PHP源代码：&nbsp;<a href="http://blog.ircmaxell.com/2012/03/phps-source-code-for-php-developers.html">1</a>&nbsp;<a href="http://nikic.github.com/2012/03/16/Understanding-PHPs-internal-function-definitions.html">2</a>&nbsp;<a href="http://blog.ircmaxell.com/2012/03/phps-source-code-for-php-developers_21.html">3</a>&nbsp;<a href="http://nikic.github.com/2012/03/28/Understanding-PHPs-internal-array-implementation.html">4</a>&nbsp;-关于PHP源代码的系列</li>
+                            <li>  垃圾收集：&nbsp;<a href="http://www.php.net/manual/en/features.gc.refcounting-basics.php">1</a>&nbsp;<a href="http://www.php.net/manual/en/features.gc.collecting-cycles.php">2</a>&nbsp;<a href="http://www.php.net/manual/en/features.gc.performance-considerations.php">3</a>&nbsp;关于PHP垃圾收集原理的系列</li>
+                        </ul>
+                        <h3 id="user-content-weibo-weixin"><a id="user-content-微信公众号" class="anchor" href="https://github.com/wangxiwei/awesome-php-cn#微信公众号" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>微信公众号</h3>
+                        <ul>
+                            <li>
+                                PHP开发者：专注分享 PHP 开发相关的技术文章和工具资源
+                                <br><a href="./wangxiwei_awesome-php-cn_ PHP资源大全中文版，库、框架、模板、安全、代码分析、日志、第三方库、配置工具、Web 工具等_files/687474703a2f2f7777312e73696e61696d672e636e2f736d616c6c2f3633393138363131677731657062326362317871306a323034363034366467762e6a7067" target="_blank"><img src="./wangxiwei_awesome-php-cn_ PHP资源大全中文版，库、框架、模板、安全、代码分析、日志、第三方库、配置工具、Web 工具等_files/687474703a2f2f7777312e73696e61696d672e636e2f736d616c6c2f3633393138363131677731657062326362317871306a323034363034366467762e6a7067" width="150" height="150" data-canonical-src="http://ww1.sinaimg.cn/small/63918611gw1epb2cb1xq0j2046046dgv.jpg" style="max-width:100%;"></a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
