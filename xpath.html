@@ -1,0 +1,1229 @@
+﻿<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled">
+
+<head>
+    <meta charset='utf-8'>
+    <link crossorigin="anonymous" href="css/github.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/normalize.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/site.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/system-fonts.css" media="all" rel="stylesheet" />
+    <!-- Site CSS -->
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://static.bootcss.com/www/assets/css/site.min.css?v5" rel="stylesheet">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    <title>xpath实例</title>
+    <meta name="description" content="xpath实例，xml，基本的XPath语法">
+       <!-- baidu tongji-->
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?627126cddcd63947fdd8f5b3c73ab19e";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        <!-- baidu tongji-->
+
+            <!-- GA -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-79861528-2', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <!-- GA -->
+
+    </head>
+
+<body>
+    <!-- BEGIN navbar-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-sm" href="/">Doc-China中文网</a>
+            </div>
+            <div class="navbar-collapse collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li class="hidden-sm hidden-md"><a href="/awesome/" target="_blank">awesome系列中文文档</a></li>
+                    <li><a href="/awesome/awesome-python.html" target="_blank">Python资源大全</a></li>
+                    <li><a href="/awesome/awesome-java.html" target="_blank">Java资源大全</a></li>
+                    <li><a href="/awesome/awesome-javascript.html" target="_blank">javascript资源大全</a></li>
+                    <li><a href="/awesome/awesome-php.html" target="_blank">PHP资源大全</a></li>
+                    <li><a href="/awesome/awesome-ios.html" target="_blank">IOS资源大全</a></li>
+                    <li><a href="/awesome/awesome-wechat-dev-posts.html" target="_blank">微信热传的经典技术文章</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END navbar -->
+    <div role="main">
+        <div class="container new-discussion-timeline experiment-repo-nav">
+            <div class="repository-content">
+                <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+
+                    <div class="panel-body">
+                        <div class="details-readme">
+
+                            <section>
+                                <h1>实例 1</h1>
+                                <p>基本的XPath语法类似于在一个文件系统中定位文件,如果路径以斜线 / 开始, 那么该路径就表示到一个元素的绝对路径</p>
+                                <p>
+                                    <code>/AAA</code>
+                                    选择根元素AAA
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;DDD&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDD&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/AAA/CCC</code>
+                                    选择AAA的所有CCC子元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;DDD&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDD&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/AAA/DDD/BBB</code>
+                                    选择AAA的子元素DDD的所有子元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;DDD&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDD&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 2</h1>
+                                <p>如果路径以双斜线 // 开头, 则表示选择文档中所有满足双斜线//之后规则的元素(无论层级关系)</p>
+                                <p>
+                                    <code>//BBB</code>
+                                    选择所有BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;BBB/&gt; 
+      &lt;DDD&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDD&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;BBB/&gt; 
+                &lt;BBB/&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//DDD/BBB</code>
+                                    选择所有父元素是DDD的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;BBB/&gt; 
+      &lt;DDD&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDD&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;BBB/&gt; 
+                &lt;BBB/&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 3</h1>
+                                <p>星号 * 表示选择所有由星号之前的路径所定位的元素</p>
+                                <p>
+                                    <code>/AAA/CCC/DDD/*</code>
+                                    选择所有路径依附于/AAA/CCC/DDD的元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;BBB/&gt; 
+                &lt;BBB/&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF/&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;BBB/&gt; 
+                &lt;BBB/&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF/&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+      &lt;CCC&gt; 
+           &lt;BBB&gt; 
+                &lt;BBB&gt; 
+                     &lt;BBB/&gt; 
+                &lt;/BBB&gt; 
+           &lt;/BBB&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/*/*/*/BBB</code>
+                                    选择所有的有3个祖先元素的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;BBB/&gt; 
+                &lt;BBB/&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF/&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;BBB/&gt; 
+                &lt;BBB/&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF/&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+      &lt;CCC&gt; 
+           &lt;BBB&gt; 
+                &lt;BBB&gt; 
+                     &lt;BBB/&gt; 
+                &lt;/BBB&gt; 
+           &lt;/BBB&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//*</code>
+                                    选择所有元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;BBB/&gt; 
+                &lt;BBB/&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF/&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;BBB/&gt; 
+                &lt;BBB/&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF/&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+      &lt;CCC&gt; 
+           &lt;BBB&gt; 
+                &lt;BBB&gt; 
+                     &lt;BBB/&gt; 
+                &lt;/BBB&gt; 
+           &lt;/BBB&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 4</h1>
+                                <p>方块号里的表达式可以进一步的指定元素, 其中数字表示元素在选择集里的位置, 而last()函数则表示选择集中的最后一个元素.</p>
+                                <p>
+                                    <code>/AAA/BBB[1]</code>
+                                    选择AAA的第一个BBB子元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/AAA/BBB[last()]</code>
+                                    选择AAA的最后一个BBB子元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 5</h1>
+                                <p>
+                                    <code>//@id</code>
+                                    选择所有的id属性
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB id = "b1"/&gt; 
+      &lt;BBB id = "b2"/&gt; 
+      &lt;BBB name = "bbb"/&gt; 
+      &lt;BBB/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//BBB[@id]</code>
+                                    选择有id属性的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB id = "b1"/&gt; 
+      &lt;BBB id = "b2"/&gt; 
+      &lt;BBB name = "bbb"/&gt; 
+      &lt;BBB/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//BBB[@name]</code>
+                                    选择有name属性的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB id = "b1"/&gt; 
+      &lt;BBB id = "b2"/&gt; 
+      &lt;BBB name = "bbb"/&gt; 
+      &lt;BBB/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//BBB[@*]</code>
+                                    选择有任意属性的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB id = "b1"/&gt; 
+      &lt;BBB id = "b2"/&gt; 
+      &lt;BBB name = "bbb"/&gt; 
+      &lt;BBB/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//BBB[not(@*)]</code>
+                                    选择没有属性的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB id = "b1"/&gt; 
+      &lt;BBB id = "b2"/&gt; 
+      &lt;BBB name = "bbb"/&gt; 
+      &lt;BBB/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 6</h1>
+                                <p>属性的值可以被用来作为选择的准则, normalize-space函数删除了前部和尾部的空格, 并且把连续的空格串替换为一个单一的空格</p>
+                                <p>
+                                    <code>//BBB[@id='b1']</code>
+                                    选择含有属性id且其值为'b1'的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB id = "b1"/&gt; 
+      &lt;BBB name = " bbb "/&gt; 
+      &lt;BBB name = "bbb"/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//BBB[@name='bbb']</code>
+                                    选择含有属性name且其值为'bbb'的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB id = "b1"/&gt; 
+      &lt;BBB name = " bbb "/&gt; 
+      &lt;BBB name = "bbb"/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//BBB[normalize-space(@name)='bbb']</code>
+                                    选择含有属性name且其值(在用normalize-space函数去掉前后空格后)为'bbb'的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB id = "b1"/&gt; 
+      &lt;BBB name = " bbb "/&gt; 
+      &lt;BBB name = "bbb"/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 7</h1>
+                                <p>count()函数可以计数所选元素的个数</p>
+                                <p>
+                                    <code>//*[count(BBB)=2]</code>
+                                    选择含有2个BBB子元素的元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;CCC&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/CCC&gt; 
+      &lt;DDD&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDD&gt; 
+      &lt;EEE&gt; 
+           &lt;CCC/&gt; 
+           &lt;DDD/&gt; 
+      &lt;/EEE&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//*[count(*)=2]</code>
+                                    选择含有2个子元素的元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;CCC&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/CCC&gt; 
+      &lt;DDD&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDD&gt; 
+      &lt;EEE&gt; 
+           &lt;CCC/&gt; 
+           &lt;DDD/&gt; 
+      &lt;/EEE&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//*[count(*)=3]</code>
+                                    选择含有3个子元素的元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;CCC&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/CCC&gt; 
+      &lt;DDD&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDD&gt; 
+      &lt;EEE&gt; 
+           &lt;CCC/&gt; 
+           &lt;DDD/&gt; 
+      &lt;/EEE&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 8</h1>
+                                <p>name()函数返回元素的名称, start-with()函数在该函数的第一个参数字符串是以第二个参数字符开始的情况返回true, contains()函数当其第一个字符串参数包含有第二个字符串参数时返回true.</p>
+                                <p>
+                                    <code>//*[name()='BBB']</code>
+                                    选择所有名称为BBB的元素(这里等价于//BBB)
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BCC&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/BCC&gt; 
+      &lt;DDB&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDB&gt; 
+      &lt;BEC&gt; 
+           &lt;CCC/&gt; 
+           &lt;DBD/&gt; 
+      &lt;/BEC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//*[starts-with(name(),'B')]</code>
+                                    选择所有名称以"B"起始的元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BCC&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/BCC&gt; 
+      &lt;DDB&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDB&gt; 
+      &lt;BEC&gt; 
+           &lt;CCC/&gt; 
+           &lt;DBD/&gt; 
+      &lt;/BEC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//*[contains(name(),'C')]</code>
+                                    选择所有名称包含"C"的元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BCC&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/BCC&gt; 
+      &lt;DDB&gt; 
+           &lt;BBB/&gt; 
+           &lt;BBB/&gt; 
+      &lt;/DDB&gt; 
+      &lt;BEC&gt; 
+           &lt;CCC/&gt; 
+           &lt;DBD/&gt; 
+      &lt;/BEC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 10</h1>
+                                <p>多个路径可以用分隔符 | 合并在一起</p>
+                                <p>
+                                    <code>//CCC | //BBB</code>
+                                    选择所有的CCC和BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;DDD&gt; 
+           &lt;CCC/&gt; 
+      &lt;/DDD&gt; 
+      &lt;EEE/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/AAA/EEE | //BBB</code>
+                                    选择所有的BBB元素和所有是AAA的子元素的EEE元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;DDD&gt; 
+           &lt;CCC/&gt; 
+      &lt;/DDD&gt; 
+      &lt;EEE/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/AAA/EEE | //DDD/CCC | /AAA | //BBB</code>
+                                    可以合并的路径数目没有限制
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;DDD&gt; 
+           &lt;CCC/&gt; 
+      &lt;/DDD&gt; 
+      &lt;EEE/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 11</h1>
+                                <p>child轴(axis)包含上下文节点的子元素, 作为默认的轴,可以忽略不写. </p>
+                                <p>
+                                    <code>/AAA</code>
+                                    等价于<code>/child::AAA</code>
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/child::AAA</code>
+                                    等价于<code>/AAA</code>
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/AAA/BBB</code>
+                                    等价于<code>/child::AAA/child::BBB</code>
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/child::AAA/child::BBB</code>
+                                    等价于<code>/AAA/BBB</code>
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/child::AAA/BBB</code>
+                                    二者都可以被合并
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 12</h1>
+                                <p>descendant (后代)轴包含上下文节点的后代,一个后代是指子节点或者子节点的子节点等等, 因此descendant轴不会包含属性和命名空间节点. </p>
+                                <p>
+                                    <code>/descendant::*</code>
+                                    选择文档根元素的所有后代.即所有的元素被选择
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;DDD&gt; 
+                &lt;CCC&gt; 
+                     &lt;DDD/&gt; 
+                     &lt;EEE/&gt; 
+                &lt;/CCC&gt; 
+           &lt;/DDD&gt; 
+      &lt;/BBB&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE&gt; 
+                     &lt;DDD&gt; 
+                          &lt;FFF/&gt; 
+                     &lt;/DDD&gt; 
+                &lt;/EEE&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>/AAA/BBB/descendant::*</code>
+                                    选择/AAA/BBB的所有后代元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;DDD&gt; 
+                &lt;CCC&gt; 
+                     &lt;DDD/&gt; 
+                     &lt;EEE/&gt; 
+                &lt;/CCC&gt; 
+           &lt;/DDD&gt; 
+      &lt;/BBB&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE&gt; 
+                     &lt;DDD&gt; 
+                          &lt;FFF/&gt; 
+                     &lt;/DDD&gt; 
+                &lt;/EEE&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//CCC/descendant::*</code>
+                                    选择在祖先元素中有CCC的所有元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;DDD&gt; 
+                &lt;CCC&gt; 
+                     &lt;DDD/&gt; 
+                     &lt;EEE/&gt; 
+                &lt;/CCC&gt; 
+           &lt;/DDD&gt; 
+      &lt;/BBB&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE&gt; 
+                     &lt;DDD&gt; 
+                          &lt;FFF/&gt; 
+                     &lt;/DDD&gt; 
+                &lt;/EEE&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//CCC/descendant::DDD</code>
+                                    选择所有以CCC为祖先元素的DDD元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;DDD&gt; 
+                &lt;CCC&gt; 
+                     &lt;DDD/&gt; 
+                     &lt;EEE/&gt; 
+                &lt;/CCC&gt; 
+           &lt;/DDD&gt; 
+      &lt;/BBB&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE&gt; 
+                     &lt;DDD&gt; 
+                          &lt;FFF/&gt; 
+                     &lt;/DDD&gt; 
+                &lt;/EEE&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 13</h1>
+                                <p>parent轴(axis)包含上下文节点的父节点, 如果有父节点的话</p>
+                                <p>
+                                    <code>//DDD/parent::*</code>
+                                    选择DDD元素的所有父节点
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;DDD&gt; 
+                &lt;CCC&gt; 
+                     &lt;DDD/&gt; 
+                     &lt;EEE/&gt; 
+                &lt;/CCC&gt; 
+           &lt;/DDD&gt; 
+      &lt;/BBB&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE&gt; 
+                     &lt;DDD&gt; 
+                          &lt;FFF/&gt; 
+                     &lt;/DDD&gt; 
+                &lt;/EEE&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 14</h1>
+                                <p>ancestor轴(axis)包含上下节点的祖先节点, 该祖先节点由其上下文节点的父节点以及父节点的父节点等等诸如此类的节点构成,所以ancestor轴总是包含有根节点,除非上下文节点就是根节点本身.</p>
+                                <p>
+                                    <code>/AAA/BBB/DDD/CCC/EEE/ancestor::*</code>
+                                    选择一个绝对路径上的所有节点
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;DDD&gt; 
+                &lt;CCC&gt; 
+                     &lt;DDD/&gt; 
+                     &lt;EEE/&gt; 
+                &lt;/CCC&gt; 
+           &lt;/DDD&gt; 
+      &lt;/BBB&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE&gt; 
+                     &lt;DDD&gt; 
+                          &lt;FFF/&gt; 
+                     &lt;/DDD&gt; 
+                &lt;/EEE&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//FFF/ancestor::*</code>
+                                    选择FFF元素的祖先节点
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;DDD&gt; 
+                &lt;CCC&gt; 
+                     &lt;DDD/&gt; 
+                     &lt;EEE/&gt; 
+                &lt;/CCC&gt; 
+           &lt;/DDD&gt; 
+      &lt;/BBB&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE&gt; 
+                     &lt;DDD&gt; 
+                          &lt;FFF/&gt; 
+                     &lt;/DDD&gt; 
+                &lt;/EEE&gt; 
+           &lt;/DDD&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 15</h1>
+                                <p>following-sibling轴(axis)包含上下文节点之后的所有兄弟节点</p>
+                                <p><code>/AAA/BBB/following-sibling::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;DDD/&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//CCC/following-sibling::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;DDD/&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 16</h1>
+                                <p>preceding-sibling 轴(axis)包含上下文节点之前的所有兄弟节点</p>
+                                <p><code>/AAA/XXX/preceding-sibling::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;DDD/&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//CCC/preceding-sibling::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;DDD/&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 17</h1>
+                                <p>following轴(axis)包含同一文档中按文档顺序位于上下文节点之后的所有节点, 除了祖先节点,属性节点和命名空间节点</p>
+                                <p><code>/AAA/XXX/following::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ&gt; 
+                &lt;DDD/&gt; 
+                &lt;DDD&gt; 
+                     &lt;EEE/&gt; 
+                &lt;/DDD&gt; 
+           &lt;/ZZZ&gt; 
+           &lt;FFF&gt; 
+                &lt;GGG/&gt; 
+           &lt;/FFF&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//ZZZ/following::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ&gt; 
+                &lt;DDD/&gt; 
+                &lt;DDD&gt; 
+                     &lt;EEE/&gt; 
+                &lt;/DDD&gt; 
+           &lt;/ZZZ&gt; 
+           &lt;FFF&gt; 
+                &lt;GGG/&gt; 
+           &lt;/FFF&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 18</h1>
+                                <p>preceding轴(axis)包含同一文档中按文档顺序位于上下文节点之前的所有节点, 除了祖先节点,属性节点和命名空间节点</p>
+                                <p><code>/AAA/XXX/preceding::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ&gt; 
+                &lt;DDD/&gt; 
+           &lt;/ZZZ&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//GGG/preceding::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ&gt; 
+                &lt;DDD/&gt; 
+           &lt;/ZZZ&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 19</h1>
+                                <p>descendant-or-self 轴(axis)包含上下文节点本身和该节点的后代节点</p>
+                                <p><code>/AAA/XXX/descendant-or-self::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ&gt; 
+                &lt;DDD/&gt; 
+           &lt;/ZZZ&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//CCC/descendant-or-self::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ&gt; 
+                &lt;DDD/&gt; 
+           &lt;/ZZZ&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 20</h1>
+                                <p>ancestor-or-self 轴(axis)包含上下文节点本身和该节点的祖先节点</p>
+                                <p><code>/AAA/XXX/DDD/EEE/ancestor-or-self::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ&gt; 
+                &lt;DDD/&gt; 
+           &lt;/ZZZ&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//GGG/ancestor-or-self::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ&gt; 
+                &lt;DDD/&gt; 
+           &lt;/ZZZ&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;DDD/&gt; 
+                &lt;CCC/&gt; 
+                &lt;FFF/&gt; 
+                &lt;FFF&gt; 
+                     &lt;GGG/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 21</h1>
+                                <p>ancestor, descendant, following, preceding 和self轴(axis)分割了XML文档(忽略属性节点和命名空间节点), 不能交迭, 而一起使用则包含所有节点</p>
+                                <p><code>//GGG/ancestor::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ/&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF&gt; 
+                     &lt;HHH/&gt; 
+                     &lt;GGG&gt; 
+                          &lt;JJJ&gt; 
+                               &lt;QQQ/&gt; 
+                          &lt;/JJJ&gt; 
+                          &lt;JJJ/&gt; 
+                     &lt;/GGG&gt; 
+                     &lt;HHH/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//GGG/descendant::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ/&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF&gt; 
+                     &lt;HHH/&gt; 
+                     &lt;GGG&gt; 
+                          &lt;JJJ&gt; 
+                               &lt;QQQ/&gt; 
+                          &lt;/JJJ&gt; 
+                          &lt;JJJ/&gt; 
+                     &lt;/GGG&gt; 
+                     &lt;HHH/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//GGG/following::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ/&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF&gt; 
+                     &lt;HHH/&gt; 
+                     &lt;GGG&gt; 
+                          &lt;JJJ&gt; 
+                               &lt;QQQ/&gt; 
+                          &lt;/JJJ&gt; 
+                          &lt;JJJ/&gt; 
+                     &lt;/GGG&gt; 
+                     &lt;HHH/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//GGG/preceding::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ/&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF&gt; 
+                     &lt;HHH/&gt; 
+                     &lt;GGG&gt; 
+                          &lt;JJJ&gt; 
+                               &lt;QQQ/&gt; 
+                          &lt;/JJJ&gt; 
+                          &lt;JJJ/&gt; 
+                     &lt;/GGG&gt; 
+                     &lt;HHH/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//GGG/self::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ/&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF&gt; 
+                     &lt;HHH/&gt; 
+                     &lt;GGG&gt; 
+                          &lt;JJJ&gt; 
+                               &lt;QQQ/&gt; 
+                          &lt;/JJJ&gt; 
+                          &lt;JJJ/&gt; 
+                     &lt;/GGG&gt; 
+                     &lt;HHH/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p><code>//GGG/ancestor::* | //GGG/descendant::* | //GGG/following::* | //GGG/preceding::* | //GGG/self::*</code></p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB&gt; 
+           &lt;CCC/&gt; 
+           &lt;ZZZ/&gt; 
+      &lt;/BBB&gt; 
+      &lt;XXX&gt; 
+           &lt;DDD&gt; 
+                &lt;EEE/&gt; 
+                &lt;FFF&gt; 
+                     &lt;HHH/&gt; 
+                     &lt;GGG&gt; 
+                          &lt;JJJ&gt; 
+                               &lt;QQQ/&gt; 
+                          &lt;/JJJ&gt; 
+                          &lt;JJJ/&gt; 
+                     &lt;/GGG&gt; 
+                     &lt;HHH/&gt; 
+                &lt;/FFF&gt; 
+           &lt;/DDD&gt; 
+      &lt;/XXX&gt; 
+      &lt;CCC&gt; 
+           &lt;DDD/&gt; 
+      &lt;/CCC&gt; 
+ &lt;/AAA&gt; 
+</code></pre><h1>实例 22</h1>
+                                <p>div运算符做浮点除法运算, mod运算符做求余运算, floor函数返回不大于参数的最大整数(趋近于正无穷), ceiling返回不小于参数的最小整数(趋近于负无穷)</p>
+                                <p>
+                                    <code>//BBB[position() mod 2 = 0 ]</code>
+                                    选择偶数位置的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;CCC/&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//BBB[ position() = floor(last() div 2 + 0.5) or position() = ceiling(last() div 2 + 0.5) ]</code>
+                                    选择中间的BBB元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;CCC/&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre><p>
+                                    <code>//CCC[ position() = floor(last() div 2 + 0.5) or position() = ceiling(last() div 2 + 0.5) ]</code>
+                                    选择中间的CCC元素
+                                </p>
+<pre><code> &lt;AAA&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;BBB/&gt; 
+      &lt;CCC/&gt; 
+      &lt;CCC/&gt; 
+      &lt;CCC/&gt; 
+ &lt;/AAA&gt; 
+</code></pre>
+                            </section>
+
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
