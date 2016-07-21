@@ -7,6 +7,11 @@
     <link crossorigin="anonymous" href="css/normalize.css" media="all" rel="stylesheet" />
     <link crossorigin="anonymous" href="css/site.css" media="all" rel="stylesheet" />
     <link crossorigin="anonymous" href="css/system-fonts.css" media="all" rel="stylesheet" />
+    <!-- Site CSS -->
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://static.bootcss.com/www/assets/css/site.min.css?v5" rel="stylesheet">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta name="viewport" content="width=device-width">
@@ -40,13 +45,37 @@
     </head>
 
 <body>
+    <!-- BEGIN navbar-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-sm" href="/">Doc-China中文网</a>
+            </div>
+            <div class="navbar-collapse collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li class="hidden-sm hidden-md"><a href="/awesome/" target="_blank">awesome系列中文文档</a></li>
+                    <li><a href="/awesome/awesome-python.html" target="_blank">Python资源大全</a></li>
+                    <li><a href="/awesome/awesome-java.html" target="_blank">Java资源大全</a></li>
+                    <li><a href="/awesome/awesome-javascript.html" target="_blank">javascript资源大全</a></li>
+                    <li><a href="/awesome/awesome-php.html" target="_blank">PHP资源大全</a></li>
+                    <li><a href="/awesome/awesome-ios.html" target="_blank">IOS资源大全</a></li>
+                    <li><a href="/awesome/awesome-wechat-dev-posts.html" target="_blank">微信热传的经典技术文章</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END navbar -->
     <div role="main">
         <div class="container new-discussion-timeline experiment-repo-nav">
             <div class="repository-content">
                 <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
-                    <h3>
-                        awesome machine learning
-                    </h3>
+
                     <article class="markdown-body entry-content" itemprop="text">
                         <h1><a id="user-content-机器学习资源大全中文版" class="anchor" href="https://github.com/wangxiwei/awesome-machine-learning-cn#机器学习资源大全中文版" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>机器学习资源大全中文版</h1>
                         <p>我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。<a href="https://github.com/josephmisiti/awesome-machine-learning">awesome-machine-learning</a> 就是 josephmisiti 发起维护的机器学习资源列表，内容包括了机器学习领域的框架、库以及软件（按编程语言排序）。</p>
